@@ -6,7 +6,7 @@ Information on the project coming soon :construction:
 
 ## Contributing
 
-Thanks for your interest in contributing to CMAS open-code! There are a few ways to contribute. To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
+Thanks for your interest in contributing to our project! There are a few ways to contribute. To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Participation Guidelines
 
