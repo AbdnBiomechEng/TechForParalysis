@@ -8,7 +8,9 @@ We will use a combination of electrical stimulation to elicit forces in muscles 
 
 The project will be in three phases: building a model to predict the effects of electrical stimulation on a paralysed arm with arm support, development of methodologies using this model to optimise the arm support and stimulation system, and testing of stimulation controllers designed using this approach. 
 
-The project brings together experts in biomechanics and musculoskeletal modelling, spinal cord injury rehabilitation and assistive technologies. It is funded by the [UK Engineering and Physical Sciences Research Council](https://epsrc.ukri.org/).
+The project brings together experts in biomechanics and musculoskeletal modelling, spinal cord injury rehabilitation and assistive technologies. [Click here](https://github.com/dblana/TechForParalysis/blob/master/Meet_The_Team.md) to meet the team.
+
+The project is funded by the [UK Engineering and Physical Sciences Research Council](https://epsrc.ukri.org/).
 
 ## Contributing
 
