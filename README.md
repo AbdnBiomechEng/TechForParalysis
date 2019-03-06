@@ -1,4 +1,4 @@
-# TechForParalysis
+# Tech For Paralysis
 
 Hello and welcome to the TechForParalysis project! :tada:
 
