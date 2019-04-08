@@ -29,6 +29,9 @@ Outside of work she owns two horses and competes in Dressage and Cross Country.
 ![Rachel](https://github.com/dblana/TechForParalysis/blob/master/Photos/Rachel.jpg "Rachel Reddihough")
 
 ### Alice Faux-Nightingale
+Alice is a Biology and Psychology graduate with past experience researching animal behaviour and welfare. More recently she has become interested in human experiences of movement disorders, and is currently looking into creative methods of engaging the public with research.
+
+When not working, Alice enjoys playing the piano, painting, and working with fabric. At the weekends she can often be found out in the garden or spending time with her two cats.
 
 ![Alice](https://github.com/dblana/TechForParalysis/blob/master/Photos/Alice.jpg "Alice Faux-Nightingale")
 
