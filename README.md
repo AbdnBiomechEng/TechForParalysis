@@ -14,6 +14,7 @@ The project is funded by the [UK Engineering and Physical Sciences Research Coun
 
 ## Contributing
 
+...
 Thank you for your interest in contributing to our project! Please let us know if you find typing mistakes, documentation that is unclear, or code that could be improved. Our aim is to be completely open with our research, and we welcome your comments and feedback :smile:
 
 Our project adheres to a [code of conduct](CODE_OF_CONDUCT.md). Please uphold this code, and report unacceptable behaviour to [Dimitra](https://github.com/dblana).
