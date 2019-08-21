@@ -2,7 +2,7 @@ function runopt_elbow
 
 	% run a sequence of optimizations, with mesh refinement
 
-	maxnodes = 40;		% end close to this number of nodes
+	maxnodes = 20;		% end close to this number of nodes %%(previously set to 40)
     nodes = 8;
     OptSetup.N = nodes;
 	OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
@@ -33,8 +33,8 @@ function runopt_elbow
 		% don't exceed max nodes, and do the last optimization with tighter tolerances
 		if (nodes >= maxnodes) 
 			nodes = maxnodes;
-			OptSetup.OptimTol = 1e-5;
-            OptSetup.FeasTol = 1e-5;
+			OptSetup.OptimTol = 1e-3;   %%1e-5;
+            OptSetup.FeasTol = 1e-3;    %%1e-5;
 		end
 		% redo the optimization with previous result as initial guess
         OptSetup.N = nodes;
