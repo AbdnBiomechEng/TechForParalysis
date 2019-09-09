@@ -67,7 +67,7 @@ initialguess = OptSetup.initialguess;
 
 % Load structure with model related variables
 % modelparams = load('model_struct.mat'); this has all the muscles
-modelparams = load('model_struct_elbow.mat'); % this has only brachialis
+modelparams = load('model_struct_elbow.mat'); % this has a subset of muscles
 model = modelparams.model;
 
 ndof = model.nDofs;
@@ -187,8 +187,16 @@ for i_node=0:N-1
     iLce = [iLce nvarpernode*i_node+2*ndof+(1:nmus)];
     
     iThorSh = [iThorSh nvarpernode*i_node+lockeddofs];
-    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
+    %iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
     imeas_ThorSh = [imeas_ThorSh nmeas_dof*i_node+lockeddofs];
+	%imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
+end
+
+% For the kinematics we are tracking (elbow), we only care about the
+% time points where the movement is measured (or set), not all nodes
+
+for i_node=ceil(linspace(0,N-1,length(t)))
+    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
 	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
 end
 
@@ -203,16 +211,14 @@ if strcmp(initialguess, 'mid')
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
 elseif numel(strfind(initialguess, 'init')) > 0
-    % xeq = load('equilibrium.mat'); this has all the muscles
-    xeq = load('equilibrium_brac.mat'); % this has only brachialis
+    xeq = load('equilibrium.mat'); 
     if N>1
         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
     else
         X0 = xeq.x;
     end
 elseif numel(strfind(initialguess, 'eqLce')) > 0
-    % xeq = load('equilibrium.mat'); this has all the muscles
-    xeq = load('equilibrium_brac.mat'); % this has only brachialis
+    xeq = load('equilibrium.mat'); 
     if N>1
         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
     else
@@ -397,6 +403,7 @@ confun(X);
 % save this result on a file
 x = reshape(X,nvarpernode,N);
 Result.times = times;
+Result.input_data = data;
 Result.x = x(1:nstates,:);
 if N>1
     Result.u = x(nstates+(1:ncontrols),:);
