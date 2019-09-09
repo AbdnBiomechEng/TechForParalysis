@@ -67,7 +67,7 @@ initialguess = OptSetup.initialguess;
 
 % Load structure with model related variables
 % modelparams = load('model_struct.mat'); this has all the muscles
-modelparams = load('model_struct_elbow.mat'); % this has only brachialis
+modelparams = load('model_struct_elbow.mat'); % this has a subset of muscles
 model = modelparams.model;
 
 ndof = model.nDofs;
@@ -113,44 +113,37 @@ mass_N = repmat(muscle_mass,N,1);
 L = zeros(nvar,1);
 U = zeros(nvar,1);
 
-if N>1
-    % Bounds are:
-    %   joint angles 	xlimdeg
-    %   angular velocities -40 to 40 degrees/s
-    %   CE lengths		0 to 2
-    %	active states	0 to 1
-    %	neural controls 0 to 1
-    for i_node = 0:N-1
-        L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 0.3;                                            % Lce
-            zeros(nmus,1);                                                  % active states
-            zeros(nmus,1) ];                                                % neural excitations
+% Bounds are:
+%   joint angles 	xlimdeg
+%   angular velocities -40 to 40 degrees/s
+%   CE lengths		0 to 2
+%	active states	0 to 1
+%	neural controls 0 to 1
+for i_node = 0:N-1
+    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
+        (zeros(ndof,1) - 40)*pi/180;                                    % qdot
+        zeros(nmus,1) + 0.3;                                            % Lce
+        zeros(nmus,1);                                                  % active states
+        zeros(nmus,1) ];                                                % neural excitations
 
-        U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 1.7;                                            % Lce
-            ones(nmus,1);                                                   % active states
-            ones(nmus,1) ];                                                 % neural excitations
-    end
-else
-    % Bounds are:
-    %   joint angles 	xlimdeg
-    %   angular velocities -40 to 40 degrees/s
-    %   CE lengths		0 to 2
-    %	active states	0 to 1
-    for i_node = 0:N-1
-        L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 0.3;                                            % Lce
-            zeros(nmus,1)];                                                  % active states
-
-        U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 1.7;                                            % Lce
-            ones(nmus,1)];                                                   % active states
-    end
+    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
+        (zeros(ndof,1) + 40)*pi/180;                                    % qdot
+        zeros(nmus,1) + 1.7;                                            % Lce
+        ones(nmus,1);                                                   % active states
+        ones(nmus,1) ];                                                 % neural excitations
 end
+
+% Bounds for angular velocities are different in first and final node: they
+% should be zero
+
+% First node
+L(ndof+1:2*ndof) = zeros(ndof,1);
+U(ndof+1:2*ndof) = zeros(ndof,1);
+
+% Final node
+final_node_start_index = (N-1)*nvarpernode;
+L(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
+U(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
 
 % load the motion capture data, columns are time and 14 angles
 Result.input = data;
@@ -194,8 +187,16 @@ for i_node=0:N-1
     iLce = [iLce nvarpernode*i_node+2*ndof+(1:nmus)];
     
     iThorSh = [iThorSh nvarpernode*i_node+lockeddofs];
-    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
+    %iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
     imeas_ThorSh = [imeas_ThorSh nmeas_dof*i_node+lockeddofs];
+	%imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
+end
+
+% For the kinematics we are tracking (elbow), we only care about the
+% time points where the movement is measured (or set), not all nodes
+
+for i_node=ceil(linspace(0,N-1,length(t)))
+    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
 	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
 end
 
@@ -210,16 +211,14 @@ if strcmp(initialguess, 'mid')
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
 elseif numel(strfind(initialguess, 'init')) > 0
-    % xeq = load('equilibrium.mat'); this has all the muscles
-    xeq = load('equilibrium_brac.mat'); % this has only brachialis
+    xeq = load('equilibrium.mat'); 
     if N>1
         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
     else
         X0 = xeq.x;
     end
 elseif numel(strfind(initialguess, 'eqLce')) > 0
-    % xeq = load('equilibrium.mat'); this has all the muscles
-    xeq = load('equilibrium_brac.mat'); % this has only brachialis
+    xeq = load('equilibrium.mat'); 
     if N>1
         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
     else
@@ -404,6 +403,7 @@ confun(X);
 % save this result on a file
 x = reshape(X,nvarpernode,N);
 Result.times = times;
+Result.input_data = data;
 Result.x = x(1:nstates,:);
 if N>1
     Result.u = x(nstates+(1:ncontrols),:);
