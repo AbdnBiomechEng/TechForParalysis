@@ -133,6 +133,18 @@ for i_node = 0:N-1
         ones(nmus,1) ];                                                 % neural excitations
 end
 
+% Bounds for angular velocities are different in first and final node: they
+% should be zero
+
+% First node
+L(ndof+1:2*ndof) = zeros(ndof,1);
+U(ndof+1:2*ndof) = zeros(ndof,1);
+
+% Final node
+final_node_start_index = (N-1)*nvarpernode;
+L(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
+U(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
+
 % load the motion capture data, columns are time and 14 angles
 Result.input = data;
 Result.input_t = t;
