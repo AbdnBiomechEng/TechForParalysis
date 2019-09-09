@@ -2,13 +2,13 @@ function runopt_elbow
 
 	% run a sequence of optimizations, with mesh refinement
 
-	maxnodes = 40;		% end close to this number of nodes
+	maxnodes = 29;		% end close to this number of nodes
     nodes = 8;
     OptSetup.N = nodes;
 	OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
     OptSetup.OptimTol = 1e-1;
     OptSetup.FeasTol = 1e-1;
-    OptSetup.initialguess = 'init';
+    OptSetup.initialguess = 'random';
     OptSetup.Wdata = 1000;
     OptSetup.Weffort = 1;
     OptSetup.equality_constraints = 1;
@@ -21,7 +21,11 @@ function runopt_elbow
     data = [x0.x(1:14) x0.x(1:14)]'; % two time points
     data(2,13) = 90*pi/180; % change flexion in second time point to 90 degrees
     t = [0;1];
-            
+
+    % Create folder for results, if it does not already exist
+    if ~exist('opt_results','dir')
+        mkdir('opt_results');
+    end
     filename = 'opt_results/elbow_flexion';
     
     das3_optimize_elbow(data,t,[filename '_' num2str(nodes)],OptSetup);
@@ -33,8 +37,8 @@ function runopt_elbow
 		% don't exceed max nodes, and do the last optimization with tighter tolerances
 		if (nodes >= maxnodes) 
 			nodes = maxnodes;
-			OptSetup.OptimTol = 1e-5;
-            OptSetup.FeasTol = 1e-5;
+			OptSetup.OptimTol = 1e-3;
+            OptSetup.FeasTol = 1e-3;
 		end
 		% redo the optimization with previous result as initial guess
         OptSetup.N = nodes;
