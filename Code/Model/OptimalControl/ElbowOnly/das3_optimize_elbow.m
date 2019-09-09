@@ -113,43 +113,24 @@ mass_N = repmat(muscle_mass,N,1);
 L = zeros(nvar,1);
 U = zeros(nvar,1);
 
-if N>1
-    % Bounds are:
-    %   joint angles 	xlimdeg
-    %   angular velocities -40 to 40 degrees/s
-    %   CE lengths		0 to 2
-    %	active states	0 to 1
-    %	neural controls 0 to 1
-    for i_node = 0:N-1
-        L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 0.3;                                            % Lce
-            zeros(nmus,1);                                                  % active states
-            zeros(nmus,1) ];                                                % neural excitations
+% Bounds are:
+%   joint angles 	xlimdeg
+%   angular velocities -40 to 40 degrees/s
+%   CE lengths		0 to 2
+%	active states	0 to 1
+%	neural controls 0 to 1
+for i_node = 0:N-1
+    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
+        (zeros(ndof,1) - 40)*pi/180;                                    % qdot
+        zeros(nmus,1) + 0.3;                                            % Lce
+        zeros(nmus,1);                                                  % active states
+        zeros(nmus,1) ];                                                % neural excitations
 
-        U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 1.7;                                            % Lce
-            ones(nmus,1);                                                   % active states
-            ones(nmus,1) ];                                                 % neural excitations
-    end
-else
-    % Bounds are:
-    %   joint angles 	xlimdeg
-    %   angular velocities -40 to 40 degrees/s
-    %   CE lengths		0 to 2
-    %	active states	0 to 1
-    for i_node = 0:N-1
-        L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 0.3;                                            % Lce
-            zeros(nmus,1)];                                                  % active states
-
-        U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
-            zeros(nmus,1) + 1.7;                                            % Lce
-            ones(nmus,1)];                                                   % active states
-    end
+    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
+        (zeros(ndof,1) + 40)*pi/180;                                    % qdot
+        zeros(nmus,1) + 1.7;                                            % Lce
+        ones(nmus,1);                                                   % active states
+        ones(nmus,1) ];                                                 % neural excitations
 end
 
 % load the motion capture data, columns are time and 14 angles
