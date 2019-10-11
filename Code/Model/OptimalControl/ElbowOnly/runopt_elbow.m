@@ -2,15 +2,15 @@ function runopt_elbow
 
 	% run a sequence of optimizations, with mesh refinement
 
-	maxnodes = 29;		% end close to this number of nodes
-    nodes = 8;
+	maxnodes = 17;		% end close to this number of nodes
+    nodes = 17;
     OptSetup.N = nodes;
 	OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
-    OptSetup.OptimTol = 1e-1;
+    OptSetup.OptimTol = 1e-3;
     OptSetup.FeasTol = 1e-1;
-    OptSetup.initialguess = 'random';
-    OptSetup.Wdata = 1000;
-    OptSetup.Weffort = 1;
+    OptSetup.initialguess = 'eqLce';
+    OptSetup.Wdata = 1;
+    OptSetup.Weffort = 0;
     OptSetup.equality_constraints = 1;
     OptSetup.solver = 'IPOPT';
 
@@ -18,15 +18,18 @@ function runopt_elbow
 
     % data: static position, with elbow going from zero to 90 degrees
     x0 = load('equilibrium.mat');
-    data = [x0.x(1:14) x0.x(1:14)]'; % two time points
+    data = [x0.x(1:14) x0.x(1:14) x0.x(1:14)]'; % three time points
+    data(1,13) = 0*pi/180; % change flexion in first time point to 0 degrees
     data(2,13) = 90*pi/180; % change flexion in second time point to 90 degrees
-    t = [0;1];
+    data(3,13) = 0*pi/180; % change flexion in third time point to 0 degrees
+    t = [0;0.5;1];
 
     % Create folder for results, if it does not already exist
-    if ~exist('opt_results','dir')
-        mkdir('opt_results');
+    folder_name = 'flexion-no-effort';
+    if ~exist(folder_name,'dir')
+        mkdir(folder_name);
     end
-    filename = 'opt_results/elbow_flexion';
+    filename = [folder_name '/output'];
     
     das3_optimize_elbow(data,t,[filename '_' num2str(nodes)],OptSetup);
 	% now do a series of optimizations, each time increasing number of nodes by a certain factor
@@ -38,7 +41,7 @@ function runopt_elbow
 		if (nodes >= maxnodes) 
 			nodes = maxnodes;
 			OptSetup.OptimTol = 1e-3;
-            OptSetup.FeasTol = 1e-3;
+            OptSetup.FeasTol = 1e-1;
 		end
 		% redo the optimization with previous result as initial guess
         OptSetup.N = nodes;

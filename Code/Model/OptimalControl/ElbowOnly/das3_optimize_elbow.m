@@ -178,6 +178,7 @@ iact = [];
 iLce = [];
 
 iThorSh = [];
+iThorSh_vel = [];
 imeas_ThorSh = [];
 iElbow = [];
 imeas_elbow = [];
@@ -188,6 +189,7 @@ for i_node=0:N-1
     
     iThorSh = [iThorSh nvarpernode*i_node+lockeddofs];
     %iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
+    iThorSh_vel = [iThorSh_vel nvarpernode*i_node+ndof+lockeddofs];
     imeas_ThorSh = [imeas_ThorSh nmeas_dof*i_node+lockeddofs];
 	%imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
 end
@@ -204,12 +206,17 @@ end
 U(iThorSh) = datavec(imeas_ThorSh);
 L(iThorSh) = datavec(imeas_ThorSh);
 
+% the thorax and shoulder velocity is set to zero
+U(iThorSh_vel) = zeros(N*nlockeddofs,1);
+L(iThorSh_vel) = zeros(N*nlockeddofs,1);
+
 % make an initial guess
 if strcmp(initialguess, 'mid')
     X0 = (L + U)/2;						% halfway between upper and lower bound
     X0 = X0 + 0.001;					% to avoid exact zero velocity, for which Autolev equations do not work
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
+    X0(iElbow) = datavec(imeas_elbow);
 elseif numel(strfind(initialguess, 'init')) > 0
     xeq = load('equilibrium.mat'); 
     if N>1
@@ -218,12 +225,14 @@ elseif numel(strfind(initialguess, 'init')) > 0
         X0 = xeq.x;
     end
 elseif numel(strfind(initialguess, 'eqLce')) > 0
-    xeq = load('equilibrium.mat'); 
-    if N>1
-        X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
-    else
-        X0 = xeq.x;
-    end
+%     xeq = load('equilibrium.mat'); 
+%     if N>1
+%         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
+%     else
+%         X0 = xeq.x;
+%     end
+    X0 = zeros(nvar,1);
+    X0(iThorSh) = datavec(imeas_ThorSh);
     X0(iElbow) = datavec(imeas_elbow);
     ix = 1:nstates;
     equil_Lce = zeros(nmus*N,1);
@@ -256,6 +265,7 @@ else
 end
 
 X0(iThorSh) = datavec(imeas_ThorSh);
+X0(iThorSh_vel) = zeros(N*nlockeddofs,1);
 
 % run optimization
 if (OptSetup.MaxIter > 0)
@@ -405,6 +415,7 @@ x = reshape(X,nvarpernode,N);
 Result.times = times;
 Result.input_data = data;
 Result.x = x(1:nstates,:);
+Result.obj_str = obj_str;
 if N>1
     Result.u = x(nstates+(1:ncontrols),:);
 else
@@ -465,7 +476,7 @@ beep;
             wobj_str = sprintf('%9.5f (fit) + %9.5f (effort)', wf1,wf2);
 		end
 						
-        if (print)
+        if print
             fprintf(obj_str);
             fprintf('\n');
             fprintf(wobj_str);

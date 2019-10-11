@@ -8,7 +8,7 @@
 load('model_struct.mat');
 
 % Set the indices of muscles we want to include
-muscle_indices = [83,86,109,119]; % biceps, triceps, brachialis, pronator teres
+muscle_indices = [86:89,109:115]; % triceps, brachialis
 model.nMus = length(muscle_indices);
 
 all_muscles = model.muscles;
