@@ -16,7 +16,7 @@ function build_trc_file(filename,path,markers)
 
 
 if nargin<3,
-    markers = {'C7','T8','IJ','PX','AA','AC','AI','TS','SC','GH','LE','ME','US','RS'};
+    markers = {'c7','t8','ij','px','aa','ac','ai','ts','sc','gu','EpL','EpM','US','RS'};
 end
 
 if nargin<2
@@ -47,8 +47,9 @@ data_out = [nframe; time'];
 
 % Get initial position of IJ to translate all data so that at the initial
 % frame, IJ = (0,0,0)
-IJ_init = data.marker_data.Markers.IJ(1,:);
+IJ_init = data.marker_data.Markers.ij(1,:);
 IJ_init_mat = repmat(IJ_init,length(time),1);
+
 
 for imark = 1:length(markers)
 
@@ -69,7 +70,8 @@ for imark = 1:length(markers)
         % RR: Vicon coordinate frame is x back, y left, z up. Convert to x
         % left, y up, z back for OpenSim model
         %data_out = [data_out; -XYZ(:,1)'/1000; XYZ(:,3)'/1000; XYZ(:,2)'/1000];
-        data_out = [data_out; XYZ(:,2)'/1000; XYZ(:,3)'/1000; XYZ(:,1)'/1000];
+        data_out = [data_out; XYZ(:,2)'/1000; XYZ(:,3)'/1000; -XYZ(:,1)'/1000];        
+        %data_out = [data_out; AxelRot(XYZ(:,2)'/1000, 90,[1 0 0],[]); AxelRot(XYZ(:,3)'/1000,0,[0 1 0],[]); AxelRot(-XYZ(:,1)'/1000,180,[0 0 1],[])];
 
     elseif strcmp(markers{imark},'GH') && isfield(data.marker_data.Markers,'GHhum')
         % GH in some cases is saved as GHhum
@@ -81,7 +83,8 @@ for imark = 1:length(markers)
         % RR: Vicon coordinate frame is x back, y left, z up. Convert to x
         % left, y up, z back for OpenSim model
         %data_out = [data_out; -XYZ(:,1)'/1000; XYZ(:,3)'/1000; XYZ(:,2)'/1000];
-        data_out = [data_out; XYZ(:,2)'/1000; XYZ(:,3)'/1000; XYZ(:,1)'/1000];
+        data_out = [data_out; XYZ(:,2)'/1000; XYZ(:,3)'/1000; -XYZ(:,1)'/1000];
+        %data_out = [data_out; AxelRot(XYZ(:,2)'/1000, 90,[1 0 0],[]); AxelRot(XYZ(:,3)'/1000,0,[0 1 0],[]); AxelRot(-XYZ(:,1)'/1000,180,[0 0 1],[])];
 
     else
         error(['Invalid marker name ', markers{imark}]);
