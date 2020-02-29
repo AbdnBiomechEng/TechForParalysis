@@ -41,43 +41,43 @@ rs_us_z(i)=ScaleFactor(15,ntest);              % z ulna & z radius
 
 %Getting to measures under model scalar which is under scale tool
 ms = SCTool.getModelScaler().getScaleSet();
-a_t = ms.get('thorax');
+a_t = ms.get('thorax_xyz');
 prop_t = a_t.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(ij_c7(i), prop_t, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(ij_px(i), prop_t, 1) % changing the y-axis s.f.
 PropertyHelper.setValueDouble(ij_ac(i), prop_t, 2) % changing the z-axis s.f.
 
-a_c = ms.get('clavicle');
+a_c = ms.get('clavicle_xyz');
 prop_c = a_c.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(ijc_acc_x(i), prop_c, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(ijc_acc_y(i), prop_c, 1) % changing the y-axis s.f.
 PropertyHelper.setValueDouble(ijc_acc_z(i), prop_c, 2) % changing the z-axis s.f.
 
-a_s = ms.get('scapula');
+a_s = ms.get('scapula_xyz');
 prop_s = a_s.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(aa_ac(i), prop_s, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(ai_ts(i), prop_s, 1) % changing the y-axis s.f.
 PropertyHelper.setValueDouble(aa_ts(i), prop_s, 2) % changing the z-axis s.f.
 
-a_h = ms.get('humerus');
+a_h = ms.get('humerus_xyz');
 prop_h = a_h.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(EpL_EpM_x(i), prop_h, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(gu_centelbow(i), prop_h, 1) % changing the y-axis s.f.
 PropertyHelper.setValueDouble(EpL_EpM_z(i), prop_h, 2) % changing the z-axis s.f.
 
-a_u = ms.get('ulna');
+a_u = ms.get('ulna_xyz');
 prop_u = a_u.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(rs_us_x(i), prop_u, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(centelbow_centusrs(i), prop_u, 1) % changing the y-axis s.f.
 PropertyHelper.setValueDouble(rs_us_z(i), prop_u, 2) % changing the z-axis s.f.
 
-a_r = ms.get('radius');
+a_r = ms.get('radius_xyz');
 prop_r = a_r.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(rs_us_x(i), prop_r, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(centelbow_centusrs(i), prop_r, 1) % changing the y-axis s.f.
 PropertyHelper.setValueDouble(rs_us_z(i), prop_r, 2) % changing the z-axis s.f.
 
-a_ha = ms.get('hand');
+a_ha = ms.get('hand_xyz');
 prop_ha = a_ha.updPropertyByIndex(0);
 PropertyHelper.setValueDouble(1, prop_ha, 0) % changing the x-axis s.f.
 PropertyHelper.setValueDouble(1, prop_ha, 1) % changing the y-axis s.f.
