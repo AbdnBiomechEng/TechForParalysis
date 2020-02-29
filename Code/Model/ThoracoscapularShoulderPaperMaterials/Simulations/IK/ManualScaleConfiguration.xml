@@ -35,8 +35,8 @@
 						<segment>thorax</segment>
 						<apply>true</apply>
 					</Scale>
-					<Scale>
-						<scales name="clavicle_xyz"> 1.1 1.2 1.3</scales>
+					<Scale name="clavicle_xyz">
+						<scales> 1.1 1.2 1.3</scales>
 						<segment>clavicle</segment>
 						<apply>true</apply>
 					</Scale>
@@ -45,8 +45,8 @@
 						<segment>scapula</segment>
 						<apply>true</apply>
 					</Scale>
-					<Scale>
-						<scales name="humerus_xyz"> 1.1 1.2 1.3</scales>
+					<Scale name="humerus_xyz">
+						<scales> 1.1 1.2 1.3</scales>
 						<segment>humerus</segment>
 						<apply>true</apply>
 					</Scale>
