@@ -1,16 +1,15 @@
-
 % Pull in the modeling and scaling classes straight from the OpenSim distribution
 import org.opensim.modeling.*
 
 % Load Plugin needed for opening model
-Model.LoadOpenSimLibrary('C:\Users\rsk02\Desktop\IK routine\ThoracoscapularShoulderPaperMaterials\ScapulothoracicJointPlugin40\WinX64\ScapulothoracicJointPlugin40_WinX64');
+Model.LoadOpenSimLibrary('C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\ScapulothoracicJointPlugin40\WinX64\ScapulothoracicJointPlugin40_WinX64');
 
 % Get the generic model
-%[modelFile,modelFilePath] = uigetfile('*.osim','Pick the the model file to be used.');
+[modelFile,modelFilePath] = uigetfile('*.osim','Pick the the model file to be used.');
 
-% Load the original model and initialize
-%model_0 = Model(fullfile(modelFilePath, modelFile));
-%model_0.initSystem;
+%Load the original model and initialize
+model_0 = Model(fullfile(modelFilePath, modelFile));
+model_0.initSystem;
 %% 
 % Go to the subject's folder where .trc files are located
 trc_data_folder = 'C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\ExperimentalData\Markers';
@@ -18,10 +17,6 @@ trc_data_folder = 'C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\T
 % Get and operate on the files
 [SetupForIK,SetupPath] = uigetfile('*.xml','Pick the IK.xml configuration file.');
 ikTool = InverseKinematicsTool([SetupPath SetupForIK]);
-
-% Specify results folder
-resultsfolder = 'output_rerun_2020_02_11';
-mkdir(resultsfolder);
 
 %% 
 [filename, filepath] = uigetfile('*.xml','Pick the scale.xml configuration file.');
@@ -120,6 +115,10 @@ SCTool.print(NewNameXML);
 
 % run xml scaling file & as a result it will create .osim file
 K=SCTool.ScaleTool.run();
+
+% Specify IK results folder
+resultsfolder = ['IK output_',int2str(i)];
+mkdir(resultsfolder);
 
 % IK for the experimental lab tests (i.e. elbow extension, flexion, etc)
 % Tell Tool to use the loaded model
