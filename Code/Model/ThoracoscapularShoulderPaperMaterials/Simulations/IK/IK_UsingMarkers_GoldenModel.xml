@@ -40,7 +40,7 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="acc">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
@@ -88,25 +88,25 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="centelbow_humerus">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
 				<IKMarkerTask name="ij_proj_c7">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
 				<IKMarkerTask name="ij_proj_px">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
 				<IKMarkerTask name="ij_proj_ac">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
@@ -124,7 +124,7 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="centusrs">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
@@ -136,19 +136,19 @@
 				</IKMarkerTask>
 				<IKMarkerTask name="ai_proj_ts">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
 				<IKMarkerTask name="ai_proj_aa_z">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
 				<IKMarkerTask name="centelbow_ulna">
 					<!--Whether or not this task will be used during inverse kinematics solve.-->
-					<apply>true</apply>
+					<apply>false</apply>
 					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
 					<weight>1</weight>
 				</IKMarkerTask>
@@ -156,7 +156,7 @@
 			<groups />
 		</IKTaskSet>
 		<!--TRC file (.trc) containing the time history of observations of marker positions obtained during a motion capture experiment. Markers in this file that have a corresponding task and model marker are included.-->
-		<marker_file>Data/ABD_NL001_FP03.trc</marker_file>
+		<marker_file>C:/Users/rsk02/Documents/GitHub/TechForParalysis/Code/Model/ThoracoscapularShoulderPaperMaterials/Simulations/IK/../../ExperimentalData/Markers/ABD_NL001_FP03.trc</marker_file>
 		<!--The name of the storage (.sto or .mot) file containing the time history of coordinate observations. Coordinate values from this file are included if there is a corresponding model coordinate and task. -->
 		<coordinate_file>Unassigned</coordinate_file>
 		<!--The desired time range over which inverse kinematics is solved. The closest start and final times from the provided observations are used to specify the actual time range to be processed.-->
