@@ -1,7 +1,11 @@
-%% INVERSE KINEMATICS (Batch Processing)
+%% Scaling (Batch Processing)
 
-% Pull in the modeling classes straight from the OpenSim distribution
+% Pull in the modeling and scaling classes straight from the OpenSim distribution
 import org.opensim.modeling.*
+import org.opensim.modeling.Scale
+import org.opensim.modeling.ScaleSet
+import org.opensim.modeling.ScaleTool
+import org.opensim.modeling.ModelScaler
 
 % Load Plugin needed for opening model
 Model.LoadOpenSimLibrary('C:\Users\rsk02\Desktop\IK routine\ThoracoscapularShoulderPaperMaterials\ScapulothoracicJointPlugin40\WinX64\ScapulothoracicJointPlugin40_WinX64');
@@ -9,29 +13,38 @@ Model.LoadOpenSimLibrary('C:\Users\rsk02\Desktop\IK routine\ThoracoscapularShoul
 % Get the model
 [modelFile,modelFilePath] = uigetfile('*.osim','Pick the the model file to be used.');
 
-% Load the model and initialize
-model = Model(fullfile(modelFilePath, modelFile));
-model.initSystem();
+% Load the original model and initialize
+model1 = Model(fullfile(modelFilePath, modelFile));
+model1.initSystem;
 
 % Go to the subject's folder where .trc files are located
 trc_data_folder = 'C:\Users\rsk02\Desktop\IK routine\ThoracoscapularShoulderPaperMaterials\ExperimentalData\Markers\FP';
+xml_data_folder = 'C:\Users\rsk02\Desktop\IK routine\ThoracoscapularShoulderPaperMaterials\Simulations\IK_RR';
 
-% Get and operate on the files
-[SetupForIK,SetupPath] = uigetfile('*.xml','Pick the IK.xml setup file for this subject/model.');
-ikTool = InverseKinematicsTool([SetupPath SetupForIK]);
+trialsForScale=dir(fullfile(xml_data_folder, '*.xml'));
+nTest=size(trialsForScale);
 
-% Specify results folder
-resultsfolder = 'output_rerun_2020_02_11';
-mkdir(resultsfolder);
+% Loop to scale all the models and carry out IK for each
+for test=1:nTest
+
+% Get the name of the file for this xml test
+scaleFile = trialsForScale(test).name;
+
+% Create name of test from .xml file name
+name = regexprep(scaleFile,'.xml','');
+fullpath = fullfile(xml_data_folder, scaleFile);
+
+% Setup the ScaleTool for this test
+[SetupForScale,SetupScalePath] = uigetfile('*.xml','Pick the scale.xml setup file for this subject/model.');
+ScTool = ScaleTool([SetupScalePath SetupForScale]);
+ScTool.ScaleTool.run()
 
 % Tell Tool to use the loaded model
-ikTool.setModel(model);
+ikTool.setModel(model1);
 trialsForIK = dir(fullfile(trc_data_folder, '*.trc'));
 nTrials = size(trialsForIK);
-
-% Loop through IK for all the trials
-for trial= 1:nTrials
     
+for trial= 1:nTrials
     % Get the name of the file for this trial
     markerFile = trialsForIK(trial).name;
     
@@ -42,7 +55,7 @@ for trial= 1:nTrials
     % Get trc data to determine time range
     markerData = MarkerData(fullpath);
     
-    % Get initial and intial time 
+    % Get initial and final time 
     initial_time = markerData.getStartFrameTime();
     final_time = markerData.getLastFrameTime();
     
@@ -82,8 +95,7 @@ for trial= 1:nTrials
     end
     
 end
+end
 
 TotalTime = sum(time)/60;
 disp(['Total time = ', num2str(TotalTime), ' minutes'])
-
-
