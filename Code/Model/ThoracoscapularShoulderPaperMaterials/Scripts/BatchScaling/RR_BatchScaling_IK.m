@@ -4,29 +4,24 @@ import org.opensim.modeling.*
 % Load Plugin needed for opening model
 Model.LoadOpenSimLibrary('C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\ScapulothoracicJointPlugin40\WinX64\ScapulothoracicJointPlugin40_WinX64');
 
-% Get the generic model
-[modelFile,modelFilePath] = uigetfile('*.osim','Pick the the model file to be used.');
-
-%Load the original model and initialize
-model_0 = Model(fullfile(modelFilePath, modelFile));
-model_0.initSystem;
-%% 
 % Go to the subject's folder where .trc files are located
 trc_data_folder = 'C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\ExperimentalData\Markers';
 
-% Get and operate on the files
+% Get Scale configuration file
+[filename, filepath] = uigetfile('*.xml','Pick the scale.xml configuration file.');
+
+% Get IK configuration file
 [SetupForIK,SetupPath] = uigetfile('*.xml','Pick the IK.xml configuration file.');
 ikTool = InverseKinematicsTool([SetupPath SetupForIK]);
 
-%% 
-[filename, filepath] = uigetfile('*.xml','Pick the scale.xml configuration file.');
-
+%%
 % Select scale tool and apply it to the xml file
 SCTool = ScaleTool([filepath filename]);
 
 load('ScaleFactors.mat'); % load the data file for s.f.
 i=1;
-for ntest=4:17 % loop to go through all trials for xml
+
+for ntest=4:17 % loop to go through all 14 trials for xml
 ij_c7(i)=ScaleFactor(1,ntest);                 % x thorax
 ij_px(i)=ScaleFactor(2,ntest);                 % y thorax
 ij_ac(i)=ScaleFactor(3,ntest);                 % z thorax
@@ -102,7 +97,7 @@ GM_path=GM.updPropertyByIndex(0);
 PropertyHelper.setValueString('C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Model\ThoracoscapularShoulderModel02_generic.osim', GM_path, 0)
 
 % set file name & path for scaled .osim file
-ScaledModelPath='C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Model\ScaledModels\';
+ScaledModelPath='C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Model\';
 NewNameOSIM=['Model',int2str(i),'.osim'];
 PathOSIM=[ScaledModelPath,NewNameOSIM];
 OM_1=SCTool.getModelScaler();
@@ -110,15 +105,18 @@ OM_2=OM_1.updPropertyByIndex(7);
 PropertyHelper.setValueString(PathOSIM,OM_2,0);
 
 % name & print xml scaling files
-NewNameXML=['ScaleProtocol_',int2str(i),'.xml'];
-SCTool.print(NewNameXML);
+NewScalingXML=['ScaleProtocol_',int2str(i),'.xml'];
+PathScalingXML=[ScaledModelPath,NewScalingXML];
+SCTool.print(fullfile(ScaledModelPath,NewScalingXML));
 
 % run xml scaling file & as a result it will create .osim file
 K=SCTool.ScaleTool.run();
 
+%% IK Analysis
 % Specify IK results folder
+IKResultsPath='C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Results\IK';
 resultsfolder = ['IK output_',int2str(i)];
-mkdir(resultsfolder);
+mkdir(fullfile(IKResultsPath,resultsfolder));
 
 % IK for the experimental lab tests (i.e. elbow extension, flexion, etc)
 % Tell Tool to use the loaded model
@@ -149,11 +147,12 @@ for trial= 1:nTrials
     ikTool.setMarkerDataFileName(fullpath);
     ikTool.setStartTime(initial_time);
     ikTool.setEndTime(final_time);
-    ikTool.setOutputMotionFileName(fullfile([cd '\' resultsfolder], [name '_ik.mot']));
+    ikTool.setOutputMotionFileName(fullfile([IKResultsPath '\' resultsfolder], [name '_ik.mot']));
     
     % Save the settings in a setup file
-    outfile = ['Setup_IK_' name '.xml'];
-    ikTool.print(fullfile(SetupPath, outfile));
+    New_IK_XML = ['Setup_IK_' name '.xml'];
+    Path_IK_XML=[SetupPath,New_IK_XML];
+    ikTool.print(fullfile(SetupPath, New_IK_XML));
     
     % Printing out current cycle
     fprintf(['Performing IK on cycle # ' num2str(trial) '\n']);
@@ -163,30 +162,40 @@ for trial= 1:nTrials
     ikTool.run();
     time(trial) = toc;
 
-    % Move Marker Errors + Locations + Setup File into Output Folder
-    [status, message] = movefile('*_ik_model_marker_locations.sto', [cd '\' resultsfolder]);
+    % Move Marker Errors + Locations + Setup File + .osim file + xml scale file into Results Folder
+    % move marker locations
+    [status, message] = movefile('*_ik_model_marker_locations.sto', [IKResultsPath '\' resultsfolder]);
     if(status ~= 1)
         disp(['Locations file FAILED at relocating because ' message]);
     end
     
-    [status, message] = movefile('*_ik_marker_errors.sto', [cd '\' resultsfolder]);
+    % move marker errors
+    [status, message] = movefile('*_ik_marker_errors.sto', [IKResultsPath '\' resultsfolder]);
     if(status ~= 1)
         disp(['Errors file FAILED at relocating because ' message]);
     end
     
-    [status, message] = movefile('Setup_IK_*.xml', [cd '\' resultsfolder]);
+    % move IK xml configuration file
+    [status, message] = movefile(Path_IK_XML, [IKResultsPath '\' resultsfolder]);
     if(status ~= 1)
         disp(['Setup file FAILED at relocating because ' message]);
     end
     
+    % move .osim file
+    [status, message] = movefile(PathOSIM, [IKResultsPath '\' resultsfolder]);
+    if(status ~= 1)
+        disp(['Setup file FAILED at relocating because ' message]);
+    end    
+    
+    % move scale xml configuration file
+    [status, message] = movefile(PathScalingXML, [IKResultsPath '\' resultsfolder]);
+    if(status ~= 1)
+        disp(['Setup file FAILED at relocating because ' message]);
+    end       
 end
 
 TotalTime = sum(time)/60;
 disp(['Total time = ', num2str(TotalTime), ' minutes'])
 
-
-
 i=i+1;
 end
-
-
