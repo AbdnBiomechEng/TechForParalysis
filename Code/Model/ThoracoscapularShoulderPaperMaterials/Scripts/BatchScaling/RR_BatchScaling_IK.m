@@ -161,7 +161,11 @@ for trial= 1:nTrials
     tic;
     ikTool.run();
     time(trial) = toc;
-
+    
+    %Call plotting function for the current .mot file
+    x=fullfile([[IKResultsPath '\' resultsfolder '\'],[name '_ik.mot']]);
+    PlottingMOT(x)
+    
     % Move Marker Errors + Locations + Setup File + .osim file + xml scale file into Results Folder
     % move marker locations
     [status, message] = movefile('*_ik_model_marker_locations.sto', [IKResultsPath '\' resultsfolder]);
@@ -192,6 +196,12 @@ for trial= 1:nTrials
     if(status ~= 1)
         disp(['Setup file FAILED at relocating because ' message]);
     end       
+    
+    % move scale figures configuration file
+    [status, message] = movefile('*.fig', [IKResultsPath '\' resultsfolder]);
+    if(status ~= 1)
+        disp(['Setup file FAILED at relocating because ' message]);
+    end         
 end
 
 TotalTime = sum(time)/60;
