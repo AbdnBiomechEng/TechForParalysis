@@ -1,4 +1,7 @@
-motData = dlmread('ABD_NL001_FP03_ik.mot', '\t', 11, 0);
+function []=PlottingMOT(x) % you need to define x='ABD_NL001_FP03_ik.mot' in
+%the batch sclaing .m file
+
+motData = dlmread(x, '\t', 11, 0);
 time=motData(:,1);
 ground_thorax_rot_x=motData(:,2);
 ground_thorax_rot_y=motData(:,3);
@@ -95,3 +98,5 @@ xlabel('Time (s)','FontWeight','bold');
 ylabel('Joint angle (^o)','FontWeight','bold');
 legend('Pronation & Supination', 'Location','best');
 savefig('Elbow_flex_pronation_supination.fig');
+end
+
