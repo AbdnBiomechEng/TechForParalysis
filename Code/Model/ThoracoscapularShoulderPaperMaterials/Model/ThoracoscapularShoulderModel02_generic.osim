@@ -102,7 +102,8 @@
 										<representation>3</representation>
 									</SurfaceProperties>
 								</Appearance>
-								<dimensions> 0.0740668 0.169952 0.0704834</dimensions>
+								<!--The length of the radii of the ellipsoid.-->
+								<dimensions>0.074066800000000002 0.16995199999999999 0.070483400000000002</dimensions>
 							</WrapEllipsoid>
 							<WrapEllipsoid name="EllipsoidSurface">
 								<!--Whether or not the WrapObject is considered active in computing paths-->
@@ -127,7 +128,8 @@
 										<representation>3</representation>
 									</SurfaceProperties>
 								</Appearance>
-								<dimensions> 0.0994228 0.200001 0.0993853</dimensions>
+								<!--The length of the radii of the ellipsoid.-->
+								<dimensions>0.099422800000000006 0.20000100000000001 0.099385299999999996</dimensions>
 							</WrapEllipsoid>
 						</objects>
 						<groups />
@@ -321,7 +323,8 @@
 										<representation>3</representation>
 									</SurfaceProperties>
 								</Appearance>
-								<dimensions> 0.0403287 0.0906472 0.0300459</dimensions>
+								<!--The length of the radii of the ellipsoid.-->
+								<dimensions>0.040328700000000002 0.090647199999999997 0.0300459</dimensions>
 							</WrapEllipsoid>
 							<WrapCylinder name="Infra">
 								<!--Whether or not the WrapObject is considered active in computing paths-->
@@ -420,6 +423,7 @@
 										<representation>3</representation>
 									</SurfaceProperties>
 								</Appearance>
+								<!--The radius of the sphere.-->
 								<radius>0.024539745611113304</radius>
 							</WrapSphere>
 							<WrapSphere name="hheadsupraTminor">
@@ -445,6 +449,7 @@
 										<representation>3</representation>
 									</SurfaceProperties>
 								</Appearance>
+								<!--The radius of the sphere.-->
 								<radius>0.023472800149760553</radius>
 							</WrapSphere>
 							<WrapEllipsoid name="hheadInfra">
@@ -470,7 +475,8 @@
 										<representation>3</representation>
 									</SurfaceProperties>
 								</Appearance>
-								<dimensions> 0.0298252 0.0233659 0.0302255</dimensions>
+								<!--The length of the radii of the ellipsoid.-->
+								<dimensions>0.0298252 0.023365899999999998 0.030225499999999999</dimensions>
 							</WrapEllipsoid>
 						</objects>
 						<groups />
@@ -616,7 +622,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.1415926500000002 3.1415926500000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -632,7 +638,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.1415926500000002 3.1415926500000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -648,7 +654,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.1415926500000002 3.1415926500000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -664,7 +670,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.1415926500000002 3.1415926500000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -680,7 +686,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.1415926500000002 3.1415926500000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -696,7 +702,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.1415926500000002 3.1415926500000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -1021,7 +1027,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-1.5707963300000001 1.5707963300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -1101,7 +1107,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-0.78000000000000003 2.5299999999999998</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -1255,7 +1261,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>0 2.2689280300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -1393,7 +1399,7 @@
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-1.5707963300000001 1.5707963300000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
