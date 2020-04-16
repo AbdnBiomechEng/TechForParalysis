@@ -36,7 +36,7 @@ subplot(2,1,2);
 plot(time, ground_thorax_tx,'-k', time, ground_thorax_ty,':k', time, ground_thorax_tz,'--k','LineWidth',1);
 xlim([2.4 4.6]);
 xlabel('Time (s)','FontWeight','bold');
-ylabel('Joint angle (^o)','FontWeight','bold');
+ylabel('Displacement (m)','FontWeight','bold');
 legend('x-translation','y-translation','z-translation', 'Location','best');
 savefig('Thorax_Rotations_Translations.fig');
 
@@ -94,6 +94,7 @@ title('Elbow flexion, Ponation & Supination','fontSize',12);
 legend('Flexion', 'Location','best');
 subplot(2,1,2);
 plot(time, pro_sup,'-k','LineWidth',1);
+xlim([2.4 4.6]);
 xlabel('Time (s)','FontWeight','bold');
 ylabel('Joint angle (^o)','FontWeight','bold');
 legend('Pronation & Supination', 'Location','best');
