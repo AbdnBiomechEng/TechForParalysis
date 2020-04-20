@@ -13,8 +13,9 @@ markers={'ORLAU Subject 2:ST1', 'ORLAU Subject 2:ST2',...
         'ai', 'ts', 'pc', 'acc', 'gu', 'c7', 't8', 'ij', 'px',...
         'centelbow_humerus', 'centelbow_ulna', 'centusrs'};
 
-newmarkers={'ac', 'ijc', 'ij_proj_c7', 'ij_proj_px', 'ij_proj_ac',...
+AddedMarkers={'ac', 'ijc', 'ij_proj_c7', 'ij_proj_px', 'ij_proj_ac',...
     'ai_proj_aa_x', 'ai_proj_aa_z', 'ai_proj_ts'};
+markers=[markers AddedMarkers];
 
 [filename, filepath] = uigetfile('*.trc','Pick the trial.trc file.');
 TRC_filename = [filepath,filename];
@@ -22,6 +23,7 @@ trcData = dlmread(TRC_filename, '\t', 6, 0);
 trcData_noTimeFrame=trcData(:,3:end);
 time = trcData(:,2);
 nframe = trcData(:,1);
+
 
 opts = delimitedTextImportOptions("NumVariables", 189);
 % Specify range and delimiter
@@ -52,7 +54,19 @@ IJ_init_mat = repmat(IJ_init,length(time),size(trcData_noTimeFrame,2)/3);
 % all data are balanced relative to IJ with IJ at initial frame being
 % (0,0,0) and divided by 1000 to convert from mm to metres.
 trcData_balanced=(trcData_noTimeFrame-IJ_init_mat)/1000;
-data_out = [data_out trcData_balanced]';
+ac=trcData_balanced(:,160:162);
+ijc=trcData_balanced(:,172:174);
+ij_proj_c7=[trcData_balanced(:,166) trcData_balanced(:,173:174)]; %x-c7, the rest ij
+ij_proj_px=[trcData_balanced(:,172) trcData_balanced(:,175) trcData_balanced(:,174)]; %y-px, the rest ij
+ij_proj_ac=[trcData_balanced(:,172) trcData_balanced(:,173) trcData_balanced(:,162)]; %z-ac, the rest ij
+ai_proj_aa_x=[trcData_balanced(:,148) trcData_balanced(:,152) trcData_balanced(:,153)]; %x-aa, the rest ai
+ai_proj_ts=[trcData_balanced(:,151) trcData_balanced(:,155) trcData_balanced(:,153)]; %y-ts, the rest ai
+ai_proj_aa_z=[trcData_balanced(:,151) trcData_balanced(:,152) trcData_balanced(:,150)]; %z-aa, the rest ai
+
+data_out = [data_out trcData_balanced ac ijc ij_proj_c7 ij_proj_px...
+    ij_proj_ac ai_proj_aa_x ai_proj_ts ai_proj_aa_z]';
+
+%data_out = [data_out trcData_balanced]';
  
 for imark = 1:length(markers)
     % now loop through each maker name and make marker name with 3 tabs for the
