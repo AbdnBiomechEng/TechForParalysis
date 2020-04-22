@@ -9,9 +9,22 @@
 % Rosti Readioff, April 2020
 
 % call the trc file that you want to modify.
-[filename, filepath] = uigetfile('*.trc','Pick the trial.trc file.');
-TRC_filename = [filepath,filename];
-trcData = dlmread(TRC_filename, '\t', 6, 0); % read marker coordinates.
+import org.opensim.modeling.*
+trc_data_folder = 'C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\ExperimentalData\Markers';
+trialsForTRC = dir(fullfile(trc_data_folder, '*.trc'));
+nTrials = size(trialsForTRC);
+
+for trial=1:nTrials
+    
+% Get the name of the file for this trial
+markerFile = trialsForTRC(trial).name;
+    
+% Create name of trial from .trc file name
+name = regexprep(markerFile,'.trc','');
+fullpath = fullfile(trc_data_folder, markerFile);
+%[filename, filepath] = uigetfile('*.trc','Pick the trial.trc file.');
+%TRC_filename = [filepath,filename];
+trcData = dlmread(fullpath, '\t', 6, 0); % read marker coordinates.
 trcData_noTimeFrame=trcData(:,3:end); % all coordinates without the frame & time columns.
 time = trcData(:,2); % time 
 nframe = trcData(:,1); % frame
@@ -21,7 +34,7 @@ opts = delimitedTextImportOptions("NumVariables", 189);
 % Specify range and delimiter
 opts.DataLines = [1, 4];
 opts.Delimiter = "\t";
-HeaderTRC = readtable(TRC_filename, opts);
+HeaderTRC = readtable(fullpath, opts);
 HeaderTRC = table2array(HeaderTRC); 
 framerate=str2double(HeaderTRC(3,1)); % framerate
 startFrame=str2double(HeaderTRC(3,7)); % start of frame
@@ -33,19 +46,19 @@ noMarkers=str2double(HeaderTRC(3,4)); % no. of markers in the original trc
 % an if condition to check for the two different types of trc files
 % generated in the lab, which are loaded trials and no loaded trials.
 if noMarkers==56 % This is for no loaded trials.
-    markers={'ORLAU Subject 2:ST1','ORLAU Subject 2:ST2',...
-        'ORLAU Subject 2:ST3','ORLAU Subject 2:RACR1',...
-        'ORLAU Subject 2:RACR2','ORLAU Subject 2:RACR3',...
-        'ORLAU Subject 2:RUA1','ORLAU Subject 2:RUA2',...
-        'ORLAU Subject 2:RUA3','ORLAU Subject 2:RUA4',...
-        'ORLAU Subject 2:RFA1','ORLAU Subject 2:RFA2',...
-        'ORLAU Subject 2:RFA3','ORLAU Subject 2:RFA4',...
-        'ORLAU Subject 2:RH1','ORLAU Subject 2:RH2',...
-        'ORLAU Subject 2:RH3','RACR4','RUA1','RUA2','RUA3','RUA4',...
-        'RFA1','RFA2','RFA3','RFA4','RH1','RH2','RH3','RACR1','RACR2',...
-        'RACR3','ST1','ST2','ST3','EpL','EpM','rs','us','RMC3',...
-        'RMCP2','RMCP3','RMCP5','aa','ai','ts','pc','acc','gu','c7',...
-        't8','ij','px','centelbow_humerus','centelbow_ulna','centusrs'};
+markers={'ORLAU Subject 2:ST1','ORLAU Subject 2:ST2',...
+    'ORLAU Subject 2:ST3','ORLAU Subject 2:RACR1',...
+    'ORLAU Subject 2:RACR2','ORLAU Subject 2:RACR3',...
+    'ORLAU Subject 2:RUA1','ORLAU Subject 2:RUA2',...
+    'ORLAU Subject 2:RUA3','ORLAU Subject 2:RUA4',...
+    'ORLAU Subject 2:RFA1','ORLAU Subject 2:RFA2',...
+    'ORLAU Subject 2:RFA3','ORLAU Subject 2:RFA4',...
+    'ORLAU Subject 2:RH1','ORLAU Subject 2:RH2',...
+    'ORLAU Subject 2:RH3','RACR4','RUA1','RUA2','RUA3','RUA4',...
+    'RFA1','RFA2','RFA3','RFA4','RH1','RH2','RH3','RACR1','RACR2',...
+    'RACR3','ST1','ST2','ST3','EpL','EpM','rs','us','RMC3',...
+    'RMCP2','RMCP3','RMCP5','aa','ai','ts','pc','acc','gu','c7',...
+    't8','ij','px','centelbow_humerus','centelbow_ulna','centusrs'};
 
 % Below are the new markers added to the trial - please change this if you
 % wanted to add more markers to the trial.
@@ -149,10 +162,10 @@ dataheader2 = [dataheader2 '\n'];
 format_text = [format_text '\n'];
 
 %open the file
-fid_1 = fopen(TRC_filename,'w');
+fid_1 = fopen(markerFile,'w');
 
 % first write the header data
-fprintf(fid_1,'PathFileType\t4\t(X/Y/Z)\t %s\n',filename);
+fprintf(fid_1,'PathFileType\t4\t(X/Y/Z)\t %s\n',markerFile);
 fprintf(fid_1,'DataRate\tCameraRate\tNumFrames\tNumMarkers\tUnits\tOrigDataRate\tOrigDataStartFrame\tOrigNumFrames\n');
 fprintf(fid_1,'%d\t%d\t%d\t%d\t%s\t%d\t%d\t%d\n', framerate, framerate, length(time), length(markers), 'm', framerate, startFrame, length(time));
 fprintf(fid_1, dataheader1);
@@ -164,4 +177,6 @@ fprintf(fid_1, format_text,data_out);
 % close the file
 fclose(fid_1);
 
-disp(['Written trc file ' TRC_filename]);
+disp(['Written trc file ' markerFile]);
+
+end
