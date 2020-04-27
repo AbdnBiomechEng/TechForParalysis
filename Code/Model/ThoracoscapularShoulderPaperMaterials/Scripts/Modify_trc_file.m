@@ -45,6 +45,7 @@ noMarkers=str2double(HeaderTRC(3,4)); % no. of markers in the original trc
 
 % an if condition to check for the two different types of trc files
 % generated in the lab, which are loaded trials and no loaded trials.
+%% 
 if noMarkers==56 % This is for no loaded trials.
 markers={'ORLAU Subject 2:ST1','ORLAU Subject 2:ST2',...
     'ORLAU Subject 2:ST3','ORLAU Subject 2:RACR1',...
@@ -63,7 +64,7 @@ markers={'ORLAU Subject 2:ST1','ORLAU Subject 2:ST2',...
 % Below are the new markers added to the trial - please change this if you
 % wanted to add more markers to the trial.
 AddedMarkers={'ac', 'ijc', 'ij_proj_c7', 'ij_proj_px', 'ij_proj_ac',...
-    'ai_proj_aa_x', 'ai_proj_aa_z', 'ai_proj_ts'};
+    'ai_proj_aa_x', 'ai_proj_aa_z', 'ai_proj_ts','ai_proj_pc_z'};
 markers=[markers AddedMarkers]; % combines old and new markers.
 
 % Get initial position of IJ to translate all data so that at the initial
@@ -85,6 +86,7 @@ ij_proj_ac=[trcData_balanced(:,154) trcData_balanced(:,155) trcData_balanced(:,1
 ai_proj_aa_x=[trcData_balanced(:,130) trcData_balanced(:,134) trcData_balanced(:,135)]; %x-aa, the rest ai
 ai_proj_ts=[trcData_balanced(:,133) trcData_balanced(:,137) trcData_balanced(:,135)]; %y-ts, the rest ai
 ai_proj_aa_z=[trcData_balanced(:,133) trcData_balanced(:,134) trcData_balanced(:,132)]; %z-aa, the rest ai
+ai_proj_pc_z=[trcData_balanced(:,133) trcData_balanced(:,134) trcData_balanced(:,141)]; %z-aa, the rest ai
 
 elseif noMarkers==62 % This is for loaded trials.
 markers={'ORLAU Subject 2:ST1', 'ORLAU Subject 2:ST2',...
@@ -105,7 +107,7 @@ markers={'ORLAU Subject 2:ST1', 'ORLAU Subject 2:ST2',...
 % Below are the new markers added to the trial - please change this if you
 % wanted to add more markers to the trial.
 AddedMarkers={'ac', 'ijc', 'ij_proj_c7', 'ij_proj_px', 'ij_proj_ac',...
-    'ai_proj_aa_x', 'ai_proj_aa_z', 'ai_proj_ts'};
+    'ai_proj_aa_x', 'ai_proj_aa_z', 'ai_proj_ts', 'ai_proj_pc_z'};
 markers=[markers AddedMarkers]; % combines old and new markers.
 
 % Get initial position of IJ to translate all data so that at the initial
@@ -122,12 +124,12 @@ trcData_balanced=(trcData_noTimeFrame-IJ_init_mat)/1000;
 ac=trcData_balanced(:,160:162);
 ijc=trcData_balanced(:,172:174);
 ij_proj_c7=[trcData_balanced(:,166) trcData_balanced(:,173:174)]; %x-c7, the rest ij
-ij_proj_px=[trcData_balanced(:,172) trcData_balanced(:,175) trcData_balanced(:,174)]; %y-px, the rest ij
+ij_proj_px=[trcData_balanced(:,172) trcData_balanced(:,176) trcData_balanced(:,174)]; %y-px, the rest ij
 ij_proj_ac=[trcData_balanced(:,172) trcData_balanced(:,173) trcData_balanced(:,162)]; %z-ac, the rest ij
 ai_proj_aa_x=[trcData_balanced(:,148) trcData_balanced(:,152) trcData_balanced(:,153)]; %x-aa, the rest ai
 ai_proj_ts=[trcData_balanced(:,151) trcData_balanced(:,155) trcData_balanced(:,153)]; %y-ts, the rest ai
-ai_proj_aa_z=[trcData_balanced(:,151) trcData_balanced(:,152) trcData_balanced(:,150)]; %z-aa, the rest ai
-
+ai_proj_aa_z=[trcData_balanced(:,151:152) trcData_balanced(:,150)]; %z-aa, the rest ai
+ai_proj_pc_z=[trcData_balanced(:,151) trcData_balanced(:,152) trcData_balanced(:,159)];
 else % if number of markers doesn't match any of the two then you get an error.
     error('More markers than expected');
 end
@@ -144,7 +146,7 @@ data_out = [nframe time];
 % combine above with all the original xyz coordinates and coordinates newly
 % generated for the new markers.
 data_out = [data_out trcData_balanced ac ijc ij_proj_c7 ij_proj_px...
-    ij_proj_ac ai_proj_aa_x ai_proj_ts ai_proj_aa_z]';
+    ij_proj_ac ai_proj_aa_x ai_proj_aa_z ai_proj_ts ai_proj_pc_z]';
 
 % Loop through each maker name and make marker name with 3 tabs for the
 % first line and the X Y Z columns with the marker numnber on the second
