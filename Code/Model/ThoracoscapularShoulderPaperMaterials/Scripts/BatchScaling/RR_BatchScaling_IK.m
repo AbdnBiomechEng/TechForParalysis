@@ -1,3 +1,9 @@
+% This code changes scale factors based on a .mat file created from Opensim
+% and experimental data files. The main aim of this code is to study
+% scaling sensetivity on inverse kinematics.
+%
+% Rosti Readioff, April 2020
+
 % Pull in the modeling and scaling classes straight from the OpenSim distribution
 import org.opensim.modeling.*
 
@@ -18,10 +24,10 @@ ikTool = InverseKinematicsTool([SetupPath SetupForIK]);
 % Select scale tool and apply it to the xml file
 SCTool = ScaleTool([filepath filename]);
 
-load('ScaleFactors.mat'); % load the data file for s.f.
+load('ScaleFactors_S3.mat'); % load the data file for s.f. in one subject
 i=1;
 
-for ntest=4:17 % loop to go through all 14 trials for xml
+for ntest=1:14 % loop to go through all 14 trials for xml
 ij_c7(i)=ScaleFactor(1,ntest);                 % x thorax
 ij_px(i)=ScaleFactor(2,ntest);                 % y thorax
 ij_ac(i)=ScaleFactor(3,ntest);                 % z thorax
@@ -94,7 +100,7 @@ PropertyHelper.setValueDouble(1, prop_ha, 2) % changing the z-axis s.f.
 % set file name & path for the generic model
 GM=SCTool.getGenericModelMaker();
 GM_path=GM.updPropertyByIndex(0);
-PropertyHelper.setValueString('C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Model\ThoracoscapularShoulderModel02_generic.osim', GM_path, 0)
+PropertyHelper.setValueString('C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Model\ThoracoscapularShoulderModel02_generic_01.osim', GM_path, 0)
 
 % set file name & path for scaled .osim file
 ScaledModelPath='C:\Users\rsk02\Documents\GitHub\TechForParalysis\Code\Model\ThoracoscapularShoulderPaperMaterials\Model\';
