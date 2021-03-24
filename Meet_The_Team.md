@@ -1,27 +1,27 @@
 ## Current Team Members
 
-### [Dr Ed Chadwick](https://www.keele.ac.uk/istm/staff/edchadwick/)
-Ed is a Biomedical Engineer with a background in Mechanical Engineering. He is interested in improving rehabilitation and assistive technology for the benefit of those with movement disorders, and specialises in computer modelling to understand the biomechanics of human movement.
+### [Dr Ed Chadwick](https://www.abdn.ac.uk/people/edward.chadwick)
+Ed is a Biomedical Engineer with a background in Mechanical Engineering. He is interested in improving rehabilitation and assistive technology for the benefit of those with movement disorders, and specialises in computer modelling to understand the biomechanics of human movement. He teaches Biomedical Engineering at the University of Aberdeen.
 
-Outside of work, Ed is a keen amateur photographer and bicycle enthusiast. He identifies as European. Find him on [Twitter](https://twitter.com/ekjchadwick).
+Outside of work, Ed is a keen amateur photographer and bicycle enthusiast. Find him on [Twitter](https://twitter.com/ekjchadwick).
 
 ![Ed](https://github.com/dblana/TechForParalysis/blob/master/Photos/Ed.jpg "Ed Chadwick")
 
-### [Dr Dimitra Blana](https://www.keele.ac.uk/istm/staff/dimitrablana/)
-Dimitra is a Research Fellow in Biomedical Engineering. Her main focus is developing biomechanical models, to help understand the mechanisms of movement disorders and design effective rehabilitation treatments. She is also very interested in science communication and [public engagement with research](http://soapboxscience.org/stoke-on-trent-local-organising-team/).
+### [Dr Dimitra Blana](https://www.abdn.ac.uk/people/dimitra.blana)
+Dimitra is a Biomedical Engineer and Lecturer in Health Data Science at the University of Aberdeen. Her main focus is developing biomechanical models, to help understand the mechanisms of movement disorders and design effective rehabilitation treatments. She is also very interested in science communication and [public engagement with research](http://soapboxscience.org/stoke-on-trent-local-organising-team/).
 
 At home, Dimitra likes reading, baking, and planning cycling and camping holidays. She's on [Twitter](https://twitter.com/DimitraBlana).  
 
 ![Dimitra](https://github.com/dblana/TechForParalysis/blob/master/Photos/Dimitra.jpg "Dimitra Blana")
 
 ### Professor Rory O’Connor
-Rory is the Director of the Charterhouse Rehabilitation Technology Laboratory at the University of Leeds.
+Rory is a Rehabilitation doctor, and the Director of the Charterhouse Rehabilitation Technology Laboratory at the University of Leeds.
 
 ### Mr Simon Pickard
-Simon is a consultant orthopaedic surgeon at the Robert Jones and Agnes Hunt Orthopaedic Hospital (RJAH).
+Simon is a consultant orthopaedic surgeon at the Robert Jones and Agnes Hunt Orthopaedic Hospital (RJAH) in Oswestry.
 
 ### Dr Neil Postans
-Neil is a clinical engineer responsible for the Functional Electrical Stimulation service at RJAH.
+Neil is a clinical engineer responsible for the Functional Electrical Stimulation service (and many other things) at RJAH.
 
 ### Mr Martin Seyres
 Martin has a first degree in Physiotherapy, and an MSc in Biomedical Engineering. He is currently finishing a PhD in Biomedical Engineering at Keele, where he is investigating shoulder instability.
