@@ -1,5 +1,7 @@
+## Current Team Members
+
 ### [Dr Ed Chadwick](https://www.keele.ac.uk/istm/staff/edchadwick/)
-Ed is a Biomedical Engineer with a background in Mechanical Engineering. He is interested in improving rehabilitation and assistive technology for the benefit of those with movement disorders, and specialises in computer modelling to understand the biomechanics of human movement. 
+Ed is a Biomedical Engineer with a background in Mechanical Engineering. He is interested in improving rehabilitation and assistive technology for the benefit of those with movement disorders, and specialises in computer modelling to understand the biomechanics of human movement.
 
 Outside of work, Ed is a keen amateur photographer and bicycle enthusiast. He identifies as European. Find him on [Twitter](https://twitter.com/ekjchadwick).
 
@@ -12,8 +14,22 @@ At home, Dimitra likes reading, baking, and planning cycling and camping holiday
 
 ![Dimitra](https://github.com/dblana/TechForParalysis/blob/master/Photos/Dimitra.jpg "Dimitra Blana")
 
+### Professor Rory O’Connor
+Rory is the Director of the Charterhouse Rehabilitation Technology Laboratory at the University of Leeds.
+
+### Mr Simon Pickard
+Simon is a consultant orthopaedic surgeon at the Robert Jones and Agnes Hunt Orthopaedic Hospital (RJAH).
+
+### Dr Neil Postans
+Neil is a clinical engineer responsible for the Functional Electrical Stimulation service at RJAH.
+
+### Mr Martin Seyres
+Martin has a first degree in Physiotherapy, and an MSc in Biomedical Engineering. He is currently finishing a PhD in Biomedical Engineering at Keele, where he is investigating shoulder instability.
+
+## Alumni
+
 ### Dr Rosti Readioff
-Rosti is a chartered engineer, interested in tissue mechanics and computational modelling of biological systems using both finite element and musculoskeletal modelling. She is currently working on the application of technology to support people with spinal cord injury. 
+Rosti is a chartered engineer, interested in tissue mechanics and computational modelling of biological systems using both finite element and musculoskeletal modelling. She is currently working on the application of technology to support people with spinal cord injury.
 
 She enjoys all sort of outdoor activities (i.e. walking, hiking and cycling) and anything that might involve spending time in nature. She is a seasonal 5k and 10k runner, and has previously completely a half marathon. Occasionally, she dabbles in photography and playing guitar. In general, she loves plants, birds, cats (although highly allergic to them) and mathematics.
 
@@ -34,13 +50,3 @@ Alice is a Biology and Psychology graduate with past experience researching anim
 When not working, Alice enjoys playing the piano, painting, and working with fabric. At the weekends she can often be found out in the garden or spending time with her two cats.
 
 ![Alice](https://github.com/dblana/TechForParalysis/blob/master/Photos/Alice.jpg "Alice Faux-Nightingale")
-
-### Professor Rory O’Connor 
-Rory is the Director of the Charterhouse Rehabilitation Technology Laboratory at the University of Leeds. 
-
-### Mr Simon Pickard
-Simon is a consultant orthopaedic surgeon at the Robert Jones and Agnes Hunt Orthopaedic Hospital (RJAH).
-
-### Dr Neil Postans
-Neil is a clinical engineer responsible for the Functional Electrical Stimulation service at RJAH. 
-
