@@ -1,19 +1,11 @@
 # Tech for Paralysis
 
-Hello and welcome to the 'Tech for Paralysis' project! :tada:
+## Personalised approach to restoration of arm function in people with high-level tetraplegia
 
-This project aims to develop efficient methods for personalising assistive technology to restore arm function in people with high-level spinal cord injury. 
+The goal of this project is to improve the independence of people with arm paralysis by enabling functional movement using electrical muscle stimulation. Functional Electrical Stimulation (FES) is an assistive and rehabilitation technology whereby low-level electrical signals are used to induce muscle contraction where voluntary control has been lost. Such muscle contractions can strengthen the muscle, load the bones, or produce functional movement in people with paralysis.
 
-We will use a combination of electrical stimulation to elicit forces in muscles no longer under voluntary control, and mobile arm supports to compensate for insufficient muscle force where necessary. We will use computational models specific to an individual's functional limitations to produce patient-specific interventions. 
+In the lower limb, FES technology is used to prevent foot drop during gait in post-stroke hemiplegia. In the upper limb, FES is much less widely used due to the highly selective nature of the movements that users want to perform, as well as the significant variability in motor deficits that exist in people with spinal injuries. This makes the control of any stimulation system very challenging.
 
-The project will be in three phases: building a model to predict the effects of electrical stimulation on a paralysed arm with arm support, development of methodologies using this model to optimise the arm support and stimulation system, and testing of stimulation controllers designed using this approach. 
+In this EPSRC-funded research project, we are working with clinical engineers and spinal injuries specialists to develop efficient methods for personalising an FES system to allow people with high-level spinal cord injuries to control their own arm movements. Biomechanical models, customised to represent the functional limitations due to an injury, are used to predict the effects of electrical stimulation on the paralysed arm. In this way, we can optimise system set up and control (which muscles to stimulate and when) to achieve a desired set of tasks for an individual to help them regain their independence.
 
-The project brings together experts in biomechanics and musculoskeletal modelling, spinal cord injury rehabilitation and assistive technologies. [Click here](https://github.com/dblana/TechForParalysis/blob/master/Meet_The_Team.md) to meet the team.
-
-The project is funded by the [UK Engineering and Physical Sciences Research Council](https://epsrc.ukri.org/).
-
-## Contributing
-
-Thank you for your interest in contributing to our project! Please let us know if you find typing mistakes, documentation that is unclear, or code that could be improved. Our aim is to be completely open with our research, and we welcome your comments and feedback. :smile:
-
-Our project adheres to a [code of conduct](CODE_OF_CONDUCT.md). Please uphold this code, and report unacceptable behaviour to [Dimitra](https://github.com/dblana).
+This is a project led by the University of Aberdeen Biomechanical Engineering group, with the collaboration of the Robert Jones and Agnes Hunt Orthopaedic Hospital, Keele University and the University of Leeds. The project is funded by a grant from the Engineering and Physical Sciences Research Council.
