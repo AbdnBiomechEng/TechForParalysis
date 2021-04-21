@@ -12,7 +12,7 @@ In this EPSRC-funded research project, we are working with clinical engineers an
 
 ## Publications and presentations
 
-- Readioff, Rosti, Zaha Kamran Siddiqui, Caroline Stewart, Louisa Fulbrook, Rory J. O’Connor, and Edward K. Chadwick. 2021. ‘Use and Evaluation of Assistive Technologies for Upper Limb Function in Tetraplegia’. The Journal of Spinal Cord Medicine 0 (0): 1–12. https://doi.org/10.1080/10790268.2021.1878342.
+- Readioff, Rosti, Zaha Kamran Siddiqui, Caroline Stewart, Louisa Fulbrook, Rory J. O’Connor, and Edward K. Chadwick. 2021. ‘[Use and Evaluation of Assistive Technologies for Upper Limb Function in Tetraplegia](https://www.tandfonline.com/doi/full/10.1080/10790268.2021.1878342)’. The Journal of Spinal Cord Medicine 0 (0): 1–12. https://doi.org/10.1080/10790268.2021.1878342.
 - Rosti Readioff, Dimitra Blana, Ed Chadwick: [Transforming the lives of people with tetraplegia](https://www.researchgate.net/publication/332298568_Transforming_the_lives_of_tetraplegics), poster presentation at the Women in Engineering Society Centenary Conference, 1019.
 
 ## Contact
