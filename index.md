@@ -2,7 +2,7 @@
 title: Welcome to the Tech 4 Paralysis project
 ---
 
-## Personalised approach to restoration of arm function in people with high-level tetraplegia
+## Improving arm function in people with spinal injuries
 
 The goal of this project is to improve the independence of people with arm paralysis by enabling functional movement using electrical muscle stimulation. Functional Electrical Stimulation (FES) is an assistive and rehabilitation technology whereby low-level electrical signals are used to induce muscle contraction where voluntary control has been lost. Such muscle contractions can strengthen the muscle, load the bones, or produce functional movement in people with paralysis.
 
