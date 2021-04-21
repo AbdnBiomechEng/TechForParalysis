@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Welcome to the Tech 4 Paralysis project
 ---
 
