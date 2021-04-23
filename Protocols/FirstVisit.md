@@ -1,2 +1,0 @@
-Biomechanical measurements:
-
