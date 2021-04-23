@@ -2,7 +2,7 @@
 
 Hello and welcome to the 'Tech for Paralysis' project! :tada:
 
-This project aims to develop efficient methods for personalising assistive technology to restore arm function in people with high-level spinal cord injury. 
+This project aims to develop efficient methods for personalising assistive technology to restore arm function in people with high-level spinal cord injury. A general description of the project can be found [here](https://abdnbiomecheng.github.io/TechForParalysis/).
 
 We will use a combination of electrical stimulation to elicit forces in muscles no longer under voluntary control, and mobile arm supports to compensate for insufficient muscle force where necessary. We will use computational models specific to an individual's functional limitations to produce patient-specific interventions. 
 
