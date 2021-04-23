@@ -10,6 +10,8 @@ In the lower limb, FES technology is used to prevent foot drop during gait in po
 
 In this EPSRC-funded research project, we are working with clinical engineers and spinal injuries specialists to develop efficient methods for personalising an FES system to allow people with high-level spinal cord injuries to control their own arm movements. Biomechanical models, customised to represent the functional limitations due to an injury, are used to predict the effects of electrical stimulation on the paralysed arm. In this way, we can optimise system set up and control (which muscles to stimulate and when) to achieve a desired set of tasks for an individual to help them regain their independence.
 
+![Schematic showing computer model used to refine muscle stimulation levels](images/schematic.png "Schematic of model-based FES system design")
+
 ## Publications and presentations
 
 - Readioff, Rosti, Zaha Kamran Siddiqui, Caroline Stewart, Louisa Fulbrook, Rory J. O’Connor, and Edward K. Chadwick. 2021. ‘[Use and Evaluation of Assistive Technologies for Upper Limb Function in Tetraplegia](https://www.tandfonline.com/doi/full/10.1080/10790268.2021.1878342)’. The Journal of Spinal Cord Medicine 0 (0): 1–12. https://doi.org/10.1080/10790268.2021.1878342.
