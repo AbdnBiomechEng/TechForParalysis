@@ -17,6 +17,9 @@ In this EPSRC-funded research project, we are working with clinical engineers an
 - Readioff, Rosti, Zaha Kamran Siddiqui, Caroline Stewart, Louisa Fulbrook, Rory J. O’Connor, and Edward K. Chadwick. 2021. ‘[Use and Evaluation of Assistive Technologies for Upper Limb Function in Tetraplegia](https://www.tandfonline.com/doi/full/10.1080/10790268.2021.1878342)’. The Journal of Spinal Cord Medicine 0 (0): 1–12. https://doi.org/10.1080/10790268.2021.1878342.
 - Rosti Readioff, Dimitra Blana, Ed Chadwick: [Transforming the lives of people with tetraplegia](https://www.researchgate.net/publication/332298568_Transforming_the_lives_of_tetraplegics), poster presentation at the Women in Engineering Society Centenary Conference, 1019.
 
+A brief introduction to the project from Dr Ed Chadwick:
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/552314375?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Personalised FES for people with spinal injuries"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ## Contact
 
 Contact [Dr Ed Chadwick](https://www.abdn.ac.uk/engineering/people/profiles/edward.chadwick) for more information.
