@@ -19,8 +19,8 @@ email: "edward.chadwick@abdn.ac.uk"
 description: >- # this means to ignore newlines until "baseurl:"
   Technologies for improving arm function in people with spinal injuries, 
   using model-guided functional electrical stimulation.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://abdnbiomecheng.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /TechForParalysis/ # the subpath of your site, e.g. /blog
+url: https://abdnbiomecheng.github.io # the base hostname & protocol for your site, e.g. http://example.com
 # domain: abdnbiomecheng.github.io
 twitter_username: Tech4Paralysis
 # github_username:  AbdnBiomechEng
