@@ -2,7 +2,7 @@
 
 First, make sure you add the folders **TechForParalysis\Code\Model** and **TechForParalysis\Code\Model\OptimalControl** to the Matlab path.
 
-To choose which muscles to include in the optimisation, run **include_subset_muscles.m**. You might want to run **get_muscle_names.m** first, so you can see which indices correspond to which muscles, and change line 18 in this file accordingly.
+To choose which muscles to include in the optimisation, run **include_subset_muscles.m**. You might want to run **get_muscle_names.m** first, so you can see which indices correspond to which muscles, and change line 11 in this file accordingly.
 
 You run the optimisation in **runopt_elbow.m**. In this file you can set:
 
