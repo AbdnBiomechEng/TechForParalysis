@@ -119,18 +119,32 @@ U = zeros(nvar,1);
 %   CE lengths		0 to 2
 %	active states	0 to 1
 %	neural controls 0 to 1
-for i_node = 0:N-1
-    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-        (zeros(ndof,1) - 40)*pi/180;                                    % qdot
-        zeros(nmus,1) + 0.3;                                            % Lce
-        zeros(nmus,1);                                                  % active states
-        zeros(nmus,1) ];                                                % neural excitations
+if N>1
+    for i_node = 0:N-1
+        L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
+            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
+            zeros(nmus,1) + 0.3;                                            % Lce
+            zeros(nmus,1);                                                  % active states
+            zeros(nmus,1) ];                                                % neural excitations
 
-    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-        (zeros(ndof,1) + 40)*pi/180;                                    % qdot
-        zeros(nmus,1) + 1.7;                                            % Lce
-        ones(nmus,1);                                                   % active states
-        ones(nmus,1) ];                                                 % neural excitations
+        U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
+            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
+            zeros(nmus,1) + 1.7;                                            % Lce
+            ones(nmus,1);                                                   % active states
+            ones(nmus,1) ];                                                 % neural excitations
+    end
+else
+    for i_node = 0:N-1
+        L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
+            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
+            zeros(nmus,1) + 0.3;                                            % Lce
+            zeros(nmus,1)];                                                 % active states
+
+        U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
+            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
+            zeros(nmus,1) + 1.7;                                            % Lce
+            ones(nmus,1)];                                                  % active states
+    end
 end
 
 % Bounds for angular velocities are different in first and final node: they
@@ -171,7 +185,7 @@ datavec = reshape(data', N*(nmeas_dof), 1);
 % define the estimated uncertainty in each measured variable (in radians)
 datasd = ones(nmeas_dof,1);         % for one node
 datasd = repmat(datasd,N,1);		% replicate for all nodes
-print = 0;
+print_flag = 0;
 
 % precompute the indices for activations and some angles, so we can compute cost function quickly
 iact = [];
@@ -198,8 +212,8 @@ end
 % time points where the movement is measured (or set), not all nodes
 
 for i_node=ceil(linspace(0,N-1,length(t)))
-    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
-	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
+    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1)];
+	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1)];
 end
 
 % the thorax and shoulder are set at input data
@@ -217,20 +231,14 @@ if strcmp(initialguess, 'mid')
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
     X0(iElbow) = datavec(imeas_elbow);
-elseif numel(strfind(initialguess, 'init')) > 0
+elseif numel(strfind(initialguess, 'init')) > 0   % equilibrium - this won't work if the number of muscles included has changed
     xeq = load('equilibrium.mat'); 
     if N>1
         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
     else
         X0 = xeq.x;
     end
-elseif numel(strfind(initialguess, 'eqLce')) > 0
-%     xeq = load('equilibrium.mat'); 
-%     if N>1
-%         X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
-%     else
-%         X0 = xeq.x;
-%     end
+elseif numel(strfind(initialguess, 'eqLce')) > 0  % kinematics set to input, muscle lenghts set so that tendons are slack
     X0 = zeros(nvar,1);
     X0(iThorSh) = datavec(imeas_ThorSh);
     X0(iElbow) = datavec(imeas_elbow);
@@ -315,10 +323,10 @@ if (OptSetup.MaxIter > 0)
     end
     
     % evaluate initial guess
-    print=1;
+    print_flag=1;
     objfun(X0);
     confun(X0);
-    print=0;
+    print_flag=0;
     
 	% set up constraints
    if N>1
@@ -346,7 +354,7 @@ if (OptSetup.MaxIter > 0)
         options.ub = U;
         
         % IPOPT options
-        options.ipopt.print_level = 5;
+        options.ipopt.print_level = 0;
         options.ipopt.max_iter = OptSetup.MaxIter;
         options.ipopt.hessian_approximation = 'limited-memory';
         options.ipopt.mu_strategy = 'adaptive';		% worked better than 'monotone'
@@ -361,9 +369,12 @@ if (OptSetup.MaxIter > 0)
         options.ipopt.dual_inf_tol = 1;
         
         [X, info] = ipopt(X0,funcs,options);
+        fprintf('IPOPT info status: %d\n', info.status);
         Result.status = info.status;
         Result.info = info;
-        fprintf('IPOPT info status: %d\n', info.status);
+        Result.X = X;
+        Result.X0 = X0;
+        
     elseif strcmp(OptSetup.solver,'SNOPT')
         if OptSetup.equality_constraints || OptSetup.inequality_constraints
 			Prob = conAssign(@objfun, @objgrad, [], [], L, U, 'das3', X0, ...
@@ -387,7 +398,7 @@ if (OptSetup.MaxIter > 0)
         Prob.SOL.optPar(35) = OptSetup.MaxIter;
         Prob.SOL.optPar(36) = 40000; % maximal number of minor iterations in the solution of the QP problem (500)
         Prob.SOL.moremem = 10000000; % increase internal memory
-        %print = 1;		% we want something on the screen
+        %print_flag = 1;		% we want something on the screen
         ResultS = tomRun('snopt',Prob);
         X = ResultS.x_k;
         fprintf('--------------------------------------\n');
@@ -406,12 +417,14 @@ end
 
 beep;
 
-print=1;
-objfun(X);
-confun(X);
+obj_str = '';
+print_flag=1;
+objfun(Result.X);
+confun(Result.X);
+print_flag=0;
 
 % save this result on a file
-x = reshape(X,nvarpernode,N);
+x = reshape(Result.X,nvarpernode,N);
 Result.times = times;
 Result.input_data = data;
 Result.x = x(1:nstates,:);
@@ -471,12 +484,12 @@ beep;
         
         f = f1 + f2;
         
-		if print
-			obj_str = sprintf('Objfun: %9.5f = %9.5f (fit) + %9.5f (effort)', f,f1,f2);
-            wobj_str = sprintf('%9.5f (fit) + %9.5f (effort)', wf1,wf2);
+		if print_flag
+			wobj_str = sprintf('Objfun (weighted): %9.5f = %9.5f (fit) + %9.5f (effort)', f,f1,f2);
+            obj_str = sprintf('Objfun (unweighted): %9.5f (fit) + %9.5f (effort)', wf1,wf2);
 		end
 						
-        if print
+        if print_flag
             fprintf(obj_str);
             fprintf('\n');
             fprintf(wobj_str);
@@ -597,7 +610,7 @@ beep;
         end
         allcon = ceq;
         
-        if (print)
+        if (print_flag)
             fprintf('Norm(ceq): %9.5f  \n', norm(ceq));
         end
     end

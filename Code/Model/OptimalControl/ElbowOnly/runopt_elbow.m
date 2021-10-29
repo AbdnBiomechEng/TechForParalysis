@@ -2,30 +2,37 @@ function runopt_elbow
 
 	% run a sequence of optimizations, with mesh refinement
 
-	maxnodes = 17;		% end close to this number of nodes
-    nodes = 17;
+	maxnodes = 15;		% end close to this number of nodes
+    nodes = 5;          % start with this number of nodes
     OptSetup.N = nodes;
 	OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
     OptSetup.OptimTol = 1e-3;
     OptSetup.FeasTol = 1e-1;
-    OptSetup.initialguess = 'eqLce';
-    OptSetup.Wdata = 1;
-    OptSetup.Weffort = 0;
+    OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimise_elbow.m) 
+    OptSetup.Wdata = 100;    % weight for the kinematic term in the cost function
+    OptSetup.Weffort = 1;    % weight for the energy consumption term in the cost function
     OptSetup.equality_constraints = 1;
     OptSetup.solver = 'IPOPT';
 
     factor = 2;
 
-    % data: static position, with elbow going from zero to 90 degrees
     x0 = load('equilibrium.mat');
-    data = [x0.x(1:14) x0.x(1:14) x0.x(1:14)]'; % three time points
-    data(1,13) = 0*pi/180; % change flexion in first time point to 0 degrees
-    data(2,13) = 90*pi/180; % change flexion in second time point to 90 degrees
-    data(3,13) = 0*pi/180; % change flexion in third time point to 0 degrees
-    t = [0;0.5;1];
+    
+    % Dynamic: elbow flexion-extension from 5 to 90 degrees
+    data = [x0.x(1:14) x0.x(1:14)]'; % two time points
+    data(1,13) = 5*pi/180;  % flexion in first time point is set at 5 degrees
+    data(2,13) = 90*pi/180; % flexion in second time point is set at 90 degrees
+    t = [0;1];  % the time vector
+
+    % Static posture - just one node
+    % nodes = 1;
+    % maxnodes = 1;
+    % data = x0.x(1:14)';
+    % data(13) = 0.64;
+    % t = 0;
 
     % Create folder for results, if it does not already exist
-    folder_name = 'flexion-no-effort';
+    folder_name = 'flexion90';
     if ~exist(folder_name,'dir')
         mkdir(folder_name);
     end
