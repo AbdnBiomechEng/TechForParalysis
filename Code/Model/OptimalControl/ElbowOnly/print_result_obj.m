@@ -2,7 +2,7 @@
 % remember to update the muscle elements selected for plotting, if they
 % were changed in include_subset_muscles.m
 
-filename = 'flexion90/output_5.mat';
+filename = 'flexion90/output_9.mat';
 load(filename);
 
 figure;
