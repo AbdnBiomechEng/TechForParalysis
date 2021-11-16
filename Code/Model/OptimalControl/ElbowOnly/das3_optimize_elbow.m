@@ -122,13 +122,13 @@ U = zeros(nvar,1);
 if N>1
     for i_node = 0:N-1
         L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
+            (zeros(ndof,1) - 40);                                           % qdot
             zeros(nmus,1) + 0.3;                                            % Lce
             zeros(nmus,1);                                                  % active states
             zeros(nmus,1) ];                                                % neural excitations
 
         U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
+            (zeros(ndof,1) + 40);                                           % qdot
             zeros(nmus,1) + 1.7;                                            % Lce
             ones(nmus,1);                                                   % active states
             ones(nmus,1) ];                                                 % neural excitations
@@ -136,12 +136,12 @@ if N>1
 else
     for i_node = 0:N-1
         L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-            (zeros(ndof,1) - 40)*pi/180;                                    % qdot
+            (zeros(ndof,1) - 40);                                           % qdot
             zeros(nmus,1) + 0.3;                                            % Lce
             zeros(nmus,1)];                                                 % active states
 
         U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-            (zeros(ndof,1) + 40)*pi/180;                                    % qdot
+            (zeros(ndof,1) + 40);                                           % qdot
             zeros(nmus,1) + 1.7;                                            % Lce
             ones(nmus,1)];                                                  % active states
     end
@@ -436,9 +436,14 @@ else
 end
 angles = x(1:ndof,:);
 
+figure;
+subplot(3,1,1); plot(Result.times,Result.x(13,:)'*180/pi,'o-'); ylabel('elbow angle (degrees)');
+title(Result.obj_str)
+subplot(3,1,2); plot(Result.times,Result.x(ndof+13,:)'*180/pi,'o-'); ylabel('elbow velocity (degrees/second)');
+subplot(3,1,3); plot(Result.times,Result.u,'o-'); 
+xlabel('time (s)'); ylabel('muscle excitation');
 save([filename '.mat'],'Result');
 make_osimm(filename,dofnames,angles,times);
-beep;
 
 % objective function
     function f = objfun(X)
