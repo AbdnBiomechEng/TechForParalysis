@@ -1,6 +1,10 @@
 ## Optimisation of elbow flexion-extension
 
-First, make sure you add the folders **TechForParalysis\Code\Model** and **TechForParalysis\Code\Model\OptimalControl** to the Matlab path.
+First, make sure you add the folders **TechForParalysis\Code\Model** to the Matlab path.
+
+If you are using a Matlab version prior to 2020, you should also add **TechForParalysis\Code\Model\OptimalControl** to the Matlab path to use the IPOPT version included.
+
+If you are using Matlab after 2020, you will need to install the version of IPOPT given as a toolbox here: https://github.com/ebertolazzi/mexIPOPT.
 
 To choose which muscles to include in the optimisation, open **include_subset_muscles.m** and edit line 11 to select the elements to include. You must then run this file to update the structure before running the model. You might want to run **get_muscle_names.m** first, so you can see which indices correspond to which muscles.
 
