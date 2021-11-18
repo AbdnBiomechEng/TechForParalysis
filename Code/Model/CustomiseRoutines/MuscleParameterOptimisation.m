@@ -6,6 +6,7 @@
 % Script uses Matlab's built-in constrained optimisation routine 'fmincon'. 
 % Type 'help fmincon' in the command window for details.
 % 
+clear all; clc;
 % Define the measured moments (you can change this):
 
 M_vol = 8.75; % measured voluntary moment in Nm
@@ -36,11 +37,12 @@ Fmax  = [842 999 162]; % the maximum isometric force of each muscle in N.
 % 
 % $${(mc_1-mc_2)}^2 + {(mc_2-mc_3)}^2$$
 
-fun = @(mc) ((mc(1)-mc(2))^2 + (mc(2)-mc(3))^2);  % anonymous function describing objective function
+%fun = @(mc) ((mc(1)-mc(2))^2 + (mc(1)-mc(3))^2);  % anonymous function describing objective function
+fun = @(mc) (1/prod(mc.^2)); % maximises the values of mc and keeps them similar?
 nonlcon = @(mc) nonlinfun(mc,r_mus,Fmax,M_vol,M_stim); % anonymous function for non-linear constraints with additional arguments
 
 [mc, J, exitflag, output] = fmincon(fun, ... % 'fun' is the name of the objective function
-    [0.5 0.5 0.5], ...  % Initial guess, or starting point
+    [0 0 0], ...  % Initial guess, or starting point
     [], [], ... % there are no linear inequality contraints
     [], [], ... % these are A and B in A[x] = B, the linear equality contraint
     [0 0 0], [1 1 1], ...  % lower and upper bounds on the values
@@ -48,11 +50,16 @@ nonlcon = @(mc) nonlinfun(mc,r_mus,Fmax,M_vol,M_stim); % anonymous function for 
     []); % options
 %% 
 % Check results:
-scale = 2*M_stim/(r_mus(1)*mc(1)*Fmax(1))
+scale = 2*M_stim/(r_mus(1)*mc(1)*Fmax(1));
 M_vol_opt = scale*(mc(1)^2*r_mus(1)*Fmax(1) + mc(2)^2*r_mus(2)*Fmax(2) + mc(3)^2*r_mus(3)*Fmax(3)); % M_vol
 M_stim_opt = 0.5*scale*(r_mus(1)*mc(1)*Fmax(1)); % M_stim
+newFmax = scale*mc.*Fmax;
 % Error = r_mus * F_mus' - M_mus
-output.message
-fprintf('mc = %f\n', mc);
-fprintf('M_vol_opt = %f\n', M_vol_opt);
-fprintf('M_stim_opt = %f\n', M_stim_opt);
+if exitflag~=1 
+    output.message
+end
+fprintf('scale = %6.2f\n', scale);
+fprintf('mc = %6.3f %6.3f %6.3f\n', mc(1), mc(2), mc(3));
+%fprintf('M_vol_opt = %f\n', M_vol_opt);
+%fprintf('M_stim_opt = %f\n', M_stim_opt);
+fprintf('newFmax = %6.2f %6.2f %6.2f\n', newFmax(1), newFmax(2), newFmax(3));
