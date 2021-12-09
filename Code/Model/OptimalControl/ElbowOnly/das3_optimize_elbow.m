@@ -24,7 +24,7 @@ function Result = das3_optimize_elbow(data,t,filename,OptSetup)
 %									
 %					MaxIter: maximum number of iterations
 %
-%					solver: IPOPT or SNOPT			
+%					solver: IPOPT or fmincon			
 %
 %					"equality_constraints" flag to turn
 % 						the constraints on and off (for testing). It is
@@ -41,7 +41,6 @@ function Result = das3_optimize_elbow(data,t,filename,OptSetup)
 %
 % Dimitra Blana, September 2019, based on das3_optimize.m
 	
-
 % optimization settings
 Result.OptSetup = OptSetup;
 
@@ -57,13 +56,23 @@ if ~isfield(OptSetup, 'equality_constraints')
 end
 
 % lock thorax and shoulder dofs
-lockeddofs = 1:12;
+lockeddofs = OptSetup.lockeddofs;
 nlockeddofs = length(lockeddofs);
 
 nmeas_dof = 14;   
 
 N = OptSetup.N;
 initialguess = OptSetup.initialguess;
+
+% additional model inputs
+
+% Moments applied to the thorax-humerus YZY axes and the elbow flexion and supination axes
+ex_mom = zeros(5,1); 
+% Vertical force of amplitude arm_support(2) applied to the ulna at a distance of arm_support(1) (meters) from the elbow
+% to simulate arm support
+arm_support = zeros(2,1);
+% Force at the hand is read in 
+hand_force = OptSetup.hand_force;
 
 % Load structure with model related variables
 % modelparams = load('model_struct.mat'); this has all the muscles
@@ -147,17 +156,19 @@ else
     end
 end
 
-% Bounds for angular velocities are different in first and final node: they
-% should be zero
+% Should angular velocities be zero at the start and end of movement?
+if OptSetup.start_at_rest
+    % First node
+    L(ndof+1:2*ndof) = zeros(ndof,1);
+    U(ndof+1:2*ndof) = zeros(ndof,1);
+end
 
-% First node
-L(ndof+1:2*ndof) = zeros(ndof,1);
-U(ndof+1:2*ndof) = zeros(ndof,1);
-
-% Final node
-final_node_start_index = (N-1)*nvarpernode;
-L(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
-U(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
+if OptSetup.end_at_rest
+    % Final node
+    final_node_start_index = (N-1)*nvarpernode;
+    L(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
+    U(final_node_start_index + (ndof+1:2*ndof)) = zeros(ndof,1);
+end
 
 % load the motion capture data, columns are time and 14 angles
 Result.input = data;
@@ -230,6 +241,7 @@ if strcmp(initialguess, 'mid')
     X0 = X0 + 0.001;					% to avoid exact zero velocity, for which Autolev equations do not work
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
+    disp('X0');
     X0(iElbow) = datavec(imeas_elbow);
 elseif numel(strfind(initialguess, 'init')) > 0   % equilibrium - this won't work if the number of muscles included has changed
     xeq = load('equilibrium.mat'); 
@@ -586,7 +598,7 @@ make_osimm(filename,dofnames,angles,times);
                 u2 = X(ius+nvarpernode);
                 h = times(i+1) - times(i);		% time interval
 
-                f = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2);
+                f = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,hand_force);
 
                 if OptSetup.equality_constraints
                     f(lockeddofs) = zeros(length(lockeddofs),1);
@@ -604,7 +616,7 @@ make_osimm(filename,dofnames,angles,times);
             % Calculate constraints due to discretized dynamics
 
             % evaluate dynamics
-            f = das3('Dynamics',X,zeros(nstates,1),X(iact));
+            f = das3('Dynamics',X,zeros(nstates,1),X(iact),ex_mom,arm_support,hand_force);
 
             if OptSetup.equality_constraints
                 f(lockeddofs) = zeros(length(lockeddofs),1);
@@ -659,7 +671,7 @@ make_osimm(filename,dofnames,angles,times);
                 u2 = X(iu2);
                 h = times(i+1) - times(i);		% time interval
 
-                [~, dfdx, dfdxdot, dfdu] = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2);
+                [~, dfdx, dfdxdot, dfdu] = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,hand_force);
 
                 if OptSetup.equality_constraints
 
@@ -713,7 +725,7 @@ make_osimm(filename,dofnames,angles,times);
         
         else
             % evaluate dynamics
-            [~, dfdx, ~ ,~] = das3('Dynamics',X,zeros(nstates,1),X(iact));
+            [~, dfdx, ~ ,~] = das3('Dynamics',X,zeros(nstates,1),X(iact),ex_mom,arm_support,hand_force);
 
             if OptSetup.equality_constraints
 
