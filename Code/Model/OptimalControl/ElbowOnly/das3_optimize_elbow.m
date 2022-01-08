@@ -387,40 +387,21 @@ if (OptSetup.MaxIter > 0)
         Result.X = X;
         Result.X0 = X0;
         
-    elseif strcmp(OptSetup.solver,'SNOPT')
-        if OptSetup.equality_constraints || OptSetup.inequality_constraints
-			Prob = conAssign(@objfun, @objgrad, [], [], L, U, 'das3', X0, ...
-				[], 0, ...
-				[], [], [], @confun, @conjac, [], Jpattern, ...
-				cl, cu, ...
-				[], [], [],[]);
-        else
-            Prob = conAssign(@objfun, @objgrad, [], [], L, U, 'das3', X0, ...
-                [], 0, ...
-                [], [], [], [], [], [], [], ...
-                [], [], ...
-                [], [], [],[]);
-        end
-        % Prob.SOL.optPar(1)= 1;
-        Prob.PriLevOpt = 1;
-        Prob.SOL.optPar(9) = OptSetup.FeasTol;
-        Prob.SOL.optPar(10) = OptSetup.OptimTol;
-        Prob.SOL.optPar(11) = 1e-6; % Minor feasibility tolerance (1e-6)
-        Prob.SOL.optPar(30) = 1000000; % maximal sum of minor iterations (max(10000,20*m))
-        Prob.SOL.optPar(35) = OptSetup.MaxIter;
-        Prob.SOL.optPar(36) = 40000; % maximal number of minor iterations in the solution of the QP problem (500)
-        Prob.SOL.moremem = 10000000; % increase internal memory
-        %print_flag = 1;		% we want something on the screen
-        ResultS = tomRun('snopt',Prob);
-        X = ResultS.x_k;
-        fprintf('--------------------------------------\n');
-        fprintf('SNOPT finished:\n')
-        disp(ResultS.ExitText);
-        fprintf('Number of iterations: %d\n',ResultS.Iter);
-        Result.ExitText = ResultS.ExitText;
-        Result.ExitFlag = ResultS.ExitFlag;
-        Result.Inform = ResultS.Inform;
-        Result.Iter = ResultS.Iter;
+    elseif strcmp(OptSetup.solver,'fmincon')
+        
+        nlpOpt = optimoptions(@fmincon,...
+            'OptimalityTolerance',OptSetup.FeasTol,...
+            'ConstraintTolerance',OptSetup.OptimTol,...
+            'SpecifyConstraintGradient',true,...
+            'SpecifyObjectiveGradient',true,...
+            'MaxIterations',OptSetup.MaxIter);   
+        [X,objVal,exitFlag,output] = fmincon(@obj_grad_fun,X0,[],[],[],[],L,U,@con_grad_fun,nlpOpt);
+        fprintf('fmincon info status: %d\n', exitFlag);
+        Result.objVal = objVal;
+        Result.info = output;
+        Result.X = X;
+        Result.X0 = X0;
+      
     end
     
 else		% skip optimization
@@ -569,14 +550,21 @@ make_osimm(filename,dofnames,angles,times);
 		        
     end
 
+% function that combines the objective function and its gradient for
+% fmincon
+    function [f,g] = obj_grad_fun(X)
+        f = objfun(X);
+        g = objgrad(X);
+    end
+
 % constraints
-    function allcon = confun(X)
+    function [c,ceq] = confun_fmincon(X)
         
         % Linear constraints: ceq(x) = 0
+        c = [];
         ceq = zeros(ncon_eq,1);
         
         if ~OptSetup.equality_constraints
-            allcon = ceq;
             return;
         end
         
@@ -625,7 +613,6 @@ make_osimm(filename,dofnames,angles,times);
             end
 
         end
-        allcon = ceq;
         
         if (print_flag)
             fprintf('Norm(ceq): %9.5f  \n', norm(ceq));
@@ -633,6 +620,12 @@ make_osimm(filename,dofnames,angles,times);
     end
 
 
+    function allcon = confun(X)
+        [c,ceq] = confun_fmincon(X);
+        allcon = [ceq; c];
+    end
+        
+        
     function J = conjacstructure()
         % returns structure of constraint Jacobian matrix
         J = Jpattern;
@@ -640,8 +633,9 @@ make_osimm(filename,dofnames,angles,times);
 
 
 % Jacobian of constraints
-    function J = conjac(X)
+    function [nonJ,J] = conjac_fmincon(X)
         
+        nonJ=[];
         J = spalloc(ncon, nvar, Jnnz);
         
         if ~OptSetup.equality_constraints 
@@ -741,5 +735,18 @@ make_osimm(filename,dofnames,angles,times);
         end
         %        J = sparse(allrows(1:index-1),allcols(1:index-1),allvals(1:index-1),ncon, nvar);
     end
+
+
+    function J = conjac(X)
+        [~,J] = conjac_fmincon(X);
+    end
+
+% function that combines the constraints and jacobians for fmincon
+    function [c,ceq,GC,GCeq] = con_grad_fun(X)
+        [c,ceq] = confun_fmincon(X);
+        [GC,GCeq] = conjac_fmincon(X);
+        GCeq = GCeq';
+    end
+
 
 end		% end of function das3_optimize_elbow

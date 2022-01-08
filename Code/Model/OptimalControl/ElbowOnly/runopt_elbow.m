@@ -46,14 +46,14 @@ function runopt_elbow
     OptSetup.Wdata = 1;        % weight for the kinematic term in the cost function
     OptSetup.Weffort = 0.1;    % weight for the energy consumption term in the cost function
     OptSetup.equality_constraints = 1;
-    OptSetup.solver = 'IPOPT'; % IPOPT or fmincon (fmincon not added yet)
+    OptSetup.solver = 'fmincon'; % IPOPT or fmincon 
 
     % Create folder for results, if it does not already exist
     folder_name = 'flexion5_90';
     if ~exist(folder_name,'dir')
         mkdir(folder_name);
     end
-    filename = [folder_name '/output'];
+    filename = [folder_name '/output' '_' OptSetup.solver];
     
     das3_optimize_elbow(data,t,[filename '_' num2str(nodes)],OptSetup);
 	% now do a series of optimizations, each time increasing number of nodes by a certain factor
