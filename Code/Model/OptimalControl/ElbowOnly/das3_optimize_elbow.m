@@ -186,12 +186,17 @@ end
 % resample the motion capture data onto the direct collocation times
 % and put into a long vector to save time when computing cost function
 if N>1
-    data = interp1(t,data,times,'pchip','extrap');
+    data = interp1(t,data,times);
+    data_deriv = diff(data)./diff(times);
+    data_deriv = [data_deriv;data_deriv(end,:)];
 else
     if size(data,1)>1, data = mean(data); end
+    data_deriv = zeros(size(data));
 end
 
-datavec = reshape(data', N*(nmeas_dof), 1);
+% convert into a single column
+datavec = reshape(data', [], 1);
+data_deriv_vec = reshape(data_deriv', [], 1);
 
 % define the estimated uncertainty in each measured variable (in radians)
 datasd = ones(nmeas_dof,1);         % for one node
@@ -201,59 +206,64 @@ print_flag = 0;
 % precompute the indices for activations and some angles, so we can compute cost function quickly
 iact = [];
 iLce = [];
+iexc = [];
 
-iThorSh = [];
-iThorSh_vel = [];
-imeas_ThorSh = [];
-iElbow = [];
-imeas_elbow = [];
+idof = [];
+iddof = [];
+
+ilocked_dof = [];
+ilocked_ddof = [];
 
 for i_node=0:N-1
-    iact = [iact nvarpernode*i_node+2*ndof+nmus+(1:nmus)];
     iLce = [iLce nvarpernode*i_node+2*ndof+(1:nmus)];
+    iact = [iact nvarpernode*i_node+2*ndof+nmus+(1:nmus)];
+    iexc = [iexc nvarpernode*i_node+2*ndof+2*nmus+(1:nmus)];
     
-    iThorSh = [iThorSh nvarpernode*i_node+lockeddofs];
-    %iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
-    iThorSh_vel = [iThorSh_vel nvarpernode*i_node+ndof+lockeddofs];
-    imeas_ThorSh = [imeas_ThorSh nmeas_dof*i_node+lockeddofs];
-	%imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
+    idof = [idof nvarpernode*i_node+(1:ndof)];
+    iddof = [iddof nvarpernode*i_node+ndof+(1:ndof)];
+    
+    ilocked_dof = [ilocked_dof nvarpernode*i_node+lockeddofs];
+    ilocked_ddof = [ilocked_ddof nvarpernode*i_node+ndof+lockeddofs];    
 end
+
+% Locked dofs stay at measured values, and have zero velocity
+U(ilocked_dof) = repmat(data(1,lockeddofs),1,N);
+L(ilocked_dof) = repmat(data(1,lockeddofs),1,N);
+U(ilocked_ddof) = zeros(N*nlockeddofs,1);
+L(ilocked_ddof) = zeros(N*nlockeddofs,1);
 
 % For the kinematics we are tracking (elbow), we only care about the
 % time points where the movement is measured (or set), not all nodes
 
+iElbow = [];
+imeas_elbow = [];
+
 for i_node=ceil(linspace(0,N-1,length(t)))
-    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1)];
-	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1)];
+    iElbow = [iElbow nvarpernode*i_node+nlockeddofs+(1:2)];
+	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
 end
 
-% the thorax and shoulder are set at input data
-U(iThorSh) = datavec(imeas_ThorSh);
-L(iThorSh) = datavec(imeas_ThorSh);
+%% Make an initial guess
 
-% the thorax and shoulder velocity is set to zero
-U(iThorSh_vel) = zeros(N*nlockeddofs,1);
-L(iThorSh_vel) = zeros(N*nlockeddofs,1);
+% Initial guess for kinematics + velocities is the interpolated measured data
+% For activations and fibre lengths there are different options: mid,
+% random and eqLce
 
-% make an initial guess
+% Alternatively, we load an earlier solution
+
 if strcmp(initialguess, 'mid')
     X0 = (L + U)/2;						% halfway between upper and lower bound
     X0 = X0 + 0.001;					% to avoid exact zero velocity, for which Autolev equations do not work
+    X0(idof) = datavec;
+    X0(iddof) = data_deriv_vec;
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
-    disp('X0');
-    X0(iElbow) = datavec(imeas_elbow);
-elseif numel(strfind(initialguess, 'init')) > 0   % equilibrium - this won't work if the number of muscles included has changed
-    xeq = load('equilibrium.mat'); 
-    if N>1
-        X0 = reshape(repmat([xeq.x; xeq.x(2*ndof+nmus+1:end)],1,N),nvar,1);
-    else
-        X0 = xeq.x;
-    end
-elseif numel(strfind(initialguess, 'eqLce')) > 0  % kinematics set to input, muscle lenghts set so that tendons are slack
+    X0(idof) = datavec;
+    X0(iddof) = data_deriv_vec;
+elseif numel(strfind(initialguess, 'eqLce')) > 0  % muscle lenghts set so that tendons are slack
     X0 = zeros(nvar,1);
-    X0(iThorSh) = datavec(imeas_ThorSh);
-    X0(iElbow) = datavec(imeas_elbow);
+    X0(idof) = datavec;
+    X0(iddof) = data_deriv_vec;
     ix = 1:nstates;
     equil_Lce = zeros(nmus*N,1);
     for i_node=1:N
@@ -284,10 +294,7 @@ else
     end
 end
 
-X0(iThorSh) = datavec(imeas_ThorSh);
-X0(iThorSh_vel) = zeros(N*nlockeddofs,1);
-
-% run optimization
+%% Run optimization
 if (OptSetup.MaxIter > 0)
     
     % determine sparsity structure of Jacobian (midpoint discretization)
@@ -301,7 +308,7 @@ if (OptSetup.MaxIter > 0)
     fprintf('Nonzero elements in Jpattern: %d\n', nnz(Jpattern));
     %figure; spy(Jpattern);
     
-    % check the derivatives
+    % check the derivatives?
     checkderivatives = 0;
     
     if (checkderivatives)
@@ -416,8 +423,11 @@ objfun(Result.X);
 confun(Result.X);
 print_flag=0;
 
-% save this result on a file
+%% Save this result in a mat file and an Opensim motion file
 x = reshape(Result.X,nvarpernode,N);
+Result.ndof = ndof;
+Result.nmus = nmus;
+Result.muscles = model.muscles;
 Result.times = times;
 Result.input_data = data;
 Result.x = x(1:nstates,:);
@@ -429,62 +439,103 @@ else
 end
 angles = x(1:ndof,:);
 
-figure;
-subplot(3,1,1); plot(Result.times,Result.x(13,:)'*180/pi,'o-'); ylabel('elbow angle (degrees)');
-title(Result.obj_str)
-subplot(3,1,2); plot(Result.times,Result.x(ndof+13,:)'*180/pi,'o-'); ylabel('elbow velocity (degrees/second)');
-subplot(3,1,3); plot(Result.times,Result.u,'o-'); 
-xlabel('time (s)'); ylabel('muscle excitation');
+% Calculate muscle lengths, moment arms and forces
+Result.elflex_mom_arms = zeros(size(Result.u));
+Result.mus_lengths = zeros(size(Result.u));
+Result.mus_forces = zeros(size(Result.u));
+
+for i_node=1:Result.OptSetup.N
+    momentarms = full(das3('Momentarms', Result.x(:,i_node)));
+    Result.elflex_mom_arms(:,i_node) = momentarms(:,13);
+    Result.mus_lengths(:,i_node) = das3('Musclelengths', Result.x(:,i_node));
+    Result.mus_forces(:,i_node) = das3('Muscleforces', Result.x(:,i_node));
+end
+
 save([filename '.mat'],'Result');
 make_osimm(filename,dofnames,angles,times);
 
-% objective function
+%% Plot elbow angle and velocity, and muscle excitations and forces
+figure;
+ndof = Result.ndof;
+nmus = Result.nmus;
+subplot(6,1,1); plot(Result.times,Result.x(13:14,:)'*180/pi,'o-'); ylabel('Angle (degrees)');
+title(Result.obj_str)
+subplot(6,1,2); plot(Result.times,Result.x(ndof+(13:14),:)'*180/pi,'o-'); ylabel('Velocity (degrees/second)'); legend('Flexion/extension','Pronation/supination');
+subplot(6,1,3); plot(Result.times,Result.u,'o-'); ylabel('Excitations');
+subplot(6,1,4); plot(Result.times,Result.x(2*ndof+nmus+1:2*ndof+2*nmus,:),'o-'); ylabel('Activations');
+subplot(6,1,5); plot(Result.times,Result.x(2*ndof+1:2*ndof+nmus,:),'o-'); ylabel('Norm fibre lengths');
+subplot(6,1,6); plot(Result.times,Result.mus_forces','o-'); ylabel('Forces (N)');
+xlabel('time (s)');
+
+
+%% Functions to specify objective and constraints (and their derivatives)
+
+% Objective function
     function f = objfun(X)
         
-        % indices of states of node 1
-        ix = 1:nstates;
-        forces = zeros(nmus*N,1);
-		if N>1, ius = nstates+(1:ncontrols); else ius = iact; end
+%         indices of states of node 1
+%         ix = 1:nstates;
+%         forces = zeros(nmus*N,1);
+%         
+%         for inode=1:N
+%             forces(inode*nmus-nmus+1:inode*nmus) = das3('Muscleforces', X(ix));
+%             ix = ix + nvarpernode;
+%         end
         
-        for inode=1:N
-            if N==1
-                xdot = zeros(nstates,1);
-            elseif inode==1
-                xdot = (X(ix + nvarpernode) - X(ix))/(times(inode+1) - times(inode));
-            elseif inode==N
-                xdot = (X(ix) - X(ix - nvarpernode))/(times(inode) - times(inode-1));
-            else
-                xdot = (X(ix + nvarpernode) - X(ix - nvarpernode))/(times(inode+1) - times(inode-1));
-            end			
-            forces(inode*nmus-nmus+1:inode*nmus) = das3('Muscleforces', X(ix));
-
-            ix = ix + nvarpernode;
-            ius = ius + nvarpernode;
-        end
-        
-        % first term of cost function is mean of squared differences to measured data
+        % First term of cost function is mean of squared differences to measured data
 		wf1 = mean(((X(iElbow)-datavec(imeas_elbow))./datasd(imeas_elbow)).^2);
         f1 = Wdata * wf1;
         
-        % second term is energy consumption, with Weffort weight
+        % Second term is mean squared muscle activation
+        wf2 = mean(X(iact).^2);
+%         
+%         % Energy-consumption term 1
+%         ect1 = mean(forces.*LCEopt_N);
+%         
+%         % Energy-consumption term 2
+%         ect2 = mean(100*mass_N.*X(iact));
+%         
+%         % Energy-consumption term 3
+%         ect3 = mean(400*mass_N.*X(iact).^2);
+%         
+%         wf2 = ect1 + ect2 + ect3;
         
-        % Energy-consumption term 1
-        ect1 = mean(forces.*LCEopt_N);
-        
-        % Energy-consumption term 2
-        ect2 = mean(100*mass_N.*X(iact));
-        
-        % Energy-consumption term 3
-        ect3 = mean(400*mass_N.*X(iact).^2);
-        
-        wf2 = ect1 + ect2 + ect3;
         f2 = Weffort * wf2;
+
+        % Third term is mean squared fibre velocity
+        % indices of fibre lengths of node 1
+        ix = 2*ndof+1:2*ndof+nmus;
+        wf3 = 0;
+        for i=1:N-1
+            x1 = X(ix);
+            x2 = X(ix+nvarpernode);
+            h = times(i+1) - times(i);		% time interval
+            wf3 = wf3 + mean(((x2-x1)/h).^2);
+            % advance the indices
+            ix = ix + nvarpernode;
+        end        
+        f3 = 0.001 * wf3;
+
+        % Fourth term is mean squared angular acceleration
+        % indices of angular velocities of node 1
+        ix = ndof+1:2*ndof;
+        wf4 = 0;
+        for i=1:N-1
+            x1 = X(ix);
+            x2 = X(ix+nvarpernode);
+            h = times(i+1) - times(i);		% time interval
+            wf4 = wf4 + mean(((x2-x1)/h).^2);
+            % advance the indices
+            ix = ix + nvarpernode;
+        end        
+        f4 = 0.001 * wf4;
         
-        f = f1 + f2;
+        
+        f = f1 + f2 + f3 + f4;
         
 		if print_flag
-			wobj_str = sprintf('Objfun (weighted): %9.5f = %9.5f (fit) + %9.5f (effort)', f,f1,f2);
-            obj_str = sprintf('Objfun (unweighted): %9.5f (fit) + %9.5f (effort)', wf1,wf2);
+			obj_str = sprintf('Objfun (weighted): %9.5f = %9.5f (fit) + %9.5f (effort) + %9.5f (fibre vel) + %9.5f (angular acc)', f,f1,f2,f3,f4);
+            wobj_str = sprintf('Objfun (unweighted): %9.5f (fit) + %9.5f (effort) + %9.5f (fibre vel) + %9.5f (angular acc)', wf1,wf2,wf3,wf4);
 		end
 						
         if print_flag
@@ -497,67 +548,85 @@ make_osimm(filename,dofnames,angles,times);
     end
 
 
-% gradient of objective function
+% Gradient of objective function
     function g = objgrad(X)
         g = zeros(nvar,1);
         
-        % indices of states of node 1
-        ix = 1:nstates;
-		if N>1, ius = nstates+(1:ncontrols); else ius = iact; end
-        ixus = 1:nvarpernode;
-        dx = 1e-7;
+%        % indices of states of node 1
+%         ix = 1:nstates;
+%         ixus = 1:nvarpernode;
+%         dx = 1e-7;
         nmeas = numel(iElbow);
         nact = numel(iact);
         
-        % first term of cost function is mean of squared differences to
+        % First term of cost function is mean of squared differences to
         % measured data
-        for inode=1:N
-		
-            if N==1
-                xdot = zeros(nstates,1);
-            elseif inode==1
-                xdot = (X(ix + nvarpernode) - X(ix))/(times(inode+1) - times(inode));
-            elseif inode==N
-                xdot = (X(ix) - X(ix - nvarpernode))/(times(inode) - times(inode-1));
-            else
-                xdot = (X(ix + nvarpernode) - X(ix - nvarpernode))/(times(inode+1) - times(inode-1));
-            end
-			
-            forces = das3('Muscleforces', X(ix));
-			            			
-            for ivar=1:nvarpernode
-                xisave = X(ixus(ivar));
-                X(ixus(ivar)) = X(ixus(ivar)) + dx;
-                
-                forces_dx = das3('Muscleforces', X(ix));
-                dforces = (forces_dx-forces)/dx;
-                % Energy-consumption term 1: mean(forces.*LCEopt_N);
-                g(ixus(ivar)) = g(ixus(ivar)) + Weffort * sum(LCEopt.*dforces/nact);
-                				
-                X(ixus(ivar)) = xisave;
-            end
-            ix = ix + nvarpernode;
-            ixus = ixus + nvarpernode;
-        end
-        		
         g(iElbow) = g(iElbow) + 2*Wdata*(X(iElbow)-datavec(imeas_elbow))./datasd(imeas_elbow).^2/nmeas;
         
-        % Energy-consumption term 2: mean(100*mass_N*X(iact));
-        g(iact) = g(iact) + 100*Weffort*mass_N/nact;
+%         % Second term is energy consumption, in three parts:
+%         for inode=1:N					
+%             forces = das3('Muscleforces', X(ix));
+% 			            			
+%             for ivar=1:nvarpernode
+%                 xisave = X(ixus(ivar));
+%                 X(ixus(ivar)) = X(ixus(ivar)) + dx;
+%                 
+%                 forces_dx = das3('Muscleforces', X(ix));
+%                 dforces = (forces_dx-forces)/dx;
+%                 
+%                 % Energy-consumption part 1: mean(forces.*LCEopt_N);
+%                 g(ixus(ivar)) = g(ixus(ivar)) + Weffort * sum(LCEopt.*dforces/nact);
+%                 				
+%                 X(ixus(ivar)) = xisave;
+%             end
+%             ix = ix + nvarpernode;
+%             ixus = ixus + nvarpernode;
+%         end
         
-        % Energy-consumption term 3: mean(400*mass_N*X(iact).^2);
-        g(iact) = g(iact) + 2*400*Weffort*mass_N.*X(iact)/nact;
+        % Energy-consumption part 2: mean(100*mass_N*X(iact));
+        %g(iact) = g(iact) + 100*Weffort*mass_N/nact;
+        
+        % Energy-consumption part 3: mean(400*mass_N*X(iact).^2);
+        %g(iact) = g(iact) + 2*400*Weffort*mass_N.*X(iact)/nact;
+        		
+        
+        % Second term is mean squared muscle activation
+        g(iact) = g(iact) + 2*Weffort*(X(iact))./nact;
+        
+        % Third term is mean squared fibre velocity
+        ix = 2*ndof+1:2*ndof+nmus;
+        for i=1:N-1
+            x1 = X(ix);
+            x2 = X(ix+nvarpernode);
+            h = times(i+1) - times(i);		% time interval
+            g(ix) = g(ix) - 2*0.001*((x2-x1)/h^2)/nmus;
+            g(ix+nvarpernode) = g(ix+nvarpernode) + 2*0.001*((x2-x1)/h^2)/nmus;
+            % advance the indices
+            ix = ix + nvarpernode;
+        end        
+
+        % Fourth term is mean squared angular acceleration
+        ix = ndof+1:2*ndof;
+        for i=1:N-1
+            x1 = X(ix);
+            x2 = X(ix+nvarpernode);
+            h = times(i+1) - times(i);		% time interval
+            g(ix) = g(ix) - 2*0.001*((x2-x1)/h^2)/nmus;
+            g(ix+nvarpernode) = g(ix+nvarpernode) + 2*0.001*((x2-x1)/h^2)/nmus;
+            % advance the indices
+            ix = ix + nvarpernode;
+        end        
+        
 		        
     end
 
-% function that combines the objective function and its gradient for
-% fmincon
+% Function that combines the objective function and its gradient, for fmincon
     function [f,g] = obj_grad_fun(X)
         f = objfun(X);
         g = objgrad(X);
     end
 
-% constraints
+% Constraints
     function [c,ceq] = confun_fmincon(X)
         
         % Linear constraints: ceq(x) = 0
@@ -619,15 +688,14 @@ make_osimm(filename,dofnames,angles,times);
         end
     end
 
-
+% Linear and nonlinear constraints in one output, for IPOPT
     function allcon = confun(X)
         [c,ceq] = confun_fmincon(X);
         allcon = [ceq; c];
     end
         
-        
+% Structure of Jacobian matrix        
     function J = conjacstructure()
-        % returns structure of constraint Jacobian matrix
         J = Jpattern;
     end
 
@@ -643,17 +711,11 @@ make_osimm(filename,dofnames,angles,times);
         end
         
         if N>1
-            %         allrows = zeros(Jnnz+con_lenJ,1);
-            %         allcols = zeros(Jnnz+con_lenJ,1);
-            %         allvals = zeros(Jnnz+con_lenJ,1);
-            %         index=1;
-
             % indices of states and controls of node 1
             ix1 = 1:nstates;
             iu1 = nstates+(1:ncontrols);
             % indices of equality constraints at node 1
             iceq = 1:(ncon_eq/(N-1));
-            dx = 1e-7;
 
             % evaluate dynamics at each pair of successive nodes, using trapezoidal integration formula
             for i=1:N-1
@@ -678,36 +740,9 @@ make_osimm(filename,dofnames,angles,times);
 
                     % which generates four blocks in the Jacobian:
                     J(iceq,ix1) = dfdx/2 - dfdxdot/h;
-                    %                 [r,c,v] = find(dfdx/2 - dfdxdot/h);
-                    %                 datal = length(v);
-                    %                 allrows(index:index+datal-1) = iceq(1)+r-1;
-                    %                 allcols(index:index+datal-1) = ix1(1)+c-1;
-                    %                 allvals(index:index+datal-1) = v;
-                    %                 index = index+datal;
-
                     J(iceq,ix2) = dfdx/2 + dfdxdot/h;
-                    %                 [r,c,v] = find(dfdx/2 + dfdxdot/h);
-                    %                 datal = length(v);
-                    %                 allrows(index:index+datal-1) = iceq(1)+r-1;
-                    %                 allcols(index:index+datal-1) = ix2(1)+c-1;
-                    %                 allvals(index:index+datal-1) = v;
-                    %                 index = index+datal;
-
                     J(iceq,iu1) = dfdu/2;
-                    %                 [r,c,v] = find(dfdu/2);
-                    %                 datal = length(v);
-                    %                 allrows(index:index+datal-1) = iceq(1)+r-1;
-                    %                 allcols(index:index+datal-1) = iu1(1)+c-1;
-                    %                 allvals(index:index+datal-1) = v;
-                    %                 index = index+datal;
-
                     J(iceq,iu2) = dfdu/2;
-                    %                 [r,c,v] = find(dfdu/2);
-                    %                 datal = length(v);
-                    %                 allrows(index:index+datal-1) = iceq(1)+r-1;
-                    %                 allcols(index:index+datal-1) = iu2(1)+c-1;
-                    %                 allvals(index:index+datal-1) = v;
-                    %                 index = index+datal;
 
                 end
 
@@ -727,21 +762,18 @@ make_osimm(filename,dofnames,angles,times);
                 dfdx(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
 
                 dfdxstar = dfdx(1:2*ndof+nmus,:);
-                % Gradient matrix: transpose of the form of Jacobians
-                % (one column per constraint)
                 J(1:2*ndof+nmus,:) = dfdxstar;
 
             end
         end
-        %        J = sparse(allrows(1:index-1),allcols(1:index-1),allvals(1:index-1),ncon, nvar);
     end
 
-
+% Returns jacobians of linear and nonlinear constraints separately, for IPOPT
     function J = conjac(X)
         [~,J] = conjac_fmincon(X);
     end
 
-% function that combines the constraints and jacobians for fmincon
+% Function that combines the constraints and jacobians, for fmincon
     function [c,ceq,GC,GCeq] = con_grad_fun(X)
         [c,ceq] = confun_fmincon(X);
         [GC,GCeq] = conjac_fmincon(X);

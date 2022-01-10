@@ -1,7 +1,7 @@
 function runopt_elbow    
-	% run a sequence of optimizations, with mesh refinement
+	% Run a sequence of optimizations, with mesh refinement
     
-    % add seed for reproducibility
+    % Add seed for reproducibility
     rng(123);
 
     factor = 2;
@@ -9,8 +9,8 @@ function runopt_elbow
     
     % Dynamic movement 
 
-    maxnodes = 10;		 % end close to this number of nodes
-    nodes = 10;          % start with this number of nodes
+    maxnodes = 20;		 % end close to this number of nodes
+    nodes = 5;           % start with this number of nodes
 
     % Elbow flexion-extension from 5 to 90 degrees 
     data = [x0.x(1:14) x0.x(1:14)]'; % two time points
@@ -41,36 +41,40 @@ function runopt_elbow
     OptSetup.N = nodes;
 	OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
     OptSetup.OptimTol = 1e-3;
-    OptSetup.FeasTol = 1e-1;
+    OptSetup.FeasTol = 1e-3;
     OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimise_elbow.m) 
     OptSetup.Wdata = 1;        % weight for the kinematic term in the cost function
-    OptSetup.Weffort = 0.1;    % weight for the energy consumption term in the cost function
+    OptSetup.Weffort = 0.2;    % weight for the energy consumption term in the cost function
     OptSetup.equality_constraints = 1;
-    OptSetup.solver = 'fmincon'; % IPOPT or fmincon 
+    OptSetup.solver = 'IPOPT'; % IPOPT or fmincon 
 
     % Create folder for results, if it does not already exist
     folder_name = 'flexion5_90';
     if ~exist(folder_name,'dir')
         mkdir(folder_name);
     end
-    filename = [folder_name '/output' '_' OptSetup.solver];
-    
+    filename = [folder_name '/output_' OptSetup.solver];
+    tic
     das3_optimize_elbow(data,t,[filename '_' num2str(nodes)],OptSetup);
+    disp(['Time elapsted: ' num2str(toc) ' seconds'])
 	% now do a series of optimizations, each time increasing number of nodes by a certain factor
 	while (nodes < maxnodes)
         prev_nodes = nodes;
-		% the following multiplies the number of time intervals (nodes-1) by the factor
-		nodes = max(nodes+1, round((nodes-1)*factor+1));		% at least increase number of nodes by 1!
+		% the following multiplies the number of nodes by the factor
+		nodes = prev_nodes*factor;
 		% don't exceed max nodes, and do the last optimization with tighter tolerances
 		if (nodes >= maxnodes) 
 			nodes = maxnodes;
 			OptSetup.OptimTol = 1e-3;
-            OptSetup.FeasTol = 1e-1;
+            OptSetup.FeasTol = 1e-3;
 		end
 		% redo the optimization with previous result as initial guess
         OptSetup.N = nodes;
         OptSetup.initialguess = [filename '_' num2str(prev_nodes)];
+        tic
         das3_optimize_elbow(data,t,[filename '_' num2str(nodes)],OptSetup);
+        disp(['Time elapsted: ' num2str(toc) ' seconds'])
+
 	end
 
 end
