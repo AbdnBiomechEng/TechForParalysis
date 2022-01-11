@@ -9,8 +9,8 @@ function runopt_elbow
     
     % Dynamic movement 
 
-    maxnodes = 20;		 % end close to this number of nodes
-    nodes = 5;           % start with this number of nodes
+    maxnodes = 12;		 % end close to this number of nodes
+    nodes = 6;           % start with this number of nodes
 
     % Elbow flexion-extension from 5 to 90 degrees 
     data = [x0.x(1:14) x0.x(1:14)]'; % two time points
