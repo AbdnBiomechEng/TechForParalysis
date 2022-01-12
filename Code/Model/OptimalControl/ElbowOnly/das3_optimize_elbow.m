@@ -243,6 +243,8 @@ for i_node=ceil(linspace(0,N-1,length(t)))
 	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
 end
 
+con_lenJ = length(1:2*ndof)*2*(N-1);
+
 %% Make an initial guess
 
 % Initial guess for kinematics + velocities is the interpolated measured data
@@ -704,13 +706,19 @@ xlabel('time (s)');
     function [nonJ,J] = conjac_fmincon(X)
         
         nonJ=[];
-        J = spalloc(ncon, nvar, Jnnz);
+        %J = spalloc(ncon, nvar, Jnnz);
         
         if ~OptSetup.equality_constraints 
+            J = [];
             return;
         end
         
         if N>1
+            allrows = zeros(Jnnz+con_lenJ,1);
+            allcols = zeros(Jnnz+con_lenJ,1);
+            allvals = zeros(Jnnz+con_lenJ,1);
+            index=1;
+
             % indices of states and controls of node 1
             ix1 = 1:nstates;
             iu1 = nstates+(1:ncontrols);
@@ -739,10 +747,37 @@ xlabel('time (s)');
                     dfdu(ndof+lockeddofs,:) = zeros(length(lockeddofs),nmus);
 
                     % which generates four blocks in the Jacobian:
-                    J(iceq,ix1) = dfdx/2 - dfdxdot/h;
-                    J(iceq,ix2) = dfdx/2 + dfdxdot/h;
-                    J(iceq,iu1) = dfdu/2;
-                    J(iceq,iu2) = dfdu/2;
+                    %J(iceq,ix1) = dfdx/2 - dfdxdot/h;
+                    [r,c,v] = find(dfdx/2 - dfdxdot/h);
+                    datal = length(v);
+                    allrows(index:index+datal-1) = iceq(1)+r-1;
+                    allcols(index:index+datal-1) = ix1(1)+c-1;
+                    allvals(index:index+datal-1) = v;
+                    index = index+datal;
+
+                    %J(iceq,ix2) = dfdx/2 + dfdxdot/h;
+                    [r,c,v] = find(dfdx/2 + dfdxdot/h);
+                    datal = length(v);
+                    allrows(index:index+datal-1) = iceq(1)+r-1;
+                    allcols(index:index+datal-1) = ix2(1)+c-1;
+                    allvals(index:index+datal-1) = v;
+                    index = index+datal;
+
+                    %J(iceq,iu1) = dfdu/2;
+                    [r,c,v] = find(dfdu/2);
+                    datal = length(v);
+                    allrows(index:index+datal-1) = iceq(1)+r-1;
+                    allcols(index:index+datal-1) = iu1(1)+c-1;
+                    allvals(index:index+datal-1) = v;
+                    index = index+datal;
+
+                    %J(iceq,iu2) = dfdu/2;
+                    [r,c,v] = find(dfdu/2);
+                    datal = length(v);
+                    allrows(index:index+datal-1) = iceq(1)+r-1;
+                    allcols(index:index+datal-1) = iu2(1)+c-1;
+                    allvals(index:index+datal-1) = v;
+                    index = index+datal;
 
                 end
 
@@ -751,7 +786,15 @@ xlabel('time (s)');
                 iu1 = iu1 + nvarpernode;
                 iceq = iceq + (ncon_eq/(N-1));
             end
-        
+            
+            if exist('Jpattern','var')
+                [r,c,~] = find(Jpattern);
+                nz_rows = ismember([allrows(1:index-1),allcols(1:index-1)],[r,c], 'rows');
+                J = sparse(allrows(nz_rows),allcols(nz_rows),allvals(nz_rows),ncon, nvar);
+            else
+                J = sparse(allrows(1:index-1),allcols(1:index-1),allvals(1:index-1),ncon, nvar);
+            end
+
         else
             % evaluate dynamics
             [~, dfdx, ~ ,~] = das3('Dynamics',X,zeros(nstates,1),X(iact),ex_mom,arm_support,hand_force);
@@ -762,10 +805,11 @@ xlabel('time (s)');
                 dfdx(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
 
                 dfdxstar = dfdx(1:2*ndof+nmus,:);
+                J = spalloc(ncon, nvar, 1);
                 J(1:2*ndof+nmus,:) = dfdxstar;
 
             end
-        end
+        end            
     end
 
 % Returns jacobians of linear and nonlinear constraints separately, for IPOPT
