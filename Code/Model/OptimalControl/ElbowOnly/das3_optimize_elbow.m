@@ -243,8 +243,6 @@ for i_node=ceil(linspace(0,N-1,length(t)))
 	imeas_elbow = [imeas_elbow nmeas_dof*i_node+nlockeddofs+(1:2)];
 end
 
-con_lenJ = length(1:2*ndof)*2*(N-1);
-
 %% Make an initial guess
 
 % Initial guess for kinematics + velocities is the interpolated measured data
@@ -613,8 +611,8 @@ xlabel('time (s)');
             x1 = X(ix);
             x2 = X(ix+nvarpernode);
             h = times(i+1) - times(i);		% time interval
-            g(ix) = g(ix) - 2*0.001*((x2-x1)/h^2)/nmus;
-            g(ix+nvarpernode) = g(ix+nvarpernode) + 2*0.001*((x2-x1)/h^2)/nmus;
+            g(ix) = g(ix) - 2*0.001*((x2-x1)/h^2)/ndof;
+            g(ix+nvarpernode) = g(ix+nvarpernode) + 2*0.001*((x2-x1)/h^2)/ndof;
             % advance the indices
             ix = ix + nvarpernode;
         end        
@@ -714,9 +712,9 @@ xlabel('time (s)');
         end
         
         if N>1
-            allrows = zeros(Jnnz+con_lenJ,1);
-            allcols = zeros(Jnnz+con_lenJ,1);
-            allvals = zeros(Jnnz+con_lenJ,1);
+            allrows = zeros(Jnnz,1);
+            allcols = zeros(Jnnz,1);
+            allvals = zeros(Jnnz,1);
             index=1;
 
             % indices of states and controls of node 1
