@@ -37,8 +37,8 @@ OptSetup.start_at_rest = true;
 OptSetup.end_at_rest = true;
 
 % Set number of nodes
-maxnodes = 15;		  % end close to this number of nodes
-nodes = 5;            % start with this number of nodes
+maxnodes = 12;		  % end close to this number of nodes
+nodes = 3;            % start with this number of nodes
 factor = 1.5;         % increase number of nodes by this factor
 
 % Set optimisation options
@@ -50,7 +50,7 @@ OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimise
 
 % Cost function
 OptSetup.Wdata = 1;        % weight for the kinematic term in the cost function
-OptSetup.Weffort = 0.2;    % weight for the energy consumption term in the cost function
+OptSetup.Weffort = 0.05;    % weight for the energy consumption term in the cost function
 OptSetup.Wscap = 0.1;      % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
 OptSetup.Whum = 0.1;       % weight for glenohumeral stability (if missing, assumed to be constraint)
 
@@ -105,7 +105,7 @@ if ~exist(folder_name,'dir')
 end
 
 %% Run optimisation
-% tic
+tic
 das3_optimize(data,[filename '_' num2str(nodes)],OptSetup);
 disp(['Time elapsted: ' num2str(toc) ' seconds'])
 
