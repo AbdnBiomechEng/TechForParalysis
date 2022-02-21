@@ -31,7 +31,7 @@ import xml.etree.ElementTree as xml
 ###############################################################################
 
 # load the excel file
-fileExcel = CURR_DIR+'/Subject 1 First Visit.xlsx'
+fileExcel = CURR_DIR+'/INPUTFILE.xlsx'
 df = pd.read_excel(fileExcel, engine='openpyxl')
 
 excel_thorax_z = df.iloc[8, 3] # IJ to C7 : 130
@@ -237,6 +237,8 @@ for x in obj:
 
 ## Save the modified config file
 
+# nameNoExt  = configFile.rpartition(".")[0] # https://stackoverflow.com/questions/7351744/split-string-in-to-2-based-on-last-occurrence-of-a-separator#7351789
+# temp_config_name = nameNoExt+"_tmp.xml" # ik_outputFolder #tmp1 = file.split("/", 1) ; #tmp2       = tmp1[1][0:-3]
 temp_config_name = 'tmp_config_file.xml'
 tree1.write(CURR_DIR+"/"+temp_config_name,xml_declaration=True, encoding='utf-8') # save with the header
 
