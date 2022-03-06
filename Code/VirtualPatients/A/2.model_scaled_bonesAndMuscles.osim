@@ -2340,7 +2340,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.556053323365905</max_isometric_force>
+					<max_isometric_force>17.55605314714895</max_isometric_force>
 					
 					<optimal_fiber_length>0.15996049679499716</optimal_fiber_length>
 					
@@ -2356,7 +2356,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_2">
 					
 					<GeometryPath name="geometrypath">
@@ -2386,7 +2386,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.995058968859933</max_isometric_force>
+					<max_isometric_force>24.99505871797478</max_isometric_force>
 					
 					<optimal_fiber_length>0.12175907168137941</optimal_fiber_length>
 					
@@ -2402,7 +2402,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_3">
 					
 					<GeometryPath name="geometrypath">
@@ -2432,7 +2432,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>29.60724246906623</max_isometric_force>
+					<max_isometric_force>29.607242171886792</max_isometric_force>
 					
 					<optimal_fiber_length>0.11578336749596606</optimal_fiber_length>
 					
@@ -2448,7 +2448,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_4">
 					
 					<GeometryPath name="geometrypath">
@@ -2478,7 +2478,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>20.531655581563516</max_isometric_force>
+					<max_isometric_force>20.531655375479282</max_isometric_force>
 					
 					<optimal_fiber_length>0.10433474486784457</optimal_fiber_length>
 					
@@ -2494,7 +2494,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_5">
 					
 					<GeometryPath name="geometrypath">
@@ -2524,7 +2524,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.15117377500543</max_isometric_force>
+					<max_isometric_force>18.151173592815017</max_isometric_force>
 					
 					<optimal_fiber_length>0.10770044405350943</optimal_fiber_length>
 					
@@ -2540,7 +2540,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_6">
 					
 					<GeometryPath name="geometrypath">
@@ -2570,7 +2570,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.026791403897935</max_isometric_force>
+					<max_isometric_force>15.02679125306817</max_isometric_force>
 					
 					<optimal_fiber_length>0.111038038312872</optimal_fiber_length>
 					
@@ -2586,7 +2586,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_7">
 					
 					<GeometryPath name="geometrypath">
@@ -2616,7 +2616,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.431670952258413</max_isometric_force>
+					<max_isometric_force>14.431670807402105</max_isometric_force>
 					
 					<optimal_fiber_length>0.12972637095714745</optimal_fiber_length>
 					
@@ -2632,7 +2632,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_8">
 					
 					<GeometryPath name="geometrypath">
@@ -2662,7 +2662,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>20.531655581563516</max_isometric_force>
+					<max_isometric_force>20.531655375479282</max_isometric_force>
 					
 					<optimal_fiber_length>0.11276248622686141</optimal_fiber_length>
 					
@@ -2678,7 +2678,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap_9">
 					
 					<GeometryPath name="geometrypath">
@@ -2708,7 +2708,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.299953887915308</max_isometric_force>
+					<max_isometric_force>18.299953704231534</max_isometric_force>
 					
 					<optimal_fiber_length>0.14030464697940034</optimal_fiber_length>
 					
@@ -2724,7 +2724,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap10">
 					
 					<GeometryPath name="geometrypath">
@@ -2754,7 +2754,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>12.051189145700326</max_isometric_force>
+					<max_isometric_force>12.05118902473784</max_isometric_force>
 					
 					<optimal_fiber_length>0.15046994870650374</optimal_fiber_length>
 					
@@ -2770,7 +2770,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_scap11">
 					
 					<GeometryPath name="geometrypath">
@@ -2800,7 +2800,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.68777038770901</max_isometric_force>
+					<max_isometric_force>13.687770250319522</max_isometric_force>
 					
 					<optimal_fiber_length>0.1406377266682434</optimal_fiber_length>
 					
@@ -2816,7 +2816,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_clav_1">
 					
 					<GeometryPath name="geometrypath">
@@ -2846,7 +2846,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.431670952258413</max_isometric_force>
+					<max_isometric_force>14.431670807402105</max_isometric_force>
 					
 					<optimal_fiber_length>0.15849451092357872</optimal_fiber_length>
 					
@@ -2862,7 +2862,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="trap_clav_2">
 					
 					<GeometryPath name="geometrypath">
@@ -2892,7 +2892,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992665306764386</max_isometric_force>
+					<max_isometric_force>6.992665236576277</max_isometric_force>
 					
 					<optimal_fiber_length>0.18323329425639398</optimal_fiber_length>
 					
@@ -2908,7 +2908,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lev_scap_1">
 					
 					<GeometryPath name="geometrypath">
@@ -2938,7 +2938,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.282890839348532</max_isometric_force>
+					<max_isometric_force>14.282890695985587</max_isometric_force>
 					
 					<optimal_fiber_length>0.13299425109179047</optimal_fiber_length>
 					
@@ -2954,7 +2954,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lev_scap_2">
 					
 					<GeometryPath name="geometrypath">
@@ -2984,7 +2984,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.473131742627578</max_isometric_force>
+					<max_isometric_force>15.47313158731772</max_isometric_force>
 					
 					<optimal_fiber_length>0.10957669519562221</optimal_fiber_length>
 					
@@ -3000,7 +3000,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_min_1">
 					
 					<GeometryPath name="geometrypath">
@@ -3030,7 +3030,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992665306764386</max_isometric_force>
+					<max_isometric_force>6.992665236576277</max_isometric_force>
 					
 					<optimal_fiber_length>0.0963878409401457</optimal_fiber_length>
 					
@@ -3046,7 +3046,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_min_2">
 					
 					<GeometryPath name="geometrypath">
@@ -3076,7 +3076,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.919472081357219</max_isometric_force>
+					<max_isometric_force>15.91947192156727</max_isometric_force>
 					
 					<optimal_fiber_length>0.13048241333156849</optimal_fiber_length>
 					
@@ -3092,7 +3092,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_min_3">
 					
 					<GeometryPath name="geometrypath">
@@ -3122,7 +3122,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.919472081357219</max_isometric_force>
+					<max_isometric_force>15.91947192156727</max_isometric_force>
 					
 					<optimal_fiber_length>0.12716067949830828</optimal_fiber_length>
 					
@@ -3138,7 +3138,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_min_4">
 					
 					<GeometryPath name="geometrypath">
@@ -3168,7 +3168,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.843885193854505</max_isometric_force>
+					<max_isometric_force>6.843885125159761</max_isometric_force>
 					
 					<optimal_fiber_length>0.15918238158522138</optimal_fiber_length>
 					
@@ -3184,7 +3184,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="rhomboid_1">
 					
 					<GeometryPath name="geometrypath">
@@ -3214,7 +3214,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>7.587785758403908</max_isometric_force>
+					<max_isometric_force>7.587785682242344</max_isometric_force>
 					
 					<optimal_fiber_length>0.094913394988964325</optimal_fiber_length>
 					
@@ -3230,7 +3230,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="rhomboid_2">
 					
 					<GeometryPath name="geometrypath">
@@ -3260,7 +3260,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.68777038770901</max_isometric_force>
+					<max_isometric_force>13.687770250319522</max_isometric_force>
 					
 					<optimal_fiber_length>0.10629273159703859</optimal_fiber_length>
 					
@@ -3276,7 +3276,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="rhomboid_3">
 					
 					<GeometryPath name="geometrypath">
@@ -3306,7 +3306,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>21.12677603320304</max_isometric_force>
+					<max_isometric_force>21.126775821145348</max_isometric_force>
 					
 					<optimal_fiber_length>0.12892840514239229</optimal_fiber_length>
 					
@@ -3322,7 +3322,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="rhomboid_4">
 					
 					<GeometryPath name="geometrypath">
@@ -3352,7 +3352,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>12.199969258610205</max_isometric_force>
+					<max_isometric_force>12.199969136154357</max_isometric_force>
 					
 					<optimal_fiber_length>0.13786271109949735</optimal_fiber_length>
 					
@@ -3368,7 +3368,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="rhomboid_5">
 					
 					<GeometryPath name="geometrypath">
@@ -3398,7 +3398,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.968267564961996</max_isometric_force>
+					<max_isometric_force>9.968267464906608</max_isometric_force>
 					
 					<optimal_fiber_length>0.13710876016677573</optimal_fiber_length>
 					
@@ -3414,7 +3414,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_1">
 					
 					<GeometryPath name="geometrypath">
@@ -3455,7 +3455,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.075586887502714</max_isometric_force>
+					<max_isometric_force>9.075586796407508</max_isometric_force>
 					
 					<optimal_fiber_length>0.13016969722506186</optimal_fiber_length>
 					
@@ -3471,7 +3471,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_2">
 					
 					<GeometryPath name="geometrypath">
@@ -3512,7 +3512,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.36581242008686</max_isometric_force>
+					<max_isometric_force>16.36581225581682</max_isometric_force>
 					
 					<optimal_fiber_length>0.15384981374170084</optimal_fiber_length>
 					
@@ -3528,7 +3528,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_3">
 					
 					<GeometryPath name="geometrypath">
@@ -3569,7 +3569,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.621911855537459</max_isometric_force>
+					<max_isometric_force>15.621911698734236</max_isometric_force>
 					
 					<optimal_fiber_length>0.15957411697135701</optimal_fiber_length>
 					
@@ -3585,7 +3585,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_4">
 					
 					<GeometryPath name="geometrypath">
@@ -3626,7 +3626,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.36581242008686</max_isometric_force>
+					<max_isometric_force>16.36581225581682</max_isometric_force>
 					
 					<optimal_fiber_length>0.1313749417004694</optimal_fiber_length>
 					
@@ -3642,7 +3642,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_5">
 					
 					<GeometryPath name="geometrypath">
@@ -3683,7 +3683,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.521927226232355</max_isometric_force>
+					<max_isometric_force>9.521927130657058</max_isometric_force>
 					
 					<optimal_fiber_length>0.12363237028547203</optimal_fiber_length>
 					
@@ -3699,7 +3699,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_6">
 					
 					<GeometryPath name="geometrypath">
@@ -3740,7 +3740,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.431670952258413</max_isometric_force>
+					<max_isometric_force>14.431670807402105</max_isometric_force>
 					
 					<optimal_fiber_length>0.11336706199962988</optimal_fiber_length>
 					
@@ -3756,7 +3756,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_7">
 					
 					<GeometryPath name="geometrypath">
@@ -3797,7 +3797,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992665306764386</max_isometric_force>
+					<max_isometric_force>6.992665236576277</max_isometric_force>
 					
 					<optimal_fiber_length>0.09991390220508542</optimal_fiber_length>
 					
@@ -3813,7 +3813,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_8">
 					
 					<GeometryPath name="geometrypath">
@@ -3854,7 +3854,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>11.307288581150923</max_isometric_force>
+					<max_isometric_force>11.307288467655257</max_isometric_force>
 					
 					<optimal_fiber_length>0.066970862643996223</optimal_fiber_length>
 					
@@ -3870,7 +3870,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant_9">
 					
 					<GeometryPath name="geometrypath">
@@ -3911,7 +3911,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>11.753628919880564</max_isometric_force>
+					<max_isometric_force>11.753628801904807</max_isometric_force>
 					
 					<optimal_fiber_length>0.059287618085805079</optimal_fiber_length>
 					
@@ -3927,7 +3927,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant10">
 					
 					<GeometryPath name="geometrypath">
@@ -3968,7 +3968,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.373147113322474</max_isometric_force>
+					<max_isometric_force>9.373147019240541</max_isometric_force>
 					
 					<optimal_fiber_length>0.047673358709205964</optimal_fiber_length>
 					
@@ -3984,7 +3984,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant11">
 					
 					<GeometryPath name="geometrypath">
@@ -4025,7 +4025,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>3.4219425969272526</max_isometric_force>
+					<max_isometric_force>3.4219425625798805</max_isometric_force>
 					
 					<optimal_fiber_length>0.063949997026583438</optimal_fiber_length>
 					
@@ -4041,7 +4041,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="serr_ant12">
 					
 					<GeometryPath name="geometrypath">
@@ -4082,7 +4082,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.663372645906623</max_isometric_force>
+					<max_isometric_force>16.66337247864985</max_isometric_force>
 					
 					<optimal_fiber_length>0.07020091524851578</optimal_fiber_length>
 					
@@ -4098,7 +4098,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_1">
 					
 					<GeometryPath name="geometrypath">
@@ -4137,7 +4137,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>42.99745263095548</max_isometric_force>
+					<max_isometric_force>42.99745219937328</max_isometric_force>
 					
 					<optimal_fiber_length>0.10826184555654908</optimal_fiber_length>
 					
@@ -4153,7 +4153,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_2">
 					
 					<GeometryPath name="geometrypath">
@@ -4192,7 +4192,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>31.392603823984796</max_isometric_force>
+					<max_isometric_force>31.39260350888499</max_isometric_force>
 					
 					<optimal_fiber_length>0.090997907878620346</optimal_fiber_length>
 					
@@ -4208,7 +4208,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_3">
 					
 					<GeometryPath name="geometrypath">
@@ -4247,7 +4247,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>66.35593035780673</max_isometric_force>
+					<max_isometric_force>66.35592969176638</max_isometric_force>
 					
 					<optimal_fiber_length>0.079237588419502</optimal_fiber_length>
 					
@@ -4263,7 +4263,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_4">
 					
 					<GeometryPath name="geometrypath">
@@ -4302,7 +4302,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.407273210456026</max_isometric_force>
+					<max_isometric_force>17.407273035732434</max_isometric_force>
 					
 					<optimal_fiber_length>0.063290221938526903</optimal_fiber_length>
 					
@@ -4318,7 +4318,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_5">
 					
 					<GeometryPath name="geometrypath">
@@ -4357,7 +4357,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.853613549185667</max_isometric_force>
+					<max_isometric_force>17.853613369981986</max_isometric_force>
 					
 					<optimal_fiber_length>0.063193274140212641</optimal_fiber_length>
 					
@@ -4373,7 +4373,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_6">
 					
 					<GeometryPath name="geometrypath">
@@ -4412,7 +4412,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>42.402332179315955</max_isometric_force>
+					<max_isometric_force>42.402331753707216</max_isometric_force>
 					
 					<optimal_fiber_length>0.072566517621034013</optimal_fiber_length>
 					
@@ -4428,7 +4428,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_7">
 					
 					<GeometryPath name="geometrypath">
@@ -4467,7 +4467,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.1682368235722</max_isometric_force>
+					<max_isometric_force>22.168236601060965</max_isometric_force>
 					
 					<optimal_fiber_length>0.071225789592860869</optimal_fiber_length>
 					
@@ -4483,7 +4483,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_8">
 					
 					<GeometryPath name="geometrypath">
@@ -4522,7 +4522,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>31.98772427562432</max_isometric_force>
+					<max_isometric_force>31.987723954551054</max_isometric_force>
 					
 					<optimal_fiber_length>0.067402863062005255</optimal_fiber_length>
 					
@@ -4538,7 +4538,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap_9">
 					
 					<GeometryPath name="geometrypath">
@@ -4577,7 +4577,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>42.55111229222584</max_isometric_force>
+					<max_isometric_force>42.55111186512373</max_isometric_force>
 					
 					<optimal_fiber_length>0.070607011505088205</optimal_fiber_length>
 					
@@ -4593,7 +4593,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap10">
 					
 					<GeometryPath name="geometrypath">
@@ -4632,7 +4632,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>66.20715024489685</max_isometric_force>
+					<max_isometric_force>66.20714958034986</max_isometric_force>
 					
 					<optimal_fiber_length>0.072980602260291155</optimal_fiber_length>
 					
@@ -4648,7 +4648,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_scap11">
 					
 					<GeometryPath name="geometrypath">
@@ -4687,7 +4687,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>35.55844698546145</max_isometric_force>
+					<max_isometric_force>35.55844662854745</max_isometric_force>
 					
 					<optimal_fiber_length>0.072780727164187181</optimal_fiber_length>
 					
@@ -4703,7 +4703,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_clav_1">
 					
 					<GeometryPath name="geometrypath">
@@ -4742,7 +4742,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.04385445246471</max_isometric_force>
+					<max_isometric_force>19.043854261314117</max_isometric_force>
 					
 					<optimal_fiber_length>0.082991903557636804</optimal_fiber_length>
 					
@@ -4758,7 +4758,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_clav_2">
 					
 					<GeometryPath name="geometrypath">
@@ -4797,7 +4797,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>23.80481806558089</max_isometric_force>
+					<max_isometric_force>23.804817826642648</max_isometric_force>
 					
 					<optimal_fiber_length>0.093269160162588516</optimal_fiber_length>
 					
@@ -4813,7 +4813,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_clav_3">
 					
 					<GeometryPath name="geometrypath">
@@ -4852,7 +4852,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.621911855537459</max_isometric_force>
+					<max_isometric_force>15.621911698734236</max_isometric_force>
 					
 					<optimal_fiber_length>0.082088629903606727</optimal_fiber_length>
 					
@@ -4868,7 +4868,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="delt_clav_4">
 					
 					<GeometryPath name="geometrypath">
@@ -4907,7 +4907,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.663372645906623</max_isometric_force>
+					<max_isometric_force>16.66337247864985</max_isometric_force>
 					
 					<optimal_fiber_length>0.097715666900949932</optimal_fiber_length>
 					
@@ -4923,7 +4923,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="coracobr_1">
 					
 					<GeometryPath name="geometrypath">
@@ -4953,7 +4953,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>29.90480269488599</max_isometric_force>
+					<max_isometric_force>29.904802394719823</max_isometric_force>
 					
 					<optimal_fiber_length>0.062069462540345489</optimal_fiber_length>
 					
@@ -4969,7 +4969,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="coracobr_2">
 					
 					<GeometryPath name="geometrypath">
@@ -4999,7 +4999,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.019456710662322</max_isometric_force>
+					<max_isometric_force>22.019456489644448</max_isometric_force>
 					
 					<optimal_fiber_length>0.064345795951289114</optimal_fiber_length>
 					
@@ -5015,7 +5015,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="coracobr_3">
 					
 					<GeometryPath name="geometrypath">
@@ -5045,7 +5045,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.96093287172638</max_isometric_force>
+					<max_isometric_force>16.960932701482886</max_isometric_force>
 					
 					<optimal_fiber_length>0.068434659268191728</optimal_fiber_length>
 					
@@ -5061,7 +5061,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="infra_1">
 					
 					<GeometryPath name="geometrypath">
@@ -5100,7 +5100,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>40.46819071148751</max_isometric_force>
+					<max_isometric_force>40.468190305292495</max_isometric_force>
 					
 					<optimal_fiber_length>0.063672473560110118</optimal_fiber_length>
 					
@@ -5116,7 +5116,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="infra_2">
 					
 					<GeometryPath name="geometrypath">
@@ -5155,7 +5155,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>40.91453105021715</max_isometric_force>
+					<max_isometric_force>40.91453063954205</max_isometric_force>
 					
 					<optimal_fiber_length>0.07041959720243339</optimal_fiber_length>
 					
@@ -5171,7 +5171,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="infra_3">
 					
 					<GeometryPath name="geometrypath">
@@ -5210,7 +5210,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>28.863341904516826</max_isometric_force>
+					<max_isometric_force>28.86334161480421</max_isometric_force>
 					
 					<optimal_fiber_length>0.066502151352880873</optimal_fiber_length>
 					
@@ -5226,7 +5226,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="infra_4">
 					
 					<GeometryPath name="geometrypath">
@@ -5265,7 +5265,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>30.797483372345273</max_isometric_force>
+					<max_isometric_force>30.797483063218923</max_isometric_force>
 					
 					<optimal_fiber_length>0.068052193146611609</optimal_fiber_length>
 					
@@ -5281,7 +5281,7 @@
 						<x> -5 1.098 1.099 1.1 1.21 1.32 1.43 1.54 1.65 1.76 1.761 1.762 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="infra_5">
 					
 					<GeometryPath name="geometrypath">
@@ -5320,7 +5320,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>44.931594098783926</max_isometric_force>
+					<max_isometric_force>44.93159364778799</max_isometric_force>
 					
 					<optimal_fiber_length>0.068918978928148369</optimal_fiber_length>
 					
@@ -5336,7 +5336,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="infra_6">
 					
 					<GeometryPath name="geometrypath">
@@ -5375,7 +5375,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>27.077980549598262</max_isometric_force>
+					<max_isometric_force>27.07798027780601</max_isometric_force>
 					
 					<optimal_fiber_length>0.074750227004244232</optimal_fiber_length>
 					
@@ -5391,7 +5391,7 @@
 						<x> -5 1.098 1.099 1.1 1.21 1.32 1.43 1.54 1.65 1.76 1.761 1.762 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="ter_min_1">
 					
 					<GeometryPath name="geometrypath">
@@ -5815,7 +5815,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.853613549185667</max_isometric_force>
+					<max_isometric_force>17.853613369981986</max_isometric_force>
 					
 					<optimal_fiber_length>0.055658823512218548</optimal_fiber_length>
 					
@@ -5831,7 +5831,7 @@
 						<x> -5 1.098 1.099 1.1 1.21 1.32 1.43 1.54 1.65 1.76 1.761 1.762 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="supra_2">
 					
 					<GeometryPath name="geometrypath">
@@ -5870,7 +5870,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.812152758816502</max_isometric_force>
+					<max_isometric_force>16.81215259006637</max_isometric_force>
 					
 					<optimal_fiber_length>0.060085028540265616</optimal_fiber_length>
 					
@@ -5886,7 +5886,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="supra_3">
 					
 					<GeometryPath name="geometrypath">
@@ -5925,7 +5925,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>38.38526913074918</max_isometric_force>
+					<max_isometric_force>38.38526874546127</max_isometric_force>
 					
 					<optimal_fiber_length>0.056220229965364216</optimal_fiber_length>
 					
@@ -5941,7 +5941,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="supra_4">
 					
 					<GeometryPath name="geometrypath">
@@ -5980,7 +5980,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.341414678284472</max_isometric_force>
+					<max_isometric_force>19.34141448414715</max_isometric_force>
 					
 					<optimal_fiber_length>0.055274334040106857</optimal_fiber_length>
 					
@@ -5996,7 +5996,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_1">
 					
 					<GeometryPath name="geometrypath">
@@ -6041,7 +6041,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.546324968034744</max_isometric_force>
+					<max_isometric_force>6.546324902326727</max_isometric_force>
 					
 					<optimal_fiber_length>0.056217682393346166</optimal_fiber_length>
 					
@@ -6057,7 +6057,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_2">
 					
 					<GeometryPath name="geometrypath">
@@ -6102,7 +6102,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>11.604848806970683</max_isometric_force>
+					<max_isometric_force>11.60484869048829</max_isometric_force>
 					
 					<optimal_fiber_length>0.064407988529409099</optimal_fiber_length>
 					
@@ -6118,7 +6118,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_3">
 					
 					<GeometryPath name="geometrypath">
@@ -6163,7 +6163,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>39.27794980820847</max_isometric_force>
+					<max_isometric_force>39.277949413960364</max_isometric_force>
 					
 					<optimal_fiber_length>0.066475589163864632</optimal_fiber_length>
 					
@@ -6179,7 +6179,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_4">
 					
 					<GeometryPath name="geometrypath">
@@ -6218,7 +6218,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>40.765750937307274</max_isometric_force>
+					<max_isometric_force>40.76575052812553</max_isometric_force>
 					
 					<optimal_fiber_length>0.074563274433290153</optimal_fiber_length>
 					
@@ -6234,7 +6234,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_5">
 					
 					<GeometryPath name="geometrypath">
@@ -6273,7 +6273,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.96093287172638</max_isometric_force>
+					<max_isometric_force>16.960932701482886</max_isometric_force>
 					
 					<optimal_fiber_length>0.079785223264532232</optimal_fiber_length>
 					
@@ -6289,7 +6289,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_6">
 					
 					<GeometryPath name="geometrypath">
@@ -6328,7 +6328,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.1682368235722</max_isometric_force>
+					<max_isometric_force>22.168236601060965</max_isometric_force>
 					
 					<optimal_fiber_length>0.076213697524560642</optimal_fiber_length>
 					
@@ -6344,7 +6344,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_7">
 					
 					<GeometryPath name="geometrypath">
@@ -6383,7 +6383,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.10237829140065</max_isometric_force>
+					<max_isometric_force>24.10237804947568</max_isometric_force>
 					
 					<optimal_fiber_length>0.081282903664026296</optimal_fiber_length>
 					
@@ -6399,7 +6399,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_8">
 					
 					<GeometryPath name="geometrypath">
@@ -6438,7 +6438,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.075586887502714</max_isometric_force>
+					<max_isometric_force>9.075586796407508</max_isometric_force>
 					
 					<optimal_fiber_length>0.077862514716718553</optimal_fiber_length>
 					
@@ -6454,7 +6454,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap_9">
 					
 					<GeometryPath name="geometrypath">
@@ -6493,7 +6493,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>33.02918506599348</max_isometric_force>
+					<max_isometric_force>33.02918473446667</max_isometric_force>
 					
 					<optimal_fiber_length>0.071527749466953547</optimal_fiber_length>
 					
@@ -6509,7 +6509,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap10">
 					
 					<GeometryPath name="geometrypath">
@@ -6548,7 +6548,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992665306764386</max_isometric_force>
+					<max_isometric_force>6.992665236576277</max_isometric_force>
 					
 					<optimal_fiber_length>0.068666053195395649</optimal_fiber_length>
 					
@@ -6564,7 +6564,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="subscap11">
 					
 					<GeometryPath name="geometrypath">
@@ -6603,7 +6603,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>2.380481806558089</max_isometric_force>
+					<max_isometric_force>2.3804817826642646</max_isometric_force>
 					
 					<optimal_fiber_length>0.063746037302842132</optimal_fiber_length>
 					
@@ -6619,7 +6619,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="bic_l">
 					
 					<GeometryPath name="geometrypath">
@@ -6684,7 +6684,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.4203335240475676</max_control><weakness>0.4203335240475676</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="bic_b_1">
 					
 					<GeometryPath name="geometrypath">
@@ -6739,7 +6739,7 @@
 						<x> -5 1.497 1.498 1.5 1.65 1.8 1.95 2.1 2.25 2.4 2.402 2.403 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.4203335240475676</max_control><weakness>0.4203335240475676</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="bic_b_2">
 					
 					<GeometryPath name="geometrypath">
@@ -6794,7 +6794,7 @@
 						<x> -5 1.597 1.598 1.6 1.76 1.92 2.08 2.24 2.4 2.56 2.562 2.563 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.4203335240475676</max_control><weakness>0.4203335240475676</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_long_1">
 					
 					<GeometryPath name="geometrypath">
@@ -6849,7 +6849,7 @@
 						<x> -5 1.497 1.498 1.5 1.65 1.8 1.95 2.1 2.25 2.4 2.402 2.403 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_long_2">
 					
 					<GeometryPath name="geometrypath">
@@ -6904,7 +6904,7 @@
 						<x> -5 1.497 1.498 1.5 1.65 1.8 1.95 2.1 2.25 2.4 2.402 2.403 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_long_3">
 					
 					<GeometryPath name="geometrypath">
@@ -6959,7 +6959,7 @@
 						<x> -5 1.397 1.399 1.4 1.54 1.68 1.82 1.96 2.1 2.24 2.241 2.243 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_long_4">
 					
 					<GeometryPath name="geometrypath">
@@ -7014,7 +7014,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lat_dorsi_1">
 					
 					<GeometryPath name="geometrypath">
@@ -7053,7 +7053,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>8.331686322953312</max_isometric_force>
+					<max_isometric_force>8.331686239324926</max_isometric_force>
 					
 					<optimal_fiber_length>0.2961431495192447</optimal_fiber_length>
 					
@@ -7069,7 +7069,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lat_dorsi_2">
 					
 					<GeometryPath name="geometrypath">
@@ -7108,7 +7108,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.092649936069488</max_isometric_force>
+					<max_isometric_force>13.092649804653455</max_isometric_force>
 					
 					<optimal_fiber_length>0.32916573474442634</optimal_fiber_length>
 					
@@ -7124,7 +7124,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lat_dorsi_3">
 					
 					<GeometryPath name="geometrypath">
@@ -7163,7 +7163,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.19263456537459</max_isometric_force>
+					<max_isometric_force>19.192634372730634</max_isometric_force>
 					
 					<optimal_fiber_length>0.31098036314035843</optimal_fiber_length>
 					
@@ -7179,7 +7179,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lat_dorsi_4">
 					
 					<GeometryPath name="geometrypath">
@@ -7218,7 +7218,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.282890839348532</max_isometric_force>
+					<max_isometric_force>14.282890695985587</max_isometric_force>
 					
 					<optimal_fiber_length>0.30936058699642793</optimal_fiber_length>
 					
@@ -7234,7 +7234,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lat_dorsi_5">
 					
 					<GeometryPath name="geometrypath">
@@ -7273,7 +7273,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.092649936069488</max_isometric_force>
+					<max_isometric_force>13.092649804653455</max_isometric_force>
 					
 					<optimal_fiber_length>0.28040288469164054</optimal_fiber_length>
 					
@@ -7289,7 +7289,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="lat_dorsi_6">
 					
 					<GeometryPath name="geometrypath">
@@ -7328,7 +7328,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.621911855537459</max_isometric_force>
+					<max_isometric_force>15.621911698734236</max_isometric_force>
 					
 					<optimal_fiber_length>0.2958360644819743</optimal_fiber_length>
 					
@@ -7344,7 +7344,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_t_1">
 					
 					<GeometryPath name="geometrypath">
@@ -7383,7 +7383,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.59751411373507</max_isometric_force>
+					<max_isometric_force>18.59751392706457</max_isometric_force>
 					
 					<optimal_fiber_length>0.21012703213317546</optimal_fiber_length>
 					
@@ -7399,7 +7399,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_t_2">
 					
 					<GeometryPath name="geometrypath">
@@ -7438,7 +7438,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.556053323365905</max_isometric_force>
+					<max_isometric_force>17.55605314714895</max_isometric_force>
 					
 					<optimal_fiber_length>0.20711447526121118</optimal_fiber_length>
 					
@@ -7454,7 +7454,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_t_3">
 					
 					<GeometryPath name="geometrypath">
@@ -7493,7 +7493,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.548718630130292</max_isometric_force>
+					<max_isometric_force>24.548718383725227</max_isometric_force>
 					
 					<optimal_fiber_length>0.20819374150249051</optimal_fiber_length>
 					
@@ -7509,7 +7509,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_t_4">
 					
 					<GeometryPath name="geometrypath">
@@ -7548,7 +7548,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>23.35847772685125</max_isometric_force>
+					<max_isometric_force>23.358477492393096</max_isometric_force>
 					
 					<optimal_fiber_length>0.20921922408366447</optimal_fiber_length>
 					
@@ -7564,7 +7564,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_t_5">
 					
 					<GeometryPath name="geometrypath">
@@ -7603,7 +7603,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.787755017014113</max_isometric_force>
+					<max_isometric_force>19.7877548183967</max_isometric_force>
 					
 					<optimal_fiber_length>0.16718000654841017</optimal_fiber_length>
 					
@@ -7619,7 +7619,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_t_6">
 					
 					<GeometryPath name="geometrypath">
@@ -7658,7 +7658,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>29.45846235615635</max_isometric_force>
+					<max_isometric_force>29.458462060470275</max_isometric_force>
 					
 					<optimal_fiber_length>0.15754552343668043</optimal_fiber_length>
 					
@@ -7674,7 +7674,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_c_1">
 					
 					<GeometryPath name="geometrypath">
@@ -7713,7 +7713,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>26.631640210868618</max_isometric_force>
+					<max_isometric_force>26.63163994355646</max_isometric_force>
 					
 					<optimal_fiber_length>0.14052129650044934</optimal_fiber_length>
 					
@@ -7729,7 +7729,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pect_maj_c_2">
 					
 					<GeometryPath name="geometrypath">
@@ -7768,7 +7768,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.812152758816502</max_isometric_force>
+					<max_isometric_force>16.81215259006637</max_isometric_force>
 					
 					<optimal_fiber_length>0.11336608524171841</optimal_fiber_length>
 					
@@ -7784,7 +7784,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14878011141651654</max_control><weakness>0.14878011141651654</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_med_1">
 					
 					<GeometryPath name="geometrypath">
@@ -7839,7 +7839,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_med_2">
 					
 					<GeometryPath name="geometrypath">
@@ -7894,7 +7894,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_med_3">
 					
 					<GeometryPath name="geometrypath">
@@ -7949,7 +7949,7 @@
 						<x> -5 1.397 1.399 1.4 1.54 1.68 1.82 1.96 2.1 2.24 2.241 2.243 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_med_4">
 					
 					<GeometryPath name="geometrypath">
@@ -8004,7 +8004,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_med_5">
 					
 					<GeometryPath name="geometrypath">
@@ -8059,7 +8059,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_1">
 					
 					<GeometryPath name="geometrypath">
@@ -8098,7 +8098,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>38.41430314764651</max_isometric_force>
+					<max_isometric_force>38.41442549988262</max_isometric_force>
 					
 					<optimal_fiber_length>0.083139637853170051</optimal_fiber_length>
 					
@@ -8114,7 +8114,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.12233893471300197</max_control><weakness>0.12233893471300197</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_2">
 					
 					<GeometryPath name="geometrypath">
@@ -8153,7 +8153,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.592941184934194</max_isometric_force>
+					<max_isometric_force>22.592788804056486</max_isometric_force>
 					
 					<optimal_fiber_length>0.090247603432485141</optimal_fiber_length>
 					
@@ -8169,7 +8169,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.14299233420288915</max_control><weakness>0.14299233420288915</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_3">
 					
 					<GeometryPath name="geometrypath">
@@ -8208,7 +8208,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.292934537782763</max_isometric_force>
+					<max_isometric_force>24.29299487154033</max_isometric_force>
 					
 					<optimal_fiber_length>0.082253660788472238</optimal_fiber_length>
 					
@@ -8224,7 +8224,7 @@
 						<x> -5 1.098 1.099 1.1 1.21 1.32 1.43 1.54 1.65 1.76 1.761 1.762 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.1547324514110849</max_control><weakness>0.1547324514110849</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_4">
 					
 					<GeometryPath name="geometrypath">
@@ -8263,7 +8263,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.349771451767266</max_isometric_force>
+					<max_isometric_force>14.349738228417479</max_isometric_force>
 					
 					<optimal_fiber_length>0.071840246074855271</optimal_fiber_length>
 					
@@ -8279,7 +8279,7 @@
 						<x> -5 1.397 1.399 1.4 1.54 1.68 1.82 1.96 2.1 2.24 2.241 2.243 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.16493951986686758</max_control><weakness>0.16493951986686758</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_5">
 					
 					<GeometryPath name="geometrypath">
@@ -8318,7 +8318,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.837458553671805</max_isometric_force>
+					<max_isometric_force>16.837455299139457</max_isometric_force>
 					
 					<optimal_fiber_length>0.058891728483027289</optimal_fiber_length>
 					
@@ -8334,7 +8334,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.16670747820930154</max_control><weakness>0.16670747820930154</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_6">
 					
 					<GeometryPath name="geometrypath">
@@ -8373,7 +8373,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.8181252032733</max_isometric_force>
+					<max_isometric_force>19.818186703210547</max_isometric_force>
 					
 					<optimal_fiber_length>0.044668912306677876</optimal_fiber_length>
 					
@@ -8389,7 +8389,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.19055948753087062</max_control><weakness>0.19055948753087062</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachialis_7">
 					
 					<GeometryPath name="geometrypath">
@@ -8428,7 +8428,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.888997106723576</max_isometric_force>
+					<max_isometric_force>18.88890082446089</max_isometric_force>
 					
 					<optimal_fiber_length>0.059346311835286505</optimal_fiber_length>
 					
@@ -8444,7 +8444,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.16007543071577027</max_control><weakness>0.16007543071577027</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachiorad_1">
 					
 					<GeometryPath name="geometrypath">
@@ -8474,7 +8474,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>5.406836895751248</max_isometric_force>
+					<max_isometric_force>5.406836906615002</max_isometric_force>
 					
 					<optimal_fiber_length>0.15545157075401794</optimal_fiber_length>
 					
@@ -8490,7 +8490,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.18022789688716673</max_control><weakness>0.18022789688716673</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachiorad_2">
 					
 					<GeometryPath name="geometrypath">
@@ -8520,7 +8520,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>12.008930915832227</max_isometric_force>
+					<max_isometric_force>12.008975046271841</max_isometric_force>
 					
 					<optimal_fiber_length>0.15616998050770317</optimal_fiber_length>
 					
@@ -8536,7 +8536,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.1464509151984371</max_control><weakness>0.1464509151984371</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="brachiorad_3">
 					
 					<GeometryPath name="geometrypath">
@@ -8566,7 +8566,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>8.960499029663088</max_isometric_force>
+					<max_isometric_force>8.960511658815744</max_isometric_force>
 					
 					<optimal_fiber_length>0.1034484257277607</optimal_fiber_length>
 					
@@ -8582,7 +8582,7 @@
 						<x> -5 1.297 1.299 1.3 1.43 1.56 1.69 1.82 1.95 2.08 2.081 2.083 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0.17231753190030277</max_control><weakness>0.17231753190030277</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="pron_teres_1">
 					
 					<GeometryPath name="geometrypath">
@@ -9193,7 +9193,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_lat_2">
 					
 					<GeometryPath name="geometrypath">
@@ -9248,7 +9248,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_lat_3">
 					
 					<GeometryPath name="geometrypath">
@@ -9303,7 +9303,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_lat_4">
 					
 					<GeometryPath name="geometrypath">
@@ -9358,7 +9358,7 @@
 						<x> -5 1.198 1.199 1.2 1.32 1.44 1.56 1.68 1.8 1.92 1.921 1.922 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="tric_lat_5">
 					
 					<GeometryPath name="geometrypath">
@@ -9413,7 +9413,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>True</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="anconeus_1">
 					
 					<GeometryPath name="geometrypath">
@@ -9459,7 +9459,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="anconeus_2">
 					
 					<GeometryPath name="geometrypath">
@@ -9505,7 +9505,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="anconeus_3">
 					
 					<GeometryPath name="geometrypath">
@@ -9551,7 +9551,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="anconeus_4">
 					
 					<GeometryPath name="geometrypath">
@@ -9597,7 +9597,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 				<Schutte1993Muscle_Deprecated name="anconeus_5">
 					
 					<GeometryPath name="geometrypath">
@@ -9643,7 +9643,7 @@
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+				<min_control>0</min_control><max_control>0</max_control><weakness>0.09992742171316488</weakness><max_isometric_force_original_scaled>165.2</max_isometric_force_original_scaled><muscle_has_fes_testing>False</muscle_has_fes_testing></Schutte1993Muscle_Deprecated>
 			</objects>
 			<groups>
 				<ObjectGroup name="trap_scap">

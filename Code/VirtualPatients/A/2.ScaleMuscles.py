@@ -603,6 +603,15 @@ print(df2)
 # Add to osim file xml
 ######
 
+title("Step 3 - Update values and save")
+
+def SubElementWithText(parent, tag, text):
+    attrib = {}
+    element = parent.makeelement(tag, attrib)
+    parent.append(element)
+    element.text = text
+    return element
+
 for muscle in data_all:
 
     for x in osim_muscle_data:
@@ -620,30 +629,20 @@ for muscle in data_all:
             # create tags
             
             # min_control
-            child = xml.Element("min_control", )
-            child.text = str(0)
-            this_muscle.append(child)
+            SubElementWithText(x, 'min_control', str(0))
             
             # max_control
-            child = xml.Element("max_control", )
-            child.text = str(data_all[muscle]['mc_new'])
-            this_muscle.append(child)
+            SubElementWithText(x, 'max_control', str(data_all[muscle]['mc_new']))
             
             # weakness
-            child = xml.Element("weakness", )
-            child.text = str(data_all[muscle]['weakness'])
-            this_muscle.append(child)
-            
+            SubElementWithText(x, 'weakness', str(data_all[muscle]['weakness']))
+           
             # max_isometric_force_original_scaled
-            child = xml.Element("max_isometric_force_original_scaled", )
-            child.text = str(fmax_original)
-            this_muscle.append(child)
-            
+            SubElementWithText(x, 'max_isometric_force_original_scaled', str(fmax_original))
+ 
             # muscle_has_fes_testing
-            child = xml.Element("muscle_has_fes_testing", )
-            child.text = str(data_all[muscle]['fes'])
-            this_muscle.append(child)
-
+            SubElementWithText(x, 'muscle_has_fes_testing', str(data_all[muscle]['fes']))
+           
 ######
 # LOCK the ROM :
 ######
@@ -663,7 +662,7 @@ gh_z_upperBound = np.deg2rad( + max(rom_flexion,   rom_abduction) ) # Take the h
 tree.find("Model/JointSet/objects//coordinates/Coordinate[@name='{}']/range".format('GH_z')).text = str(gh_z_lowerBound) + ' ' + str(gh_z_upperBound)
 # set clamped to true
 tree.find("Model/JointSet/objects//coordinates/Coordinate[@name='{}']/clamped".format('GH_z')).text = 'true'
-print("GH_z to be defined as {} -> {}".format(str(gh_z_lowerBound), str(gh_z_upperBound)))
+print("GH_z  to be defined as {} -> {}".format(str(gh_z_lowerBound), str(gh_z_upperBound)))
 
 # GH_YY
 gh_yy_upperBound = np.deg2rad( + rom_latrot )
