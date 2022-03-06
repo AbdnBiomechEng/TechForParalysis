@@ -94,9 +94,9 @@ rom_latrot    = 15
 
 # Model
 #input_osim_file       = '../../Data/Models/das3.osim'
-input_osim_file        = '1.model_scaled_bones.osim'   # the initial file to load : scaled skeleton
-input_osim_file_scaled = 'das3_scaled_temp.osim' # the temporary file that scaled all muscle forces by same factor
-output_osim_file       = '2.model_scaled_bonesAndMuscles.osim'             # the optimised file, that has modified each muscle's max force and activation
+input_osim_file        = '1.model_scaled_bones.osim'           # the initial file to load : scaled skeleton
+input_osim_file_scaled = 'das3_scaled_temp.osim'               # the temporary file that scaled all muscle forces by same factor
+output_osim_file       = '2.model_scaled_bonesAndMuscles.osim' # the optimised file, that has modified each muscle's max force and activation
 
 #####################################
 # ------ Scale the muscle forces (based on geometry and one scaling factor)
@@ -131,10 +131,6 @@ if scaleInitialMuscleForce:
 
 # Load in external parser
 tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file)
-#myxml            = open(CURR_DIR + "/" + input_osim_file_scaled).read()
-#osim_file_loaded = xmltodict.parse(myxml)
-#osim_muscle_data = osim_file_loaded["OpenSimDocument"]["Model"]["ForceSet"]["objects"]["Schutte1993Muscle_Deprecated"] # List of dicts (one dict per muscle)
-# ici, on veut une liste des objects!
 osim_muscle_data = list(tree.findall("./Model/ForceSet/objects/"))
 
 # Load in osim
@@ -181,7 +177,6 @@ def performOptimisation(jointCoordinatesName, muscles_all, muscles_vol, muscles_
         
             for x in osim_muscle_data:
         
-                #name = x["@name"]
                 name = x.attrib['name']
     
                 # There can be several muscle 'fibres' to represent the same muscle so we do a partial match on the name
@@ -197,13 +192,11 @@ def performOptimisation(jointCoordinatesName, muscles_all, muscles_vol, muscles_
                     
                     # compute moment arm
                     this_moment_arm = abs(this_muscle.computeMomentArm(state, jointCoordinates))
-                    #print('moment arm is {}'.format(this_moment_arm))
                     # keep it positive to have consistent graphs (otherwise elbow extensors' new Fmax will appear negative)
                     # this_moment_arm = abs(this_moment_arm)
                     if verbose: print('moment arm is {}'.format(this_moment_arm))
         
                     # get the original Fmax
-                    #fmax_original = float(x["max_isometric_force"])
                     fmax_original = float(x.find("max_isometric_force").text)
         
                     # compute fmax at this angle            
@@ -247,7 +240,7 @@ def performOptimisation(jointCoordinatesName, muscles_all, muscles_vol, muscles_
     
     # We need two lists representing parameters of the stimulated muscles:
     Fmax_stim = [] # the max force at this angle
-    r_stim = []    # the moment arm at this angle
+    r_stim    = [] # the moment arm at this angle
     
     for muscle in muscles_stim: # for each muscle that is stimulated
         
@@ -275,7 +268,6 @@ def performOptimisation(jointCoordinatesName, muscles_all, muscles_vol, muscles_
     # Considering this scaling factor, the maximum moment these muscles can generate in a voluntary situation is:
     
     max_force_patho_stim = moment_muscles_stim = sum( Sstim * np.array(Fmax_stim) * Sstim * np.array(r_stim) ) # = 6.659993919241959 Nm. So there's only ~2.1 Nm to be shared with the other muscles!
-    #print(max_force_patho_stim)
     # This is the contribution of the stimulated muscles to the jointMoment during a VOLUNTARY maximum contraction (without stimulation).
     # The remaining of the jointMoment is to be shared between the other muscles.
     # The next step is therefore to optimise the values that scale both the activation and the fmax of the remainng muscles, in order to match the total voluntary jointmoment that has been recorded.
@@ -285,7 +277,7 @@ def performOptimisation(jointCoordinatesName, muscles_all, muscles_vol, muscles_
     #####################################
     
     Fmax_vol = [] # the max force at this angle
-    r_vol = []    # the moment arm at this angle
+    r_vol    = [] # the moment arm at this angle
     
     for muscle in muscles_vol: # for each muscle that is stimulated
         
@@ -311,6 +303,7 @@ def performOptimisation(jointCoordinatesName, muscles_all, muscles_vol, muscles_
     # in some cases (e.g. participant 1 elbow extension), we do not want 
 
     if optimise:
+        
         # Objective function to minimize / cost function
         def fun(x):
             result = sum(1/x**2) # maximise the square of the weakness factor (squared as appears twice : once for the activation, once for the fmax)
@@ -424,7 +417,7 @@ def add_to_data(res, Sstim, muscles_stim_osimNames, muscles_vol_osimNames):
         print(muscle)
         data_all[muscle]['weakness']        = Sstim
         data_all[muscle]['fmax_new']        = data_all[muscle]['fmax_original'] * Sstim
-        data_all[muscle]['mc_new'] = Sstim
+        data_all[muscle]['mc_new']          = Sstim
         data_all[muscle]['fes']             = True
 
     # Add the results of the unknown muscles
@@ -433,8 +426,8 @@ def add_to_data(res, Sstim, muscles_stim_osimNames, muscles_vol_osimNames):
         print(muscle)
         data_all[muscle]['weakness'] = res.x[i]
         data_all[muscle]['fmax_new'] = data_all[muscle]['fmax_original'] * res.x[i]
-        data_all[muscle]['mc_new'] = res.x[i]
-        data_all[muscle]['fes'] = False
+        data_all[muscle]['mc_new']   = res.x[i]
+        data_all[muscle]['fes']      = False
         i+=1
 
 #####################################
@@ -544,13 +537,11 @@ def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=
                 
                 # compute moment arm
                 this_moment_arm = abs(this_muscle.computeMomentArm(state, jointCoordinates))
-                #print('moment arm is {}'.format(this_moment_arm))
                 # keep it positive to have consistent graphs (otherwise elbow extensors' new Fmax will appear negative)
                 # this_moment_arm = abs(this_moment_arm)
                 if verbose: print('moment arm is {}'.format(this_moment_arm))
     
                 # get the original Fmax
-                #fmax_original = float(x["max_isometric_force"])
                 fmax_original = float(x.find("max_isometric_force").text)
     
                 # compute fmax at this angle            
@@ -600,7 +591,6 @@ for muscle in muscles_all: # for each muscle that is stimulated
 
 for muscle in muscles_all_osimNames:
     # set weakness, fmax_new, mc_new, fes=False
-    #print(muscle)
     data_all[muscle]['weakness'] = weakness_average_elbow
     data_all[muscle]['fmax_new'] = data_all[muscle]['fmax_original'] * weakness_average_elbow
     data_all[muscle]['mc_new']   = weakness_average_elbow
@@ -616,47 +606,40 @@ print(df2)
 for muscle in data_all:
 
     for x in osim_muscle_data:
-        #name = x["@name"]
         name = x.attrib['name']
 
         string_match = re.search("^"+muscle, name) # regex to check if our target muscle is at beginning of muscle name
         if string_match:
+            
             # what is the original (scaled geometry) fmax in the current osim document?
-            #fmax_original = float(x["max_isometric_force"])
             fmax_original = float(this_muscle.find("max_isometric_force").text)
 
             # update values
-            #x["max_isometric_force"] = data_all[muscle]['fmax_new']
             x.find("max_isometric_force").text = str(data_all[muscle]['fmax_new'])
 
             # create tags
             
             # min_control
-            #x['min_control'] = 0
             child = xml.Element("min_control", )
             child.text = str(0)
             this_muscle.append(child)
             
             # max_control
-            #x['max_control'] = data_all[muscle]['mc_new']
             child = xml.Element("max_control", )
             child.text = str(data_all[muscle]['mc_new'])
             this_muscle.append(child)
             
             # weakness
-            #x['weakness'] = data_all[muscle]['weakness']
             child = xml.Element("weakness", )
             child.text = str(data_all[muscle]['weakness'])
             this_muscle.append(child)
             
             # max_isometric_force_original_scaled
-            #x['max_isometric_force_original_scaled'] = fmax_original
             child = xml.Element("max_isometric_force_original_scaled", )
             child.text = str(fmax_original)
             this_muscle.append(child)
             
             # muscle_has_fes_testing
-            #x['muscle_has_fes_testing'] = data_all[muscle]['fes']
             child = xml.Element("muscle_has_fes_testing", )
             child.text = str(data_all[muscle]['fes'])
             this_muscle.append(child)
@@ -674,8 +657,8 @@ for muscle in data_all:
 # Medial  rotation is defined by GH_YY -
 
 # GH_z
+gh_z_lowerBound = np.deg2rad( - min(rom_extension, rom_adduction) ) # Take the lowest value between extension and adduction
 gh_z_upperBound = np.deg2rad( + max(rom_flexion,   rom_abduction) ) # Take the highest value between flexion and abduction
-gh_z_lowerBound = np.deg2rad( - max(rom_extension, rom_adduction) ) # Take the highest value between extension and adduction
 # set those new range values in the the joint that has these coordinates
 tree.find("Model/JointSet/objects//coordinates/Coordinate[@name='{}']/range".format('GH_z')).text = str(gh_z_lowerBound) + ' ' + str(gh_z_upperBound)
 # set clamped to true

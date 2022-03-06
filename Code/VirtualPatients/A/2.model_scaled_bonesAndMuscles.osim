@@ -1773,7 +1773,7 @@
 							
 							<default_value>-0.0037995799999999999</default_value>
 							
-							<range>-0.7853981633974483 1.9198621771937625</range>
+							<range>-0.5235987755982988 1.9198621771937625</range>
 							
 							<clamped>true</clamped>
 							
@@ -2340,7 +2340,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.556047759659123</max_isometric_force>
+					<max_isometric_force>17.556053323365905</max_isometric_force>
 					
 					<optimal_fiber_length>0.15996049679499716</optimal_fiber_length>
 					
@@ -2386,7 +2386,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.99505104765028</max_isometric_force>
+					<max_isometric_force>24.995058968859933</max_isometric_force>
 					
 					<optimal_fiber_length>0.12175907168137941</optimal_fiber_length>
 					
@@ -2432,7 +2432,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>29.607233086204793</max_isometric_force>
+					<max_isometric_force>29.60724246906623</max_isometric_force>
 					
 					<optimal_fiber_length>0.11578336749596606</optimal_fiber_length>
 					
@@ -2478,7 +2478,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>20.531649074855586</max_isometric_force>
+					<max_isometric_force>20.531655581563516</max_isometric_force>
 					
 					<optimal_fiber_length>0.10433474486784457</optimal_fiber_length>
 					
@@ -2524,7 +2524,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.151168022698418</max_isometric_force>
+					<max_isometric_force>18.15117377500543</max_isometric_force>
 					
 					<optimal_fiber_length>0.10770044405350943</optimal_fiber_length>
 					
@@ -2570,7 +2570,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.026786641742131</max_isometric_force>
+					<max_isometric_force>15.026791403897935</max_isometric_force>
 					
 					<optimal_fiber_length>0.111038038312872</optimal_fiber_length>
 					
@@ -2616,7 +2616,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.43166637870284</max_isometric_force>
+					<max_isometric_force>14.431670952258413</max_isometric_force>
 					
 					<optimal_fiber_length>0.12972637095714745</optimal_fiber_length>
 					
@@ -2662,7 +2662,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>20.531649074855586</max_isometric_force>
+					<max_isometric_force>20.531655581563516</max_isometric_force>
 					
 					<optimal_fiber_length>0.11276248622686141</optimal_fiber_length>
 					
@@ -2708,7 +2708,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.29994808845824</max_isometric_force>
+					<max_isometric_force>18.299953887915308</max_isometric_force>
 					
 					<optimal_fiber_length>0.14030464697940034</optimal_fiber_length>
 					
@@ -2754,7 +2754,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>12.051185326545669</max_isometric_force>
+					<max_isometric_force>12.051189145700326</max_isometric_force>
 					
 					<optimal_fiber_length>0.15046994870650374</optimal_fiber_length>
 					
@@ -2800,7 +2800,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.687766049903724</max_isometric_force>
+					<max_isometric_force>13.68777038770901</max_isometric_force>
 					
 					<optimal_fiber_length>0.1406377266682434</optimal_fiber_length>
 					
@@ -2846,7 +2846,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.43166637870284</max_isometric_force>
+					<max_isometric_force>14.431670952258413</max_isometric_force>
 					
 					<optimal_fiber_length>0.15849451092357872</optimal_fiber_length>
 					
@@ -2892,7 +2892,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992663090711685</max_isometric_force>
+					<max_isometric_force>6.992665306764386</max_isometric_force>
 					
 					<optimal_fiber_length>0.18323329425639398</optimal_fiber_length>
 					
@@ -2938,7 +2938,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.282886312943017</max_isometric_force>
+					<max_isometric_force>14.282890839348532</max_isometric_force>
 					
 					<optimal_fiber_length>0.13299425109179047</optimal_fiber_length>
 					
@@ -2984,7 +2984,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.473126839021601</max_isometric_force>
+					<max_isometric_force>15.473131742627578</max_isometric_force>
 					
 					<optimal_fiber_length>0.10957669519562221</optimal_fiber_length>
 					
@@ -3030,7 +3030,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992663090711685</max_isometric_force>
+					<max_isometric_force>6.992665306764386</max_isometric_force>
 					
 					<optimal_fiber_length>0.0963878409401457</optimal_fiber_length>
 					
@@ -3076,7 +3076,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.91946703630107</max_isometric_force>
+					<max_isometric_force>15.919472081357219</max_isometric_force>
 					
 					<optimal_fiber_length>0.13048241333156849</optimal_fiber_length>
 					
@@ -3122,7 +3122,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.91946703630107</max_isometric_force>
+					<max_isometric_force>15.919472081357219</max_isometric_force>
 					
 					<optimal_fiber_length>0.12716067949830828</optimal_fiber_length>
 					
@@ -3168,7 +3168,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.843883024951862</max_isometric_force>
+					<max_isometric_force>6.843885193854505</max_isometric_force>
 					
 					<optimal_fiber_length>0.15918238158522138</optimal_fiber_length>
 					
@@ -3214,7 +3214,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>7.587783353750977</max_isometric_force>
+					<max_isometric_force>7.587785758403908</max_isometric_force>
 					
 					<optimal_fiber_length>0.094913394988964325</optimal_fiber_length>
 					
@@ -3260,7 +3260,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.687766049903724</max_isometric_force>
+					<max_isometric_force>13.68777038770901</max_isometric_force>
 					
 					<optimal_fiber_length>0.10629273159703859</optimal_fiber_length>
 					
@@ -3306,7 +3306,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>21.126769337894878</max_isometric_force>
+					<max_isometric_force>21.12677603320304</max_isometric_force>
 					
 					<optimal_fiber_length>0.12892840514239229</optimal_fiber_length>
 					
@@ -3352,7 +3352,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>12.199965392305494</max_isometric_force>
+					<max_isometric_force>12.199969258610205</max_isometric_force>
 					
 					<optimal_fiber_length>0.13786271109949735</optimal_fiber_length>
 					
@@ -3398,7 +3398,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.968264405908146</max_isometric_force>
+					<max_isometric_force>9.968267564961996</max_isometric_force>
 					
 					<optimal_fiber_length>0.13710876016677573</optimal_fiber_length>
 					
@@ -3455,7 +3455,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.075584011349209</max_isometric_force>
+					<max_isometric_force>9.075586887502714</max_isometric_force>
 					
 					<optimal_fiber_length>0.13016969722506186</optimal_fiber_length>
 					
@@ -3512,7 +3512,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.36580723358054</max_isometric_force>
+					<max_isometric_force>16.36581242008686</max_isometric_force>
 					
 					<optimal_fiber_length>0.15384981374170084</optimal_fiber_length>
 					
@@ -3569,7 +3569,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.621906904781424</max_isometric_force>
+					<max_isometric_force>15.621911855537459</max_isometric_force>
 					
 					<optimal_fiber_length>0.15957411697135701</optimal_fiber_length>
 					
@@ -3626,7 +3626,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.36580723358054</max_isometric_force>
+					<max_isometric_force>16.36581242008686</max_isometric_force>
 					
 					<optimal_fiber_length>0.1313749417004694</optimal_fiber_length>
 					
@@ -3683,7 +3683,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.521924208628677</max_isometric_force>
+					<max_isometric_force>9.521927226232355</max_isometric_force>
 					
 					<optimal_fiber_length>0.12363237028547203</optimal_fiber_length>
 					
@@ -3740,7 +3740,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.43166637870284</max_isometric_force>
+					<max_isometric_force>14.431670952258413</max_isometric_force>
 					
 					<optimal_fiber_length>0.11336706199962988</optimal_fiber_length>
 					
@@ -3797,7 +3797,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992663090711685</max_isometric_force>
+					<max_isometric_force>6.992665306764386</max_isometric_force>
 					
 					<optimal_fiber_length>0.09991390220508542</optimal_fiber_length>
 					
@@ -3854,7 +3854,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>11.307284997746555</max_isometric_force>
+					<max_isometric_force>11.307288581150923</max_isometric_force>
 					
 					<optimal_fiber_length>0.066970862643996223</optimal_fiber_length>
 					
@@ -3911,7 +3911,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>11.753625195026023</max_isometric_force>
+					<max_isometric_force>11.753628919880564</max_isometric_force>
 					
 					<optimal_fiber_length>0.059287618085805079</optimal_fiber_length>
 					
@@ -3968,7 +3968,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.373144142868854</max_isometric_force>
+					<max_isometric_force>9.373147113322474</max_isometric_force>
 					
 					<optimal_fiber_length>0.047673358709205964</optimal_fiber_length>
 					
@@ -4025,7 +4025,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>3.421941512475931</max_isometric_force>
+					<max_isometric_force>3.4219425969272526</max_isometric_force>
 					
 					<optimal_fiber_length>0.063949997026583438</optimal_fiber_length>
 					
@@ -4082,7 +4082,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.663367365100186</max_isometric_force>
+					<max_isometric_force>16.663372645906623</max_isometric_force>
 					
 					<optimal_fiber_length>0.07020091524851578</optimal_fiber_length>
 					
@@ -4137,7 +4137,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>42.99743900458887</max_isometric_force>
+					<max_isometric_force>42.99745263095548</max_isometric_force>
 					
 					<optimal_fiber_length>0.10826184555654908</optimal_fiber_length>
 					
@@ -4192,7 +4192,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>31.39259387532267</max_isometric_force>
+					<max_isometric_force>31.392603823984796</max_isometric_force>
 					
 					<optimal_fiber_length>0.090997907878620346</optimal_fiber_length>
 					
@@ -4247,7 +4247,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>66.3559093288811</max_isometric_force>
+					<max_isometric_force>66.35593035780673</max_isometric_force>
 					
 					<optimal_fiber_length>0.079237588419502</optimal_fiber_length>
 					
@@ -4302,7 +4302,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.4072676938993</max_isometric_force>
+					<max_isometric_force>17.407273210456026</max_isometric_force>
 					
 					<optimal_fiber_length>0.063290221938526903</optimal_fiber_length>
 					
@@ -4357,7 +4357,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.85360789117877</max_isometric_force>
+					<max_isometric_force>17.853613549185667</max_isometric_force>
 					
 					<optimal_fiber_length>0.063193274140212641</optimal_fiber_length>
 					
@@ -4412,7 +4412,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>42.40231874154958</max_isometric_force>
+					<max_isometric_force>42.402332179315955</max_isometric_force>
 					
 					<optimal_fiber_length>0.072566517621034013</optimal_fiber_length>
 					
@@ -4467,7 +4467,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.168229798213638</max_isometric_force>
+					<max_isometric_force>22.1682368235722</max_isometric_force>
 					
 					<optimal_fiber_length>0.071225789592860869</optimal_fiber_length>
 					
@@ -4522,7 +4522,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>31.987714138361962</max_isometric_force>
+					<max_isometric_force>31.98772427562432</max_isometric_force>
 					
 					<optimal_fiber_length>0.067402863062005255</optimal_fiber_length>
 					
@@ -4577,7 +4577,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>42.5510988073094</max_isometric_force>
+					<max_isometric_force>42.55111229222584</max_isometric_force>
 					
 					<optimal_fiber_length>0.070607011505088205</optimal_fiber_length>
 					
@@ -4632,7 +4632,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>66.20712926312127</max_isometric_force>
+					<max_isometric_force>66.20715024489685</max_isometric_force>
 					
 					<optimal_fiber_length>0.072980602260291155</optimal_fiber_length>
 					
@@ -4687,7 +4687,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>35.558435716597714</max_isometric_force>
+					<max_isometric_force>35.55844698546145</max_isometric_force>
 					
 					<optimal_fiber_length>0.072780727164187181</optimal_fiber_length>
 					
@@ -4742,7 +4742,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.043848417257355</max_isometric_force>
+					<max_isometric_force>19.04385445246471</max_isometric_force>
 					
 					<optimal_fiber_length>0.082991903557636804</optimal_fiber_length>
 					
@@ -4797,7 +4797,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>23.804810521571692</max_isometric_force>
+					<max_isometric_force>23.80481806558089</max_isometric_force>
 					
 					<optimal_fiber_length>0.093269160162588516</optimal_fiber_length>
 					
@@ -4852,7 +4852,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.621906904781424</max_isometric_force>
+					<max_isometric_force>15.621911855537459</max_isometric_force>
 					
 					<optimal_fiber_length>0.082088629903606727</optimal_fiber_length>
 					
@@ -4907,7 +4907,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.663367365100186</max_isometric_force>
+					<max_isometric_force>16.663372645906623</max_isometric_force>
 					
 					<optimal_fiber_length>0.097715666900949932</optimal_fiber_length>
 					
@@ -4953,7 +4953,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>29.90479321772444</max_isometric_force>
+					<max_isometric_force>29.90480269488599</max_isometric_force>
 					
 					<optimal_fiber_length>0.062069462540345489</optimal_fiber_length>
 					
@@ -4999,7 +4999,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.019449732453815</max_isometric_force>
+					<max_isometric_force>22.019456710662322</max_isometric_force>
 					
 					<optimal_fiber_length>0.064345795951289114</optimal_fiber_length>
 					
@@ -5045,7 +5045,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.96092749661983</max_isometric_force>
+					<max_isometric_force>16.96093287172638</max_isometric_force>
 					
 					<optimal_fiber_length>0.068434659268191728</optimal_fiber_length>
 					
@@ -5100,7 +5100,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>40.46817788667188</max_isometric_force>
+					<max_isometric_force>40.46819071148751</max_isometric_force>
 					
 					<optimal_fiber_length>0.063672473560110118</optimal_fiber_length>
 					
@@ -5155,7 +5155,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>40.91451808395135</max_isometric_force>
+					<max_isometric_force>40.91453105021715</max_isometric_force>
 					
 					<optimal_fiber_length>0.07041959720243339</optimal_fiber_length>
 					
@@ -5210,7 +5210,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>28.86333275740568</max_isometric_force>
+					<max_isometric_force>28.863341904516826</max_isometric_force>
 					
 					<optimal_fiber_length>0.066502151352880873</optimal_fiber_length>
 					
@@ -5265,7 +5265,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>30.79747361228338</max_isometric_force>
+					<max_isometric_force>30.797483372345273</max_isometric_force>
 					
 					<optimal_fiber_length>0.068052193146611609</optimal_fiber_length>
 					
@@ -5320,7 +5320,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>44.931579859466574</max_isometric_force>
+					<max_isometric_force>44.931594098783926</max_isometric_force>
 					
 					<optimal_fiber_length>0.068918978928148369</optimal_fiber_length>
 					
@@ -5375,7 +5375,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>27.0779719682878</max_isometric_force>
+					<max_isometric_force>27.077980549598262</max_isometric_force>
 					
 					<optimal_fiber_length>0.074750227004244232</optimal_fiber_length>
 					
@@ -5815,7 +5815,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.85360789117877</max_isometric_force>
+					<max_isometric_force>17.853613549185667</max_isometric_force>
 					
 					<optimal_fiber_length>0.055658823512218548</optimal_fiber_length>
 					
@@ -5870,7 +5870,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.81214743086001</max_isometric_force>
+					<max_isometric_force>16.812152758816502</max_isometric_force>
 					
 					<optimal_fiber_length>0.060085028540265616</optimal_fiber_length>
 					
@@ -5925,7 +5925,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>38.385256966034355</max_isometric_force>
+					<max_isometric_force>38.38526913074918</max_isometric_force>
 					
 					<optimal_fiber_length>0.056220229965364216</optimal_fiber_length>
 					
@@ -5980,7 +5980,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.341408548777</max_isometric_force>
+					<max_isometric_force>19.341414678284472</max_isometric_force>
 					
 					<optimal_fiber_length>0.055274334040106857</optimal_fiber_length>
 					
@@ -6041,7 +6041,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.546322893432215</max_isometric_force>
+					<max_isometric_force>6.546324968034744</max_isometric_force>
 					
 					<optimal_fiber_length>0.056217682393346166</optimal_fiber_length>
 					
@@ -6102,7 +6102,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>11.6048451292662</max_isometric_force>
+					<max_isometric_force>11.604848806970683</max_isometric_force>
 					
 					<optimal_fiber_length>0.064407988529409099</optimal_fiber_length>
 					
@@ -6163,7 +6163,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>39.27793736059329</max_isometric_force>
+					<max_isometric_force>39.27794980820847</max_isometric_force>
 					
 					<optimal_fiber_length>0.066475589163864632</optimal_fiber_length>
 					
@@ -6218,7 +6218,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>40.76573801819153</max_isometric_force>
+					<max_isometric_force>40.765750937307274</max_isometric_force>
 					
 					<optimal_fiber_length>0.074563274433290153</optimal_fiber_length>
 					
@@ -6273,7 +6273,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.96092749661983</max_isometric_force>
+					<max_isometric_force>16.96093287172638</max_isometric_force>
 					
 					<optimal_fiber_length>0.079785223264532232</optimal_fiber_length>
 					
@@ -6328,7 +6328,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.168229798213638</max_isometric_force>
+					<max_isometric_force>22.1682368235722</max_isometric_force>
 					
 					<optimal_fiber_length>0.076213697524560642</optimal_fiber_length>
 					
@@ -6383,7 +6383,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.102370653091338</max_isometric_force>
+					<max_isometric_force>24.10237829140065</max_isometric_force>
 					
 					<optimal_fiber_length>0.081282903664026296</optimal_fiber_length>
 					
@@ -6438,7 +6438,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>9.075584011349209</max_isometric_force>
+					<max_isometric_force>9.075586887502714</max_isometric_force>
 					
 					<optimal_fiber_length>0.077862514716718553</optimal_fiber_length>
 					
@@ -6493,7 +6493,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>33.029174598680726</max_isometric_force>
+					<max_isometric_force>33.02918506599348</max_isometric_force>
 					
 					<optimal_fiber_length>0.071527749466953547</optimal_fiber_length>
 					
@@ -6548,7 +6548,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>6.992663090711685</max_isometric_force>
+					<max_isometric_force>6.992665306764386</max_isometric_force>
 					
 					<optimal_fiber_length>0.068666053195395649</optimal_fiber_length>
 					
@@ -6603,7 +6603,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>2.3804810521571693</max_isometric_force>
+					<max_isometric_force>2.380481806558089</max_isometric_force>
 					
 					<optimal_fiber_length>0.063746037302842132</optimal_fiber_length>
 					
@@ -7053,7 +7053,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>8.331683682550093</max_isometric_force>
+					<max_isometric_force>8.331686322953312</max_isometric_force>
 					
 					<optimal_fiber_length>0.2961431495192447</optimal_fiber_length>
 					
@@ -7108,7 +7108,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.09264578686443</max_isometric_force>
+					<max_isometric_force>13.092649936069488</max_isometric_force>
 					
 					<optimal_fiber_length>0.32916573474442634</optimal_fiber_length>
 					
@@ -7163,7 +7163,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.192628483017177</max_isometric_force>
+					<max_isometric_force>19.19263456537459</max_isometric_force>
 					
 					<optimal_fiber_length>0.31098036314035843</optimal_fiber_length>
 					
@@ -7218,7 +7218,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.282886312943017</max_isometric_force>
+					<max_isometric_force>14.282890839348532</max_isometric_force>
 					
 					<optimal_fiber_length>0.30936058699642793</optimal_fiber_length>
 					
@@ -7273,7 +7273,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>13.09264578686443</max_isometric_force>
+					<max_isometric_force>13.092649936069488</max_isometric_force>
 					
 					<optimal_fiber_length>0.28040288469164054</optimal_fiber_length>
 					
@@ -7328,7 +7328,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>15.621906904781424</max_isometric_force>
+					<max_isometric_force>15.621911855537459</max_isometric_force>
 					
 					<optimal_fiber_length>0.2958360644819743</optimal_fiber_length>
 					
@@ -7383,7 +7383,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.597508219977886</max_isometric_force>
+					<max_isometric_force>18.59751411373507</max_isometric_force>
 					
 					<optimal_fiber_length>0.21012703213317546</optimal_fiber_length>
 					
@@ -7438,7 +7438,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>17.556047759659123</max_isometric_force>
+					<max_isometric_force>17.556053323365905</max_isometric_force>
 					
 					<optimal_fiber_length>0.20711447526121118</optimal_fiber_length>
 					
@@ -7493,7 +7493,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.54871085037081</max_isometric_force>
+					<max_isometric_force>24.548718630130292</max_isometric_force>
 					
 					<optimal_fiber_length>0.20819374150249051</optimal_fiber_length>
 					
@@ -7548,7 +7548,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>23.358470324292224</max_isometric_force>
+					<max_isometric_force>23.35847772685125</max_isometric_force>
 					
 					<optimal_fiber_length>0.20921922408366447</optimal_fiber_length>
 					
@@ -7603,7 +7603,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.78774874605647</max_isometric_force>
+					<max_isometric_force>19.787755017014113</max_isometric_force>
 					
 					<optimal_fiber_length>0.16718000654841017</optimal_fiber_length>
 					
@@ -7658,7 +7658,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>29.45845302044497</max_isometric_force>
+					<max_isometric_force>29.45846235615635</max_isometric_force>
 					
 					<optimal_fiber_length>0.15754552343668043</optimal_fiber_length>
 					
@@ -7713,7 +7713,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>26.631631771008333</max_isometric_force>
+					<max_isometric_force>26.631640210868618</max_isometric_force>
 					
 					<optimal_fiber_length>0.14052129650044934</optimal_fiber_length>
 					
@@ -7768,7 +7768,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.81214743086001</max_isometric_force>
+					<max_isometric_force>16.812152758816502</max_isometric_force>
 					
 					<optimal_fiber_length>0.11336608524171841</optimal_fiber_length>
 					
@@ -8098,7 +8098,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>38.41433864080682</max_isometric_force>
+					<max_isometric_force>38.41430314764651</max_isometric_force>
 					
 					<optimal_fiber_length>0.083139637853170051</optimal_fiber_length>
 					
@@ -8153,7 +8153,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>22.59310237247605</max_isometric_force>
+					<max_isometric_force>22.592941184934194</max_isometric_force>
 					
 					<optimal_fiber_length>0.090247603432485141</optimal_fiber_length>
 					
@@ -8208,7 +8208,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>24.29302595061148</max_isometric_force>
+					<max_isometric_force>24.292934537782763</max_isometric_force>
 					
 					<optimal_fiber_length>0.082253660788472238</optimal_fiber_length>
 					
@@ -8263,7 +8263,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>14.349955914011057</max_isometric_force>
+					<max_isometric_force>14.349771451767266</max_isometric_force>
 					
 					<optimal_fiber_length>0.071840246074855271</optimal_fiber_length>
 					
@@ -8318,7 +8318,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>16.83755900774539</max_isometric_force>
+					<max_isometric_force>16.837458553671805</max_isometric_force>
 					
 					<optimal_fiber_length>0.058891728483027289</optimal_fiber_length>
 					
@@ -8373,7 +8373,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>19.81825197856524</max_isometric_force>
+					<max_isometric_force>19.8181252032733</max_isometric_force>
 					
 					<optimal_fiber_length>0.044668912306677876</optimal_fiber_length>
 					
@@ -8428,7 +8428,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>18.88853640785799</max_isometric_force>
+					<max_isometric_force>18.888997106723576</max_isometric_force>
 					
 					<optimal_fiber_length>0.059346311835286505</optimal_fiber_length>
 					
@@ -8474,7 +8474,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>5.4068026123756665</max_isometric_force>
+					<max_isometric_force>5.406836895751248</max_isometric_force>
 					
 					<optimal_fiber_length>0.15545157075401794</optimal_fiber_length>
 					
@@ -8520,7 +8520,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>12.009068886816186</max_isometric_force>
+					<max_isometric_force>12.008930915832227</max_isometric_force>
 					
 					<optimal_fiber_length>0.15616998050770317</optimal_fiber_length>
 					
@@ -8566,7 +8566,7 @@
 						</Appearance>
 					</GeometryPath>
 					
-					<max_isometric_force>8.960280958886303</max_isometric_force>
+					<max_isometric_force>8.960499029663088</max_isometric_force>
 					
 					<optimal_fiber_length>0.1034484257277607</optimal_fiber_length>
 					
