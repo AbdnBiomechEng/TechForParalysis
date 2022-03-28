@@ -54,7 +54,8 @@ excel_ulna_y = df.iloc[15, 3] # Mid RS-US to Mid EpL-EpM (ulnar length) : 240
 ###############################################################################
 
 # load the osim file
-fileDasName = 'model-das3-MOD2_withMarkersScaling.osim'
+#fileDasName = 'model-das3-MOD2_withMarkersScaling.osim'
+fileDasName = 'das3_thor_newmarkerset.osim'
 fileDas = CURR_DIR+'/'+fileDasName
 tree_osim = osim = das = xml.ElementTree(file=fileDas)
 
