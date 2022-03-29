@@ -80,7 +80,7 @@ rom_latrot    = 15
 # Model
 #input_osim_file       = '../../Data/Models/das3.osim'
 input_osim_file        = '1.model_scaled_bones.osim'           # the initial file to load : scaled skeleton
-input_osim_file_scaled = 'das3_scaled_temp.osim'               # the temporary file that scaled all muscle forces by same factor
+input_osim_file_scaled = 'tmp_das3_scaled_temp.osim'           # the temporary file that scaled all muscle forces by same factor
 output_osim_file       = '2.model_scaled_bonesAndMuscles.osim' # the optimised file, that has modified each muscle's max force and activation
 
 #####################################
