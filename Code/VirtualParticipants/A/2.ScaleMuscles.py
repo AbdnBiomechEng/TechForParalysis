@@ -518,7 +518,7 @@ def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=
 
             if string_match:
     
-                # When found a matching muscle, compute moment arm and save in the momentarm_dict
+                # When found a matching muscle, compute moment arm and save in the momentarm_dict ('data')
                 if verbose: print("found matching name: {}".format(name))
     
                 # get the muscle
@@ -546,11 +546,9 @@ def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=
                 # save to dict
                 data[name] = {'moment_arm' : this_moment_arm, 'fmax_thisAngle' : fmax_thisAngle, 'fmax_original' : fmax_original}
 
-# Display directly using pandas 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-pd.set_option('display.width', 200)
+# create a dataframe
 df = pd.DataFrame(data_all).T
+
 # What is the average weakness factor?
 weakness_average_elbow = df['weakness'].mean()
 
@@ -558,13 +556,10 @@ weakness_average_elbow = df['weakness'].mean()
 muscles_all  = ['delt_clav', 'coracobr', 'lat_dorsi', 'supra', 'pect_maj_t', 'pect_maj_c', 'subscap', 'teres_maj', 'teres_min', 'infra', 'delt_scap', 'trap_clav', 'lev_scap', 'pect_min', 'trap_scap', 'rhomboid', 'serr_ant']
 
 # get moment arm to add to data_all:
-# The joint of interest as defined in opensim ('coordinates')
-jointCoordinatesName = 'GH_z'
-
+jointCoordinatesName = 'GH_z'                                         # The joint of interest as defined in opensim ('coordinates')
 jointCoordinates = model.updCoordinateSet().get(jointCoordinatesName) # define coordinates (ex: 'EL_x' for elbow flexion, 'GH_z' for shoulder elevation)
-model.equilibrateMuscles(state) # make sure states are in equilibrium
-
-get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True)
+model.equilibrateMuscles(state)                                       # make sure states are in equilibrium
+get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True) # compute the moment arm for these muscles
 
 # get osim names
 muscles_all_osimNames = []
@@ -577,7 +572,6 @@ for muscle in muscles_all: # for each muscle that is stimulated
             # also save the name of each muscle as present in the osim file
             muscles_all_osimNames.append(name)
 
-
 for muscle in muscles_all_osimNames:
     # set weakness, fmax_new, mc_new, fes=False
     data_all[muscle]['weakness'] = weakness_average_elbow
@@ -585,6 +579,10 @@ for muscle in muscles_all_osimNames:
     data_all[muscle]['mc_new']   = weakness_average_elbow
     data_all[muscle]['fes']      = False
 
+# Display directly using pandas 
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+pd.set_option('display.width', 200)
 df2 = pd.DataFrame(data_all).T
 print(df2)
 
