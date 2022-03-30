@@ -115,7 +115,11 @@ if scaleInitialMuscleForce:
 #####################################
 
 # Load in external parser
-tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file)
+tree = ''
+if scaleInitialMuscleForce:
+    tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file_scaled)
+if not scaleInitialMuscleForce:
+    tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file)
 osim_muscle_data = list(tree.findall("./Model/ForceSet/objects/"))
 
 # Load in osim
