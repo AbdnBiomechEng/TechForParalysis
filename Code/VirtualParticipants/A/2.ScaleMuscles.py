@@ -666,3 +666,9 @@ try:
     print("\nFile saved as {}".format(CURR_DIR+'/'+output_osim_file))
 except:
     print("\nError saving the file ({})".format(CURR_DIR+'/'+output_osim_file))
+
+######
+# Export max control values to a separate csv file
+
+df2['mc_new'].to_csv(CURR_DIR+'/2.max_control_list.csv')
+
