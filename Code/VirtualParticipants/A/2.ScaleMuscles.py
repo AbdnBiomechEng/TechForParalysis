@@ -495,11 +495,14 @@ for muscle in muscles_vol_osimNames:
 
 #####################################
 # other muscles of the shoulder
+# including pronation/supination muscles that don't have a specific testing
 
 # special case also : this time, we did not test the stimulation for these muscles.
-### we can't distribute properly : if we separate the muscles into one specific motion, then we require values that are obviously too high to match the jointmoment.
+### we can't distribute properly :
+### if we separate the muscles into one specific motion, then we require values that are obviously too high to match the jointmoment.
 ### if we use the same muscle twice, then there is no good way to calculate the weakness factor as no jointMoment will be matched either!
-### so restarting the shoulder muscles : just taking the average of the weakness factors and applying them to the shoulder muscles!
+#
+# Therefore, we are taking the average of the weakness factors and applying them to the shoulder muscles, and pronation/supination muscles
 # NOT basing on innervation level as elbow flexion/extension is roughly C6 (with secondary c5,c6,c7,c8) which covers all of the shoulder...
 
 def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=False):
@@ -554,12 +557,17 @@ weakness_average_elbow = df['weakness'].mean()
 
 # Scale all the shoulder muscles by this, then add to osim file and save it!
 muscles_all  = ['delt_clav', 'coracobr', 'lat_dorsi', 'supra', 'pect_maj_t', 'pect_maj_c', 'subscap', 'teres_maj', 'teres_min', 'infra', 'delt_scap', 'trap_clav', 'lev_scap', 'pect_min', 'trap_scap', 'rhomboid', 'serr_ant']
+# add the pronator and supinator muscles : as we don't have specific testing for them, we also scale them by the average weakness factor
+muscles_all = muscles_all + ['pron_', 'supinator']
+# same for teres minor/major
+muscles_all = muscles_all + ['ter_'] # ter_min , ter_maj
 
 # get moment arm to add to data_all:
 jointCoordinatesName = 'GH_z'                                         # The joint of interest as defined in opensim ('coordinates')
 jointCoordinates = model.updCoordinateSet().get(jointCoordinatesName) # define coordinates (ex: 'EL_x' for elbow flexion, 'GH_z' for shoulder elevation)
 model.equilibrateMuscles(state)                                       # make sure states are in equilibrium
-get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True) # compute the moment arm for these muscles
+# compute the moment arm for these muscles. In this case (no FES we don't need it, but it adds the muscles to the main list)
+get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True) 
 
 # get osim names
 muscles_all_osimNames = []
