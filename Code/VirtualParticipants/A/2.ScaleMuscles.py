@@ -124,7 +124,7 @@ osim_muscle_data = list(tree.findall("./Model/ForceSet/objects/"))
 
 # Load in osim
 model            = opensim.Model(input_osim_file_scaled)
-visualizeFlag    = False
+visualizeFlag    = True
 model.setUseVisualizer(visualizeFlag)
 
 # Initialize the model and create the states
@@ -146,6 +146,7 @@ if visualizeFlag:
     viz.setBackgroundColor(opensim.Vec3(0)) # white
     viz.setGroundHeight(-2)
     model.getVisualizer().show(state)
+    sleep(2)
 
 # Main function calculating the moment arm and fmax at this angle, then performing the optimisation
 
@@ -495,9 +496,9 @@ for muscle in muscles_vol_osimNames:
 
 #####################################
 # other muscles of the shoulder
-# including pronation/supination muscles that don't have a specific testing
+# including pronation/supination and teres minor/major muscles that don't have a specific testing: the output CSV file now has the 138 elements required
 
-# special case also : this time, we did not test the stimulation for these muscles.
+# This is aspecial case also : this time, we did not test the stimulation for these muscles.
 ### we can't distribute properly :
 ### if we separate the muscles into one specific motion, then we require values that are obviously too high to match the jointmoment.
 ### if we use the same muscle twice, then there is no good way to calculate the weakness factor as no jointMoment will be matched either!
@@ -566,7 +567,7 @@ muscles_all = muscles_all + ['ter_'] # ter_min , ter_maj
 jointCoordinatesName = 'GH_z'                                         # The joint of interest as defined in opensim ('coordinates')
 jointCoordinates = model.updCoordinateSet().get(jointCoordinatesName) # define coordinates (ex: 'EL_x' for elbow flexion, 'GH_z' for shoulder elevation)
 model.equilibrateMuscles(state)                                       # make sure states are in equilibrium
-# compute the moment arm for these muscles. In this case (no FES we don't need it, but it adds the muscles to the main list)
+# compute the moment arm for these muscles. In this case as there is no FES testing we don't need it, but it adds the muscles to the main list.
 get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True) 
 
 # get osim names
