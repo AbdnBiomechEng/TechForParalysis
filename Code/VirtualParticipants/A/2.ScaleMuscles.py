@@ -115,12 +115,16 @@ if scaleInitialMuscleForce:
 #####################################
 
 # Load in external parser
-tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file)
+tree = ''
+if scaleInitialMuscleForce:
+    tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file_scaled)
+if not scaleInitialMuscleForce:
+    tree = xml.ElementTree(file=CURR_DIR + "/" + input_osim_file)
 osim_muscle_data = list(tree.findall("./Model/ForceSet/objects/"))
 
 # Load in osim
 model            = opensim.Model(input_osim_file_scaled)
-visualizeFlag    = False
+visualizeFlag    = True
 model.setUseVisualizer(visualizeFlag)
 
 # Initialize the model and create the states
@@ -142,6 +146,7 @@ if visualizeFlag:
     viz.setBackgroundColor(opensim.Vec3(0)) # white
     viz.setGroundHeight(-2)
     model.getVisualizer().show(state)
+    sleep(2)
 
 # Main function calculating the moment arm and fmax at this angle, then performing the optimisation
 
@@ -491,11 +496,14 @@ for muscle in muscles_vol_osimNames:
 
 #####################################
 # other muscles of the shoulder
+# including pronation/supination and teres minor/major muscles that don't have a specific testing: the output CSV file now has the 138 elements required
 
-# special case also : this time, we did not test the stimulation for these muscles.
-### we can't distribute properly : if we separate the muscles into one specific motion, then we require values that are obviously too high to match the jointmoment.
+# This is aspecial case also : this time, we did not test the stimulation for these muscles.
+### we can't distribute properly :
+### if we separate the muscles into one specific motion, then we require values that are obviously too high to match the jointmoment.
 ### if we use the same muscle twice, then there is no good way to calculate the weakness factor as no jointMoment will be matched either!
-### so restarting the shoulder muscles : just taking the average of the weakness factors and applying them to the shoulder muscles!
+#
+# Therefore, we are taking the average of the weakness factors and applying them to the shoulder muscles, and pronation/supination muscles
 # NOT basing on innervation level as elbow flexion/extension is roughly C6 (with secondary c5,c6,c7,c8) which covers all of the shoulder...
 
 def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=False):
@@ -514,7 +522,7 @@ def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=
 
             if string_match:
     
-                # When found a matching muscle, compute moment arm and save in the momentarm_dict
+                # When found a matching muscle, compute moment arm and save in the momentarm_dict ('data')
                 if verbose: print("found matching name: {}".format(name))
     
                 # get the muscle
@@ -542,25 +550,25 @@ def get_momentArm_forMuscles(muscles_list, data, verbose=False, returnOsimNames=
                 # save to dict
                 data[name] = {'moment_arm' : this_moment_arm, 'fmax_thisAngle' : fmax_thisAngle, 'fmax_original' : fmax_original}
 
-# Display directly using pandas 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-pd.set_option('display.width', 200)
+# create a dataframe
 df = pd.DataFrame(data_all).T
+
 # What is the average weakness factor?
 weakness_average_elbow = df['weakness'].mean()
 
 # Scale all the shoulder muscles by this, then add to osim file and save it!
 muscles_all  = ['delt_clav', 'coracobr', 'lat_dorsi', 'supra', 'pect_maj_t', 'pect_maj_c', 'subscap', 'teres_maj', 'teres_min', 'infra', 'delt_scap', 'trap_clav', 'lev_scap', 'pect_min', 'trap_scap', 'rhomboid', 'serr_ant']
+# add the pronator and supinator muscles : as we don't have specific testing for them, we also scale them by the average weakness factor
+muscles_all = muscles_all + ['pron_', 'supinator']
+# same for teres minor/major
+muscles_all = muscles_all + ['ter_'] # ter_min , ter_maj
 
 # get moment arm to add to data_all:
-# The joint of interest as defined in opensim ('coordinates')
-jointCoordinatesName = 'GH_z'
-
+jointCoordinatesName = 'GH_z'                                         # The joint of interest as defined in opensim ('coordinates')
 jointCoordinates = model.updCoordinateSet().get(jointCoordinatesName) # define coordinates (ex: 'EL_x' for elbow flexion, 'GH_z' for shoulder elevation)
-model.equilibrateMuscles(state) # make sure states are in equilibrium
-
-get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True)
+model.equilibrateMuscles(state)                                       # make sure states are in equilibrium
+# compute the moment arm for these muscles. In this case as there is no FES testing we don't need it, but it adds the muscles to the main list.
+get_momentArm_forMuscles(muscles_all, data_all, returnOsimNames=True) 
 
 # get osim names
 muscles_all_osimNames = []
@@ -573,7 +581,6 @@ for muscle in muscles_all: # for each muscle that is stimulated
             # also save the name of each muscle as present in the osim file
             muscles_all_osimNames.append(name)
 
-
 for muscle in muscles_all_osimNames:
     # set weakness, fmax_new, mc_new, fes=False
     data_all[muscle]['weakness'] = weakness_average_elbow
@@ -581,6 +588,10 @@ for muscle in muscles_all_osimNames:
     data_all[muscle]['mc_new']   = weakness_average_elbow
     data_all[muscle]['fes']      = False
 
+# Display directly using pandas 
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+pd.set_option('display.width', 200)
 df2 = pd.DataFrame(data_all).T
 print(df2)
 
@@ -666,3 +677,9 @@ try:
     print("\nFile saved as {}".format(CURR_DIR+'/'+output_osim_file))
 except:
     print("\nError saving the file ({})".format(CURR_DIR+'/'+output_osim_file))
+
+######
+# Export max control values to a separate csv file
+
+df2['mc_new'].to_csv(CURR_DIR+'/2.max_control_list.csv')
+

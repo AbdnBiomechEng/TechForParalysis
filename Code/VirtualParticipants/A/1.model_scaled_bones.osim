@@ -247,7 +247,7 @@
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0 -0.12070558375887409 0.095295886584888856</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
-					<inertia>2.2860095103766245 0.97265575127083592 2.2860095103766245 0 0 0</inertia>
+					<inertia>1.9609759686800792 1.5470658510890756 1.9609759686800792 0 0 0</inertia>
 				</Body>
 				<Body name="clavicle_1">
 					<!--The geometry used to display the axes of this Frame.-->
@@ -373,7 +373,7 @@
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>-0.051124601811830109 -0.022006896202692337 -0.023781344789391944</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
-					<inertia>0.0017606222305563144 0.0017606222305563144 0.0017606222305563144 0 0 0</inertia>
+					<inertia>0.0016290295043625879 0.0016336287040931957 0.0016336287040931957 0 0 0</inertia>
 				</Body>
 				<Body name="humerus_1">
 					<!--The geometry used to display the axes of this Frame.-->
@@ -507,7 +507,7 @@
 					<!--The location (Vec3) of the mass center in the body frame.-->
 					<mass_center>0.0074544543004028555 -0.073042776052955172 -0.0049976786937439522</mass_center>
 					<!--The elements of the inertia tensor (Vec6) as [Ixx Iyy Izz Ixy Ixz Iyz] measured about the mass_center and not the body origin.-->
-					<inertia>0.023240213443343351 0.0035001169943459534 0.023240213443343351 0 0 0</inertia>
+					<inertia>0.021869952739080385 0.0056595809300211677 0.021869952739080385 0 0 0</inertia>
 				</Body>
 				<Body name="ulna_r">
 					<!--List of components that this component owns and serializes.-->
@@ -5070,9 +5070,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>275</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.07041959720243339</optimal_fiber_length>
+					<optimal_fiber_length>0.070419597202433418</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.10479689708846136</tendon_slack_length>
+					<tendon_slack_length>0.10479689708846139</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -5123,9 +5123,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>194</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.066502151352880873</optimal_fiber_length>
+					<optimal_fiber_length>0.066502151352880901</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.082513747616573027</tendon_slack_length>
+					<tendon_slack_length>0.082513747616573055</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -5176,9 +5176,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>207</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.068052193146611609</optimal_fiber_length>
+					<optimal_fiber_length>0.068052193146611595</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.069721583166081152</tendon_slack_length>
+					<tendon_slack_length>0.069721583166081139</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -6688,9 +6688,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>223</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.09500193431334622</optimal_fiber_length>
+					<optimal_fiber_length>0.095002189887232205</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.19236006739438455</tendon_slack_length>
+					<tendon_slack_length>0.19236058488079458</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.17453292519899999</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -6741,9 +6741,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>296</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.083143790193397224</optimal_fiber_length>
+					<optimal_fiber_length>0.083144351299038757</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.20696291928958016</tendon_slack_length>
+					<tendon_slack_length>0.20696431600316911</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.17453292519899999</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -6794,9 +6794,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>283</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.11186173461017568</optimal_fiber_length>
+					<optimal_fiber_length>0.11186177332494326</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.20613574087082248</tendon_slack_length>
+					<tendon_slack_length>0.20613581221333585</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.17453292519899999</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -6847,9 +6847,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>327</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.11594344130728815</optimal_fiber_length>
+					<optimal_fiber_length>0.11594354307876377</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.20777140338671457</tendon_slack_length>
+					<tendon_slack_length>0.20777158576186297</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -7907,9 +7907,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>314</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.083139637853170051</optimal_fiber_length>
+					<optimal_fiber_length>0.083139637853170037</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.076590967748297059</tendon_slack_length>
+					<tendon_slack_length>0.076590967748297045</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -7960,9 +7960,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>158</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.090247603432485141</optimal_fiber_length>
+					<optimal_fiber_length>0.090247603432485127</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.056061470337913123</tendon_slack_length>
+					<tendon_slack_length>0.056061470337913116</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8013,9 +8013,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>157</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.082253660788472238</optimal_fiber_length>
+					<optimal_fiber_length>0.082253497784684965</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.037250508449032257</tendon_slack_length>
+					<tendon_slack_length>0.037250434628926299</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8119,9 +8119,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>101</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.058891728483027289</optimal_fiber_length>
+					<optimal_fiber_length>0.058891722719567698</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.019884283122702268</tendon_slack_length>
+					<tendon_slack_length>0.019884281176719948</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8172,9 +8172,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>104</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.044668912306677876</optimal_fiber_length>
+					<optimal_fiber_length>0.044668794332951033</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.033123134125714528</tendon_slack_length>
+					<tendon_slack_length>0.033123046645196746</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8225,9 +8225,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>118</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.059346311835286505</optimal_fiber_length>
+					<optimal_fiber_length>0.05934631847659895</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.0072629946851558366</tendon_slack_length>
+					<tendon_slack_length>0.0072629954979412563</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8416,9 +8416,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>510</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.060979617860032288</optimal_fiber_length>
+					<optimal_fiber_length>0.060971379807221705</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.085071565244077829</tendon_slack_length>
+					<tendon_slack_length>0.085060072485156832</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8469,9 +8469,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>141</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.037890879211192559</optimal_fiber_length>
+					<optimal_fiber_length>0.037890882194726611</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.046903287821527362</tendon_slack_length>
+					<tendon_slack_length>0.046903291514699942</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8734,9 +8734,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>285</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.026552689824437602</optimal_fiber_length>
+					<optimal_fiber_length>0.026552689824437595</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.013470160166411775</tendon_slack_length>
+					<tendon_slack_length>0.013470160166411772</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.03490658504</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8787,9 +8787,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>73</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.036534194341452428</optimal_fiber_length>
+					<optimal_fiber_length>0.036534175415375882</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.004845383864914116</tendon_slack_length>
+					<tendon_slack_length>0.0048453813548243879</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8840,9 +8840,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>178</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.037406349040823281</optimal_fiber_length>
+					<optimal_fiber_length>0.037406344059244229</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.0048453820001066426</tendon_slack_length>
+					<tendon_slack_length>0.0048453813548243818</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
@@ -8893,9 +8893,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>219</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.034111484653784246</optimal_fiber_length>
+					<optimal_fiber_length>0.034111484737963563</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.0048453813428670804</tendon_slack_length>
+					<tendon_slack_length>0.0048453813548243688</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
