@@ -454,1179 +454,1266 @@ serrant12
   Model addition step   7: Added term 0 0 0 2 0 0 -- RMS=13.239935, GCV=2.382234e-06, AIC = -0.428356
   8 polynomial terms were written for serrant12
 deltscap1
-  RMS fit error of the full model is: 9.192509 mm
-  maximum moment arm: 86.420948 mm
-  maximum error allowed: 8.642095 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=35.484220, GCV=9.556929e-06, AIC = 0.980894
-  Model addition step   2: Added term 1 1 0 -- RMS=26.362689, GCV=5.295096e-06, AIC = 0.387562
-  Model addition step   3: Added term 2 1 0 -- RMS=24.148034, GCV=4.459721e-06, AIC = 0.213014
-  Model addition step   4: Added term 0 1 0 -- RMS=20.176689, GCV=3.125337e-06, AIC = -0.145391
-  Model addition step   5: Added term 0 0 1 -- RMS=17.288818, GCV=2.303476e-06, AIC = -0.453382
-  Model addition step   6: Added term 2 0 1 -- RMS=15.984624, GCV=1.976592e-06, AIC = -0.609302
-  Model addition step   7: Added term 3 1 0 -- RMS=14.545360, GCV=1.642947e-06, AIC = -0.797067
-Change in error: 0.032377. No more terms added.
-   8 polynomial terms were written for deltscap1
+  RMS fit error of the full model is: 3.381807 mm
+  maximum moment arm: 78.759065 mm
+  maximum error allowed: 7.875907 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=36.729104, GCV=1.023926e-05, AIC = 1.049856
+  Model addition step   2: Added term 1 1 0 -- RMS=29.841581, GCV=6.784816e-06, AIC = 0.635468
+  Model addition step   3: Added term 0 0 1 -- RMS=20.801517, GCV=3.309285e-06, AIC = -0.085340
+  Model addition step   4: Added term 2 0 0 -- RMS=17.728009, GCV=2.412776e-06, AIC = -0.404155
+Change in error: 0.048227. No more terms added.
+   5 polynomial terms were written for deltscap1
 deltscap2
-  RMS fit error of the full model is: 6.984607 mm
-  maximum moment arm: 70.170363 mm
-  maximum error allowed: 7.017036 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=29.242895, GCV=6.490655e-06, AIC = 0.593991
-  Model addition step   2: Added term 1 1 0 -- RMS=18.476721, GCV=2.601023e-06, AIC = -0.323314
-  Model addition step   3: Added term 2 1 0 -- RMS=16.785831, GCV=2.154914e-06, AIC = -0.514322
-  Model addition step   4: Added term 0 0 1 -- RMS=15.022175, GCV=1.732458e-06, AIC = -0.735392
-  Model addition step   5: Added term 0 1 0 -- RMS=13.944340, GCV=1.498473e-06, AIC = -0.883355
-  Model addition step   6: Added term 3 1 0 -- RMS=12.155603, GCV=1.143050e-06, AIC = -1.156976
-  Model addition step   7: Added term 2 0 1 -- RMS=10.803362, GCV=9.063428e-07, AIC = -1.391897
-Change in error: 0.031715. No more terms added.
-   8 polynomial terms were written for deltscap2
+  RMS fit error of the full model is: 2.713896 mm
+  maximum moment arm: 63.613685 mm
+  maximum error allowed: 6.361368 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=30.074574, GCV=6.865099e-06, AIC = 0.650078
+  Model addition step   2: Added term 1 1 0 -- RMS=21.968783, GCV=3.677108e-06, AIC = 0.022908
+  Model addition step   3: Added term 0 0 1 -- RMS=14.431146, GCV=1.592744e-06, AIC = -0.816615
+  Model addition step   4: Added term 2 1 0 -- RMS=12.768888, GCV=1.251709e-06, AIC = -1.060424
+  Model addition step   5: Added term 0 1 0 -- RMS=11.279061, GCV=9.803903e-07, AIC = -1.307606
+  Model addition step   6: Added term 3 1 0 -- RMS=9.346467, GCV=6.757830e-07, AIC = -1.682560
+  Model addition step   7: Added term 1 0 0 -- RMS=8.151064, GCV=5.159448e-07, AIC = -1.955315
+  Model addition step   8: Added term 1 1 1 -- RMS=7.221408, GCV=4.065220e-07, AIC = -2.196566
+  Model addition step   9: Added term 0 2 0 -- RMS=6.485044, GCV=3.291053e-07, AIC = -2.410724
+Change in error: 0.031847. No more terms added.
+   10 polynomial terms were written for deltscap2
 deltscap3
-  RMS fit error of the full model is: 6.223723 mm
-  maximum moment arm: 51.795099 mm
-  maximum error allowed: 5.179510 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=25.665706, GCV=4.999819e-06, AIC = 0.333029
-  Model addition step   2: Added term 1 1 0 -- RMS=15.331321, GCV=1.790827e-06, AIC = -0.696542
-  Model addition step   3: Added term 3 1 0 -- RMS=13.056716, GCV=1.303803e-06, AIC = -1.016787
-  Model addition step   4: Added term 0 0 1 -- RMS=11.586961, GCV=1.030709e-06, AIC = -1.254686
-  Model addition step   5: Added term 2 1 0 -- RMS=10.684771, GCV=8.797991e-07, AIC = -1.415863
-  Model addition step   6: Added term 2 0 1 -- RMS=9.933081, GCV=7.632737e-07, AIC = -1.560815
-Change in error: 0.029990. No more terms added.
-   7 polynomial terms were written for deltscap3
+  RMS fit error of the full model is: 3.339024 mm
+  maximum moment arm: 50.896951 mm
+  maximum error allowed: 5.089695 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=26.287847, GCV=5.245149e-06, AIC = 0.380931
+  Model addition step   2: Added term 1 1 0 -- RMS=17.112269, GCV=2.231052e-06, AIC = -0.476746
+  Model addition step   3: Added term 0 0 1 -- RMS=11.758932, GCV=1.057499e-06, AIC = -1.226166
+  Model addition step   4: Added term 3 1 0 -- RMS=10.035894, GCV=7.732308e-07, AIC = -1.542111
+  Model addition step   5: Added term 0 0 2 -- RMS=8.849883, GCV=6.035706e-07, AIC = -1.792693
+  Model addition step   6: Added term 2 1 0 -- RMS=7.722042, GCV=4.612927e-07, AIC = -2.064399
+  Model addition step   7: Added term 1 0 0 -- RMS=6.925536, GCV=3.724615e-07, AIC = -2.281181
+  Model addition step   8: Added term 0 1 2 -- RMS=6.198770, GCV=2.995376e-07, AIC = -2.501964
+  Model addition step   9: Added term 0 2 2 -- RMS=5.801372, GCV=2.633725e-07, AIC = -2.633532
+Change in error: 0.037605. No more terms added.
+   10 polynomial terms were written for deltscap3
 deltscap4
-  RMS fit error of the full model is: 4.429104 mm
-  maximum moment arm: 41.827133 mm
-  maximum error allowed: 4.182713 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=21.709914, GCV=3.577371e-06, AIC = -0.001745
-  Model addition step   2: Added term 1 1 0 -- RMS=13.223035, GCV=1.332161e-06, AIC = -0.992417
-  Model addition step   3: Added term 3 1 0 -- RMS=9.849134, GCV=7.418912e-07, AIC = -1.580625
-  Model addition step   4: Added term 0 0 1 -- RMS=8.780364, GCV=5.918643e-07, AIC = -1.809411
-  Model addition step   5: Added term 0 0 3 -- RMS=8.247695, GCV=5.242257e-07, AIC = -1.933634
-  Model addition step   6: Added term 0 1 0 -- RMS=7.740107, GCV=4.634536e-07, AIC = -2.059726
-  Model addition step   7: Added term 1 0 1 -- RMS=7.271312, GCV=4.105823e-07, AIC = -2.183738
-  Model addition step   8: Added term 1 0 0 -- RMS=6.781090, GCV=3.584588e-07, AIC = -2.322391
-  Model addition step   9: Added term 3 0 1 -- RMS=6.201709, GCV=3.009759e-07, AIC = -2.500071
-  Model addition step  10: Added term 0 1 2 -- RMS=5.731969, GCV=2.581003e-07, AIC = -2.656658
-Change in error: 0.034553. No more terms added.
-   11 polynomial terms were written for deltscap4
+  RMS fit error of the full model is: 2.131579 mm
+  maximum moment arm: 41.541818 mm
+  maximum error allowed: 4.154182 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=22.949069, GCV=3.997403e-06, AIC = 0.109272
+  Model addition step   2: Added term 1 1 0 -- RMS=15.120760, GCV=1.741974e-06, AIC = -0.724200
+  Model addition step   3: Added term 0 0 1 -- RMS=10.801478, GCV=8.922994e-07, AIC = -1.396026
+  Model addition step   4: Added term 3 1 0 -- RMS=8.408101, GCV=5.427413e-07, AIC = -1.896056
+  Model addition step   5: Added term 0 0 2 -- RMS=7.196410, GCV=3.991029e-07, AIC = -2.206337
+  Model addition step   6: Added term 1 0 0 -- RMS=6.391741, GCV=3.160462e-07, AIC = -2.442543
+  Model addition step   7: Added term 0 2 0 -- RMS=5.816354, GCV=2.627098e-07, AIC = -2.630264
+  Model addition step   8: Added term 2 0 2 -- RMS=5.146374, GCV=2.064633e-07, AIC = -2.874082
+  Model addition step   9: Added term 0 1 2 -- RMS=4.860700, GCV=1.848871e-07, AIC = -2.987356
+Change in error: 0.022583. No more terms added.
+   10 polynomial terms were written for deltscap4
 deltscap5
-  RMS fit error of the full model is: 3.812077 mm
+  RMS fit error of the full model is: 1.824646 mm
   maximum moment arm: 35.837332 mm
   maximum error allowed: 3.583733 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=18.098652, GCV=2.486224e-06, AIC = -0.365608
-  Model addition step   2: Added term 1 1 0 -- RMS=14.269162, GCV=1.551284e-06, AIC = -0.840136
-  Model addition step   3: Added term 3 1 0 -- RMS=11.732082, GCV=1.052675e-06, AIC = -1.230738
-  Model addition step   4: Added term 0 1 0 -- RMS=9.294561, GCV=6.632157e-07, AIC = -1.695588
-  Model addition step   5: Added term 2 1 0 -- RMS=7.319573, GCV=4.128807e-07, AIC = -2.172398
-Change in error: 0.033653. No more terms added.
-   6 polynomial terms were written for deltscap5
+  Model addition step   1: Added term 0 0 0 -- RMS=18.584624, GCV=2.621533e-06, AIC = -0.312613
+  Model addition step   2: Added term 1 1 0 -- RMS=14.933202, GCV=1.699027e-06, AIC = -0.749163
+  Model addition step   3: Added term 2 1 1 -- RMS=12.894744, GCV=1.271656e-06, AIC = -1.041753
+  Model addition step   4: Added term 0 2 0 -- RMS=10.912552, GCV=9.142179e-07, AIC = -1.374620
+  Model addition step   5: Added term 1 1 1 -- RMS=9.144600, GCV=6.444401e-07, AIC = -1.727175
+  Model addition step   6: Added term 2 2 0 -- RMS=8.301737, GCV=5.331510e-07, AIC = -1.919627
+  Model addition step   7: Added term 0 0 1 -- RMS=7.749805, GCV=4.663975e-07, AIC = -2.056276
+  Model addition step   8: Added term 0 1 2 -- RMS=7.288070, GCV=4.140620e-07, AIC = -2.178189
+  Model addition step   9: Added term 3 1 0 -- RMS=6.406529, GCV=3.211845e-07, AIC = -2.435086
+  Model addition step  10: Added term 1 0 0 -- RMS=5.733003, GCV=2.581935e-07, AIC = -2.656297
+Change in error: 0.040965. No more terms added.
+   11 polynomial terms were written for deltscap5
 deltscap6
-  RMS fit error of the full model is: 4.516418 mm
-  maximum moment arm: 46.167121 mm
-  maximum error allowed: 4.616712 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=22.983266, GCV=4.009325e-06, AIC = 0.112250
-  Model addition step   2: Added term 1 1 0 -- RMS=16.098024, GCV=1.974420e-06, AIC = -0.598944
-  Model addition step   3: Added term 3 1 0 -- RMS=11.276412, GCV=9.724920e-07, AIC = -1.309966
-  Model addition step   4: Added term 0 2 0 -- RMS=9.380689, GCV=6.755640e-07, AIC = -1.677141
-  Model addition step   5: Added term 2 2 0 -- RMS=8.753019, GCV=5.904306e-07, AIC = -1.814704
-Change in error: 0.035415. No more terms added.
-   6 polynomial terms were written for deltscap6
+  RMS fit error of the full model is: 2.332465 mm
+  maximum moment arm: 46.176141 mm
+  maximum error allowed: 4.617614 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=23.987900, GCV=4.367494e-06, AIC = 0.197817
+  Model addition step   2: Added term 1 1 0 -- RMS=16.631476, GCV=2.107444e-06, AIC = -0.533743
+  Model addition step   3: Added term 2 1 1 -- RMS=13.539970, GCV=1.402102e-06, AIC = -0.944100
+  Model addition step   4: Added term 0 2 0 -- RMS=11.969199, GCV=1.099834e-06, AIC = -1.189774
+  Model addition step   5: Added term 1 1 1 -- RMS=10.647486, GCV=8.736696e-07, AIC = -1.422854
+  Model addition step   6: Added term 3 1 0 -- RMS=9.460167, GCV=6.923249e-07, AIC = -1.658377
+  Model addition step   7: Added term 0 0 1 -- RMS=8.478199, GCV=5.581898e-07, AIC = -1.876615
+  Model addition step   8: Added term 0 1 2 -- RMS=6.900842, GCV=3.712311e-07, AIC = -2.287380
+  Model addition step   9: Added term 1 0 0 -- RMS=6.135611, GCV=2.945944e-07, AIC = -2.521502
+  Model addition step  10: Added term 2 2 0 -- RMS=5.609957, GCV=2.472293e-07, AIC = -2.699690
+Change in error: 0.029811. No more terms added.
+   11 polynomial terms were written for deltscap6
 deltscap7
-  RMS fit error of the full model is: 4.161254 mm
-  maximum moment arm: 40.692657 mm
-  maximum error allowed: 4.069266 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=20.117452, GCV=3.071806e-06, AIC = -0.154107
-  Model addition step   2: Added term 1 1 0 -- RMS=14.528887, GCV=1.608271e-06, AIC = -0.804060
-  Model addition step   3: Added term 3 1 0 -- RMS=10.693992, GCV=8.746290e-07, AIC = -1.416028
-  Model addition step   4: Added term 0 2 0 -- RMS=9.017418, GCV=6.242542e-07, AIC = -1.756131
-  Model addition step   5: Added term 2 2 0 -- RMS=7.967631, GCV=4.892283e-07, AIC = -2.002727
-Change in error: 0.029023. No more terms added.
-   6 polynomial terms were written for deltscap7
+  RMS fit error of the full model is: 1.930552 mm
+  maximum moment arm: 40.566162 mm
+  maximum error allowed: 4.056616 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=21.255737, GCV=3.429258e-06, AIC = -0.044029
+  Model addition step   2: Added term 1 1 0 -- RMS=15.630783, GCV=1.861469e-06, AIC = -0.657853
+  Model addition step   3: Added term 3 1 0 -- RMS=13.155961, GCV=1.323699e-06, AIC = -1.001642
+  Model addition step   4: Added term 0 1 2 -- RMS=10.976401, GCV=9.249474e-07, AIC = -1.362952
+  Model addition step   5: Added term 0 2 0 -- RMS=8.804335, GCV=5.973739e-07, AIC = -1.803013
+  Model addition step   6: Added term 0 0 1 -- RMS=7.296064, GCV=4.118031e-07, AIC = -2.177887
+  Model addition step   7: Added term 2 2 0 -- RMS=6.592882, GCV=3.375400e-07, AIC = -2.379630
+  Model addition step   8: Added term 1 2 1 -- RMS=6.188318, GCV=2.985283e-07, AIC = -2.505340
+  Model addition step   9: Added term 0 1 0 -- RMS=5.829650, GCV=2.659463e-07, AIC = -2.623807
+  Model addition step  10: Added term 1 0 0 -- RMS=5.524670, GCV=2.397693e-07, AIC = -2.730329
+  Model addition step  11: Added term 0 1 3 -- RMS=5.221216, GCV=2.149807e-07, AIC = -2.842370
+Change in error: 0.027079. No more terms added.
+   12 polynomial terms were written for deltscap7
 deltscap8
-  RMS fit error of the full model is: 4.054954 mm
-  maximum moment arm: 39.178480 mm
-  maximum error allowed: 3.917848 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=18.917112, GCV=2.716173e-06, AIC = -0.277149
-  Model addition step   2: Added term 0 2 0 -- RMS=14.883927, GCV=1.687833e-06, AIC = -0.755774
-  Model addition step   3: Added term 1 1 0 -- RMS=13.094408, GCV=1.311342e-06, AIC = -1.011022
-  Model addition step   4: Added term 2 2 0 -- RMS=8.773169, GCV=5.908946e-07, AIC = -1.811051
-  Model addition step   5: Added term 3 1 0 -- RMS=7.589228, GCV=4.438624e-07, AIC = -2.100042
-  Model addition step   6: Added term 2 0 0 -- RMS=6.886676, GCV=3.668863e-07, AIC = -2.293380
-Change in error: 0.024556. No more terms added.
-   7 polynomial terms were written for deltscap8
+  RMS fit error of the full model is: 2.137540 mm
+  maximum moment arm: 39.188997 mm
+  maximum error allowed: 3.918900 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=19.518850, GCV=2.891720e-06, AIC = -0.214521
+  Model addition step   2: Added term 0 2 0 -- RMS=15.913701, GCV=1.929465e-06, AIC = -0.621977
+  Model addition step   3: Added term 0 1 2 -- RMS=13.358500, GCV=1.364770e-06, AIC = -0.971086
+  Model addition step   4: Added term 1 1 0 -- RMS=10.870989, GCV=9.072671e-07, AIC = -1.382252
+  Model addition step   5: Added term 2 2 0 -- RMS=7.654076, GCV=4.514801e-07, AIC = -2.083025
+  Model addition step   6: Added term 3 1 0 -- RMS=6.812948, GCV=3.590728e-07, AIC = -2.314907
+  Model addition step   7: Added term 1 2 1 -- RMS=6.347596, GCV=3.128911e-07, AIC = -2.455459
+  Model addition step   8: Added term 0 1 0 -- RMS=5.817209, GCV=2.637968e-07, AIC = -2.629025
+Change in error: 0.023211. No more terms added.
+   9 polynomial terms were written for deltscap8
 deltscap9
-  RMS fit error of the full model is: 3.483653 mm
-  maximum moment arm: 35.139184 mm
-  maximum error allowed: 3.513918 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=17.713560, GCV=2.381549e-06, AIC = -0.408622
-  Model addition step   2: Added term 0 2 0 -- RMS=13.066130, GCV=1.300734e-06, AIC = -1.016291
-  Model addition step   3: Added term 2 0 0 -- RMS=11.703632, GCV=1.047576e-06, AIC = -1.235594
-  Model addition step   4: Added term 1 1 0 -- RMS=9.272363, GCV=6.600516e-07, AIC = -1.700371
-  Model addition step   5: Added term 2 2 0 -- RMS=7.457367, GCV=4.285723e-07, AIC = -2.135097
-Change in error: 0.038070. No more terms added.
-   6 polynomial terms were written for deltscap9
+  RMS fit error of the full model is: 1.717985 mm
+  maximum moment arm: 35.101434 mm
+  maximum error allowed: 3.510143 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=18.494177, GCV=2.596078e-06, AIC = -0.322371
+  Model addition step   2: Added term 0 2 0 -- RMS=14.693723, GCV=1.644971e-06, AIC = -0.781497
+  Model addition step   3: Added term 1 1 1 -- RMS=12.223065, GCV=1.142627e-06, AIC = -1.148743
+  Model addition step   4: Added term 1 1 0 -- RMS=10.250825, GCV=8.067049e-07, AIC = -1.499731
+  Model addition step   5: Added term 2 2 0 -- RMS=8.747592, GCV=5.896986e-07, AIC = -1.815945
+  Model addition step   6: Added term 0 0 1 -- RMS=7.512010, GCV=4.365406e-07, AIC = -2.119551
+Change in error: 0.043497. No more terms added.
+   7 polynomial terms were written for deltscap9
 deltscap10
-  RMS fit error of the full model is: 3.751304 mm
-  maximum moment arm: 32.547093 mm
-  maximum error allowed: 3.254709 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=15.525675, GCV=1.829569e-06, AIC = -0.672292
-  Model addition step   2: Added term 0 2 0 -- RMS=11.029353, GCV=9.268181e-07, AIC = -1.355217
-  Model addition step   3: Added term 2 1 0 -- RMS=8.755100, GCV=5.862278e-07, AIC = -1.816119
-  Model addition step   4: Added term 1 1 0 -- RMS=7.603430, GCV=4.438295e-07, AIC = -2.097248
-  Model addition step   5: Added term 0 1 0 -- RMS=5.777595, GCV=2.572452e-07, AIC = -2.645527
-Change in error: 0.022965. No more terms added.
-   6 polynomial terms were written for deltscap10
+  RMS fit error of the full model is: 2.235552 mm
+  maximum moment arm: 32.571787 mm
+  maximum error allowed: 3.257179 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=16.345522, GCV=2.027895e-06, AIC = -0.569375
+  Model addition step   2: Added term 0 2 0 -- RMS=12.508766, GCV=1.192129e-06, AIC = -1.103478
+  Model addition step   3: Added term 1 1 1 -- RMS=9.819868, GCV=7.374889e-07, AIC = -1.586577
+  Model addition step   4: Added term 2 0 0 -- RMS=9.038438, GCV=6.271679e-07, AIC = -1.751474
+  Model addition step   5: Added term 1 1 0 -- RMS=8.381899, GCV=5.414245e-07, AIC = -1.901353
+  Model addition step   6: Added term 0 3 0 -- RMS=7.729419, GCV=4.621745e-07, AIC = -2.062489
+  Model addition step   7: Added term 2 1 0 -- RMS=6.937096, GCV=3.737060e-07, AIC = -2.277845
+  Model addition step   8: Added term 0 0 1 -- RMS=6.294677, GCV=3.088781e-07, AIC = -2.471258
+  Model addition step   9: Added term 0 1 2 -- RMS=5.658240, GCV=2.505369e-07, AIC = -2.683495
+  Model addition step  10: Added term 0 1 0 -- RMS=4.954893, GCV=1.928632e-07, AIC = -2.948025
+  Model addition step  11: Added term 0 0 3 -- RMS=4.546562, GCV=1.630131e-07, AIC = -3.119088
+Change in error: 0.035911. No more terms added.
+   12 polynomial terms were written for deltscap10
 deltscap11
-  RMS fit error of the full model is: 4.376837 mm
+  RMS fit error of the full model is: 2.659767 mm
   maximum moment arm: 32.478646 mm
   maximum error allowed: 3.247865 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.130941, GCV=1.975001e-06, AIC = -0.595804
-  Model addition step   2: Added term 0 1 0 -- RMS=11.230566, GCV=9.609433e-07, AIC = -1.319059
-  Model addition step   3: Added term 2 1 0 -- RMS=6.769640, GCV=3.504897e-07, AIC = -2.330497
-  Model addition step   4: Added term 2 2 0 -- RMS=5.864876, GCV=2.640674e-07, AIC = -2.616484
-Change in error: 0.043878. No more terms added.
-   5 polynomial terms were written for deltscap11
+  Model addition step   1: Added term 0 0 0 -- RMS=17.451551, GCV=2.311617e-06, AIC = -0.438426
+  Model addition step   2: Added term 0 1 0 -- RMS=13.899369, GCV=1.471921e-06, AIC = -0.892650
+  Model addition step   3: Added term 2 1 0 -- RMS=9.806867, GCV=7.355374e-07, AIC = -1.589227
+  Model addition step   4: Added term 0 1 2 -- RMS=7.084702, GCV=3.853366e-07, AIC = -2.238571
+  Model addition step   5: Added term 2 2 0 -- RMS=5.900469, GCV=2.683034e-07, AIC = -2.603438
+Change in error: 0.045301. No more terms added.
+   6 polynomial terms were written for deltscap11
 deltclav1
-  RMS fit error of the full model is: 7.331093 mm
+  RMS fit error of the full model is: 6.630002 mm
   maximum moment arm: 71.620633 mm
   maximum error allowed: 7.162063 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=38.264045, GCV=1.944767e-05, AIC = 1.690949
-  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=33.462795, GCV=1.492990e-05, AIC = 1.423337
-  Model addition step   3: Added term 1 0 0 0 1 0 -- RMS=30.313351, GCV=1.229844e-05, AIC = 1.226185
-  Model addition step   4: Added term 2 0 0 1 0 0 -- RMS=28.060094, GCV=1.057824e-05, AIC = 1.072245
-  Model addition step   5: Added term 1 1 2 0 0 0 -- RMS=25.721242, GCV=8.922263e-06, AIC = 0.898723
-  Model addition step   6: Added term 0 1 0 2 0 0 -- RMS=24.148348, GCV=7.894510e-06, AIC = 0.773061
-  Model addition step   7: Added term 1 0 0 3 0 0 -- RMS=22.629387, GCV=6.959184e-06, AIC = 0.643667
-Change in error: 0.041465. No more terms added.
-   8 polynomial terms were written for deltclav1
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=39.465488, GCV=2.068811e-05, AIC = 1.752781
+  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=34.017002, GCV=1.542853e-05, AIC = 1.456189
+  Model addition step   3: Added term 1 0 0 0 1 0 -- RMS=31.842406, GCV=1.357044e-05, AIC = 1.324606
+  Model addition step   4: Added term 2 0 0 1 1 0 -- RMS=29.316570, GCV=1.154679e-05, AIC = 1.159854
+  Model addition step   5: Added term 1 1 2 0 0 0 -- RMS=27.122418, GCV=9.920829e-06, AIC = 1.004810
+  Model addition step   6: Added term 0 1 0 0 1 1 -- RMS=25.651229, GCV=8.907723e-06, AIC = 0.893812
+Change in error: 0.047871. No more terms added.
+   7 polynomial terms were written for deltclav1
 deltclav2
-  RMS fit error of the full model is: 8.312483 mm
+  RMS fit error of the full model is: 7.244293 mm
   maximum moment arm: 90.756496 mm
   maximum error allowed: 9.075650 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=42.730800, GCV=2.425314e-05, AIC = 1.911768
-  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=35.323255, GCV=1.663619e-05, AIC = 1.531551
-  Model addition step   3: Added term 2 0 0 1 1 0 -- RMS=32.992172, GCV=1.456814e-05, AIC = 1.395549
-  Model addition step   4: Added term 1 0 0 2 1 0 -- RMS=29.259319, GCV=1.150174e-05, AIC = 1.155945
-  Model addition step   5: Added term 0 1 0 2 0 0 -- RMS=26.642219, GCV=9.572644e-06, AIC = 0.969083
-  Model addition step   6: Added term 0 1 3 0 0 0 -- RMS=24.685905, GCV=8.249895e-06, AIC = 0.817094
-  Model addition step   7: Added term 2 0 0 0 2 0 -- RMS=23.256183, GCV=7.350038e-06, AIC = 0.698311
-Change in error: 0.042040. No more terms added.
-   8 polynomial terms were written for deltclav2
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=44.533868, GCV=2.634309e-05, AIC = 1.994428
+  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=36.555269, GCV=1.781691e-05, AIC = 1.600119
+  Model addition step   3: Added term 2 0 0 1 1 0 -- RMS=33.751195, GCV=1.524616e-05, AIC = 1.441040
+  Model addition step   4: Added term 1 0 0 2 1 0 -- RMS=31.042099, GCV=1.294605e-05, AIC = 1.274237
+  Model addition step   5: Added term 0 0 0 0 0 1 -- RMS=28.214943, GCV=1.073617e-05, AIC = 1.083792
+  Model addition step   6: Added term 0 1 0 2 0 0 -- RMS=25.169176, GCV=8.576070e-06, AIC = 0.855869
+  Model addition step   7: Added term 0 1 3 0 0 0 -- RMS=23.523988, GCV=7.520290e-06, AIC = 0.721210
+  Model addition step   8: Added term 1 0 0 0 0 0 -- RMS=21.910532, GCV=6.549138e-06, AIC = 0.579644
+  Model addition step   9: Added term 0 0 0 2 2 0 -- RMS=20.596666, GCV=5.809528e-06, AIC = 0.456507
+Change in error: 0.035495. No more terms added.
+   10 polynomial terms were written for deltclav2
 deltclav3
-  RMS fit error of the full model is: 8.481114 mm
+  RMS fit error of the full model is: 7.377378 mm
   maximum moment arm: 86.910407 mm
   maximum error allowed: 8.691041 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=42.770445, GCV=2.429816e-05, AIC = 1.913623
-  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=35.778654, GCV=1.706791e-05, AIC = 1.557171
-  Model addition step   3: Added term 1 0 0 1 0 0 -- RMS=33.670630, GCV=1.517346e-05, AIC = 1.436260
-  Model addition step   4: Added term 2 0 0 0 1 0 -- RMS=31.412191, GCV=1.325658e-05, AIC = 1.297941
-  Model addition step   5: Added term 1 0 0 3 0 0 -- RMS=29.412527, GCV=1.166691e-05, AIC = 1.166930
-  Model addition step   6: Added term 0 1 0 2 0 0 -- RMS=27.556330, GCV=1.028000e-05, AIC = 1.037093
-  Model addition step   7: Added term 0 1 2 0 0 0 -- RMS=24.947277, GCV=8.457831e-06, AIC = 0.838698
-Change in error: 0.045884. No more terms added.
-   8 polynomial terms were written for deltclav3
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=44.709476, GCV=2.655125e-05, AIC = 2.002299
+  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=36.997941, GCV=1.825104e-05, AIC = 1.624193
+  Model addition step   3: Added term 1 0 0 1 1 0 -- RMS=34.265937, GCV=1.571475e-05, AIC = 1.471312
+  Model addition step   4: Added term 0 0 0 2 2 0 -- RMS=31.285698, GCV=1.315003e-05, AIC = 1.289871
+  Model addition step   5: Added term 0 0 0 0 0 1 -- RMS=28.581523, GCV=1.101696e-05, AIC = 1.109609
+  Model addition step   6: Added term 3 0 0 0 0 0 -- RMS=26.255717, GCV=9.332502e-06, AIC = 0.940396
+  Model addition step   7: Added term 0 1 0 2 0 0 -- RMS=24.037695, GCV=7.852326e-06, AIC = 0.764415
+  Model addition step   8: Added term 1 1 2 0 0 0 -- RMS=21.432082, GCV=6.266239e-06, AIC = 0.535487
+Change in error: 0.047457. No more terms added.
+   9 polynomial terms were written for deltclav3
 deltclav4
-  RMS fit error of the full model is: 8.989080 mm
+  RMS fit error of the full model is: 6.951762 mm
   maximum moment arm: 87.810703 mm
   maximum error allowed: 8.781070 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=43.444153, GCV=2.506967e-05, AIC = 1.944881
-  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=35.520902, GCV=1.682288e-05, AIC = 1.542711
-  Model addition step   3: Added term 2 0 0 1 1 0 -- RMS=32.570065, GCV=1.419775e-05, AIC = 1.369796
-  Model addition step   4: Added term 1 0 0 2 1 0 -- RMS=29.716388, GCV=1.186389e-05, AIC = 1.186946
-  Model addition step   5: Added term 0 1 0 2 0 0 -- RMS=27.275127, GCV=1.003286e-05, AIC = 1.016039
-  Model addition step   6: Added term 0 0 2 0 0 0 -- RMS=25.750043, GCV=8.976484e-06, AIC = 0.901501
-Change in error: 0.042181. No more terms added.
-   7 polynomial terms were written for deltclav4
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=45.392254, GCV=2.736840e-05, AIC = 2.032611
+  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=36.830692, GCV=1.808640e-05, AIC = 1.615131
+  Model addition step   3: Added term 1 0 0 1 1 0 -- RMS=33.258912, GCV=1.480465e-05, AIC = 1.411654
+  Model addition step   4: Added term 0 0 0 0 0 1 -- RMS=29.787880, GCV=1.192104e-05, AIC = 1.191752
+  Model addition step   5: Added term 0 0 0 2 2 0 -- RMS=26.652184, GCV=9.579807e-06, AIC = 0.969831
+  Model addition step   6: Added term 0 1 0 2 0 0 -- RMS=23.312422, GCV=7.357413e-06, AIC = 0.702601
+  Model addition step   7: Added term 2 0 0 0 0 0 -- RMS=20.921599, GCV=5.948431e-06, AIC = 0.486733
+  Model addition step   8: Added term 0 0 0 3 1 0 -- RMS=19.192114, GCV=5.024859e-06, AIC = 0.314708
+  Model addition step   9: Added term 0 1 3 0 0 0 -- RMS=17.787185, GCV=4.332729e-06, AIC = 0.163206
+Change in error: 0.041026. No more terms added.
+   10 polynomial terms were written for deltclav4
 coracobr1
-  RMS fit error of the full model is: 3.491110 mm
+  RMS fit error of the full model is: 2.307732 mm
   maximum moment arm: 34.267443 mm
   maximum error allowed: 3.426744 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.785110, GCV=1.442342e-06, AIC = -0.910104
-  Model addition step   2: Added term 1 1 0 -- RMS=10.517818, GCV=8.428412e-07, AIC = -1.450196
-  Model addition step   3: Added term 2 2 0 -- RMS=7.726335, GCV=4.565530e-07, AIC = -2.066123
-  Model addition step   4: Added term 3 1 0 -- RMS=6.096089, GCV=2.852987e-07, AIC = -2.539152
-Change in error: 0.019406. No more terms added.
-   5 polynomial terms were written for coracobr1
+  Model addition step   1: Added term 0 0 0 -- RMS=15.180439, GCV=1.749107e-06, AIC = -0.717267
+  Model addition step   2: Added term 1 1 0 -- RMS=12.457399, GCV=1.182358e-06, AIC = -1.111708
+  Model addition step   3: Added term 3 1 0 -- RMS=10.020595, GCV=7.679469e-07, AIC = -1.546107
+  Model addition step   4: Added term 2 2 0 -- RMS=8.639169, GCV=5.729820e-07, AIC = -1.841834
+  Model addition step   5: Added term 0 0 3 -- RMS=7.384865, GCV=4.202795e-07, AIC = -2.154637
+  Model addition step   6: Added term 0 0 2 -- RMS=6.984133, GCV=3.773439e-07, AIC = -2.265275
+  Model addition step   7: Added term 1 0 1 -- RMS=5.966688, GCV=2.764657e-07, AIC = -2.579227
+  Model addition step   8: Added term 1 0 2 -- RMS=4.434055, GCV=1.532648e-07, AIC = -3.172037
+Change in error: 0.040957. No more terms added.
+   9 polynomial terms were written for coracobr1
 coracobr2
-  RMS fit error of the full model is: 2.966022 mm
-  maximum moment arm: 34.815920 mm
-  maximum error allowed: 3.481592 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=15.043742, GCV=1.717748e-06, AIC = -0.735358
-  Model addition step   2: Added term 1 1 0 -- RMS=11.937200, GCV=1.085674e-06, AIC = -1.197018
-  Model addition step   3: Added term 3 1 0 -- RMS=9.126705, GCV=6.370481e-07, AIC = -1.732983
-  Model addition step   4: Added term 2 2 0 -- RMS=7.996052, GCV=4.908494e-07, AIC = -1.996551
-  Model addition step   5: Added term 0 0 1 -- RMS=7.251911, GCV=4.052826e-07, AIC = -2.190972
-  Model addition step   6: Added term 1 0 1 -- RMS=6.582194, GCV=3.351611e-07, AIC = -2.383821
-  Model addition step   7: Added term 1 0 3 -- RMS=5.990339, GCV=2.786618e-07, AIC = -2.571315
-  Model addition step   8: Added term 0 0 3 -- RMS=5.459984, GCV=2.323929e-07, AIC = -2.755775
-  Model addition step   9: Added term 0 0 2 -- RMS=5.017909, GCV=1.970401e-07, AIC = -2.923694
-  Model addition step  10: Added term 0 1 0 -- RMS=4.596803, GCV=1.659942e-07, AIC = -3.098054
-  Model addition step  11: Added term 1 0 2 -- RMS=4.260576, GCV=1.431505e-07, AIC = -3.249022
-  Model addition step  12: Added term 2 1 0 -- RMS=3.945564, GCV=1.232403e-07, AIC = -3.401702
-  Model addition step  13: Added term 3 0 1 -- RMS=3.690139, GCV=1.082185e-07, AIC = -3.534612
-  Model addition step  14: Added term 1 3 0 -- RMS=3.443462, GCV=9.460013e-08, AIC = -3.672041
-  15 polynomial terms were written for coracobr2
+  RMS fit error of the full model is: 2.192482 mm
+  maximum moment arm: 35.389716 mm
+  maximum error allowed: 3.538972 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=16.121595, GCV=1.972713e-06, AIC = -0.596963
+  Model addition step   2: Added term 1 1 0 -- RMS=13.483082, GCV=1.385073e-06, AIC = -0.953466
+  Model addition step   3: Added term 3 1 0 -- RMS=10.762918, GCV=8.859399e-07, AIC = -1.403179
+  Model addition step   4: Added term 0 0 1 -- RMS=9.032056, GCV=6.262825e-07, AIC = -1.752887
+  Model addition step   5: Added term 2 2 0 -- RMS=7.745837, GCV=4.623701e-07, AIC = -2.059191
+Change in error: 0.043938. No more terms added.
+   6 polynomial terms were written for coracobr2
 coracobr3
-  RMS fit error of the full model is: 3.355865 mm
+  RMS fit error of the full model is: 2.609647 mm
   maximum moment arm: 39.923106 mm
   maximum error allowed: 3.992311 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.274094, GCV=2.010210e-06, AIC = -0.578134
-  Model addition step   2: Added term 1 1 0 -- RMS=12.389281, GCV=1.169463e-06, AIC = -1.122674
-  Model addition step   3: Added term 3 1 0 -- RMS=9.092901, GCV=6.323377e-07, AIC = -1.740404
-  Model addition step   4: Added term 2 2 0 -- RMS=7.243587, GCV=4.028139e-07, AIC = -2.194214
-Change in error: 0.029841. No more terms added.
+  Model addition step   1: Added term 0 0 0 -- RMS=17.324290, GCV=2.278026e-06, AIC = -0.453063
+  Model addition step   2: Added term 1 1 0 -- RMS=13.982726, GCV=1.489629e-06, AIC = -0.880692
+  Model addition step   3: Added term 3 1 0 -- RMS=10.786973, GCV=8.899044e-07, AIC = -1.398714
+  Model addition step   4: Added term 2 2 0 -- RMS=9.175166, GCV=6.462862e-07, AIC = -1.721446
+Change in error: 0.012557. No more terms added.
    5 polynomial terms were written for coracobr3
 infra1
-  RMS fit error of the full model is: 4.596237 mm
-  maximum moment arm: 29.149844 mm
-  maximum error allowed: 2.914984 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=14.230030, GCV=1.536949e-06, AIC = -0.846573
-  Model addition step   2: Added term 1 0 0 -- RMS=11.845720, GCV=1.069098e-06, AIC = -1.212404
-  Model addition step   3: Added term 0 1 1 -- RMS=10.011110, GCV=7.664938e-07, AIC = -1.548001
-  Model addition step   4: Added term 2 1 0 -- RMS=9.355188, GCV=6.718960e-07, AIC = -1.682585
-  Model addition step   5: Added term 0 0 1 -- RMS=8.470606, GCV=5.529451e-07, AIC = -1.880298
-  Model addition step   6: Added term 0 1 2 -- RMS=7.757996, GCV=4.655983e-07, AIC = -2.055108
-Change in error: 0.043491. No more terms added.
-   7 polynomial terms were written for infra1
+  RMS fit error of the full model is: 2.678587 mm
+  maximum moment arm: 29.333059 mm
+  maximum error allowed: 2.933306 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=16.526804, GCV=2.073125e-06, AIC = -0.547316
+  Model addition step   2: Added term 0 0 1 -- RMS=14.071515, GCV=1.508607e-06, AIC = -0.868032
+  Model addition step   3: Added term 1 0 0 -- RMS=9.679807, GCV=7.166013e-07, AIC = -1.615308
+  Model addition step   4: Added term 0 1 1 -- RMS=9.010638, GCV=6.233158e-07, AIC = -1.757635
+  Model addition step   5: Added term 0 0 2 -- RMS=8.552593, GCV=5.637008e-07, AIC = -1.861033
+  Model addition step   6: Added term 1 0 1 -- RMS=6.731247, GCV=3.505123e-07, AIC = -2.339036
+  Model addition step   7: Added term 3 0 1 -- RMS=6.132145, GCV=2.920111e-07, AIC = -2.524522
+Change in error: 0.028000. No more terms added.
+   8 polynomial terms were written for infra1
 infra2
-  RMS fit error of the full model is: 4.119768 mm
-  maximum moment arm: 27.576791 mm
-  maximum error allowed: 2.757679 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=12.618761, GCV=1.208596e-06, AIC = -1.086913
-  Model addition step   2: Added term 1 0 0 -- RMS=11.276497, GCV=9.688194e-07, AIC = -1.310896
-  Model addition step   3: Added term 0 1 1 -- RMS=9.108671, GCV=6.345330e-07, AIC = -1.736939
-  Model addition step   4: Added term 2 1 0 -- RMS=8.635394, GCV=5.724814e-07, AIC = -1.842708
-  Model addition step   5: Added term 0 1 2 -- RMS=7.823889, GCV=4.717354e-07, AIC = -2.039138
-  Model addition step   6: Added term 0 0 1 -- RMS=7.017042, GCV=3.809083e-07, AIC = -2.255873
-  Model addition step   7: Added term 0 1 0 -- RMS=6.584156, GCV=3.366471e-07, AIC = -2.382279
-  Model addition step   8: Added term 0 0 3 -- RMS=6.232650, GCV=3.028208e-07, AIC = -2.491063
-Change in error: 0.036913. No more terms added.
-   9 polynomial terms were written for infra2
+  RMS fit error of the full model is: 2.071301 mm
+  maximum moment arm: 24.788586 mm
+  maximum error allowed: 2.478859 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=13.977201, GCV=1.482819e-06, AIC = -0.882428
+  Model addition step   2: Added term 0 0 1 -- RMS=11.732152, GCV=1.048696e-06, AIC = -1.231671
+  Model addition step   3: Added term 1 0 0 -- RMS=9.293526, GCV=6.605493e-07, AIC = -1.696756
+  Model addition step   4: Added term 0 1 1 -- RMS=8.037758, GCV=4.959832e-07, AIC = -1.986147
+  Model addition step   5: Added term 0 1 0 -- RMS=7.564122, GCV=4.409305e-07, AIC = -2.106669
+  Model addition step   6: Added term 2 1 0 -- RMS=6.989586, GCV=3.779334e-07, AIC = -2.263714
+  Model addition step   7: Added term 2 0 1 -- RMS=6.328953, GCV=3.110559e-07, AIC = -2.461342
+  Model addition step   8: Added term 0 1 2 -- RMS=5.860298, GCV=2.677193e-07, AIC = -2.614265
+  Model addition step   9: Added term 1 0 2 -- RMS=5.553419, GCV=2.413403e-07, AIC = -2.720894
+Change in error: 0.033702. No more terms added.
+   10 polynomial terms were written for infra2
 infra3
-  RMS fit error of the full model is: 4.138187 mm
-  maximum moment arm: 27.454590 mm
-  maximum error allowed: 2.745459 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=12.718238, GCV=1.227727e-06, AIC = -1.071208
-  Model addition step   2: Added term 1 0 0 -- RMS=11.388331, GCV=9.881311e-07, AIC = -1.291159
-  Model addition step   3: Added term 0 1 1 -- RMS=9.185051, GCV=6.452193e-07, AIC = -1.720238
-  Model addition step   4: Added term 2 1 0 -- RMS=8.665831, GCV=5.765241e-07, AIC = -1.835671
-  Model addition step   5: Added term 0 1 2 -- RMS=7.897689, GCV=4.806768e-07, AIC = -2.020361
-  Model addition step   6: Added term 0 0 1 -- RMS=7.084345, GCV=3.882502e-07, AIC = -2.236782
-  Model addition step   7: Added term 0 1 0 -- RMS=6.633982, GCV=3.417616e-07, AIC = -2.367201
-  Model addition step   8: Added term 0 0 3 -- RMS=6.268870, GCV=3.063506e-07, AIC = -2.479474
-Change in error: 0.038712. No more terms added.
-   9 polynomial terms were written for infra3
+  RMS fit error of the full model is: 2.150057 mm
+  maximum moment arm: 25.667933 mm
+  maximum error allowed: 2.566793 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=14.431995, GCV=1.580886e-06, AIC = -0.818387
+  Model addition step   2: Added term 0 0 1 -- RMS=12.005029, GCV=1.098047e-06, AIC = -1.185686
+  Model addition step   3: Added term 1 0 0 -- RMS=9.396974, GCV=6.753365e-07, AIC = -1.674617
+  Model addition step   4: Added term 0 1 1 -- RMS=8.236693, GCV=5.208381e-07, AIC = -1.937249
+  Model addition step   5: Added term 0 1 0 -- RMS=7.819401, GCV=4.711943e-07, AIC = -2.040286
+  Model addition step   6: Added term 2 1 0 -- RMS=7.176630, GCV=3.984313e-07, AIC = -2.210897
+  Model addition step   7: Added term 2 0 1 -- RMS=6.490330, GCV=3.271208e-07, AIC = -2.410985
+  Model addition step   8: Added term 0 1 2 -- RMS=6.048078, GCV=2.851510e-07, AIC = -2.551185
+  Model addition step   9: Added term 1 0 2 -- RMS=5.732397, GCV=2.571470e-07, AIC = -2.657454
+Change in error: 0.034760. No more terms added.
+   10 polynomial terms were written for infra3
 infra4
-  RMS fit error of the full model is: 4.125939 mm
-  maximum moment arm: 27.148586 mm
-  maximum error allowed: 2.714859 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=12.840744, GCV=1.251492e-06, AIC = -1.052036
-  Model addition step   2: Added term 1 0 0 -- RMS=11.795117, GCV=1.059983e-06, AIC = -1.220966
-  Model addition step   3: Added term 0 1 1 -- RMS=9.807926, GCV=7.356962e-07, AIC = -1.589011
-  Model addition step   4: Added term 2 0 0 -- RMS=9.120448, GCV=6.386007e-07, AIC = -1.733409
-  Model addition step   5: Added term 0 0 2 -- RMS=8.540988, GCV=5.621721e-07, AIC = -1.863748
-Change in error: 0.044100. No more terms added.
-   6 polynomial terms were written for infra4
+  RMS fit error of the full model is: 2.344936 mm
+  maximum moment arm: 27.070862 mm
+  maximum error allowed: 2.707086 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=15.288268, GCV=1.774044e-06, AIC = -0.703111
+  Model addition step   2: Added term 0 0 1 -- RMS=12.218295, GCV=1.137406e-06, AIC = -1.150469
+  Model addition step   3: Added term 1 0 0 -- RMS=9.823134, GCV=7.379795e-07, AIC = -1.585912
+  Model addition step   4: Added term 0 1 1 -- RMS=8.890940, GCV=6.068654e-07, AIC = -1.784382
+  Model addition step   5: Added term 0 1 0 -- RMS=8.364004, GCV=5.391152e-07, AIC = -1.905627
+  Model addition step   6: Added term 2 1 0 -- RMS=6.930788, GCV=3.716015e-07, AIC = -2.280610
+  Model addition step   7: Added term 2 0 1 -- RMS=6.238821, GCV=3.022593e-07, AIC = -2.490029
+Change in error: 0.036027. No more terms added.
+   8 polynomial terms were written for infra4
 infra5
-  RMS fit error of the full model is: 4.333142 mm
+  RMS fit error of the full model is: 2.795799 mm
   maximum moment arm: 27.885748 mm
   maximum error allowed: 2.788575 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.270082, GCV=1.336580e-06, AIC = -0.986258
-  Model addition step   2: Added term 1 0 0 -- RMS=11.834928, GCV=1.067150e-06, AIC = -1.214227
-  Model addition step   3: Added term 0 1 1 -- RMS=10.351719, GCV=8.195380e-07, AIC = -1.481087
-  Model addition step   4: Added term 2 1 0 -- RMS=9.636629, GCV=7.129307e-07, AIC = -1.623304
-  Model addition step   5: Added term 0 1 0 -- RMS=7.978744, GCV=4.905940e-07, AIC = -1.999940
-  Model addition step   6: Added term 0 0 1 -- RMS=7.099238, GCV=3.898843e-07, AIC = -2.232582
-  Model addition step   7: Added term 0 0 2 -- RMS=6.532063, GCV=3.313412e-07, AIC = -2.398166
-  Model addition step   8: Added term 0 0 3 -- RMS=6.132475, GCV=2.931648e-07, AIC = -2.523469
-  Model addition step   9: Added term 0 0 4 -- RMS=5.587088, GCV=2.442755e-07, AIC = -2.708805
-  Model addition step  10: Added term 2 2 0 -- RMS=5.294032, GCV=2.201680e-07, AIC = -2.815616
-Change in error: 0.021940. No more terms added.
+  Model addition step   1: Added term 0 0 0 -- RMS=15.560215, GCV=1.837719e-06, AIC = -0.667848
+  Model addition step   2: Added term 0 0 1 -- RMS=12.514611, GCV=1.193244e-06, AIC = -1.102544
+  Model addition step   3: Added term 1 0 0 -- RMS=9.848941, GCV=7.418622e-07, AIC = -1.580664
+  Model addition step   4: Added term 1 0 1 -- RMS=9.057746, GCV=6.298503e-07, AIC = -1.747206
+  Model addition step   5: Added term 0 0 2 -- RMS=8.119036, GCV=5.079980e-07, AIC = -1.965079
+  Model addition step   6: Added term 0 1 1 -- RMS=7.622491, GCV=4.494757e-07, AIC = -2.090350
+  Model addition step   7: Added term 0 1 0 -- RMS=7.198557, GCV=4.024071e-07, AIC = -2.203850
+  Model addition step   8: Added term 2 1 0 -- RMS=5.773770, GCV=2.598718e-07, AIC = -2.644016
+  Model addition step   9: Added term 3 0 1 -- RMS=5.007195, GCV=1.961996e-07, AIC = -2.927969
+  Model addition step  10: Added term 2 0 0 -- RMS=4.741064, GCV=1.765764e-07, AIC = -3.036253
+Change in error: 0.035243. No more terms added.
    11 polynomial terms were written for infra5
 infra6
-  RMS fit error of the full model is: 4.442142 mm
+  RMS fit error of the full model is: 3.224191 mm
   maximum moment arm: 28.365479 mm
   maximum error allowed: 2.836548 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.857980, GCV=1.457631e-06, AIC = -0.899560
-  Model addition step   2: Added term 1 0 0 -- RMS=11.201827, GCV=9.560313e-07, AIC = -1.324184
-  Model addition step   3: Added term 2 2 0 -- RMS=9.872961, GCV=7.454853e-07, AIC = -1.575793
-  Model addition step   4: Added term 0 0 1 -- RMS=8.599032, GCV=5.676703e-07, AIC = -1.851148
-  Model addition step   5: Added term 0 2 0 -- RMS=7.448595, GCV=4.275646e-07, AIC = -2.137451
-  Model addition step   6: Added term 0 0 3 -- RMS=6.938261, GCV=3.724033e-07, AIC = -2.278454
-Change in error: 0.045496. No more terms added.
+  Model addition step   1: Added term 0 0 0 -- RMS=16.198018, GCV=1.991460e-06, AIC = -0.587505
+  Model addition step   2: Added term 0 0 1 -- RMS=13.675837, GCV=1.424959e-06, AIC = -0.925076
+  Model addition step   3: Added term 1 0 0 -- RMS=9.601413, GCV=7.050411e-07, AIC = -1.631572
+  Model addition step   4: Added term 1 0 1 -- RMS=8.625765, GCV=5.712054e-07, AIC = -1.844940
+  Model addition step   5: Added term 0 0 2 -- RMS=7.817842, GCV=4.710065e-07, AIC = -2.040685
+  Model addition step   6: Added term 3 0 1 -- RMS=7.226739, GCV=4.040146e-07, AIC = -2.196981
+Change in error: 0.042907. No more terms added.
    7 polynomial terms were written for infra6
 termin1
-  RMS fit error of the full model is: 5.301068 mm
-  maximum moment arm: 32.374887 mm
-  maximum error allowed: 3.237489 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.844194, GCV=2.153517e-06, AIC = -0.509270
-  Model addition step   2: Added term 1 0 0 -- RMS=13.478590, GCV=1.384151e-06, AIC = -0.954132
-  Model addition step   3: Added term 0 0 1 -- RMS=11.580721, GCV=1.025688e-06, AIC = -1.256709
-  Model addition step   4: Added term 0 1 0 -- RMS=9.815291, GCV=7.396111e-07, AIC = -1.586564
-  Model addition step   5: Added term 1 1 0 -- RMS=8.825380, GCV=6.002330e-07, AIC = -1.798239
-  Model addition step   6: Added term 0 0 2 -- RMS=8.133282, GCV=5.117336e-07, AIC = -1.960628
-  Model addition step   7: Added term 3 0 0 -- RMS=7.677995, GCV=4.577942e-07, AIC = -2.074895
-  Model addition step   8: Added term 0 0 4 -- RMS=7.181544, GCV=4.020461e-07, AIC = -2.207638
-  Model addition step   9: Added term 0 0 3 -- RMS=6.399876, GCV=3.205178e-07, AIC = -2.437164
-Change in error: 0.025326. No more terms added.
-   10 polynomial terms were written for termin1
+  RMS fit error of the full model is: 2.301795 mm
+  maximum moment arm: 36.628881 mm
+  maximum error allowed: 3.662888 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=18.782700, GCV=2.677712e-06, AIC = -0.291410
+  Model addition step   2: Added term 0 0 1 -- RMS=16.463453, GCV=2.065077e-06, AIC = -0.554051
+  Model addition step   3: Added term 1 0 0 -- RMS=10.328200, GCV=8.158184e-07, AIC = -1.485636
+  Model addition step   4: Added term 0 2 0 -- RMS=9.325877, GCV=6.676924e-07, AIC = -1.688861
+  Model addition step   5: Added term 0 0 2 -- RMS=8.332621, GCV=5.350770e-07, AIC = -1.913146
+  Model addition step   6: Added term 1 0 1 -- RMS=7.522022, GCV=4.377049e-07, AIC = -2.116887
+  Model addition step   7: Added term 2 0 0 -- RMS=6.481744, GCV=3.262559e-07, AIC = -2.413632
+Change in error: 0.044123. No more terms added.
+   8 polynomial terms were written for termin1
 termin2
-  RMS fit error of the full model is: 5.622762 mm
-  maximum moment arm: 34.485411 mm
-  maximum error allowed: 3.448541 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=17.275950, GCV=2.265331e-06, AIC = -0.458652
-  Model addition step   2: Added term 1 0 0 -- RMS=13.963220, GCV=1.485476e-06, AIC = -0.883484
-  Model addition step   3: Added term 0 1 1 -- RMS=11.826525, GCV=1.069691e-06, AIC = -1.214702
-  Model addition step   4: Added term 0 1 0 -- RMS=10.647390, GCV=8.703289e-07, AIC = -1.423817
-  Model addition step   5: Added term 0 0 1 -- RMS=9.819407, GCV=7.430595e-07, AIC = -1.584780
-  Model addition step   6: Added term 0 0 2 -- RMS=9.080203, GCV=6.378278e-07, AIC = -1.740364
-  Model addition step   7: Added term 0 0 4 -- RMS=8.601815, GCV=5.745858e-07, AIC = -1.847665
-  Model addition step   8: Added term 0 0 3 -- RMS=8.100752, GCV=5.115533e-07, AIC = -1.966753
-  Model addition step   9: Added term 3 0 0 -- RMS=7.415547, GCV=4.303238e-07, AIC = -2.142564
-  Model addition step  10: Added term 1 1 0 -- RMS=6.976818, GCV=3.823805e-07, AIC = -2.263590
-Change in error: 0.036865. No more terms added.
-   11 polynomial terms were written for termin2
+  RMS fit error of the full model is: 2.347205 mm
+  maximum moment arm: 34.493626 mm
+  maximum error allowed: 3.449363 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=17.773971, GCV=2.397821e-06, AIC = -0.401812
+  Model addition step   2: Added term 0 0 1 -- RMS=15.665477, GCV=1.869742e-06, AIC = -0.653419
+  Model addition step   3: Added term 1 0 0 -- RMS=10.296436, GCV=8.108080e-07, AIC = -1.491797
+  Model addition step   4: Added term 0 0 2 -- RMS=9.421735, GCV=6.814890e-07, AIC = -1.668409
+  Model addition step   5: Added term 1 0 1 -- RMS=8.353519, GCV=5.377643e-07, AIC = -1.908136
+  Model addition step   6: Added term 0 2 0 -- RMS=7.561601, GCV=4.423233e-07, AIC = -2.106391
+  Model addition step   7: Added term 2 0 0 -- RMS=6.746882, GCV=3.534931e-07, AIC = -2.333450
+  Model addition step   8: Added term 1 1 0 -- RMS=6.252584, GCV=3.047609e-07, AIC = -2.484677
+  Model addition step   9: Added term 3 0 1 -- RMS=5.901168, GCV=2.725116e-07, AIC = -2.599420
+  Model addition step  10: Added term 2 0 2 -- RMS=5.475966, GCV=2.355605e-07, AIC = -2.748039
+  Model addition step  11: Added term 2 1 1 -- RMS=5.133650, GCV=2.078302e-07, AIC = -2.876197
+Change in error: 0.040439. No more terms added.
+   12 polynomial terms were written for termin2
 termin3
-  RMS fit error of the full model is: 4.938960 mm
-  maximum moment arm: 32.582163 mm
-  maximum error allowed: 3.258216 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.260942, GCV=2.006962e-06, AIC = -0.579751
-  Model addition step   2: Added term 1 0 0 -- RMS=12.532465, GCV=1.196651e-06, AIC = -1.099692
-  Model addition step   3: Added term 0 0 1 -- RMS=10.941752, GCV=9.156255e-07, AIC = -1.370220
-  Model addition step   4: Added term 2 2 0 -- RMS=9.462625, GCV=6.874171e-07, AIC = -1.659747
-  Model addition step   5: Added term 0 0 2 -- RMS=8.674757, GCV=5.799195e-07, AIC = -1.832667
-Change in error: 0.047976. No more terms added.
-   6 polynomial terms were written for termin3
+  RMS fit error of the full model is: 2.185094 mm
+  maximum moment arm: 32.330628 mm
+  maximum error allowed: 3.233063 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=17.030272, GCV=2.201360e-06, AIC = -0.487298
+  Model addition step   2: Added term 0 0 1 -- RMS=15.257744, GCV=1.773679e-06, AIC = -0.706163
+  Model addition step   3: Added term 1 0 0 -- RMS=9.340708, GCV=6.672734e-07, AIC = -1.686628
+  Model addition step   4: Added term 0 2 0 -- RMS=8.659253, GCV=5.756492e-07, AIC = -1.837190
+  Model addition step   5: Added term 0 0 2 -- RMS=7.980768, GCV=4.908428e-07, AIC = -1.999433
+  Model addition step   6: Added term 1 0 1 -- RMS=6.822154, GCV=3.600438e-07, AIC = -2.312206
+  Model addition step   7: Added term 2 0 0 -- RMS=5.653954, GCV=2.482442e-07, AIC = -2.686901
+  Model addition step   8: Added term 3 0 1 -- RMS=5.333323, GCV=2.217359e-07, AIC = -2.802717
+  Model addition step   9: Added term 2 0 2 -- RMS=4.814735, GCV=1.814069e-07, AIC = -3.006359
+  Model addition step  10: Added term 1 0 3 -- RMS=4.559106, GCV=1.632828e-07, AIC = -3.114523
+  Model addition step  11: Added term 0 0 4 -- RMS=4.288612, GCV=1.450406e-07, AIC = -3.235904
+Change in error: 0.030745. No more terms added.
+   12 polynomial terms were written for termin3
 termaj1
-  RMS fit error of the full model is: 8.086066 mm
-  maximum moment arm: 64.329798 mm
-  maximum error allowed: 6.432980 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=33.082935, GCV=8.307223e-06, AIC = 0.840753
-  Model addition step   2: Added term 0 1 0 -- RMS=29.448297, GCV=6.607160e-06, AIC = 0.608935
-  Model addition step   3: Added term 2 1 0 -- RMS=20.009030, GCV=3.061937e-06, AIC = -0.163025
-  Model addition step   4: Added term 0 0 1 -- RMS=16.782950, GCV=2.162388e-06, AIC = -0.513720
-  Model addition step   5: Added term 2 0 1 -- RMS=14.633546, GCV=1.650259e-06, AIC = -0.786869
-  Model addition step   6: Added term 1 2 1 -- RMS=13.859356, GCV=1.485930e-06, AIC = -0.894636
-Change in error: 0.043125. No more terms added.
-   7 polynomial terms were written for termaj1
+  RMS fit error of the full model is: 3.986396 mm
+  maximum moment arm: 62.355497 mm
+  maximum error allowed: 6.235550 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=37.584990, GCV=1.072202e-05, AIC = 1.095927
+  Model addition step   2: Added term 0 0 1 -- RMS=28.996082, GCV=6.405795e-06, AIC = 0.577984
+  Model addition step   3: Added term 0 1 0 -- RMS=24.477182, GCV=4.582126e-06, AIC = 0.240090
+  Model addition step   4: Added term 2 1 0 -- RMS=14.935911, GCV=1.712618e-06, AIC = -0.746910
+  Model addition step   5: Added term 0 1 3 -- RMS=13.433505, GCV=1.390695e-06, AIC = -0.957998
+  Model addition step   6: Added term 3 0 0 -- RMS=11.943103, GCV=1.103435e-06, AIC = -1.192249
+  Model addition step   7: Added term 1 1 0 -- RMS=10.726669, GCV=8.935203e-07, AIC = -1.406145
+  Model addition step   8: Added term 2 2 0 -- RMS=9.866288, GCV=7.588358e-07, AIC = -1.572419
+  Model addition step   9: Added term 1 0 0 -- RMS=9.064603, GCV=6.429935e-07, AIC = -1.740967
+Change in error: 0.037324. No more terms added.
+   10 polynomial terms were written for termaj1
 termaj2
-  RMS fit error of the full model is: 8.833092 mm
-  maximum moment arm: 79.310018 mm
-  maximum error allowed: 7.931002 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=40.083972, GCV=1.219521e-05, AIC = 1.224671
-  Model addition step   2: Added term 0 1 0 -- RMS=35.093193, GCV=9.382968e-06, AIC = 0.959677
-  Model addition step   3: Added term 2 1 0 -- RMS=22.374933, GCV=3.828844e-06, AIC = 0.060490
-  Model addition step   4: Added term 0 0 1 -- RMS=18.600730, GCV=2.656177e-06, AIC = -0.308045
-  Model addition step   5: Added term 2 0 1 -- RMS=16.694777, GCV=2.147901e-06, AIC = -0.523310
-  Model addition step   6: Added term 1 2 1 -- RMS=15.640155, GCV=1.892319e-06, AIC = -0.652873
-Change in error: 0.046322. No more terms added.
-   7 polynomial terms were written for termaj2
+  RMS fit error of the full model is: 4.777290 mm
+  maximum moment arm: 79.984164 mm
+  maximum error allowed: 7.998416 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=46.670489, GCV=1.653227e-05, AIC = 1.528941
+  Model addition step   2: Added term 0 0 1 -- RMS=36.175125, GCV=9.970444e-06, AIC = 1.020406
+  Model addition step   3: Added term 0 1 0 -- RMS=30.703064, GCV=7.209541e-06, AIC = 0.693333
+  Model addition step   4: Added term 2 1 0 -- RMS=16.470295, GCV=2.082571e-06, AIC = -0.551330
+  Model addition step   5: Added term 0 1 3 -- RMS=15.251252, GCV=1.792520e-06, AIC = -0.704179
+  Model addition step   6: Added term 0 1 1 -- RMS=14.254742, GCV=1.571922e-06, AIC = -0.838377
+  Model addition step   7: Added term 0 2 1 -- RMS=13.415334, GCV=1.397583e-06, AIC = -0.958815
+  Model addition step   8: Added term 3 0 0 -- RMS=12.614793, GCV=1.240511e-06, AIC = -1.080926
+  Model addition step   9: Added term 1 1 2 -- RMS=11.815728, GCV=1.092521e-06, AIC = -1.210858
+Change in error: 0.042077. No more terms added.
+   10 polynomial terms were written for termaj2
 termaj3
-  RMS fit error of the full model is: 8.357685 mm
-  maximum moment arm: 73.860473 mm
-  maximum error allowed: 7.386047 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=35.912677, GCV=9.789114e-06, AIC = 1.004898
-  Model addition step   2: Added term 2 0 0 -- RMS=32.101688, GCV=7.851456e-06, AIC = 0.781480
-  Model addition step   3: Added term 0 1 0 -- RMS=28.896112, GCV=6.385913e-06, AIC = 0.572022
-  Model addition step   4: Added term 2 1 0 -- RMS=21.447717, GCV=3.531500e-06, AIC = -0.023211
-  Model addition step   5: Added term 0 0 1 -- RMS=18.051763, GCV=2.511264e-06, AIC = -0.367015
-  Model addition step   6: Added term 2 0 1 -- RMS=16.367955, GCV=2.072531e-06, AIC = -0.561906
-  Model addition step   7: Added term 1 1 0 -- RMS=14.610078, GCV=1.657600e-06, AIC = -0.788188
-  Model addition step   8: Added term 1 2 1 -- RMS=13.737301, GCV=1.471103e-06, AIC = -0.910437
-Change in error: 0.023134. No more terms added.
-   9 polynomial terms were written for termaj3
+  RMS fit error of the full model is: 4.967306 mm
+  maximum moment arm: 73.853842 mm
+  maximum error allowed: 7.385384 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=42.143166, GCV=1.348038e-05, AIC = 1.324862
+  Model addition step   2: Added term 0 0 1 -- RMS=31.638223, GCV=7.626383e-06, AIC = 0.752395
+  Model addition step   3: Added term 0 1 0 -- RMS=28.286540, GCV=6.119329e-06, AIC = 0.529380
+  Model addition step   4: Added term 2 1 0 -- RMS=15.576774, GCV=1.862739e-06, AIC = -0.662885
+  Model addition step   5: Added term 1 1 0 -- RMS=14.007355, GCV=1.512047e-06, AIC = -0.874337
+  Model addition step   6: Added term 3 0 0 -- RMS=12.738650, GCV=1.255334e-06, AIC = -1.063275
+  Model addition step   7: Added term 0 1 3 -- RMS=11.571777, GCV=1.039860e-06, AIC = -1.254473
+  Model addition step   8: Added term 1 3 0 -- RMS=10.600258, GCV=8.759374e-07, AIC = -1.428910
+  Model addition step   9: Added term 3 1 0 -- RMS=10.037822, GCV=7.884750e-07, AIC = -1.537001
+  Model addition step  10: Added term 1 0 0 -- RMS=9.200230, GCV=6.649337e-07, AIC = -1.710319
+  Model addition step  11: Added term 1 1 2 -- RMS=8.501199, GCV=5.699235e-07, AIC = -1.867416
+Change in error: 0.024065. No more terms added.
+   12 polynomial terms were written for termaj3
 termaj4
-  RMS fit error of the full model is: 6.483581 mm
-  maximum moment arm: 51.002348 mm
-  maximum error allowed: 5.100235 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=25.878439, GCV=5.083045e-06, AIC = 0.349538
-  Model addition step   2: Added term 2 0 0 -- RMS=23.280912, GCV=4.129471e-06, AIC = 0.138930
-  Model addition step   3: Added term 0 1 0 -- RMS=20.747259, GCV=3.292044e-06, AIC = -0.090564
-  Model addition step   4: Added term 2 1 0 -- RMS=16.565169, GCV=2.106633e-06, AIC = -0.539843
-  Model addition step   5: Added term 0 0 1 -- RMS=14.294612, GCV=1.574700e-06, AIC = -0.833736
-  Model addition step   6: Added term 2 0 1 -- RMS=12.415723, GCV=1.192494e-06, AIC = -1.114629
-Change in error: 0.037666. No more terms added.
-   7 polynomial terms were written for termaj4
+  RMS fit error of the full model is: 3.444434 mm
+  maximum moment arm: 48.625861 mm
+  maximum error allowed: 4.862586 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=29.206315, GCV=6.474427e-06, AIC = 0.591487
+  Model addition step   2: Added term 0 0 1 -- RMS=22.405276, GCV=3.824679e-06, AIC = 0.062255
+  Model addition step   3: Added term 0 1 0 -- RMS=19.536220, GCV=2.918940e-06, AIC = -0.210852
+  Model addition step   4: Added term 2 1 0 -- RMS=13.507700, GCV=1.400747e-06, AIC = -0.947927
+  Model addition step   5: Added term 2 0 1 -- RMS=11.843385, GCV=1.080948e-06, AIC = -1.209963
+Change in error: 0.042110. No more terms added.
+   6 polynomial terms were written for termaj4
 supra1
-  RMS fit error of the full model is: 3.923076 mm
+  RMS fit error of the full model is: 4.579060 mm
   maximum moment arm: 27.821975 mm
   maximum error allowed: 2.782198 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.248047, GCV=1.332145e-06, AIC = -0.989582
-  Model addition step   2: Added term 1 0 0 -- RMS=10.512399, GCV=8.419729e-07, AIC = -1.451227
-  Model addition step   3: Added term 0 1 1 -- RMS=9.849946, GCV=7.420137e-07, AIC = -1.580460
-Change in error: 0.029402. No more terms added.
-   4 polynomial terms were written for supra1
+  Model addition step   1: Added term 0 0 0 -- RMS=15.418759, GCV=1.804458e-06, AIC = -0.686113
+  Model addition step   2: Added term 0 0 1 -- RMS=13.623913, GCV=1.414159e-06, AIC = -0.932684
+  Model addition step   3: Added term 1 0 0 -- RMS=10.964496, GCV=9.194360e-07, AIC = -1.366067
+  Model addition step   4: Added term 1 0 1 -- RMS=9.644861, GCV=7.141493e-07, AIC = -1.621597
+  Model addition step   5: Added term 1 0 3 -- RMS=9.139205, GCV=6.436799e-07, AIC = -1.728355
+  Model addition step   6: Added term 2 0 0 -- RMS=8.668879, GCV=5.813506e-07, AIC = -1.833078
+Change in error: 0.035907. No more terms added.
+   7 polynomial terms were written for supra1
 supra2
-  RMS fit error of the full model is: 4.078994 mm
+  RMS fit error of the full model is: 3.812857 mm
   maximum moment arm: 28.550066 mm
   maximum error allowed: 2.855007 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.718975, GCV=1.428536e-06, AIC = -0.919723
-  Model addition step   2: Added term 1 0 0 -- RMS=10.804857, GCV=8.894724e-07, AIC = -1.396346
-  Model addition step   3: Added term 0 1 1 -- RMS=9.955070, GCV=7.579365e-07, AIC = -1.559228
-Change in error: 0.030696. No more terms added.
-   4 polynomial terms were written for supra2
+  Model addition step   1: Added term 0 0 0 -- RMS=16.346743, GCV=2.028198e-06, AIC = -0.569225
+  Model addition step   2: Added term 0 0 1 -- RMS=14.154905, GCV=1.526540e-06, AIC = -0.856215
+  Model addition step   3: Added term 1 0 0 -- RMS=10.550779, GCV=8.513600e-07, AIC = -1.442993
+  Model addition step   4: Added term 1 0 1 -- RMS=9.189372, GCV=6.482891e-07, AIC = -1.718352
+  Model addition step   5: Added term 3 0 1 -- RMS=8.619299, GCV=5.725283e-07, AIC = -1.845494
+  Model addition step   6: Added term 0 0 2 -- RMS=8.074964, GCV=5.044214e-07, AIC = -1.975020
+Change in error: 0.028382. No more terms added.
+   7 polynomial terms were written for supra2
 supra3
-  RMS fit error of the full model is: 3.666557 mm
+  RMS fit error of the full model is: 3.072987 mm
   maximum moment arm: 29.239855 mm
   maximum error allowed: 2.923986 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=12.830037, GCV=1.249406e-06, AIC = -1.053704
-  Model addition step   2: Added term 1 1 0 -- RMS=11.841902, GCV=1.068409e-06, AIC = -1.213049
-  Model addition step   3: Added term 0 1 0 -- RMS=10.710785, GCV=8.773781e-07, AIC = -1.412890
-  Model addition step   4: Added term 4 0 0 -- RMS=9.889923, GCV=7.509014e-07, AIC = -1.571414
-  Model addition step   5: Added term 2 1 0 -- RMS=8.932680, GCV=6.149171e-07, AIC = -1.774069
-  Model addition step   6: Added term 3 1 0 -- RMS=8.279449, GCV=5.302921e-07, AIC = -1.925004
-Change in error: 0.035420. No more terms added.
+  Model addition step   1: Added term 0 0 0 -- RMS=14.774824, GCV=1.656885e-06, AIC = -0.771433
+  Model addition step   2: Added term 1 1 0 -- RMS=12.946903, GCV=1.277104e-06, AIC = -1.034624
+  Model addition step   3: Added term 1 1 2 -- RMS=12.054765, GCV=1.111378e-06, AIC = -1.176472
+  Model addition step   4: Added term 0 1 0 -- RMS=11.073514, GCV=9.413865e-07, AIC = -1.345335
+  Model addition step   5: Added term 1 1 1 -- RMS=8.725645, GCV=5.867434e-07, AIC = -1.820969
+  Model addition step   6: Added term 2 1 1 -- RMS=7.792090, GCV=4.696996e-07, AIC = -2.046338
+Change in error: 0.046863. No more terms added.
    7 polynomial terms were written for supra3
 supra4
-  RMS fit error of the full model is: 3.696056 mm
+  RMS fit error of the full model is: 3.058916 mm
   maximum moment arm: 29.710869 mm
   maximum error allowed: 2.971087 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=12.887883, GCV=1.260698e-06, AIC = -1.044707
-  Model addition step   2: Added term 1 1 0 -- RMS=11.953130, GCV=1.088573e-06, AIC = -1.194351
-  Model addition step   3: Added term 0 1 0 -- RMS=10.775506, GCV=8.880134e-07, AIC = -1.400841
-  Model addition step   4: Added term 4 0 0 -- RMS=10.208945, GCV=8.001267e-07, AIC = -1.507918
-  Model addition step   5: Added term 2 1 0 -- RMS=9.204624, GCV=6.529279e-07, AIC = -1.714090
-  Model addition step   6: Added term 3 1 0 -- RMS=8.715899, GCV=5.876743e-07, AIC = -1.822259
-Change in error: 0.028515. No more terms added.
-   7 polynomial terms were written for supra4
+  Model addition step   1: Added term 0 0 0 -- RMS=15.089680, GCV=1.728255e-06, AIC = -0.729260
+  Model addition step   2: Added term 1 1 0 -- RMS=13.253086, GCV=1.338223e-06, AIC = -0.987877
+  Model addition step   3: Added term 1 1 2 -- RMS=12.347150, GCV=1.165944e-06, AIC = -1.128542
+  Model addition step   4: Added term 1 0 1 -- RMS=11.473784, GCV=1.010672e-06, AIC = -1.274317
+  Model addition step   5: Added term 0 1 0 -- RMS=10.621131, GCV=8.693498e-07, AIC = -1.427811
+  Model addition step   6: Added term 1 1 1 -- RMS=8.786320, GCV=5.972089e-07, AIC = -1.806165
+  Model addition step   7: Added term 2 1 1 -- RMS=7.866802, GCV=4.805860e-07, AIC = -2.026308
+Change in error: 0.032641. No more terms added.
+   8 polynomial terms were written for supra4
 subscap1
-  RMS fit error of the full model is: 4.284364 mm
-  maximum moment arm: 31.095802 mm
-  maximum error allowed: 3.109580 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.912857, GCV=2.171110e-06, AIC = -0.501134
-  Model addition step   2: Added term 1 0 0 -- RMS=12.186084, GCV=1.131417e-06, AIC = -1.155748
-  Model addition step   3: Added term 0 0 1 -- RMS=11.188320, GCV=9.573570e-07, AIC = -1.325651
-  Model addition step   4: Added term 3 0 0 -- RMS=10.301295, GCV=8.146681e-07, AIC = -1.489908
-  Model addition step   5: Added term 2 0 1 -- RMS=9.247457, GCV=6.590187e-07, AIC = -1.704805
-  Model addition step   6: Added term 0 1 1 -- RMS=8.363120, GCV=5.410644e-07, AIC = -1.904894
-  Model addition step   7: Added term 2 1 1 -- RMS=7.692387, GCV=4.595121e-07, AIC = -2.071149
-Change in error: 0.045163. No more terms added.
-   8 polynomial terms were written for subscap1
+  RMS fit error of the full model is: 3.545115 mm
+  maximum moment arm: 31.154453 mm
+  maximum error allowed: 3.115445 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=19.719186, GCV=2.951384e-06, AIC = -0.194098
+  Model addition step   2: Added term 1 0 0 -- RMS=17.766862, GCV=2.405004e-06, AIC = -0.401667
+  Model addition step   3: Added term 0 0 1 -- RMS=10.508804, GCV=8.445994e-07, AIC = -1.450965
+  Model addition step   4: Added term 0 1 1 -- RMS=9.633464, GCV=7.124625e-07, AIC = -1.623961
+  Model addition step   5: Added term 1 0 2 -- RMS=8.867412, GCV=6.059640e-07, AIC = -1.788736
+  Model addition step   6: Added term 2 0 1 -- RMS=7.704811, GCV=4.592364e-07, AIC = -2.068867
+Change in error: 0.036349. No more terms added.
+   7 polynomial terms were written for subscap1
 subscap2
-  RMS fit error of the full model is: 4.245530 mm
+  RMS fit error of the full model is: 3.761472 mm
   maximum moment arm: 28.373366 mm
   maximum error allowed: 2.837337 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.483202, GCV=2.062201e-06, AIC = -0.552599
-  Model addition step   2: Added term 1 0 0 -- RMS=10.995844, GCV=9.211949e-07, AIC = -1.361303
-  Model addition step   3: Added term 1 1 0 -- RMS=10.090985, GCV=7.787737e-07, AIC = -1.532107
-Change in error: 0.044642. No more terms added.
-   4 polynomial terms were written for subscap2
+  Model addition step   1: Added term 0 0 0 -- RMS=17.980951, GCV=2.453992e-06, AIC = -0.378657
+  Model addition step   2: Added term 1 0 0 -- RMS=16.018929, GCV=1.955066e-06, AIC = -0.608795
+  Model addition step   3: Added term 0 0 1 -- RMS=10.772847, GCV=8.875752e-07, AIC = -1.401335
+  Model addition step   4: Added term 1 1 0 -- RMS=9.432973, GCV=6.831157e-07, AIC = -1.666024
+  Model addition step   5: Added term 1 0 2 -- RMS=8.847276, GCV=6.032152e-07, AIC = -1.793283
+  Model addition step   6: Added term 2 0 1 -- RMS=8.382416, GCV=5.435640e-07, AIC = -1.900284
+Change in error: 0.036202. No more terms added.
+   7 polynomial terms were written for subscap2
 subscap3
-  RMS fit error of the full model is: 5.060311 mm
+  RMS fit error of the full model is: 3.311869 mm
   maximum moment arm: 31.570377 mm
   maximum error allowed: 3.157038 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=18.485845, GCV=2.593740e-06, AIC = -0.323272
-  Model addition step   2: Added term 1 0 0 -- RMS=14.086648, GCV=1.511854e-06, AIC = -0.865883
-  Model addition step   3: Added term 0 0 1 -- RMS=13.178641, GCV=1.328267e-06, AIC = -0.998197
-  Model addition step   4: Added term 3 0 0 -- RMS=11.956782, GCV=1.097554e-06, AIC = -1.191850
-  Model addition step   5: Added term 0 1 1 -- RMS=10.996516, GCV=9.318872e-07, AIC = -1.358345
-  Model addition step   6: Added term 2 0 1 -- RMS=10.292555, GCV=8.195183e-07, AIC = -1.489715
-  Model addition step   7: Added term 0 2 0 -- RMS=9.673607, GCV=7.266940e-07, AIC = -1.612809
-Change in error: 0.031049. No more terms added.
-   8 polynomial terms were written for subscap3
+  Model addition step   1: Added term 0 0 0 -- RMS=20.529267, GCV=3.198856e-06, AIC = -0.113580
+  Model addition step   2: Added term 1 0 0 -- RMS=18.669214, GCV=2.655501e-06, AIC = -0.302586
+  Model addition step   3: Added term 0 0 1 -- RMS=11.444493, GCV=1.001699e-06, AIC = -1.280375
+  Model addition step   4: Added term 1 0 2 -- RMS=10.650000, GCV=8.707556e-07, AIC = -1.423327
+  Model addition step   5: Added term 2 0 1 -- RMS=9.872933, GCV=7.511825e-07, AIC = -1.573908
+  Model addition step   6: Added term 0 1 1 -- RMS=8.873581, GCV=6.091303e-07, AIC = -1.786400
+  Model addition step   7: Added term 0 1 0 -- RMS=8.002676, GCV=4.973305e-07, AIC = -1.992060
+  Model addition step   8: Added term 2 1 0 -- RMS=7.551878, GCV=4.445803e-07, AIC = -2.107074
+Change in error: 0.046750. No more terms added.
+   9 polynomial terms were written for subscap3
 subscap4
-  RMS fit error of the full model is: 6.540276 mm
-  maximum moment arm: 34.030326 mm
-  maximum error allowed: 3.403033 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=17.210968, GCV=2.248321e-06, AIC = -0.466189
-  Model addition step   2: Added term 1 0 0 -- RMS=15.783150, GCV=1.897937e-06, AIC = -0.638452
-  Model addition step   3: Added term 2 0 0 -- RMS=13.936394, GCV=1.485405e-06, AIC = -0.886385
-  Model addition step   4: Added term 0 0 1 -- RMS=13.003486, GCV=1.298125e-06, AIC = -1.024012
-  Model addition step   5: Added term 3 0 0 -- RMS=11.575430, GCV=1.032589e-06, AIC = -1.255732
-  Model addition step   6: Added term 0 2 0 -- RMS=10.951303, GCV=9.277776e-07, AIC = -1.365640
-Change in error: 0.049656. No more terms added.
+  RMS fit error of the full model is: 5.486069 mm
+  maximum moment arm: 34.184300 mm
+  maximum error allowed: 3.418430 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=20.492430, GCV=3.187387e-06, AIC = -0.117171
+  Model addition step   2: Added term 0 0 1 -- RMS=18.195797, GCV=2.522532e-06, AIC = -0.353956
+  Model addition step   3: Added term 1 0 0 -- RMS=13.088228, GCV=1.310104e-06, AIC = -1.011966
+  Model addition step   4: Added term 0 1 0 -- RMS=11.782934, GCV=1.065869e-06, AIC = -1.221143
+  Model addition step   5: Added term 1 0 2 -- RMS=11.147479, GCV=9.576492e-07, AIC = -1.331075
+  Model addition step   6: Added term 2 0 1 -- RMS=10.218180, GCV=8.077173e-07, AIC = -1.504220
+Change in error: 0.023883. No more terms added.
    7 polynomial terms were written for subscap4
 subscap5
-  RMS fit error of the full model is: 6.900684 mm
-  maximum moment arm: 32.971470 mm
-  maximum error allowed: 3.297147 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.531225, GCV=2.074235e-06, AIC = -0.546781
-  Model addition step   2: Added term 2 0 0 -- RMS=15.539749, GCV=1.839850e-06, AIC = -0.669535
-  Model addition step   3: Added term 1 0 0 -- RMS=13.791099, GCV=1.454594e-06, AIC = -0.907346
-  Model addition step   4: Added term 0 0 1 -- RMS=12.978121, GCV=1.293066e-06, AIC = -1.027917
-  Model addition step   5: Added term 3 0 0 -- RMS=11.864720, GCV=1.084846e-06, AIC = -1.206363
-Change in error: 0.041524. No more terms added.
-   6 polynomial terms were written for subscap5
+  RMS fit error of the full model is: 5.792209 mm
+  maximum moment arm: 33.391255 mm
+  maximum error allowed: 3.339126 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=19.621704, GCV=2.922276e-06, AIC = -0.204010
+  Model addition step   2: Added term 0 0 1 -- RMS=17.517766, GCV=2.338040e-06, AIC = -0.429906
+  Model addition step   3: Added term 1 0 0 -- RMS=14.099530, GCV=1.520385e-06, AIC = -0.863109
+  Model addition step   4: Added term 0 2 0 -- RMS=12.729432, GCV=1.243985e-06, AIC = -1.066613
+Change in error: 0.035982. No more terms added.
+   5 polynomial terms were written for subscap5
 subscap6
-  RMS fit error of the full model is: 6.267769 mm
-  maximum moment arm: 37.757437 mm
-  maximum error allowed: 3.775744 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.947921, GCV=2.180121e-06, AIC = -0.496992
-  Model addition step   2: Added term 2 0 0 -- RMS=15.652988, GCV=1.866762e-06, AIC = -0.655014
-  Model addition step   3: Added term 1 0 0 -- RMS=13.840302, GCV=1.464992e-06, AIC = -0.900223
-  Model addition step   4: Added term 0 0 1 -- RMS=12.500064, GCV=1.199559e-06, AIC = -1.102980
-  Model addition step   5: Added term 3 0 0 -- RMS=11.556093, GCV=1.029142e-06, AIC = -1.259076
-  Model addition step   6: Added term 2 0 1 -- RMS=10.854627, GCV=9.114694e-07, AIC = -1.383374
-Change in error: 0.049749. No more terms added.
-   7 polynomial terms were written for subscap6
+  RMS fit error of the full model is: 5.579267 mm
+  maximum moment arm: 38.399349 mm
+  maximum error allowed: 3.839935 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=21.446744, GCV=3.491166e-06, AIC = -0.026137
+  Model addition step   2: Added term 0 0 1 -- RMS=18.425460, GCV=2.586611e-06, AIC = -0.328871
+  Model addition step   3: Added term 1 0 0 -- RMS=14.276634, GCV=1.558820e-06, AIC = -0.838144
+  Model addition step   4: Added term 0 1 1 -- RMS=12.842667, GCV=1.266215e-06, AIC = -1.048901
+Change in error: 0.049540. No more terms added.
+   5 polynomial terms were written for subscap6
 subscap7
-  RMS fit error of the full model is: 5.489970 mm
-  maximum moment arm: 36.913323 mm
-  maximum error allowed: 3.691332 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=17.227108, GCV=2.252540e-06, AIC = -0.464314
-  Model addition step   2: Added term 1 0 0 -- RMS=16.074643, GCV=1.968689e-06, AIC = -0.601851
-  Model addition step   3: Added term 2 0 0 -- RMS=14.282696, GCV=1.560144e-06, AIC = -0.837295
-  Model addition step   4: Added term 0 1 1 -- RMS=12.570415, GCV=1.213099e-06, AIC = -1.091755
-  Model addition step   5: Added term 0 0 1 -- RMS=11.675049, GCV=1.050438e-06, AIC = -1.238594
-  Model addition step   6: Added term 3 0 0 -- RMS=10.619200, GCV=8.723603e-07, AIC = -1.427229
-  Model addition step   7: Added term 2 0 1 -- RMS=9.704046, GCV=7.312743e-07, AIC = -1.606526
-  Model addition step   8: Added term 1 0 1 -- RMS=9.096473, GCV=6.450395e-07, AIC = -1.734893
-Change in error: 0.042482. No more terms added.
-   9 polynomial terms were written for subscap7
+  RMS fit error of the full model is: 4.171443 mm
+  maximum moment arm: 37.012019 mm
+  maximum error allowed: 3.701202 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=21.725977, GCV=3.582667e-06, AIC = -0.000265
+  Model addition step   2: Added term 0 0 1 -- RMS=18.302077, GCV=2.552085e-06, AIC = -0.342308
+  Model addition step   3: Added term 1 0 0 -- RMS=13.031957, GCV=1.298863e-06, AIC = -1.020583
+  Model addition step   4: Added term 0 1 1 -- RMS=10.785438, GCV=8.930436e-07, AIC = -1.398053
+  Model addition step   5: Added term 2 0 1 -- RMS=10.149963, GCV=7.939296e-07, AIC = -1.518562
+Change in error: 0.043756. No more terms added.
+   6 polynomial terms were written for subscap7
 subscap8
-  RMS fit error of the full model is: 5.460086 mm
-  maximum moment arm: 36.149999 mm
-  maximum error allowed: 3.615000 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.686427, GCV=2.113365e-06, AIC = -0.528091
-  Model addition step   2: Added term 1 0 0 -- RMS=15.507245, GCV=1.832161e-06, AIC = -0.673723
-  Model addition step   3: Added term 2 0 0 -- RMS=13.643611, GCV=1.423649e-06, AIC = -0.928849
-  Model addition step   4: Added term 0 0 1 -- RMS=12.018594, GCV=1.108931e-06, AIC = -1.181537
-  Model addition step   5: Added term 3 0 0 -- RMS=11.030616, GCV=9.376756e-07, AIC = -1.352153
-  Model addition step   6: Added term 2 0 1 -- RMS=10.059124, GCV=7.827671e-07, AIC = -1.535597
-  Model addition step   7: Added term 0 1 1 -- RMS=9.418364, GCV=6.888515e-07, AIC = -1.666289
-  Model addition step   8: Added term 1 0 1 -- RMS=8.845005, GCV=6.098688e-07, AIC = -1.790960
-Change in error: 0.043488. No more terms added.
-   9 polynomial terms were written for subscap8
+  RMS fit error of the full model is: 4.455995 mm
+  maximum moment arm: 36.441115 mm
+  maximum error allowed: 3.644111 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=21.230657, GCV=3.421170e-06, AIC = -0.046390
+  Model addition step   2: Added term 0 0 1 -- RMS=17.911596, GCV=2.444348e-06, AIC = -0.385441
+  Model addition step   3: Added term 1 0 0 -- RMS=12.818868, GCV=1.256734e-06, AIC = -1.053556
+  Model addition step   4: Added term 0 1 1 -- RMS=10.871729, GCV=9.073906e-07, AIC = -1.382116
+  Model addition step   5: Added term 2 0 1 -- RMS=10.254488, GCV=8.103658e-07, AIC = -1.498071
+Change in error: 0.049214. No more terms added.
+   6 polynomial terms were written for subscap8
 subscap9
-  RMS fit error of the full model is: 4.737984 mm
-  maximum moment arm: 33.140416 mm
-  maximum error allowed: 3.314042 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=16.266638, GCV=2.008369e-06, AIC = -0.579050
-  Model addition step   2: Added term 0 1 1 -- RMS=14.742952, GCV=1.656011e-06, AIC = -0.774807
-  Model addition step   3: Added term 1 0 0 -- RMS=12.910147, GCV=1.274696e-06, AIC = -1.039365
-  Model addition step   4: Added term 2 0 0 -- RMS=11.037953, GCV=9.353500e-07, AIC = -1.351768
-  Model addition step   5: Added term 0 0 2 -- RMS=10.299134, GCV=8.174374e-07, AIC = -1.489382
-  Model addition step   6: Added term 0 0 1 -- RMS=9.482225, GCV=6.955572e-07, AIC = -1.653719
-  Model addition step   7: Added term 3 0 0 -- RMS=8.577784, GCV=5.713798e-07, AIC = -1.853260
-  Model addition step   8: Added term 2 0 1 -- RMS=7.920447, GCV=4.890347e-07, AIC = -2.011771
-  Model addition step   9: Added term 0 0 4 -- RMS=7.323121, GCV=4.196636e-07, AIC = -2.167648
-  Model addition step  10: Added term 0 0 3 -- RMS=6.770861, GCV=3.601379e-07, AIC = -2.323519
-  Model addition step  11: Added term 0 3 1 -- RMS=6.396849, GCV=3.226921e-07, AIC = -2.436220
-Change in error: 0.025637. No more terms added.
-   12 polynomial terms were written for subscap9
+  RMS fit error of the full model is: 3.127217 mm
+  maximum moment arm: 33.226833 mm
+  maximum error allowed: 3.322683 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=20.191561, GCV=3.094480e-06, AIC = -0.146753
+  Model addition step   2: Added term 0 1 1 -- RMS=16.547124, GCV=2.086121e-06, AIC = -0.543913
+  Model addition step   3: Added term 1 0 0 -- RMS=14.522529, GCV=1.612979e-06, AIC = -0.803990
+  Model addition step   4: Added term 0 0 1 -- RMS=9.667898, GCV=7.175649e-07, AIC = -1.616825
+  Model addition step   5: Added term 0 1 3 -- RMS=8.673714, GCV=5.797801e-07, AIC = -1.832908
+  Model addition step   6: Added term 2 0 1 -- RMS=8.195985, GCV=5.196544e-07, AIC = -1.945268
+  Model addition step   7: Added term 1 0 2 -- RMS=7.442827, GCV=4.301803e-07, AIC = -2.137110
+Change in error: 0.048754. No more terms added.
+   8 polynomial terms were written for subscap9
 subscap10
-  RMS fit error of the full model is: 3.423107 mm
-  maximum moment arm: 24.831699 mm
-  maximum error allowed: 2.483170 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.149241, GCV=1.312349e-06, AIC = -1.004554
-  Model addition step   2: Added term 0 1 1 -- RMS=11.612104, GCV=1.027345e-06, AIC = -1.252241
-  Model addition step   3: Added term 2 0 0 -- RMS=10.676292, GCV=8.717362e-07, AIC = -1.419341
-  Model addition step   4: Added term 1 0 0 -- RMS=9.071564, GCV=6.317735e-07, AIC = -1.744158
-  Model addition step   5: Added term 0 0 2 -- RMS=8.442317, GCV=5.492580e-07, AIC = -1.886988
-  Model addition step   6: Added term 0 1 0 -- RMS=7.792831, GCV=4.697889e-07, AIC = -2.046148
-  Model addition step   7: Added term 2 1 0 -- RMS=7.263169, GCV=4.096632e-07, AIC = -2.185979
-  Model addition step   8: Added term 0 0 1 -- RMS=6.668634, GCV=3.466682e-07, AIC = -2.355836
-  Model addition step   9: Added term 0 0 4 -- RMS=6.262540, GCV=3.069093e-07, AIC = -2.480549
-  Model addition step  10: Added term 0 0 3 -- RMS=5.627437, GCV=2.487724e-07, AIC = -2.693468
-  Model addition step  11: Added term 3 0 1 -- RMS=5.232006, GCV=2.158702e-07, AIC = -2.838241
-  Model addition step  12: Added term 2 0 2 -- RMS=4.895906, GCV=1.897583e-07, AIC = -2.970087
-  Model addition step  13: Added term 1 1 0 -- RMS=4.625911, GCV=1.700634e-07, AIC = -3.082594
-Change in error: 0.033100. No more terms added.
-   14 polynomial terms were written for subscap10
+  RMS fit error of the full model is: 2.316982 mm
+  maximum moment arm: 25.661816 mm
+  maximum error allowed: 2.566182 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=16.260720, GCV=2.006908e-06, AIC = -0.579778
+  Model addition step   2: Added term 0 1 1 -- RMS=12.433398, GCV=1.177807e-06, AIC = -1.115565
+  Model addition step   3: Added term 0 0 1 -- RMS=11.318472, GCV=9.797601e-07, AIC = -1.302520
+  Model addition step   4: Added term 1 0 0 -- RMS=8.883718, GCV=6.058800e-07, AIC = -1.786007
+  Model addition step   5: Added term 0 1 3 -- RMS=8.196772, GCV=5.177722e-07, AIC = -1.946021
+Change in error: 0.038786. No more terms added.
+   6 polynomial terms were written for subscap10
 subscap11
-  RMS fit error of the full model is: 3.351240 mm
-  maximum moment arm: 24.718556 mm
-  maximum error allowed: 2.471856 mm
-  Model addition step   1: Added term 0 0 0 -- RMS=13.073654, GCV=1.297304e-06, AIC = -1.016084
-  Model addition step   2: Added term 0 1 1 -- RMS=11.528710, GCV=1.012642e-06, AIC = -1.266656
-  Model addition step   3: Added term 0 1 0 -- RMS=10.693213, GCV=8.745016e-07, AIC = -1.416174
-  Model addition step   4: Added term 2 1 0 -- RMS=9.136919, GCV=6.409093e-07, AIC = -1.729801
-  Model addition step   5: Added term 1 0 0 -- RMS=7.742181, GCV=4.619338e-07, AIC = -2.060135
-  Model addition step   6: Added term 0 0 1 -- RMS=7.183052, GCV=3.991447e-07, AIC = -2.209108
-  Model addition step   7: Added term 0 1 2 -- RMS=6.489031, GCV=3.269899e-07, AIC = -2.411385
-  Model addition step   8: Added term 2 0 1 -- RMS=6.066928, GCV=2.869313e-07, AIC = -2.544962
-  Model addition step   9: Added term 3 0 0 -- RMS=5.633308, GCV=2.483339e-07, AIC = -2.692327
-Change in error: 0.047057. No more terms added.
-   10 polynomial terms were written for subscap11
+  RMS fit error of the full model is: 2.340481 mm
+  maximum moment arm: 24.891066 mm
+  maximum error allowed: 2.489107 mm
+  Model addition step   1: Added term 0 0 0 -- RMS=16.102394, GCV=1.968016e-06, AIC = -0.599347
+  Model addition step   2: Added term 0 0 1 -- RMS=12.555722, GCV=1.201096e-06, AIC = -1.095984
+  Model addition step   3: Added term 1 0 0 -- RMS=11.361970, GCV=9.873052e-07, AIC = -1.294849
+  Model addition step   4: Added term 0 1 1 -- RMS=10.177452, GCV=7.951977e-07, AIC = -1.514098
+  Model addition step   5: Added term 0 2 0 -- RMS=9.315775, GCV=6.687920e-07, AIC = -1.690083
+  Model addition step   6: Added term 2 2 0 -- RMS=8.009940, GCV=4.963303e-07, AIC = -1.991190
+  Model addition step   7: Added term 0 1 3 -- RMS=6.922119, GCV=3.720941e-07, AIC = -2.282168
+  Model addition step   8: Added term 0 3 1 -- RMS=6.212680, GCV=3.008834e-07, AIC = -2.497482
+  Model addition step   9: Added term 2 0 1 -- RMS=5.891267, GCV=2.715979e-07, AIC = -2.602779
+  Model addition step  10: Added term 1 0 2 -- RMS=5.219751, GCV=2.140329e-07, AIC = -2.843877
+Change in error: 0.039019. No more terms added.
+   11 polynomial terms were written for subscap11
 bicl
-  RMS fit error of the full model is: 2.149443 mm
-  maximum moment arm: 24.562894 mm
-  maximum error allowed: 2.456289 mm
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=16.348667, GCV=3.043013e-06, AIC = -0.163840
-  Model addition step   2: Added term 0 0 0 1 0 -- RMS=12.912124, GCV=1.905378e-06, AIC = -0.635169
-  Model addition step   3: Added term 0 0 0 0 1 -- RMS=8.134309, GCV=7.590611e-07, AIC = -1.558691
-  Model addition step   4: Added term 0 1 0 0 0 -- RMS=6.573605, GCV=4.976174e-07, AIC = -1.984117
-  Model addition step   5: Added term 1 0 0 0 0 -- RMS=5.300461, GCV=3.247669e-07, AIC = -2.414024
-  Model addition step   6: Added term 2 0 0 0 0 -- RMS=4.463995, GCV=2.312336e-07, AIC = -2.756894
-  Model addition step   7: Added term 1 0 1 0 0 -- RMS=4.184176, GCV=2.039322e-07, AIC = -2.885732
-  Model addition step   8: Added term 0 1 1 0 0 -- RMS=3.890723, GCV=1.770076e-07, AIC = -3.030532
-  Model addition step   9: Added term 1 2 1 0 0 -- RMS=3.508022, GCV=1.444524e-07, AIC = -3.236987
-  Model addition step  10: Added term 1 0 3 0 0 -- RMS=3.263945, GCV=1.255330e-07, AIC = -3.380588
-Change in error: 0.035710. No more terms added.
-   11 polynomial terms were written for bicl
+  RMS fit error of the full model is: 5.390098 mm
+  maximum moment arm: 54.360197 mm
+  maximum error allowed: 5.436020 mm
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=30.550522, GCV=4.235050e-07, AIC = 4.304902
+  Model addition step   2: Added term 0 0 0 1 0 -- RMS=22.274685, GCV=2.251698e-07, AIC = 3.673065
+  Model addition step   3: Added term 0 0 0 0 1 -- RMS=18.467051, GCV=1.547917e-07, AIC = 3.298165
+Change in error: 0.046920. No more terms added.
+   4 polynomial terms were written for bicl
 bicb1
-  RMS fit error of the full model is: 3.677974 mm
-  maximum moment arm: 39.883198 mm
-  maximum error allowed: 3.988320 mm
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=25.079297, GCV=7.160936e-06, AIC = 0.691953
-  Model addition step   2: Added term 0 0 0 0 1 -- RMS=20.523444, GCV=4.813779e-06, AIC = 0.291633
-  Model addition step   3: Added term 0 0 0 1 0 -- RMS=14.895373, GCV=2.545295e-06, AIC = -0.348771
-  Model addition step   4: Added term 1 1 0 0 0 -- RMS=11.990126, GCV=1.655525e-06, AIC = -0.782075
-  Model addition step   5: Added term 2 2 0 0 0 -- RMS=9.762951, GCV=1.101810e-06, AIC = -1.192423
-  Model addition step   6: Added term 3 1 0 0 0 -- RMS=8.514145, GCV=8.411735e-07, AIC = -1.465524
-  Model addition step   7: Added term 0 0 1 0 0 -- RMS=7.118668, GCV=5.902872e-07, AIC = -1.822911
-  Model addition step   8: Added term 2 0 1 0 0 -- RMS=6.397068, GCV=4.785126e-07, AIC = -2.036042
-  Model addition step   9: Added term 1 1 1 0 0 -- RMS=6.073210, GCV=4.329491e-07, AIC = -2.139317
-Change in error: 0.042867. No more terms added.
-   10 polynomial terms were written for bicb1
+  RMS fit error of the full model is: 4.850112 mm
+  maximum moment arm: 94.050724 mm
+  maximum error allowed: 9.405072 mm
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=43.865287, GCV=8.730984e-07, AIC = 5.028385
+  Model addition step   2: Added term 0 0 0 1 0 -- RMS=34.092227, GCV=5.274699e-07, AIC = 4.524302
+  Model addition step   3: Added term 1 1 0 0 0 -- RMS=28.547703, GCV=3.699091e-07, AIC = 4.169342
+  Model addition step   4: Added term 0 0 1 0 0 -- RMS=23.546514, GCV=2.516932e-07, AIC = 3.784170
+  Model addition step   5: Added term 3 1 0 0 0 -- RMS=18.654315, GCV=1.579947e-07, AIC = 3.318394
+  Model addition step   6: Added term 2 2 0 0 0 -- RMS=15.653819, GCV=1.112731e-07, AIC = 2.967694
+  Model addition step   7: Added term 0 0 0 4 0 -- RMS=14.658899, GCV=9.759289e-08, AIC = 2.836385
+  Model addition step   8: Added term 0 0 0 2 0 -- RMS=12.261800, GCV=6.829511e-08, AIC = 2.479292
+  Model addition step   9: Added term 1 2 1 0 0 -- RMS=11.364062, GCV=5.866973e-08, AIC = 2.327252
+  Model addition step  10: Added term 1 0 0 0 0 -- RMS=10.424004, GCV=4.937212e-08, AIC = 2.154588
+Change in error: 0.049994. No more terms added.
+   11 polynomial terms were written for bicb1
 bicb2
-  RMS fit error of the full model is: 3.677974 mm
-  maximum moment arm: 39.883198 mm
-  maximum error allowed: 3.988320 mm
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=25.079297, GCV=7.160936e-06, AIC = 0.691953
-  Model addition step   2: Added term 0 0 0 0 1 -- RMS=20.523444, GCV=4.813779e-06, AIC = 0.291633
-  Model addition step   3: Added term 0 0 0 1 0 -- RMS=14.895373, GCV=2.545295e-06, AIC = -0.348771
-  Model addition step   4: Added term 1 1 0 0 0 -- RMS=11.990126, GCV=1.655525e-06, AIC = -0.782075
-  Model addition step   5: Added term 2 2 0 0 0 -- RMS=9.762951, GCV=1.101810e-06, AIC = -1.192423
-  Model addition step   6: Added term 3 1 0 0 0 -- RMS=8.514145, GCV=8.411735e-07, AIC = -1.465524
-  Model addition step   7: Added term 0 0 1 0 0 -- RMS=7.118668, GCV=5.902872e-07, AIC = -1.822911
-  Model addition step   8: Added term 2 0 1 0 0 -- RMS=6.397068, GCV=4.785126e-07, AIC = -2.036042
-  Model addition step   9: Added term 1 1 1 0 0 -- RMS=6.073210, GCV=4.329491e-07, AIC = -2.139317
-Change in error: 0.042867. No more terms added.
-   10 polynomial terms were written for bicb2
+  RMS fit error of the full model is: 4.850112 mm
+  maximum moment arm: 94.050724 mm
+  maximum error allowed: 9.405072 mm
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=43.865287, GCV=8.730984e-07, AIC = 5.028385
+  Model addition step   2: Added term 0 0 0 1 0 -- RMS=34.092227, GCV=5.274699e-07, AIC = 4.524302
+  Model addition step   3: Added term 1 1 0 0 0 -- RMS=28.547703, GCV=3.699091e-07, AIC = 4.169342
+  Model addition step   4: Added term 0 0 1 0 0 -- RMS=23.546514, GCV=2.516932e-07, AIC = 3.784170
+  Model addition step   5: Added term 3 1 0 0 0 -- RMS=18.654315, GCV=1.579947e-07, AIC = 3.318394
+  Model addition step   6: Added term 2 2 0 0 0 -- RMS=15.653819, GCV=1.112731e-07, AIC = 2.967694
+  Model addition step   7: Added term 0 0 0 4 0 -- RMS=14.658899, GCV=9.759289e-08, AIC = 2.836385
+  Model addition step   8: Added term 0 0 0 2 0 -- RMS=12.261800, GCV=6.829511e-08, AIC = 2.479292
+  Model addition step   9: Added term 1 2 1 0 0 -- RMS=11.364062, GCV=5.866973e-08, AIC = 2.327252
+  Model addition step  10: Added term 1 0 0 0 0 -- RMS=10.424004, GCV=4.937212e-08, AIC = 2.154588
+Change in error: 0.049994. No more terms added.
+   11 polynomial terms were written for bicb2
 triclong1
-  RMS fit error of the full model is: 3.513032 mm
-  maximum moment arm: 44.475342 mm
-  maximum error allowed: 4.447534 mm
-  Model addition step   1: Added term 0 0 0 0 -- RMS=27.303389, GCV=7.072793e-06, AIC = 0.679694
-  Model addition step   2: Added term 0 0 0 1 -- RMS=18.764180, GCV=3.353232e-06, AIC = -0.069672
-  Model addition step   3: Added term 1 1 0 0 -- RMS=16.123227, GCV=2.485181e-06, AIC = -0.372294
-  Model addition step   4: Added term 0 2 0 0 -- RMS=12.548236, GCV=1.511028e-06, AIC = -0.872900
-  Model addition step   5: Added term 2 1 0 0 -- RMS=11.124445, GCV=1.192119e-06, AIC = -1.113014
-  Model addition step   6: Added term 0 1 0 0 -- RMS=9.547960, GCV=8.815430e-07, AIC = -1.417892
-  Model addition step   7: Added term 3 1 0 0 -- RMS=7.959365, GCV=6.149525e-07, AIC = -1.781093
-Change in error: 0.048194. No more terms added.
-   8 polynomial terms were written for triclong1
+  RMS fit error of the full model is: 2.287956 mm
+  maximum moment arm: 44.486966 mm
+  maximum error allowed: 4.448697 mm
+  Model addition step   1: Added term 0 0 0 0 -- RMS=28.876951, GCV=1.577522e-06, AIC = 2.400592
+  Model addition step   2: Added term 0 0 0 1 -- RMS=19.896817, GCV=7.494947e-07, AIC = 1.655776
+  Model addition step   3: Added term 1 1 0 0 -- RMS=17.603909, GCV=5.871489e-07, AIC = 1.411049
+  Model addition step   4: Added term 0 2 0 0 -- RMS=14.040387, GCV=3.737809e-07, AIC = 0.958835
+  Model addition step   5: Added term 2 1 0 0 -- RMS=12.632746, GCV=3.028192e-07, AIC = 0.747694
+  Model addition step   6: Added term 0 1 0 0 -- RMS=11.088394, GCV=2.334824e-07, AIC = 0.487059
+  Model addition step   7: Added term 2 1 1 0 -- RMS=9.582711, GCV=1.745110e-07, AIC = 0.195333
+  Model addition step   8: Added term 3 1 0 0 -- RMS=8.725275, GCV=1.447884e-07, AIC = 0.008012
+  Model addition step   9: Added term 0 2 1 0 -- RMS=8.220556, GCV=1.286196e-07, AIC = -0.111010
+  Model addition step  10: Added term 0 0 2 0 -- RMS=7.798845, GCV=1.158497e-07, AIC = -0.216183
+Change in error: 0.047282. No more terms added.
+   11 polynomial terms were written for triclong1
 triclong2
-  RMS fit error of the full model is: 3.143466 mm
-  maximum moment arm: 31.773773 mm
-  maximum error allowed: 3.177377 mm
-  Model addition step   1: Added term 0 0 0 0 -- RMS=20.039464, GCV=3.810045e-06, AIC = 0.061079
-  Model addition step   2: Added term 0 0 0 1 -- RMS=14.182450, GCV=1.915609e-06, AIC = -0.629561
-  Model addition step   3: Added term 0 1 0 0 -- RMS=12.198604, GCV=1.422573e-06, AIC = -0.930173
-  Model addition step   4: Added term 2 1 0 0 -- RMS=7.984129, GCV=6.117334e-07, AIC = -1.777148
-  Model addition step   5: Added term 0 0 1 0 -- RMS=6.900653, GCV=4.587156e-07, AIC = -2.068071
-  Model addition step   6: Added term 1 1 1 0 -- RMS=6.399427, GCV=3.960085e-07, AIC = -2.218130
-  Model addition step   7: Added term 0 0 3 0 -- RMS=5.998290, GCV=3.492525e-07, AIC = -2.346843
-  Model addition step   8: Added term 1 0 0 0 -- RMS=5.665230, GCV=3.127414e-07, AIC = -2.460340
-  Model addition step   9: Added term 3 0 0 0 -- RMS=5.267195, GCV=2.713800e-07, AIC = -2.605283
-  Model addition step  10: Added term 0 2 2 0 -- RMS=4.851780, GCV=2.311496e-07, AIC = -2.768832
-Change in error: 0.023604. No more terms added.
-   11 polynomial terms were written for triclong2
+  RMS fit error of the full model is: 1.377734 mm
+  maximum moment arm: 31.775838 mm
+  maximum error allowed: 3.177584 mm
+  Model addition step   1: Added term 0 0 0 0 -- RMS=22.364543, GCV=9.462215e-07, AIC = 1.889459
+  Model addition step   2: Added term 0 0 0 1 -- RMS=15.917447, GCV=4.796762e-07, AIC = 1.209488
+  Model addition step   3: Added term 0 0 1 0 -- RMS=13.160428, GCV=3.281482e-07, AIC = 0.829236
+  Model addition step   4: Added term 0 1 0 0 -- RMS=10.912219, GCV=2.257798e-07, AIC = 0.454725
+  Model addition step   5: Added term 2 1 0 0 -- RMS=5.440977, GCV=5.617480e-08, AIC = -0.936973
+  Model addition step   6: Added term 1 0 0 0 -- RMS=5.050464, GCV=4.843725e-08, AIC = -1.085779
+  Model addition step   7: Added term 0 0 3 0 -- RMS=4.705729, GCV=4.208234e-08, AIC = -1.227026
+  Model addition step   8: Added term 3 0 0 0 -- RMS=4.439081, GCV=3.747673e-08, AIC = -1.343542
+Change in error: 0.040558. No more terms added.
+   9 polynomial terms were written for triclong2
 triclong3
-  RMS fit error of the full model is: 2.754708 mm
-  maximum moment arm: 32.217507 mm
-  maximum error allowed: 3.221751 mm
-  Model addition step   1: Added term 0 0 0 0 -- RMS=20.086150, GCV=3.827818e-06, AIC = 0.065733
-  Model addition step   2: Added term 0 0 0 1 -- RMS=14.025205, GCV=1.873367e-06, AIC = -0.651860
-  Model addition step   3: Added term 1 1 0 0 -- RMS=12.413594, GCV=1.473158e-06, AIC = -0.895231
-  Model addition step   4: Added term 0 2 0 0 -- RMS=9.681297, GCV=8.994441e-07, AIC = -1.391668
-  Model addition step   5: Added term 2 1 0 0 -- RMS=8.729644, GCV=7.341015e-07, AIC = -1.597854
-  Model addition step   6: Added term 0 1 0 0 -- RMS=7.672438, GCV=5.692318e-07, AIC = -1.855278
-  Model addition step   7: Added term 3 1 0 0 -- RMS=6.747106, GCV=4.418957e-07, AIC = -2.111564
-  Model addition step   8: Added term 0 0 1 0 -- RMS=5.767605, GCV=3.241465e-07, AIC = -2.424521
-  Model addition step   9: Added term 1 1 1 0 -- RMS=5.206423, GCV=2.651539e-07, AIC = -2.628493
-  Model addition step  10: Added term 0 0 3 0 -- RMS=4.827520, GCV=2.288438e-07, AIC = -2.778857
-  Model addition step  11: Added term 0 2 2 0 -- RMS=4.364949, GCV=1.878125e-07, AIC = -2.979554
-  Model addition step  12: Added term 1 2 0 0 -- RMS=3.971211, GCV=1.560596e-07, AIC = -3.167868
-Change in error: 0.026965. No more terms added.
-   13 polynomial terms were written for triclong3
+  RMS fit error of the full model is: 1.407408 mm
+  maximum moment arm: 32.220700 mm
+  maximum error allowed: 3.222070 mm
+  Model addition step   1: Added term 0 0 0 0 -- RMS=22.106326, GCV=9.244979e-07, AIC = 1.866233
+  Model addition step   2: Added term 0 0 0 1 -- RMS=15.440075, GCV=4.513362e-07, AIC = 1.148589
+  Model addition step   3: Added term 0 0 1 0 -- RMS=13.574322, GCV=3.491133e-07, AIC = 0.891167
+  Model addition step   4: Added term 1 1 0 0 -- RMS=11.782833, GCV=2.632439e-07, AIC = 0.608246
+  Model addition step   5: Added term 0 2 0 0 -- RMS=8.663471, GCV=1.424202e-07, AIC = -0.006659
+  Model addition step   6: Added term 2 1 0 0 -- RMS=7.393801, GCV=1.038132e-07, AIC = -0.323455
+  Model addition step   7: Added term 0 1 0 0 -- RMS=5.989046, GCV=6.816498e-08, AIC = -0.744724
+  Model addition step   8: Added term 3 1 0 0 -- RMS=4.975740, GCV=4.708589e-08, AIC = -1.115288
+  Model addition step   9: Added term 1 2 0 0 -- RMS=4.612440, GCV=4.049174e-08, AIC = -1.266771
+  Model addition step  10: Added term 0 0 3 0 -- RMS=4.355796, GCV=3.613845e-08, AIC = -1.381119
+Change in error: 0.047056. No more terms added.
+   11 polynomial terms were written for triclong3
 triclong4
-  RMS fit error of the full model is: 3.299203 mm
-  maximum moment arm: 31.763600 mm
-  maximum error allowed: 3.176360 mm
-  Model addition step   1: Added term 0 0 0 0 -- RMS=20.159782, GCV=3.855933e-06, AIC = 0.073051
-  Model addition step   2: Added term 0 0 0 1 -- RMS=14.366364, GCV=1.965614e-06, AIC = -0.603793
-  Model addition step   3: Added term 0 1 0 0 -- RMS=12.385100, GCV=1.466403e-06, AIC = -0.899828
-  Model addition step   4: Added term 2 1 0 0 -- RMS=8.263877, GCV=6.553522e-07, AIC = -1.708272
-  Model addition step   5: Added term 0 0 1 0 -- RMS=7.050819, GCV=4.788971e-07, AIC = -2.025016
-  Model addition step   6: Added term 0 0 3 0 -- RMS=6.518249, GCV=4.108509e-07, AIC = -2.181336
-  Model addition step   7: Added term 1 0 1 0 -- RMS=5.971631, GCV=3.461549e-07, AIC = -2.355751
-  Model addition step   8: Added term 1 0 3 0 -- RMS=5.530829, GCV=2.980785e-07, AIC = -2.508360
-  Model addition step   9: Added term 1 0 0 0 -- RMS=5.138982, GCV=2.583290e-07, AIC = -2.654569
-  Model addition step  10: Added term 3 0 0 0 -- RMS=4.598678, GCV=2.076619e-07, AIC = -2.875985
-Change in error: 0.035028. No more terms added.
-   11 polynomial terms were written for triclong4
+  RMS fit error of the full model is: 1.373049 mm
+  maximum moment arm: 31.768831 mm
+  maximum error allowed: 3.176883 mm
+  Model addition step   1: Added term 0 0 0 0 -- RMS=22.536866, GCV=9.608594e-07, AIC = 1.904810
+  Model addition step   2: Added term 0 0 0 1 -- RMS=16.185473, GCV=4.959663e-07, AIC = 1.242884
+  Model addition step   3: Added term 0 0 1 0 -- RMS=13.103153, GCV=3.252982e-07, AIC = 0.820513
+  Model addition step   4: Added term 0 1 0 0 -- RMS=10.848593, GCV=2.231546e-07, AIC = 0.443029
+  Model addition step   5: Added term 2 1 0 0 -- RMS=5.261110, GCV=5.252216e-08, AIC = -1.004206
+  Model addition step   6: Added term 1 0 0 0 -- RMS=4.824633, GCV=4.420236e-08, AIC = -1.177270
+  Model addition step   7: Added term 0 0 3 0 -- RMS=4.421071, GCV=3.714507e-08, AIC = -1.351824
+  Model addition step   8: Added term 3 0 0 0 -- RMS=4.135286, GCV=3.252269e-08, AIC = -1.485324
+Change in error: 0.046898. No more terms added.
+   9 polynomial terms were written for triclong4
 latdorsi1
-  RMS fit error of the full model is: 12.297512 mm
-  maximum moment arm: 197.371623 mm
-  maximum error allowed: 19.737162 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=119.574319, GCV=2.713087e-04, AIC = 4.326317
-  Model addition step   2: Added term 2 0 0 1 0 0 0 0 0 -- RMS=105.106480, GCV=2.104231e-04, AIC = 4.068767
-  Model addition step   3: Added term 0 1 1 1 0 0 0 0 0 -- RMS=87.622754, GCV=1.467973e-04, AIC = 3.705279
-  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=73.793964, GCV=1.045150e-04, AIC = 3.362129
-  Model addition step   5: Added term 0 0 0 0 0 1 0 0 0 -- RMS=68.263068, GCV=8.977692e-05, AIC = 3.206691
-  Model addition step   6: Added term 0 0 0 0 0 0 2 0 0 -- RMS=62.489243, GCV=7.552015e-05, AIC = 3.030320
-  Model addition step   7: Added term 0 0 0 3 0 0 1 0 0 -- RMS=57.870683, GCV=6.501774e-05, AIC = 2.877131
-  Model addition step   8: Added term 0 0 0 0 0 0 0 1 1 -- RMS=53.490234, GCV=5.576083e-05, AIC = 2.720086
-Change in error: 0.043116. No more terms added.
-   9 polynomial terms were written for latdorsi1
+  RMS fit error of the full model is: 5.712488 mm
+  maximum moment arm: 185.585651 mm
+  maximum error allowed: 18.558565 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=118.489356, GCV=2.664075e-04, AIC = 4.308087
+  Model addition step   2: Added term 2 0 0 1 0 0 0 0 0 -- RMS=102.802844, GCV=2.013004e-04, AIC = 4.024445
+  Model addition step   3: Added term 0 1 1 1 0 0 0 0 0 -- RMS=86.517982, GCV=1.431189e-04, AIC = 3.679902
+  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=73.878268, GCV=1.047540e-04, AIC = 3.364413
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=62.908206, GCV=7.624435e-05, AIC = 3.043307
+  Model addition step   6: Added term 0 0 0 0 0 1 0 0 0 -- RMS=56.857821, GCV=6.252198e-05, AIC = 2.841439
+  Model addition step   7: Added term 0 0 0 2 0 0 1 0 0 -- RMS=53.623217, GCV=5.582393e-05, AIC = 2.724674
+  Model addition step   8: Added term 0 0 0 1 0 0 2 1 0 -- RMS=48.858894, GCV=4.652298e-05, AIC = 2.538960
+  Model addition step   9: Added term 0 0 0 0 0 0 0 1 0 -- RMS=41.097278, GCV=3.304267e-05, AIC = 2.193349
+  Model addition step  10: Added term 3 0 0 1 0 0 0 0 0 -- RMS=38.274855, GCV=2.877054e-05, AIC = 2.051430
+  Model addition step  11: Added term 0 1 1 0 0 0 0 1 0 -- RMS=35.274034, GCV=2.453050e-05, AIC = 1.888516
+Change in error: 0.048967. No more terms added.
+   12 polynomial terms were written for latdorsi1
 latdorsi2
-  RMS fit error of the full model is: 11.471915 mm
-  maximum moment arm: 184.975333 mm
-  maximum error allowed: 18.497533 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=114.839601, GCV=2.502483e-04, AIC = 4.245514
-  Model addition step   2: Added term 0 1 1 0 0 0 0 0 0 -- RMS=100.513724, GCV=1.924355e-04, AIC = 3.979408
-  Model addition step   3: Added term 2 0 0 1 0 0 0 0 0 -- RMS=85.958789, GCV=1.412748e-04, AIC = 3.666933
-  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=73.539767, GCV=1.037962e-04, AIC = 3.355228
-  Model addition step   5: Added term 0 0 0 3 0 1 0 0 0 -- RMS=66.945065, GCV=8.634361e-05, AIC = 3.167698
-  Model addition step   6: Added term 1 0 0 0 0 0 2 0 0 -- RMS=60.637414, GCV=7.111049e-05, AIC = 2.970156
-  Model addition step   7: Added term 0 0 0 3 0 0 1 0 0 -- RMS=55.817047, GCV=6.048510e-05, AIC = 2.804868
-  Model addition step   8: Added term 0 0 0 0 0 0 0 1 1 -- RMS=52.169952, GCV=5.304215e-05, AIC = 2.670101
-  Model addition step   9: Added term 2 0 0 1 0 0 0 1 0 -- RMS=47.919551, GCV=4.492359e-05, AIC = 2.500513
-  Model addition step  10: Added term 0 0 1 0 0 0 2 1 0 -- RMS=43.814132, GCV=3.770070e-05, AIC = 2.321756
-  Model addition step  11: Added term 0 1 2 1 0 0 0 0 0 -- RMS=40.847046, GCV=3.289406e-05, AIC = 2.181891
-  Model addition step  12: Added term 0 1 0 2 0 1 0 0 0 -- RMS=38.380788, GCV=2.915428e-05, AIC = 2.057714
-  Model addition step  13: Added term 0 1 1 0 0 0 1 0 1 -- RMS=36.293401, GCV=2.617047e-05, AIC = 1.946250
-Change in error: 0.037799. No more terms added.
-   14 polynomial terms were written for latdorsi2
+  RMS fit error of the full model is: 5.020585 mm
+  maximum moment arm: 174.621269 mm
+  maximum error allowed: 17.462127 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=114.793084, GCV=2.500456e-04, AIC = 4.244704
+  Model addition step   2: Added term 0 1 1 0 0 0 0 0 0 -- RMS=101.335672, GCV=1.955956e-04, AIC = 3.995696
+  Model addition step   3: Added term 2 0 0 1 0 0 0 0 0 -- RMS=85.512769, GCV=1.398125e-04, AIC = 3.656529
+  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=73.499020, GCV=1.036812e-04, AIC = 3.354119
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=63.222854, GCV=7.700897e-05, AIC = 3.053285
+  Model addition step   6: Added term 0 0 0 1 0 1 0 0 0 -- RMS=55.100376, GCV=5.871667e-05, AIC = 2.778644
+  Model addition step   7: Added term 0 0 0 3 0 0 1 0 0 -- RMS=51.772195, GCV=5.203647e-05, AIC = 2.654416
+  Model addition step   8: Added term 0 0 1 0 0 0 2 1 0 -- RMS=47.769927, GCV=4.447228e-05, AIC = 2.493880
+  Model addition step   9: Added term 2 0 0 1 0 0 0 1 0 -- RMS=40.607507, GCV=3.225980e-05, AIC = 2.169372
+  Model addition step  10: Added term 1 0 1 0 0 0 2 0 0 -- RMS=37.915967, GCV=2.823353e-05, AIC = 2.032588
+Change in error: 0.048628. No more terms added.
+   11 polynomial terms were written for latdorsi2
 latdorsi3
-  RMS fit error of the full model is: 11.707347 mm
-  maximum moment arm: 194.976157 mm
-  maximum error allowed: 19.497616 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=123.383551, GCV=2.888699e-04, AIC = 4.389037
-  Model addition step   2: Added term 0 1 1 0 0 0 0 0 0 -- RMS=107.764616, GCV=2.212009e-04, AIC = 4.118718
-  Model addition step   3: Added term 2 0 0 1 0 0 0 0 0 -- RMS=92.889532, GCV=1.649748e-04, AIC = 3.822019
-  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=80.278583, GCV=1.236905e-04, AIC = 3.530581
-  Model addition step   5: Added term 0 0 0 3 0 1 0 0 0 -- RMS=72.767766, GCV=1.020167e-04, AIC = 3.334499
-  Model addition step   6: Added term 1 0 0 0 0 0 2 0 0 -- RMS=67.200339, GCV=8.733639e-05, AIC = 3.175688
-  Model addition step   7: Added term 0 1 0 0 0 0 0 1 0 -- RMS=62.403654, GCV=7.560225e-05, AIC = 3.027957
-  Model addition step   8: Added term 0 0 0 3 0 0 1 0 0 -- RMS=57.914696, GCV=6.536689e-05, AIC = 2.879030
-  Model addition step   9: Added term 0 0 0 0 0 0 0 1 1 -- RMS=53.101206, GCV=5.516425e-05, AIC = 2.705865
-  Model addition step  10: Added term 0 2 2 0 0 0 0 0 0 -- RMS=49.751805, GCV=4.861146e-05, AIC = 2.575937
-  Model addition step  11: Added term 0 0 0 1 0 0 2 1 0 -- RMS=46.235753, GCV=4.214558e-05, AIC = 2.429729
-  Model addition step  12: Added term 0 1 0 2 0 1 0 0 0 -- RMS=43.130535, GCV=3.681665e-05, AIC = 2.291062
-  Model addition step  13: Added term 3 0 0 1 0 0 0 0 0 -- RMS=40.599066, GCV=3.274827e-05, AIC = 2.170468
-  Model addition step  14: Added term 0 1 0 1 0 0 0 0 2 -- RMS=38.124023, GCV=2.898936e-05, AIC = 2.045045
-Change in error: 0.028339. No more terms added.
-   15 polynomial terms were written for latdorsi3
+  RMS fit error of the full model is: 4.725048 mm
+  maximum moment arm: 187.932636 mm
+  maximum error allowed: 18.793264 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=126.356771, GCV=3.029597e-04, AIC = 4.436660
+  Model addition step   2: Added term 0 1 1 0 0 0 0 0 0 -- RMS=111.127110, GCV=2.352201e-04, AIC = 4.180168
+  Model addition step   3: Added term 1 0 0 1 0 0 0 0 0 -- RMS=94.665875, GCV=1.713449e-04, AIC = 3.859904
+  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=82.107764, GCV=1.293914e-04, AIC = 3.575640
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=71.004960, GCV=9.713382e-05, AIC = 3.285453
+  Model addition step   6: Added term 0 0 0 3 0 1 0 0 0 -- RMS=60.576126, GCV=7.096681e-05, AIC = 2.968133
+  Model addition step   7: Added term 0 1 0 2 0 0 0 1 0 -- RMS=55.200358, GCV=5.915595e-05, AIC = 2.782648
+  Model addition step   8: Added term 0 0 0 0 0 0 2 1 0 -- RMS=48.168734, GCV=4.521793e-05, AIC = 2.510508
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=43.435060, GCV=3.690879e-05, AIC = 2.304000
+  Model addition step  10: Added term 0 2 2 0 0 0 0 0 0 -- RMS=39.208755, GCV=3.019166e-05, AIC = 2.099644
+  Model addition step  11: Added term 0 0 0 0 0 0 0 1 0 -- RMS=35.734528, GCV=2.517516e-05, AIC = 1.914457
+  Model addition step  12: Added term 1 1 0 2 0 0 0 0 0 -- RMS=32.670420, GCV=2.112438e-05, AIC = 1.735540
+  Model addition step  13: Added term 0 0 1 0 0 1 0 0 0 -- RMS=29.529618, GCV=1.732495e-05, AIC = 1.533765
+Change in error: 0.039792. No more terms added.
+   14 polynomial terms were written for latdorsi3
 latdorsi4
-  RMS fit error of the full model is: 12.533416 mm
-  maximum moment arm: 200.630580 mm
-  maximum error allowed: 20.063058 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=128.262526, GCV=3.121673e-04, AIC = 4.466599
-  Model addition step   2: Added term 0 1 1 0 0 0 0 0 0 -- RMS=112.341789, GCV=2.403904e-04, AIC = 4.201911
-  Model addition step   3: Added term 1 0 0 1 0 0 0 0 0 -- RMS=96.232523, GCV=1.770630e-04, AIC = 3.892732
-  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=83.888937, GCV=1.350661e-04, AIC = 3.618563
-  Model addition step   5: Added term 0 0 0 3 0 1 0 0 0 -- RMS=75.831064, GCV=1.107866e-04, AIC = 3.416969
-  Model addition step   6: Added term 0 1 0 1 0 0 0 1 0 -- RMS=67.643669, GCV=8.849253e-05, AIC = 3.188839
-  Model addition step   7: Added term 0 0 1 0 0 0 2 1 0 -- RMS=58.836734, GCV=6.720658e-05, AIC = 2.910242
-  Model addition step   8: Added term 0 0 0 2 0 0 1 0 0 -- RMS=54.190118, GCV=5.722956e-05, AIC = 2.746085
-  Model addition step   9: Added term 0 0 0 0 0 0 0 0 1 -- RMS=50.805976, GCV=5.049851e-05, AIC = 2.617494
-  Model addition step  10: Added term 0 1 0 2 0 1 0 0 0 -- RMS=47.528449, GCV=4.436375e-05, AIC = 2.484501
-  Model addition step  11: Added term 0 1 2 1 0 0 0 0 0 -- RMS=44.898950, GCV=3.974372e-05, AIC = 2.371051
-  Model addition step  12: Added term 0 0 1 0 0 0 1 1 1 -- RMS=42.537660, GCV=3.581144e-05, AIC = 2.263379
-Change in error: 0.041124. No more terms added.
+  RMS fit error of the full model is: 4.263148 mm
+  maximum moment arm: 194.554313 mm
+  maximum error allowed: 19.455431 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=131.629924, GCV=3.287737e-04, AIC = 4.518430
+  Model addition step   2: Added term 0 1 1 0 0 0 0 0 0 -- RMS=115.862689, GCV=2.556947e-04, AIC = 4.263631
+  Model addition step   3: Added term 1 0 0 1 0 0 0 0 0 -- RMS=98.537006, GCV=1.856449e-04, AIC = 3.940062
+  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=86.383375, GCV=1.432179e-04, AIC = 3.677166
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=75.448283, GCV=1.096710e-04, AIC = 3.406848
+  Model addition step   6: Added term 0 0 0 3 0 1 0 0 0 -- RMS=64.740662, GCV=8.105999e-05, AIC = 3.101110
+  Model addition step   7: Added term 0 1 0 1 0 0 0 1 0 -- RMS=58.142117, GCV=6.562908e-05, AIC = 2.886490
+  Model addition step   8: Added term 0 0 0 0 0 0 2 1 0 -- RMS=50.793999, GCV=5.028113e-05, AIC = 2.616644
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=44.611001, GCV=3.893435e-05, AIC = 2.357427
+  Model addition step  10: Added term 0 1 1 1 0 0 0 1 0 -- RMS=39.684796, GCV=3.092924e-05, AIC = 2.123780
+  Model addition step  11: Added term 1 0 1 1 0 0 0 1 0 -- RMS=35.996975, GCV=2.554631e-05, AIC = 1.929092
+  Model addition step  12: Added term 1 0 0 0 0 2 0 0 0 -- RMS=33.616013, GCV=2.236490e-05, AIC = 1.792605
+Change in error: 0.043401. No more terms added.
    13 polynomial terms were written for latdorsi4
 latdorsi5
-  RMS fit error of the full model is: 13.708608 mm
-  maximum moment arm: 218.668596 mm
-  maximum error allowed: 21.866860 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=138.235752, GCV=3.626007e-04, AIC = 4.616362
-  Model addition step   2: Added term 0 2 1 0 0 0 0 0 0 -- RMS=122.130398, GCV=2.841070e-04, AIC = 4.368998
-  Model addition step   3: Added term 1 0 0 1 0 0 0 0 0 -- RMS=105.592883, GCV=2.131834e-04, AIC = 4.078379
-  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=91.952307, GCV=1.622790e-04, AIC = 3.802115
-  Model addition step   5: Added term 1 0 0 1 0 0 0 1 0 -- RMS=83.628835, GCV=1.347427e-04, AIC = 3.612730
-  Model addition step   6: Added term 0 0 0 2 0 1 0 0 0 -- RMS=75.663601, GCV=1.107201e-04, AIC = 3.412926
-  Model addition step   7: Added term 0 0 1 0 0 0 2 1 0 -- RMS=67.156176, GCV=8.755614e-05, AIC = 3.174751
-  Model addition step   8: Added term 0 0 0 1 0 0 1 0 0 -- RMS=62.618320, GCV=7.641578e-05, AIC = 3.035203
-  Model addition step   9: Added term 0 3 1 0 0 0 0 0 0 -- RMS=58.628981, GCV=6.724712e-05, AIC = 2.903924
-  Model addition step  10: Added term 0 2 0 0 0 0 0 0 0 -- RMS=53.148224, GCV=5.547515e-05, AIC = 2.708013
-  Model addition step  11: Added term 0 0 0 0 0 0 0 0 1 -- RMS=49.350736, GCV=4.801572e-05, AIC = 2.560127
-  Model addition step  12: Added term 1 0 0 1 0 1 1 0 0 -- RMS=46.266903, GCV=4.236580e-05, AIC = 2.431454
-Change in error: 0.046419. No more terms added.
-   13 polynomial terms were written for latdorsi5
+  RMS fit error of the full model is: 3.829055 mm
+  maximum moment arm: 206.069267 mm
+  maximum error allowed: 20.606927 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=135.189561, GCV=3.467961e-04, AIC = 4.571797
+  Model addition step   2: Added term 0 2 1 0 0 0 0 0 0 -- RMS=119.450901, GCV=2.717774e-04, AIC = 4.324630
+  Model addition step   3: Added term 1 0 0 1 0 0 0 0 0 -- RMS=104.525857, GCV=2.088967e-04, AIC = 4.058066
+  Model addition step   4: Added term 0 0 0 0 1 0 0 0 0 -- RMS=92.453365, GCV=1.640524e-04, AIC = 3.812984
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=82.805558, GCV=1.321028e-04, AIC = 3.592944
+  Model addition step   6: Added term 0 0 0 2 0 1 0 0 0 -- RMS=73.221062, GCV=1.036870e-04, AIC = 3.347298
+  Model addition step   7: Added term 1 0 0 1 0 0 0 1 0 -- RMS=66.660021, GCV=8.626717e-05, AIC = 3.159920
+  Model addition step   8: Added term 0 0 1 0 0 0 2 1 0 -- RMS=60.260884, GCV=7.077033e-05, AIC = 2.958454
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=54.004189, GCV=5.705634e-05, AIC = 2.739589
+  Model addition step  10: Added term 0 3 1 0 0 0 0 0 0 -- RMS=48.985226, GCV=4.712498e-05, AIC = 2.544881
+  Model addition step  11: Added term 0 1 2 1 0 0 0 0 0 -- RMS=42.330483, GCV=3.532666e-05, AIC = 2.253237
+  Model addition step  12: Added term 0 1 0 2 0 1 0 0 0 -- RMS=39.617533, GCV=3.106343e-05, AIC = 2.121143
+  Model addition step  13: Added term 0 0 0 0 0 0 0 1 1 -- RMS=37.014433, GCV=2.722065e-05, AIC = 1.985594
+  Model addition step  14: Added term 0 0 0 0 0 0 0 1 3 -- RMS=33.953321, GCV=2.299354e-05, AIC = 1.813329
+  Model addition step  15: Added term 0 1 0 0 0 0 0 0 0 -- RMS=32.152963, GCV=2.070005e-05, AIC = 1.704743
+  Model addition step  16: Added term 0 0 1 0 0 0 0 0 0 -- RMS=29.777408, GCV=1.782357e-05, AIC = 1.551612
+  Model addition step  17: Added term 0 0 0 1 0 0 2 1 0 -- RMS=27.814570, GCV=1.561207e-05, AIC = 1.415610
+Change in error: 0.038308. No more terms added.
+   18 polynomial terms were written for latdorsi5
 latdorsi6
-  RMS fit error of the full model is: 13.638782 mm
-  maximum moment arm: 225.787159 mm
-  maximum error allowed: 22.578716 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=138.785288, GCV=3.654893e-04, AIC = 4.624297
-  Model addition step   2: Added term 0 2 1 0 0 0 0 0 0 -- RMS=122.657976, GCV=2.865669e-04, AIC = 4.377619
-  Model addition step   3: Added term 1 0 0 2 1 0 0 0 0 -- RMS=107.146504, GCV=2.195029e-04, AIC = 4.107591
-  Model addition step   4: Added term 1 0 0 1 0 0 0 0 0 -- RMS=96.387698, GCV=1.783119e-04, AIC = 3.896332
-  Model addition step   5: Added term 1 0 0 1 0 0 0 1 0 -- RMS=85.032777, GCV=1.393047e-04, AIC = 3.646027
-  Model addition step   6: Added term 0 0 1 0 0 0 2 1 0 -- RMS=76.133531, GCV=1.120996e-04, AIC = 3.425309
-  Model addition step   7: Added term 0 0 0 1 0 1 0 0 0 -- RMS=69.218294, GCV=9.301574e-05, AIC = 3.235240
-  Model addition step   8: Added term 0 0 0 1 0 0 1 0 0 -- RMS=64.978400, GCV=8.228454e-05, AIC = 3.109197
-  Model addition step   9: Added term 0 2 0 1 0 1 0 0 0 -- RMS=61.050212, GCV=7.291609e-05, AIC = 2.984859
-  Model addition step  10: Added term 0 2 2 0 0 0 0 0 0 -- RMS=57.440700, GCV=6.479782e-05, AIC = 2.863350
-  Model addition step  11: Added term 1 0 0 0 0 2 0 0 0 -- RMS=51.122041, GCV=5.152435e-05, AIC = 2.630653
-  Model addition step  12: Added term 0 0 0 0 0 0 0 0 1 -- RMS=47.254498, GCV=4.419375e-05, AIC = 2.473696
-Change in error: 0.043121. No more terms added.
-   13 polynomial terms were written for latdorsi6
+  RMS fit error of the full model is: 3.888528 mm
+  maximum moment arm: 213.888484 mm
+  maximum error allowed: 21.388848 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=135.719592, GCV=3.495207e-04, AIC = 4.579623
+  Model addition step   2: Added term 0 2 1 0 0 0 0 0 0 -- RMS=120.070838, GCV=2.746057e-04, AIC = 4.334983
+  Model addition step   3: Added term 1 0 0 2 1 0 0 0 0 -- RMS=106.712049, GCV=2.177264e-04, AIC = 4.099465
+  Model addition step   4: Added term 1 0 0 1 0 0 0 0 0 -- RMS=96.888669, GCV=1.801702e-04, AIC = 3.906700
+  Model addition step   5: Added term 0 1 1 0 0 0 0 0 1 -- RMS=87.880193, GCV=1.487905e-04, AIC = 3.711902
+  Model addition step   6: Added term 1 0 0 1 0 0 0 1 0 -- RMS=79.118120, GCV=1.210610e-04, AIC = 3.502215
+  Model addition step   7: Added term 0 0 0 1 0 1 0 0 0 -- RMS=71.079042, GCV=9.808392e-05, AIC = 3.288295
+  Model addition step   8: Added term 0 0 0 0 0 0 2 1 0 -- RMS=64.106901, GCV=8.009212e-05, AIC = 3.082192
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=59.361370, GCV=6.893770e-05, AIC = 2.928753
+  Model addition step  10: Added term 0 0 0 0 0 0 0 0 1 -- RMS=55.055943, GCV=5.952911e-05, AIC = 2.778543
+  Model addition step  11: Added term 0 1 0 0 0 0 0 0 0 -- RMS=49.923313, GCV=4.913636e-05, AIC = 2.583198
+  Model addition step  12: Added term 0 0 1 0 0 0 0 0 0 -- RMS=42.451956, GCV=3.566728e-05, AIC = 2.259346
+  Model addition step  13: Added term 0 0 1 0 0 1 1 1 0 -- RMS=39.420869, GCV=3.087512e-05, AIC = 2.111569
+  Model addition step  14: Added term 0 0 0 0 1 0 0 1 0 -- RMS=36.233936, GCV=2.618619e-05, AIC = 1.943348
+  Model addition step  15: Added term 1 0 0 0 0 0 0 0 3 -- RMS=33.547517, GCV=2.253462e-05, AIC = 1.789660
+  Model addition step  16: Added term 0 1 1 1 0 0 0 1 0 -- RMS=31.526861, GCV=1.997940e-05, AIC = 1.665792
+Change in error: 0.045635. No more terms added.
+   17 polynomial terms were written for latdorsi6
 pectmajt1
-  RMS fit error of the full model is: 8.640466 mm
-  maximum moment arm: 114.563261 mm
-  maximum error allowed: 11.456326 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=72.369257, GCV=9.937933e-05, AIC = 3.322004
-  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=57.962954, GCV=6.399344e-05, AIC = 2.878427
-  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=51.638096, GCV=5.098291e-05, AIC = 2.647717
-  Model addition step   4: Added term 0 0 0 0 0 0 1 1 0 -- RMS=47.038688, GCV=4.246660e-05, AIC = 2.461516
-  Model addition step   5: Added term 1 2 0 1 0 0 0 0 0 -- RMS=42.857871, GCV=3.538786e-05, AIC = 2.275732
-  Model addition step   6: Added term 0 0 0 0 0 1 0 0 0 -- RMS=38.881670, GCV=2.923763e-05, AIC = 2.081377
-  Model addition step   7: Added term 0 0 0 0 0 0 0 2 0 -- RMS=36.847282, GCV=2.635880e-05, AIC = 1.974273
-  Model addition step   8: Added term 0 0 0 1 0 0 1 0 0 -- RMS=34.773023, GCV=2.356487e-05, AIC = 1.858771
-  Model addition step   9: Added term 0 0 0 0 0 0 2 2 0 -- RMS=32.593488, GCV=2.078312e-05, AIC = 1.729691
-  Model addition step  10: Added term 0 0 0 0 0 0 0 0 1 -- RMS=30.809875, GCV=1.864236e-05, AIC = 1.617514
-Change in error: 0.042963. No more terms added.
-   11 polynomial terms were written for pectmajt1
+  RMS fit error of the full model is: 3.259971 mm
+  maximum moment arm: 115.785274 mm
+  maximum error allowed: 11.578527 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=78.197116, GCV=1.160297e-04, AIC = 3.476907
+  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=64.828657, GCV=8.005132e-05, AIC = 3.102315
+  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=58.710642, GCV=6.590492e-05, AIC = 2.904439
+  Model addition step   4: Added term 0 0 0 0 0 0 0 0 1 -- RMS=53.483596, GCV=5.490075e-05, AIC = 2.718325
+  Model addition step   5: Added term 0 0 0 0 0 0 1 1 0 -- RMS=48.386754, GCV=4.510722e-05, AIC = 2.518406
+  Model addition step   6: Added term 0 1 0 0 0 1 0 0 0 -- RMS=43.294326, GCV=3.625052e-05, AIC = 2.296375
+  Model addition step   7: Added term 0 0 0 0 0 1 0 1 0 -- RMS=39.639322, GCV=3.050472e-05, AIC = 2.120353
+  Model addition step   8: Added term 0 1 0 3 0 0 0 0 0 -- RMS=36.656533, GCV=2.618683e-05, AIC = 1.964271
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=34.359570, GCV=2.309641e-05, AIC = 1.835227
+  Model addition step  10: Added term 0 1 1 0 0 0 2 0 0 -- RMS=31.661592, GCV=1.968731e-05, AIC = 1.672052
+  Model addition step  11: Added term 0 0 1 1 0 0 0 1 0 -- RMS=27.032905, GCV=1.440727e-05, AIC = 1.356331
+  Model addition step  12: Added term 2 1 0 0 0 1 0 0 0 -- RMS=24.995282, GCV=1.236490e-05, AIC = 1.199974
+  Model addition step  13: Added term 0 0 0 0 0 0 3 1 0 -- RMS=23.490409, GCV=1.096320e-05, AIC = 1.076162
+  Model addition step  14: Added term 0 0 0 1 0 2 0 0 0 -- RMS=21.809080, GCV=9.486716e-06, AIC = 0.928009
+Change in error: 0.047001. No more terms added.
+   15 polynomial terms were written for pectmajt1
 pectmajt2
-  RMS fit error of the full model is: 7.200052 mm
-  maximum moment arm: 95.858749 mm
-  maximum error allowed: 9.585875 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=61.024480, GCV=7.066364e-05, AIC = 2.980991
-  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=49.982187, GCV=4.758444e-05, AIC = 2.582152
-  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=44.124390, GCV=3.722559e-05, AIC = 2.333223
-  Model addition step   4: Added term 0 0 0 0 0 0 1 1 0 -- RMS=39.916434, GCV=3.058021e-05, AIC = 2.133151
-  Model addition step   5: Added term 0 1 0 1 0 1 0 0 0 -- RMS=35.354679, GCV=2.408169e-05, AIC = 1.890815
-  Model addition step   6: Added term 0 0 0 0 0 1 0 1 0 -- RMS=32.094942, GCV=1.992166e-05, AIC = 1.697728
-Change in error: 0.047385. No more terms added.
-   7 polynomial terms were written for pectmajt2
+  RMS fit error of the full model is: 2.653734 mm
+  maximum moment arm: 96.685250 mm
+  maximum error allowed: 9.668525 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=65.958667, GCV=8.255276e-05, AIC = 3.136498
+  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=55.717004, GCV=5.913028e-05, AIC = 2.799390
+  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=49.901299, GCV=4.761106e-05, AIC = 2.579291
+  Model addition step   4: Added term 0 1 0 0 0 1 0 0 0 -- RMS=45.424420, GCV=3.960188e-05, AIC = 2.391675
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=40.898341, GCV=3.222586e-05, AIC = 2.182132
+  Model addition step   6: Added term 0 0 0 0 0 0 1 1 0 -- RMS=35.354725, GCV=2.417393e-05, AIC = 1.891195
+  Model addition step   7: Added term 0 0 0 0 0 1 0 1 0 -- RMS=32.606709, GCV=2.064090e-05, AIC = 1.729746
+  Model addition step   8: Added term 0 1 0 3 0 0 0 0 0 -- RMS=30.170724, GCV=1.773992e-05, AIC = 1.574832
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=28.086204, GCV=1.543246e-05, AIC = 1.432023
+  Model addition step  10: Added term 0 0 0 0 0 0 3 1 0 -- RMS=25.754430, GCV=1.302641e-05, AIC = 1.259057
+  Model addition step  11: Added term 0 1 1 0 0 0 2 0 0 -- RMS=23.797435, GCV=1.116494e-05, AIC = 1.101377
+  Model addition step  12: Added term 0 0 1 1 0 0 0 1 0 -- RMS=20.858209, GCV=8.610505e-06, AIC = 0.838095
+  Model addition step  13: Added term 2 1 1 0 0 0 0 0 0 -- RMS=19.155097, GCV=7.289957e-06, AIC = 0.668116
+  Model addition step  14: Added term 0 1 1 1 0 1 0 0 0 -- RMS=18.097195, GCV=6.532264e-06, AIC = 0.554870
+  Model addition step  15: Added term 0 0 1 0 0 1 1 1 0 -- RMS=16.930805, GCV=5.739640e-06, AIC = 0.422004
+Change in error: 0.040269. No more terms added.
+   16 polynomial terms were written for pectmajt2
 pectmajt3
-  RMS fit error of the full model is: 7.283755 mm
+  RMS fit error of the full model is: 2.598267 mm
   maximum moment arm: 97.620823 mm
   maximum error allowed: 9.762082 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=61.974911, GCV=7.288189e-05, AIC = 3.011900
-  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=51.217486, GCV=4.996558e-05, AIC = 2.630981
-  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=44.529047, GCV=3.791150e-05, AIC = 2.351481
-  Model addition step   4: Added term 0 1 0 1 0 1 0 0 0 -- RMS=39.774258, GCV=3.036276e-05, AIC = 2.126015
-  Model addition step   5: Added term 0 0 0 0 0 0 1 1 0 -- RMS=35.019931, GCV=2.362782e-05, AIC = 1.871788
-  Model addition step   6: Added term 0 0 0 0 0 1 0 1 0 -- RMS=32.296794, GCV=2.017303e-05, AIC = 1.710267
-Change in error: 0.047901. No more terms added.
-   7 polynomial terms were written for pectmajt3
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=66.472121, GCV=8.384302e-05, AIC = 3.152006
+  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=56.416863, GCV=6.062508e-05, AIC = 2.824355
+  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=49.873378, GCV=4.755780e-05, AIC = 2.578172
+  Model addition step   4: Added term 0 1 0 0 0 1 0 0 0 -- RMS=44.777963, GCV=3.848272e-05, AIC = 2.363008
+  Model addition step   5: Added term 0 0 0 0 0 0 0 0 1 -- RMS=39.967960, GCV=3.077635e-05, AIC = 2.136110
+  Model addition step   6: Added term 0 0 0 0 0 0 1 1 0 -- RMS=34.383298, GCV=2.286375e-05, AIC = 1.835473
+  Model addition step   7: Added term 0 0 0 0 0 1 0 1 0 -- RMS=32.111926, GCV=2.001923e-05, AIC = 1.699164
+  Model addition step   8: Added term 0 0 0 4 0 0 0 0 0 -- RMS=29.748569, GCV=1.724695e-05, AIC = 1.546650
+  Model addition step   9: Added term 0 0 0 0 0 0 3 1 0 -- RMS=27.717204, GCV=1.502961e-05, AIC = 1.405572
+  Model addition step  10: Added term 0 0 0 1 0 0 1 0 0 -- RMS=25.453490, GCV=1.272376e-05, AIC = 1.235549
+  Model addition step  11: Added term 0 1 1 0 0 0 2 0 0 -- RMS=23.861997, GCV=1.122560e-05, AIC = 1.106796
+  Model addition step  12: Added term 0 0 1 2 0 0 0 1 0 -- RMS=20.522879, GCV=8.335874e-06, AIC = 0.805680
+Change in error: 0.049723. No more terms added.
+   13 polynomial terms were written for pectmajt3
 pectmajt4
-  RMS fit error of the full model is: 6.684360 mm
+  RMS fit error of the full model is: 2.524055 mm
   maximum moment arm: 87.505849 mm
   maximum error allowed: 8.750585 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=55.959995, GCV=5.942144e-05, AIC = 2.807715
-  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=47.213151, GCV=4.245809e-05, AIC = 2.468164
-  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=41.422792, GCV=3.280673e-05, AIC = 2.206860
-  Model addition step   4: Added term 0 1 0 2 0 1 0 0 0 -- RMS=37.050467, GCV=2.634659e-05, AIC = 1.984137
-  Model addition step   5: Added term 0 0 0 0 0 0 1 1 0 -- RMS=32.593372, GCV=2.046688e-05, AIC = 1.728171
-  Model addition step   6: Added term 0 2 0 2 0 0 0 0 0 -- RMS=30.155145, GCV=1.758633e-05, AIC = 1.573043
-  Model addition step   7: Added term 0 1 0 1 0 1 0 1 0 -- RMS=28.573385, GCV=1.585032e-05, AIC = 1.465661
-  Model addition step   8: Added term 1 1 0 0 0 1 0 1 0 -- RMS=26.729565, GCV=1.392400e-05, AIC = 1.332628
-  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=24.976516, GCV=1.220429e-05, AIC = 1.197338
-  Model addition step  10: Added term 0 1 1 0 0 0 2 0 0 -- RMS=23.323577, GCV=1.068344e-05, AIC = 1.060773
-  Model addition step  11: Added term 0 0 0 0 0 0 0 0 1 -- RMS=21.838342, GCV=9.402330e-06, AIC = 0.929556
-  Model addition step  12: Added term 0 0 0 0 0 0 3 1 0 -- RMS=20.376712, GCV=8.217558e-06, AIC = 0.791385
-  Model addition step  13: Added term 0 1 1 0 0 1 0 0 0 -- RMS=19.055236, GCV=7.214146e-06, AIC = 0.657662
-Change in error: 0.035442. No more terms added.
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=59.763293, GCV=6.777302e-05, AIC = 2.939224
+  Model addition step   2: Added term 1 1 0 0 0 0 0 0 0 -- RMS=51.492249, GCV=5.050311e-05, AIC = 2.641682
+  Model addition step   3: Added term 0 0 0 3 1 0 0 0 0 -- RMS=46.125245, GCV=4.067818e-05, AIC = 2.421918
+  Model addition step   4: Added term 0 1 0 1 0 1 0 0 0 -- RMS=41.537363, GCV=3.311425e-05, AIC = 2.212762
+  Model addition step   5: Added term 0 0 0 0 0 0 1 1 0 -- RMS=37.813962, GCV=2.754847e-05, AIC = 2.025310
+  Model addition step   6: Added term 0 0 0 0 0 0 0 0 1 -- RMS=32.613944, GCV=2.057117e-05, AIC = 1.729811
+  Model addition step   7: Added term 0 2 0 2 0 0 0 0 0 -- RMS=30.056296, GCV=1.753822e-05, AIC = 1.566854
+  Model addition step   8: Added term 0 1 1 0 0 0 2 0 0 -- RMS=28.091774, GCV=1.537937e-05, AIC = 1.432041
+  Model addition step   9: Added term 0 0 1 1 0 1 0 1 0 -- RMS=25.664242, GCV=1.288564e-05, AIC = 1.251663
+  Model addition step  10: Added term 0 0 0 1 0 0 1 0 0 -- RMS=23.395159, GCV=1.074912e-05, AIC = 1.066902
+  Model addition step  11: Added term 2 0 0 0 0 1 0 0 0 -- RMS=21.314657, GCV=8.956800e-06, AIC = 0.881012
+  Model addition step  12: Added term 0 0 0 0 0 0 3 1 0 -- RMS=19.304230, GCV=7.375298e-06, AIC = 0.683248
+  Model addition step  13: Added term 3 0 1 0 0 0 0 0 0 -- RMS=18.247941, GCV=6.615825e-06, AIC = 0.571082
+Change in error: 0.046889. No more terms added.
    14 polynomial terms were written for pectmajt4
 pectmajt5
-  RMS fit error of the full model is: 6.450475 mm
-  maximum moment arm: 83.639286 mm
-  maximum error allowed: 8.363929 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=52.201143, GCV=5.170682e-05, AIC = 2.668650
-  Model addition step   2: Added term 2 1 0 0 0 0 0 0 0 -- RMS=45.144327, GCV=3.881868e-05, AIC = 2.378548
-  Model addition step   3: Added term 0 1 0 2 0 1 0 0 0 -- RMS=40.262439, GCV=3.099448e-05, AIC = 2.150035
-  Model addition step   4: Added term 0 0 0 3 1 0 0 0 0 -- RMS=35.458645, GCV=2.413133e-05, AIC = 1.896309
-  Model addition step   5: Added term 0 0 0 0 0 0 1 1 0 -- RMS=31.858613, GCV=1.955451e-05, AIC = 1.682569
-  Model addition step   6: Added term 0 0 0 4 0 0 0 0 0 -- RMS=29.733999, GCV=1.709854e-05, AIC = 1.544914
-  Model addition step   7: Added term 0 1 1 0 0 0 2 0 0 -- RMS=28.066980, GCV=1.529347e-05, AIC = 1.429897
-  Model addition step   8: Added term 0 0 0 1 0 0 1 0 0 -- RMS=26.516901, GCV=1.370332e-05, AIC = 1.316652
-  Model addition step   9: Added term 1 0 0 1 0 0 0 0 1 -- RMS=24.930289, GCV=1.215916e-05, AIC = 1.193633
-  Model addition step  10: Added term 0 0 0 2 0 2 0 0 0 -- RMS=23.551575, GCV=1.089334e-05, AIC = 1.080229
-  Model addition step  11: Added term 0 0 0 0 0 0 3 1 0 -- RMS=22.214342, GCV=9.728885e-06, AIC = 0.963698
-  Model addition step  12: Added term 1 0 0 1 0 0 0 0 2 -- RMS=21.068996, GCV=8.785415e-06, AIC = 0.858205
-  Model addition step  13: Added term 1 0 0 0 0 1 0 0 0 -- RMS=19.967793, GCV=7.921664e-06, AIC = 0.751219
-Change in error: 0.047548. No more terms added.
-   14 polynomial terms were written for pectmajt5
+  RMS fit error of the full model is: 2.557337 mm
+  maximum moment arm: 82.974168 mm
+  maximum error allowed: 8.297417 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=55.533854, GCV=5.851988e-05, AIC = 2.792427
+  Model addition step   2: Added term 2 1 0 0 0 0 0 0 0 -- RMS=48.576462, GCV=4.494550e-05, AIC = 2.525097
+  Model addition step   3: Added term 0 1 0 1 0 1 0 0 0 -- RMS=43.405056, GCV=3.602175e-05, AIC = 2.300349
+  Model addition step   4: Added term 0 0 0 3 1 0 0 0 0 -- RMS=39.551788, GCV=3.002405e-05, AIC = 2.114797
+  Model addition step   5: Added term 0 0 0 0 0 0 1 1 0 -- RMS=36.247419, GCV=2.531321e-05, AIC = 1.940690
+  Model addition step   6: Added term 0 0 0 0 0 0 0 0 1 -- RMS=31.722894, GCV=1.946247e-05, AIC = 1.674409
+  Model addition step   7: Added term 0 1 1 0 0 0 2 0 0 -- RMS=29.143508, GCV=1.648915e-05, AIC = 1.505174
+  Model addition step   8: Added term 0 0 0 4 0 0 0 0 0 -- RMS=26.532665, GCV=1.371962e-05, AIC = 1.317841
+  Model addition step   9: Added term 0 0 0 1 0 0 1 0 0 -- RMS=24.497856, GCV=1.174100e-05, AIC = 1.158637
+  Model addition step  10: Added term 0 0 0 0 0 0 3 1 0 -- RMS=22.762878, GCV=1.017596e-05, AIC = 1.012106
+Change in error: 0.046766. No more terms added.
+   11 polynomial terms were written for pectmajt5
 pectmajt6
-  RMS fit error of the full model is: 7.071744 mm
-  maximum moment arm: 96.080508 mm
-  maximum error allowed: 9.608051 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=61.022212, GCV=7.065839e-05, AIC = 2.980917
-  Model addition step   2: Added term 2 1 0 0 0 0 0 0 0 -- RMS=52.543859, GCV=5.258700e-05, AIC = 2.682116
-  Model addition step   3: Added term 1 0 0 0 0 0 0 0 0 -- RMS=47.334251, GCV=4.283859e-05, AIC = 2.473665
-  Model addition step   4: Added term 0 0 0 3 0 1 0 0 0 -- RMS=42.633443, GCV=3.488493e-05, AIC = 2.264853
-  Model addition step   5: Added term 0 0 0 3 1 0 0 0 0 -- RMS=38.082986, GCV=2.794185e-05, AIC = 2.039489
-  Model addition step   6: Added term 0 0 0 1 0 0 1 1 0 -- RMS=34.028929, GCV=2.239489e-05, AIC = 1.814753
-  Model addition step   7: Added term 2 1 1 0 0 0 0 0 0 -- RMS=31.344917, GCV=1.907431e-05, AIC = 1.650814
-  Model addition step   8: Added term 0 0 1 0 0 1 0 0 0 -- RMS=28.457964, GCV=1.578294e-05, AIC = 1.457944
-  Model addition step   9: Added term 0 0 0 2 0 0 0 0 0 -- RMS=25.868392, GCV=1.309145e-05, AIC = 1.267509
-  Model addition step  10: Added term 0 1 0 1 1 0 0 1 0 -- RMS=24.494019, GCV=1.178260e-05, AIC = 1.158702
-  Model addition step  11: Added term 0 0 0 0 0 0 3 1 0 -- RMS=23.046721, GCV=1.047163e-05, AIC = 1.037269
-  Model addition step  12: Added term 0 0 0 2 0 0 0 1 1 -- RMS=21.249587, GCV=8.936667e-06, AIC = 0.875275
-  Model addition step  13: Added term 0 0 0 0 0 0 1 0 0 -- RMS=20.003087, GCV=7.949692e-06, AIC = 0.754751
-Change in error: 0.046600. No more terms added.
-   14 polynomial terms were written for pectmajt6
+  RMS fit error of the full model is: 2.702001 mm
+  maximum moment arm: 94.566329 mm
+  maximum error allowed: 9.456633 mm
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=63.900934, GCV=7.748225e-05, AIC = 3.073109
+  Model addition step   2: Added term 2 1 0 0 0 0 0 0 0 -- RMS=56.079359, GCV=5.990189e-05, AIC = 2.812355
+  Model addition step   3: Added term 0 2 1 0 0 0 0 0 0 -- RMS=51.434915, GCV=5.058249e-05, AIC = 2.639832
+  Model addition step   4: Added term 0 0 0 2 0 1 0 0 0 -- RMS=46.478971, GCV=4.146198e-05, AIC = 2.437575
+  Model addition step   5: Added term 0 0 0 3 1 0 0 0 0 -- RMS=42.326807, GCV=3.451629e-05, AIC = 2.250795
+  Model addition step   6: Added term 0 0 0 1 0 0 1 1 0 -- RMS=38.351633, GCV=2.844592e-05, AIC = 2.053926
+  Model addition step   7: Added term 0 0 0 0 0 0 0 0 1 -- RMS=32.980528, GCV=2.111689e-05, AIC = 1.752544
+  Model addition step   8: Added term 0 0 0 2 0 0 0 0 0 -- RMS=30.059046, GCV=1.760883e-05, AIC = 1.567415
+  Model addition step   9: Added term 1 0 0 0 0 0 0 0 0 -- RMS=27.520038, GCV=1.481655e-05, AIC = 1.391294
+  Model addition step  10: Added term 0 0 1 0 0 0 2 0 0 -- RMS=25.236128, GCV=1.250738e-05, AIC = 1.218397
+  Model addition step  11: Added term 1 1 0 1 0 0 0 0 0 -- RMS=23.381838, GCV=1.077838e-05, AIC = 1.066141
+  Model addition step  12: Added term 0 0 0 0 0 0 3 1 0 -- RMS=21.663978, GCV=9.288616e-06, AIC = 0.913902
+  Model addition step  13: Added term 0 0 0 0 0 0 1 0 0 -- RMS=19.242927, GCV=7.356962e-06, AIC = 0.677265
+  Model addition step  14: Added term 0 0 1 1 1 1 0 0 0 -- RMS=17.863118, GCV=6.364374e-06, AIC = 0.528832
+  Model addition step  15: Added term 1 0 1 0 1 0 0 0 0 -- RMS=16.227402, GCV=5.272632e-06, AIC = 0.337137
+Change in error: 0.031879. No more terms added.
+   16 polynomial terms were written for pectmajt6
 pectmajc1
-  RMS fit error of the full model is: 9.280868 mm
+  RMS fit error of the full model is: 3.563173 mm
   maximum moment arm: 126.907110 mm
   maximum error allowed: 12.690711 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=58.703535, GCV=4.577353e-05, AIC = 2.546928
-  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=48.794632, GCV=3.174509e-05, AIC = 2.177709
-  Model addition step   3: Added term 1 0 0 1 1 0 -- RMS=41.896471, GCV=2.349293e-05, AIC = 1.873412
-  Model addition step   4: Added term 0 1 0 0 0 0 -- RMS=36.282066, GCV=1.768557e-05, AIC = 1.586196
-  Model addition step   5: Added term 1 0 0 2 1 0 -- RMS=32.128445, GCV=1.392100e-05, AIC = 1.343572
-  Model addition step   6: Added term 4 0 0 0 0 0 -- RMS=29.171716, GCV=1.152058e-05, AIC = 1.151028
-  Model addition step   7: Added term 2 1 1 0 0 0 -- RMS=27.195672, GCV=1.005107e-05, AIC = 1.011284
-  Model addition step   8: Added term 0 0 0 0 0 1 -- RMS=25.071768, GCV=8.575278e-06, AIC = 0.849194
-  Model addition step   9: Added term 0 0 0 1 0 0 -- RMS=23.431298, GCV=7.518647e-06, AIC = 0.714394
-  Model addition step  10: Added term 0 0 0 3 1 0 -- RMS=21.370076, GCV=6.278142e-06, AIC = 0.530772
-  Model addition step  11: Added term 0 0 2 0 0 0 -- RMS=19.368947, GCV=5.177334e-06, AIC = 0.334671
-  Model addition step  12: Added term 2 0 0 0 0 2 -- RMS=17.868063, GCV=4.423108e-06, AIC = 0.173899
-Change in error: 0.044401. No more terms added.
-   13 polynomial terms were written for pectmajc1
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=63.607917, GCV=5.374131e-05, AIC = 2.707404
+  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=53.726810, GCV=3.848705e-05, AIC = 2.370293
+  Model addition step   3: Added term 1 0 0 1 1 0 -- RMS=46.695967, GCV=2.918374e-05, AIC = 2.090324
+  Model addition step   4: Added term 0 0 0 0 0 1 -- RMS=39.568232, GCV=2.103432e-05, AIC = 1.759602
+  Model addition step   5: Added term 0 1 0 0 0 0 -- RMS=32.578276, GCV=1.431355e-05, AIC = 1.371380
+  Model addition step   6: Added term 2 0 0 0 0 0 -- RMS=28.348072, GCV=1.087921e-05, AIC = 1.093747
+  Model addition step   7: Added term 0 0 0 3 1 0 -- RMS=24.428556, GCV=8.109765e-06, AIC = 0.796674
+  Model addition step   8: Added term 3 1 0 0 0 0 -- RMS=22.203506, GCV=6.725450e-06, AIC = 0.606209
+  Model addition step   9: Added term 0 0 0 1 0 0 -- RMS=19.760192, GCV=5.347236e-06, AIC = 0.373588
+  Model addition step  10: Added term 1 0 2 0 0 0 -- RMS=17.578404, GCV=4.247935e-06, AIC = 0.140131
+  Model addition step  11: Added term 0 0 0 2 2 0 -- RMS=15.472008, GCV=3.303601e-06, AIC = -0.114606
+  Model addition step  12: Added term 0 0 0 0 2 2 -- RMS=13.302671, GCV=2.451604e-06, AIC = -0.416201
+  Model addition step  13: Added term 2 0 0 1 1 0 -- RMS=12.513519, GCV=2.177776e-06, AIC = -0.537972
+  14 polynomial terms were written for pectmajc1
 pectmajc2
-  RMS fit error of the full model is: 8.177663 mm
+  RMS fit error of the full model is: 3.796148 mm
   maximum moment arm: 101.415428 mm
   maximum error allowed: 10.141543 mm
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=47.528145, GCV=3.000458e-05, AIC = 2.124572
-  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=39.460296, GCV=2.076123e-05, AIC = 1.753058
-  Model addition step   3: Added term 0 0 0 1 1 0 -- RMS=34.268781, GCV=1.571736e-05, AIC = 1.471478
-  Model addition step   4: Added term 4 0 0 0 0 0 -- RMS=31.000692, GCV=1.291153e-05, AIC = 1.271567
-  Model addition step   5: Added term 0 1 0 2 0 0 -- RMS=28.486974, GCV=1.094419e-05, AIC = 1.102982
-  Model addition step   6: Added term 0 0 0 2 2 0 -- RMS=26.108091, GCV=9.227851e-06, AIC = 0.929119
-  Model addition step   7: Added term 1 0 0 1 0 0 -- RMS=23.960181, GCV=7.801765e-06, AIC = 0.757955
-  Model addition step   8: Added term 0 0 0 0 0 1 -- RMS=22.294960, GCV=6.780967e-06, AIC = 0.614430
-  Model addition step   9: Added term 2 0 1 0 1 0 -- RMS=20.806187, GCV=5.928325e-06, AIC = 0.476750
-  Model addition step  10: Added term 0 0 0 3 1 0 -- RMS=19.657855, GCV=5.312406e-06, AIC = 0.363743
-Change in error: 0.047596. No more terms added.
-   11 polynomial terms were written for pectmajc2
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=52.718008, GCV=3.691508e-05, AIC = 2.331842
+  Model addition step   2: Added term 3 0 1 0 0 0 -- RMS=44.523248, GCV=2.643055e-05, AIC = 1.994491
+  Model addition step   3: Added term 1 0 0 1 1 0 -- RMS=38.706003, GCV=2.005113e-05, AIC = 1.714998
+  Model addition step   4: Added term 0 0 0 0 0 1 -- RMS=33.662989, GCV=1.522441e-05, AIC = 1.436346
+  Model addition step   5: Added term 1 0 0 0 0 0 -- RMS=29.510941, GCV=1.174511e-05, AIC = 1.173611
+  Model addition step   6: Added term 0 1 0 2 0 0 -- RMS=25.080680, GCV=8.515868e-06, AIC = 0.848824
+  Model addition step   7: Added term 0 0 0 3 1 0 -- RMS=22.723764, GCV=7.017351e-06, AIC = 0.651991
+  Model addition step   8: Added term 0 0 0 1 0 0 -- RMS=19.684176, GCV=5.285824e-06, AIC = 0.365339
+  Model addition step   9: Added term 2 0 2 0 0 0 -- RMS=18.457709, GCV=4.665548e-06, AIC = 0.237213
+Change in error: 0.049811. No more terms added.
+   10 polynomial terms were written for pectmajc2
 tricmed1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 18.472001 mm
+  RMS fit error of the full model is: 0.073109 mm
+  maximum moment arm: 19.591834 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=13.061677, GCV=6.474641e-07, AIC = -1.710119
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=2.715128e-29, AIC = -53.237947
+  Model addition step   1: Added term 0 -- RMS=17.026092, GCV=1.811799e-04, AIC = -5.643431
+  Model addition step   2: Added term 1 -- RMS=0.369548, GCV=1.517394e-07, AIC = -13.103876
   3 polynomial terms were written for tricmed1
 tricmed2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 19.199419 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=13.576039, GCV=6.994618e-07, AIC = -1.632872
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=2.651187e-29, AIC = -53.261778
+  RMS fit error of the full model is: 0.104004 mm
+  maximum moment arm: 20.262199 mm
+  maximum error allowed: 2.026220 mm
+  Model addition step   1: Added term 0 -- RMS=17.114731, GCV=1.830713e-04, AIC = -5.633046
+  Model addition step   2: Added term 1 -- RMS=0.565639, GCV=3.554973e-07, AIC = -12.252524
   3 polynomial terms were written for tricmed2
 tricmed3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 17.871182 mm
+  RMS fit error of the full model is: 0.067197 mm
+  maximum moment arm: 18.672415 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=12.636834, GCV=6.060303e-07, AIC = -1.776253
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=1.474310e-29, AIC = -53.848596
+  Model addition step   1: Added term 0 -- RMS=16.487836, GCV=1.699055e-04, AIC = -5.707680
+  Model addition step   2: Added term 1 -- RMS=0.278778, GCV=8.635268e-08, AIC = -13.667601
   3 polynomial terms were written for tricmed3
 tricmed4
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 20.160948 mm
-  maximum error allowed: 2.016095 mm
-  Model addition step   1: Added term 0 -- RMS=14.255943, GCV=7.712758e-07, AIC = -1.535137
-  Model addition step   2: Added term 4 -- RMS=0.000000, GCV=1.912500e-29, AIC = -53.588375
+  RMS fit error of the full model is: 0.131067 mm
+  maximum moment arm: 21.032098 mm
+  maximum error allowed: 2.103210 mm
+  Model addition step   1: Added term 0 -- RMS=17.167615, GCV=1.842044e-04, AIC = -5.626876
+  Model addition step   2: Added term 1 -- RMS=0.812605, GCV=7.336966e-07, AIC = -11.527946
   3 polynomial terms were written for tricmed4
 tricmed5
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 19.606224 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=13.863694, GCV=7.294168e-07, AIC = -1.590938
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=2.601552e-29, AIC = -53.280678
+  RMS fit error of the full model is: 0.117900 mm
+  maximum moment arm: 20.607036 mm
+  maximum error allowed: 2.060704 mm
+  Model addition step   1: Added term 0 -- RMS=17.167484, GCV=1.842016e-04, AIC = -5.626891
+  Model addition step   2: Added term 1 -- RMS=0.664755, GCV=4.909986e-07, AIC = -11.929600
   3 polynomial terms were written for tricmed5
 brachialis1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.444904 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.214090, GCV=3.959289e-07, AIC = -2.201948
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=9.822888e-29, AIC = -51.952071
-  3 polynomial terms were written for brachialis1
+  RMS fit error of the full model is: 0.274033 mm
+  maximum moment arm: 42.632397 mm
+  maximum error allowed: 4.263240 mm
+  Model addition step   1: Added term 0 -- RMS=29.950348, GCV=5.606396e-04, AIC = -4.513844
+  Model addition step   2: Added term 1 -- RMS=7.690945, GCV=6.572292e-05, AIC = -7.032838
+  Model addition step   3: Added term 2 -- RMS=5.310353, GCV=7.049962e-05, AIC = -7.573609
+  Model addition step   4: Added term 4 -- RMS=1.322759, GCV=1.749692e-05, AIC = -10.153486
+  5 polynomial terms were written for brachialis1
 brachialis2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.531749 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.275498, GCV=4.007039e-07, AIC = -2.189960
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=1.201122e-28, AIC = -51.750945
-  3 polynomial terms were written for brachialis2
+  RMS fit error of the full model is: 0.223089 mm
+  maximum moment arm: 40.053498 mm
+  maximum error allowed: 4.005350 mm
+  Model addition step   1: Added term 0 -- RMS=28.626318, GCV=5.121663e-04, AIC = -4.604272
+  Model addition step   2: Added term 1 -- RMS=7.067980, GCV=5.550704e-05, AIC = -7.201776
+  Model addition step   3: Added term 2 -- RMS=5.623927, GCV=7.907139e-05, AIC = -7.458865
+  Model addition step   4: Added term 4 -- RMS=1.060252, GCV=1.124134e-05, AIC = -10.595913
+  5 polynomial terms were written for brachialis2
 brachialis3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.528188 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.272980, GCV=4.005076e-07, AIC = -2.190450
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=6.312765e-29, AIC = -52.394212
-  3 polynomial terms were written for brachialis3
+  RMS fit error of the full model is: 0.351145 mm
+  maximum moment arm: 29.359801 mm
+  maximum error allowed: 2.935980 mm
+  Model addition step   1: Added term 0 -- RMS=21.083530, GCV=2.778220e-04, AIC = -5.215941
+  Model addition step   2: Added term 1 -- RMS=4.320735, GCV=2.074305e-05, AIC = -8.186075
+  Model addition step   3: Added term 2 -- RMS=3.192667, GCV=2.548281e-05, AIC = -8.591212
+  Model addition step   4: Added term 4 -- RMS=1.521604, GCV=2.315278e-05, AIC = -9.873396
+  5 polynomial terms were written for brachialis3
 brachialis4
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.511101 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.260898, GCV=3.995660e-07, AIC = -2.192804
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=7.363225e-29, AIC = -52.240288
-  3 polynomial terms were written for brachialis4
+  RMS fit error of the full model is: 0.164895 mm
+  maximum moment arm: 40.213396 mm
+  maximum error allowed: 4.021340 mm
+  Model addition step   1: Added term 0 -- RMS=28.267158, GCV=4.993952e-04, AIC = -4.629524
+  Model addition step   2: Added term 1 -- RMS=6.970472, GCV=5.398609e-05, AIC = -7.229560
+  Model addition step   3: Added term 2 -- RMS=4.815180, GCV=5.796491e-05, AIC = -7.769378
+  Model addition step   4: Added term 4 -- RMS=1.303454, GCV=1.698992e-05, AIC = -10.182890
+  5 polynomial terms were written for brachialis4
 brachialis5
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.536405 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.278791, GCV=4.009608e-07, AIC = -2.189319
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=6.167156e-29, AIC = -52.417548
-  3 polynomial terms were written for brachialis5
+  RMS fit error of the full model is: 0.310570 mm
+  maximum moment arm: 35.372951 mm
+  maximum error allowed: 3.537295 mm
+  Model addition step   1: Added term 0 -- RMS=24.812078, GCV=3.847745e-04, AIC = -4.890264
+  Model addition step   2: Added term 2 -- RMS=6.284635, GCV=4.388515e-05, AIC = -7.436710
+  Model addition step   3: Added term 1 -- RMS=2.262402, GCV=1.279616e-05, AIC = -9.280071
+  4 polynomial terms were written for brachialis5
 brachialis6
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.332197 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.134393, GCV=3.897744e-07, AIC = -2.217615
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=5.719169e-29, AIC = -52.492962
-  3 polynomial terms were written for brachialis6
+  RMS fit error of the full model is: 0.162695 mm
+  maximum moment arm: 30.228043 mm
+  maximum error allowed: 3.022804 mm
+  Model addition step   1: Added term 0 -- RMS=21.492773, GCV=2.887121e-04, AIC = -5.177492
+  Model addition step   2: Added term 1 -- RMS=4.498046, GCV=2.248046e-05, AIC = -8.105639
+  Model addition step   3: Added term 2 -- RMS=2.891061, GCV=2.089558e-05, AIC = -8.789678
+  4 polynomial terms were written for brachialis6
 brachialis7
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.471309 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=10.232761, GCV=3.973777e-07, AIC = -2.198296
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=5.780394e-29, AIC = -52.482314
-  3 polynomial terms were written for brachialis7
+  RMS fit error of the full model is: 0.233710 mm
+  maximum moment arm: 36.114259 mm
+  maximum error allowed: 3.611426 mm
+  Model addition step   1: Added term 0 -- RMS=25.779417, GCV=4.153615e-04, AIC = -4.813773
+  Model addition step   2: Added term 2 -- RMS=6.173099, GCV=4.234128e-05, AIC = -7.472523
+  Model addition step   3: Added term 1 -- RMS=1.834206, GCV=8.410782e-06, AIC = -9.699702
+  4 polynomial terms were written for brachialis7
 brachiorad1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 18.235569 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 0 -- RMS=14.889280, GCV=1.261992e-06, AIC = -1.043367
-  Model addition step   2: Added term 1 0 -- RMS=10.528311, GCV=6.333927e-07, AIC = -1.735254
-  Model addition step   3: Added term 2 2 -- RMS=0.000000, GCV=1.903009e-26, AIC = -46.689393
-  4 polynomial terms were written for brachiorad1
+  RMS fit error of the full model is: 3.145191 mm
+  maximum moment arm: 85.461168 mm
+  maximum error allowed: 8.546117 mm
+  Model addition step   1: Added term 0 0 -- RMS=54.140378, GCV=3.816641e-04, AIC = -1.488195
+  Model addition step   2: Added term 1 0 -- RMS=29.402317, GCV=1.225656e-04, AIC = -2.682542
+  Model addition step   3: Added term 1 1 -- RMS=21.207855, GCV=6.969625e-05, AIC = -3.309279
+  Model addition step   4: Added term 2 0 -- RMS=18.089146, GCV=5.564918e-05, AIC = -3.600732
+  Model addition step   5: Added term 4 0 -- RMS=14.948000, GCV=4.189550e-05, AIC = -3.955534
+  Model addition step   6: Added term 3 1 -- RMS=12.951742, GCV=3.485061e-05, AIC = -4.215562
+  Model addition step   7: Added term 0 4 -- RMS=11.244311, GCV=2.926725e-05, AIC = -4.471631
+  Model addition step   8: Added term 0 2 -- RMS=8.049014, GCV=1.681314e-05, AIC = -5.113590
+  9 polynomial terms were written for brachiorad1
 brachiorad2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 7.864882 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 0 -- RMS=6.421649, GCV=2.347482e-07, AIC = -2.725300
-  Model addition step   2: Added term 1 0 -- RMS=4.540792, GCV=1.178200e-07, AIC = -3.417187
-  Model addition step   3: Added term 2 2 -- RMS=0.000000, GCV=4.953831e-26, AIC = -45.732668
-  4 polynomial terms were written for brachiorad2
+  RMS fit error of the full model is: 2.487677 mm
+  maximum moment arm: 70.211899 mm
+  maximum error allowed: 7.021190 mm
+  Model addition step   1: Added term 0 0 -- RMS=43.587122, GCV=2.473746e-04, AIC = -1.921832
+  Model addition step   2: Added term 2 0 -- RMS=22.812745, GCV=7.378374e-05, AIC = -3.190050
+  Model addition step   3: Added term 1 1 -- RMS=15.813684, GCV=3.875092e-05, AIC = -3.896271
+  Model addition step   4: Added term 4 0 -- RMS=11.503433, GCV=2.250493e-05, AIC = -4.506065
+  Model addition step   5: Added term 3 1 -- RMS=10.489443, GCV=2.063033e-05, AIC = -4.663951
+  Model addition step   6: Added term 0 4 -- RMS=9.367504, GCV=1.823064e-05, AIC = -4.863529
+  Model addition step   7: Added term 0 2 -- RMS=7.569056, GCV=1.326172e-05, AIC = -5.263219
+  Model addition step   8: Added term 0 1 -- RMS=6.738324, GCV=1.178331e-05, AIC = -5.469067
+  9 polynomial terms were written for brachiorad2
 brachiorad3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 2.551503 mm
-  maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 0 -- RMS=2.083294, GCV=2.470644e-08, AIC = -4.976749
-  Model addition step   2: Added term 2 1 -- RMS=0.250992, GCV=3.599780e-10, AIC = -9.208057
-  3 polynomial terms were written for brachiorad3
+  RMS fit error of the full model is: 2.047694 mm
+  maximum moment arm: 55.374858 mm
+  maximum error allowed: 5.537486 mm
+  Model addition step   1: Added term 0 0 -- RMS=33.962677, GCV=1.501906e-04, AIC = -2.420831
+  Model addition step   2: Added term 2 0 -- RMS=17.540053, GCV=4.361817e-05, AIC = -3.715715
+  Model addition step   3: Added term 1 1 -- RMS=11.841472, GCV=2.172838e-05, AIC = -4.474807
+  Model addition step   4: Added term 4 0 -- RMS=9.023216, GCV=1.384667e-05, AIC = -4.991754
+  Model addition step   5: Added term 3 1 -- RMS=8.386389, GCV=1.318716e-05, AIC = -5.111469
+  Model addition step   6: Added term 0 4 -- RMS=7.903454, GCV=1.297741e-05, AIC = -5.203423
+  Model addition step   7: Added term 0 3 -- RMS=6.925488, GCV=1.110240e-05, AIC = -5.440939
+  Model addition step   8: Added term 0 1 -- RMS=6.051346, GCV=9.503146e-06, AIC = -5.684128
+  Model addition step   9: Added term 1 3 -- RMS=5.525931, GCV=8.946068e-06, AIC = -5.839119
+  10 polynomial terms were written for brachiorad3
 pronteres1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 4.661693 mm
+  RMS fit error of the full model is: 1.929607 mm
+  maximum moment arm: 10.366229 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 0 -- RMS=3.806256, GCV=8.247173e-08, AIC = -3.771358
-  Model addition step   2: Added term 1 3 -- RMS=1.398601, GCV=1.117746e-08, AIC = -5.772445
-  3 polynomial terms were written for pronteres1
+  Model addition step   1: Added term 0 0 -- RMS=6.598026, GCV=5.668483e-06, AIC = -5.697815
+  Model addition step   2: Added term 1 0 -- RMS=3.599507, GCV=1.836926e-06, AIC = -6.883095
+  Model addition step   3: Added term 0 3 -- RMS=2.994681, GCV=1.389687e-06, AIC = -7.224347
+Change in error: 0.022896. No more terms added.
+   4 polynomial terms were written for pronteres1
 pronteres2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 3.681061 mm
+  RMS fit error of the full model is: 0.051656 mm
+  maximum moment arm: 8.362793 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=2.602903, GCV=2.571188e-08, AIC = -4.936230
-  Model addition step   2: Added term 4 -- RMS=0.000000, GCV=2.387098e-29, AIC = -53.366707
+  Model addition step   1: Added term 0 -- RMS=4.310356, GCV=1.161198e-05, AIC = -8.390885
+  Model addition step   2: Added term 3 -- RMS=0.920595, GCV=9.416607e-07, AIC = -11.278396
   3 polynomial terms were written for pronteres2
 supinator1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 17.009753 mm
+  RMS fit error of the full model is: 0.061710 mm
+  maximum moment arm: 18.791975 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 1 -- RMS=7.074807, GCV=1.899533e-07, AIC = -2.936404
-  Model addition step   2: Added term 4 -- RMS=0.000000, GCV=1.099678e-28, AIC = -51.839183
-  3 polynomial terms were written for supinator1
+  Model addition step   1: Added term 1 -- RMS=9.707735, GCV=5.890007e-05, AIC = -6.767080
+  Model addition step   2: Added term 0 -- RMS=2.459569, GCV=6.721644e-06, AIC = -9.312953
+  Model addition step   3: Added term 4 -- RMS=0.925796, GCV=2.142744e-06, AIC = -11.067129
+  4 polynomial terms were written for supinator1
 supinator2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 14.574132 mm
+  RMS fit error of the full model is: 0.065537 mm
+  maximum moment arm: 15.534700 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 1 -- RMS=7.588214, GCV=2.185229e-07, AIC = -2.796292
-  Model addition step   2: Added term 0 -- RMS=0.000000, GCV=6.616813e-29, AIC = -52.347172
+  Model addition step   1: Added term 1 -- RMS=10.453074, GCV=6.829172e-05, AIC = -6.619133
+  Model addition step   2: Added term 0 -- RMS=1.900310, GCV=4.012421e-06, AIC = -9.828891
   3 polynomial terms were written for supinator2
 supinator3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 11.580256 mm
+  RMS fit error of the full model is: 0.171000 mm
+  maximum moment arm: 11.780568 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=8.188478, GCV=2.544627e-07, AIC = -2.644029
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=1.529319e-28, AIC = -51.509378
+  Model addition step   1: Added term 0 -- RMS=10.088002, GCV=6.360486e-05, AIC = -6.690232
+  Model addition step   2: Added term 1 -- RMS=1.488916, GCV=2.463190e-06, AIC = -10.316829
   3 polynomial terms were written for supinator3
 supinator4
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 10.441920 mm
+  RMS fit error of the full model is: 0.261223 mm
+  maximum moment arm: 10.627738 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=7.383552, GCV=2.068943e-07, AIC = -2.850975
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=2.264604e-28, AIC = -51.116801
+  Model addition step   1: Added term 0 -- RMS=9.121931, GCV=5.200602e-05, AIC = -6.891562
+  Model addition step   2: Added term 1 -- RMS=1.503672, GCV=2.512255e-06, AIC = -10.297105
   3 polynomial terms were written for supinator4
 supinator5
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 9.374610 mm
+  RMS fit error of the full model is: 0.000714 mm
+  maximum moment arm: 9.641109 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=6.628850, GCV=1.667609e-07, AIC = -3.066622
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=1.661141e-28, AIC = -51.426696
+  Model addition step   1: Added term 0 -- RMS=8.366434, GCV=4.374826e-05, AIC = -7.064470
+  Model addition step   2: Added term 1 -- RMS=1.032315, GCV=1.184083e-06, AIC = -11.049317
   3 polynomial terms were written for supinator5
 pronquad1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 6.219788 mm
+  RMS fit error of the full model is: 0.001950 mm
+  maximum moment arm: 9.199545 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=4.398055, GCV=7.340727e-08, AIC = -3.887160
-  Model addition step   2: Added term 4 -- RMS=0.000000, GCV=2.994083e-28, AIC = -50.837563
+  Model addition step   1: Added term 0 -- RMS=6.026323, GCV=2.269786e-05, AIC = -7.720651
+  Model addition step   2: Added term 2 -- RMS=0.995617, GCV=1.101392e-06, AIC = -11.121711
   3 polynomial terms were written for pronquad1
 pronquad2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 8.286319 mm
+  RMS fit error of the full model is: 0.003363 mm
+  maximum moment arm: 10.416943 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=5.859313, GCV=1.302900e-07, AIC = -3.313420
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=1.127566e-28, AIC = -51.814140
+  Model addition step   1: Added term 0 -- RMS=7.645867, GCV=3.653705e-05, AIC = -7.244595
+  Model addition step   2: Added term 2 -- RMS=1.752270, GCV=3.411612e-06, AIC = -9.991101
   3 polynomial terms were written for pronquad2
 pronquad3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 9.368366 mm
+  RMS fit error of the full model is: 0.001758 mm
+  maximum moment arm: 10.823059 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=6.624435, GCV=1.665388e-07, AIC = -3.067954
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=1.037135e-28, AIC = -51.897738
+  Model addition step   1: Added term 0 -- RMS=8.464170, GCV=4.477636e-05, AIC = -7.041242
+  Model addition step   2: Added term 1 -- RMS=1.901525, GCV=4.017552e-06, AIC = -9.827613
   3 polynomial terms were written for pronquad3
 triclat1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 21.134614 mm
-  maximum error allowed: 2.113461 mm
-  Model addition step   1: Added term 0 -- RMS=14.944429, GCV=8.475718e-07, AIC = -1.440807
-  Model addition step   2: Added term 1 -- RMS=0.000000, GCV=2.997465e-29, AIC = -53.139019
+  RMS fit error of the full model is: 0.196831 mm
+  maximum moment arm: 20.782669 mm
+  maximum error allowed: 2.078267 mm
+  Model addition step   1: Added term 0 -- RMS=17.552133, GCV=1.925484e-04, AIC = -5.582574
+  Model addition step   2: Added term 1 -- RMS=0.820323, GCV=7.477007e-07, AIC = -11.509038
   3 polynomial terms were written for triclat1
 triclat2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 21.724579 mm
-  maximum error allowed: 2.172458 mm
-  Model addition step   1: Added term 0 -- RMS=15.361597, GCV=8.955515e-07, AIC = -1.385743
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=2.711088e-29, AIC = -53.239436
+  RMS fit error of the full model is: 0.097899 mm
+  maximum moment arm: 21.613493 mm
+  maximum error allowed: 2.161349 mm
+  Model addition step   1: Added term 0 -- RMS=17.556324, GCV=1.926403e-04, AIC = -5.582097
+  Model addition step   2: Added term 1 -- RMS=0.971808, GCV=1.049345e-06, AIC = -11.170120
   3 polynomial terms were written for triclat2
 triclat3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 18.934036 mm
+  RMS fit error of the full model is: 0.041693 mm
+  maximum moment arm: 19.225962 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=13.388385, GCV=6.802589e-07, AIC = -1.660710
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=3.099844e-29, AIC = -53.105434
+  Model addition step   1: Added term 0 -- RMS=17.019147, GCV=1.810321e-04, AIC = -5.644247
+  Model addition step   2: Added term 1 -- RMS=0.248691, GCV=6.871888e-08, AIC = -13.896017
   3 polynomial terms were written for triclat3
 triclat4
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 18.833848 mm
+  RMS fit error of the full model is: 0.040874 mm
+  maximum moment arm: 19.143824 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=13.317542, GCV=6.730789e-07, AIC = -1.671320
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=2.996704e-29, AIC = -53.139273
+  Model addition step   1: Added term 0 -- RMS=16.983621, GCV=1.802771e-04, AIC = -5.648427
+  Model addition step   2: Added term 1 -- RMS=0.233649, GCV=6.065747e-08, AIC = -14.020799
   3 polynomial terms were written for triclat4
 triclat5
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 18.453706 mm
+  RMS fit error of the full model is: 0.003102 mm
+  maximum moment arm: 18.405416 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=13.048741, GCV=6.461823e-07, AIC = -1.712101
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=2.836908e-29, AIC = -53.194071
+  Model addition step   1: Added term 0 -- RMS=16.871823, GCV=1.779115e-04, AIC = -5.661636
+  Model addition step   2: Added term 1 -- RMS=0.026052, GCV=7.540946e-10, AIC = -18.408279
   3 polynomial terms were written for triclat5
 anconeus1
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 11.257321 mm
+  RMS fit error of the full model is: 0.014411 mm
+  maximum moment arm: 11.295773 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=7.960128, GCV=2.404684e-07, AIC = -2.700594
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=1.720984e-29, AIC = -53.693889
-  3 polynomial terms were written for anconeus1
+  Model addition step   1: Added term 0 -- RMS=6.482319, GCV=2.626279e-05, AIC = -7.574769
+  Model addition step   2: Added term 1 -- RMS=3.671892, GCV=1.498088e-05, AIC = -8.511511
+  Model addition step   3: Added term 3 -- RMS=0.409624, GCV=4.194793e-07, AIC = -12.697957
+  4 polynomial terms were written for anconeus1
 anconeus2
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 10.185745 mm
+  RMS fit error of the full model is: 0.029768 mm
+  maximum moment arm: 10.359996 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=7.202409, GCV=1.968672e-07, AIC = -2.900653
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=1.672087e-29, AIC = -53.722714
-  3 polynomial terms were written for anconeus2
+  Model addition step   1: Added term 0 -- RMS=6.916263, GCV=2.989668e-05, AIC = -7.445174
+  Model addition step   2: Added term 1 -- RMS=2.915151, GCV=9.442340e-06, AIC = -8.973082
+  Model addition step   3: Added term 3 -- RMS=0.332505, GCV=2.763990e-07, AIC = -13.115126
+  4 polynomial terms were written for anconeus2
 anconeus3
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 12.246879 mm
+  RMS fit error of the full model is: 0.002659 mm
+  maximum moment arm: 12.624977 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=8.659851, GCV=2.846025e-07, AIC = -2.532089
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=1.633003e-29, AIC = -53.746365
-  3 polynomial terms were written for anconeus3
+  Model addition step   1: Added term 0 -- RMS=6.332688, GCV=2.506434e-05, AIC = -7.621476
+  Model addition step   2: Added term 1 -- RMS=4.591516, GCV=2.342446e-05, AIC = -8.064505
+  Model addition step   3: Added term 2 -- RMS=0.357866, GCV=3.201701e-07, AIC = -12.968119
+  4 polynomial terms were written for anconeus3
 anconeus4
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 3.194506 mm
+  RMS fit error of the full model is: 0.021979 mm
+  maximum moment arm: 6.177099 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=2.258857, GCV=1.936400e-08, AIC = -5.219767
-  Model addition step   2: Added term 2 -- RMS=0.000000, GCV=2.198290e-29, AIC = -53.449106
+  Model addition step   1: Added term 0 -- RMS=4.394006, GCV=1.206705e-05, AIC = -8.352443
+  Model addition step   2: Added term 1 -- RMS=1.202479, GCV=1.606617e-06, AIC = -10.744155
   3 polynomial terms were written for anconeus4
 anconeus5
-  RMS fit error of the full model is: 0.000000 mm
-  maximum moment arm: 5.649782 mm
+  RMS fit error of the full model is: 0.004127 mm
+  maximum moment arm: 7.908987 mm
   maximum error allowed: 2.000000 mm
-  Model addition step   1: Added term 0 -- RMS=3.994999, GCV=6.056911e-08, AIC = -4.079398
-  Model addition step   2: Added term 3 -- RMS=0.000000, GCV=2.202905e-29, AIC = -53.447009
+  Model addition step   1: Added term 0 -- RMS=5.695535, GCV=2.027445e-05, AIC = -7.833560
+  Model addition step   2: Added term 1 -- RMS=1.716809, GCV=3.274927e-06, AIC = -10.031990
   3 polynomial terms were written for anconeus5

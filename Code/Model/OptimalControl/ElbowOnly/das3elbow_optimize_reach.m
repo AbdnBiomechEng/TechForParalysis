@@ -68,8 +68,7 @@ arm_support = zeros(2,1);
 hand_force = OptSetup.hand_force;
 
 % Load structure with model related variables
-% modelparams = load('model_struct.mat'); this has all the muscles
-modelparams = load('model_struct_elbow.mat'); % this has a subset of muscles
+modelparams = load(OptSetup.model_file); 
 model = modelparams.model;
 
 ndof = model.nDofs;
@@ -89,6 +88,14 @@ dofnames = cell(ndof,1);
 for idof=1:ndof
     dofnames{idof} = model.dofs{idof}.osim_name;
 end
+
+% Get maximum muscle activation (normally 1, but 0 for paralysed muscles,
+% and 0.5 for FES muscles)
+maxact = zeros(nmus,1);
+for imus=1:mus
+    maxact(imus) = model.muscles{imus}.maxact;
+end
+
 
 % Initialize the model
 das3('Initialize',model);
@@ -125,8 +132,8 @@ for i_node = 0:N-1
     U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
         (zeros(ndof,1) + 40);                                           % qdot
         zeros(nmus,1) + 1.7;                                            % Lce
-        ones(nmus,1);                                                   % active states
-        ones(nmus,1) ];                                                 % neural excitations
+        maxact;                                                         % active states
+        maxact ];                                                       % neural excitations
 end
 
 % Should angular velocities be zero at the start and end of movement?
