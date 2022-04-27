@@ -1,1467 +1,1478 @@
 deltscap1
-  RMS fit error of the full model is: 0.008412 (normalized)
-range of amplitudes: 0.726626
-  Model addition step   1: Added term 0 0 0 -- RMS=0.145625, GCV=4.024018e-05, AIC = 2.421329
-  Model addition step   2: Added term 2 0 0 -- RMS=0.091702, GCV=1.601744e-05, AIC = 1.500130
-  Model addition step   3: Added term 0 2 0 -- RMS=0.079458, GCV=1.207146e-05, AIC = 1.217278
-  Model addition step   4: Added term 2 1 0 -- RMS=0.046884, GCV=4.218730e-06, AIC = 0.165943
+  RMS fit error of the full model is: 0.005348 (normalized)
+range of amplitudes: 0.553478
+  Model addition step   1: Added term 0 0 0 -- RMS=0.115305, GCV=2.522814e-05, AIC = 1.954423
+  Model addition step   2: Added term 2 0 0 -- RMS=0.091930, GCV=1.609721e-05, AIC = 1.505098
+  Model addition step   3: Added term 0 1 0 -- RMS=0.070823, GCV=9.590297e-06, AIC = 0.987186
+  Model addition step   4: Added term 2 1 0 -- RMS=0.052259, GCV=5.241607e-06, AIC = 0.383037
   4 polynomial terms were written for deltscap1 x force
 deltscap1
-  RMS fit error of the full model is: 0.011253 (normalized)
-range of amplitudes: 0.821056
-  Model addition step   1: Added term 0 0 0 -- RMS=0.157481, GCV=4.705943e-05, AIC = 2.577874
-  Model addition step   2: Added term 0 2 0 -- RMS=0.102135, GCV=1.986928e-05, AIC = 1.715627
-  Model addition step   3: Added term 2 1 0 -- RMS=0.044001, GCV=3.701818e-06, AIC = 0.035258
+  RMS fit error of the full model is: 0.008892 (normalized)
+range of amplitudes: 0.655391
+  Model addition step   1: Added term 0 0 0 -- RMS=0.148356, GCV=4.176344e-05, AIC = 2.458484
+  Model addition step   2: Added term 0 1 0 -- RMS=0.086015, GCV=1.409248e-05, AIC = 1.372093
+  Model addition step   3: Added term 2 1 0 -- RMS=0.047758, GCV=4.360818e-06, AIC = 0.199094
   3 polynomial terms were written for deltscap1 y force
 deltscap1
-  RMS fit error of the full model is: 0.013932 (normalized)
-range of amplitudes: 1.406921
-  Model addition step   1: Added term 1 1 0 -- RMS=0.173830, GCV=5.733726e-05, AIC = 2.775413
-  Model addition step   2: Added term 0 0 0 -- RMS=0.081976, GCV=1.279998e-05, AIC = 1.275896
+  RMS fit error of the full model is: 0.009002 (normalized)
+range of amplitudes: 1.280631
+  Model addition step   1: Added term 1 1 0 -- RMS=0.167479, GCV=5.322409e-05, AIC = 2.700974
+  Model addition step   2: Added term 0 0 0 -- RMS=0.070310, GCV=9.416021e-06, AIC = 0.968865
   2 polynomial terms were written for deltscap1 z force
 deltscap2
-  RMS fit error of the full model is: 0.016889 (normalized)
-range of amplitudes: 0.959846
-  Model addition step   1: Added term 0 0 0 -- RMS=0.191903, GCV=6.987976e-05, AIC = 2.973239
-  Model addition step   2: Added term 2 0 0 -- RMS=0.123452, GCV=2.902885e-05, AIC = 2.094742
-  Model addition step   3: Added term 0 2 0 -- RMS=0.115333, GCV=2.543248e-05, AIC = 1.962461
-  Model addition step   4: Added term 2 1 0 -- RMS=0.079155, GCV=1.202530e-05, AIC = 1.213422
-  4 polynomial terms were written for deltscap2 x force
+  RMS fit error of the full model is: 0.015644 (normalized)
+range of amplitudes: 0.704571
+  Model addition step   1: Added term 0 0 0 -- RMS=0.150584, GCV=4.302716e-05, AIC = 2.488294
+  Model addition step   2: Added term 2 0 0 -- RMS=0.122023, GCV=2.836099e-05, AIC = 2.071467
+  Model addition step   3: Added term 1 1 0 -- RMS=0.106467, GCV=2.167275e-05, AIC = 1.802490
+  Model addition step   4: Added term 3 1 0 -- RMS=0.085104, GCV=1.390061e-05, AIC = 1.358341
+  Model addition step   5: Added term 0 1 0 -- RMS=0.074455, GCV=1.068018e-05, AIC = 1.094766
+  Model addition step   6: Added term 2 1 0 -- RMS=0.041119, GCV=3.269934e-06, AIC = -0.088894
+  6 polynomial terms were written for deltscap2 x force
 deltscap2
-  RMS fit error of the full model is: 0.021566 (normalized)
-range of amplitudes: 0.711025
-  Model addition step   1: Added term 0 0 0 -- RMS=0.137635, GCV=3.594537e-05, AIC = 2.308463
-  Model addition step   2: Added term 0 2 0 -- RMS=0.099370, GCV=1.880809e-05, AIC = 1.660739
-  Model addition step   3: Added term 2 1 0 -- RMS=0.049186, GCV=4.625513e-06, AIC = 0.258021
+  RMS fit error of the full model is: 0.020572 (normalized)
+range of amplitudes: 0.586172
+  Model addition step   1: Added term 0 0 0 -- RMS=0.128497, GCV=3.133107e-05, AIC = 2.171073
+  Model addition step   2: Added term 0 1 0 -- RMS=0.092981, GCV=1.646740e-05, AIC = 1.527835
+  Model addition step   3: Added term 2 1 0 -- RMS=0.052211, GCV=5.212114e-06, AIC = 0.377420
   3 polynomial terms were written for deltscap2 y force
 deltscap2
-  RMS fit error of the full model is: 0.028320 (normalized)
-range of amplitudes: 1.616742
-  Model addition step   1: Added term 1 1 0 -- RMS=0.212688, GCV=8.583665e-05, AIC = 3.178909
-  Model addition step   2: Added term 0 0 0 -- RMS=0.087161, GCV=1.447033e-05, AIC = 1.398552
+  RMS fit error of the full model is: 0.023676 (normalized)
+range of amplitudes: 1.435487
+  Model addition step   1: Added term 1 1 0 -- RMS=0.216971, GCV=8.932844e-05, AIC = 3.218783
+  Model addition step   2: Added term 0 0 0 -- RMS=0.085371, GCV=1.388207e-05, AIC = 1.357050
   2 polynomial terms were written for deltscap2 z force
 deltscap3
-  RMS fit error of the full model is: 0.043035 (normalized)
-range of amplitudes: 1.337862
-  Model addition step   1: Added term 0 0 0 -- RMS=0.282177, GCV=1.510884e-04, AIC = 3.744328
-  Model addition step   2: Added term 2 0 0 -- RMS=0.178512, GCV=6.069723e-05, AIC = 2.832350
-  Model addition step   3: Added term 3 1 0 -- RMS=0.162069, GCV=5.022070e-05, AIC = 2.642861
-  Model addition step   4: Added term 0 1 0 -- RMS=0.135876, GCV=3.543404e-05, AIC = 2.294082
-  Model addition step   5: Added term 2 1 0 -- RMS=0.069502, GCV=9.306621e-06, AIC = 0.957102
-  5 polynomial terms were written for deltscap3 x force
+  RMS fit error of the full model is: 0.039144 (normalized)
+range of amplitudes: 1.009150
+  Model addition step   1: Added term 0 0 0 -- RMS=0.219414, GCV=9.135141e-05, AIC = 3.241176
+  Model addition step   2: Added term 2 0 0 -- RMS=0.167906, GCV=5.369930e-05, AIC = 2.709852
+  Model addition step   3: Added term 0 1 0 -- RMS=0.152509, GCV=4.447059e-05, AIC = 2.521262
+  Model addition step   4: Added term 2 1 0 -- RMS=0.087927, GCV=1.483834e-05, AIC = 1.423623
+  4 polynomial terms were written for deltscap3 x force
 deltscap3
-  RMS fit error of the full model is: 0.020211 (normalized)
-range of amplitudes: 0.867185
-  Model addition step   1: Added term 0 0 0 -- RMS=0.129366, GCV=3.175619e-05, AIC = 2.184551
-  Model addition step   2: Added term 0 2 0 -- RMS=0.080290, GCV=1.227874e-05, AIC = 1.234321
-  2 polynomial terms were written for deltscap3 y force
+  RMS fit error of the full model is: 0.019631 (normalized)
+range of amplitudes: 0.867377
+  Model addition step   1: Added term 0 0 0 -- RMS=0.126065, GCV=3.015602e-05, AIC = 2.132847
+  Model addition step   2: Added term 0 2 0 -- RMS=0.092463, GCV=1.628436e-05, AIC = 1.516657
+  Model addition step   3: Added term 2 1 0 -- RMS=0.054204, GCV=5.617642e-06, AIC = 0.452346
+  3 polynomial terms were written for deltscap3 y force
 deltscap3
-  RMS fit error of the full model is: 0.034553 (normalized)
-range of amplitudes: 1.548244
-  Model addition step   1: Added term 1 1 0 -- RMS=0.185936, GCV=6.560151e-05, AIC = 2.910062
-  Model addition step   2: Added term 0 0 0 -- RMS=0.125691, GCV=3.009154e-05, AIC = 2.130696
+  RMS fit error of the full model is: 0.030128 (normalized)
+range of amplitudes: 1.340469
+  Model addition step   1: Added term 1 1 0 -- RMS=0.185146, GCV=6.504524e-05, AIC = 2.901546
+  Model addition step   2: Added term 0 0 0 -- RMS=0.113194, GCV=2.440514e-05, AIC = 1.921246
   2 polynomial terms were written for deltscap3 z force
 deltscap4
-  RMS fit error of the full model is: 0.027596 (normalized)
-range of amplitudes: 1.465780
-  Model addition step   1: Added term 0 0 0 -- RMS=0.323186, GCV=1.981952e-04, AIC = 4.015715
-  Model addition step   2: Added term 2 0 0 -- RMS=0.201830, GCV=7.758975e-05, AIC = 3.077887
-  Model addition step   3: Added term 3 1 0 -- RMS=0.163736, GCV=5.125916e-05, AIC = 2.663328
-  Model addition step   4: Added term 0 1 0 -- RMS=0.108712, GCV=2.268257e-05, AIC = 1.848006
+  RMS fit error of the full model is: 0.018948 (normalized)
+range of amplitudes: 1.105380
+  Model addition step   1: Added term 0 0 0 -- RMS=0.239276, GCV=1.086393e-04, AIC = 3.414496
+  Model addition step   2: Added term 2 0 0 -- RMS=0.178411, GCV=6.062838e-05, AIC = 2.831215
+  Model addition step   3: Added term 0 1 0 -- RMS=0.156596, GCV=4.688639e-05, AIC = 2.574162
+  Model addition step   4: Added term 2 1 0 -- RMS=0.063765, GCV=7.803667e-06, AIC = 0.781003
   4 polynomial terms were written for deltscap4 x force
 deltscap4
-  RMS fit error of the full model is: 0.013183 (normalized)
-range of amplitudes: 0.840216
-  Model addition step   1: Added term 0 0 0 -- RMS=0.142378, GCV=3.846594e-05, AIC = 2.376236
-  Model addition step   2: Added term 0 2 0 -- RMS=0.071067, GCV=9.619910e-06, AIC = 0.990287
-  2 polynomial terms were written for deltscap4 y force
+  RMS fit error of the full model is: 0.011282 (normalized)
+range of amplitudes: 0.694340
+  Model addition step   1: Added term 0 0 0 -- RMS=0.131591, GCV=3.285768e-05, AIC = 2.218648
+  Model addition step   2: Added term 0 2 0 -- RMS=0.093753, GCV=1.674177e-05, AIC = 1.544359
+  Model addition step   3: Added term 2 1 0 -- RMS=0.054579, GCV=5.695526e-06, AIC = 0.466115
+  3 polynomial terms were written for deltscap4 y force
 deltscap4
-  RMS fit error of the full model is: 0.033415 (normalized)
-range of amplitudes: 1.458451
-  Model addition step   1: Added term 1 1 0 -- RMS=0.196401, GCV=7.319380e-05, AIC = 3.019573
-  Model addition step   2: Added term 0 0 0 -- RMS=0.143247, GCV=3.908464e-05, AIC = 2.392181
-  2 polynomial terms were written for deltscap4 z force
+  RMS fit error of the full model is: 0.023329 (normalized)
+range of amplitudes: 1.264772
+  Model addition step   1: Added term 1 1 0 -- RMS=0.203653, GCV=7.869888e-05, AIC = 3.092092
+  Model addition step   2: Added term 0 0 0 -- RMS=0.137528, GCV=3.602599e-05, AIC = 2.310693
+  Model addition step   3: Added term 0 2 0 -- RMS=0.107753, GCV=2.219955e-05, AIC = 1.826506
+  3 polynomial terms were written for deltscap4 z force
 deltscap5
-  RMS fit error of the full model is: 0.027009 (normalized)
-range of amplitudes: 1.479288
-  Model addition step   1: Added term 0 0 0 -- RMS=0.354461, GCV=2.384095e-04, AIC = 4.200453
-  Model addition step   2: Added term 3 1 0 -- RMS=0.191235, GCV=6.965762e-05, AIC = 2.970044
-  Model addition step   3: Added term 0 1 0 -- RMS=0.127530, GCV=3.109650e-05, AIC = 2.163529
+  RMS fit error of the full model is: 0.021604 (normalized)
+range of amplitudes: 1.246004
+  Model addition step   1: Added term 0 0 0 -- RMS=0.278777, GCV=1.474693e-04, AIC = 3.720083
+  Model addition step   2: Added term 3 1 0 -- RMS=0.174290, GCV=5.785984e-05, AIC = 2.784476
+  Model addition step   3: Added term 0 1 0 -- RMS=0.107901, GCV=2.226061e-05, AIC = 1.829253
   3 polynomial terms were written for deltscap5 x force
 deltscap5
-  RMS fit error of the full model is: 0.014530 (normalized)
-range of amplitudes: 0.829936
-  Model addition step   1: Added term 0 0 0 -- RMS=0.159466, GCV=4.825324e-05, AIC = 2.602926
-  Model addition step   2: Added term 0 2 0 -- RMS=0.084605, GCV=1.363424e-05, AIC = 1.339036
-  Model addition step   3: Added term 1 2 0 -- RMS=0.059924, GCV=6.865728e-06, AIC = 0.652976
+  RMS fit error of the full model is: 0.011556 (normalized)
+range of amplitudes: 0.832350
+  Model addition step   1: Added term 0 0 0 -- RMS=0.148264, GCV=4.171208e-05, AIC = 2.457253
+  Model addition step   2: Added term 0 1 0 -- RMS=0.107889, GCV=2.217102e-05, AIC = 1.825238
+  Model addition step   3: Added term 1 1 0 -- RMS=0.049729, GCV=4.728292e-06, AIC = 0.279998
   3 polynomial terms were written for deltscap5 y force
 deltscap5
-  RMS fit error of the full model is: 0.033289 (normalized)
-range of amplitudes: 1.610922
-  Model addition step   1: Added term 1 1 0 -- RMS=0.159207, GCV=4.809651e-05, AIC = 2.599672
-  1 polynomial terms were written for deltscap5 z force
+  RMS fit error of the full model is: 0.020061 (normalized)
+range of amplitudes: 1.448320
+  Model addition step   1: Added term 1 1 0 -- RMS=0.166822, GCV=5.280745e-05, AIC = 2.693115
+  Model addition step   2: Added term 1 1 2 -- RMS=0.135798, GCV=3.512564e-05, AIC = 2.285383
+  2 polynomial terms were written for deltscap5 z force
 deltscap6
-  RMS fit error of the full model is: 0.029279 (normalized)
-range of amplitudes: 1.370894
-  Model addition step   1: Added term 0 1 0 -- RMS=0.316272, GCV=1.898057e-04, AIC = 3.972464
-  Model addition step   2: Added term 2 1 0 -- RMS=0.107934, GCV=2.218975e-05, AIC = 1.826082
+  RMS fit error of the full model is: 0.022302 (normalized)
+range of amplitudes: 1.095757
+  Model addition step   1: Added term 0 1 0 -- RMS=0.237485, GCV=1.070193e-04, AIC = 3.399472
+  Model addition step   2: Added term 2 1 0 -- RMS=0.090460, GCV=1.558646e-05, AIC = 1.472855
   2 polynomial terms were written for deltscap6 x force
 deltscap6
-  RMS fit error of the full model is: 0.010167 (normalized)
-range of amplitudes: 0.755644
-  Model addition step   1: Added term 0 0 0 -- RMS=0.141729, GCV=3.811593e-05, AIC = 2.367095
-  Model addition step   2: Added term 0 2 0 -- RMS=0.052341, GCV=5.218119e-06, AIC = 0.378589
-  2 polynomial terms were written for deltscap6 y force
+  RMS fit error of the full model is: 0.010281 (normalized)
+range of amplitudes: 0.701364
+  Model addition step   1: Added term 0 0 0 -- RMS=0.130323, GCV=3.222785e-05, AIC = 2.199294
+  Model addition step   2: Added term 0 2 0 -- RMS=0.071448, GCV=9.723230e-06, AIC = 1.000970
+  Model addition step   3: Added term 1 1 0 -- RMS=0.050323, GCV=4.841882e-06, AIC = 0.303737
+  3 polynomial terms were written for deltscap6 y force
 deltscap6
-  RMS fit error of the full model is: 0.023240 (normalized)
-range of amplitudes: 1.612043
-  Model addition step   1: Added term 1 1 0 -- RMS=0.166673, GCV=5.271305e-05, AIC = 2.691326
-  Model addition step   2: Added term 3 1 0 -- RMS=0.124891, GCV=2.970936e-05, AIC = 2.117914
+  RMS fit error of the full model is: 0.017122 (normalized)
+range of amplitudes: 1.528040
+  Model addition step   1: Added term 1 1 0 -- RMS=0.166900, GCV=5.285706e-05, AIC = 2.694054
+  Model addition step   2: Added term 0 0 0 -- RMS=0.127417, GCV=3.092351e-05, AIC = 2.157969
   2 polynomial terms were written for deltscap6 z force
 deltscap7
-  RMS fit error of the full model is: 0.027703 (normalized)
-range of amplitudes: 1.376767
-  Model addition step   1: Added term 0 1 0 -- RMS=0.318057, GCV=1.919543e-04, AIC = 3.983720
-  Model addition step   2: Added term 2 1 0 -- RMS=0.110483, GCV=2.324992e-05, AIC = 1.872754
+  RMS fit error of the full model is: 0.022961 (normalized)
+range of amplitudes: 1.164136
+  Model addition step   1: Added term 0 1 0 -- RMS=0.258520, GCV=1.268165e-04, AIC = 3.569204
+  Model addition step   2: Added term 2 1 0 -- RMS=0.093016, GCV=1.647972e-05, AIC = 1.528582
   2 polynomial terms were written for deltscap7 x force
 deltscap7
-  RMS fit error of the full model is: 0.009154 (normalized)
-range of amplitudes: 0.834426
-  Model addition step   1: Added term 0 0 0 -- RMS=0.162536, GCV=5.012857e-05, AIC = 2.641054
-  Model addition step   2: Added term 0 2 0 -- RMS=0.040466, GCV=3.118948e-06, AIC = -0.136052
+  RMS fit error of the full model is: 0.009278 (normalized)
+range of amplitudes: 0.715850
+  Model addition step   1: Added term 0 0 0 -- RMS=0.147501, GCV=4.128359e-05, AIC = 2.446928
+  Model addition step   2: Added term 0 2 0 -- RMS=0.058632, GCV=6.547927e-06, AIC = 0.605600
   2 polynomial terms were written for deltscap7 y force
 deltscap7
-  RMS fit error of the full model is: 0.024773 (normalized)
-range of amplitudes: 1.615160
-  Model addition step   1: Added term 1 1 0 -- RMS=0.138810, GCV=3.656211e-05, AIC = 2.325475
+  RMS fit error of the full model is: 0.018139 (normalized)
+range of amplitudes: 1.579986
+  Model addition step   1: Added term 1 1 0 -- RMS=0.144253, GCV=3.948560e-05, AIC = 2.402399
   1 polynomial terms were written for deltscap7 z force
 deltscap8
-  RMS fit error of the full model is: 0.026900 (normalized)
-range of amplitudes: 1.378403
-  Model addition step   1: Added term 0 0 1 -- RMS=0.306415, GCV=1.781594e-04, AIC = 3.909142
-  Model addition step   2: Added term 0 1 0 -- RMS=0.228352, GCV=9.932134e-05, AIC = 3.324812
-  Model addition step   3: Added term 2 1 0 -- RMS=0.120328, GCV=2.768342e-05, AIC = 2.047268
+  RMS fit error of the full model is: 0.022659 (normalized)
+range of amplitudes: 1.135380
+  Model addition step   1: Added term 0 0 0 -- RMS=0.269138, GCV=1.374479e-04, AIC = 3.649708
+  Model addition step   2: Added term 3 1 0 -- RMS=0.180482, GCV=6.204419e-05, AIC = 2.854299
+  Model addition step   3: Added term 0 1 0 -- RMS=0.111471, GCV=2.375802e-05, AIC = 1.894354
   3 polynomial terms were written for deltscap8 x force
 deltscap8
-  RMS fit error of the full model is: 0.012944 (normalized)
-range of amplitudes: 0.782116
-  Model addition step   1: Added term 0 0 0 -- RMS=0.157249, GCV=4.692035e-05, AIC = 2.574914
-  Model addition step   2: Added term 0 2 0 -- RMS=0.054276, GCV=5.611078e-06, AIC = 0.451195
+  RMS fit error of the full model is: 0.011888 (normalized)
+range of amplitudes: 0.697767
+  Model addition step   1: Added term 0 0 0 -- RMS=0.144037, GCV=3.936721e-05, AIC = 2.399396
+  Model addition step   2: Added term 0 2 0 -- RMS=0.067592, GCV=8.701996e-06, AIC = 0.890004
   2 polynomial terms were written for deltscap8 y force
 deltscap8
-  RMS fit error of the full model is: 0.027339 (normalized)
-range of amplitudes: 1.652742
-  Model addition step   1: Added term 1 1 0 -- RMS=0.148867, GCV=4.205200e-05, AIC = 2.465370
+  RMS fit error of the full model is: 0.019879 (normalized)
+range of amplitudes: 1.619865
+  Model addition step   1: Added term 1 1 0 -- RMS=0.153068, GCV=4.445861e-05, AIC = 2.521021
   1 polynomial terms were written for deltscap8 z force
 deltscap9
-  RMS fit error of the full model is: 0.019583 (normalized)
-range of amplitudes: 1.345029
-  Model addition step   1: Added term 0 0 0 -- RMS=0.318250, GCV=1.921875e-04, AIC = 3.984934
-  Model addition step   2: Added term 3 1 0 -- RMS=0.155212, GCV=4.588629e-05, AIC = 2.552618
-  Model addition step   3: Added term 2 0 0 -- RMS=0.113340, GCV=2.456134e-05, AIC = 1.927608
+  RMS fit error of the full model is: 0.017591 (normalized)
+range of amplitudes: 1.306594
+  Model addition step   1: Added term 0 0 0 -- RMS=0.288248, GCV=1.576598e-04, AIC = 3.786902
+  Model addition step   2: Added term 3 1 0 -- RMS=0.137995, GCV=3.627110e-05, AIC = 2.317473
+  Model addition step   3: Added term 0 1 0 -- RMS=0.114672, GCV=2.514184e-05, AIC = 1.950968
   3 polynomial terms were written for deltscap9 x force
 deltscap9
-  RMS fit error of the full model is: 0.018971 (normalized)
-range of amplitudes: 0.882988
-  Model addition step   1: Added term 0 0 0 -- RMS=0.169904, GCV=5.477662e-05, AIC = 2.729726
-  Model addition step   2: Added term 0 1 0 -- RMS=0.103160, GCV=2.027016e-05, AIC = 1.735602
-  Model addition step   3: Added term 1 1 0 -- RMS=0.083543, GCV=1.334463e-05, AIC = 1.317548
+  RMS fit error of the full model is: 0.014448 (normalized)
+range of amplitudes: 0.879130
+  Model addition step   1: Added term 0 0 0 -- RMS=0.164439, GCV=5.130952e-05, AIC = 2.664339
+  Model addition step   2: Added term 0 1 0 -- RMS=0.128329, GCV=3.136797e-05, AIC = 2.172239
+  Model addition step   3: Added term 1 1 0 -- RMS=0.056707, GCV=6.148279e-06, AIC = 0.542606
   3 polynomial terms were written for deltscap9 y force
 deltscap9
-  RMS fit error of the full model is: 0.022861 (normalized)
-range of amplitudes: 1.766282
-  Model addition step   1: Added term 1 1 0 -- RMS=0.203334, GCV=7.845306e-05, AIC = 3.088963
-  Model addition step   2: Added term 2 0 0 -- RMS=0.172600, GCV=5.674327e-05, AIC = 2.764989
-  2 polynomial terms were written for deltscap9 z force
+  RMS fit error of the full model is: 0.016001 (normalized)
+range of amplitudes: 1.647120
+  Model addition step   1: Added term 1 1 0 -- RMS=0.200910, GCV=7.659336e-05, AIC = 3.064973
+  Model addition step   2: Added term 1 1 2 -- RMS=0.173740, GCV=5.749555e-05, AIC = 2.778159
+  Model addition step   3: Added term 0 0 2 -- RMS=0.144626, GCV=3.999261e-05, AIC = 2.415129
+  3 polynomial terms were written for deltscap9 z force
 deltscap10
-  RMS fit error of the full model is: 0.122028 (normalized)
-range of amplitudes: 1.441423
-  Model addition step   1: Added term 0 0 0 -- RMS=0.350422, GCV=2.330085e-04, AIC = 4.177538
-  Model addition step   2: Added term 2 1 0 -- RMS=0.239253, GCV=1.090304e-04, AIC = 3.418079
-  Model addition step   3: Added term 1 0 0 -- RMS=0.210555, GCV=8.476448e-05, AIC = 3.166311
-  Model addition step   4: Added term 0 2 0 -- RMS=0.191173, GCV=7.014373e-05, AIC = 2.976955
-  Model addition step   5: Added term 0 1 1 -- RMS=0.181209, GCV=6.326360e-05, AIC = 2.873687
-  Model addition step   6: Added term 3 0 0 -- RMS=0.168557, GCV=5.494728e-05, AIC = 2.732711
-  Model addition step   7: Added term 0 1 2 -- RMS=0.159824, GCV=4.959079e-05, AIC = 2.630095
-Change in error: 0.017110. No more terms added.
-   7 polynomial terms were written for deltscap10 x force
+  RMS fit error of the full model is: 0.108753 (normalized)
+range of amplitudes: 1.293846
+  Model addition step   1: Added term 0 0 0 -- RMS=0.285589, GCV=1.547640e-04, AIC = 3.768364
+  Model addition step   2: Added term 2 1 0 -- RMS=0.198433, GCV=7.500022e-05, AIC = 3.043943
+Change in error: 0.015273. No more terms added.
+   2 polynomial terms were written for deltscap10 x force
 deltscap10
-  RMS fit error of the full model is: 0.087790 (normalized)
-range of amplitudes: 0.848288
-  Model addition step   1: Added term 0 0 0 -- RMS=0.170086, GCV=5.489398e-05, AIC = 2.731866
-  Model addition step   2: Added term 0 3 0 -- RMS=0.139165, GCV=3.688886e-05, AIC = 2.334362
-Change in error: 0.038643. No more terms added.
+  RMS fit error of the full model is: 0.085460 (normalized)
+range of amplitudes: 0.848518
+  Model addition step   1: Added term 0 0 0 -- RMS=0.149549, GCV=4.243777e-05, AIC = 2.474502
+  Model addition step   2: Added term 0 2 0 -- RMS=0.141591, GCV=3.818617e-05, AIC = 2.368925
+Change in error: 0.027434. No more terms added.
    2 polynomial terms were written for deltscap10 y force
 deltscap10
-  RMS fit error of the full model is: 0.075923 (normalized)
-range of amplitudes: 1.829531
-  Model addition step   1: Added term 1 1 0 -- RMS=0.171816, GCV=5.601607e-05, AIC = 2.752101
-  1 polynomial terms were written for deltscap10 z force
+  RMS fit error of the full model is: 0.070693 (normalized)
+range of amplitudes: 1.771741
+  Model addition step   1: Added term 1 1 0 -- RMS=0.196637, GCV=7.336987e-05, AIC = 3.021976
+  Model addition step   2: Added term 1 2 1 -- RMS=0.174256, GCV=5.783744e-05, AIC = 2.784088
+  2 polynomial terms were written for deltscap10 z force
 deltscap11
-  RMS fit error of the full model is: 0.125434 (normalized)
-range of amplitudes: 1.400330
-  Model addition step   1: Added term 0 0 0 -- RMS=0.319817, GCV=1.940843e-04, AIC = 3.994755
-  Model addition step   2: Added term 2 1 0 -- RMS=0.195500, GCV=7.279927e-05, AIC = 3.014158
-Change in error: 0.026626. No more terms added.
-   2 polynomial terms were written for deltscap11 x force
+  RMS fit error of the full model is: 0.129038 (normalized)
+range of amplitudes: 1.359798
+  Model addition step   1: Added term 0 0 0 -- RMS=0.295638, GCV=1.658468e-04, AIC = 3.837527
+  Model addition step   2: Added term 2 2 0 -- RMS=0.213491, GCV=8.681445e-05, AIC = 3.190225
+  Model addition step   3: Added term 0 1 1 -- RMS=0.201931, GCV=7.796311e-05, AIC = 3.082670
+Change in error: 0.043618. No more terms added.
+   3 polynomial terms were written for deltscap11 x force
 deltscap11
-  RMS fit error of the full model is: 0.132988 (normalized)
-range of amplitudes: 1.085058
-  Model addition step   1: Added term 0 0 0 -- RMS=0.226616, GCV=9.744703e-05, AIC = 3.305772
-  Model addition step   2: Added term 2 0 0 -- RMS=0.207192, GCV=8.176749e-05, AIC = 3.130332
-Change in error: 0.023660. No more terms added.
+  RMS fit error of the full model is: 0.132163 (normalized)
+range of amplitudes: 0.864319
+  Model addition step   1: Added term 0 0 0 -- RMS=0.202793, GCV=7.803563e-05, AIC = 3.083628
+  Model addition step   2: Added term 0 1 1 -- RMS=0.180432, GCV=6.201022e-05, AIC = 2.853751
+Change in error: 0.027388. No more terms added.
    2 polynomial terms were written for deltscap11 y force
 deltscap11
-  RMS fit error of the full model is: 0.053662 (normalized)
-range of amplitudes: 1.827387
-  Model addition step   1: Added term 1 0 0 -- RMS=0.198396, GCV=7.468816e-05, AIC = 3.039784
-  Model addition step   2: Added term 1 1 0 -- RMS=0.134138, GCV=3.427212e-05, AIC = 2.260784
-  2 polynomial terms were written for deltscap11 z force
+  RMS fit error of the full model is: 0.043091 (normalized)
+range of amplitudes: 1.797126
+  Model addition step   1: Added term 1 1 0 -- RMS=0.156500, GCV=4.647491e-05, AIC = 2.565375
+  1 polynomial terms were written for deltscap11 z force
 deltclav1
-  RMS fit error of the full model is: 0.033452 (normalized)
-range of amplitudes: 1.231914
-  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.270975, GCV=1.393302e-04, AIC = 3.663309
-  Model addition step   2: Added term 1 1 0 2 0 0 -- RMS=0.187980, GCV=6.730640e-05, AIC = 2.935707
-  Model addition step   3: Added term 3 0 0 0 0 0 -- RMS=0.175513, GCV=5.889845e-05, AIC = 2.802249
-  Model addition step   4: Added term 2 0 0 2 0 0 -- RMS=0.159448, GCV=4.879485e-05, AIC = 2.614034
-  Model addition step   5: Added term 0 0 0 1 1 1 -- RMS=0.149423, GCV=4.301578e-05, AIC = 2.487943
-  Model addition step   6: Added term 0 0 3 1 0 0 -- RMS=0.136417, GCV=3.599043e-05, AIC = 2.309590
-Change in error: 0.039947. No more terms added.
-   6 polynomial terms were written for deltclav1 x force
+  RMS fit error of the full model is: 0.033067 (normalized)
+range of amplitudes: 1.310419
+  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.260660, GCV=1.289249e-04, AIC = 3.585693
+  Model addition step   2: Added term 0 0 0 1 1 1 -- RMS=0.190551, GCV=6.916027e-05, AIC = 2.962879
+  Model addition step   3: Added term 4 0 0 0 0 0 -- RMS=0.172547, GCV=5.692453e-05, AIC = 2.768160
+  Model addition step   4: Added term 0 0 1 0 0 0 -- RMS=0.153845, GCV=4.542620e-05, AIC = 2.542498
+  Model addition step   5: Added term 0 0 0 2 1 0 -- RMS=0.137632, GCV=3.649489e-05, AIC = 2.323549
+  Model addition step   6: Added term 1 1 1 1 0 0 -- RMS=0.120733, GCV=2.819038e-05, AIC = 2.065318
+  6 polynomial terms were written for deltclav1 x force
 deltclav1
-  RMS fit error of the full model is: 0.015305 (normalized)
-range of amplitudes: 0.993406
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.297564, GCV=1.680154e-04, AIC = 3.850519
-  Model addition step   2: Added term 0 0 1 0 1 0 -- RMS=0.167523, GCV=5.345442e-05, AIC = 2.705281
-  Model addition step   3: Added term 0 1 0 1 1 0 -- RMS=0.112086, GCV=2.402071e-05, AIC = 1.905350
-  Model addition step   4: Added term 0 0 0 0 1 0 -- RMS=0.093103, GCV=1.663655e-05, AIC = 1.538011
-  4 polynomial terms were written for deltclav1 y force
+  RMS fit error of the full model is: 0.022067 (normalized)
+range of amplitudes: 0.993452
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.268018, GCV=1.363061e-04, AIC = 3.641366
+  Model addition step   2: Added term 0 0 1 0 1 0 -- RMS=0.146367, GCV=4.080577e-05, AIC = 2.435276
+  Model addition step   3: Added term 0 1 1 1 0 0 -- RMS=0.113166, GCV=2.448583e-05, AIC = 1.924529
+  Model addition step   4: Added term 0 0 2 0 2 0 -- RMS=0.103256, GCV=2.046306e-05, AIC = 1.745030
+  Model addition step   5: Added term 0 0 1 1 0 2 -- RMS=0.094876, GCV=1.734233e-05, AIC = 1.579527
+  5 polynomial terms were written for deltclav1 y force
 deltclav1
-  RMS fit error of the full model is: 0.021790 (normalized)
-range of amplitudes: 1.603194
-  Model addition step   1: Added term 0 0 0 1 1 0 -- RMS=0.152680, GCV=4.423387e-05, AIC = 2.515953
-  1 polynomial terms were written for deltclav1 z force
+  RMS fit error of the full model is: 0.030196 (normalized)
+range of amplitudes: 1.586185
+  Model addition step   1: Added term 1 0 0 1 1 0 -- RMS=0.175606, GCV=5.851481e-05, AIC = 2.795743
+  Model addition step   2: Added term 0 0 1 0 0 0 -- RMS=0.143656, GCV=3.930830e-05, AIC = 2.397888
+  2 polynomial terms were written for deltclav1 z force
 deltclav2
-  RMS fit error of the full model is: 0.024251 (normalized)
-range of amplitudes: 0.905872
-  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.181202, GCV=6.230376e-05, AIC = 2.858485
-  Model addition step   2: Added term 0 1 0 2 1 0 -- RMS=0.133736, GCV=3.406654e-05, AIC = 2.254768
-  Model addition step   3: Added term 0 0 3 1 0 0 -- RMS=0.118867, GCV=2.701492e-05, AIC = 2.022823
-  Model addition step   4: Added term 4 0 0 0 0 0 -- RMS=0.105347, GCV=2.130029e-05, AIC = 1.785129
-  Model addition step   5: Added term 2 0 0 2 0 0 -- RMS=0.093488, GCV=1.683865e-05, AIC = 1.550053
-  Model addition step   6: Added term 0 0 1 1 1 0 -- RMS=0.088439, GCV=1.512650e-05, AIC = 1.442785
-  6 polynomial terms were written for deltclav2 x force
+  RMS fit error of the full model is: 0.028989 (normalized)
+range of amplitudes: 0.983189
+  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.187860, GCV=6.696663e-05, AIC = 2.930657
+  Model addition step   2: Added term 0 1 0 2 1 0 -- RMS=0.133971, GCV=3.418639e-05, AIC = 2.258280
+  Model addition step   3: Added term 4 0 0 0 0 0 -- RMS=0.116441, GCV=2.592381e-05, AIC = 1.981596
+  Model addition step   4: Added term 0 1 1 0 2 0 -- RMS=0.099147, GCV=1.886677e-05, AIC = 1.663811
+  Model addition step   5: Added term 0 0 1 1 1 1 -- RMS=0.092660, GCV=1.654174e-05, AIC = 1.532263
+  5 polynomial terms were written for deltclav2 x force
 deltclav2
-  RMS fit error of the full model is: 0.023480 (normalized)
-range of amplitudes: 0.962266
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.243000, GCV=1.120466e-04, AIC = 3.445378
-  Model addition step   2: Added term 0 0 1 0 2 0 -- RMS=0.103823, GCV=2.053148e-05, AIC = 1.748411
-  Model addition step   3: Added term 0 1 0 1 1 0 -- RMS=0.077433, GCV=1.146407e-05, AIC = 1.165652
+  RMS fit error of the full model is: 0.025039 (normalized)
+range of amplitudes: 0.918054
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.205779, GCV=8.035053e-05, AIC = 3.112861
+  Model addition step   2: Added term 0 0 1 0 2 0 -- RMS=0.092474, GCV=1.628835e-05, AIC = 1.516902
+  Model addition step   3: Added term 0 0 2 0 0 2 -- RMS=0.079286, GCV=1.201932e-05, AIC = 1.212949
   3 polynomial terms were written for deltclav2 y force
 deltclav2
-  RMS fit error of the full model is: 0.021511 (normalized)
-range of amplitudes: 1.505863
-  Model addition step   1: Added term 0 0 0 1 1 0 -- RMS=0.191812, GCV=6.981379e-05, AIC = 2.972294
-  Model addition step   2: Added term 0 0 0 0 0 0 -- RMS=0.084619, GCV=1.363854e-05, AIC = 1.339352
+  RMS fit error of the full model is: 0.023092 (normalized)
+range of amplitudes: 1.493096
+  Model addition step   1: Added term 0 0 0 1 1 0 -- RMS=0.183882, GCV=6.416003e-05, AIC = 2.887843
+  Model addition step   2: Added term 1 0 0 0 0 0 -- RMS=0.098982, GCV=1.866164e-05, AIC = 1.652922
   2 polynomial terms were written for deltclav2 z force
 deltclav3
-  RMS fit error of the full model is: 0.033225 (normalized)
-range of amplitudes: 0.972462
-  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.203954, GCV=7.893168e-05, AIC = 3.095045
-  Model addition step   2: Added term 0 1 0 2 1 0 -- RMS=0.153089, GCV=4.464005e-05, AIC = 2.525083
-  Model addition step   3: Added term 0 0 3 1 0 0 -- RMS=0.134493, GCV=3.458489e-05, AIC = 2.269851
-  Model addition step   4: Added term 1 0 0 0 0 1 -- RMS=0.120467, GCV=2.785309e-05, AIC = 2.053353
-Change in error: 0.031685. No more terms added.
-   4 polynomial terms were written for deltclav3 x force
+  RMS fit error of the full model is: 0.028504 (normalized)
+range of amplitudes: 1.012832
+  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.203422, GCV=7.852067e-05, AIC = 3.089825
+  Model addition step   2: Added term 0 1 0 2 1 0 -- RMS=0.148263, GCV=4.186990e-05, AIC = 2.461019
+  Model addition step   3: Added term 0 0 3 1 0 0 -- RMS=0.131933, GCV=3.328079e-05, AIC = 2.231414
+  Model addition step   4: Added term 4 0 0 0 0 0 -- RMS=0.121000, GCV=2.810031e-05, AIC = 2.062189
+  Model addition step   5: Added term 0 0 0 2 1 0 -- RMS=0.105216, GCV=2.132820e-05, AIC = 1.786407
+  Model addition step   6: Added term 0 0 1 0 2 1 -- RMS=0.097447, GCV=1.836495e-05, AIC = 1.636781
+  6 polynomial terms were written for deltclav3 x force
 deltclav3
-  RMS fit error of the full model is: 0.026450 (normalized)
-range of amplitudes: 0.976651
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.268950, GCV=1.372559e-04, AIC = 3.648310
-  Model addition step   2: Added term 0 0 1 0 2 0 -- RMS=0.128160, GCV=3.128548e-05, AIC = 2.169606
-  Model addition step   3: Added term 0 1 0 1 1 0 -- RMS=0.088369, GCV=1.493096e-05, AIC = 1.429871
-  3 polynomial terms were written for deltclav3 y force
+  RMS fit error of the full model is: 0.022265 (normalized)
+range of amplitudes: 0.929752
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.227601, GCV=9.829587e-05, AIC = 3.314445
+  Model addition step   2: Added term 0 0 1 0 2 0 -- RMS=0.108830, GCV=2.255943e-05, AIC = 1.842605
+  Model addition step   3: Added term 0 2 1 1 0 0 -- RMS=0.093009, GCV=1.653994e-05, AIC = 1.532212
+  Model addition step   4: Added term 0 0 2 0 0 2 -- RMS=0.084640, GCV=1.374955e-05, AIC = 1.347415
+  4 polynomial terms were written for deltclav3 y force
 deltclav3
-  RMS fit error of the full model is: 0.023742 (normalized)
-range of amplitudes: 1.478489
-  Model addition step   1: Added term 0 0 0 1 1 0 -- RMS=0.205929, GCV=8.046806e-05, AIC = 3.114323
-  Model addition step   2: Added term 1 0 0 0 0 0 -- RMS=0.082754, GCV=1.304402e-05, AIC = 1.294781
+  RMS fit error of the full model is: 0.019776 (normalized)
+range of amplitudes: 1.468103
+  Model addition step   1: Added term 0 0 0 1 2 0 -- RMS=0.194282, GCV=7.162287e-05, AIC = 2.997877
+  Model addition step   2: Added term 0 0 0 0 0 0 -- RMS=0.103012, GCV=2.021217e-05, AIC = 1.732737
   2 polynomial terms were written for deltclav3 z force
 deltclav4
-  RMS fit error of the full model is: 0.033999 (normalized)
-range of amplitudes: 1.011210
-  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.211350, GCV=8.476057e-05, AIC = 3.166293
-  Model addition step   2: Added term 0 1 0 2 1 0 -- RMS=0.152672, GCV=4.439671e-05, AIC = 2.519617
-  Model addition step   3: Added term 0 0 3 1 0 0 -- RMS=0.133418, GCV=3.403384e-05, AIC = 2.253789
-  Model addition step   4: Added term 3 0 0 0 0 1 -- RMS=0.122684, GCV=2.888792e-05, AIC = 2.089832
-Change in error: 0.029744. No more terms added.
-   4 polynomial terms were written for deltclav4 x force
+  RMS fit error of the full model is: 0.030385 (normalized)
+range of amplitudes: 1.045464
+  Model addition step   1: Added term 3 1 0 0 0 0 -- RMS=0.211386, GCV=8.478899e-05, AIC = 3.166628
+  Model addition step   2: Added term 0 1 0 2 1 0 -- RMS=0.146029, GCV=4.061738e-05, AIC = 2.430648
+  Model addition step   3: Added term 0 0 3 1 0 0 -- RMS=0.132207, GCV=3.341887e-05, AIC = 2.235555
+  Model addition step   4: Added term 0 0 1 0 2 1 -- RMS=0.119999, GCV=2.763708e-05, AIC = 2.045567
+  Model addition step   5: Added term 4 0 0 0 0 0 -- RMS=0.104695, GCV=2.111780e-05, AIC = 1.776492
+  Model addition step   6: Added term 1 0 0 2 1 0 -- RMS=0.096202, GCV=1.789867e-05, AIC = 1.611063
+  6 polynomial terms were written for deltclav4 x force
 deltclav4
-  RMS fit error of the full model is: 0.029717 (normalized)
-range of amplitudes: 1.091858
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.245743, GCV=1.145910e-04, AIC = 3.467832
-  Model addition step   2: Added term 0 0 1 0 2 0 -- RMS=0.099531, GCV=1.886896e-05, AIC = 1.663970
+  RMS fit error of the full model is: 0.025194 (normalized)
+range of amplitudes: 1.028247
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.185139, GCV=6.504018e-05, AIC = 2.901468
+  Model addition step   2: Added term 0 0 1 0 2 0 -- RMS=0.078350, GCV=1.169271e-05, AIC = 1.185417
   2 polynomial terms were written for deltclav4 y force
 deltclav4
-  RMS fit error of the full model is: 0.024733 (normalized)
-range of amplitudes: 1.603515
-  Model addition step   1: Added term 0 0 0 1 1 0 -- RMS=0.187071, GCV=6.640489e-05, AIC = 2.922233
-  Model addition step   2: Added term 0 0 0 0 0 0 -- RMS=0.090182, GCV=1.549090e-05, AIC = 1.466705
+  RMS fit error of the full model is: 0.023437 (normalized)
+range of amplitudes: 1.599771
+  Model addition step   1: Added term 0 0 0 1 1 0 -- RMS=0.178245, GCV=6.028688e-05, AIC = 2.825577
+  Model addition step   2: Added term 0 0 0 0 0 0 -- RMS=0.100312, GCV=1.916625e-05, AIC = 1.679603
   2 polynomial terms were written for deltclav4 z force
 coracobr1
-  RMS fit error of the full model is: 0.007036 (normalized)
-range of amplitudes: 1.071693
-  Model addition step   1: Added term 0 0 0 -- RMS=0.220488, GCV=9.224833e-05, AIC = 3.250947
-  Model addition step   2: Added term 2 0 0 -- RMS=0.148294, GCV=4.188717e-05, AIC = 2.461432
-  Model addition step   3: Added term 4 0 0 -- RMS=0.132742, GCV=3.368988e-05, AIC = 2.243632
-  Model addition step   4: Added term 0 1 0 -- RMS=0.110441, GCV=2.340962e-05, AIC = 1.879556
-  Model addition step   5: Added term 2 1 0 -- RMS=0.043508, GCV=3.647031e-06, AIC = 0.020290
+  RMS fit error of the full model is: 0.006309 (normalized)
+range of amplitudes: 1.192091
+  Model addition step   1: Added term 0 0 0 -- RMS=0.239170, GCV=1.085427e-04, AIC = 3.413607
+  Model addition step   2: Added term 2 0 0 -- RMS=0.159273, GCV=4.831924e-05, AIC = 2.604282
+  Model addition step   3: Added term 4 0 0 -- RMS=0.139420, GCV=3.716521e-05, AIC = 2.341807
+  Model addition step   4: Added term 0 1 0 -- RMS=0.125083, GCV=3.002847e-05, AIC = 2.128555
+  Model addition step   5: Added term 2 1 0 -- RMS=0.045806, GCV=4.042379e-06, AIC = 0.123210
   5 polynomial terms were written for coracobr1 x force
 coracobr1
-  RMS fit error of the full model is: 0.003604 (normalized)
-range of amplitudes: 0.800306
-  Model addition step   1: Added term 0 0 0 -- RMS=0.179701, GCV=6.127544e-05, AIC = 2.841842
-  Model addition step   2: Added term 0 2 0 -- RMS=0.037735, GCV=2.712253e-06, AIC = -0.275768
+  RMS fit error of the full model is: 0.002287 (normalized)
+range of amplitudes: 0.788042
+  Model addition step   1: Added term 0 0 0 -- RMS=0.176581, GCV=5.916648e-05, AIC = 2.806818
+  Model addition step   2: Added term 0 2 0 -- RMS=0.034138, GCV=2.219774e-06, AIC = -0.476142
   2 polynomial terms were written for coracobr1 y force
 coracobr1
-  RMS fit error of the full model is: 0.008338 (normalized)
-range of amplitudes: 1.790350
-  Model addition step   1: Added term 1 1 0 -- RMS=0.142760, GCV=3.867257e-05, AIC = 2.381593
+  RMS fit error of the full model is: 0.008508 (normalized)
+range of amplitudes: 1.784573
+  Model addition step   1: Added term 1 1 0 -- RMS=0.141466, GCV=3.797448e-05, AIC = 2.363377
   1 polynomial terms were written for coracobr1 z force
 coracobr2
-  RMS fit error of the full model is: 0.006614 (normalized)
-range of amplitudes: 1.096241
-  Model addition step   1: Added term 0 0 0 -- RMS=0.224551, GCV=9.567887e-05, AIC = 3.287460
-  Model addition step   2: Added term 2 0 0 -- RMS=0.155547, GCV=4.608507e-05, AIC = 2.556941
-  Model addition step   3: Added term 4 0 0 -- RMS=0.136038, GCV=3.538394e-05, AIC = 2.292692
-  Model addition step   4: Added term 0 1 0 -- RMS=0.116295, GCV=2.595706e-05, AIC = 1.982852
-  Model addition step   5: Added term 2 1 0 -- RMS=0.039784, GCV=3.049333e-06, AIC = -0.158701
+  RMS fit error of the full model is: 0.005965 (normalized)
+range of amplitudes: 1.153372
+  Model addition step   1: Added term 0 0 0 -- RMS=0.240741, GCV=1.099736e-04, AIC = 3.426703
+  Model addition step   2: Added term 2 0 0 -- RMS=0.157001, GCV=4.695022e-05, AIC = 2.575540
+  Model addition step   3: Added term 4 0 0 -- RMS=0.137174, GCV=3.597717e-05, AIC = 2.309318
+  Model addition step   4: Added term 0 1 0 -- RMS=0.120375, GCV=2.781056e-05, AIC = 2.051825
+  Model addition step   5: Added term 2 1 0 -- RMS=0.040656, GCV=3.184539e-06, AIC = -0.115316
   5 polynomial terms were written for coracobr2 x force
 coracobr2
-  RMS fit error of the full model is: 0.002692 (normalized)
-range of amplitudes: 0.821985
-  Model addition step   1: Added term 0 0 0 -- RMS=0.185050, GCV=6.497779e-05, AIC = 2.900508
-  Model addition step   2: Added term 0 2 0 -- RMS=0.040349, GCV=3.100924e-06, AIC = -0.141848
+  RMS fit error of the full model is: 0.002296 (normalized)
+range of amplitudes: 0.883170
+  Model addition step   1: Added term 0 0 0 -- RMS=0.194169, GCV=7.153971e-05, AIC = 2.996715
+  Model addition step   2: Added term 0 2 0 -- RMS=0.044451, GCV=3.763554e-06, AIC = 0.051816
   2 polynomial terms were written for coracobr2 y force
 coracobr2
-  RMS fit error of the full model is: 0.009689 (normalized)
-range of amplitudes: 1.793174
-  Model addition step   1: Added term 1 1 0 -- RMS=0.157737, GCV=4.721254e-05, AIC = 2.581122
+  RMS fit error of the full model is: 0.009232 (normalized)
+range of amplitudes: 1.800203
+  Model addition step   1: Added term 1 1 0 -- RMS=0.157768, GCV=4.723082e-05, AIC = 2.581509
   1 polynomial terms were written for coracobr2 z force
 coracobr3
-  RMS fit error of the full model is: 0.006817 (normalized)
-range of amplitudes: 1.081796
-  Model addition step   1: Added term 0 0 0 -- RMS=0.222149, GCV=9.364362e-05, AIC = 3.265959
-  Model addition step   2: Added term 2 0 0 -- RMS=0.151580, GCV=4.376403e-05, AIC = 2.505264
-  Model addition step   3: Added term 4 0 0 -- RMS=0.134246, GCV=3.445799e-05, AIC = 2.266175
-  Model addition step   4: Added term 0 1 0 -- RMS=0.112765, GCV=2.440543e-05, AIC = 1.921214
-  Model addition step   5: Added term 2 1 0 -- RMS=0.041173, GCV=3.266057e-06, AIC = -0.090040
+  RMS fit error of the full model is: 0.006301 (normalized)
+range of amplitudes: 1.169518
+  Model addition step   1: Added term 0 0 0 -- RMS=0.239000, GCV=1.083886e-04, AIC = 3.412186
+  Model addition step   2: Added term 2 0 0 -- RMS=0.157807, GCV=4.743372e-05, AIC = 2.585785
+  Model addition step   3: Added term 4 0 0 -- RMS=0.138041, GCV=3.643363e-05, AIC = 2.321926
+  Model addition step   4: Added term 0 1 0 -- RMS=0.122078, GCV=2.860322e-05, AIC = 2.079928
+  Model addition step   5: Added term 2 1 0 -- RMS=0.042449, GCV=3.471576e-06, AIC = -0.029015
   5 polynomial terms were written for coracobr3 x force
 coracobr3
-  RMS fit error of the full model is: 0.002896 (normalized)
-range of amplitudes: 0.805095
-  Model addition step   1: Added term 0 0 0 -- RMS=0.180618, GCV=6.190302e-05, AIC = 2.852032
-  Model addition step   2: Added term 0 2 0 -- RMS=0.040376, GCV=3.105064e-06, AIC = -0.140514
+  RMS fit error of the full model is: 0.002336 (normalized)
+range of amplitudes: 0.825898
+  Model addition step   1: Added term 0 0 0 -- RMS=0.182923, GCV=6.349271e-05, AIC = 2.877388
+  Model addition step   2: Added term 0 2 0 -- RMS=0.039792, GCV=3.016005e-06, AIC = -0.169615
   2 polynomial terms were written for coracobr3 y force
 coracobr3
-  RMS fit error of the full model is: 0.009040 (normalized)
-range of amplitudes: 1.786170
-  Model addition step   1: Added term 1 1 0 -- RMS=0.152782, GCV=4.429244e-05, AIC = 2.517277
+  RMS fit error of the full model is: 0.009135 (normalized)
+range of amplitudes: 1.786509
+  Model addition step   1: Added term 1 1 0 -- RMS=0.152019, GCV=4.385164e-05, AIC = 2.507275
   1 polynomial terms were written for coracobr3 z force
 infra1
-  RMS fit error of the full model is: 0.008278 (normalized)
-range of amplitudes: 0.394139
-  Model addition step   1: Added term 0 0 0 -- RMS=0.104276, GCV=2.063281e-05, AIC = 1.753345
-  Model addition step   2: Added term 1 1 0 -- RMS=0.044907, GCV=3.841210e-06, AIC = 0.072239
-  Model addition step   3: Added term 1 0 0 -- RMS=0.033060, GCV=2.089750e-06, AIC = -0.536521
+  RMS fit error of the full model is: 0.008938 (normalized)
+range of amplitudes: 0.295753
+  Model addition step   1: Added term 0 0 0 -- RMS=0.060989, GCV=7.058189e-06, AIC = 0.680651
+  Model addition step   2: Added term 1 1 0 -- RMS=0.049823, GCV=4.728171e-06, AIC = 0.279990
+  Model addition step   3: Added term 2 1 1 -- RMS=0.028616, GCV=1.565624e-06, AIC = -0.825282
   3 polynomial terms were written for infra1 x force
 infra1
-  RMS fit error of the full model is: 0.017001 (normalized)
-range of amplitudes: 0.596839
-  Model addition step   1: Added term 0 0 0 -- RMS=0.166103, GCV=5.235340e-05, AIC = 2.684480
-  Model addition step   2: Added term 1 0 0 -- RMS=0.066676, GCV=8.467768e-06, AIC = 0.862719
-  Model addition step   3: Added term 1 1 0 -- RMS=0.050663, GCV=4.907516e-06, AIC = 0.317202
+  RMS fit error of the full model is: 0.015498 (normalized)
+range of amplitudes: 0.644365
+  Model addition step   1: Added term 0 0 0 -- RMS=0.126012, GCV=3.013070e-05, AIC = 2.132007
+  Model addition step   2: Added term 1 1 0 -- RMS=0.104882, GCV=2.095249e-05, AIC = 1.768709
+  Model addition step   3: Added term 1 1 1 -- RMS=0.055759, GCV=5.944407e-06, AIC = 0.508885
   3 polynomial terms were written for infra1 y force
 infra1
-  RMS fit error of the full model is: 0.018599 (normalized)
-range of amplitudes: 0.731227
-  Model addition step   1: Added term 2 0 0 -- RMS=0.096117, GCV=1.753043e-05, AIC = 1.590401
-  Model addition step   2: Added term 1 2 0 -- RMS=0.072901, GCV=1.012290e-05, AIC = 1.041253
-  2 polynomial terms were written for infra1 z force
+  RMS fit error of the full model is: 0.009054 (normalized)
+range of amplitudes: 0.426413
+  Model addition step   1: Added term 0 2 0 -- RMS=0.092825, GCV=1.634995e-05, AIC = 1.520688
+  Model addition step   2: Added term 0 1 1 -- RMS=0.078985, GCV=1.188281e-05, AIC = 1.201545
+  Model addition step   3: Added term 2 1 1 -- RMS=0.066362, GCV=8.420149e-06, AIC = 0.857062
+  Model addition step   4: Added term 0 1 0 -- RMS=0.060300, GCV=6.978725e-06, AIC = 0.669275
+  Model addition step   5: Added term 1 0 2 -- RMS=0.056836, GCV=6.223665e-06, AIC = 0.554735
+  Model addition step   6: Added term 1 0 0 -- RMS=0.053775, GCV=5.592537e-06, AIC = 0.447770
+  Model addition step   7: Added term 0 2 1 -- RMS=0.048670, GCV=4.598781e-06, AIC = 0.252081
+  Model addition step   8: Added term 1 3 0 -- RMS=0.043452, GCV=3.679610e-06, AIC = 0.029042
+  Model addition step   9: Added term 2 0 0 -- RMS=0.041070, GCV=3.299893e-06, AIC = -0.079936
+  9 polynomial terms were written for infra1 z force
 infra2
-  RMS fit error of the full model is: 0.004390 (normalized)
-range of amplitudes: 0.174993
-  Model addition step   1: Added term 0 0 0 -- RMS=0.044936, GCV=3.831491e-06, AIC = 0.069717
-  Model addition step   2: Added term 1 0 0 -- RMS=0.019555, GCV=7.283970e-07, AIC = -1.590457
-  Model addition step   3: Added term 1 1 0 -- RMS=0.015195, GCV=4.414828e-07, AIC = -2.091182
-  3 polynomial terms were written for infra2 x force
+  RMS fit error of the full model is: 0.004162 (normalized)
+range of amplitudes: 0.165950
+  Model addition step   1: Added term 0 0 0 -- RMS=0.032627, GCV=2.019936e-06, AIC = -0.570472
+  Model addition step   2: Added term 1 1 0 -- RMS=0.027690, GCV=1.460407e-06, AIC = -0.894833
+  Model addition step   3: Added term 3 1 0 -- RMS=0.017880, GCV=6.112256e-07, AIC = -1.765855
+  Model addition step   4: Added term 0 0 2 -- RMS=0.014453, GCV=4.009321e-07, AIC = -2.187554
+  4 polynomial terms were written for infra2 x force
 infra2
-  RMS fit error of the full model is: 0.005746 (normalized)
-range of amplitudes: 0.223464
-  Model addition step   1: Added term 0 0 0 -- RMS=0.053847, GCV=5.501879e-06, AIC = 0.431552
-  Model addition step   2: Added term 1 0 0 -- RMS=0.022279, GCV=9.454175e-07, AIC = -1.329677
-  2 polynomial terms were written for infra2 y force
+  RMS fit error of the full model is: 0.005382 (normalized)
+range of amplitudes: 0.211325
+  Model addition step   1: Added term 0 0 0 -- RMS=0.041542, GCV=3.274710e-06, AIC = -0.087308
+  Model addition step   2: Added term 0 0 2 -- RMS=0.035854, GCV=2.448548e-06, AIC = -0.378053
+  Model addition step   3: Added term 1 1 0 -- RMS=0.031598, GCV=1.908939e-06, AIC = -0.627019
+  Model addition step   4: Added term 1 1 1 -- RMS=0.023881, GCV=1.094534e-06, AIC = -1.183262
+  Model addition step   5: Added term 0 1 0 -- RMS=0.020731, GCV=8.279736e-07, AIC = -1.462398
+  5 polynomial terms were written for infra2 y force
 infra2
-  RMS fit error of the full model is: 0.006805 (normalized)
-range of amplitudes: 0.238240
-  Model addition step   1: Added term 0 0 0 -- RMS=0.054361, GCV=5.607387e-06, AIC = 0.450548
-  Model addition step   2: Added term 1 2 0 -- RMS=0.031151, GCV=1.848270e-06, AIC = -0.659298
-  Model addition step   3: Added term 4 0 0 -- RMS=0.026710, GCV=1.364093e-06, AIC = -0.963076
-  Model addition step   4: Added term 0 0 2 -- RMS=0.024296, GCV=1.132928e-06, AIC = -1.148786
-  Model addition step   5: Added term 0 2 0 -- RMS=0.022500, GCV=9.753509e-07, AIC = -1.298582
-  5 polynomial terms were written for infra2 z force
+  RMS fit error of the full model is: 0.005329 (normalized)
+range of amplitudes: 0.206021
+  Model addition step   1: Added term 0 0 0 -- RMS=0.052157, GCV=5.161876e-06, AIC = 0.367763
+  Model addition step   2: Added term 1 1 0 -- RMS=0.037925, GCV=2.739584e-06, AIC = -0.265742
+  Model addition step   3: Added term 3 1 0 -- RMS=0.030382, GCV=1.764857e-06, AIC = -0.705496
+  Model addition step   4: Added term 0 0 1 -- RMS=0.028051, GCV=1.510244e-06, AIC = -0.861320
+  Model addition step   5: Added term 2 0 1 -- RMS=0.024446, GCV=1.151358e-06, AIC = -1.132682
+  Model addition step   6: Added term 0 2 0 -- RMS=0.022471, GCV=9.765349e-07, AIC = -1.297408
+  Model addition step   7: Added term 0 1 2 -- RMS=0.020884, GCV=8.467429e-07, AIC = -1.440069
+  Model addition step   8: Added term 0 1 1 -- RMS=0.019803, GCV=7.642859e-07, AIC = -1.542578
+  8 polynomial terms were written for infra2 z force
 infra3
-  RMS fit error of the full model is: 0.005033 (normalized)
-range of amplitudes: 0.203344
-  Model addition step   1: Added term 0 0 0 -- RMS=0.051320, GCV=4.997531e-06, AIC = 0.335407
-  Model addition step   2: Added term 1 1 0 -- RMS=0.022661, GCV=9.780809e-07, AIC = -1.295711
-  Model addition step   3: Added term 1 0 0 -- RMS=0.017614, GCV=5.931659e-07, AIC = -1.795847
-  3 polynomial terms were written for infra3 x force
+  RMS fit error of the full model is: 0.004762 (normalized)
+range of amplitudes: 0.188633
+  Model addition step   1: Added term 0 0 0 -- RMS=0.037417, GCV=2.656545e-06, AIC = -0.296511
+  Model addition step   2: Added term 1 1 0 -- RMS=0.031606, GCV=1.902737e-06, AIC = -0.630255
+  Model addition step   3: Added term 3 1 0 -- RMS=0.019617, GCV=7.357998e-07, AIC = -1.580363
+  Model addition step   4: Added term 0 0 2 -- RMS=0.015256, GCV=4.466802e-07, AIC = -2.079504
+  4 polynomial terms were written for infra3 x force
 infra3
-  RMS fit error of the full model is: 0.006860 (normalized)
-range of amplitudes: 0.249488
-  Model addition step   1: Added term 0 0 0 -- RMS=0.063157, GCV=7.568901e-06, AIC = 0.750511
-  Model addition step   2: Added term 1 0 0 -- RMS=0.026516, GCV=1.339249e-06, AIC = -0.981439
-  Model addition step   3: Added term 3 0 0 -- RMS=0.023869, GCV=1.089281e-06, AIC = -1.188048
-  3 polynomial terms were written for infra3 y force
+  RMS fit error of the full model is: 0.006335 (normalized)
+range of amplitudes: 0.255933
+  Model addition step   1: Added term 0 0 0 -- RMS=0.050311, GCV=4.802918e-06, AIC = 0.295686
+  Model addition step   2: Added term 0 0 2 -- RMS=0.042332, GCV=3.413279e-06, AIC = -0.045875
+  Model addition step   3: Added term 1 1 0 -- RMS=0.037775, GCV=2.728240e-06, AIC = -0.269909
+  Model addition step   4: Added term 1 1 1 -- RMS=0.026679, GCV=1.366104e-06, AIC = -0.961628
+  Model addition step   5: Added term 0 1 0 -- RMS=0.023173, GCV=1.034540e-06, AIC = -1.239667
+  5 polynomial terms were written for infra3 y force
 infra3
-  RMS fit error of the full model is: 0.008091 (normalized)
-range of amplitudes: 0.287727
-  Model addition step   1: Added term 0 0 0 -- RMS=0.064419, GCV=7.874266e-06, AIC = 0.790063
-  Model addition step   2: Added term 1 1 0 -- RMS=0.036745, GCV=2.571793e-06, AIC = -0.328945
-  Model addition step   3: Added term 4 0 0 -- RMS=0.033152, GCV=2.101359e-06, AIC = -0.530982
-  Model addition step   4: Added term 0 3 0 -- RMS=0.029843, GCV=1.709291e-06, AIC = -0.737513
-  Model addition step   5: Added term 0 1 2 -- RMS=0.027223, GCV=1.427828e-06, AIC = -0.917469
-  5 polynomial terms were written for infra3 z force
+  RMS fit error of the full model is: 0.006204 (normalized)
+range of amplitudes: 0.241555
+  Model addition step   1: Added term 0 0 0 -- RMS=0.060960, GCV=7.051362e-06, AIC = 0.679684
+  Model addition step   2: Added term 1 1 0 -- RMS=0.043581, GCV=3.617616e-06, AIC = 0.012267
+  Model addition step   3: Added term 3 1 0 -- RMS=0.034825, GCV=2.318795e-06, AIC = -0.432518
+  Model addition step   4: Added term 0 0 1 -- RMS=0.032079, GCV=1.975007e-06, AIC = -0.593019
+  Model addition step   5: Added term 2 0 1 -- RMS=0.027937, GCV=1.503630e-06, AIC = -0.865741
+  Model addition step   6: Added term 0 2 0 -- RMS=0.025633, GCV=1.270718e-06, AIC = -1.034081
+  Model addition step   7: Added term 0 1 2 -- RMS=0.024064, GCV=1.124248e-06, AIC = -1.156596
+  7 polynomial terms were written for infra3 z force
 infra4
-  RMS fit error of the full model is: 0.003967 (normalized)
-range of amplitudes: 0.166184
-  Model addition step   1: Added term 0 0 0 -- RMS=0.043732, GCV=3.629064e-06, AIC = 0.015438
-  Model addition step   2: Added term 1 1 0 -- RMS=0.017148, GCV=5.600983e-07, AIC = -1.853191
-  Model addition step   3: Added term 1 0 0 -- RMS=0.014853, GCV=4.217822e-07, AIC = -2.136832
+  RMS fit error of the full model is: 0.004041 (normalized)
+range of amplitudes: 0.158384
+  Model addition step   1: Added term 0 0 0 -- RMS=0.033668, GCV=2.150862e-06, AIC = -0.507668
+  Model addition step   2: Added term 1 1 0 -- RMS=0.026397, GCV=1.327173e-06, AIC = -0.990497
+  Model addition step   3: Added term 3 1 0 -- RMS=0.014645, GCV=4.100505e-07, AIC = -2.165041
   3 polynomial terms were written for infra4 x force
 infra4
-  RMS fit error of the full model is: 0.006799 (normalized)
-range of amplitudes: 0.247539
-  Model addition step   1: Added term 0 0 0 -- RMS=0.059359, GCV=6.685874e-06, AIC = 0.626460
-  Model addition step   2: Added term 1 0 0 -- RMS=0.029491, GCV=1.656595e-06, AIC = -0.768784
-  Model addition step   3: Added term 1 1 1 -- RMS=0.025371, GCV=1.230727e-06, AIC = -1.065961
-  Model addition step   4: Added term 1 1 0 -- RMS=0.018773, GCV=6.764237e-07, AIC = -1.664527
+  RMS fit error of the full model is: 0.006402 (normalized)
+range of amplitudes: 0.262302
+  Model addition step   1: Added term 0 0 0 -- RMS=0.052972, GCV=5.324617e-06, AIC = 0.398804
+  Model addition step   2: Added term 0 1 2 -- RMS=0.040909, GCV=3.187645e-06, AIC = -0.114266
+  Model addition step   3: Added term 1 1 0 -- RMS=0.026978, GCV=1.391516e-06, AIC = -0.943172
+  Model addition step   4: Added term 1 1 1 -- RMS=0.022173, GCV=9.436275e-07, AIC = -1.331615
   4 polynomial terms were written for infra4 y force
 infra4
-  RMS fit error of the full model is: 0.008192 (normalized)
-range of amplitudes: 0.327441
-  Model addition step   1: Added term 0 0 0 -- RMS=0.079584, GCV=1.201834e-05, AIC = 1.212896
-  Model addition step   2: Added term 1 1 0 -- RMS=0.034804, GCV=2.307179e-06, AIC = -0.437523
-  Model addition step   3: Added term 4 0 0 -- RMS=0.031630, GCV=1.912870e-06, AIC = -0.624961
-  3 polynomial terms were written for infra4 z force
+  RMS fit error of the full model is: 0.006542 (normalized)
+range of amplitudes: 0.286027
+  Model addition step   1: Added term 0 0 0 -- RMS=0.072915, GCV=1.008825e-05, AIC = 1.037834
+  Model addition step   2: Added term 1 1 0 -- RMS=0.043513, GCV=3.606452e-06, AIC = 0.009177
+  Model addition step   3: Added term 3 1 0 -- RMS=0.030702, GCV=1.802313e-06, AIC = -0.684495
+  Model addition step   4: Added term 0 1 0 -- RMS=0.027745, GCV=1.477467e-06, AIC = -0.883262
+  4 polynomial terms were written for infra4 z force
 infra5
-  RMS fit error of the full model is: 0.003572 (normalized)
-range of amplitudes: 0.122539
-  Model addition step   1: Added term 0 0 0 -- RMS=0.028537, GCV=1.545291e-06, AIC = -0.838325
-  Model addition step   2: Added term 1 1 0 -- RMS=0.011712, GCV=2.612591e-07, AIC = -2.615790
-  2 polynomial terms were written for infra5 x force
+  RMS fit error of the full model is: 0.003083 (normalized)
+range of amplitudes: 0.088997
+  Model addition step   1: Added term 0 0 0 -- RMS=0.022965, GCV=1.000755e-06, AIC = -1.272782
+  Model addition step   2: Added term 1 1 0 -- RMS=0.015392, GCV=4.512605e-07, AIC = -2.069259
+  Model addition step   3: Added term 3 1 0 -- RMS=0.009641, GCV=1.777170e-07, AIC = -3.001129
+  Model addition step   4: Added term 0 1 0 -- RMS=0.007523, GCV=1.086167e-07, AIC = -3.493521
+  4 polynomial terms were written for infra5 x force
 infra5
-  RMS fit error of the full model is: 0.008209 (normalized)
-range of amplitudes: 0.276811
-  Model addition step   1: Added term 0 0 0 -- RMS=0.064249, GCV=7.832861e-06, AIC = 0.784791
-  Model addition step   2: Added term 1 1 0 -- RMS=0.034937, GCV=2.324872e-06, AIC = -0.429883
-  Model addition step   3: Added term 2 2 0 -- RMS=0.022839, GCV=9.973279e-07, AIC = -1.276242
+  RMS fit error of the full model is: 0.007291 (normalized)
+range of amplitudes: 0.292549
+  Model addition step   1: Added term 0 0 0 -- RMS=0.061371, GCV=7.146873e-06, AIC = 0.693138
+  Model addition step   2: Added term 0 1 2 -- RMS=0.048659, GCV=4.509827e-06, AIC = 0.232711
+  Model addition step   3: Added term 1 1 0 -- RMS=0.022455, GCV=9.640914e-07, AIC = -1.310135
   3 polynomial terms were written for infra5 y force
 infra5
-  RMS fit error of the full model is: 0.012735 (normalized)
-range of amplitudes: 0.423456
-  Model addition step   1: Added term 0 0 0 -- RMS=0.096451, GCV=1.765227e-05, AIC = 1.597327
-  Model addition step   2: Added term 1 1 0 -- RMS=0.042449, GCV=3.432197e-06, AIC = -0.040347
-  Model addition step   3: Added term 4 0 0 -- RMS=0.038654, GCV=2.856705e-06, AIC = -0.223897
-  3 polynomial terms were written for infra5 z force
+  RMS fit error of the full model is: 0.008740 (normalized)
+range of amplitudes: 0.350030
+  Model addition step   1: Added term 0 0 0 -- RMS=0.089793, GCV=1.529919e-05, AIC = 1.454262
+  Model addition step   2: Added term 1 1 0 -- RMS=0.050205, GCV=4.800999e-06, AIC = 0.295276
+  Model addition step   3: Added term 3 1 0 -- RMS=0.035730, GCV=2.440964e-06, AIC = -0.381173
+  Model addition step   4: Added term 0 1 0 -- RMS=0.032632, GCV=2.043731e-06, AIC = -0.558814
+  4 polynomial terms were written for infra5 z force
 infra6
-  RMS fit error of the full model is: 0.004880 (normalized)
-range of amplitudes: 0.230210
-  Model addition step   1: Added term 0 0 0 -- RMS=0.038758, GCV=2.850379e-06, AIC = -0.226085
-  Model addition step   2: Added term 1 1 0 -- RMS=0.025316, GCV=1.220790e-06, AIC = -1.074050
-  Model addition step   3: Added term 4 0 0 -- RMS=0.018803, GCV=6.760031e-07, AIC = -1.665124
-  3 polynomial terms were written for infra6 x force
+  RMS fit error of the full model is: 0.004551 (normalized)
+range of amplitudes: 0.109812
+  Model addition step   1: Added term 0 0 0 -- RMS=0.026858, GCV=1.368766e-06, AIC = -0.959628
+  Model addition step   2: Added term 0 2 0 -- RMS=0.018329, GCV=6.399054e-07, AIC = -1.719983
+  Model addition step   3: Added term 1 1 0 -- RMS=0.016000, GCV=4.894693e-07, AIC = -1.988000
+  Model addition step   4: Added term 3 1 0 -- RMS=0.013791, GCV=3.650538e-07, AIC = -2.281302
+  Model addition step   5: Added term 1 0 2 -- RMS=0.013059, GCV=3.285530e-07, AIC = -2.386681
+Change in error: 0.041280. No more terms added.
+   5 polynomial terms were written for infra6 x force
 infra6
-  RMS fit error of the full model is: 0.012490 (normalized)
-range of amplitudes: 0.343571
-  Model addition step   1: Added term 0 1 1 -- RMS=0.080619, GCV=1.233270e-05, AIC = 1.238717
-  Model addition step   2: Added term 0 0 2 -- RMS=0.043366, GCV=3.582012e-06, AIC = 0.002377
-  Model addition step   3: Added term 0 0 4 -- RMS=0.034012, GCV=2.211813e-06, AIC = -0.479753
+  RMS fit error of the full model is: 0.009833 (normalized)
+range of amplitudes: 0.400250
+  Model addition step   1: Added term 0 0 2 -- RMS=0.076587, GCV=1.113013e-05, AIC = 1.136118
+  Model addition step   2: Added term 0 1 1 -- RMS=0.059420, GCV=6.725017e-06, AIC = 0.632287
+  Model addition step   3: Added term 0 1 2 -- RMS=0.037348, GCV=2.666966e-06, AIC = -0.292624
   3 polynomial terms were written for infra6 y force
 infra6
-  RMS fit error of the full model is: 0.014448 (normalized)
-range of amplitudes: 0.493598
-  Model addition step   1: Added term 0 0 0 -- RMS=0.106899, GCV=2.168381e-05, AIC = 1.803029
-  Model addition step   2: Added term 1 1 0 -- RMS=0.058906, GCV=6.609300e-06, AIC = 0.614930
-  Model addition step   3: Added term 4 0 0 -- RMS=0.046141, GCV=4.070551e-06, AIC = 0.130212
-  3 polynomial terms were written for infra6 z force
+  RMS fit error of the full model is: 0.009403 (normalized)
+range of amplitudes: 0.336454
+  Model addition step   1: Added term 0 0 0 -- RMS=0.087428, GCV=1.450394e-05, AIC = 1.400883
+  Model addition step   2: Added term 1 1 0 -- RMS=0.059245, GCV=6.685595e-06, AIC = 0.626407
+  Model addition step   3: Added term 3 1 0 -- RMS=0.048005, GCV=4.406095e-06, AIC = 0.209423
+  Model addition step   4: Added term 0 1 0 -- RMS=0.044129, GCV=3.737610e-06, AIC = 0.044855
+  Model addition step   5: Added term 0 0 1 -- RMS=0.040199, GCV=3.113395e-06, AIC = -0.137910
+  Model addition step   6: Added term 2 0 1 -- RMS=0.036574, GCV=2.586949e-06, AIC = -0.323184
+  Model addition step   7: Added term 1 0 2 -- RMS=0.034442, GCV=2.303019e-06, AIC = -0.439489
+  Model addition step   8: Added term 1 0 0 -- RMS=0.029957, GCV=1.748901e-06, AIC = -0.714777
+  8 polynomial terms were written for infra6 z force
 termin1
-  RMS fit error of the full model is: 0.015262 (normalized)
-range of amplitudes: 0.530848
-  Model addition step   1: Added term 0 0 0 -- RMS=0.133664, GCV=3.390152e-05, AIC = 2.249923
-  Model addition step   2: Added term 0 0 1 -- RMS=0.070402, GCV=9.440670e-06, AIC = 0.971479
-  Model addition step   3: Added term 3 1 0 -- RMS=0.054753, GCV=5.731817e-06, AIC = 0.472467
-  Model addition step   4: Added term 4 0 0 -- RMS=0.048405, GCV=4.497015e-06, AIC = 0.229823
+  RMS fit error of the full model is: 0.015419 (normalized)
+range of amplitudes: 0.385124
+  Model addition step   1: Added term 0 0 0 -- RMS=0.073659, GCV=1.029518e-05, AIC = 1.058139
+  Model addition step   2: Added term 1 2 0 -- RMS=0.049693, GCV=4.703458e-06, AIC = 0.274750
+  Model addition step   3: Added term 0 0 2 -- RMS=0.042431, GCV=3.442246e-06, AIC = -0.037442
+  Model addition step   4: Added term 0 0 4 -- RMS=0.036637, GCV=2.576233e-06, AIC = -0.327263
   4 polynomial terms were written for termin1 x force
 termin1
-  RMS fit error of the full model is: 0.016550 (normalized)
-range of amplitudes: 0.658684
-  Model addition step   1: Added term 0 0 0 -- RMS=0.173820, GCV=5.733047e-05, AIC = 2.775295
-  Model addition step   2: Added term 1 0 0 -- RMS=0.059066, GCV=6.645161e-06, AIC = 0.620341
-  2 polynomial terms were written for termin1 y force
+  RMS fit error of the full model is: 0.014839 (normalized)
+range of amplitudes: 0.580621
+  Model addition step   1: Added term 0 0 0 -- RMS=0.120977, GCV=2.777124e-05, AIC = 2.050464
+  Model addition step   2: Added term 1 1 0 -- RMS=0.077037, GCV=1.130407e-05, AIC = 1.151615
+  Model addition step   3: Added term 1 0 1 -- RMS=0.062971, GCV=7.581617e-06, AIC = 0.752161
+  Model addition step   4: Added term 1 0 3 -- RMS=0.055198, GCV=5.847578e-06, AIC = 0.492436
+  4 polynomial terms were written for termin1 y force
 termin1
-  RMS fit error of the full model is: 0.028388 (normalized)
-range of amplitudes: 0.841327
-  Model addition step   1: Added term 2 0 0 -- RMS=0.120184, GCV=2.740842e-05, AIC = 2.037313
-  Model addition step   2: Added term 1 0 0 -- RMS=0.093807, GCV=1.676125e-05, AIC = 1.545522
-  Model addition step   3: Added term 0 1 0 -- RMS=0.084248, GCV=1.357058e-05, AIC = 1.334338
-  Model addition step   4: Added term 0 0 1 -- RMS=0.075414, GCV=1.091529e-05, AIC = 1.116574
-  4 polynomial terms were written for termin1 z force
+  RMS fit error of the full model is: 0.013365 (normalized)
+range of amplitudes: 0.499493
+  Model addition step   1: Added term 0 0 0 -- RMS=0.103592, GCV=2.036284e-05, AIC = 1.740174
+  Model addition step   2: Added term 3 1 0 -- RMS=0.095383, GCV=1.732908e-05, AIC = 1.578838
+  Model addition step   3: Added term 0 0 1 -- RMS=0.089937, GCV=1.546547e-05, AIC = 1.465044
+  Model addition step   4: Added term 2 2 0 -- RMS=0.084316, GCV=1.364448e-05, AIC = 1.339744
+Change in error: 0.036701. No more terms added.
+   4 polynomial terms were written for termin1 z force
 termin2
-  RMS fit error of the full model is: 0.011939 (normalized)
-range of amplitudes: 0.468524
-  Model addition step   1: Added term 0 0 0 -- RMS=0.112839, GCV=2.416036e-05, AIC = 1.911176
-  Model addition step   2: Added term 0 0 1 -- RMS=0.057410, GCV=6.277929e-06, AIC = 0.563492
-  Model addition step   3: Added term 1 1 0 -- RMS=0.047327, GCV=4.282548e-06, AIC = 0.180982
-  Model addition step   4: Added term 4 0 0 -- RMS=0.035360, GCV=2.399769e-06, AIC = -0.398219
+  RMS fit error of the full model is: 0.011079 (normalized)
+range of amplitudes: 0.316243
+  Model addition step   1: Added term 0 0 0 -- RMS=0.062160, GCV=7.331759e-06, AIC = 0.718678
+  Model addition step   2: Added term 1 2 0 -- RMS=0.048575, GCV=4.494333e-06, AIC = 0.229269
+  Model addition step   3: Added term 0 0 2 -- RMS=0.036652, GCV=2.568452e-06, AIC = -0.330263
+  Model addition step   4: Added term 0 0 4 -- RMS=0.031309, GCV=1.881359e-06, AIC = -0.641597
   4 polynomial terms were written for termin2 x force
 termin2
-  RMS fit error of the full model is: 0.015180 (normalized)
-range of amplitudes: 0.578240
-  Model addition step   1: Added term 0 0 0 -- RMS=0.148234, GCV=4.169508e-05, AIC = 2.456846
-  Model addition step   2: Added term 1 0 0 -- RMS=0.051835, GCV=5.117750e-06, AIC = 0.359167
-  2 polynomial terms were written for termin2 y force
+  RMS fit error of the full model is: 0.012177 (normalized)
+range of amplitudes: 0.498862
+  Model addition step   1: Added term 0 0 0 -- RMS=0.101309, GCV=1.947521e-05, AIC = 1.695605
+  Model addition step   2: Added term 1 1 0 -- RMS=0.075863, GCV=1.096224e-05, AIC = 1.120908
+  Model addition step   3: Added term 1 0 1 -- RMS=0.059768, GCV=6.830083e-06, AIC = 0.647771
+  Model addition step   4: Added term 1 0 3 -- RMS=0.052708, GCV=5.332020e-06, AIC = 0.400139
+  Model addition step   5: Added term 2 1 1 -- RMS=0.048168, GCV=4.470066e-06, AIC = 0.223779
+  5 polynomial terms were written for termin2 y force
 termin2
-  RMS fit error of the full model is: 0.019384 (normalized)
-range of amplitudes: 0.737430
-  Model addition step   1: Added term 0 0 0 -- RMS=0.103462, GCV=2.031180e-05, AIC = 1.737664
-  Model addition step   2: Added term 2 0 2 -- RMS=0.088680, GCV=1.497898e-05, AIC = 1.433100
-  Model addition step   3: Added term 1 0 0 -- RMS=0.081294, GCV=1.263576e-05, AIC = 1.262965
-  Model addition step   4: Added term 0 0 1 -- RMS=0.068257, GCV=8.941875e-06, AIC = 0.917154
-  4 polynomial terms were written for termin2 z force
+  RMS fit error of the full model is: 0.011526 (normalized)
+range of amplitudes: 0.395602
+  Model addition step   1: Added term 0 0 0 -- RMS=0.089124, GCV=1.507220e-05, AIC = 1.439315
+Change in error: 0.048343. No more terms added.
+   1 polynomial terms were written for termin2 z force
 termin3
-  RMS fit error of the full model is: 0.014604 (normalized)
-range of amplitudes: 0.812124
-  Model addition step   1: Added term 0 0 0 -- RMS=0.170387, GCV=5.508839e-05, AIC = 2.735402
-  Model addition step   2: Added term 3 1 0 -- RMS=0.092586, GCV=1.632786e-05, AIC = 1.519325
-  Model addition step   3: Added term 4 0 0 -- RMS=0.070054, GCV=9.383065e-06, AIC = 0.965340
-  3 polynomial terms were written for termin3 x force
+  RMS fit error of the full model is: 0.018113 (normalized)
+range of amplitudes: 0.389787
+  Model addition step   1: Added term 0 0 0 -- RMS=0.071918, GCV=9.814427e-06, AIC = 1.010316
+  Model addition step   2: Added term 0 2 0 -- RMS=0.056647, GCV=6.112070e-06, AIC = 0.536718
+  Model addition step   3: Added term 0 1 2 -- RMS=0.048489, GCV=4.495419e-06, AIC = 0.229493
+  Model addition step   4: Added term 1 1 0 -- RMS=0.037600, GCV=2.713353e-06, AIC = -0.275406
+  4 polynomial terms were written for termin3 x force
 termin3
-  RMS fit error of the full model is: 0.027584 (normalized)
-range of amplitudes: 0.839192
-  Model addition step   1: Added term 0 1 0 -- RMS=0.252580, GCV=1.210560e-04, AIC = 3.522716
-  Model addition step   2: Added term 1 0 0 -- RMS=0.171138, GCV=5.578600e-05, AIC = 2.747975
-  Model addition step   3: Added term 0 0 0 -- RMS=0.087216, GCV=1.454375e-05, AIC = 1.403596
-  Model addition step   4: Added term 1 1 0 -- RMS=0.066370, GCV=8.454311e-06, AIC = 0.861085
+  RMS fit error of the full model is: 0.021094 (normalized)
+range of amplitudes: 0.843762
+  Model addition step   1: Added term 0 1 0 -- RMS=0.172240, GCV=5.629311e-05, AIC = 2.757035
+  Model addition step   2: Added term 0 0 0 -- RMS=0.149498, GCV=4.256991e-05, AIC = 2.477600
+  Model addition step   3: Added term 1 1 0 -- RMS=0.117333, GCV=2.632231e-05, AIC = 1.996851
+  Model addition step   4: Added term 1 1 1 -- RMS=0.070293, GCV=9.483458e-06, AIC = 0.975958
   4 polynomial terms were written for termin3 y force
 termin3
-  RMS fit error of the full model is: 0.030495 (normalized)
-range of amplitudes: 1.080730
-  Model addition step   1: Added term 4 0 0 -- RMS=0.153486, GCV=4.470185e-05, AIC = 2.526478
-  Model addition step   2: Added term 1 0 0 -- RMS=0.134845, GCV=3.463431e-05, AIC = 2.271297
-  Model addition step   3: Added term 0 2 0 -- RMS=0.115443, GCV=2.548108e-05, AIC = 1.964370
-  Model addition step   4: Added term 3 0 0 -- RMS=0.102359, GCV=2.010887e-05, AIC = 1.727570
-  4 polynomial terms were written for termin3 z force
+  RMS fit error of the full model is: 0.015795 (normalized)
+range of amplitudes: 0.560894
+  Model addition step   1: Added term 0 0 0 -- RMS=0.144730, GCV=3.974719e-05, AIC = 2.409002
+Change in error: 0.036743. No more terms added.
+   1 polynomial terms were written for termin3 z force
 termaj1
-  RMS fit error of the full model is: 0.005492 (normalized)
-range of amplitudes: 0.368966
-  Model addition step   1: Added term 0 0 0 -- RMS=0.077384, GCV=1.136305e-05, AIC = 1.156830
-  Model addition step   2: Added term 1 0 0 -- RMS=0.056678, GCV=6.118749e-06, AIC = 0.537810
-  Model addition step   3: Added term 1 1 1 -- RMS=0.042215, GCV=3.407286e-06, AIC = -0.047650
-  Model addition step   4: Added term 1 1 0 -- RMS=0.031189, GCV=1.866991e-06, AIC = -0.649263
+  RMS fit error of the full model is: 0.003478 (normalized)
+range of amplitudes: 0.359063
+  Model addition step   1: Added term 0 0 0 -- RMS=0.078593, GCV=1.172070e-05, AIC = 1.187819
+  Model addition step   2: Added term 0 1 2 -- RMS=0.066730, GCV=8.481485e-06, AIC = 0.864338
+  Model addition step   3: Added term 1 1 0 -- RMS=0.040298, GCV=3.104863e-06, AIC = -0.140596
+  Model addition step   4: Added term 2 2 0 -- RMS=0.027663, GCV=1.468746e-06, AIC = -0.889182
   4 polynomial terms were written for termaj1 x force
 termaj1
-  RMS fit error of the full model is: 0.004757 (normalized)
-range of amplitudes: 0.398870
-  Model addition step   1: Added term 0 1 0 -- RMS=0.079925, GCV=1.212148e-05, AIC = 1.221442
-  Model addition step   2: Added term 0 0 0 -- RMS=0.040947, GCV=3.193582e-06, AIC = -0.112405
-  Model addition step   3: Added term 1 2 1 -- RMS=0.027212, GCV=1.415808e-06, AIC = -0.925865
-  3 polynomial terms were written for termaj1 y force
+  RMS fit error of the full model is: 0.004993 (normalized)
+range of amplitudes: 0.594253
+  Model addition step   1: Added term 0 1 0 -- RMS=0.097649, GCV=1.809342e-05, AIC = 1.622011
+  Model addition step   2: Added term 0 0 2 -- RMS=0.058544, GCV=6.528380e-06, AIC = 0.602611
+  2 polynomial terms were written for termaj1 y force
 termaj1
-  RMS fit error of the full model is: 0.021217 (normalized)
-range of amplitudes: 0.946811
-  Model addition step   1: Added term 0 0 0 -- RMS=0.258571, GCV=1.268667e-04, AIC = 3.569600
-  Model addition step   2: Added term 1 1 0 -- RMS=0.072449, GCV=9.997726e-06, AIC = 1.028810
+  RMS fit error of the full model is: 0.009982 (normalized)
+range of amplitudes: 0.968018
+  Model addition step   1: Added term 0 0 0 -- RMS=0.254128, GCV=1.225439e-04, AIC = 3.534932
+  Model addition step   2: Added term 1 1 0 -- RMS=0.090587, GCV=1.563040e-05, AIC = 1.475669
   2 polynomial terms were written for termaj1 z force
 termaj2
-  RMS fit error of the full model is: 0.003706 (normalized)
-range of amplitudes: 0.344439
-  Model addition step   1: Added term 0 0 0 -- RMS=0.072516, GCV=9.978196e-06, AIC = 1.026865
-  Model addition step   2: Added term 1 0 0 -- RMS=0.058464, GCV=6.510482e-06, AIC = 0.599865
-  Model addition step   3: Added term 2 2 0 -- RMS=0.038559, GCV=2.842801e-06, AIC = -0.228776
-  Model addition step   4: Added term 1 1 0 -- RMS=0.017742, GCV=6.041690e-07, AIC = -1.777492
+  RMS fit error of the full model is: 0.004421 (normalized)
+range of amplitudes: 0.344272
+  Model addition step   1: Added term 0 0 0 -- RMS=0.072499, GCV=9.973681e-06, AIC = 1.026412
+  Model addition step   2: Added term 0 2 2 -- RMS=0.062893, GCV=7.534175e-06, AIC = 0.745901
+  Model addition step   3: Added term 1 1 0 -- RMS=0.037408, GCV=2.675579e-06, AIC = -0.289400
+  Model addition step   4: Added term 2 2 0 -- RMS=0.022722, GCV=9.909041e-07, AIC = -1.282729
   4 polynomial terms were written for termaj2 x force
 termaj2
-  RMS fit error of the full model is: 0.003501 (normalized)
-range of amplitudes: 0.475590
-  Model addition step   1: Added term 0 1 0 -- RMS=0.037593, GCV=2.681707e-06, AIC = -0.287084
+  RMS fit error of the full model is: 0.003605 (normalized)
+range of amplitudes: 0.595942
+  Model addition step   1: Added term 0 1 0 -- RMS=0.057915, GCV=6.364576e-06, AIC = 0.577210
   1 polynomial terms were written for termaj2 y force
 termaj2
-  RMS fit error of the full model is: 0.006784 (normalized)
-range of amplitudes: 1.039801
-  Model addition step   1: Added term 0 0 1 -- RMS=0.280886, GCV=1.497092e-04, AIC = 3.735157
-  Model addition step   2: Added term 0 0 0 -- RMS=0.183652, GCV=6.424286e-05, AIC = 2.889123
-  Model addition step   3: Added term 1 1 0 -- RMS=0.065147, GCV=8.114676e-06, AIC = 0.820108
-  3 polynomial terms were written for termaj2 z force
+  RMS fit error of the full model is: 0.010497 (normalized)
+range of amplitudes: 1.054473
+  Model addition step   1: Added term 0 0 0 -- RMS=0.278451, GCV=1.471248e-04, AIC = 3.717744
+  Model addition step   2: Added term 1 1 0 -- RMS=0.086876, GCV=1.437596e-05, AIC = 1.392009
+  2 polynomial terms were written for termaj2 z force
 termaj3
-  RMS fit error of the full model is: 0.006986 (normalized)
-range of amplitudes: 0.388185
-  Model addition step   1: Added term 0 0 0 -- RMS=0.090689, GCV=1.560623e-05, AIC = 1.474133
-  Model addition step   2: Added term 1 1 0 -- RMS=0.054985, GCV=5.758764e-06, AIC = 0.477175
-  Model addition step   3: Added term 2 2 0 -- RMS=0.031330, GCV=1.876690e-06, AIC = -0.644057
+  RMS fit error of the full model is: 0.005745 (normalized)
+range of amplitudes: 0.388196
+  Model addition step   1: Added term 0 0 0 -- RMS=0.087466, GCV=1.451680e-05, AIC = 1.401769
+  Model addition step   2: Added term 1 1 0 -- RMS=0.058248, GCV=6.462407e-06, AIC = 0.592454
+  Model addition step   3: Added term 2 2 0 -- RMS=0.036462, GCV=2.541988e-06, AIC = -0.340620
   3 polynomial terms were written for termaj3 x force
 termaj3
-  RMS fit error of the full model is: 0.005654 (normalized)
-range of amplitudes: 0.571584
-  Model addition step   1: Added term 0 3 0 -- RMS=0.056522, GCV=6.062136e-06, AIC = 0.528525
-  1 polynomial terms were written for termaj3 y force
+  RMS fit error of the full model is: 0.004717 (normalized)
+range of amplitudes: 0.668450
+  Model addition step   1: Added term 0 3 0 -- RMS=0.070928, GCV=9.546061e-06, AIC = 0.982591
+  Model addition step   2: Added term 0 0 0 -- RMS=0.057191, GCV=6.230109e-06, AIC = 0.555846
+  2 polynomial terms were written for termaj3 y force
 termaj3
-  RMS fit error of the full model is: 0.021785 (normalized)
-range of amplitudes: 1.044183
-  Model addition step   1: Added term 0 0 0 -- RMS=0.278649, GCV=1.473338e-04, AIC = 3.719163
-  Model addition step   2: Added term 1 1 0 -- RMS=0.079942, GCV=1.217276e-05, AIC = 1.225653
+  RMS fit error of the full model is: 0.012958 (normalized)
+range of amplitudes: 1.068974
+  Model addition step   1: Added term 0 0 0 -- RMS=0.272304, GCV=1.407010e-04, AIC = 3.673100
+  Model addition step   2: Added term 1 1 0 -- RMS=0.102044, GCV=1.983414e-05, AIC = 1.713857
   2 polynomial terms were written for termaj3 z force
 termaj4
-  RMS fit error of the full model is: 0.006419 (normalized)
-range of amplitudes: 0.367634
-  Model addition step   1: Added term 0 0 0 -- RMS=0.083591, GCV=1.325874e-05, AIC = 1.311120
-  Model addition step   2: Added term 1 0 0 -- RMS=0.051277, GCV=5.008269e-06, AIC = 0.337542
-  Model addition step   3: Added term 1 0 2 -- RMS=0.041191, GCV=3.244092e-06, AIC = -0.096731
-  Model addition step   4: Added term 2 1 0 -- RMS=0.037304, GCV=2.670882e-06, AIC = -0.291182
-  Model addition step   5: Added term 1 1 0 -- RMS=0.023582, GCV=1.071425e-06, AIC = -1.204634
-  5 polynomial terms were written for termaj4 x force
+  RMS fit error of the full model is: 0.002709 (normalized)
+range of amplitudes: 0.351496
+  Model addition step   1: Added term 0 0 0 -- RMS=0.079652, GCV=1.203880e-05, AIC = 1.214597
+  Model addition step   2: Added term 1 1 0 -- RMS=0.067681, GCV=8.725133e-06, AIC = 0.892660
+  Model addition step   3: Added term 1 1 1 -- RMS=0.033074, GCV=2.091550e-06, AIC = -0.535660
+  3 polynomial terms were written for termaj4 x force
 termaj4
-  RMS fit error of the full model is: 0.005905 (normalized)
-range of amplitudes: 0.323076
-  Model addition step   1: Added term 0 0 0 -- RMS=0.066369, GCV=8.358266e-06, AIC = 0.849714
-  Model addition step   2: Added term 0 2 0 -- RMS=0.037177, GCV=2.632630e-06, AIC = -0.305565
-  Model addition step   3: Added term 1 0 0 -- RMS=0.031306, GCV=1.873892e-06, AIC = -0.645548
-  3 polynomial terms were written for termaj4 y force
+  RMS fit error of the full model is: 0.006256 (normalized)
+range of amplitudes: 0.546454
+  Model addition step   1: Added term 0 0 0 -- RMS=0.100985, GCV=1.935094e-05, AIC = 1.689204
+  Model addition step   2: Added term 1 2 1 -- RMS=0.032068, GCV=1.958772e-06, AIC = -0.601230
+  2 polynomial terms were written for termaj4 y force
 termaj4
-  RMS fit error of the full model is: 0.020819 (normalized)
-range of amplitudes: 0.809458
-  Model addition step   1: Added term 0 0 0 -- RMS=0.218481, GCV=9.057656e-05, AIC = 3.232658
-  Model addition step   2: Added term 1 1 0 -- RMS=0.070712, GCV=9.524080e-06, AIC = 0.980275
-  2 polynomial terms were written for termaj4 z force
+  RMS fit error of the full model is: 0.008637 (normalized)
+range of amplitudes: 0.810756
+  Model addition step   1: Added term 0 0 0 -- RMS=0.204289, GCV=7.919106e-05, AIC = 3.098326
+  Model addition step   2: Added term 1 1 0 -- RMS=0.087958, GCV=1.473607e-05, AIC = 1.416750
+  Model addition step   3: Added term 0 1 0 -- RMS=0.065853, GCV=8.291477e-06, AIC = 0.841662
+  3 polynomial terms were written for termaj4 z force
 supra1
-  RMS fit error of the full model is: 0.007226 (normalized)
-range of amplitudes: 0.316107
-  Model addition step   1: Added term 0 0 0 -- RMS=0.037824, GCV=2.714766e-06, AIC = -0.274832
-  Model addition step   2: Added term 2 0 2 -- RMS=0.031379, GCV=1.875478e-06, AIC = -0.644685
+  RMS fit error of the full model is: 0.022877 (normalized)
+range of amplitudes: 0.417276
+  Model addition step   1: Added term 0 0 0 -- RMS=0.052279, GCV=5.186146e-06, AIC = 0.372454
+  Model addition step   2: Added term 0 1 3 -- RMS=0.038596, GCV=2.837326e-06, AIC = -0.230686
   2 polynomial terms were written for supra1 x force
 supra1
-  RMS fit error of the full model is: 0.016076 (normalized)
-range of amplitudes: 0.374561
-  Model addition step   1: Added term 0 0 0 -- RMS=0.100052, GCV=1.899511e-05, AIC = 1.670644
-  Model addition step   2: Added term 1 2 0 -- RMS=0.077343, GCV=1.139398e-05, AIC = 1.159537
-  Model addition step   3: Added term 0 0 2 -- RMS=0.070125, GCV=9.402109e-06, AIC = 0.967368
-  Model addition step   4: Added term 0 0 4 -- RMS=0.062909, GCV=7.595654e-06, AIC = 0.753985
-  Model addition step   5: Added term 1 0 1 -- RMS=0.058104, GCV=6.504291e-06, AIC = 0.598838
-  Model addition step   6: Added term 3 0 0 -- RMS=0.049936, GCV=4.822601e-06, AIC = 0.299650
-  Model addition step   7: Added term 0 1 1 -- RMS=0.041676, GCV=3.371969e-06, AIC = -0.058213
-  Model addition step   8: Added term 0 1 0 -- RMS=0.037938, GCV=2.805040e-06, AIC = -0.242347
-  Model addition step   9: Added term 0 2 2 -- RMS=0.034445, GCV=2.321151e-06, AIC = -0.431763
-  9 polynomial terms were written for supra1 y force
+  RMS fit error of the full model is: 0.047261 (normalized)
+range of amplitudes: 0.752924
+  Model addition step   1: Added term 0 0 2 -- RMS=0.106475, GCV=2.151201e-05, AIC = 1.795074
+  Model addition step   2: Added term 0 1 2 -- RMS=0.098212, GCV=1.837214e-05, AIC = 1.637288
+  Model addition step   3: Added term 0 1 1 -- RMS=0.081620, GCV=1.273734e-05, AIC = 1.270972
+  Model addition step   4: Added term 2 1 1 -- RMS=0.074760, GCV=1.072680e-05, AIC = 1.099154
+  4 polynomial terms were written for supra1 y force
 supra1
-  RMS fit error of the full model is: 0.021736 (normalized)
-range of amplitudes: 0.778363
-  Model addition step   1: Added term 0 0 0 -- RMS=0.141987, GCV=3.825451e-05, AIC = 2.370724
-  Model addition step   2: Added term 0 1 1 -- RMS=0.118181, GCV=2.660283e-05, AIC = 2.007470
-  Model addition step   3: Added term 1 0 2 -- RMS=0.098136, GCV=1.841366e-05, AIC = 1.639527
-Change in error: 0.049598. No more terms added.
+  RMS fit error of the full model is: 0.036211 (normalized)
+range of amplitudes: 0.785394
+  Model addition step   1: Added term 0 1 0 -- RMS=0.136535, GCV=3.537355e-05, AIC = 2.292427
+  Model addition step   2: Added term 0 1 1 -- RMS=0.122789, GCV=2.871789e-05, AIC = 2.083972
+  Model addition step   3: Added term 2 2 0 -- RMS=0.095752, GCV=1.753002e-05, AIC = 1.590349
+Change in error: 0.045820. No more terms added.
    3 polynomial terms were written for supra1 z force
 supra2
-  RMS fit error of the full model is: 0.007183 (normalized)
-range of amplitudes: 0.388081
-  Model addition step   1: Added term 0 0 0 -- RMS=0.049011, GCV=4.558004e-06, AIC = 0.243347
-  Model addition step   2: Added term 2 0 2 -- RMS=0.037937, GCV=2.741289e-06, AIC = -0.265120
-  2 polynomial terms were written for supra2 x force
+  RMS fit error of the full model is: 0.018045 (normalized)
+range of amplitudes: 0.259819
+  Model addition step   1: Added term 0 0 0 -- RMS=0.032295, GCV=1.979074e-06, AIC = -0.590908
+  Model addition step   2: Added term 0 2 0 -- RMS=0.027064, GCV=1.395187e-06, AIC = -0.940519
+Change in error: 0.030420. No more terms added.
+   2 polynomial terms were written for supra2 x force
 supra2
-  RMS fit error of the full model is: 0.014849 (normalized)
-range of amplitudes: 0.377872
-  Model addition step   1: Added term 0 0 0 -- RMS=0.096949, GCV=1.783509e-05, AIC = 1.607630
-  Model addition step   2: Added term 1 2 0 -- RMS=0.074775, GCV=1.064981e-05, AIC = 1.091994
-  Model addition step   3: Added term 2 0 1 -- RMS=0.066375, GCV=8.423633e-06, AIC = 0.857475
-  Model addition step   4: Added term 0 0 1 -- RMS=0.053855, GCV=5.566575e-06, AIC = 0.443189
-  Model addition step   5: Added term 1 0 0 -- RMS=0.049899, GCV=4.797138e-06, AIC = 0.294396
-  Model addition step   6: Added term 0 0 2 -- RMS=0.045127, GCV=3.938395e-06, AIC = 0.097110
-  Model addition step   7: Added term 1 0 3 -- RMS=0.037703, GCV=2.759787e-06, AIC = -0.258557
-  7 polynomial terms were written for supra2 y force
+  RMS fit error of the full model is: 0.027927 (normalized)
+range of amplitudes: 0.624315
+  Model addition step   1: Added term 0 0 0 -- RMS=0.104148, GCV=2.058223e-05, AIC = 1.750891
+  Model addition step   2: Added term 0 0 2 -- RMS=0.083180, GCV=1.317864e-05, AIC = 1.305050
+  Model addition step   3: Added term 0 0 1 -- RMS=0.072786, GCV=1.012930e-05, AIC = 1.041866
+  Model addition step   4: Added term 0 1 2 -- RMS=0.063502, GCV=7.739406e-06, AIC = 0.772734
+  Model addition step   5: Added term 2 0 1 -- RMS=0.050963, GCV=5.003865e-06, AIC = 0.336587
+  5 polynomial terms were written for supra2 y force
 supra2
-  RMS fit error of the full model is: 0.018853 (normalized)
-range of amplitudes: 0.665872
-  Model addition step   1: Added term 0 0 0 -- RMS=0.126938, GCV=3.057522e-05, AIC = 2.146653
-  Model addition step   2: Added term 0 1 1 -- RMS=0.100609, GCV=1.928019e-05, AIC = 1.685530
-  Model addition step   3: Added term 1 0 2 -- RMS=0.089118, GCV=1.518497e-05, AIC = 1.446740
-  Model addition step   4: Added term 4 0 0 -- RMS=0.082361, GCV=1.301898e-05, AIC = 1.292817
-  Model addition step   5: Added term 0 0 2 -- RMS=0.074911, GCV=1.081137e-05, AIC = 1.106975
-  Model addition step   6: Added term 2 0 2 -- RMS=0.066806, GCV=8.631483e-06, AIC = 0.881753
-  Model addition step   7: Added term 0 2 0 -- RMS=0.057028, GCV=6.313817e-06, AIC = 0.569030
-  7 polynomial terms were written for supra2 z force
+  RMS fit error of the full model is: 0.016783 (normalized)
+range of amplitudes: 0.473288
+  Model addition step   1: Added term 0 0 0 -- RMS=0.119229, GCV=2.697454e-05, AIC = 2.021356
+  Model addition step   2: Added term 0 0 2 -- RMS=0.106716, GCV=2.169163e-05, AIC = 1.803379
+  Model addition step   3: Added term 0 1 1 -- RMS=0.084306, GCV=1.358927e-05, AIC = 1.335715
+  Model addition step   4: Added term 2 1 1 -- RMS=0.069277, GCV=9.211135e-06, AIC = 0.946822
+  Model addition step   5: Added term 0 1 0 -- RMS=0.064334, GCV=7.974073e-06, AIC = 0.802572
+  Model addition step   6: Added term 2 0 2 -- RMS=0.058581, GCV=6.636938e-06, AIC = 0.618987
+Change in error: 0.046278. No more terms added.
+   6 polynomial terms were written for supra2 z force
 supra3
-  RMS fit error of the full model is: 0.006753 (normalized)
-range of amplitudes: 0.102699
-  Model addition step   1: Added term 0 0 0 -- RMS=0.026957, GCV=1.378887e-06, AIC = -0.952261
-  Model addition step   2: Added term 3 0 0 -- RMS=0.025096, GCV=1.199652e-06, AIC = -1.091517
-  Model addition step   3: Added term 0 1 1 -- RMS=0.023269, GCV=1.035244e-06, AIC = -1.238929
-  Model addition step   4: Added term 2 1 1 -- RMS=0.020045, GCV=7.711377e-07, AIC = -1.533479
-  Model addition step   5: Added term 1 0 0 -- RMS=0.018455, GCV=6.561947e-07, AIC = -1.694921
-Change in error: 0.035502. No more terms added.
-   5 polynomial terms were written for supra3 x force
+  RMS fit error of the full model is: 0.004827 (normalized)
+range of amplitudes: 0.245668
+  Model addition step   1: Added term 0 0 0 -- RMS=0.057652, GCV=6.306942e-06, AIC = 0.568114
+  Model addition step   2: Added term 0 1 1 -- RMS=0.028962, GCV=1.597667e-06, AIC = -0.805004
+  Model addition step   3: Added term 0 2 0 -- RMS=0.026457, GCV=1.338297e-06, AIC = -0.982168
+  Model addition step   4: Added term 1 1 0 -- RMS=0.022117, GCV=9.388306e-07, AIC = -1.336711
+  4 polynomial terms were written for supra3 x force
 supra3
-  RMS fit error of the full model is: 0.011123 (normalized)
-range of amplitudes: 0.189557
-  Model addition step   1: Added term 0 0 0 -- RMS=0.029408, GCV=1.641009e-06, AIC = -0.778226
-  Model addition step   2: Added term 4 0 0 -- RMS=0.024096, GCV=1.105919e-06, AIC = -1.172871
-  Model addition step   3: Added term 1 0 1 -- RMS=0.022573, GCV=9.742534e-07, AIC = -1.299650
-  Model addition step   4: Added term 0 1 1 -- RMS=0.021186, GCV=8.614405e-07, AIC = -1.422740
-  Model addition step   5: Added term 2 1 1 -- RMS=0.019229, GCV=7.123642e-07, AIC = -1.612790
-  Model addition step   6: Added term 2 0 2 -- RMS=0.018238, GCV=6.432866e-07, AIC = -1.714828
-  6 polynomial terms were written for supra3 y force
+  RMS fit error of the full model is: 0.009763 (normalized)
+range of amplitudes: 0.437904
+  Model addition step   1: Added term 0 0 0 -- RMS=0.084626, GCV=1.358936e-05, AIC = 1.335750
+  Model addition step   2: Added term 0 2 1 -- RMS=0.042921, GCV=3.508948e-06, AIC = -0.018232
+  2 polynomial terms were written for supra3 y force
 supra3
-  RMS fit error of the full model is: 0.018200 (normalized)
-range of amplitudes: 0.463750
-  Model addition step   1: Added term 0 0 0 -- RMS=0.110377, GCV=2.311773e-05, AIC = 1.867062
-  Model addition step   2: Added term 2 0 1 -- RMS=0.092411, GCV=1.626608e-05, AIC = 1.515534
-  Model addition step   3: Added term 0 1 1 -- RMS=0.077296, GCV=1.142359e-05, AIC = 1.162114
-  Model addition step   4: Added term 1 0 1 -- RMS=0.065642, GCV=8.269894e-06, AIC = 0.839030
-  Model addition step   5: Added term 3 1 0 -- RMS=0.061268, GCV=7.231966e-06, AIC = 0.704887
-Change in error: 0.047099. No more terms added.
-   5 polynomial terms were written for supra3 z force
+  RMS fit error of the full model is: 0.010250 (normalized)
+range of amplitudes: 0.446405
+  Model addition step   1: Added term 0 0 0 -- RMS=0.120822, GCV=2.769987e-05, AIC = 2.047890
+  Model addition step   2: Added term 0 1 1 -- RMS=0.081129, GCV=1.253692e-05, AIC = 1.255130
+  Model addition step   3: Added term 0 0 2 -- RMS=0.073742, GCV=1.039718e-05, AIC = 1.067969
+  Model addition step   4: Added term 1 1 0 -- RMS=0.068519, GCV=9.010721e-06, AIC = 0.924824
+  Model addition step   5: Added term 0 2 1 -- RMS=0.064345, GCV=7.976679e-06, AIC = 0.802899
+  Model addition step   6: Added term 1 2 0 -- RMS=0.054056, GCV=5.651201e-06, AIC = 0.458205
+  Model addition step   7: Added term 1 0 3 -- RMS=0.046335, GCV=4.168122e-06, AIC = 0.153755
+  Model addition step   8: Added term 3 1 0 -- RMS=0.042951, GCV=3.595288e-06, AIC = 0.005859
+  8 polynomial terms were written for supra3 z force
 supra4
-  RMS fit error of the full model is: 0.007721 (normalized)
-range of amplitudes: 0.094914
-  Model addition step   1: Added term 0 0 0 -- RMS=0.024055, GCV=1.097990e-06, AIC = -1.180056
-Change in error: 0.030806. No more terms added.
-   1 polynomial terms were written for supra4 x force
+  RMS fit error of the full model is: 0.005020 (normalized)
+range of amplitudes: 0.301543
+  Model addition step   1: Added term 0 0 0 -- RMS=0.064061, GCV=7.786984e-06, AIC = 0.778916
+  Model addition step   2: Added term 0 2 1 -- RMS=0.032424, GCV=2.002418e-06, AIC = -0.579192
+  Model addition step   3: Added term 0 2 2 -- RMS=0.029038, GCV=1.612247e-06, AIC = -0.795937
+  3 polynomial terms were written for supra4 x force
 supra4
-  RMS fit error of the full model is: 0.012840 (normalized)
-range of amplitudes: 0.266910
-  Model addition step   1: Added term 0 0 0 -- RMS=0.038518, GCV=2.815189e-06, AIC = -0.238508
-  Model addition step   2: Added term 2 0 2 -- RMS=0.033814, GCV=2.177792e-06, AIC = -0.495237
-  Model addition step   3: Added term 0 0 2 -- RMS=0.030205, GCV=1.744413e-06, AIC = -0.717148
-Change in error: 0.048487. No more terms added.
-   3 polynomial terms were written for supra4 y force
+  RMS fit error of the full model is: 0.008926 (normalized)
+range of amplitudes: 0.497062
+  Model addition step   1: Added term 0 0 0 -- RMS=0.099773, GCV=1.888905e-05, AIC = 1.665045
+  Model addition step   2: Added term 0 2 1 -- RMS=0.049589, GCV=4.683907e-06, AIC = 0.270585
+  2 polynomial terms were written for supra4 y force
 supra4
-  RMS fit error of the full model is: 0.023121 (normalized)
-range of amplitudes: 0.594368
-  Model addition step   1: Added term 0 0 0 -- RMS=0.137708, GCV=3.598375e-05, AIC = 2.309530
-  Model addition step   2: Added term 2 0 1 -- RMS=0.115218, GCV=2.528568e-05, AIC = 1.956690
-  Model addition step   3: Added term 0 1 1 -- RMS=0.091387, GCV=1.596818e-05, AIC = 1.497032
-  Model addition step   4: Added term 1 0 1 -- RMS=0.078515, GCV=1.183164e-05, AIC = 1.197186
-  Model addition step   5: Added term 3 1 0 -- RMS=0.073832, GCV=1.050230e-05, AIC = 1.077971
-Change in error: 0.048902. No more terms added.
-   5 polynomial terms were written for supra4 z force
+  RMS fit error of the full model is: 0.013433 (normalized)
+range of amplitudes: 0.555008
+  Model addition step   1: Added term 0 0 0 -- RMS=0.147532, GCV=4.130108e-05, AIC = 2.447351
+  Model addition step   2: Added term 0 1 1 -- RMS=0.095084, GCV=1.722068e-05, AIC = 1.572563
+  Model addition step   3: Added term 2 1 1 -- RMS=0.085365, GCV=1.393303e-05, AIC = 1.360696
+  Model addition step   4: Added term 1 0 2 -- RMS=0.080136, GCV=1.232516e-05, AIC = 1.238052
+  Model addition step   5: Added term 3 0 0 -- RMS=0.072374, GCV=1.009166e-05, AIC = 1.038086
+  Model addition step   6: Added term 0 2 1 -- RMS=0.064910, GCV=8.148467e-06, AIC = 0.824166
+  Model addition step   7: Added term 1 0 0 -- RMS=0.060972, GCV=7.217205e-06, AIC = 0.702757
+  Model addition step   8: Added term 1 3 0 -- RMS=0.052970, GCV=5.468217e-06, AIC = 0.425188
+  8 polynomial terms were written for supra4 z force
 subscap1
-  RMS fit error of the full model is: 0.016461 (normalized)
-range of amplitudes: 0.338593
-  Model addition step   1: Added term 0 0 0 -- RMS=0.076207, GCV=1.101989e-05, AIC = 1.126165
-  Model addition step   2: Added term 2 0 0 -- RMS=0.039941, GCV=3.038592e-06, AIC = -0.162154
-  Model addition step   3: Added term 1 0 0 -- RMS=0.036971, GCV=2.613392e-06, AIC = -0.312917
-Change in error: 0.034095. No more terms added.
+  RMS fit error of the full model is: 0.009494 (normalized)
+range of amplitudes: 0.235055
+  Model addition step   1: Added term 0 0 0 -- RMS=0.052572, GCV=5.244397e-06, AIC = 0.383623
+  Model addition step   2: Added term 0 1 1 -- RMS=0.044080, GCV=3.700944e-06, AIC = 0.035040
+  Model addition step   3: Added term 3 1 0 -- RMS=0.041151, GCV=3.237771e-06, AIC = -0.098681
+Change in error: 0.043740. No more terms added.
    3 polynomial terms were written for subscap1 x force
 subscap1
-  RMS fit error of the full model is: 0.025192 (normalized)
-range of amplitudes: 0.667329
-  Model addition step   1: Added term 1 1 0 -- RMS=0.095038, GCV=1.713888e-05, AIC = 1.567812
-  Model addition step   2: Added term 0 2 0 -- RMS=0.089130, GCV=1.513157e-05, AIC = 1.443235
-  Model addition step   3: Added term 0 1 2 -- RMS=0.072435, GCV=1.003173e-05, AIC = 1.032187
-  Model addition step   4: Added term 0 1 1 -- RMS=0.052119, GCV=5.213473e-06, AIC = 0.377655
+  RMS fit error of the full model is: 0.014661 (normalized)
+range of amplitudes: 0.807600
+  Model addition step   1: Added term 1 1 0 -- RMS=0.137235, GCV=3.573696e-05, AIC = 2.302648
+  Model addition step   2: Added term 2 1 1 -- RMS=0.108681, GCV=2.249786e-05, AIC = 1.839872
+  Model addition step   3: Added term 0 1 0 -- RMS=0.100952, GCV=1.948569e-05, AIC = 1.696114
+  Model addition step   4: Added term 0 1 1 -- RMS=0.074212, GCV=1.057037e-05, AIC = 1.084464
   4 polynomial terms were written for subscap1 y force
 subscap1
-  RMS fit error of the full model is: 0.018974 (normalized)
-range of amplitudes: 0.876346
-  Model addition step   1: Added term 0 0 0 -- RMS=0.139401, GCV=3.687383e-05, AIC = 2.333965
-  Model addition step   2: Added term 2 0 0 -- RMS=0.073177, GCV=1.019956e-05, AIC = 1.048796
-  2 polynomial terms were written for subscap1 z force
+  RMS fit error of the full model is: 0.016780 (normalized)
+range of amplitudes: 0.290303
+  Model addition step   1: Added term 0 0 0 -- RMS=0.064837, GCV=7.976897e-06, AIC = 0.803012
+  Model addition step   2: Added term 0 1 3 -- RMS=0.060050, GCV=6.868431e-06, AIC = 0.653388
+  Model addition step   3: Added term 2 2 0 -- RMS=0.052022, GCV=5.174296e-06, AIC = 0.370137
+Change in error: 0.031392. No more terms added.
+   3 polynomial terms were written for subscap1 z force
 subscap2
-  RMS fit error of the full model is: 0.010361 (normalized)
-range of amplitudes: 0.242361
-  Model addition step   1: Added term 0 0 0 -- RMS=0.051529, GCV=5.038373e-06, AIC = 0.343546
-  Model addition step   2: Added term 2 0 0 -- RMS=0.040033, GCV=3.052651e-06, AIC = -0.157538
-  Model addition step   3: Added term 1 1 0 -- RMS=0.027716, GCV=1.468762e-06, AIC = -0.889146
-  Model addition step   4: Added term 3 1 0 -- RMS=0.026022, GCV=1.299610e-06, AIC = -1.011527
-  Model addition step   5: Added term 0 1 0 -- RMS=0.024700, GCV=1.175388e-06, AIC = -1.112025
-  Model addition step   6: Added term 2 1 0 -- RMS=0.021706, GCV=9.112015e-07, AIC = -1.366654
-  6 polynomial terms were written for subscap2 x force
+  RMS fit error of the full model is: 0.005327 (normalized)
+range of amplitudes: 0.232805
+  Model addition step   1: Added term 0 0 0 -- RMS=0.052892, GCV=5.308412e-06, AIC = 0.395755
+  Model addition step   2: Added term 1 1 0 -- RMS=0.042924, GCV=3.509338e-06, AIC = -0.018121
+  Model addition step   3: Added term 0 0 2 -- RMS=0.033755, GCV=2.178457e-06, AIC = -0.494949
+  Model addition step   4: Added term 3 1 0 -- RMS=0.030557, GCV=1.792083e-06, AIC = -0.690213
+Change in error: 0.032272. No more terms added.
+   4 polynomial terms were written for subscap2 x force
 subscap2
-  RMS fit error of the full model is: 0.017482 (normalized)
-range of amplitudes: 0.432002
-  Model addition step   1: Added term 0 0 0 -- RMS=0.104814, GCV=2.084626e-05, AIC = 1.763637
-  Model addition step   2: Added term 0 1 0 -- RMS=0.083454, GCV=1.326574e-05, AIC = 1.311637
-  Model addition step   3: Added term 0 1 1 -- RMS=0.076526, GCV=1.119699e-05, AIC = 1.142079
-  Model addition step   4: Added term 0 1 2 -- RMS=0.058303, GCV=6.524171e-06, AIC = 0.601923
-  Model addition step   5: Added term 1 1 0 -- RMS=0.041695, GCV=3.349404e-06, AIC = -0.064841
-  5 polynomial terms were written for subscap2 y force
+  RMS fit error of the full model is: 0.006556 (normalized)
+range of amplitudes: 0.503158
+  Model addition step   1: Added term 0 0 0 -- RMS=0.126848, GCV=3.053207e-05, AIC = 2.145240
+  Model addition step   2: Added term 0 0 2 -- RMS=0.108295, GCV=2.233855e-05, AIC = 1.832766
+  Model addition step   3: Added term 0 1 1 -- RMS=0.079582, GCV=1.210925e-05, AIC = 1.220404
+  Model addition step   4: Added term 2 1 1 -- RMS=0.069488, GCV=9.267486e-06, AIC = 0.952921
+  Model addition step   5: Added term 0 1 0 -- RMS=0.056844, GCV=6.225294e-06, AIC = 0.554997
+  Model addition step   6: Added term 0 1 2 -- RMS=0.047442, GCV=4.352815e-06, AIC = 0.197159
+  6 polynomial terms were written for subscap2 y force
 subscap2
-  RMS fit error of the full model is: 0.020210 (normalized)
-range of amplitudes: 0.626946
-  Model addition step   1: Added term 0 0 0 -- RMS=0.098118, GCV=1.826771e-05, AIC = 1.631598
-  Model addition step   2: Added term 2 0 0 -- RMS=0.068362, GCV=8.901392e-06, AIC = 0.912660
-  Model addition step   3: Added term 1 0 0 -- RMS=0.060089, GCV=6.903684e-06, AIC = 0.658489
-  3 polynomial terms were written for subscap2 z force
+  RMS fit error of the full model is: 0.014429 (normalized)
+range of amplitudes: 0.361292
+  Model addition step   1: Added term 0 0 0 -- RMS=0.064604, GCV=7.919698e-06, AIC = 0.795816
+  Model addition step   2: Added term 1 1 0 -- RMS=0.061022, GCV=7.092727e-06, AIC = 0.685522
+  Model addition step   3: Added term 0 2 0 -- RMS=0.052294, GCV=5.228713e-06, AIC = 0.380599
+  Model addition step   4: Added term 0 1 1 -- RMS=0.047562, GCV=4.341670e-06, AIC = 0.194668
+Change in error: 0.040191. No more terms added.
+   4 polynomial terms were written for subscap2 z force
 subscap3
-  RMS fit error of the full model is: 0.012593 (normalized)
-range of amplitudes: 0.160981
-  Model addition step   1: Added term 0 0 0 -- RMS=0.041427, GCV=3.256456e-06, AIC = -0.092898
-  Model addition step   2: Added term 4 0 0 -- RMS=0.029161, GCV=1.619694e-06, AIC = -0.791311
-  Model addition step   3: Added term 1 3 0 -- RMS=0.027326, GCV=1.427695e-06, AIC = -0.917504
-  Model addition step   4: Added term 2 1 1 -- RMS=0.023133, GCV=1.027045e-06, AIC = -1.246906
-  Model addition step   5: Added term 0 1 1 -- RMS=0.020000, GCV=7.706287e-07, AIC = -1.534172
-  Model addition step   6: Added term 2 0 1 -- RMS=0.018742, GCV=6.793540e-07, AIC = -1.660276
-  Model addition step   7: Added term 2 0 0 -- RMS=0.016631, GCV=5.369943e-07, AIC = -1.895478
-Change in error: 0.022231. No more terms added.
-   7 polynomial terms were written for subscap3 x force
+  RMS fit error of the full model is: 0.003242 (normalized)
+range of amplitudes: 0.101482
+  Model addition step   1: Added term 0 0 0 -- RMS=0.025014, GCV=1.187310e-06, AIC = -1.101847
+  Model addition step   2: Added term 0 1 1 -- RMS=0.015778, GCV=4.742026e-07, AIC = -2.019669
+  Model addition step   3: Added term 0 1 2 -- RMS=0.011853, GCV=2.686190e-07, AIC = -2.588027
+Change in error: 0.038706. No more terms added.
+   3 polynomial terms were written for subscap3 x force
 subscap3
-  RMS fit error of the full model is: 0.027739 (normalized)
-range of amplitudes: 0.550316
-  Model addition step   1: Added term 0 2 1 -- RMS=0.091672, GCV=1.594645e-05, AIC = 1.495699
-  Model addition step   2: Added term 0 0 2 -- RMS=0.066763, GCV=8.490029e-06, AIC = 0.865344
-  Model addition step   3: Added term 0 0 4 -- RMS=0.059078, GCV=6.673151e-06, AIC = 0.624526
-  Model addition step   4: Added term 0 3 0 -- RMS=0.052935, GCV=5.378017e-06, AIC = 0.408729
-  4 polynomial terms were written for subscap3 y force
+  RMS fit error of the full model is: 0.008084 (normalized)
+range of amplitudes: 0.490167
+  Model addition step   1: Added term 0 1 1 -- RMS=0.085505, GCV=1.387292e-05, AIC = 1.356401
+  Model addition step   2: Added term 0 1 3 -- RMS=0.057325, GCV=6.259278e-06, AIC = 0.560517
+  Model addition step   3: Added term 0 0 2 -- RMS=0.043626, GCV=3.638868e-06, AIC = 0.018107
+  3 polynomial terms were written for subscap3 y force
 subscap3
-  RMS fit error of the full model is: 0.041521 (normalized)
-range of amplitudes: 0.540846
-  Model addition step   1: Added term 0 0 0 -- RMS=0.132137, GCV=3.313110e-05, AIC = 2.226935
-  Model addition step   2: Added term 4 0 0 -- RMS=0.087098, GCV=1.444928e-05, AIC = 1.397097
-  Model addition step   3: Added term 2 0 1 -- RMS=0.078682, GCV=1.183681e-05, AIC = 1.197648
-  Model addition step   4: Added term 0 0 1 -- RMS=0.069962, GCV=9.394156e-06, AIC = 0.966497
-  Model addition step   5: Added term 2 0 0 -- RMS=0.062614, GCV=7.553386e-06, AIC = 0.748372
-Change in error: 0.041024. No more terms added.
-   5 polynomial terms were written for subscap3 z force
+  RMS fit error of the full model is: 0.010045 (normalized)
+range of amplitudes: 0.264634
+  Model addition step   1: Added term 0 0 0 -- RMS=0.058445, GCV=6.481668e-06, AIC = 0.595441
+  Model addition step   2: Added term 0 1 1 -- RMS=0.044000, GCV=3.687544e-06, AIC = 0.031413
+  Model addition step   3: Added term 1 2 1 -- RMS=0.031275, GCV=1.870163e-06, AIC = -0.647540
+Change in error: 0.033190. No more terms added.
+   3 polynomial terms were written for subscap3 z force
 subscap4
-  RMS fit error of the full model is: 0.022982 (normalized)
-range of amplitudes: 0.266024
-  Model addition step   1: Added term 0 0 0 -- RMS=0.094108, GCV=1.680510e-05, AIC = 1.548145
-  Model addition step   2: Added term 1 0 0 -- RMS=0.055937, GCV=5.959823e-06, AIC = 0.511493
-  Model addition step   3: Added term 2 0 0 -- RMS=0.041288, GCV=3.259382e-06, AIC = -0.092028
-  Model addition step   4: Added term 3 0 1 -- RMS=0.035561, GCV=2.427107e-06, AIC = -0.386891
-  Model addition step   5: Added term 4 0 0 -- RMS=0.031185, GCV=1.873680e-06, AIC = -0.645719
-  Model addition step   6: Added term 0 0 2 -- RMS=0.028945, GCV=1.620273e-06, AIC = -0.791068
-Change in error: 0.036837. No more terms added.
-   6 polynomial terms were written for subscap4 x force
+  RMS fit error of the full model is: 0.019351 (normalized)
+range of amplitudes: 0.260772
+  Model addition step   1: Added term 0 0 0 -- RMS=0.051643, GCV=5.060609e-06, AIC = 0.347950
+  Model addition step   2: Added term 1 1 0 -- RMS=0.045949, GCV=4.021497e-06, AIC = 0.118106
+  Model addition step   3: Added term 0 1 3 -- RMS=0.038533, GCV=2.838946e-06, AIC = -0.230133
+Change in error: 0.043490. No more terms added.
+   3 polynomial terms were written for subscap4 x force
 subscap4
-  RMS fit error of the full model is: 0.044620 (normalized)
-range of amplitudes: 0.558900
-  Model addition step   1: Added term 0 0 0 -- RMS=0.157687, GCV=4.718261e-05, AIC = 2.580488
-  Model addition step   2: Added term 1 1 0 -- RMS=0.088540, GCV=1.493178e-05, AIC = 1.429944
-  Model addition step   3: Added term 3 1 0 -- RMS=0.078621, GCV=1.181840e-05, AIC = 1.196091
-  Model addition step   4: Added term 0 0 1 -- RMS=0.073291, GCV=1.030950e-05, AIC = 1.059475
-  Model addition step   5: Added term 0 0 3 -- RMS=0.065356, GCV=8.229253e-06, AIC = 0.834072
-Change in error: 0.038328. No more terms added.
-   5 polynomial terms were written for subscap4 y force
+  RMS fit error of the full model is: 0.035035 (normalized)
+range of amplitudes: 0.586707
+  Model addition step   1: Added term 0 0 0 -- RMS=0.173583, GCV=5.717418e-05, AIC = 2.772565
+  Model addition step   2: Added term 1 1 0 -- RMS=0.098064, GCV=1.831681e-05, AIC = 1.634271
+  Model addition step   3: Added term 1 1 2 -- RMS=0.088330, GCV=1.491752e-05, AIC = 1.428971
+  Model addition step   4: Added term 0 1 1 -- RMS=0.064575, GCV=8.003301e-06, AIC = 0.806263
+  Model addition step   5: Added term 2 0 0 -- RMS=0.058152, GCV=6.515230e-06, AIC = 0.600519
+  5 polynomial terms were written for subscap4 y force
 subscap4
-  RMS fit error of the full model is: 0.058975 (normalized)
-range of amplitudes: 0.631497
-  Model addition step   1: Added term 0 0 0 -- RMS=0.194325, GCV=7.165469e-05, AIC = 2.998321
-  Model addition step   2: Added term 2 0 1 -- RMS=0.131838, GCV=3.310674e-05, AIC = 2.226189
-  Model addition step   3: Added term 2 0 0 -- RMS=0.110626, GCV=2.339914e-05, AIC = 1.879133
-  Model addition step   4: Added term 4 0 0 -- RMS=0.099911, GCV=1.915848e-05, AIC = 1.679155
-Change in error: 0.028023. No more terms added.
+  RMS fit error of the full model is: 0.042618 (normalized)
+range of amplitudes: 0.548199
+  Model addition step   1: Added term 0 0 0 -- RMS=0.107721, GCV=2.201835e-05, AIC = 1.818339
+  Model addition step   2: Added term 0 1 1 -- RMS=0.100992, GCV=1.942713e-05, AIC = 1.693123
+  Model addition step   3: Added term 1 1 0 -- RMS=0.089144, GCV=1.519386e-05, AIC = 1.447326
+  Model addition step   4: Added term 0 2 2 -- RMS=0.082259, GCV=1.298692e-05, AIC = 1.290351
+Change in error: 0.014524. No more terms added.
    4 polynomial terms were written for subscap4 z force
 subscap5
-  RMS fit error of the full model is: 0.030646 (normalized)
-range of amplitudes: 0.318160
-  Model addition step   1: Added term 0 0 0 -- RMS=0.108007, GCV=2.213564e-05, AIC = 1.823652
-  Model addition step   2: Added term 1 0 0 -- RMS=0.059255, GCV=6.687928e-06, AIC = 0.626756
-  Model addition step   3: Added term 0 0 2 -- RMS=0.051463, GCV=5.063796e-06, AIC = 0.348550
-  Model addition step   4: Added term 1 0 3 -- RMS=0.046475, GCV=4.145534e-06, AIC = 0.148440
-Change in error: 0.037953. No more terms added.
+  RMS fit error of the full model is: 0.024224 (normalized)
+range of amplitudes: 0.311741
+  Model addition step   1: Added term 0 0 0 -- RMS=0.077670, GCV=1.144697e-05, AIC = 1.164188
+  Model addition step   2: Added term 1 1 0 -- RMS=0.067911, GCV=8.784533e-06, AIC = 0.899444
+  Model addition step   3: Added term 1 1 2 -- RMS=0.060190, GCV=6.926714e-06, AIC = 0.661820
+  Model addition step   4: Added term 0 0 2 -- RMS=0.055761, GCV=5.967649e-06, AIC = 0.512762
+Change in error: 0.019948. No more terms added.
    4 polynomial terms were written for subscap5 x force
 subscap5
-  RMS fit error of the full model is: 0.050618 (normalized)
-range of amplitudes: 0.561481
-  Model addition step   1: Added term 0 0 0 -- RMS=0.161716, GCV=4.962452e-05, AIC = 2.630948
-  Model addition step   2: Added term 1 1 0 -- RMS=0.099729, GCV=1.894433e-05, AIC = 1.667957
-  Model addition step   3: Added term 3 1 0 -- RMS=0.088404, GCV=1.494272e-05, AIC = 1.430658
-Change in error: 0.042890. No more terms added.
-   3 polynomial terms were written for subscap5 y force
+  RMS fit error of the full model is: 0.041190 (normalized)
+range of amplitudes: 0.590346
+  Model addition step   1: Added term 0 0 0 -- RMS=0.176057, GCV=5.881576e-05, AIC = 2.800873
+  Model addition step   2: Added term 1 1 0 -- RMS=0.106799, GCV=2.172545e-05, AIC = 1.804936
+  Model addition step   3: Added term 0 1 2 -- RMS=0.098051, GCV=1.838196e-05, AIC = 1.637804
+  Model addition step   4: Added term 2 0 0 -- RMS=0.090570, GCV=1.574352e-05, AIC = 1.482838
+  Model addition step   5: Added term 0 1 1 -- RMS=0.085497, GCV=1.408290e-05, AIC = 1.371337
+  Model addition step   6: Added term 1 1 2 -- RMS=0.070982, GCV=9.744246e-06, AIC = 1.003014
+Change in error: 0.031178. No more terms added.
+   6 polynomial terms were written for subscap5 y force
 subscap5
-  RMS fit error of the full model is: 0.070016 (normalized)
-range of amplitudes: 0.641506
-  Model addition step   1: Added term 0 0 0 -- RMS=0.203179, GCV=7.833278e-05, AIC = 3.087429
-  Model addition step   2: Added term 2 0 1 -- RMS=0.146254, GCV=4.074256e-05, AIC = 2.433725
-  Model addition step   3: Added term 2 0 0 -- RMS=0.130210, GCV=3.241713e-05, AIC = 2.205121
-  Model addition step   4: Added term 4 0 0 -- RMS=0.123136, GCV=2.910097e-05, AIC = 2.097180
-Change in error: 0.036666. No more terms added.
+  RMS fit error of the full model is: 0.047676 (normalized)
+range of amplitudes: 0.578610
+  Model addition step   1: Added term 0 0 0 -- RMS=0.143131, GCV=3.887348e-05, AIC = 2.386775
+  Model addition step   2: Added term 0 1 1 -- RMS=0.129623, GCV=3.200364e-05, AIC = 2.192302
+  Model addition step   3: Added term 1 1 0 -- RMS=0.119723, GCV=2.740551e-05, AIC = 2.037178
+  Model addition step   4: Added term 0 1 2 -- RMS=0.112564, GCV=2.431844e-05, AIC = 1.917644
+Change in error: 0.018604. No more terms added.
    4 polynomial terms were written for subscap5 z force
 subscap6
-  RMS fit error of the full model is: 0.019459 (normalized)
-range of amplitudes: 0.306466
-  Model addition step   1: Added term 0 0 0 -- RMS=0.100070, GCV=1.900167e-05, AIC = 1.670990
-  Model addition step   2: Added term 1 0 0 -- RMS=0.050754, GCV=4.906576e-06, AIC = 0.317028
-  Model addition step   3: Added term 1 1 0 -- RMS=0.046386, GCV=4.113876e-06, AIC = 0.140800
-  Model addition step   4: Added term 0 1 0 -- RMS=0.043395, GCV=3.614239e-06, AIC = 0.011290
-  Model addition step   5: Added term 1 0 2 -- RMS=0.041194, GCV=3.269377e-06, AIC = -0.089024
-  Model addition step   6: Added term 0 1 2 -- RMS=0.038697, GCV=2.895989e-06, AIC = -0.210337
-  Model addition step   7: Added term 3 0 1 -- RMS=0.036258, GCV=2.552190e-06, AIC = -0.336759
-  Model addition step   8: Added term 0 0 2 -- RMS=0.034343, GCV=2.298560e-06, AIC = -0.441482
-  Model addition step   9: Added term 0 0 1 -- RMS=0.031516, GCV=1.943161e-06, AIC = -0.609510
-  Model addition step  10: Added term 2 2 0 -- RMS=0.029244, GCV=1.679553e-06, AIC = -0.755368
-  10 polynomial terms were written for subscap6 x force
+  RMS fit error of the full model is: 0.016368 (normalized)
+range of amplitudes: 0.297370
+  Model addition step   1: Added term 0 0 0 -- RMS=0.078677, GCV=1.174588e-05, AIC = 1.189965
+  Model addition step   2: Added term 1 1 0 -- RMS=0.066206, GCV=8.348886e-06, AIC = 0.848580
+  Model addition step   3: Added term 1 1 2 -- RMS=0.053075, GCV=5.385952e-06, AIC = 0.410228
+  Model addition step   4: Added term 0 1 0 -- RMS=0.050240, GCV=4.844427e-06, AIC = 0.304238
+Change in error: 0.048204. No more terms added.
+   4 polynomial terms were written for subscap6 x force
 subscap6
-  RMS fit error of the full model is: 0.027981 (normalized)
-range of amplitudes: 0.417534
-  Model addition step   1: Added term 0 0 0 -- RMS=0.117225, GCV=2.607510e-05, AIC = 1.987444
-  Model addition step   2: Added term 1 1 0 -- RMS=0.074705, GCV=1.063015e-05, AIC = 1.090146
-  Model addition step   3: Added term 2 1 0 -- RMS=0.060351, GCV=6.964019e-06, AIC = 0.667191
-Change in error: 0.041171. No more terms added.
-   3 polynomial terms were written for subscap6 y force
+  RMS fit error of the full model is: 0.026638 (normalized)
+range of amplitudes: 0.481002
+  Model addition step   1: Added term 0 0 0 -- RMS=0.124852, GCV=2.957848e-05, AIC = 2.113510
+  Model addition step   2: Added term 1 1 0 -- RMS=0.080997, GCV=1.249602e-05, AIC = 1.251862
+  Model addition step   3: Added term 0 2 2 -- RMS=0.067289, GCV=8.657066e-06, AIC = 0.884810
+  Model addition step   4: Added term 1 0 2 -- RMS=0.062376, GCV=7.467489e-06, AIC = 0.736968
+  Model addition step   5: Added term 0 1 0 -- RMS=0.058163, GCV=6.517655e-06, AIC = 0.600891
+Change in error: 0.045933. No more terms added.
+   5 polynomial terms were written for subscap6 y force
 subscap6
-  RMS fit error of the full model is: 0.037805 (normalized)
-range of amplitudes: 0.580627
-  Model addition step   1: Added term 0 0 0 -- RMS=0.152048, GCV=4.386807e-05, AIC = 2.507649
-  Model addition step   2: Added term 2 0 1 -- RMS=0.096497, GCV=1.773641e-05, AIC = 1.602071
-  Model addition step   3: Added term 2 0 0 -- RMS=0.081249, GCV=1.262192e-05, AIC = 1.261869
-  Model addition step   4: Added term 1 0 0 -- RMS=0.073556, GCV=1.038424e-05, AIC = 1.066698
-Change in error: 0.046744. No more terms added.
-   4 polynomial terms were written for subscap6 z force
+  RMS fit error of the full model is: 0.033538 (normalized)
+range of amplitudes: 0.480746
+  Model addition step   1: Added term 0 0 0 -- RMS=0.093886, GCV=1.672587e-05, AIC = 1.543419
+  Model addition step   2: Added term 0 1 3 -- RMS=0.087809, GCV=1.468630e-05, AIC = 1.413367
+  Model addition step   3: Added term 2 2 0 -- RMS=0.081843, GCV=1.280687e-05, AIC = 1.276415
+Change in error: 0.016042. No more terms added.
+   3 polynomial terms were written for subscap6 z force
 subscap7
-  RMS fit error of the full model is: 0.012451 (normalized)
-range of amplitudes: 0.322993
-  Model addition step   1: Added term 0 0 0 -- RMS=0.104198, GCV=2.060184e-05, AIC = 1.751843
-  Model addition step   2: Added term 1 0 0 -- RMS=0.048757, GCV=4.528021e-06, AIC = 0.236737
-  Model addition step   3: Added term 1 1 0 -- RMS=0.042696, GCV=3.485519e-06, AIC = -0.024949
-  Model addition step   4: Added term 0 1 0 -- RMS=0.039393, GCV=2.978278e-06, AIC = -0.182246
-  Model addition step   5: Added term 3 0 1 -- RMS=0.036465, GCV=2.561822e-06, AIC = -0.332905
-  Model addition step   6: Added term 0 0 2 -- RMS=0.031706, GCV=1.944120e-06, AIC = -0.608854
-  6 polynomial terms were written for subscap7 x force
+  RMS fit error of the full model is: 0.009853 (normalized)
+range of amplitudes: 0.312816
+  Model addition step   1: Added term 0 0 0 -- RMS=0.083536, GCV=1.324150e-05, AIC = 1.309818
+  Model addition step   2: Added term 1 1 0 -- RMS=0.067918, GCV=8.786256e-06, AIC = 0.899641
+  Model addition step   3: Added term 1 1 2 -- RMS=0.049255, GCV=4.638590e-06, AIC = 0.260844
+  Model addition step   4: Added term 0 1 0 -- RMS=0.046304, GCV=4.115092e-06, AIC = 0.141070
+  Model addition step   5: Added term 0 0 1 -- RMS=0.043728, GCV=3.683953e-06, AIC = 0.030363
+  Model addition step   6: Added term 2 0 1 -- RMS=0.040061, GCV=3.103831e-06, AIC = -0.141026
+Change in error: 0.043570. No more terms added.
+   6 polynomial terms were written for subscap7 x force
 subscap7
-  RMS fit error of the full model is: 0.016503 (normalized)
-range of amplitudes: 0.364414
-  Model addition step   1: Added term 0 0 0 -- RMS=0.103532, GCV=2.033939e-05, AIC = 1.739022
-  Model addition step   2: Added term 1 1 0 -- RMS=0.059268, GCV=6.690822e-06, AIC = 0.627189
-  Model addition step   3: Added term 2 1 0 -- RMS=0.046628, GCV=4.156916e-06, AIC = 0.151207
-  Model addition step   4: Added term 1 0 0 -- RMS=0.041360, GCV=3.283258e-06, AIC = -0.084755
-  Model addition step   5: Added term 3 1 0 -- RMS=0.038833, GCV=2.905260e-06, AIC = -0.207101
-  Model addition step   6: Added term 0 2 0 -- RMS=0.036530, GCV=2.580720e-06, AIC = -0.325595
-  Model addition step   7: Added term 2 0 0 -- RMS=0.031860, GCV=1.970587e-06, AIC = -0.595379
-  7 polynomial terms were written for subscap7 y force
+  RMS fit error of the full model is: 0.015210 (normalized)
+range of amplitudes: 0.441838
+  Model addition step   1: Added term 0 0 0 -- RMS=0.103161, GCV=2.019402e-05, AIC = 1.731849
+  Model addition step   2: Added term 1 1 0 -- RMS=0.072882, GCV=1.011762e-05, AIC = 1.040730
+  Model addition step   3: Added term 1 1 2 -- RMS=0.052346, GCV=5.239018e-06, AIC = 0.382568
+  Model addition step   4: Added term 0 1 0 -- RMS=0.043952, GCV=3.707584e-06, AIC = 0.036789
+  4 polynomial terms were written for subscap7 y force
 subscap7
-  RMS fit error of the full model is: 0.018949 (normalized)
-range of amplitudes: 0.557716
-  Model addition step   1: Added term 0 0 0 -- RMS=0.133748, GCV=3.394417e-05, AIC = 2.251180
-  Model addition step   2: Added term 2 0 1 -- RMS=0.078196, GCV=1.164662e-05, AIC = 1.181468
-  Model addition step   3: Added term 2 0 0 -- RMS=0.055766, GCV=5.946038e-06, AIC = 0.509159
-  3 polynomial terms were written for subscap7 z force
+  RMS fit error of the full model is: 0.017493 (normalized)
+range of amplitudes: 0.425185
+  Model addition step   1: Added term 0 0 0 -- RMS=0.064898, GCV=7.991919e-06, AIC = 0.804894
+Change in error: 0.042028. No more terms added.
+   1 polynomial terms were written for subscap7 z force
 subscap8
-  RMS fit error of the full model is: 0.019565 (normalized)
-range of amplitudes: 0.463389
-  Model addition step   1: Added term 0 0 0 -- RMS=0.148993, GCV=4.212277e-05, AIC = 2.467051
-  Model addition step   2: Added term 1 0 0 -- RMS=0.069310, GCV=9.150167e-06, AIC = 0.940224
-  Model addition step   3: Added term 1 1 0 -- RMS=0.061121, GCV=7.142835e-06, AIC = 0.692544
-  Model addition step   4: Added term 0 1 0 -- RMS=0.056686, GCV=6.167244e-06, AIC = 0.545661
-  Model addition step   5: Added term 3 0 1 -- RMS=0.052862, GCV=5.383718e-06, AIC = 0.409756
-  Model addition step   6: Added term 0 0 2 -- RMS=0.045103, GCV=3.934348e-06, AIC = 0.096082
-  6 polynomial terms were written for subscap8 x force
+  RMS fit error of the full model is: 0.016735 (normalized)
+range of amplitudes: 0.452772
+  Model addition step   1: Added term 0 0 0 -- RMS=0.115648, GCV=2.537837e-05, AIC = 1.960360
+  Model addition step   2: Added term 1 1 0 -- RMS=0.095972, GCV=1.754393e-05, AIC = 1.591160
+  Model addition step   3: Added term 1 1 2 -- RMS=0.069852, GCV=9.329211e-06, AIC = 0.959584
+  Model addition step   4: Added term 0 1 0 -- RMS=0.065552, GCV=8.247321e-06, AIC = 0.836297
+Change in error: 0.046854. No more terms added.
+   4 polynomial terms were written for subscap8 x force
 subscap8
-  RMS fit error of the full model is: 0.028846 (normalized)
-range of amplitudes: 0.580311
-  Model addition step   1: Added term 0 0 0 -- RMS=0.161592, GCV=4.954840e-05, AIC = 2.629413
-  Model addition step   2: Added term 1 1 0 -- RMS=0.092853, GCV=1.642210e-05, AIC = 1.525080
-  Model addition step   3: Added term 2 1 0 -- RMS=0.073208, GCV=1.024714e-05, AIC = 1.053432
-  Model addition step   4: Added term 1 0 0 -- RMS=0.066725, GCV=8.544961e-06, AIC = 0.871751
-  Model addition step   5: Added term 3 1 0 -- RMS=0.061569, GCV=7.303235e-06, AIC = 0.714694
-  Model addition step   6: Added term 0 2 0 -- RMS=0.057093, GCV=6.304058e-06, AIC = 0.567530
+  RMS fit error of the full model is: 0.026722 (normalized)
+range of amplitudes: 0.676933
+  Model addition step   1: Added term 0 0 0 -- RMS=0.162228, GCV=4.993918e-05, AIC = 2.637269
+  Model addition step   2: Added term 1 1 0 -- RMS=0.109228, GCV=2.272485e-05, AIC = 1.849911
+  Model addition step   3: Added term 1 1 1 -- RMS=0.083177, GCV=1.322778e-05, AIC = 1.308754
+  Model addition step   4: Added term 1 0 2 -- RMS=0.077379, GCV=1.149164e-05, AIC = 1.168029
+  Model addition step   5: Added term 3 0 0 -- RMS=0.070701, GCV=9.630397e-06, AIC = 0.991301
+  Model addition step   6: Added term 3 1 0 -- RMS=0.066884, GCV=8.651725e-06, AIC = 0.884095
   6 polynomial terms were written for subscap8 y force
 subscap8
-  RMS fit error of the full model is: 0.031395 (normalized)
-range of amplitudes: 0.826061
-  Model addition step   1: Added term 0 0 0 -- RMS=0.201179, GCV=7.679840e-05, AIC = 3.067647
-  Model addition step   2: Added term 2 0 1 -- RMS=0.118222, GCV=2.662119e-05, AIC = 2.008159
-  Model addition step   3: Added term 2 0 0 -- RMS=0.086708, GCV=1.437485e-05, AIC = 1.391914
-  Model addition step   4: Added term 4 0 0 -- RMS=0.074678, GCV=1.070344e-05, AIC = 1.096974
-  4 polynomial terms were written for subscap8 z force
+  RMS fit error of the full model is: 0.029170 (normalized)
+range of amplitudes: 0.658524
+  Model addition step   1: Added term 0 0 0 -- RMS=0.097741, GCV=1.812772e-05, AIC = 1.623905
+  Model addition step   2: Added term 0 1 3 -- RMS=0.092147, GCV=1.617317e-05, AIC = 1.509806
+  Model addition step   3: Added term 2 2 0 -- RMS=0.081859, GCV=1.281212e-05, AIC = 1.276826
+Change in error: 0.043289. No more terms added.
+   3 polynomial terms were written for subscap8 z force
 subscap9
-  RMS fit error of the full model is: 0.011780 (normalized)
-range of amplitudes: 0.373805
-  Model addition step   1: Added term 0 0 0 -- RMS=0.122962, GCV=2.868989e-05, AIC = 2.083008
-  Model addition step   2: Added term 1 0 0 -- RMS=0.055182, GCV=5.799978e-06, AIC = 0.484306
-  Model addition step   3: Added term 1 1 0 -- RMS=0.047351, GCV=4.286931e-06, AIC = 0.182005
-  Model addition step   4: Added term 1 0 2 -- RMS=0.043134, GCV=3.570817e-06, AIC = -0.000797
-  Model addition step   5: Added term 2 0 1 -- RMS=0.039427, GCV=2.994876e-06, AIC = -0.176721
-  Model addition step   6: Added term 0 0 1 -- RMS=0.034931, GCV=2.359811e-06, AIC = -0.415082
-  6 polynomial terms were written for subscap9 x force
+  RMS fit error of the full model is: 0.008021 (normalized)
+range of amplitudes: 0.358847
+  Model addition step   1: Added term 0 0 0 -- RMS=0.097436, GCV=1.801486e-05, AIC = 1.617660
+  Model addition step   2: Added term 1 1 0 -- RMS=0.082723, GCV=1.303428e-05, AIC = 1.294035
+  Model addition step   3: Added term 1 1 2 -- RMS=0.054249, GCV=5.626874e-06, AIC = 0.453988
+  Model addition step   4: Added term 0 0 1 -- RMS=0.051355, GCV=5.061789e-06, AIC = 0.348129
+  Model addition step   5: Added term 2 0 1 -- RMS=0.045650, GCV=4.014921e-06, AIC = 0.116394
+  Model addition step   6: Added term 2 1 0 -- RMS=0.042779, GCV=3.539230e-06, AIC = -0.009754
+Change in error: 0.030790. No more terms added.
+   6 polynomial terms were written for subscap9 x force
 subscap9
-  RMS fit error of the full model is: 0.012087 (normalized)
-range of amplitudes: 0.367480
-  Model addition step   1: Added term 0 0 0 -- RMS=0.100710, GCV=1.924570e-05, AIC = 1.683750
-  Model addition step   2: Added term 1 0 0 -- RMS=0.057793, GCV=6.361935e-06, AIC = 0.576785
-  Model addition step   3: Added term 3 0 0 -- RMS=0.047319, GCV=4.281047e-06, AIC = 0.180632
-  Model addition step   4: Added term 0 0 1 -- RMS=0.043304, GCV=3.599165e-06, AIC = 0.007111
-  Model addition step   5: Added term 0 2 1 -- RMS=0.039669, GCV=3.031765e-06, AIC = -0.164479
-  Model addition step   6: Added term 1 2 1 -- RMS=0.032034, GCV=1.984633e-06, AIC = -0.588229
-  6 polynomial terms were written for subscap9 y force
+  RMS fit error of the full model is: 0.011698 (normalized)
+range of amplitudes: 0.404905
+  Model addition step   1: Added term 0 0 0 -- RMS=0.097159, GCV=1.791236e-05, AIC = 1.611954
+  Model addition step   2: Added term 1 1 0 -- RMS=0.079689, GCV=1.209574e-05, AIC = 1.219305
+  Model addition step   3: Added term 1 1 2 -- RMS=0.048840, GCV=4.560791e-06, AIC = 0.243930
+  Model addition step   4: Added term 2 2 0 -- RMS=0.041291, GCV=3.272214e-06, AIC = -0.088124
+  Model addition step   5: Added term 0 0 1 -- RMS=0.039089, GCV=2.943747e-06, AIC = -0.193940
+  5 polynomial terms were written for subscap9 y force
 subscap9
-  RMS fit error of the full model is: 0.014299 (normalized)
-range of amplitudes: 0.586435
-  Model addition step   1: Added term 0 0 0 -- RMS=0.135885, GCV=3.503715e-05, AIC = 2.282872
-  Model addition step   2: Added term 2 0 1 -- RMS=0.078856, GCV=1.184412e-05, AIC = 1.198284
-  Model addition step   3: Added term 2 0 0 -- RMS=0.055268, GCV=5.840340e-06, AIC = 0.491223
-  3 polynomial terms were written for subscap9 z force
+  RMS fit error of the full model is: 0.010443 (normalized)
+range of amplitudes: 0.378473
+  Model addition step   1: Added term 0 0 0 -- RMS=0.059764, GCV=6.777380e-06, AIC = 0.640053
+  Model addition step   2: Added term 0 3 0 -- RMS=0.055732, GCV=5.916193e-06, AIC = 0.504145
+Change in error: 0.044819. No more terms added.
+   2 polynomial terms were written for subscap9 z force
 subscap10
-  RMS fit error of the full model is: 0.014418 (normalized)
-range of amplitudes: 0.541242
-  Model addition step   1: Added term 0 0 0 -- RMS=0.162079, GCV=4.984747e-05, AIC = 2.635430
-  Model addition step   2: Added term 1 0 0 -- RMS=0.079624, GCV=1.207595e-05, AIC = 1.217668
-  Model addition step   3: Added term 1 1 0 -- RMS=0.064823, GCV=8.034316e-06, AIC = 0.810156
-  Model addition step   4: Added term 1 0 2 -- RMS=0.056031, GCV=6.025475e-06, AIC = 0.522405
-  Model addition step   5: Added term 2 0 1 -- RMS=0.046079, GCV=4.090722e-06, AIC = 0.135098
-  5 polynomial terms were written for subscap10 x force
+  RMS fit error of the full model is: 0.009154 (normalized)
+range of amplitudes: 0.530392
+  Model addition step   1: Added term 0 0 0 -- RMS=0.130710, GCV=3.241948e-05, AIC = 2.205222
+  Model addition step   2: Added term 1 1 0 -- RMS=0.103747, GCV=2.050154e-05, AIC = 1.746952
+  Model addition step   3: Added term 2 1 1 -- RMS=0.062372, GCV=7.438116e-06, AIC = 0.733052
+  Model addition step   4: Added term 1 0 1 -- RMS=0.058213, GCV=6.503934e-06, AIC = 0.598816
+  Model addition step   5: Added term 0 0 2 -- RMS=0.054546, GCV=5.732186e-06, AIC = 0.472473
+  Model addition step   6: Added term 3 0 0 -- RMS=0.051465, GCV=5.122457e-06, AIC = 0.359971
+  6 polynomial terms were written for subscap10 x force
 subscap10
-  RMS fit error of the full model is: 0.013271 (normalized)
-range of amplitudes: 0.504892
-  Model addition step   1: Added term 0 0 0 -- RMS=0.107580, GCV=2.196111e-05, AIC = 1.815736
-  Model addition step   2: Added term 1 0 0 -- RMS=0.074514, GCV=1.057581e-05, AIC = 1.085021
-  Model addition step   3: Added term 2 1 0 -- RMS=0.058923, GCV=6.638213e-06, AIC = 0.619277
-  Model addition step   4: Added term 1 1 0 -- RMS=0.033685, GCV=2.177750e-06, AIC = -0.495299
+  RMS fit error of the full model is: 0.011572 (normalized)
+range of amplitudes: 0.608993
+  Model addition step   1: Added term 0 0 0 -- RMS=0.124735, GCV=2.952314e-05, AIC = 2.111637
+  Model addition step   2: Added term 0 1 2 -- RMS=0.101011, GCV=1.943424e-05, AIC = 1.693489
+  Model addition step   3: Added term 1 1 0 -- RMS=0.068213, GCV=8.896520e-06, AIC = 0.912094
+  Model addition step   4: Added term 0 1 3 -- RMS=0.054282, GCV=5.655165e-06, AIC = 0.458978
   4 polynomial terms were written for subscap10 y force
 subscap10
-  RMS fit error of the full model is: 0.017025 (normalized)
-range of amplitudes: 0.778676
-  Model addition step   1: Added term 0 0 0 -- RMS=0.227329, GCV=9.806084e-05, AIC = 3.312051
-  Model addition step   2: Added term 1 1 0 -- RMS=0.117776, GCV=2.642083e-05, AIC = 2.000605
-  Model addition step   3: Added term 2 0 1 -- RMS=0.084125, GCV=1.353101e-05, AIC = 1.331418
-  Model addition step   4: Added term 1 1 2 -- RMS=0.074826, GCV=1.074579e-05, AIC = 1.100923
-  4 polynomial terms were written for subscap10 z force
+  RMS fit error of the full model is: 0.013134 (normalized)
+range of amplitudes: 0.595282
+  Model addition step   1: Added term 0 0 0 -- RMS=0.140925, GCV=3.768466e-05, AIC = 2.355716
+  Model addition step   2: Added term 1 1 0 -- RMS=0.103515, GCV=2.040987e-05, AIC = 1.742470
+  Model addition step   3: Added term 2 1 1 -- RMS=0.073878, GCV=1.043556e-05, AIC = 1.071653
+  Model addition step   4: Added term 0 3 0 -- RMS=0.066977, GCV=8.609738e-06, AIC = 0.879303
+Change in error: 0.048140. No more terms added.
+   4 polynomial terms were written for subscap10 z force
 subscap11
-  RMS fit error of the full model is: 0.012947 (normalized)
-range of amplitudes: 0.580892
-  Model addition step   1: Added term 0 0 0 -- RMS=0.157496, GCV=4.706825e-05, AIC = 2.578061
-  Model addition step   2: Added term 1 1 0 -- RMS=0.071425, GCV=9.717134e-06, AIC = 1.000343
-  Model addition step   3: Added term 2 2 0 -- RMS=0.054759, GCV=5.733194e-06, AIC = 0.472707
+  RMS fit error of the full model is: 0.013676 (normalized)
+range of amplitudes: 0.580262
+  Model addition step   1: Added term 0 0 0 -- RMS=0.138285, GCV=3.628575e-05, AIC = 2.317888
+  Model addition step   2: Added term 1 1 0 -- RMS=0.099275, GCV=1.877202e-05, AIC = 1.658820
+  Model addition step   3: Added term 2 1 1 -- RMS=0.055791, GCV=5.951373e-06, AIC = 0.510056
   3 polynomial terms were written for subscap11 x force
 subscap11
-  RMS fit error of the full model is: 0.011991 (normalized)
-range of amplitudes: 0.544550
-  Model addition step   1: Added term 1 0 0 -- RMS=0.076364, GCV=1.106543e-05, AIC = 1.130288
-  Model addition step   2: Added term 1 2 1 -- RMS=0.067659, GCV=8.719492e-06, AIC = 0.892013
-  Model addition step   3: Added term 1 1 0 -- RMS=0.050189, GCV=4.816181e-06, AIC = 0.298415
-  3 polynomial terms were written for subscap11 y force
+  RMS fit error of the full model is: 0.018779 (normalized)
+range of amplitudes: 0.999802
+  Model addition step   1: Added term 0 2 2 -- RMS=0.114970, GCV=2.508173e-05, AIC = 1.948602
+  Model addition step   2: Added term 1 1 0 -- RMS=0.087202, GCV=1.448401e-05, AIC = 1.399497
+  2 polynomial terms were written for subscap11 y force
 subscap11
-  RMS fit error of the full model is: 0.016157 (normalized)
-range of amplitudes: 0.992412
-  Model addition step   1: Added term 0 0 0 -- RMS=0.276189, GCV=1.447440e-04, AIC = 3.701429
-  Model addition step   2: Added term 1 1 0 -- RMS=0.110811, GCV=2.338847e-05, AIC = 1.878695
-  Model addition step   3: Added term 2 0 1 -- RMS=0.091201, GCV=1.590322e-05, AIC = 1.492956
+  RMS fit error of the full model is: 0.017493 (normalized)
+range of amplitudes: 1.071374
+  Model addition step   1: Added term 0 0 0 -- RMS=0.240043, GCV=1.093369e-04, AIC = 3.420897
+  Model addition step   2: Added term 1 2 0 -- RMS=0.123519, GCV=2.906066e-05, AIC = 2.095837
+  Model addition step   3: Added term 2 1 1 -- RMS=0.101741, GCV=1.979143e-05, AIC = 1.711683
   3 polynomial terms were written for subscap11 z force
 bicl
-  RMS fit error of the full model is: 0.053224 (normalized)
-range of amplitudes: 1.353748
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.233646, GCV=1.035866e-04, AIC = 3.366871
-  Model addition step   2: Added term 2 0 1 0 0 -- RMS=0.208387, GCV=8.271352e-05, AIC = 3.141835
-  Model addition step   3: Added term 2 1 0 0 0 -- RMS=0.176355, GCV=5.946479e-05, AIC = 2.811818
-  Model addition step   4: Added term 0 1 0 0 0 -- RMS=0.150449, GCV=4.344260e-05, AIC = 2.497849
-  Model addition step   5: Added term 4 0 0 0 0 -- RMS=0.123418, GCV=2.934591e-05, AIC = 2.105529
-  5 polynomial terms were written for bicl x force
+  RMS fit error of the full model is: 0.021999 (normalized)
+range of amplitudes: 1.422659
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.259093, GCV=5.076693e-06, AIC = 6.788878
+  Model addition step   2: Added term 2 0 0 0 0 -- RMS=0.190571, GCV=2.746955e-06, AIC = 6.174711
+  Model addition step   3: Added term 4 0 0 0 0 -- RMS=0.169264, GCV=2.167356e-06, AIC = 5.937726
+Change in error: 0.044721. No more terms added.
+   3 polynomial terms were written for bicl x force
 bicl
-  RMS fit error of the full model is: 0.052095 (normalized)
-range of amplitudes: 0.740940
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.161480, GCV=4.947947e-05, AIC = 2.628021
-  Model addition step   2: Added term 0 1 2 0 0 -- RMS=0.123869, GCV=2.922531e-05, AIC = 2.101487
-  Model addition step   3: Added term 0 2 1 0 0 -- RMS=0.099613, GCV=1.897208e-05, AIC = 1.669402
-  Model addition step   4: Added term 4 0 0 0 0 -- RMS=0.087167, GCV=1.458282e-05, AIC = 1.406253
-  Model addition step   5: Added term 2 2 0 0 0 -- RMS=0.076698, GCV=1.133341e-05, AIC = 1.154132
-  Model addition step   6: Added term 1 1 1 0 0 -- RMS=0.072330, GCV=1.011775e-05, AIC = 1.040628
-  6 polynomial terms were written for bicl y force
+  RMS fit error of the full model is: 0.023162 (normalized)
+range of amplitudes: 1.267864
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.231246, GCV=4.044076e-06, AIC = 6.561471
+  Model addition step   2: Added term 0 1 2 0 0 -- RMS=0.082967, GCV=5.206521e-07, AIC = 4.511545
+  2 polynomial terms were written for bicl y force
 bicl
-  RMS fit error of the full model is: 0.122216 (normalized)
-range of amplitudes: 1.728681
-  Model addition step   1: Added term 0 1 2 0 0 -- RMS=0.411474, GCV=3.212723e-04, AIC = 4.498752
-  Model addition step   2: Added term 0 2 1 0 0 -- RMS=0.322515, GCV=1.981226e-04, AIC = 4.015338
-  Model addition step   3: Added term 3 0 0 0 0 -- RMS=0.284537, GCV=1.547968e-04, AIC = 3.768548
-  Model addition step   4: Added term 0 1 1 0 0 -- RMS=0.261071, GCV=1.308138e-04, AIC = 3.600184
-  Model addition step   5: Added term 2 1 1 0 0 -- RMS=0.235470, GCV=1.068233e-04, AIC = 3.397552
-Change in error: 0.045238. No more terms added.
-   5 polynomial terms were written for bicl z force
+  RMS fit error of the full model is: 0.030804 (normalized)
+range of amplitudes: 2.184534
+  Model addition step   1: Added term 0 1 1 0 0 -- RMS=0.297982, GCV=6.715072e-06, AIC = 7.068572
+  Model addition step   2: Added term 2 1 1 0 0 -- RMS=0.213958, GCV=3.462539e-06, AIC = 6.406220
+  2 polynomial terms were written for bicl z force
 bicb1
-  RMS fit error of the full model is: 0.009419 (normalized)
-range of amplitudes: 1.180296
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.252583, GCV=1.210588e-04, AIC = 3.522739
-  Model addition step   2: Added term 2 0 0 0 0 -- RMS=0.152978, GCV=4.457525e-05, AIC = 2.523631
-  Model addition step   3: Added term 4 0 0 0 0 -- RMS=0.136638, GCV=3.569678e-05, AIC = 2.301495
-  Model addition step   4: Added term 0 1 0 2 0 -- RMS=0.116899, GCV=2.622769e-05, AIC = 1.993225
+  RMS fit error of the full model is: 0.011246 (normalized)
+range of amplitudes: 1.339961
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.250329, GCV=4.739077e-06, AIC = 6.720060
+  Model addition step   2: Added term 2 0 0 0 0 -- RMS=0.168711, GCV=2.152889e-06, AIC = 5.931029
+  Model addition step   3: Added term 1 1 2 0 0 -- RMS=0.145558, GCV=1.602775e-06, AIC = 5.635954
+  Model addition step   4: Added term 0 1 0 0 0 -- RMS=0.127230, GCV=1.224738e-06, AIC = 5.366945
   4 polynomial terms were written for bicb1 x force
 bicb1
-  RMS fit error of the full model is: 0.003449 (normalized)
-range of amplitudes: 0.903822
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.202474, GCV=7.779059e-05, AIC = 3.080483
-  Model addition step   2: Added term 0 2 0 1 0 -- RMS=0.029511, GCV=1.658858e-06, AIC = -0.767418
+  RMS fit error of the full model is: 0.007638 (normalized)
+range of amplitudes: 0.816614
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.183846, GCV=2.556104e-06, AIC = 6.102702
+  Model addition step   2: Added term 0 2 0 0 0 -- RMS=0.048693, GCV=1.793366e-07, AIC = 3.445727
   2 polynomial terms were written for bicb1 y force
 bicb1
-  RMS fit error of the full model is: 0.008563 (normalized)
-range of amplitudes: 1.839625
-  Model addition step   1: Added term 1 1 0 0 0 -- RMS=0.128721, GCV=3.144026e-05, AIC = 2.174552
+  RMS fit error of the full model is: 0.009319 (normalized)
+range of amplitudes: 1.869058
+  Model addition step   1: Added term 1 1 0 0 0 -- RMS=0.137981, GCV=1.439820e-06, AIC = 5.528736
   1 polynomial terms were written for bicb1 z force
 bicb2
-  RMS fit error of the full model is: 0.009419 (normalized)
-range of amplitudes: 1.180296
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.252583, GCV=1.210588e-04, AIC = 3.522739
-  Model addition step   2: Added term 2 0 0 0 0 -- RMS=0.152978, GCV=4.457525e-05, AIC = 2.523631
-  Model addition step   3: Added term 4 0 0 0 0 -- RMS=0.136638, GCV=3.569678e-05, AIC = 2.301495
-  Model addition step   4: Added term 0 1 0 2 0 -- RMS=0.116899, GCV=2.622769e-05, AIC = 1.993225
+  RMS fit error of the full model is: 0.011246 (normalized)
+range of amplitudes: 1.339961
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.250329, GCV=4.739077e-06, AIC = 6.720060
+  Model addition step   2: Added term 2 0 0 0 0 -- RMS=0.168711, GCV=2.152889e-06, AIC = 5.931029
+  Model addition step   3: Added term 1 1 2 0 0 -- RMS=0.145558, GCV=1.602775e-06, AIC = 5.635954
+  Model addition step   4: Added term 0 1 0 0 0 -- RMS=0.127230, GCV=1.224738e-06, AIC = 5.366945
   4 polynomial terms were written for bicb2 x force
 bicb2
-  RMS fit error of the full model is: 0.003449 (normalized)
-range of amplitudes: 0.903822
-  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.202474, GCV=7.779059e-05, AIC = 3.080483
-  Model addition step   2: Added term 0 2 0 1 0 -- RMS=0.029511, GCV=1.658858e-06, AIC = -0.767418
+  RMS fit error of the full model is: 0.007638 (normalized)
+range of amplitudes: 0.816614
+  Model addition step   1: Added term 0 0 0 0 0 -- RMS=0.183846, GCV=2.556104e-06, AIC = 6.102702
+  Model addition step   2: Added term 0 2 0 0 0 -- RMS=0.048693, GCV=1.793366e-07, AIC = 3.445727
   2 polynomial terms were written for bicb2 y force
 bicb2
-  RMS fit error of the full model is: 0.008563 (normalized)
-range of amplitudes: 1.839625
-  Model addition step   1: Added term 1 1 0 0 0 -- RMS=0.128721, GCV=3.144026e-05, AIC = 2.174552
+  RMS fit error of the full model is: 0.009319 (normalized)
+range of amplitudes: 1.869058
+  Model addition step   1: Added term 1 1 0 0 0 -- RMS=0.137981, GCV=1.439820e-06, AIC = 5.528736
   1 polynomial terms were written for bicb2 z force
 triclong1
-  RMS fit error of the full model is: 0.013446 (normalized)
-range of amplitudes: 1.363428
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.274697, GCV=1.431847e-04, AIC = 3.690598
-  Model addition step   2: Added term 2 0 0 0 -- RMS=0.187044, GCV=6.663769e-05, AIC = 2.925722
-  Model addition step   3: Added term 4 0 0 0 -- RMS=0.160504, GCV=4.925543e-05, AIC = 2.623454
-  Model addition step   4: Added term 3 1 0 0 -- RMS=0.143938, GCV=3.976374e-05, AIC = 2.409364
-  Model addition step   5: Added term 0 1 0 0 -- RMS=0.099650, GCV=1.913157e-05, AIC = 1.677717
-  5 polynomial terms were written for triclong1 x force
+  RMS fit error of the full model is: 0.012262 (normalized)
+range of amplitudes: 1.307809
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.263180, GCV=2.620653e-05, AIC = 5.211351
+  Model addition step   2: Added term 2 0 0 0 -- RMS=0.169040, GCV=1.081953e-05, AIC = 4.326695
+  Model addition step   3: Added term 4 0 0 0 -- RMS=0.149749, GCV=8.497393e-06, AIC = 4.085100
+  Model addition step   4: Added term 0 1 0 0 -- RMS=0.128648, GCV=6.276165e-06, AIC = 3.782099
+  4 polynomial terms were written for triclong1 x force
 triclong1
-  RMS fit error of the full model is: 0.004760 (normalized)
-range of amplitudes: 0.946879
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.201433, GCV=7.699274e-05, AIC = 3.070174
-  Model addition step   2: Added term 0 2 0 2 -- RMS=0.025246, GCV=1.213970e-06, AIC = -1.079652
+  RMS fit error of the full model is: 0.002295 (normalized)
+range of amplitudes: 1.078518
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.222694, GCV=1.876372e-05, AIC = 4.877267
+  Model addition step   2: Added term 0 2 0 0 -- RMS=0.023588, GCV=2.106777e-07, AIC = 0.387916
   2 polynomial terms were written for triclong1 y force
 triclong1
-  RMS fit error of the full model is: 0.010759 (normalized)
-range of amplitudes: 1.877733
-  Model addition step   1: Added term 1 1 0 0 -- RMS=0.149243, GCV=4.226436e-05, AIC = 2.470407
+  RMS fit error of the full model is: 0.007285 (normalized)
+range of amplitudes: 1.882983
+  Model addition step   1: Added term 1 1 0 0 -- RMS=0.126736, GCV=6.077218e-06, AIC = 3.749889
   1 polynomial terms were written for triclong1 z force
 triclong2
-  RMS fit error of the full model is: 0.012388 (normalized)
-range of amplitudes: 1.378561
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.283127, GCV=1.521075e-04, AIC = 3.751050
-  Model addition step   2: Added term 2 0 0 0 -- RMS=0.185439, GCV=6.549956e-05, AIC = 2.908495
-  Model addition step   3: Added term 3 1 0 0 -- RMS=0.156746, GCV=4.697637e-05, AIC = 2.576079
-  Model addition step   4: Added term 0 1 0 0 -- RMS=0.130961, GCV=3.291715e-05, AIC = 2.220403
+  RMS fit error of the full model is: 0.010680 (normalized)
+range of amplitudes: 1.293734
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.260457, GCV=2.566706e-05, AIC = 5.190551
+  Model addition step   2: Added term 2 0 0 0 -- RMS=0.168223, GCV=1.071520e-05, AIC = 4.317005
+  Model addition step   3: Added term 4 0 0 0 -- RMS=0.149317, GCV=8.448474e-06, AIC = 4.079327
+  Model addition step   4: Added term 0 1 0 0 -- RMS=0.128272, GCV=6.239537e-06, AIC = 3.776246
   4 polynomial terms were written for triclong2 x force
 triclong2
-  RMS fit error of the full model is: 0.004572 (normalized)
-range of amplitudes: 0.985383
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.215329, GCV=8.798171e-05, AIC = 3.203592
-  Model addition step   2: Added term 0 2 0 0 -- RMS=0.024550, GCV=1.147954e-06, AIC = -1.135567
+  RMS fit error of the full model is: 0.001342 (normalized)
+range of amplitudes: 1.045784
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.226822, GCV=1.946587e-05, AIC = 4.914005
+  Model addition step   2: Added term 0 2 0 0 -- RMS=0.031400, GCV=3.733398e-07, AIC = 0.960075
   2 polynomial terms were written for triclong2 y force
 triclong2
-  RMS fit error of the full model is: 0.010533 (normalized)
-range of amplitudes: 1.857706
-  Model addition step   1: Added term 1 1 0 0 -- RMS=0.138191, GCV=3.623659e-05, AIC = 2.316532
+  RMS fit error of the full model is: 0.008175 (normalized)
+range of amplitudes: 1.865825
+  Model addition step   1: Added term 1 1 0 0 -- RMS=0.123734, GCV=5.792705e-06, AIC = 3.701941
   1 polynomial terms were written for triclong2 z force
 triclong3
-  RMS fit error of the full model is: 0.013305 (normalized)
-range of amplitudes: 1.388912
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.285219, GCV=1.543635e-04, AIC = 3.765773
-  Model addition step   2: Added term 2 0 0 0 -- RMS=0.185478, GCV=6.552697e-05, AIC = 2.908914
-  Model addition step   3: Added term 3 1 0 0 -- RMS=0.157172, GCV=4.723153e-05, AIC = 2.581496
-  Model addition step   4: Added term 0 1 0 0 -- RMS=0.131125, GCV=3.299964e-05, AIC = 2.222906
+  RMS fit error of the full model is: 0.011696 (normalized)
+range of amplitudes: 1.291051
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.260501, GCV=2.567563e-05, AIC = 5.190884
+  Model addition step   2: Added term 2 0 0 0 -- RMS=0.168737, GCV=1.078078e-05, AIC = 4.323106
+  Model addition step   3: Added term 4 0 0 0 -- RMS=0.149845, GCV=8.508305e-06, AIC = 4.086384
+  Model addition step   4: Added term 0 1 0 0 -- RMS=0.128578, GCV=6.269305e-06, AIC = 3.781005
   4 polynomial terms were written for triclong3 x force
 triclong3
-  RMS fit error of the full model is: 0.004223 (normalized)
-range of amplitudes: 0.977503
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.210593, GCV=8.415379e-05, AIC = 3.159109
-  Model addition step   2: Added term 0 2 0 0 -- RMS=0.020269, GCV=7.825641e-07, AIC = -1.518727
+  RMS fit error of the full model is: 0.001360 (normalized)
+range of amplitudes: 1.035022
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.221125, GCV=1.850035e-05, AIC = 4.863132
+  Model addition step   2: Added term 0 2 0 0 -- RMS=0.025256, GCV=2.415171e-07, AIC = 0.524526
   2 polynomial terms were written for triclong3 y force
 triclong3
-  RMS fit error of the full model is: 0.009379 (normalized)
-range of amplitudes: 1.861388
-  Model addition step   1: Added term 1 1 0 0 -- RMS=0.138536, GCV=3.641787e-05, AIC = 2.321522
+  RMS fit error of the full model is: 0.007478 (normalized)
+range of amplitudes: 1.870797
+  Model addition step   1: Added term 1 1 0 0 -- RMS=0.121495, GCV=5.584929e-06, AIC = 3.665414
   1 polynomial terms were written for triclong3 z force
 triclong4
-  RMS fit error of the full model is: 0.012212 (normalized)
-range of amplitudes: 1.384443
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.285435, GCV=1.545975e-04, AIC = 3.767288
-  Model addition step   2: Added term 2 0 0 0 -- RMS=0.184439, GCV=6.479469e-05, AIC = 2.897676
-  Model addition step   3: Added term 3 1 0 0 -- RMS=0.155252, GCV=4.608470e-05, AIC = 2.556915
-  Model addition step   4: Added term 0 1 0 0 -- RMS=0.129224, GCV=3.204986e-05, AIC = 2.193702
+  RMS fit error of the full model is: 0.010582 (normalized)
+range of amplitudes: 1.289948
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.259382, GCV=2.545562e-05, AIC = 5.182278
+  Model addition step   2: Added term 2 0 0 0 -- RMS=0.167639, GCV=1.064096e-05, AIC = 4.310052
+  Model addition step   3: Added term 4 0 0 0 -- RMS=0.148829, GCV=8.393317e-06, AIC = 4.072777
+  Model addition step   4: Added term 0 1 0 0 -- RMS=0.127932, GCV=6.206469e-06, AIC = 3.770932
   4 polynomial terms were written for triclong4 x force
 triclong4
-  RMS fit error of the full model is: 0.004464 (normalized)
-range of amplitudes: 0.993851
-  Model addition step   1: Added term 0 0 0 0 -- RMS=0.217524, GCV=8.978457e-05, AIC = 3.223876
-  Model addition step   2: Added term 0 2 0 0 -- RMS=0.025763, GCV=1.264215e-06, AIC = -1.039097
+  RMS fit error of the full model is: 0.001326 (normalized)
+range of amplitudes: 1.040877
+  Model addition step   1: Added term 0 0 0 0 -- RMS=0.226796, GCV=1.946146e-05, AIC = 4.913778
+  Model addition step   2: Added term 0 2 0 0 -- RMS=0.032348, GCV=3.962060e-07, AIC = 1.019521
   2 polynomial terms were written for triclong4 y force
 triclong4
-  RMS fit error of the full model is: 0.009908 (normalized)
-range of amplitudes: 1.855685
-  Model addition step   1: Added term 1 1 0 0 -- RMS=0.137340, GCV=3.579163e-05, AIC = 2.304177
+  RMS fit error of the full model is: 0.008113 (normalized)
+range of amplitudes: 1.863740
+  Model addition step   1: Added term 1 1 0 0 -- RMS=0.123942, GCV=5.812220e-06, AIC = 3.705305
   1 polynomial terms were written for triclong4 z force
 latdorsi1
-  RMS fit error of the full model is: 0.000237 (normalized)
-range of amplitudes: 0.054011
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.008791, GCV=1.466512e-07, AIC = -3.193235
-  Model addition step   2: Added term 2 0 0 0 0 0 1 0 0 -- RMS=0.006595, GCV=8.283904e-08, AIC = -3.764404
-  Model addition step   3: Added term 0 0 0 2 0 0 0 1 1 -- RMS=0.006044, GCV=6.985343e-08, AIC = -3.934922
-  Model addition step   4: Added term 0 0 0 0 0 0 3 0 1 -- RMS=0.005471, GCV=5.744493e-08, AIC = -4.130520
-  Model addition step   5: Added term 0 0 0 0 1 0 0 0 2 -- RMS=0.004650, GCV=4.165201e-08, AIC = -4.452029
-  5 polynomial terms were written for latdorsi1 x force
+  RMS fit error of the full model is: 0.000112 (normalized)
+range of amplitudes: 0.085006
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.012352, GCV=2.894869e-07, AIC = -2.513182
+  Model addition step   2: Added term 0 0 0 0 0 0 2 0 2 -- RMS=0.009441, GCV=1.697582e-07, AIC = -3.046928
+  Model addition step   3: Added term 0 0 0 1 0 0 1 0 2 -- RMS=0.007723, GCV=1.140437e-07, AIC = -3.444740
+  3 polynomial terms were written for latdorsi1 x force
 latdorsi1
-  RMS fit error of the full model is: 0.000774 (normalized)
-range of amplitudes: 0.294460
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 2 -- RMS=0.058725, GCV=6.543817e-06, AIC = 0.604983
-  Model addition step   2: Added term 0 0 0 0 0 1 0 0 0 -- RMS=0.037545, GCV=2.684933e-06, AIC = -0.285892
-  Model addition step   3: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.024435, GCV=1.141587e-06, AIC = -1.141146
+  RMS fit error of the full model is: 0.000424 (normalized)
+range of amplitudes: 0.311943
+  Model addition step   1: Added term 0 0 0 0 0 1 0 0 0 -- RMS=0.059900, GCV=6.808410e-06, AIC = 0.644621
+  Model addition step   2: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.031595, GCV=1.901364e-06, AIC = -0.630977
+  Model addition step   3: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.024862, GCV=1.181820e-06, AIC = -1.106510
   3 polynomial terms were written for latdorsi1 y force
 latdorsi1
-  RMS fit error of the full model is: 0.001492 (normalized)
-range of amplitudes: 0.198905
-  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.036872, GCV=2.579719e-06, AIC = -0.325857
-  Model addition step   2: Added term 0 0 0 0 0 0 2 0 1 -- RMS=0.030649, GCV=1.789196e-06, AIC = -0.691782
-  Model addition step   3: Added term 0 0 0 2 0 0 0 2 0 -- RMS=0.028727, GCV=1.577894e-06, AIC = -0.817475
-  Model addition step   4: Added term 0 0 0 0 0 0 0 1 3 -- RMS=0.026496, GCV=1.347414e-06, AIC = -0.975404
-  Model addition step   5: Added term 0 0 0 0 0 1 1 1 0 -- RMS=0.024551, GCV=1.161278e-06, AIC = -1.124102
-  Model addition step   6: Added term 0 0 0 1 0 0 0 1 2 -- RMS=0.022632, GCV=9.906168e-07, AIC = -1.283091
-Change in error: 0.038881. No more terms added.
-   6 polynomial terms were written for latdorsi1 z force
+  RMS fit error of the full model is: 0.000675 (normalized)
+range of amplitudes: 0.311839
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.045349, GCV=3.902387e-06, AIC = 0.088051
+  Model addition step   2: Added term 0 1 0 0 0 0 2 0 1 -- RMS=0.036104, GCV=2.482763e-06, AIC = -0.364176
+  Model addition step   3: Added term 0 0 2 0 0 1 1 0 0 -- RMS=0.032046, GCV=1.963514e-06, AIC = -0.598830
+  Model addition step   4: Added term 0 0 0 0 0 0 0 1 1 -- RMS=0.026524, GCV=1.350204e-06, AIC = -0.973335
+  4 polynomial terms were written for latdorsi1 z force
 latdorsi2
-  RMS fit error of the full model is: 0.000087 (normalized)
-range of amplitudes: 0.089822
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.017289, GCV=5.672004e-07, AIC = -1.840580
-  Model addition step   2: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.008264, GCV=1.300826e-07, AIC = -3.313133
-  2 polynomial terms were written for latdorsi2 x force
+  RMS fit error of the full model is: 0.000061 (normalized)
+range of amplitudes: 0.094034
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.019529, GCV=7.236790e-07, AIC = -1.596945
+  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.011797, GCV=2.650734e-07, AIC = -2.601296
+  Model addition step   3: Added term 0 0 0 0 0 0 2 0 2 -- RMS=0.009178, GCV=1.610613e-07, AIC = -3.099536
+  3 polynomial terms were written for latdorsi2 x force
 latdorsi2
-  RMS fit error of the full model is: 0.000473 (normalized)
-range of amplitudes: 0.325717
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.073027, GCV=1.011942e-05, AIC = 1.040919
-  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.028438, GCV=1.540352e-06, AIC = -0.841537
+  RMS fit error of the full model is: 0.000373 (normalized)
+range of amplitudes: 0.316053
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.076504, GCV=1.110596e-05, AIC = 1.133945
+  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.028291, GCV=1.524536e-06, AIC = -0.851858
   2 polynomial terms were written for latdorsi2 y force
 latdorsi2
-  RMS fit error of the full model is: 0.000771 (normalized)
-range of amplitudes: 0.216548
-  Model addition step   1: Added term 0 0 0 3 0 0 0 0 0 -- RMS=0.035469, GCV=2.387155e-06, AIC = -0.403435
-  Model addition step   2: Added term 0 0 0 0 0 0 2 0 1 -- RMS=0.029685, GCV=1.678476e-06, AIC = -0.755662
-  Model addition step   3: Added term 0 0 0 1 0 0 0 1 0 -- RMS=0.025920, GCV=1.284578e-06, AIC = -1.023136
-  Model addition step   4: Added term 0 0 0 0 0 0 0 1 3 -- RMS=0.023892, GCV=1.095577e-06, AIC = -1.182310
-  Model addition step   5: Added term 0 0 0 0 0 1 1 1 0 -- RMS=0.022246, GCV=9.534298e-07, AIC = -1.321313
-  Model addition step   6: Added term 0 0 0 2 0 0 0 1 1 -- RMS=0.020414, GCV=8.059160e-07, AIC = -1.489439
-  6 polynomial terms were written for latdorsi2 z force
+  RMS fit error of the full model is: 0.000581 (normalized)
+range of amplitudes: 0.259045
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.037611, GCV=2.684176e-06, AIC = -0.286163
+  Model addition step   2: Added term 0 0 0 1 1 1 1 0 0 -- RMS=0.033526, GCV=2.140861e-06, AIC = -0.512340
+  Model addition step   3: Added term 0 1 0 0 0 0 0 0 1 -- RMS=0.025055, GCV=1.200275e-06, AIC = -1.091015
+  3 polynomial terms were written for latdorsi2 z force
 latdorsi3
-  RMS fit error of the full model is: 0.000075 (normalized)
-range of amplitudes: 0.135894
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.029243, GCV=1.622644e-06, AIC = -0.789481
-  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.011663, GCV=2.591014e-07, AIC = -2.624084
-  2 polynomial terms were written for latdorsi3 x force
+  RMS fit error of the full model is: 0.000060 (normalized)
+range of amplitudes: 0.122857
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.030125, GCV=1.722032e-06, AIC = -0.730032
+  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.013080, GCV=3.258838e-07, AIC = -2.394762
+  Model addition step   3: Added term 0 0 0 0 0 0 2 0 2 -- RMS=0.010458, GCV=2.090935e-07, AIC = -2.838540
+  3 polynomial terms were written for latdorsi3 x force
 latdorsi3
-  RMS fit error of the full model is: 0.000210 (normalized)
-range of amplitudes: 0.347877
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.079571, GCV=1.201418e-05, AIC = 1.212550
-  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.026875, GCV=1.375720e-06, AIC = -0.954571
+  RMS fit error of the full model is: 0.000140 (normalized)
+range of amplitudes: 0.331619
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.082538, GCV=1.292698e-05, AIC = 1.285779
+  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.028197, GCV=1.514390e-06, AIC = -0.858535
   2 polynomial terms were written for latdorsi3 y force
 latdorsi3
-  RMS fit error of the full model is: 0.000487 (normalized)
-range of amplitudes: 0.238282
-  Model addition step   1: Added term 0 0 0 4 0 0 0 0 0 -- RMS=0.032347, GCV=1.985446e-06, AIC = -0.587694
-  Model addition step   2: Added term 0 0 0 0 0 0 2 0 1 -- RMS=0.024562, GCV=1.149133e-06, AIC = -1.134540
-  Model addition step   3: Added term 0 0 0 1 1 0 2 0 0 -- RMS=0.022693, GCV=9.845865e-07, AIC = -1.289100
-  3 polynomial terms were written for latdorsi3 z force
+  RMS fit error of the full model is: 0.000239 (normalized)
+range of amplitudes: 0.207112
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.032894, GCV=2.053125e-06, AIC = -0.554174
+  Model addition step   2: Added term 0 0 0 2 0 1 1 0 0 -- RMS=0.029757, GCV=1.686643e-06, AIC = -0.750808
+  Model addition step   3: Added term 0 0 0 0 0 0 0 1 1 -- RMS=0.022326, GCV=9.530140e-07, AIC = -1.321692
+  Model addition step   4: Added term 0 0 1 1 0 0 0 1 1 -- RMS=0.020564, GCV=8.115876e-07, AIC = -1.482354
+  4 polynomial terms were written for latdorsi3 z force
 latdorsi4
-  RMS fit error of the full model is: 0.000120 (normalized)
-range of amplitudes: 0.212856
-  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.043135, GCV=3.530662e-06, AIC = -0.012052
-  Model addition step   2: Added term 0 0 1 2 0 0 1 0 0 -- RMS=0.015172, GCV=4.384683e-07, AIC = -2.098016
+  RMS fit error of the full model is: 0.000054 (normalized)
+range of amplitudes: 0.188050
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.041194, GCV=3.219927e-06, AIC = -0.104178
+  Model addition step   2: Added term 0 0 1 2 0 0 1 0 0 -- RMS=0.018393, GCV=6.443968e-07, AIC = -1.712989
   2 polynomial terms were written for latdorsi4 x force
 latdorsi4
-  RMS fit error of the full model is: 0.000208 (normalized)
-range of amplitudes: 0.365487
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.085944, GCV=1.401577e-05, AIC = 1.366646
-  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.023010, GCV=1.008490e-06, AIC = -1.265094
+  RMS fit error of the full model is: 0.000088 (normalized)
+range of amplitudes: 0.347335
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.087760, GCV=1.461425e-05, AIC = 1.408460
+  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.026385, GCV=1.326011e-06, AIC = -0.991373
   2 polynomial terms were written for latdorsi4 y force
 latdorsi4
-  RMS fit error of the full model is: 0.000414 (normalized)
-range of amplitudes: 0.263277
-  Model addition step   1: Added term 0 0 0 3 1 0 0 0 0 -- RMS=0.033567, GCV=2.137998e-06, AIC = -0.513667
-  Model addition step   2: Added term 0 0 0 0 2 0 2 0 0 -- RMS=0.024613, GCV=1.153862e-06, AIC = -1.130434
-  2 polynomial terms were written for latdorsi4 z force
+  RMS fit error of the full model is: 0.000225 (normalized)
+range of amplitudes: 0.218328
+  Model addition step   1: Added term 0 1 0 3 0 0 0 0 0 -- RMS=0.026499, GCV=1.332402e-06, AIC = -0.986554
+  Model addition step   2: Added term 0 0 0 2 0 1 1 0 0 -- RMS=0.022533, GCV=9.671279e-07, AIC = -1.306973
+  Model addition step   3: Added term 0 0 0 0 0 0 0 1 1 -- RMS=0.018283, GCV=6.390945e-07, AIC = -1.721269
+  3 polynomial terms were written for latdorsi4 z force
 latdorsi5
-  RMS fit error of the full model is: 0.000176 (normalized)
-range of amplitudes: 0.313067
-  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.057233, GCV=6.215606e-06, AIC = 0.553526
-  Model addition step   2: Added term 1 0 0 1 0 0 0 0 0 -- RMS=0.025290, GCV=1.218269e-06, AIC = -1.076117
-  2 polynomial terms were written for latdorsi5 x force
+  RMS fit error of the full model is: 0.000077 (normalized)
+range of amplitudes: 0.259938
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.053593, GCV=5.450115e-06, AIC = 0.422099
+  Model addition step   2: Added term 2 0 0 2 0 0 0 0 0 -- RMS=0.027911, GCV=1.483875e-06, AIC = -0.878891
+  Model addition step   3: Added term 0 0 0 1 0 0 1 1 1 -- RMS=0.020422, GCV=7.974146e-07, AIC = -1.499947
+  3 polynomial terms were written for latdorsi5 x force
 latdorsi5
-  RMS fit error of the full model is: 0.000186 (normalized)
-range of amplitudes: 0.329580
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.074952, GCV=1.065995e-05, AIC = 1.092956
-  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.022969, GCV=1.004899e-06, AIC = -1.268661
+  RMS fit error of the full model is: 0.000082 (normalized)
+range of amplitudes: 0.297805
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.076304, GCV=1.104790e-05, AIC = 1.128703
+  Model addition step   2: Added term 0 0 1 2 0 0 0 0 0 -- RMS=0.029367, GCV=1.642637e-06, AIC = -0.777245
   2 polynomial terms were written for latdorsi5 y force
 latdorsi5
-  RMS fit error of the full model is: 0.000466 (normalized)
-range of amplitudes: 0.365447
-  Model addition step   1: Added term 0 1 0 0 0 0 2 0 1 -- RMS=0.056739, GCV=6.108835e-06, AIC = 0.536199
-  Model addition step   2: Added term 0 0 0 3 0 1 0 0 0 -- RMS=0.042022, GCV=3.363460e-06, AIC = -0.060578
-  Model addition step   3: Added term 0 0 1 2 0 0 1 0 0 -- RMS=0.029678, GCV=1.683990e-06, AIC = -0.752400
+  RMS fit error of the full model is: 0.000263 (normalized)
+range of amplitudes: 0.235230
+  Model addition step   1: Added term 0 0 0 3 1 0 0 0 0 -- RMS=0.039888, GCV=3.019058e-06, AIC = -0.168592
+  Model addition step   2: Added term 0 0 0 2 1 0 0 0 0 -- RMS=0.024865, GCV=1.177653e-06, AIC = -1.110025
+  Model addition step   3: Added term 0 0 0 0 1 1 2 0 0 -- RMS=0.022528, GCV=9.703146e-07, AIC = -1.303701
   3 polynomial terms were written for latdorsi5 z force
 latdorsi6
-  RMS fit error of the full model is: 0.000214 (normalized)
-range of amplitudes: 0.370942
-  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.064640, GCV=7.928369e-06, AIC = 0.796910
-  Model addition step   2: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.033118, GCV=2.089128e-06, AIC = -0.536801
-  2 polynomial terms were written for latdorsi6 x force
+  RMS fit error of the full model is: 0.000095 (normalized)
+range of amplitudes: 0.298302
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.060766, GCV=7.006629e-06, AIC = 0.673319
+  Model addition step   2: Added term 1 0 1 1 0 0 0 0 0 -- RMS=0.035631, GCV=2.418246e-06, AIC = -0.390505
+  Model addition step   3: Added term 0 0 0 1 0 0 0 2 0 -- RMS=0.026669, GCV=1.359835e-06, AIC = -0.966203
+  3 polynomial terms were written for latdorsi6 x force
 latdorsi6
-  RMS fit error of the full model is: 0.000186 (normalized)
-range of amplitudes: 0.310051
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.069233, GCV=9.095312e-06, AIC = 0.934222
-  Model addition step   2: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.023611, GCV=1.061878e-06, AIC = -1.213509
-  2 polynomial terms were written for latdorsi6 y force
+  RMS fit error of the full model is: 0.000088 (normalized)
+range of amplitudes: 0.276752
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.071197, GCV=9.618542e-06, AIC = 0.990155
+  Model addition step   2: Added term 0 0 1 2 0 0 0 0 0 -- RMS=0.030770, GCV=1.803335e-06, AIC = -0.683910
+  Model addition step   3: Added term 0 0 0 1 0 0 1 1 1 -- RMS=0.021422, GCV=8.774180e-07, AIC = -1.404338
+  3 polynomial terms were written for latdorsi6 y force
 latdorsi6
-  RMS fit error of the full model is: 0.000466 (normalized)
-range of amplitudes: 0.465270
-  Model addition step   1: Added term 2 0 0 0 0 0 2 0 0 -- RMS=0.065354, GCV=8.104687e-06, AIC = 0.818905
-  Model addition step   2: Added term 0 0 0 3 0 0 0 1 0 -- RMS=0.042669, GCV=3.467909e-06, AIC = -0.029996
+  RMS fit error of the full model is: 0.000273 (normalized)
+range of amplitudes: 0.316292
+  Model addition step   1: Added term 0 0 0 2 0 0 1 1 0 -- RMS=0.048078, GCV=4.386039e-06, AIC = 0.204889
+  Model addition step   2: Added term 0 0 0 0 0 1 0 0 0 -- RMS=0.030873, GCV=1.815478e-06, AIC = -0.677199
   2 polynomial terms were written for latdorsi6 z force
 pectmajt1
-  RMS fit error of the full model is: 0.000340 (normalized)
-range of amplitudes: 0.480734
-  Model addition step   1: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.051815, GCV=5.094519e-06, AIC = 0.354628
-  Model addition step   2: Added term 0 0 0 0 0 0 0 1 0 -- RMS=0.037678, GCV=2.703994e-06, AIC = -0.278818
+  RMS fit error of the full model is: 0.000057 (normalized)
+range of amplitudes: 0.440671
+  Model addition step   1: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.056309, GCV=6.016486e-06, AIC = 0.520966
+  Model addition step   2: Added term 0 0 0 0 0 0 2 2 0 -- RMS=0.029040, GCV=1.606337e-06, AIC = -0.799592
   2 polynomial terms were written for pectmajt1 x force
 pectmajt1
-  RMS fit error of the full model is: 0.000276 (normalized)
-range of amplitudes: 0.587923
-  Model addition step   1: Added term 0 0 0 4 0 0 0 0 0 -- RMS=0.066391, GCV=8.363745e-06, AIC = 0.850369
-  Model addition step   2: Added term 0 0 0 3 0 0 0 1 0 -- RMS=0.023809, GCV=1.079719e-06, AIC = -1.196847
+  RMS fit error of the full model is: 0.000050 (normalized)
+range of amplitudes: 0.591333
+  Model addition step   1: Added term 0 0 0 4 0 0 0 0 0 -- RMS=0.063215, GCV=7.582883e-06, AIC = 0.752356
+  Model addition step   2: Added term 0 0 0 3 0 0 0 1 0 -- RMS=0.033423, GCV=2.127714e-06, AIC = -0.518500
   2 polynomial terms were written for pectmajt1 y force
 pectmajt1
-  RMS fit error of the full model is: 0.000197 (normalized)
-range of amplitudes: 0.413550
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.090314, GCV=1.547739e-05, AIC = 1.465843
-  Model addition step   2: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.032566, GCV=2.020104e-06, AIC = -0.570399
+  RMS fit error of the full model is: 0.000043 (normalized)
+range of amplitudes: 0.392242
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.087439, GCV=1.450776e-05, AIC = 1.401146
+  Model addition step   2: Added term 0 0 0 4 0 0 0 0 0 -- RMS=0.037477, GCV=2.675213e-06, AIC = -0.289519
   2 polynomial terms were written for pectmajt1 z force
 pectmajt2
-  RMS fit error of the full model is: 0.000310 (normalized)
-range of amplitudes: 0.417688
-  Model addition step   1: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.059270, GCV=6.665865e-06, AIC = 0.623463
-  Model addition step   2: Added term 0 0 2 0 0 0 2 0 0 -- RMS=0.034792, GCV=2.305710e-06, AIC = -0.438159
-  2 polynomial terms were written for pectmajt2 x force
+  RMS fit error of the full model is: 0.000045 (normalized)
+range of amplitudes: 0.384965
+  Model addition step   1: Added term 0 0 0 2 0 0 0 0 0 -- RMS=0.057074, GCV=6.181019e-06, AIC = 0.547946
+  Model addition step   2: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.044995, GCV=3.856250e-06, AIC = 0.076147
+  Model addition step   3: Added term 0 0 0 0 0 0 2 2 0 -- RMS=0.026764, GCV=1.369584e-06, AIC = -0.959059
+  3 polynomial terms were written for pectmajt2 x force
 pectmajt2
-  RMS fit error of the full model is: 0.000278 (normalized)
-range of amplitudes: 0.588139
-  Model addition step   1: Added term 0 0 0 3 0 0 0 1 0 -- RMS=0.047556, GCV=4.291479e-06, AIC = 0.183094
+  RMS fit error of the full model is: 0.000039 (normalized)
+range of amplitudes: 0.598401
+  Model addition step   1: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.058823, GCV=6.565780e-06, AIC = 0.608334
   1 polynomial terms were written for pectmajt2 y force
 pectmajt2
-  RMS fit error of the full model is: 0.000166 (normalized)
-range of amplitudes: 0.306895
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.066210, GCV=8.318198e-06, AIC = 0.844908
-  Model addition step   2: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.021818, GCV=9.066709e-07, AIC = -1.371524
+  RMS fit error of the full model is: 0.000036 (normalized)
+range of amplitudes: 0.299639
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.063226, GCV=7.585300e-06, AIC = 0.752675
+  Model addition step   2: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.027339, GCV=1.423647e-06, AIC = -0.920326
   2 polynomial terms were written for pectmajt2 z force
 pectmajt3
-  RMS fit error of the full model is: 0.000294 (normalized)
-range of amplitudes: 0.380349
-  Model addition step   1: Added term 0 0 0 2 0 0 0 0 0 -- RMS=0.049237, GCV=4.600068e-06, AIC = 0.252534
-  Model addition step   2: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.041786, GCV=3.325791e-06, AIC = -0.071840
-  Model addition step   3: Added term 0 0 0 1 0 0 2 1 0 -- RMS=0.028179, GCV=1.518212e-06, AIC = -0.856033
+  RMS fit error of the full model is: 0.000044 (normalized)
+range of amplitudes: 0.329934
+  Model addition step   1: Added term 0 0 0 2 0 0 0 0 0 -- RMS=0.047666, GCV=4.311303e-06, AIC = 0.187703
+  Model addition step   2: Added term 0 0 0 1 0 0 1 1 1 -- RMS=0.041448, GCV=3.272284e-06, AIC = -0.088060
+  Model addition step   3: Added term 1 0 0 0 0 0 0 0 0 -- RMS=0.025867, GCV=1.279265e-06, AIC = -1.027280
   3 polynomial terms were written for pectmajt3 x force
 pectmajt3
-  RMS fit error of the full model is: 0.000301 (normalized)
-range of amplitudes: 0.592720
-  Model addition step   1: Added term 0 0 0 3 0 0 0 1 0 -- RMS=0.047236, GCV=4.233909e-06, AIC = 0.169588
-  1 polynomial terms were written for pectmajt3 y force
+  RMS fit error of the full model is: 0.000038 (normalized)
+range of amplitudes: 0.595152
+  Model addition step   1: Added term 0 0 0 3 0 0 0 1 0 -- RMS=0.060081, GCV=6.849604e-06, AIC = 0.650654
+  Model addition step   2: Added term 0 0 0 0 0 0 0 1 0 -- RMS=0.032483, GCV=2.009729e-06, AIC = -0.575548
+  2 polynomial terms were written for pectmajt3 y force
 pectmajt3
-  RMS fit error of the full model is: 0.000161 (normalized)
-range of amplitudes: 0.262723
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.052523, GCV=5.234719e-06, AIC = 0.381776
-  Model addition step   2: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.023011, GCV=1.008610e-06, AIC = -1.264975
-  2 polynomial terms were written for pectmajt3 z force
+  RMS fit error of the full model is: 0.000034 (normalized)
+range of amplitudes: 0.250280
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.049827, GCV=4.711115e-06, AIC = 0.276387
+  Model addition step   2: Added term 0 0 0 3 1 0 0 0 0 -- RMS=0.027387, GCV=1.428686e-06, AIC = -0.916793
+  Model addition step   3: Added term 0 0 0 2 1 0 0 0 0 -- RMS=0.020744, GCV=8.227851e-07, AIC = -1.468626
+  3 polynomial terms were written for pectmajt3 z force
 pectmajt4
-  RMS fit error of the full model is: 0.000323 (normalized)
-range of amplitudes: 0.361293
-  Model addition step   1: Added term 0 0 0 2 0 0 0 0 0 -- RMS=0.052990, GCV=5.328090e-06, AIC = 0.399456
-  Model addition step   2: Added term 0 0 0 2 1 0 1 0 0 -- RMS=0.043341, GCV=3.577953e-06, AIC = 0.001243
-  Model addition step   3: Added term 0 0 0 1 1 0 2 0 0 -- RMS=0.030881, GCV=1.823303e-06, AIC = -0.672916
-  3 polynomial terms were written for pectmajt4 x force
+  RMS fit error of the full model is: 0.000041 (normalized)
+range of amplitudes: 0.311463
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.049679, GCV=4.683162e-06, AIC = 0.270436
+  Model addition step   2: Added term 0 0 1 1 1 1 0 0 0 -- RMS=0.042645, GCV=3.463924e-06, AIC = -0.031146
+  Model addition step   3: Added term 0 0 0 2 0 0 0 2 0 -- RMS=0.033173, GCV=2.104008e-06, AIC = -0.529722
+  Model addition step   4: Added term 1 0 0 3 0 0 0 0 0 -- RMS=0.026480, GCV=1.345793e-06, AIC = -0.976608
+  4 polynomial terms were written for pectmajt4 x force
 pectmajt4
-  RMS fit error of the full model is: 0.000325 (normalized)
+  RMS fit error of the full model is: 0.000040 (normalized)
 range of amplitudes: 0.609794
-  Model addition step   1: Added term 0 0 1 2 0 0 0 1 0 -- RMS=0.059384, GCV=6.691603e-06, AIC = 0.627316
-  1 polynomial terms were written for pectmajt4 y force
+  Model addition step   1: Added term 0 0 0 3 0 1 0 0 0 -- RMS=0.065947, GCV=8.252293e-06, AIC = 0.836954
+  Model addition step   2: Added term 0 0 0 2 0 0 1 1 0 -- RMS=0.045225, GCV=3.895748e-06, AIC = 0.086338
+  2 polynomial terms were written for pectmajt4 y force
 pectmajt4
-  RMS fit error of the full model is: 0.000163 (normalized)
-range of amplitudes: 0.216013
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.042987, GCV=3.506482e-06, AIC = -0.018924
-  Model addition step   2: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.017801, GCV=6.035972e-07, AIC = -1.778396
-  2 polynomial terms were written for pectmajt4 z force
+  RMS fit error of the full model is: 0.000036 (normalized)
+range of amplitudes: 0.203985
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.040329, GCV=3.086200e-06, AIC = -0.146597
+  Model addition step   2: Added term 0 0 0 2 1 1 0 0 0 -- RMS=0.021978, GCV=9.200098e-07, AIC = -1.356919
+  Model addition step   3: Added term 0 2 1 0 0 0 0 0 1 -- RMS=0.011518, GCV=2.536589e-07, AIC = -2.645331
+  3 polynomial terms were written for pectmajt4 z force
 pectmajt5
-  RMS fit error of the full model is: 0.000351 (normalized)
-range of amplitudes: 0.289809
-  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.042217, GCV=3.381984e-06, AIC = -0.055075
-  Model addition step   2: Added term 0 0 0 2 0 0 2 0 0 -- RMS=0.033428, GCV=2.128446e-06, AIC = -0.518156
-  Model addition step   3: Added term 0 0 0 1 0 0 2 0 0 -- RMS=0.027029, GCV=1.396881e-06, AIC = -0.939324
-  3 polynomial terms were written for pectmajt5 x force
+  RMS fit error of the full model is: 0.000039 (normalized)
+range of amplitudes: 0.266484
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.046922, GCV=4.177816e-06, AIC = 0.156251
+  Model addition step   2: Added term 0 0 0 0 0 0 1 2 1 -- RMS=0.030143, GCV=1.730683e-06, AIC = -0.725032
+  Model addition step   3: Added term 0 0 0 0 0 0 1 3 0 -- RMS=0.027331, GCV=1.428215e-06, AIC = -0.917140
+  Model addition step   4: Added term 0 0 0 1 1 0 0 0 2 -- RMS=0.024688, GCV=1.169806e-06, AIC = -1.116753
+  4 polynomial terms were written for pectmajt5 x force
 pectmajt5
-  RMS fit error of the full model is: 0.000456 (normalized)
+  RMS fit error of the full model is: 0.000052 (normalized)
 range of amplitudes: 0.619714
-  Model addition step   1: Added term 0 0 0 0 0 1 0 0 0 -- RMS=0.136041, GCV=3.511758e-05, AIC = 2.285165
-  Model addition step   2: Added term 1 0 0 0 0 0 0 0 0 -- RMS=0.041180, GCV=3.230034e-06, AIC = -0.101055
-  2 polynomial terms were written for pectmajt5 y force
+  Model addition step   1: Added term 0 0 0 0 0 0 2 0 0 -- RMS=0.133709, GCV=3.392439e-05, AIC = 2.250597
+  Model addition step   2: Added term 0 0 0 0 0 1 0 0 0 -- RMS=0.101909, GCV=1.978145e-05, AIC = 1.711196
+  Model addition step   3: Added term 2 0 0 0 0 0 0 0 0 -- RMS=0.039508, GCV=2.984320e-06, AIC = -0.180194
+  3 polynomial terms were written for pectmajt5 y force
 pectmajt5
-  RMS fit error of the full model is: 0.000194 (normalized)
-range of amplitudes: 0.105108
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.024551, GCV=1.143691e-06, AIC = -1.139276
-  Model addition step   2: Added term 0 0 1 1 0 0 2 0 0 -- RMS=0.015114, GCV=4.350944e-07, AIC = -2.105740
-  Model addition step   3: Added term 0 0 0 0 1 2 0 1 0 -- RMS=0.012918, GCV=3.190523e-07, AIC = -2.415966
-  Model addition step   4: Added term 1 0 0 0 0 0 1 0 1 -- RMS=0.011259, GCV=2.432883e-07, AIC = -2.687099
-  Model addition step   5: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.009997, GCV=1.925512e-07, AIC = -2.921017
-  5 polynomial terms were written for pectmajt5 z force
+  RMS fit error of the full model is: 0.000036 (normalized)
+range of amplitudes: 0.129933
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.026748, GCV=1.357599e-06, AIC = -0.967819
+  Model addition step   2: Added term 0 0 0 0 0 0 2 2 0 -- RMS=0.015233, GCV=4.420029e-07, AIC = -2.089987
+  Model addition step   3: Added term 0 0 0 0 0 1 0 3 0 -- RMS=0.013811, GCV=3.646942e-07, AIC = -2.282262
+  Model addition step   4: Added term 0 0 0 1 0 1 2 0 0 -- RMS=0.011978, GCV=2.753485e-07, AIC = -2.563309
+  4 polynomial terms were written for pectmajt5 z force
 pectmajt6
-  RMS fit error of the full model is: 0.000331 (normalized)
-range of amplitudes: 0.309942
-  Model addition step   1: Added term 0 0 0 2 0 0 0 0 0 -- RMS=0.046726, GCV=4.142878e-06, AIC = 0.147854
-  Model addition step   2: Added term 0 0 0 1 0 0 2 1 0 -- RMS=0.033402, GCV=2.125094e-06, AIC = -0.519732
-  Model addition step   3: Added term 0 0 0 0 0 0 3 1 0 -- RMS=0.028947, GCV=1.602101e-06, AIC = -0.802250
-  3 polynomial terms were written for pectmajt6 x force
+  RMS fit error of the full model is: 0.000046 (normalized)
+range of amplitudes: 0.354328
+  Model addition step   1: Added term 0 0 0 1 0 0 0 0 0 -- RMS=0.058515, GCV=6.497036e-06, AIC = 0.597809
+  Model addition step   2: Added term 0 0 0 0 0 0 2 2 0 -- RMS=0.026755, GCV=1.363432e-06, AIC = -0.963543
+  2 polynomial terms were written for pectmajt6 x force
 pectmajt6
-  RMS fit error of the full model is: 0.000511 (normalized)
+  RMS fit error of the full model is: 0.000060 (normalized)
 range of amplitudes: 0.656955
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.157434, GCV=4.703097e-05, AIC = 2.577269
-  Model addition step   2: Added term 0 1 0 3 0 0 0 0 0 -- RMS=0.038959, GCV=2.890961e-06, AIC = -0.211959
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.147845, GCV=4.147665e-05, AIC = 2.451593
+  Model addition step   2: Added term 0 0 1 3 0 0 0 0 0 -- RMS=0.037223, GCV=2.639041e-06, AIC = -0.303132
   2 polynomial terms were written for pectmajt6 y force
 pectmajt6
-  RMS fit error of the full model is: 0.000225 (normalized)
-range of amplitudes: 0.181162
-  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.046321, GCV=4.071437e-06, AIC = 0.130459
-  Model addition step   2: Added term 0 1 1 0 0 0 2 0 0 -- RMS=0.022996, GCV=1.007268e-06, AIC = -1.266306
-  Model addition step   3: Added term 1 0 0 2 0 0 0 0 0 -- RMS=0.019231, GCV=7.071012e-07, AIC = -1.620147
-  Model addition step   4: Added term 0 3 0 0 0 0 0 1 0 -- RMS=0.015039, GCV=4.340796e-07, AIC = -2.108119
-  4 polynomial terms were written for pectmajt6 z force
+  RMS fit error of the full model is: 0.000030 (normalized)
+range of amplitudes: 0.208588
+  Model addition step   1: Added term 0 0 0 0 0 0 0 0 0 -- RMS=0.047637, GCV=4.305983e-06, AIC = 0.186468
+  Model addition step   2: Added term 1 0 0 0 0 1 2 0 0 -- RMS=0.021416, GCV=8.735819e-07, AIC = -1.408701
+  Model addition step   3: Added term 0 0 0 1 1 0 2 0 0 -- RMS=0.018133, GCV=6.286813e-07, AIC = -1.737697
+  3 polynomial terms were written for pectmajt6 z force
 pectmajc1
-  RMS fit error of the full model is: 0.003617 (normalized)
-range of amplitudes: 0.619215
-  Model addition step   1: Added term 4 0 0 0 0 0 -- RMS=0.066174, GCV=8.309305e-06, AIC = 0.843839
-  Model addition step   2: Added term 1 0 0 2 1 0 -- RMS=0.041318, GCV=3.251762e-06, AIC = -0.094351
+  RMS fit error of the full model is: 0.001090 (normalized)
+range of amplitudes: 0.742378
+  Model addition step   1: Added term 4 0 0 0 0 0 -- RMS=0.086054, GCV=1.405173e-05, AIC = 1.369208
+  Model addition step   2: Added term 1 0 0 2 1 0 -- RMS=0.039790, GCV=3.015648e-06, AIC = -0.169733
   2 polynomial terms were written for pectmajc1 x force
 pectmajc1
-  RMS fit error of the full model is: 0.002756 (normalized)
-range of amplitudes: 0.876835
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.187627, GCV=6.680041e-05, AIC = 2.928172
-  Model addition step   2: Added term 0 0 1 0 0 0 -- RMS=0.075476, GCV=1.085060e-05, AIC = 1.110672
+  RMS fit error of the full model is: 0.000378 (normalized)
+range of amplitudes: 0.695972
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.166441, GCV=5.256668e-05, AIC = 2.688545
+  Model addition step   2: Added term 0 0 1 0 0 0 -- RMS=0.057338, GCV=6.262150e-06, AIC = 0.560976
   2 polynomial terms were written for pectmajc1 y force
 pectmajc1
-  RMS fit error of the full model is: 0.002081 (normalized)
-range of amplitudes: 0.499539
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.137685, GCV=3.597185e-05, AIC = 2.309199
-  Model addition step   2: Added term 0 0 0 1 1 0 -- RMS=0.055781, GCV=5.926622e-06, AIC = 0.505906
-  Model addition step   3: Added term 3 0 1 0 0 0 -- RMS=0.042393, GCV=3.436078e-06, AIC = -0.039235
+  RMS fit error of the full model is: 0.000500 (normalized)
+range of amplitudes: 0.502542
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.126983, GCV=3.059724e-05, AIC = 2.147372
+  Model addition step   2: Added term 0 0 0 1 1 0 -- RMS=0.055385, GCV=5.842739e-06, AIC = 0.491652
+  Model addition step   3: Added term 0 0 1 0 0 0 -- RMS=0.032947, GCV=2.075515e-06, AIC = -0.543357
   3 polynomial terms were written for pectmajc1 z force
 pectmajc2
-  RMS fit error of the full model is: 0.004790 (normalized)
-range of amplitudes: 0.573241
-  Model addition step   1: Added term 3 0 0 0 0 0 -- RMS=0.065679, GCV=8.185465e-06, AIC = 0.828823
-  Model addition step   2: Added term 2 0 0 2 0 0 -- RMS=0.051918, GCV=5.134166e-06, AIC = 0.362369
+  RMS fit error of the full model is: 0.001317 (normalized)
+range of amplitudes: 0.636747
+  Model addition step   1: Added term 3 0 0 0 0 0 -- RMS=0.089809, GCV=1.530463e-05, AIC = 1.454618
+  Model addition step   2: Added term 0 0 0 1 2 1 -- RMS=0.051302, GCV=5.013021e-06, AIC = 0.338491
   2 polynomial terms were written for pectmajc2 x force
 pectmajc2
-  RMS fit error of the full model is: 0.004323 (normalized)
-range of amplitudes: 0.834988
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.177074, GCV=5.949761e-05, AIC = 2.812399
-  Model addition step   2: Added term 0 0 1 0 0 0 -- RMS=0.069666, GCV=9.244269e-06, AIC = 0.950456
+  RMS fit error of the full model is: 0.000563 (normalized)
+range of amplitudes: 0.671333
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.153442, GCV=4.467593e-05, AIC = 2.525898
+  Model addition step   2: Added term 2 0 1 0 0 0 -- RMS=0.062183, GCV=7.365110e-06, AIC = 0.723206
   2 polynomial terms were written for pectmajc2 y force
 pectmajc2
-  RMS fit error of the full model is: 0.002815 (normalized)
-range of amplitudes: 0.429648
-  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.114311, GCV=2.479509e-05, AIC = 1.937108
-  Model addition step   2: Added term 2 0 0 1 0 0 -- RMS=0.070639, GCV=9.504397e-06, AIC = 0.978207
-  Model addition step   3: Added term 2 0 0 0 2 0 -- RMS=0.041600, GCV=3.308776e-06, AIC = -0.076988
+  RMS fit error of the full model is: 0.000713 (normalized)
+range of amplitudes: 0.427493
+  Model addition step   1: Added term 0 0 0 0 0 0 -- RMS=0.102816, GCV=2.005903e-05, AIC = 1.725142
+  Model addition step   2: Added term 0 0 1 0 0 0 -- RMS=0.054864, GCV=5.733404e-06, AIC = 0.472761
+  Model addition step   3: Added term 0 0 0 1 1 0 -- RMS=0.037452, GCV=2.681840e-06, AIC = -0.287063
   3 polynomial terms were written for pectmajc2 z force

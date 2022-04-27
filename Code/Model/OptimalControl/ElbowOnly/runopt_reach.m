@@ -8,6 +8,9 @@ function runopt_reach
     maxnodes = 40;		  % end close to this number of nodes
     nodes = 5;            % start with this number of nodes
 
+    % Which model to use
+    OptSetup.model_file = 'model_struct_A.mat'; 
+    
     % Add external force at the centre of mass of the hand 
     % (defined in the global frame: +X is laterally, +Y is upwards and +Z is posteriorly)
     OptSetup.hand_force = [0;0;0];
@@ -32,7 +35,7 @@ function runopt_reach
     if ~exist(folder_name,'dir')
         mkdir(folder_name);
     end
-    filename = [folder_name '/output'];
+    filename = [folder_name '/A'];
     tic
     das3elbow_optimize_reach([filename '_' num2str(nodes)],OptSetup);
     disp(['Time elapsted: ' num2str(toc) ' seconds'])
