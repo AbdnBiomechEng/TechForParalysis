@@ -92,10 +92,9 @@ end
 % Get maximum muscle activation (normally 1, but 0 for paralysed muscles,
 % and 0.5 for FES muscles)
 maxact = zeros(nmus,1);
-for imus=1:mus
+for imus=1:nmus
     maxact(imus) = model.muscles{imus}.maxact;
 end
-
 
 % Initialize the model
 das3('Initialize',model);
