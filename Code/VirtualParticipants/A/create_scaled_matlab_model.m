@@ -17,6 +17,17 @@ GHpolyfile = "GHpolyA";
 % das3_readosim.m
 
 model = das3_readosim(osimfile,musclepolyfile,GHpolyfile);
+
+% Is ground the first segment? If not, add it from ground.mat
+if model.nSegments < 14
+    model.nSegments = 14;
+    ground_seg = load("ground.mat");
+    all_segments = cell(1,14);
+    all_segments{1} = ground_seg.ground_segment;
+    all_segments(2:14) = model.segments;
+    model.segments = all_segments;
+end
+
 save("model_struct_A", "model");
 
 % If not all muscles are needed, keep a subset of muscles:
@@ -32,6 +43,16 @@ include_subset_muscles("model_struct_A",new_model_file);
 
 osimfile_injured = "2.model_scaled_bonesAndMuscles.osim";
 model = das3_readosim(osimfile_injured,musclepolyfile,GHpolyfile);
+
+% Is ground the first segment? If not, add it from ground.mat
+if model.nSegments < 14
+    model.nSegments = 14;
+    ground_seg = load("ground.mat");
+    all_segments = cell(1,14);
+    all_segments{1} = ground_seg.ground_segment;
+    all_segments(2:14) = model.segments;
+    model.segments = all_segments;
+end
 
 % and set the maximum voluntary excitations based on testing:
 max_controls_t = readtable("2.max_control_list.csv");
