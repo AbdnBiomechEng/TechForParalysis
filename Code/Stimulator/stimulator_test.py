@@ -46,11 +46,14 @@ r.info()
 r.battery()
 r.version()
 
-# set to low-level mode to control each individual pulse
-r.change_mode(0)
+# low-level mode: control each individual pulse
+r.change_mode(0)        # set to low-level mode to control each individual pulse
+r.pulse("blue", 30, 50) # send pulse: cable_color, milliAmps, duration in microseconds
 
-# send pulse
-r.pulse("blue", 30, 50) # cable_color, milliAmps, duration in microseconds
+# mid-level mode: continuous stimulation that we need to update
+# r.change_mode(1)
+# r.set_pulse(5, 200)        # Set the pulse used in mid-level mode
+# r.run("blue", 100, 10000)  # Run that set pulse every 100 ms for 10s total
 
 
 
