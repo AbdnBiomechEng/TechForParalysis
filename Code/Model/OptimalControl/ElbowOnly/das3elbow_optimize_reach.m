@@ -71,16 +71,20 @@ hand_force = OptSetup.hand_force;
 modelparams = load(OptSetup.model_file); 
 model = modelparams.model;
 
+% Indeces of FES muscle groups
+stim_mus_groups = OptSetup.stim_mus_groups;
+[~,iFES,iFESrev] = (unique(stim_mus_groups,'first'));
+
 ndof = model.nDofs;
 nmus = model.nMus;
+ncontrols = length(iFES);
 nstates = 2*ndof + 2*nmus;
-ncontrols = nmus;
 
 % some constants
 
-nvarpernode = nstates + ncontrols;   % number of unknowns per time node
-nvar = nvarpernode * N;              % total number of unknowns
-ncon_eq = nstates*(N-1);             % number of constraints due to discretized dynamics
+nvarpernode = nstates + ncontrols;          % number of unknowns per time node
+nvar = nvarpernode * N;                     % total number of unknowns
+ncon_eq = nstates*(N-1);                    % number of constraints due to discretized dynamics
 ncon_neq = 0;
 ncon = ncon_eq + ncon_neq;
 
@@ -126,13 +130,13 @@ for i_node = 0:N-1
         (zeros(ndof,1) - 40);                                           % qdot
         zeros(nmus,1) + 0.3;                                            % Lce
         zeros(nmus,1);                                                  % active states
-        zeros(nmus,1) ];                                                % neural excitations
+        zeros(ncontrols,1) ];                                           % neural excitations
 
     U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
         (zeros(ndof,1) + 40);                                           % qdot
         zeros(nmus,1) + 1.7;                                            % Lce
         maxact;                                                         % active states
-        maxact ];                                                       % neural excitations
+        maxact(iFES)];                                                  % neural excitations
 end
 
 % Should angular velocities be zero at the start and end of movement?
@@ -150,20 +154,9 @@ if OptSetup.end_at_rest
 end
 
 % Reaching data: 3 thorax angles (zero), 3 thoracohumeral angles, elbow flexion/extension and pronation/supination
-t = [0;1];  % the time vector
-data_init = zeros(2,8);
+t = OptSetup.t;
+data_init = OptSetup.data_init;
 
-% Thoracohumeral angles from 5 to 60 degrees of flexion
-data_init(1,4:6) = [90,5,0]*pi/180;
-data_init(2,4:6) = [90,60,0]*pi/180;
-
-% Elbow flexion-extension from 60 to 0 degrees 
-data_init(1,7) = 60*pi/180;  
-data_init(2,7) = 0*pi/180; 
-
-% Pronation-supination set at 90 degrees
-data_init(1:2,8) = 90*pi/180;  
-    
 Result.input = data_init;
 Result.input_t = t;
 
@@ -209,8 +202,8 @@ ilocked_meas = [];
 
 for i_node=0:N-1
     iLce = [iLce nvarpernode*i_node+2*ndof+(1:nmus)];
-    iact = [iact nvarpernode*i_node+2*ndof+nmus+(1:nmus)];
-    iexc = [iexc nvarpernode*i_node+2*ndof+2*nmus+(1:nmus)];
+    iact = [iact nvarpernode*i_node+2*ndof+nmus+(1:ncontrols)];
+    iexc = [iexc nvarpernode*i_node+2*ndof+2*nmus+(1:ncontrols)];
     
     idof = [idof nvarpernode*i_node+(1:ndof)];
     iddof = [iddof nvarpernode*i_node+ndof+(1:ndof)];
@@ -250,6 +243,7 @@ if strcmp(initialguess, 'mid')
     X0(idof) = datavec;
     X0(iddof) = data_deriv_vec;
 elseif numel(strfind(initialguess, 'random')) > 0
+%     rng(123); % Add seed for reproducibility
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
     X0(idof) = datavec;
     X0(iddof) = data_deriv_vec;
@@ -406,13 +400,15 @@ Result.u = x(nstates+(1:ncontrols),:);
 angles = x(1:ndof,:);
 
 % Calculate muscle lengths, moment arms and forces
-Result.elflex_mom_arms = zeros(size(Result.u));
-Result.mus_lengths = zeros(size(Result.u));
-Result.mus_forces = zeros(size(Result.u));
+Result.elflex_mom_arms = zeros(nmus,N);
+Result.prosup_mom_arms = zeros(nmus,N);
+Result.mus_lengths = zeros(nmus,N);
+Result.mus_forces = zeros(nmus,N);
 
 for i_node=1:Result.OptSetup.N
     momentarms = full(das3('Momentarms', Result.x(:,i_node)));
     Result.elflex_mom_arms(:,i_node) = momentarms(:,13);
+    Result.prosup_mom_arms(:,i_node) = momentarms(:,14);
     Result.mus_lengths(:,i_node) = das3('Musclelengths', Result.x(:,i_node));
     Result.mus_forces(:,i_node) = das3('Muscleforces', Result.x(:,i_node));
 end
@@ -428,8 +424,8 @@ subplot(6,1,1); plot(Result.times,Result.x(13:14,:)'*180/pi,'o-'); ylabel('Angle
 title(Result.obj_str)
 subplot(6,1,2); plot(Result.times,Result.x(ndof+(13:14),:)'*180/pi,'o-'); ylabel('Velocity (degrees/second)'); legend('Flexion/extension','Pronation/supination');
 subplot(6,1,3); plot(Result.times,Result.u,'o-'); ylabel('Excitations');
-subplot(6,1,4); plot(Result.times,Result.x(2*ndof+nmus+1:2*ndof+2*nmus,:),'o-'); ylabel('Activations');
-subplot(6,1,5); plot(Result.times,Result.x(2*ndof+1:2*ndof+nmus,:),'o-'); ylabel('Norm fibre lengths');
+subplot(6,1,4); plot(Result.times,Result.x(2*ndof+nmus+(1:ncontrols),:),'o-'); ylabel('Activations');
+subplot(6,1,5); plot(Result.times,Result.x(2*ndof+(1:nmus),:),'o-'); ylabel('Norm fibre lengths');
 subplot(6,1,6); plot(Result.times,Result.mus_forces','o-'); ylabel('Forces (N)');
 xlabel('time (s)');
 
@@ -607,19 +603,22 @@ xlabel('time (s)');
 
         % evaluate dynamics at each pair of successive nodes, using trapezoidal integration formula
         for i=1:N-1
-            x1 = X(ix);
+            x1 = X(ix);            
             x2 = X(ix+nvarpernode);
-            u1 = X(ius);
-            u2 = X(ius+nvarpernode);
+            
+            u1_FES = X(ius);
+            u1 = u1_FES(iFESrev);
+            
+            u2_FES = X(ius+nvarpernode);
+            u2 = u2_FES(iFESrev);
+            
             h = times(i+1) - times(i);		% time interval
 
             f = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,hand_force);
-
-            if OptSetup.equality_constraints
-                f(lockeddofs) = zeros(length(lockeddofs),1);
-                f(ndof+lockeddofs) = zeros(length(lockeddofs),1);
-                ceq(iceq) = f;
-            end
+            
+            f(lockeddofs) = zeros(length(lockeddofs),1);
+            f(ndof+lockeddofs) = zeros(length(lockeddofs),1);
+            ceq(iceq) = f;
 
             % advance the indices
             ix = ix + nvarpernode;
@@ -671,23 +670,31 @@ xlabel('time (s)');
         for i=1:N-1
             ix2 = ix1 + nvarpernode;
             iu2 = iu1 + nvarpernode;
-            x1 = X(ix1);
+            
+            x1 = X(ix1);           
             x2 = X(ix2);
-            u1 = X(iu1);
-            u2 = X(iu2);
+            
+            u1_FES = X(iu1);
+            u1 = u1_FES(iFESrev);
+            
+            u2_FES = X(iu2);
+            u2 = u2_FES(iFESrev);
+            
             h = times(i+1) - times(i);		% time interval
 
             [~, dfdx, dfdxdot, dfdu] = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,hand_force);
-
+            
+            dfdu = dfdu(:,iFES);
+            
+            dfdx(lockeddofs,:) = zeros(length(lockeddofs),nstates);
+            dfdx(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
+            dfdxdot(lockeddofs,:) = zeros(length(lockeddofs),nstates);
+            dfdxdot(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
+            dfdu(lockeddofs,:) = zeros(length(lockeddofs),ncontrols);
+            dfdu(ndof+lockeddofs,:) = zeros(length(lockeddofs),ncontrols);
+            
             if OptSetup.equality_constraints
-
-                dfdx(lockeddofs,:) = zeros(length(lockeddofs),nstates);
-                dfdx(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
-                dfdxdot(lockeddofs,:) = zeros(length(lockeddofs),nstates);
-                dfdxdot(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
-                dfdu(lockeddofs,:) = zeros(length(lockeddofs),nmus);
-                dfdu(ndof+lockeddofs,:) = zeros(length(lockeddofs),nmus);
-
+                
                 % which generates four blocks in the Jacobian:
                 %J(iceq,ix1) = dfdx/2 - dfdxdot/h;
                 [r,c,v] = find(dfdx/2 - dfdxdot/h);
