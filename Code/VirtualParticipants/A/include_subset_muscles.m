@@ -11,9 +11,11 @@ model = full_model.model;
 % Get muscle names
 musnames = cell(model.nMus,1);
 elemnames = cell(model.nMus,1);
+maxforces = zeros(model.nMus,1);
 for imus=1:model.nMus
     elemnames{imus} = model.muscles{imus}.osim_name;
     musnames{imus} = elemnames{imus}(1:end-2);
+    maxforces(imus) = model.muscles{imus}.fmax;
 end
 
 unique_musnames = unique(musnames,'stable');

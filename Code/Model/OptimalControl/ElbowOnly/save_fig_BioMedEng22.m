@@ -42,10 +42,11 @@ hold all
 for i = 1:4
 plot(time,angles(:,i));
 end
-ylabel('angle (degrees)');
+%ylabel('angle (degrees)');
 legend('flexion/extension','pronation/supination');
 legend boxoff 
-title('A')
+title('Angles (degrees)')
+ylim([0 100]);
 
 subplot(2,1,2); 
 set(gca, 'ColorOrder',colours_act, 'LineStyleOrder', {'-','--'});
@@ -54,8 +55,9 @@ for i = 1:6
     plot(time,activations(:,i)); 
 end
 xlabel('Time (s)');
-ylabel('Activation');
+%ylabel('Activation');
 legend('Biceps','Triceps','Pronator Teres'); 
 legend boxoff 
-title('B')
+title('Muscle Activations')
+ylim([0 0.5]);
 
