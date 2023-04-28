@@ -44,19 +44,19 @@ U = [xlim(1:ndof,2);            % q
 iact = 2*ndof+nmus+1:nstates;
 iexc = nstates+(1:nmus);
 
-% Further constrain the feasible solution space:
-% Low shoulder elevation
-L(11) = 0;
-U(11) = 30*pi/180;
-% Low elbow flexion
-L(13) = 0;
-U(13) = 50*pi/180;
-% Mid pro/supination
-L(14) = 80*pi/180;
-U(14) = 100*pi/180;
-% low activations
-U(iact) = 0.2;
-U(iexc) = 0.2;
+% % Further constrain the feasible solution space:
+% % Low shoulder elevation
+% L(11) = 0;
+% U(11) = 30*pi/180;
+% % Low elbow flexion
+% L(13) = 0;
+% U(13) = 50*pi/180;
+% % Mid pro/supination
+% L(14) = 80*pi/180;
+% U(14) = 100*pi/180;
+% % low activations
+% U(iact) = 0.2;
+% U(iexc) = 0.2;
 
 L(lockeddofs) = lockeddofvalues;
 U(lockeddofs) = lockeddofvalues;
@@ -80,18 +80,18 @@ save([out_filename '.mat'],'Result');
 % Objective function
     function f = objfun(X)
         % First term is mean squared muscle activation
-        wf1 = mean(X(iact).^2);
+        cost1 = mean(X(iact).^2);
 
-        % Second term is thorax-scapula constraint
+        % Second term is thorax-scapula separation
         Fscap = das3('Scapulacontact', X(1:nstates)');
-        wf2 = Fscap(1).^2+Fscap(2).^2;
+        cost2 = Fscap(1).^2+Fscap(2).^2;
                 
-        % Third term is glenohumeral stability constraint
+        % Third term is glenohumeral instability
         [~, ~, ~, ~, FGH] = das3('Dynamics', X(1:nstates)', zeros(nstates,1),X(iexc)');
         FGHcontact = calculate_FGH(FGH);
-        wf3 = mean(FGHcontact.^2);
+        cost3 = mean(FGHcontact.^2);
         
-        f = [wf1,wf2,wf3];            
+        f = [cost1,cost3];            
             
     end
 
