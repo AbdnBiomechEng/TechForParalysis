@@ -1,7 +1,7 @@
 function find_das3elbow_feas_solutions
 for i=1:100
     disp(['Iteration ' num2str(i) '...']);
-    find_one_solution(['pareto_con/random_feas_',num2str(i)]);
+    find_one_solution(['feasible_solutions/random_feas_',num2str(i)]);
 end
 end
 

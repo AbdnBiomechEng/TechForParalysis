@@ -1,7 +1,7 @@
 init_pop = [];
 
 for i=1:100
-    one_file = load(['pareto_con\random_feas_',num2str(i),'.mat']);
+    one_file = load(['feasible_solutions\random_feas_',num2str(i),'.mat']);
     X = one_file.Result.X;
     
     if one_file.Result.status~=0, disp('Solution not found');
