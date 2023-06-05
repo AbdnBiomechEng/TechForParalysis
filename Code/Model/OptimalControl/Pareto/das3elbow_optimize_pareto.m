@@ -183,6 +183,8 @@ init_pop = load('init_pop_elbow_pareto');
 
 options = optimoptions('gamultiobj','ConstraintTolerance',0.1,'PopulationSize',200,...
     'InitialPopulationMatrix',init_pop.init_pop);
+
+fprintf('Running optimisation...\n');
 [Result.x,Result.fval,Result.exitflag,Result.output,Result.population,Result.scores] = gamultiobj(@objfun,nvar,[],[],[],[],L,U,@confun,options);
 
 save([out_filename '.mat'],'Result');
@@ -194,7 +196,7 @@ save([out_filename '.mat'],'Result');
     function f = objfun(X)
                 
         % First term of cost function is mean of squared differences to measured data
-		f1 = mean(((X(iElbow)-datavec(imeas_elbow))./datasd(imeas_elbow)).^2);
+		f1 = mean(((X(iElbow)'-datavec(imeas_elbow))./datasd(imeas_elbow)).^2);
          
         % Second term is mean squared muscle activation
         f2 = mean(X(iact).^2);

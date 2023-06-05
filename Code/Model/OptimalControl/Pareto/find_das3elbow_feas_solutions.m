@@ -1,5 +1,10 @@
 function find_das3elbow_feas_solutions
-for i=1:100
+
+if ~exist('feasible_solutions', 'dir')
+    mkdir('feasible_solutions');
+end
+
+for i=1:200
     disp(['Iteration ' num2str(i) '...']);
     find_one_solution(['feasible_solutions/random_feas_',num2str(i)]);
 end
@@ -199,6 +204,7 @@ FeasibilityTolerance = 1e-3;
 
 % Run optimization
 if (MaxIterations > 0)
+    fprintf('Running optimisation...\n');
     print_flag=0;
     % determine sparsity structure of Jacobian (midpoint discretization) I
     % have verified that we always get same structure by testing with
@@ -207,9 +213,9 @@ if (MaxIterations > 0)
     X = L + (U-L).*rand(size(L));		% a random vector of unknowns
     J = conjac(X);
     Jnnz = nnz(J);
-    fprintf('Jacobian sparsity: %d nonzero elements out of %d (%5.3f%%).\n',Jnnz, ncon*nvar, 100*Jnnz/(ncon*nvar));
+    %fprintf('Jacobian sparsity: %d nonzero elements out of %d (%5.3f%%).\n',Jnnz, ncon*nvar, 100*Jnnz/(ncon*nvar));
     Jpattern = double(J~=0);
-    fprintf('Nonzero elements in Jpattern: %d\n', nnz(Jpattern));
+    %fprintf('Nonzero elements in Jpattern: %d\n', nnz(Jpattern));
     %figure; spy(Jpattern);
     
     % Check the derivatives - only set to 1 during code development
@@ -288,6 +294,7 @@ end
 obj_str = '';
 print_flag=1;
 confun(Result.X);
+objfun(Result.X);
 print_flag=0;
 
 % Save this result on a file
@@ -302,13 +309,15 @@ Result.FeasibilityTolerance = FeasibilityTolerance;
 Result.times = 0.1;
 Result.u = X(iexc);
 Result.objective_f = objfun(X);
-angles = X(1:ndof);
 
 % Calculate muscle lengths and forces, GH and scapula stability
 Result.mus_lengths = das3('Musclelengths', Result.states);
 Result.mus_forces = das3('Muscleforces', Result.states);
 
 save([out_filename '.mat'],'Result');
+
+x = reshape(Result.X,[],N);
+angles = x(1:ndof,:)';
 dofnames = {'TH_x','TH_y','TH_z','SC_y','SC_z','SC_x','AC_y','AC_z','AC_x','GH_y','GH_z','GH_yy','EL_x','PS_y'};
 make_osimm(out_filename,dofnames,angles);
 
@@ -322,6 +331,12 @@ make_osimm(out_filename,dofnames,angles);
         f2 = mean(X(iact).^2);
         
         f = [f1,f2];
+        
+        if print_flag
+            obj_str = sprintf('Cost functions (not optimised here): %9.5f (fit) , %9.5f (effort)', f1,f2);
+            fprintf(obj_str);
+            fprintf('\n');
+        end
     end
 
 % No objective function for IPOPT
@@ -419,7 +434,7 @@ make_osimm(out_filename,dofnames,angles);
             dfdu(lockeddofs,:) = zeros(length(lockeddofs),ncontrols);
             dfdu(ndof+lockeddofs,:) = zeros(length(lockeddofs),ncontrols);
             
-                
+            
             % which generates four blocks in the Jacobian:
             %J(iceq,ix1) = dfdx/2 - dfdxdot/h;
             [r,c,v] = find(dfdx/2 - dfdxdot/h);
@@ -428,7 +443,7 @@ make_osimm(out_filename,dofnames,angles);
             allcols(index:index+datal-1) = ix1(1)+c-1;
             allvals(index:index+datal-1) = v;
             index = index+datal;
-
+            
             %J(iceq,ix2) = dfdx/2 + dfdxdot/h;
             [r,c,v] = find(dfdx/2 + dfdxdot/h);
             datal = length(v);
@@ -436,7 +451,7 @@ make_osimm(out_filename,dofnames,angles);
             allcols(index:index+datal-1) = ix2(1)+c-1;
             allvals(index:index+datal-1) = v;
             index = index+datal;
-
+            
             %J(iceq,iu1) = dfdu/2;
             [r,c,v] = find(dfdu/2);
             datal = length(v);
@@ -444,7 +459,7 @@ make_osimm(out_filename,dofnames,angles);
             allcols(index:index+datal-1) = iu1(1)+c-1;
             allvals(index:index+datal-1) = v;
             index = index+datal;
-
+            
             %J(iceq,iu2) = dfdu/2;
             [r,c,v] = find(dfdu/2);
             datal = length(v);
@@ -452,7 +467,7 @@ make_osimm(out_filename,dofnames,angles);
             allcols(index:index+datal-1) = iu2(1)+c-1;
             allvals(index:index+datal-1) = v;
             index = index+datal;
-                
+            
             
             % advance the indices
             ix1 = ix1 + nvarpernode;
