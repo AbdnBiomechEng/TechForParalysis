@@ -10,10 +10,10 @@ OptimalityTolerance = 1e-3;
 FeasibilityTolerance = 1e-3;
 
 Weffort = 1;       % weight for the energy consumption term in the cost function
-Wscap = 0.01;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
-Whum = 0.01;        % weight for glenohumeral stability (if missing, assumed to be constraint)
+Wscap = 0.00;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
+Whum = 0.00;        % weight for glenohumeral stability (if missing, assumed to be constraint)
 
-modelparams = load('simplemus_model_struct.mat'); 
+modelparams = load('simplified_model_struct.mat'); 
 model = modelparams.model;
 
 ndof = model.nDofs;
@@ -35,8 +35,8 @@ end
 das3('Initialize',model);
 
 % lock thorax dofs
-lockeddofs = [1,2,3];
-lockeddofvalues = [0;0;0];
+lockeddofs = 1:9;
+lockeddofvalues = [0;0;0;-0.3802;0.11;0;0.808;0.0855;-0.0206];
 
 % these are the range of motion limits 
 xlim = das3('Limits')';
@@ -72,9 +72,6 @@ print_flag = 0;
 % precompute the indices for activations
 iact = 2*ndof+nmus+1:nvar;
 
-U(iact(27:end))=0;
-U(iact(19:21))=0;
-
 % precompute the indices for muscles that cross GH
 iGH = [];
 for imus=1:nmus
@@ -90,9 +87,6 @@ if numel(strfind(initialguess, 'mid')) > 0
     X0(iact) = 0;	
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
-elseif numel(strfind(initialguess, 'init')) > 0
-    xeq = load('sh_equilibrium.mat');
-    X0 = xeq.x;
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
