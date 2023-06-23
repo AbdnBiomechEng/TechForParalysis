@@ -1,3 +1,16 @@
+% Script that takes the full DAS3 model (saved in model_struct.mat) and
+% simplifies it by keeping a subset of the original muscle elements
+%
+% For example, the coracobrachialis is represented by 3 elements in the
+% full DAS3 model. The simplified model only keeps the 2nd element. This
+% element is given a maximum isometric force and mass equal to the sum of the
+% forces and masses of all three elements
+% 
+% The simplified model is saved in simplified_model_struct.mat
+%
+% The opensim version of the simplified model is das3_simplified.osim
+% (created manually, not via this script)
+
 % Load the original model structure, that includes all the muscles
 load('model_struct.mat');
 
@@ -231,4 +244,4 @@ newmodel.muscles{imus}.mass = sum(mus_mass(["anconeus_1","anconeus_2","anconeus_
 newmodel.nMus = imus;
 
 model = newmodel;
-save('simplemus_model_struct.mat','model'); 
+save('simplified_model_struct','model'); 
