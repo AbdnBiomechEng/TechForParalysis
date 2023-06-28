@@ -19,7 +19,7 @@ hand_forces = {'hand_force_x','hand_force_y','hand_force_z'};
 %% Read in data and set optimisation parameters
 % It should contain "time" and some of the variables above
 %data = readtable('input_data_dsem0.csv');
-data = readtable('equilibrium_pos.csv');
+data = readtable('input_data_abduction.csv');
 
 % Choose which columns to use (time, locked and tracking angles, and hand
 % forces if applicable)
@@ -33,7 +33,7 @@ lockeddofs = {'TH_x','TH_y','TH_z'};
 %lockeddofs = {};
 
 % Choose which model parameter file to use
-OptSetup.model = 'simplemus_model_struct.mat';
+OptSetup.model = 'simplified_model_struct.mat';
 
 % Should angular velocities be zero at the start and end of movement?
 % (true/false)
@@ -41,8 +41,8 @@ OptSetup.start_at_rest = true;
 OptSetup.end_at_rest = true;
 
 % Set number of nodes
-maxnodes = 40;		% end close to this number of nodes
-nodes = 2;          % start with this number of nodes
+maxnodes = 20;		% end close to this number of nodes
+nodes = 5;          % start with this number of nodes
 factor = 2;         % increase number of nodes by this factor
 
 % Set optimisation options
@@ -50,19 +50,22 @@ OptSetup.N = nodes;
 OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
 OptSetup.OptimTol = 1e-3;
 OptSetup.FeasTol = 1e-3;
-OptSetup.initialguess = 'eqLce';  % initial guess (see options in das3_optimise.m)
-%OptSetup.initialguess = 'elevation/eq_pos_shoulder5.mat';  % initial guess (see options in das3_optimise.m)
+OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimize.m)
 
 % Cost function
 OptSetup.Wdata = 10;        % weight for the kinematic term in the cost function
 OptSetup.Weffort = 1;       % weight for the energy consumption term in the cost function
-OptSetup.Wscap = 0.1;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
-OptSetup.Whum = 0.1;        % weight for glenohumeral stability (if missing, assumed to be constraint)
+%OptSetup.Wscap = 0.1;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
+OptSetup.Whum = 0;        % weight for glenohumeral stability (if missing, assumed to be constraint)
+
+% Add muscle weakness due to injury
+max_act_table = readtable('max_act.csv');
+OptSetup.max_act = max_act_table.max_act;
 
 % Create folder for results, if it does not already exist
-folder_name = 'elevation';
+folder_name = 'abduction';
 % Filename
-filename = [folder_name '/eq_pos_shoulder'];
+filename = [folder_name '/out'];
 
 %% Check input
 if isempty(input_variables)
