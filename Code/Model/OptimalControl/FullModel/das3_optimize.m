@@ -1,6 +1,6 @@
 function Result = das3_optimize(data,filename,OptSetup)
 % This program optimizes das3 movements to fit motion capture data
-% It uses das3_thor.osim, which includes DoFs at the thorax, but locks those to the input data
+% It uses das3_simplified.osim, which includes DoFs at the thorax, but locks those to the input data
 %
 %
 % Inputs:
@@ -13,9 +13,7 @@ function Result = das3_optimize(data,filename,OptSetup)
 %						Wscap and Whum are optional: if they are not included,
 %						scapular and humeral stability are hard constraints
 %					N: the number of nodes for Direct Collocation.
-%						If N==1, it finds a static equilibrium.
-%					initialguess, with options: "init" (the equilibrium), "random"
-%						"mid", "eqLce" (matches the kinematic input, with tendons at slack length)
+%					initialguess, with options: "init" (the passive equilibrium), "random","mid",
 % 						and if none of the above, assumed to be name of file with previous solution
 %					MaxIter: maximum number of iterations
 %					OptimTol and FeasTol: Optimality and feasibility tolerances
@@ -25,9 +23,7 @@ function Result = das3_optimize(data,filename,OptSetup)
 %		Result:		The output of the optimization, including the settings in OptSetup
 %						and the input data. The output is also saved in <filename>.mat
 %						(which can be used as a previous solution in initialguess)
-%						and <filename>.sto, for visualization in OpenSim
-%
-% Dimitra Blana, January 2022
+%						and <filename>.mot, for visualization in OpenSim
 
 % optimization settings
 Result.OptSetup = OptSetup;
@@ -71,6 +67,18 @@ nmus = model.nMus;
 nstates = 2*ndof + 2*nmus;
 ncontrols = nmus;
 
+% get muscle names
+musnames = cell(nmus,1);
+for imus=1:nmus
+    musnames{imus} = model.muscles{imus}.osim_name;
+end
+
+% get dof names
+dofnames = cell(ndof,1);
+for idof=1:ndof
+    dofnames{idof} = model.dofs{idof}.osim_name;
+end
+
 % some constants
 nvarpernode = nstates + ncontrols;                  % number of unknowns per time node
 nvar = nvarpernode * N;                             % total number of unknowns
@@ -83,6 +91,13 @@ das3('Initialize',model);
 
 % Range of motion limits
 xlims = das3('Limits')';
+
+% maximum activations/excitations (to simulate injury)
+if isfield(OptSetup, 'max_act')
+    max_act = OptSetup.max_act;
+else
+    max_act = ones(nmus,1);
+end
 
 % Lower and upper bounds for the optimization variables X
 % X will contain, for each node, the states and controls.
@@ -97,16 +112,16 @@ U = zeros(nvar,1);
 %	neural controls 0 to 1
 for i_node = 0:N-1
     L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
-        (zeros(ndof,1)); %- 40);                                           % qdot
+        (zeros(ndof,1) - 40);                                           % qdot
         zeros(nmus,1) + 0.3;                                            % Lce
         zeros(nmus,1);                                                  % active states
         zeros(nmus,1) ];                                                % neural excitations
     
     U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
-        (zeros(ndof,1)); %+ 40);                                           % qdot
+        (zeros(ndof,1) + 40);                                           % qdot
         zeros(nmus,1) + 1.7;                                            % Lce
-        ones(nmus,1);                                                   % active states
-        ones(nmus,1) ];                                                 % neural excitations
+        max_act;                                                        % active states
+        max_act];                                                       % neural excitations
 end
 
 % Should angular velocities be zero at the start and end of movement?
@@ -218,8 +233,7 @@ hand_force = reshape(hand_force', [], 1);
 %% Make an initial guess
 
 % Initial guess for kinematics + velocities is the interpolated measured data
-% For activations and fibre lengths there are different options: mid,
-% random and eqLce
+% For activations and fibre lengths there are different options: mid and random
 
 % Alternatively, we load an earlier solution
 
@@ -230,41 +244,16 @@ if strcmp(initialguess, 'mid')
     X0(idmeas) = data_dofs_deriv;
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
-%     X0(imeas) = data_dofs;
-%     X0(idmeas) = data_dofs_deriv;
-elseif numel(strfind(initialguess, 'equilibrium')) > 0
-    eq_pos = load('sh_equilibrium'); % passive equilibrium position
-    X0 = zeros(nvar,1);
-    ix = 1:nstates;
-    for i_node=1:N
-        X0(ix) = eq_pos.x;
-        ix = ix + nvarpernode;
-    end
-elseif numel(strfind(initialguess, 'initial_reach')) > 0
-    eq_pos = load('initial_reach'); % start of arm elevation movement
-    % Lock initial shoulder kinematics to start of arm elevation movement
-    L(4:12) = eq_pos.x(4:12);
-    U(4:12) = eq_pos.x(4:12);
-    X0 = zeros(nvar,1);
-    ix = 1:nstates;
-    for i_node=1:N
-        X0(ix) = eq_pos.x;
-        ix = ix + nvarpernode;
-    end
-elseif numel(strfind(initialguess, 'eqLce')) > 0  % muscle lenghts set so that tendons are slack
-    X0 = zeros(nvar,1);
     X0(imeas) = data_dofs;
     X0(idmeas) = data_dofs_deriv;
-    SEEslack = das3('SEEslack');
-    LCEopt = das3('LCEopt');
+elseif numel(strfind(initialguess, 'init')) > 0
+    eq_pos = load('init_pos'); % passive equilibrium position
+    X0 = zeros(nvar,1);
     ix = 1:nstates;
-    equil_Lce = zeros(nmus*N,1);
     for i_node=1:N
-        mustendon_lengths = das3('Musclelengths', X0(ix));
-        equil_Lce(i_node*nmus-nmus+1:i_node*nmus) = (mustendon_lengths-SEEslack)./LCEopt;
+        X0(ix) = eq_pos.x;
         ix = ix + nvarpernode;
     end
-    X0(iLce) = equil_Lce;
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
@@ -398,6 +387,7 @@ confun(Result.X);
 print_flag=0;
 
 %% Save this result in a mat file and an Opensim motion file
+
 x = reshape(Result.X,nvarpernode,N);
 Result.ndof = ndof;
 Result.nmus = nmus;
@@ -445,7 +435,6 @@ for i=1:N-1
 end
 
 save([filename '.mat'],'Result');
-dofnames = {'TH_x','TH_y','TH_z','SC_y','SC_z','SC_x','AC_y','AC_z','AC_x','GH_y','GH_z','GH_yy','EL_x','PS_y'};
 make_osimm(filename,dofnames,angles,times);
 
 %% Plot elbow angle and velocity, and muscle excitations and forces
