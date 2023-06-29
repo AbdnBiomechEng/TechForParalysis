@@ -41,15 +41,33 @@ lce = res.Result.x(2*ndof+1:2*ndof+nmus,:);
 act = res.Result.x(2*ndof+nmus+1:end,:);
 fmus = res.Result.mus_forces;
 
-figure;
+fh = figure;
 subplot(3,1,1)
-p1 = plot(time,act);
+plot(time,act);
 ylabel('activation');
-% dtRow = dataTipTextRow('Muscle', mus_name)
-% p1.DataTipTemplate.DataTipRows(end+1) = dtRow;
+legend(musclenames);
+legend off
+
 subplot(3,1,2)
 plot(time,fmus)
 ylabel('muscle force (N)')
+legend(musclenames);
+legend off
+
 subplot(3,1,3)
 plot(time,lce)
 ylabel('fibre length (norm)'); xlabel('time (s)');
+legend(musclenames);
+legend off
+
+datacursormode on;
+dcm = datacursormode(fh);
+set(dcm,'UpdateFcn',@customdatatip)
+
+function output_txt = customdatatip(obj,event_obj,str)
+pos = get(event_obj, 'Position');
+output_txt = {...
+    ['X: ', num2str(pos(1),4)]...
+    ['Y: ', num2str(pos(2),4)] ...
+    ['muscle: ', event_obj.Target.DisplayName]...
+};
