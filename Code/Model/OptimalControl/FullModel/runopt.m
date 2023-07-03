@@ -59,8 +59,7 @@ OptSetup.Weffort = 1;       % weight for the energy consumption term in the cost
 OptSetup.Whum = 0;        % weight for glenohumeral stability (if missing, assumed to be constraint)
 
 % Add muscle weakness due to injury
-max_act_table = readtable('max_act.csv');
-OptSetup.max_act = max_act_table.max_act;
+OptSetup.max_act_table = readtable('max_act.csv');
 
 % Create folder for results, if it does not already exist
 folder_name = 'abduction';

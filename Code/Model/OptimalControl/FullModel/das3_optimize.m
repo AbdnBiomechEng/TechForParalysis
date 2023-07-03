@@ -72,6 +72,7 @@ musnames = cell(nmus,1);
 for imus=1:nmus
     musnames{imus} = model.muscles{imus}.osim_name;
 end
+muscles_table = cell2table(musnames);
 
 % get dof names
 dofnames = cell(ndof,1);
@@ -93,8 +94,11 @@ das3('Initialize',model);
 xlims = das3('Limits')';
 
 % maximum activations/excitations (to simulate injury)
-if isfield(OptSetup, 'max_act')
-    max_act = OptSetup.max_act;
+if isfield(OptSetup, 'max_act_table')
+    % make sure the muscles are in the correct order
+    [~,ii] = ismember(muscles_table.musnames,OptSetup.max_act_table.Var1);
+    new_max_act_table = OptSetup.max_act_table(ii,:);
+    max_act = new_max_act_table.mc_new;
 else
     max_act = ones(nmus,1);
 end
