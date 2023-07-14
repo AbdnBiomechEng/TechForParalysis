@@ -352,6 +352,8 @@
 					<WrapObjectSet>
 						<objects>
 							<WrapEllipsoid name="serr_ant">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>1</display_preference>
 								<xyz_body_rotation> 0 0 0</xyz_body_rotation>
 								<translation> 0 -0.1486 0.0591</translation>
 								<active>true</active>
@@ -389,7 +391,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.58444078</default_value>
+										<default_value>-0.3802</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-1.1345 -0.3316</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -502,7 +504,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.0873</default_value>
+										<default_value>0.11</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>0.0873 0.5236</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -615,9 +617,9 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.57446378</default_value>
+										<default_value>0</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>0 1.4486</range>
+										<range>-0.001 1.4486</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -754,7 +756,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.7953626</default_value>
+										<default_value>0.808</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>0.576 1.2043</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -867,7 +869,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.00799797</default_value>
+										<default_value>0.0855</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-0.3819 0.3491</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -980,7 +982,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.21051655</default_value>
+										<default_value>-0.0206</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-0.2967 0.3142</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1119,7 +1121,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.76557750628</default_value>
+										<default_value>2.5861</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-2.9671 3.0543</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1232,7 +1234,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.00379958</default_value>
+										<default_value>0.1901</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-0.5236 1.4661</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1345,9 +1347,9 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.60490773</default_value>
+										<default_value>-3.0157</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.5184 1.5359</range>
+										<range>-3.0543 2.9671</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1523,9 +1525,9 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.08726646</default_value>
+										<default_value>0</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>0.08726646 2.44346095</range>
+										<range>-0.001 2.44346095</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1618,7 +1620,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0.25 0 -0 0 0 0</transform>
+									<transform> 0 0 -0 0 0 0</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -1675,7 +1677,7 @@
 							<!--Name of the parent body to which this joint connects its owner body.-->
 							<parent_body>ulna_r</parent_body>
 							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
-							<location_in_parent>0.0171 -0.0133 -0.0163</location_in_parent>
+							<location_in_parent>0.0111 -0.0212 -0.0127</location_in_parent>
 							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
 							<orientation_in_parent>0 0 0</orientation_in_parent>
 							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
@@ -1689,9 +1691,9 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.08726646</default_value>
+										<default_value>0</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>0.08726646 2.7925268</range>
+										<range>-0.001 2.7925268</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1710,7 +1712,7 @@
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 									<coordinates>PS_y</coordinates>
 									<!--Rotation or translation axis for the transform.-->
-									<axis>-0.11329498 0.97405882 0.19589196</axis>
+									<axis>0.40625 0.91197 -0.057154</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
 										<LinearFunction>
@@ -1784,7 +1786,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0.25 0 -0 0 0 0</transform>
+									<transform> 0 0 -0 0 0 0</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -1842,7 +1844,7 @@
 							<!--Name of the parent body to which this joint connects its owner body.-->
 							<parent_body>radius_r</parent_body>
 							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
-							<location_in_parent>0.0169 -0.2251 -0.0712</location_in_parent>
+							<location_in_parent>-0.0333 -0.2342 0.0092</location_in_parent>
 							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
 							<orientation_in_parent>0 0 0</orientation_in_parent>
 							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
@@ -3840,8 +3842,7 @@
 					</SimmSpline>
 				</Schutte1993Muscle_Deprecated>
 			</objects>
-			<groups>
-			</groups>
+			<groups />
 		</ForceSet>
 		<!--Markers in the model.-->
 		<MarkerSet>
@@ -3858,7 +3859,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>thorax</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 3e-005 0.03263 0.0831</location>
+					<location> 0 0.0541 0.1242</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3866,7 +3867,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>thorax</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.000286 -0.153921 0.102736</location>
+					<location> 0.0098 -0.1715 0.1561</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3874,7 +3875,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>thorax</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.00101 -0.166225 -0.061392</location>
+					<location> -0.0098 -0.1327 -0.0319</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3882,7 +3883,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>clavicle_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0 0 0</location>
+					<location> 0.0236007 0.0220424 0.00333039</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3890,7 +3891,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.01732 -0.00245 0.00556</location>
+					<location> 0.00151962 0.0228449 -0.0359323</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3898,7 +3899,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.08348 -0.119581 0.104739</location>
+					<location> -0.115129 -0.117436 -6.42697e-005</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3906,7 +3907,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.097986 -0.010836 0.08112</location>
+					<location> -0.120376 2.06718e-005 -7.18436e-005</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3914,7 +3915,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.00172 -0.001993 0.038889</location>
+					<location> 4.22889e-007 9.83085e-006 -0.000113236</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3930,7 +3931,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>humerus_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.016211 -0.285686 -0.0028</location>
+					<location> 0.0339536 -0.28656 4.47457e-005</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3938,7 +3939,15 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>humerus_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.035518 -0.282757 0.00092</location>
+					<location> -0.0339459 -0.291567 4.86572e-005</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="mid_elbow">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>humerus_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0 -0.289 0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3946,7 +3955,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>ulna_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.025 -0.2534 -0.0113</location>
+					<location> -0.0377 -0.2535 -0.0057</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3954,7 +3963,15 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>radius_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0583 -0.2351 -0.0217</location>
+					<location> -0.0063 -0.2389 0.0091</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="mid_wrist">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>hand_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0 0 0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3966,7 +3983,7 @@
 			<objects>
 				<Umberger2010MuscleMetabolicsProbe name="metabolics">
 					<!--Flag indicating whether the Probe is disabled or not.-->
-					<isDisabled>false</isDisabled>
+					<isDisabled>true</isDisabled>
 					<!--The operation to perform on the probe input value: 'value'(no operation, just return the probe value), 'integrate', 'differentiate', 'minimum', 'minabs', 'maximum', 'maxabs'.-->
 					<probe_operation>value</probe_operation>
 					<!--Array of initial conditions to be specified if the 'integrate' operation is selected. Note that the size of initial conditions must be the same size as the data being integrated, otherwise an exception will be thrown.-->
@@ -3986,30 +4003,6 @@
 					<!--A set containing, for each muscle, the parameters required to calculate muscle metabolic power.-->
 					<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameterSet>
 						<objects>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01954</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02161</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02419</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4017,46 +4010,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01494</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0128</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01025</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_7">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00958</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_8">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01212</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap_9">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01416</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap10">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4066,14 +4019,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01158</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap11">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01407</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_clav_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4081,14 +4026,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01712</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_clav_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00969</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lev_scap_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4098,22 +4035,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01731</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lev_scap_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01544</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_min_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00407</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_min_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4121,38 +4042,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01323</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_min_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01303</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_min_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0072</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="rhomboid_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00575</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="rhomboid_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0113</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="rhomboid_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4162,30 +4051,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.02034</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="rhomboid_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01176</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="rhomboid_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00885</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01139</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4193,46 +4058,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.02083</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01925</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01629</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00909</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01345</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_7">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00609</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_8">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4242,54 +4067,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.00729</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_9">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00724</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant10">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00476</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant11">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00229</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant12">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01212</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.03703</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02269</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4297,54 +4074,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.04214</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00888</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00891</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02485</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_7">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01275</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_8">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0173</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_9">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02378</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap10">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4354,22 +4083,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.0379</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap11">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02012</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_clav_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01217</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_clav_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4377,30 +4090,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01701</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_clav_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00983</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_clav_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01259</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="coracobr_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01506</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="coracobr_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4410,38 +4099,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01151</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="coracobr_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00939</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01961</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02245</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01488</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4449,30 +4106,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01631</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02414</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01564</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_min_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00714</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_min_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4482,30 +4115,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01221</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_min_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01041</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_maj_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02643</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_maj_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01549</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_maj_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4513,30 +4122,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.03481</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_maj_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01971</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supra_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0074</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supra_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00756</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supra_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4546,54 +4131,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01651</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supra_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00819</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00281</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00575</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02021</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02376</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01033</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_6">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4601,46 +4138,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01292</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_7">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01513</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_8">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00532</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_9">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0182</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap10">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00361</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap11">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00115</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="bic_l">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4658,22 +4155,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.02079</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="bic_b_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.03107</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_long_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02697</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_long_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4681,30 +4162,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.02955</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_long_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02964</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_long_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.03203</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01498</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4714,14 +4171,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.02883</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.04305</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4729,38 +4178,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.03515</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.03157</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.04069</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02692</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02448</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4770,14 +4187,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.03475</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.03301</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_5">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4785,22 +4194,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.02273</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.03243</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_c_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.02769</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_c_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4810,30 +4203,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01399</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_med_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0184</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_med_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01765</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_med_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01195</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_med_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4841,38 +4210,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.01395</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_med_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0077</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0291</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0159</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01465</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4882,38 +4219,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.007</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0066</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_6">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0041</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_7">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0065</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachiorad_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0047</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachiorad_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4921,14 +4226,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.014</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachiorad_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00597</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pron_teres_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4946,22 +4243,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.00433</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supinator_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00084</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supinator_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00364</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supinator_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -4969,30 +4250,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.00336</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supinator_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00296</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supinator_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00676</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pron_quad_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00163</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pron_quad_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -5002,30 +4259,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.00347</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pron_quad_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00493</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_lat_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0125</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_lat_2">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0332</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_lat_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -5034,30 +4267,6 @@
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.0152</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_lat_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0162</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_lat_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00585</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="anconeus_1">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00083</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="anconeus_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
 								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
@@ -5065,30 +4274,6 @@
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
 								<provided_muscle_mass>0.0015</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="anconeus_3">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0006</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="anconeus_4">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0022</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="anconeus_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.00333</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 						</objects>
 						<groups />
