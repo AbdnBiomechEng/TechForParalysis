@@ -1459,22 +1459,22 @@
 					<WrapObjectSet>
 						<objects>
 							<WrapSphere name="deltoid">
-								<xyz_body_rotation> -0.193033 -0.238063 -0.385718</xyz_body_rotation>
-								<translation> 0.0022 -0.0009 -0.0018</translation>
+								<xyz_body_rotation> 0 0 0</xyz_body_rotation>
+								<translation> 0.0039  -0.0028 -0.00056</translation>
 								<active>true</active>
 								<radius>0.0272</radius>
 							</WrapSphere>
 							<WrapSphere name="inf_sup_sub">
-								<xyz_body_rotation> -0.193033 -0.238063 -0.385718</xyz_body_rotation>
-								<translation> -0.0017 0.0018 -0.0013</translation>
+								<xyz_body_rotation> 0 0 0</xyz_body_rotation>
+								<translation> 0 0 0</translation>
 								<active>true</active>
 								<radius>0.0231</radius>
 							</WrapSphere>
 							<WrapCylinder name="infra_cyl">
-								<xyz_body_rotation> 1.56643 0.00610865 -0.953124</xyz_body_rotation>
-								<translation> 0.0054 -0.023 -0.0044</translation>
+								<xyz_body_rotation> 1.7137 -0.11777 1.5708</xyz_body_rotation>
+								<translation> 0.0069341 -0.074837 -0.0032784</translation>
 								<active>true</active>
-								<quadrant>-x</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.014</radius>
 								<length>0.12</length>
 							</WrapCylinder>
@@ -1482,7 +1482,7 @@
 								<xyz_body_rotation> 1.56643 0.00610865 -1.47672</xyz_body_rotation>
 								<translation> 0.0054 -0.023 -0.0044</translation>
 								<active>true</active>
-								<quadrant>-x</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.015</radius>
 								<length>0.1</length>
 							</WrapCylinder>
@@ -1513,7 +1513,7 @@
 							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
 							<location_in_parent>0.0058 -0.2907 0.0049</location_in_parent>
 							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
-							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<orientation_in_parent>0 0 0.32318</orientation_in_parent>
 							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
 							<location>0 0 0</location>
 							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
@@ -1527,7 +1527,7 @@
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
 										<default_value>0</default_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-0.001 2.44346095</range>
+										<range>-0.001 2.8</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1546,7 +1546,7 @@
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 									<coordinates>EL_x</coordinates>
 									<!--Rotation or translation axis for the transform.-->
-									<axis>0.99976612 0.008446 -0.019909</axis>
+									<axis>0.9690 -0.2470 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
 										<LinearFunction>
@@ -1620,7 +1620,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0 0 -0 0 0 0</transform>
+									<transform> 0 0 -0.25 0 -0.01 0</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -1637,25 +1637,25 @@
 					<WrapObjectSet>
 						<objects>
 							<WrapCylinder name="elbow">
-								<xyz_body_rotation> -2.51153 1.54654 2.79253</xyz_body_rotation>
+								<xyz_body_rotation> 3.141 1.3368 1.5708</xyz_body_rotation>
 								<translation> 0 0 0</translation>
 								<active>true</active>
-								<quadrant>y</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.019</radius>
 								<length>0.05</length>
 							</WrapCylinder>
 							<WrapCylinder name="elbow_circ">
-								<xyz_body_rotation> 0.630064 -1.54654 0</xyz_body_rotation>
+								<xyz_body_rotation> 3.141 1.3368 1.5708</xyz_body_rotation>
 								<translation> 0 0 0</translation>
 								<active>true</active>
 								<radius>0.015</radius>
 								<length>0.05</length>
 							</WrapCylinder>
 							<WrapCylinder name="pron_quad">
-								<xyz_body_rotation> -1.28805 -0.232652 0</xyz_body_rotation>
-								<translation> 0.0365 -0.2064 -0.0577</translation>
+								<xyz_body_rotation> -1.6933 0.053143 1.5708</xyz_body_rotation>
+								<translation> -0.033823 -0.21454 -0.010204</translation>
 								<active>true</active>
-								<quadrant>y</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.007</radius>
 								<length>0.1</length>
 							</WrapCylinder>
@@ -1695,7 +1695,7 @@
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-0.001 2.7925268</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
+										<clamped>true</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 										<locked>false</locked>
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1712,7 +1712,7 @@
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 									<coordinates>PS_y</coordinates>
 									<!--Rotation or translation axis for the transform.-->
-									<axis>0.40625 0.91197 -0.057154</axis>
+									<axis>0.25566 0.96676 0.0031125</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
 										<LinearFunction>
@@ -1786,7 +1786,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0 0 -0 0 0 0</transform>
+									<transform> -0.7 -1.4 -0.6 -0 -0 0</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -1803,26 +1803,26 @@
 					<WrapObjectSet>
 						<objects>
 							<WrapCylinder name="radius">
-								<xyz_body_rotation> -1.61286 -0.202284 -1.77709</xyz_body_rotation>
-								<translation> 0.0035 -0.0322 -0.0003</translation>
+								<xyz_body_rotation> -1.7298 0.18616 1.5708</xyz_body_rotation>
+								<translation> -0.0013493 -0.032178 0.0036389</translation>
 								<active>true</active>
-								<quadrant>-x</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.0092</radius>
 								<length>0.2</length>
 							</WrapCylinder>
 							<WrapCylinder name="supinator">
-								<xyz_body_rotation> -1.48877 0.00174533 -0</xyz_body_rotation>
-								<translation> 0.0034 -0.1196 -0.0069</translation>
+								<xyz_body_rotation> -1.6348 0.34126 1.5708</xyz_body_rotation>
+								<translation> -0.014601 -0.11871 0.0078651</translation>
 								<active>true</active>
-								<quadrant>-y</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.009</radius>
 								<length>0.2</length>
 							</WrapCylinder>
 							<WrapCylinder name="ulna_radius">
-								<xyz_body_rotation> 1.54095 0.256214 2.67035</xyz_body_rotation>
-								<translation> 0.0146 -0.0891 0.0003</translation>
+								<xyz_body_rotation> 1.4219 0.49572 1.5708</xyz_body_rotation>
+								<translation> 0.0011691 -0.089563 0.011286</translation>
 								<active>true</active>
-								<quadrant>-x</quadrant>
+								<quadrant>all</quadrant>
 								<radius>0.0071</radius>
 								<length>0.1</length>
 							</WrapCylinder>
@@ -1870,7 +1870,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 3.14 0 3.14 -0.25 0.21 0</transform>
+									<transform> 0.1 1.5 0 0.03 0.22 -0.22</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -2331,7 +2331,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="delt_scap_3-P2">
-									<location> 0.01555 -0.09645 0.00528</location>
+									<location> 0.016678 -0.098415 0.0061115</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2390,7 +2390,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="delt_scap10-P2">
-									<location> 0.0183 -0.10592 -0.00605</location>
+									<location> 0.019365 -0.10785 -0.0052622</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2449,7 +2449,7 @@
 									<body>clavicle_r</body>
 								</PathPoint>
 								<PathPoint name="delt_clav_2-P2">
-									<location> 0.01536 -0.11883 -0.01159</location>
+									<location> 0.016351 -0.12072 -0.010859</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2508,7 +2508,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="coracobr_2-P2">
-									<location> -0.00764 -0.16485 -0.00176</location>
+									<location> -0.0069166 -0.16665 -0.0012177</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2559,7 +2559,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="infra_4-P2">
-									<location> 0.01605 0.01912 0.00704</location>
+									<location> 0.017855 0.017134 0.0083783</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2618,7 +2618,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="ter_min_2-P2">
-									<location> 0.02808 -0.00124 0.008</location>
+									<location> 0.02977 -0.0032995 0.0092458</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2677,7 +2677,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="ter_maj_3-P2">
-									<location> -0.0038 -0.07838 -0.00899</location>
+									<location> -0.002576 -0.080169 -0.0080765</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2736,7 +2736,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="supra_3-P2">
-									<location> 0.01229 0.01923 -0.01372</location>
+									<location> 0.014093 0.017361 -0.012379</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2795,7 +2795,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="subscap_6-P2">
-									<location> 0.00177 0.00229 -0.02803</location>
+									<location> 0.003465 0.00054373 -0.026761</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -2854,11 +2854,11 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="bic_l-P2">
-									<location> 0.0217 0.0001 -0.0011</location>
+									<location> 0.012103 0.016051 -0.014106</location>
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="bic_l-P3">
-									<location> -0.00282 -0.03609 -0.01072</location>
+									<location> -0.0083926 -0.036287 -0.0061803</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -2920,7 +2920,7 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="bic_b_1-P2">
-									<location> -0.00282 -0.03609 -0.01072</location>
+									<location> -0.0083926 -0.036287 -0.0061803</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -2975,12 +2975,12 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tric_long_2-P1">
-									<location> -0.00519 -0.01833 0.00596</location>
-									<body>ulna_r</body>
-								</PathPoint>
-								<PathPoint name="tric_long_2-P2">
 									<location> -0.02425 -0.04193 -0.03744</location>
 									<body>scapula_r</body>
+								</PathPoint>
+								<PathPoint name="tric_long_2-P2">
+									<location> -0.01038 -0.013975 0.0097588</location>
+									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3038,7 +3038,7 @@
 									<body>thorax</body>
 								</PathPoint>
 								<PathPoint name="lat_dorsi_2-P2">
-									<location> 0.00213 -0.04447 -0.01724</location>
+									<location> 0.0035578 -0.046257 -0.01618</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -3097,7 +3097,7 @@
 									<body>thorax</body>
 								</PathPoint>
 								<PathPoint name="lat_dorsi_4-P2">
-									<location> 0.00138 -0.03789 -0.01764</location>
+									<location> 0.0028414 -0.039678 -0.016552</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -3156,7 +3156,7 @@
 									<body>thorax</body>
 								</PathPoint>
 								<PathPoint name="pect_maj_t_3-P2">
-									<location> 0.01078 -0.0738 -0.01675</location>
+									<location> 0.012029 -0.075645 -0.015815</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -3215,7 +3215,7 @@
 									<body>thorax</body>
 								</PathPoint>
 								<PathPoint name="pect_maj_t_5-P2">
-									<location> 0.01112 -0.05418 -0.01808</location>
+									<location> 0.012483 -0.056025 -0.017067</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -3274,7 +3274,7 @@
 									<body>clavicle_r</body>
 								</PathPoint>
 								<PathPoint name="pect_maj_c_2-P2">
-									<location> 0.01112 -0.05418 -0.01808</location>
+									<location> 0.012483 -0.056025 -0.017067</location>
 									<body>humerus_r</body>
 								</PathPoint>
 							</objects>
@@ -3329,11 +3329,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tric_med_4-P1">
-									<location> 0.00264 -0.19989 0.01615</location>
+									<location> 0.0031613 -0.20183 0.016528</location>
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="tric_med_4-P2">
-									<location> -0.01561 -0.00771 0.02364</location>
+									<location> -0.01594 0.0029431 0.024478</location>
 									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
@@ -3388,11 +3388,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="brachialis_4-P1">
-									<location> -0.00018 -0.19078 -0.00104</location>
+									<location> 0.00039218 -0.19263 -0.00062097</location>
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="brachialis_4-P2">
-									<location> -0.01581 -0.04166 -0.0046</location>
+									<location> -0.028383 -0.03437 0.0044033</location>
 									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
@@ -3447,11 +3447,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="brachiorad_2-P1">
-									<location> 0.00446 -0.2175 0.01532</location>
+									<location> 0.0048735 -0.21945 0.015624</location>
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="brachiorad_2-P2">
-									<location> 0.00812 -0.22513 -0.07037</location>
+									<location>-0.0071035 -0.22907 0.0081637</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -3502,11 +3502,7 @@
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="pron_teres_1-P2">
-									<location> 0.02077 -0.10531 0.00781</location>
-									<body>radius_r</body>
-								</PathPoint>
-								<PathPoint name="pron_teres_1-P3">
-									<location> 0.02077 -0.10531 0.00782</location>
+									<location> 0.0050278 -0.1055 0.020677</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -3561,11 +3557,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="pron_teres_2-P1">
-									<location> -0.0122 -0.02454 -0.01563</location>
+									<location>-0.020153 -0.022091 -0.010054</location>
 									<body>ulna_r</body>
 								</PathPoint>
 								<PathPoint name="pron_teres_2-P2">
-									<location> 0.02229 -0.08157 0.00341</location>
+									<location>0.00997 -0.082968 0.013376</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -3620,11 +3616,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="supinator_3-P1">
-									<location> 0.02052 -0.05021 -0.00886</location>
+									<location> 0.0030924 -0.054799 0.0027711</location>
 									<body>ulna_r</body>
 								</PathPoint>
 								<PathPoint name="supinator_3-P2">
-									<location> 0.01785 -0.05686 0.00441</location>
+									<location> 0.0092785 -0.057937 0.011338</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -3679,11 +3675,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="pron_quad_2-P1">
-									<location> 0.0165 -0.21195 -0.01749</location>
+									<location>-0.015615 -0.21256 0.0087301</location>
 									<body>radius_r</body>
 								</PathPoint>
 								<PathPoint name="pron_quad_2-P2">
-									<location> 0.03146 -0.21573 -0.06108</location>
+									<location>-0.041661 -0.22224 -0.011535</location>
 									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
@@ -3738,11 +3734,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tric_lat_3-P1">
-									<location> 0.00631 -0.05495 0.011</location>
+									<location> 0.0076783 -0.056887 0.012018</location>
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="tric_lat_3-P2">
-									<location> -0.0058 0 0.02015</location>
+									<location> -0.0043951 0.0061712 0.019553</location>
 									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
@@ -3797,11 +3793,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="anconeus_2-P1">
-									<location> 0.01153 -0.29614 0.01149</location>
+									<location> 0.011476 -0.29811 0.01145</location>
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="anconeus_2-P2">
-									<location> 0.00769 -0.02394 0.00924</location>
+									<location> 0.00022548 -0.022582 0.014418</location>
 									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
@@ -3899,7 +3895,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.115129 -0.117436 -6.42697e-005</location>
+					<location> -0.115129 -0.117436 0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3907,7 +3903,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.120376 2.06718e-005 -7.18436e-005</location>
+					<location> -0.120376 0 -0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3915,7 +3911,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>scapula_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 4.22889e-007 9.83085e-006 -0.000113236</location>
+					<location> 0 0 0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3931,7 +3927,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>humerus_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0339536 -0.28656 4.47457e-005</location>
+					<location> 0.0339536 -0.28656 0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3939,15 +3935,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>humerus_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.0339459 -0.291567 4.86572e-005</location>
-					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="mid_elbow">
-					<!--Body segment in the model on which the marker resides.-->
-					<body>humerus_r</body>
-					<!--Location of a marker on the body segment.-->
-					<location> 0 -0.289 0</location>
+					<location> -0.0339459 -0.291567 0</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -3967,7 +3955,7 @@
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
-				<Marker name="mid_wrist">
+				<Marker name="Wrist">
 					<!--Body segment in the model on which the marker resides.-->
 					<body>hand_r</body>
 					<!--Location of a marker on the body segment.-->
