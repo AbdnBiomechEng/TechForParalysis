@@ -225,8 +225,6 @@
 								<quadrant>all</quadrant>
 								<!--Default appearance for this Geometry-->
 								<Appearance>
-									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-									<visible>false</visible>
 									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 									<opacity>0.5</opacity>
 									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -234,11 +232,11 @@
 									<!--Visuals applied to surfaces associated with this Appearance.-->
 									<SurfaceProperties>
 										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
-										<representation>3</representation>
+										<representation>1</representation>
 									</SurfaceProperties>
 								</Appearance>
 								<!--The length of the radii of the ellipsoid.-->
-								<dimensions>0.147 0.2079 0.0944</dimensions>
+								<dimensions>0.14699999999999999 0.2079 0.094399999999999998</dimensions>
 							</WrapEllipsoid>
 						</objects>
 					</WrapObjectSet>
@@ -422,8 +420,6 @@
 							<scale_factors>1 1 1</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
-								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-								<visible>false</visible>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>1</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -440,9 +436,9 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-0.19303300000000001 -0.238063 -0.38571800000000001</xyz_body_rotation>
+								<xyz_body_rotation>0 0 0</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>0.0022000000000000001 -0.00089999999999999998 -0.0018</translation>
+								<translation>0.0038999999999999998 -0.0028 -0.00055999999999999995</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>all</quadrant>
 								<!--The radius of the sphere.-->
@@ -452,9 +448,9 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-0.19303300000000001 -0.238063 -0.38571800000000001</xyz_body_rotation>
+								<xyz_body_rotation>0 0 0</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>-0.0016999999999999999 0.0018 -0.0012999999999999999</translation>
+								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>all</quadrant>
 								<!--The radius of the sphere.-->
@@ -464,9 +460,9 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>1.56643 0.0061086500000000002 -0.95312399999999997</xyz_body_rotation>
+								<xyz_body_rotation>1.7137 -0.11777 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>0.0054000000000000003 -0.023 -0.0044000000000000003</translation>
+								<translation>0.0069341000000000003 -0.074837000000000001 -0.0032783999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-x</quadrant>
 								<!--The radius of the cylinder.-->
@@ -543,9 +539,9 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>..</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0 0 0</translation>
+							<translation>0 -0.01 0</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
-							<orientation>0.25 0 -0</orientation>
+							<orientation>-0 0 -0.25</orientation>
 						</PhysicalOffsetFrame>
 					</components>
 					<!--The geometry used to display the axes of this Frame.-->
@@ -564,11 +560,11 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-2.51153 1.54654 2.7925300000000002</xyz_body_rotation>
+								<xyz_body_rotation>3.141 1.3368 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
 								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
-								<quadrant>y</quadrant>
+								<quadrant>-x</quadrant>
 								<!--The radius of the cylinder.-->
 								<radius>0.019</radius>
 								<!--The length of the cylinder.-->
@@ -578,7 +574,7 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>0.63006399999999996 -1.54654 0</xyz_body_rotation>
+								<xyz_body_rotation>3.141 1.3368 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
 								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
@@ -592,11 +588,11 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.2880499999999999 -0.232652 0</xyz_body_rotation>
+								<xyz_body_rotation>-1.5679000000000001 -0.0010740000000000001 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>0.036499999999999998 -0.2064 -0.057700000000000001</translation>
+								<translation>-0.033822999999999999 -0.21454000000000001 -0.010204</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
-								<quadrant>y</quadrant>
+								<quadrant>x</quadrant>
 								<!--The radius of the cylinder.-->
 								<radius>0.0070000000000000001</radius>
 								<!--The length of the cylinder.-->
@@ -643,9 +639,9 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>..</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0 0 0</translation>
+							<translation>0.01 0 0.01</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
-							<orientation>0.25 0 -0</orientation>
+							<orientation>-0.69999999999999996 -1.3999999999999999 -0.69999999999999996</orientation>
 						</PhysicalOffsetFrame>
 					</components>
 					<!--The geometry used to display the axes of this Frame.-->
@@ -660,47 +656,33 @@
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
 					<WrapObjectSet name="wrapobjectset">
 						<objects>
-							<WrapCylinder name="radius">
-								<!--Whether or not the WrapObject is considered active in computing paths-->
-								<active>true</active>
-								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.61286 -0.20228399999999999 -1.7770900000000001</xyz_body_rotation>
-								<!--Translation of the WrapObject.-->
-								<translation>0.0035000000000000001 -0.032199999999999999 -0.00029999999999999997</translation>
-								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
-								<quadrant>-x</quadrant>
-								<!--The radius of the cylinder.-->
-								<radius>0.0091999999999999998</radius>
-								<!--The length of the cylinder.-->
-								<length>0.20000000000000001</length>
-							</WrapCylinder>
 							<WrapCylinder name="supinator">
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.4887699999999999 0.00174533 -0</xyz_body_rotation>
+								<xyz_body_rotation>-1.5760000000000001 0.090728000000000003 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>0.0033999999999999998 -0.1196 -0.0068999999999999999</translation>
+								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
+								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>-x</quadrant>
+								<!--The radius of the cylinder.-->
+								<radius>0.0089999999999999993</radius>
+								<!--The length of the cylinder.-->
+								<length>0.20000000000000001</length>
+							</WrapCylinder>
+							<WrapCylinder name="pron_teres">
+								<!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-1.5760000000000001 0.090728000000000003 1.5708</xyz_body_rotation>
+								<!--Translation of the WrapObject.-->
+								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-y</quadrant>
 								<!--The radius of the cylinder.-->
 								<radius>0.0089999999999999993</radius>
 								<!--The length of the cylinder.-->
 								<length>0.20000000000000001</length>
-							</WrapCylinder>
-							<WrapCylinder name="ulna_radius">
-								<!--Whether or not the WrapObject is considered active in computing paths-->
-								<active>true</active>
-								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>1.54095 0.256214 2.67035</xyz_body_rotation>
-								<!--Translation of the WrapObject.-->
-								<translation>0.0146 -0.089099999999999999 0.00029999999999999997</translation>
-								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
-								<quadrant>-x</quadrant>
-								<!--The radius of the cylinder.-->
-								<radius>0.0071000000000000004</radius>
-								<!--The length of the cylinder.-->
-								<length>0.10000000000000001</length>
 							</WrapCylinder>
 						</objects>
 					</WrapObjectSet>
@@ -743,9 +725,9 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>..</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>-0.25 0.20999999999999999 0</translation>
+							<translation>0.029999999999999999 0.22 -0.22</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
-							<orientation>3.1400000000000001 0 3.1400000000000001</orientation>
+							<orientation>0.10000000000000001 1.5 -0</orientation>
 						</PhysicalOffsetFrame>
 					</components>
 					<!--The geometry used to display the axes of this Frame.-->
@@ -915,7 +897,7 @@
 					<coordinates>
 						<Coordinate name="SC_y">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.58444077999999999</default_value>
+							<default_value>-0.38019999999999998</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-1.1345000000000001 -0.33160000000000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1024,7 +1006,7 @@
 					<coordinates>
 						<Coordinate name="SC_z">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.087300000000000003</default_value>
+							<default_value>0.11</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>0.087300000000000003 0.52359999999999995</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1133,9 +1115,9 @@
 					<coordinates>
 						<Coordinate name="SC_x">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.57446377999999998</default_value>
+							<default_value>0</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>0 1.4486000000000001</range>
+							<range>-0.001 1.4486000000000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>false</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1242,7 +1224,7 @@
 					<coordinates>
 						<Coordinate name="AC_y">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.79536260000000003</default_value>
+							<default_value>0.80800000000000005</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>0.57599999999999996 1.2042999999999999</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1351,7 +1333,7 @@
 					<coordinates>
 						<Coordinate name="AC_z">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.0079979700000000001</default_value>
+							<default_value>0.085500000000000007</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-0.38190000000000002 0.34910000000000002</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1460,7 +1442,7 @@
 					<coordinates>
 						<Coordinate name="AC_x">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.21051655</default_value>
+							<default_value>-0.0206</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-0.29670000000000002 0.31419999999999998</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1569,7 +1551,7 @@
 					<coordinates>
 						<Coordinate name="GH_y">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.76557750627999999</default_value>
+							<default_value>2.5861000000000001</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-2.9670999999999998 3.0543</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1678,7 +1660,7 @@
 					<coordinates>
 						<Coordinate name="GH_z">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.0037995799999999999</default_value>
+							<default_value>0.19009999999999999</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-0.52359999999999995 1.4661</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1787,9 +1769,9 @@
 					<coordinates>
 						<Coordinate name="GH_yy">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-0.60490772999999998</default_value>
+							<default_value>-3.0156999999999998</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>-1.5184 1.5359</range>
+							<range>-3.0543 2.9670999999999998</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>false</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1896,9 +1878,9 @@
 					<coordinates>
 						<Coordinate name="EL_x">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.087266460000000004</default_value>
+							<default_value>0</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>0.087266460000000004 2.44346095</range>
+							<range>-0.001 2.7999999999999998</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 							<clamped>false</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -1922,7 +1904,7 @@
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
 							<translation>0.0057999999999999996 -0.29070000000000001 0.0048999999999999998</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
-							<orientation>0 0 0</orientation>
+							<orientation>0 0 0.32318000000000002</orientation>
 						</PhysicalOffsetFrame>
 						<PhysicalOffsetFrame name="ulna_r_offset">
 							<!--The geometry used to display the axes of this Frame.-->
@@ -1947,7 +1929,7 @@
 							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 							<coordinates>EL_x</coordinates>
 							<!--Rotation or translation axis for the transform.-->
-							<axis>0.99976611999999998 0.0084460000000000004 -0.019909</axis>
+							<axis>0.96899999999999997 -0.247 0</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
@@ -2005,11 +1987,11 @@
 					<coordinates>
 						<Coordinate name="PS_y">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.087266460000000004</default_value>
+							<default_value>0</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-							<range>0.087266460000000004 2.7925268000000001</range>
+							<range>-0.001 2.7925268000000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-							<clamped>false</clamped>
+							<clamped>true</clamped>
 							<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 							<locked>false</locked>
 							<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -2029,7 +2011,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/ulna_r</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0.017100000000000001 -0.013299999999999999 -0.016299999999999999</translation>
+							<translation>0.0111 -0.0212 -0.012699999999999999</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -2056,7 +2038,7 @@
 							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 							<coordinates>PS_y</coordinates>
 							<!--Rotation or translation axis for the transform.-->
-							<axis>-0.11329498 0.97405881999999999 0.19589196</axis>
+							<axis>0.25566 0.96675999999999995 0.0031124999999999998</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
@@ -2123,7 +2105,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/radius_r</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0.016899999999999998 -0.22509999999999999 -0.071199999999999999</translation>
+							<translation>-0.033300000000000003 -0.23419999999999999 0.0091999999999999998</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -2180,14 +2162,12 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>846</max_isometric_force>
+					<max_isometric_force>138</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.095200000000000007</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2226,14 +2206,12 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>531</max_isometric_force>
+					<max_isometric_force>81</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.12640000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2272,14 +2250,12 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>144</max_isometric_force>
+					<max_isometric_force>97</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.1547</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2318,14 +2294,12 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>200</max_isometric_force>
+					<max_isometric_force>96</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.1578</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2364,14 +2338,12 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>307</max_isometric_force>
+					<max_isometric_force>107</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.1086</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2410,14 +2382,12 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>434</max_isometric_force>
+					<max_isometric_force>142</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.12590000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2467,14 +2437,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>276</max_isometric_force>
+					<max_isometric_force>110</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.16669999999999999</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2485,63 +2453,6 @@
 					<activation1>116.10908999999999</activation1>
 					<!--Parameter used in time constant of ramping up and ramping down of muscle force-->
 					<activation2>28.818439999999999</activation2>
-					<!--Function representing passive force-length behavior of muscle fibers-->
-					<SimmSpline name="passive_force_length_curve">
-						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
-						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
-					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
-				<Schutte1993Muscle_Deprecated name="serr_ant_5">
-					<!--The set of points defining the path of the actuator.-->
-					<GeometryPath name="geometrypath">
-						<!--The set of points defining the path-->
-						<PathPointSet>
-							<objects>
-								<PathPoint name="serr_ant_5-P1">
-									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
-									<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
-									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.11727 -0.099680000000000005 0.0031800000000000001</location>
-								</PathPoint>
-								<PathPoint name="serr_ant_5-P2">
-									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
-									<socket_parent_frame>/bodyset/thorax</socket_parent_frame>
-									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.11940000000000001 -0.085900000000000004 0.0041000000000000003</location>
-								</PathPoint>
-							</objects>
-						</PathPointSet>
-						<!--The wrap objects that are associated with this path-->
-						<PathWrapSet>
-							<objects>
-								<PathWrap name="pathwrap">
-									<!--A WrapObject that this PathWrap interacts with.-->
-									<wrap_object>serr_ant</wrap_object>
-									<!--The wrapping method used to solve the path around the wrap object.-->
-									<method>hybrid</method>
-								</PathWrap>
-							</objects>
-						</PathWrapSet>
-						<!--Default appearance attributes for this GeometryPath-->
-						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
-							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
-						</Appearance>
-					</GeometryPath>
-					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>318</max_isometric_force>
-					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.12590000000000001</optimal_fiber_length>
-					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.010999999999999999</tendon_slack_length>
-					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
-					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
-					<!--Parameter used in time constant of ramping up of muscle force-->
-					<activation1>25.902740000000001</activation1>
-					<!--Parameter used in time constant of ramping up and ramping down of muscle force-->
-					<activation2>11.976050000000001</activation2>
 					<!--Function representing passive force-length behavior of muscle fibers-->
 					<SimmSpline name="passive_force_length_curve">
 						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
@@ -2581,14 +2492,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>353</max_isometric_force>
+					<max_isometric_force>76</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.084500000000000006</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2621,7 +2530,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.01555 -0.096449999999999994 0.00528</location>
+									<location>0.016677999999999998 -0.098415000000000002 0.0061114999999999997</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -2636,14 +2545,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1183</max_isometric_force>
+					<max_isometric_force>446</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.083299999999999999</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2676,7 +2583,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0183 -0.10592 -0.0060499999999999998</location>
+									<location>0.019365 -0.10785 -0.0052621999999999999</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -2691,14 +2598,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1619</max_isometric_force>
+					<max_isometric_force>445</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.074800000000000005</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2731,7 +2636,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.01536 -0.11883000000000001 -0.01159</location>
+									<location>0.016351000000000001 -0.12071999999999999 -0.010859000000000001</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -2746,14 +2651,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>505</max_isometric_force>
+					<max_isometric_force>160</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.094</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2786,20 +2689,18 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0076400000000000001 -0.16485 -0.0017600000000000001</location>
+									<location>-0.0069166000000000002 -0.16664999999999999 -0.0012176999999999999</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>463</max_isometric_force>
+					<max_isometric_force>148</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.0683</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2832,7 +2733,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.016049999999999998 0.019120000000000002 0.0070400000000000003</location>
+									<location>0.017854999999999999 0.017134 0.0083783</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -2847,14 +2748,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1432</max_isometric_force>
+					<max_isometric_force>207</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.0693</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2887,7 +2786,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.028080000000000001 -0.00124 0.0080000000000000002</location>
+									<location>0.029770000000000001 -0.0032994999999999999 0.0092458000000000002</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -2902,14 +2801,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>497</max_isometric_force>
+					<max_isometric_force>195</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.055</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2942,7 +2839,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0038 -0.078380000000000005 -0.0089899999999999997</location>
+									<location>-0.0025760000000000002 -0.080169000000000004 -0.0080765000000000003</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -2957,14 +2854,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>608</max_isometric_force>
+					<max_isometric_force>200</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.15260000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -2997,7 +2892,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.012290000000000001 0.019230000000000001 -0.01372</location>
+									<location>0.014093 0.017361000000000001 -0.012378999999999999</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3012,14 +2907,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>621</max_isometric_force>
+					<max_isometric_force>258</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.056399999999999999</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3052,7 +2945,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0017700000000000001 0.0022899999999999999 -0.028029999999999999</location>
+									<location>0.0034650000000000002 0.00054372999999999997 -0.026761</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3067,14 +2960,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1431</max_isometric_force>
+					<max_isometric_force>149</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.076200000000000004</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3107,13 +2998,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.021700000000000001 0.0001 -0.0011000000000000001</location>
+									<location>0.012102999999999999 0.016050999999999999 -0.014106</location>
 								</PathPoint>
 								<PathPoint name="bic_l-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.00282 -0.036089999999999997 -0.01072</location>
+									<location>-0.0083926000000000001 -0.036287 -0.0061802999999999997</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3126,14 +3017,12 @@
 								</PathWrap>
 								<PathWrap name="pathwrap_0">
 									<!--A WrapObject that this PathWrap interacts with.-->
-									<wrap_object>radius</wrap_object>
+									<wrap_object>elbow_circ</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3172,7 +3061,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.00282 -0.036089999999999997 -0.01072</location>
+									<location>-0.0083926000000000001 -0.036287 -0.0061802999999999997</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3181,20 +3070,18 @@
 							<objects>
 								<PathWrap name="pathwrap">
 									<!--A WrapObject that this PathWrap interacts with.-->
-									<wrap_object>radius</wrap_object>
+									<wrap_object>elbow_circ</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>495</max_isometric_force>
+					<max_isometric_force>173</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.11700000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3219,15 +3106,21 @@
 							<objects>
 								<PathPoint name="tric_long_2-P1">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
-									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
-									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0051900000000000002 -0.018329999999999999 0.00596</location>
-								</PathPoint>
-								<PathPoint name="tric_long_2-P2">
-									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
 									<location>-0.024250000000000001 -0.041930000000000002 -0.037440000000000001</location>
+								</PathPoint>
+								<PathPoint name="tric_long_2-P2">
+									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
+									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
+									<!--The fixed location of the path point expressed in its parent frame.-->
+									<location>-0.002 0.019 0.016</location>
+								</PathPoint>
+								<PathPoint name="tric_long_2-P3">
+									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
+									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
+									<!--The fixed location of the path point expressed in its parent frame.-->
+									<location>-0.01038 -0.013975 0.0097587999999999998</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3242,14 +3135,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1129</max_isometric_force>
+					<max_isometric_force>296</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.088099999999999998</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3282,7 +3173,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0021299999999999999 -0.044470000000000003 -0.017239999999999998</location>
+									<location>0.0035577999999999999 -0.046257 -0.01618</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3297,14 +3188,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>273</max_isometric_force>
+					<max_isometric_force>88</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.28570000000000001</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3337,7 +3226,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0013799999999999999 -0.03789 -0.017639999999999999</location>
+									<location>0.0028414 -0.039677999999999998 -0.016552000000000001</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3352,14 +3241,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>289</max_isometric_force>
+					<max_isometric_force>96</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.3206</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3392,7 +3279,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.01078 -0.073800000000000004 -0.016750000000000001</location>
+									<location>0.012029 -0.075645000000000004 -0.015814999999999999</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3407,14 +3294,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>408</max_isometric_force>
+					<max_isometric_force>165</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.18529999999999999</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3447,7 +3332,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.01112 -0.054179999999999999 -0.018079999999999999</location>
+									<location>0.012482999999999999 -0.056024999999999998 -0.017066999999999999</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3462,14 +3347,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>488</max_isometric_force>
+					<max_isometric_force>133</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.14999999999999999</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3502,7 +3385,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.01112 -0.054179999999999999 -0.018079999999999999</location>
+									<location>0.012482999999999999 -0.056024999999999998 -0.017066999999999999</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3517,14 +3400,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>292</max_isometric_force>
+					<max_isometric_force>113</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.1091</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3551,13 +3432,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.00264 -0.19989000000000001 0.016150000000000001</location>
+									<location>0.0031613000000000001 -0.20183000000000001 0.016528000000000001</location>
 								</PathPoint>
 								<PathPoint name="tric_med_4-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.015610000000000001 -0.0077099999999999998 0.023640000000000001</location>
+									<location>-0.015939999999999999 0.0029431000000000001 0.024478</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3572,14 +3453,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1077</max_isometric_force>
+					<max_isometric_force>211</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.0746</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3606,13 +3485,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.00018000000000000001 -0.19078000000000001 -0.0010399999999999999</location>
+									<location>0.00039218 -0.19263 -0.00062096999999999999</location>
 								</PathPoint>
 								<PathPoint name="brachialis_4-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.015810000000000001 -0.041660000000000003 -0.0045999999999999999</location>
+									<location>-0.028382999999999999 -0.034369999999999998 0.0044032999999999997</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3627,14 +3506,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1039</max_isometric_force>
+					<max_isometric_force>87</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.075800000000000006</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3661,26 +3538,24 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0044600000000000004 -0.2175 0.01532</location>
+									<location>0.0048735000000000002 -0.21945000000000001 0.015624000000000001</location>
 								</PathPoint>
 								<PathPoint name="brachiorad_2-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0081200000000000005 -0.22513 -0.070370000000000002</location>
+									<location>-0.0071034999999999996 -0.22907 0.0081636999999999994</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>164</max_isometric_force>
+					<max_isometric_force>82</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.1613</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3713,13 +3588,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.02077 -0.10531 0.0078100000000000001</location>
-								</PathPoint>
-								<PathPoint name="pron_teres_1-P3">
-									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
-									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
-									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.02077 -0.10531 0.0078200000000000006</location>
+									<location>0.0050277999999999998 -0.1055 0.020677000000000001</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3728,14 +3597,12 @@
 							<objects>
 								<PathWrap name="pathwrap">
 									<!--A WrapObject that this PathWrap interacts with.-->
-									<wrap_object>ulna_radius</wrap_object>
+									<wrap_object>pron_teres</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3768,13 +3635,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.012200000000000001 -0.024539999999999999 -0.015630000000000002</location>
+									<location>-0.020153000000000001 -0.022091 -0.010054</location>
 								</PathPoint>
 								<PathPoint name="pron_teres_2-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.022290000000000001 -0.081570000000000004 0.0034099999999999998</location>
+									<location>0.0099699999999999997 -0.082968 0.013376000000000001</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3783,14 +3650,12 @@
 							<objects>
 								<PathWrap name="pathwrap">
 									<!--A WrapObject that this PathWrap interacts with.-->
-									<wrap_object>ulna_radius</wrap_object>
+									<wrap_object>pron_teres</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3823,13 +3688,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.02052 -0.050209999999999998 -0.0088599999999999998</location>
+									<location>0.0030923999999999999 -0.054799 0.0027710999999999999</location>
 								</PathPoint>
 								<PathPoint name="supinator_3-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.017850000000000001 -0.056860000000000001 0.0044099999999999999</location>
+									<location>0.0092785000000000003 -0.057937000000000002 0.011338000000000001</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3844,14 +3709,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>838</max_isometric_force>
+					<max_isometric_force>126</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.0252</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3878,13 +3741,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.016500000000000001 -0.21195 -0.017489999999999999</location>
+									<location>-0.015615 -0.21256 0.0087300999999999993</location>
 								</PathPoint>
 								<PathPoint name="pron_quad_2-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.031460000000000002 -0.21573000000000001 -0.061080000000000002</location>
+									<location>-0.041660999999999997 -0.22223999999999999 -0.011535</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3899,14 +3762,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>470</max_isometric_force>
+					<max_isometric_force>178</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.038600000000000002</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3933,13 +3794,13 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0063099999999999996 -0.054949999999999999 0.010999999999999999</location>
+									<location>0.0076782999999999999 -0.056887 0.012017999999999999</location>
 								</PathPoint>
 								<PathPoint name="tric_lat_3-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0057999999999999996 0 0.020150000000000001</location>
+									<location>-0.0043950999999999999 0.0061711999999999999 0.019553000000000001</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3954,14 +3815,12 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>1144</max_isometric_force>
+					<max_isometric_force>219</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.065600000000000006</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -3988,26 +3847,24 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.01153 -0.29614000000000001 0.01149</location>
+									<location>0.011476 -0.29810999999999999 0.01145</location>
 								</PathPoint>
 								<PathPoint name="anconeus_2-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0076899999999999998 -0.023939999999999999 0.0092399999999999999</location>
+									<location>0.00022547999999999999 -0.022582000000000001 0.014418</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
-							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
 					</GeometryPath>
 					<!--Maximum isometric force that the fibers can generate-->
-					<max_isometric_force>362</max_isometric_force>
+					<max_isometric_force>70</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.020199999999999999</optimal_fiber_length>
 					<!--Resting length of the tendon-->
@@ -4025,8 +3882,7 @@
 					</SimmSpline>
 				</Schutte1993Muscle_Deprecated>
 			</objects>
-			<groups>
-			</groups>
+			<groups />
 		</ForceSet>
 		<!--Markers in the model.-->
 		<MarkerSet name="markerset">
@@ -4037,71 +3893,71 @@
 					<!--The fixed location of the station expressed in its parent frame.-->
 					<location>0 0 0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="C7">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/thorax</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>3.0000000000000001e-05 0.032629999999999999 0.083099999999999993</location>
+					<location>0 0.054100000000000002 0.1242</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="T8">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/thorax</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.00028600000000000001 -0.153921 0.10273599999999999</location>
+					<location>0.0097999999999999997 -0.17150000000000001 0.15609999999999999</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="PX">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/thorax</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00101 -0.16622500000000001 -0.061392000000000002</location>
+					<location>-0.0097999999999999997 -0.13270000000000001 -0.031899999999999998</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="SC">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/clavicle_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0 0 0</location>
+					<location>0.023600699999999999 0.0220424 0.0033303899999999999</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="AC">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.017319999999999999 -0.0024499999999999999 0.0055599999999999998</location>
+					<location>0.00151962 0.022844900000000001 -0.0359323</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="AI">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.083479999999999999 -0.11958100000000001 0.104739</location>
+					<location>-0.115129 -0.117436 0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="TS">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.097986000000000004 -0.010836 0.081119999999999998</location>
+					<location>-0.120376 0 -0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="AA">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.00172 -0.001993 0.038889</location>
+					<location>0 0 0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="GH">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
@@ -4109,39 +3965,47 @@
 					<!--The fixed location of the station expressed in its parent frame.-->
 					<location>0 0 0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
-				<Marker name="LE">
+				<Marker name="EL">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.016211 -0.285686 -0.0028</location>
+					<location>0.0339536 -0.28655999999999998 0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
-				<Marker name="ME">
+				<Marker name="EM">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.035518000000000001 -0.28275699999999998 0.00092000000000000003</location>
+					<location>-0.033945900000000001 -0.29156700000000002 0</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="US">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.025000000000000001 -0.25340000000000001 -0.011299999999999999</location>
+					<location>-0.037699999999999997 -0.2535 -0.0057000000000000002</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
 				</Marker>
 				<Marker name="RS">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
 					<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>0.058299999999999998 -0.2351 -0.021700000000000001</location>
+					<location>-0.0063 -0.2389 0.0091000000000000004</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
-					<fixed>true</fixed>
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="Wrist">
+					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
+					<socket_parent_frame>/bodyset/hand_r</socket_parent_frame>
+					<!--The fixed location of the station expressed in its parent frame.-->
+					<location>0 0 0</location>
+					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
+					<fixed>false</fixed>
 				</Marker>
 			</objects>
 			<groups />
@@ -4151,7 +4015,7 @@
 			<objects>
 				<Umberger2010MuscleMetabolicsProbe name="metabolics">
 					<!--Flag indicating whether the Probe is Enabled.-->
-					<enabled>true</enabled>
+					<enabled>false</enabled>
 					<!--The operation to perform on the probe input value: 'value'(no operation, just return the probe value), 'integrate', 'differentiate', 'minimum', 'minabs', 'maximum', 'maxabs'.-->
 					<probe_operation>value</probe_operation>
 					<!--Array of initial conditions to be specified if the 'integrate' operation is selected. Note that the size of initial conditions must be the same size as the data being integrated, otherwise an exception will be thrown.-->
@@ -4177,7 +4041,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1033</provided_muscle_mass>
+								<provided_muscle_mass>0.01494</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_scap10">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4185,7 +4049,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0615</provided_muscle_mass>
+								<provided_muscle_mass>0.01158</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="trap_clav_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4193,7 +4057,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0268</provided_muscle_mass>
+								<provided_muscle_mass>0.01712</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lev_scap_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4201,7 +4065,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0328</provided_muscle_mass>
+								<provided_muscle_mass>0.017309999999999999</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_min_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4209,7 +4073,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0375</provided_muscle_mass>
+								<provided_muscle_mass>0.01323</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="rhomboid_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4217,7 +4081,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0580</provided_muscle_mass>
+								<provided_muscle_mass>0.02034</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4225,15 +4089,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0515</provided_muscle_mass>
-							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
-							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_5">
-								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
-								<ratio_slow_twitch_fibers>0.5</ratio_slow_twitch_fibers>
-								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
-								<use_provided_muscle_mass>true</use_provided_muscle_mass>
-								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0449</provided_muscle_mass>
+								<provided_muscle_mass>0.020830000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="serr_ant_8">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4241,7 +4097,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0337</provided_muscle_mass>
+								<provided_muscle_mass>0.0072899999999999996</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4249,7 +4105,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1196</provided_muscle_mass>
+								<provided_muscle_mass>0.042139999999999997</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_scap10">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4257,7 +4113,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1367</provided_muscle_mass>
+								<provided_muscle_mass>0.037900000000000003</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="delt_clav_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4265,7 +4121,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0516</provided_muscle_mass>
+								<provided_muscle_mass>0.017010000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="coracobr_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4273,7 +4129,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0360</provided_muscle_mass>
+								<provided_muscle_mass>0.011509999999999999</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="infra_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4281,7 +4137,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1130</provided_muscle_mass>
+								<provided_muscle_mass>0.016310000000000002</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_min_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4289,7 +4145,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0298</provided_muscle_mass>
+								<provided_muscle_mass>0.01221</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="ter_maj_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4297,7 +4153,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0964</provided_muscle_mass>
+								<provided_muscle_mass>0.034810000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supra_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4305,7 +4161,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0397</provided_muscle_mass>
+								<provided_muscle_mass>0.01651</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="subscap_6">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4313,7 +4169,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1192</provided_muscle_mass>
+								<provided_muscle_mass>0.012919999999999999</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="bic_l">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4321,7 +4177,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0662</provided_muscle_mass>
+								<provided_muscle_mass>0.066199999999999995</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="bic_b_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4329,7 +4185,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0519</provided_muscle_mass>
+								<provided_muscle_mass>0.020789999999999999</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_long_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4337,7 +4193,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1182</provided_muscle_mass>
+								<provided_muscle_mass>0.02955</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4345,7 +4201,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0869</provided_muscle_mass>
+								<provided_muscle_mass>0.028830000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="lat_dorsi_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4353,7 +4209,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.1074</provided_muscle_mass>
+								<provided_muscle_mass>0.035150000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4361,7 +4217,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0862</provided_muscle_mass>
+								<provided_muscle_mass>0.034750000000000003</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_t_5">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4369,7 +4225,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0882</provided_muscle_mass>
+								<provided_muscle_mass>0.02273</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pect_maj_c_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4377,7 +4233,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0417</provided_muscle_mass>
+								<provided_muscle_mass>0.013990000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_med_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4385,7 +4241,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0697</provided_muscle_mass>
+								<provided_muscle_mass>0.013950000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachialis_4">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4393,7 +4249,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0839</provided_muscle_mass>
+								<provided_muscle_mass>0.0070000000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="brachiorad_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4401,7 +4257,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0247</provided_muscle_mass>
+								<provided_muscle_mass>0.014</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pron_teres_1">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4417,7 +4273,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0043</provided_muscle_mass>
+								<provided_muscle_mass>0.0043299999999999996</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="supinator_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4425,7 +4281,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0176</provided_muscle_mass>
+								<provided_muscle_mass>0.0033600000000000001</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="pron_quad_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4433,7 +4289,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.01</provided_muscle_mass>
+								<provided_muscle_mass>0.00347</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="tric_lat_3">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4441,7 +4297,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0830</provided_muscle_mass>
+								<provided_muscle_mass>0.0152</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 							<Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter name="anconeus_2">
 								<!--Ratio of slow twitch fibers in the muscle (must be between 0 and 1).-->
@@ -4449,7 +4305,7 @@
 								<!--An optional flag that allows the user to explicitly specify a muscle mass. If set to true, the <provided_muscle_mass> property must be specified.-->
 								<use_provided_muscle_mass>true</use_provided_muscle_mass>
 								<!--The user specified muscle mass (kg).-->
-								<provided_muscle_mass>0.0085</provided_muscle_mass>
+								<provided_muscle_mass>0.0015</provided_muscle_mass>
 							</Umberger2010MuscleMetabolicsProbe_MetabolicMuscleParameter>
 						</objects>
 						<groups />

@@ -148,48 +148,6 @@
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
 										<prescribed>false</prescribed>
 									</Coordinate>
-									<Coordinate name="TH_transx">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2 2</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
-										<prescribed>false</prescribed>
-									</Coordinate>
-									<Coordinate name="TH_transy">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2 2</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
-										<prescribed>false</prescribed>
-									</Coordinate>
-									<Coordinate name="TH_transz">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2 2</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
-										<prescribed>false</prescribed>
-									</Coordinate>
 								</objects>
 							</CoordinateSet>
 							<!--Whether the joint transform defines parent->child or child->parent.-->
@@ -235,44 +193,38 @@
 								</TransformAxis>
 								<!--3 Axes for translations are listed next.-->
 								<TransformAxis name="translation1">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>TH_transx</coordinates>
 									<!--Rotation or translation axis for the transform.-->
 									<axis>1 0 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<LinearFunction>
-											<coefficients> 1 0</coefficients>
-										</LinearFunction>
+										<Constant>
+											<value>0</value>
+										</Constant>
 									</function>
 								</TransformAxis>
 								<TransformAxis name="translation2">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>TH_transy</coordinates>
 									<!--Rotation or translation axis for the transform.-->
 									<axis>0 1 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<LinearFunction>
-											<coefficients> 1 0</coefficients>
-										</LinearFunction>
+										<Constant>
+											<value>0</value>
+										</Constant>
 									</function>
 								</TransformAxis>
 								<TransformAxis name="translation3">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>TH_transz</coordinates>
 									<!--Rotation or translation axis for the transform.-->
 									<axis>0 0 1</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<LinearFunction>
-											<coefficients> 1 0</coefficients>
-										</LinearFunction>
+										<Constant>
+											<value>0</value>
+										</Constant>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
 						</CustomJoint>
-					</Joint>
+					</Joint>					
 					<VisibleObject>
 						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 						<GeometrySet>
@@ -1460,7 +1412,7 @@
 						<objects>
 							<WrapSphere name="deltoid">
 								<xyz_body_rotation> 0 0 0</xyz_body_rotation>
-								<translation> 0.0039  -0.0028 -0.00056</translation>
+								<translation> 0.0039 -0.0028 -0.00056</translation>
 								<active>true</active>
 								<radius>0.0272</radius>
 							</WrapSphere>
@@ -1474,7 +1426,7 @@
 								<xyz_body_rotation> 1.7137 -0.11777 1.5708</xyz_body_rotation>
 								<translation> 0.0069341 -0.074837 -0.0032784</translation>
 								<active>true</active>
-								<quadrant>all</quadrant>
+								<quadrant>-x</quadrant>
 								<radius>0.014</radius>
 								<length>0.12</length>
 							</WrapCylinder>
@@ -1482,7 +1434,7 @@
 								<xyz_body_rotation> 1.56643 0.00610865 -1.47672</xyz_body_rotation>
 								<translation> 0.0054 -0.023 -0.0044</translation>
 								<active>true</active>
-								<quadrant>all</quadrant>
+								<quadrant>-x</quadrant>
 								<radius>0.015</radius>
 								<length>0.1</length>
 							</WrapCylinder>
@@ -1546,7 +1498,7 @@
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 									<coordinates>EL_x</coordinates>
 									<!--Rotation or translation axis for the transform.-->
-									<axis>0.9690 -0.2470 0</axis>
+									<axis>0.969 -0.247 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
 										<LinearFunction>
@@ -1640,7 +1592,7 @@
 								<xyz_body_rotation> 3.141 1.3368 1.5708</xyz_body_rotation>
 								<translation> 0 0 0</translation>
 								<active>true</active>
-								<quadrant>all</quadrant>
+								<quadrant>-x</quadrant>
 								<radius>0.019</radius>
 								<length>0.05</length>
 							</WrapCylinder>
@@ -1652,10 +1604,10 @@
 								<length>0.05</length>
 							</WrapCylinder>
 							<WrapCylinder name="pron_quad">
-								<xyz_body_rotation> -1.6933 0.053143 1.5708</xyz_body_rotation>
+								<xyz_body_rotation> -1.5679 -0.001074 1.5708</xyz_body_rotation>
 								<translation> -0.033823 -0.21454 -0.010204</translation>
 								<active>true</active>
-								<quadrant>all</quadrant>
+								<quadrant>x</quadrant>
 								<radius>0.007</radius>
 								<length>0.1</length>
 							</WrapCylinder>
@@ -1786,7 +1738,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> -0.7 -1.4 -0.6 -0 -0 0</transform>
+									<transform> -0.7 -1.4 -0.7 0.01 -0 0.01</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -1802,29 +1754,21 @@
 					</VisibleObject>
 					<WrapObjectSet>
 						<objects>
-							<WrapCylinder name="radius">
-								<xyz_body_rotation> -1.7298 0.18616 1.5708</xyz_body_rotation>
-								<translation> -0.0013493 -0.032178 0.0036389</translation>
-								<active>true</active>
-								<quadrant>all</quadrant>
-								<radius>0.0092</radius>
-								<length>0.2</length>
-							</WrapCylinder>
 							<WrapCylinder name="supinator">
-								<xyz_body_rotation> -1.6348 0.34126 1.5708</xyz_body_rotation>
+								<xyz_body_rotation> -1.576 0.090728 1.5708</xyz_body_rotation>
 								<translation> -0.014601 -0.11871 0.0078651</translation>
 								<active>true</active>
-								<quadrant>all</quadrant>
+								<quadrant>-x</quadrant>
 								<radius>0.009</radius>
 								<length>0.2</length>
 							</WrapCylinder>
-							<WrapCylinder name="ulna_radius">
-								<xyz_body_rotation> 1.4219 0.49572 1.5708</xyz_body_rotation>
-								<translation> 0.0011691 -0.089563 0.011286</translation>
+							<WrapCylinder name="pron_teres">
+								<xyz_body_rotation> -1.576 0.090728 1.5708</xyz_body_rotation>
+								<translation> -0.014601 -0.11871 0.0078651</translation>
 								<active>true</active>
-								<quadrant>all</quadrant>
-								<radius>0.0071</radius>
-								<length>0.1</length>
+								<quadrant>-y</quadrant>
+								<radius>0.009</radius>
+								<length>0.2</length>
 							</WrapCylinder>
 						</objects>
 					</WrapObjectSet>
@@ -2870,7 +2814,7 @@
 									<wrap_object>inf_sup_sub</wrap_object>
 								</PathWrap>
 								<PathWrap>
-									<wrap_object>radius</wrap_object>
+									<wrap_object>elbow_circ</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
@@ -2929,7 +2873,7 @@
 						<PathWrapSet>
 							<objects>
 								<PathWrap>
-									<wrap_object>radius</wrap_object>
+									<wrap_object>elbow_circ</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
@@ -2979,6 +2923,10 @@
 									<body>scapula_r</body>
 								</PathPoint>
 								<PathPoint name="tric_long_2-P2">
+									<location> -0.002 0.019 0.016</location>
+									<body>ulna_r</body>
+								</PathPoint>
+								<PathPoint name="tric_long_2-P3">
 									<location> -0.01038 -0.013975 0.0097588</location>
 									<body>ulna_r</body>
 								</PathPoint>
@@ -3451,7 +3399,7 @@
 									<body>humerus_r</body>
 								</PathPoint>
 								<PathPoint name="brachiorad_2-P2">
-									<location>-0.0071035 -0.22907 0.0081637</location>
+									<location> -0.0071035 -0.22907 0.0081637</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -3511,7 +3459,7 @@
 						<PathWrapSet>
 							<objects>
 								<PathWrap>
-									<wrap_object>ulna_radius</wrap_object>
+									<wrap_object>pron_teres</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
@@ -3557,11 +3505,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="pron_teres_2-P1">
-									<location>-0.020153 -0.022091 -0.010054</location>
+									<location> -0.020153 -0.022091 -0.010054</location>
 									<body>ulna_r</body>
 								</PathPoint>
 								<PathPoint name="pron_teres_2-P2">
-									<location>0.00997 -0.082968 0.013376</location>
+									<location> 0.00997 -0.082968 0.013376</location>
 									<body>radius_r</body>
 								</PathPoint>
 							</objects>
@@ -3570,7 +3518,7 @@
 						<PathWrapSet>
 							<objects>
 								<PathWrap>
-									<wrap_object>ulna_radius</wrap_object>
+									<wrap_object>pron_teres</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
@@ -3675,11 +3623,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="pron_quad_2-P1">
-									<location>-0.015615 -0.21256 0.0087301</location>
+									<location> -0.015615 -0.21256 0.0087301</location>
 									<body>radius_r</body>
 								</PathPoint>
 								<PathPoint name="pron_quad_2-P2">
-									<location>-0.041661 -0.22224 -0.011535</location>
+									<location> -0.041661 -0.22224 -0.011535</location>
 									<body>ulna_r</body>
 								</PathPoint>
 							</objects>
