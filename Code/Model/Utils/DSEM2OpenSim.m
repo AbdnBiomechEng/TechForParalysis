@@ -91,6 +91,7 @@ disp_str = ['Pronation-supination axis: ' num2str(pro_sup_axis_local)];
 disp(disp_str);
 fprintf(outfile,'%s\n\n',disp_str);
 
+
 %% all muscle points 
 
 mus = load('DSEM_muscles');
@@ -162,7 +163,7 @@ coords = [16.86  -1.75   6.51]'/100 - humcorr;
 coords_loc = (Thumerus*([coords;1]))';
 disp_str = [' Centre of ball "inf_sup_sub" on humerus: ' num2str(coords_loc(1:3))];
 disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 
 % REM CYLINDER surfacenr dx dy dz sx sy sz r pp po
@@ -180,7 +181,7 @@ x = cross(z,[1;0;0]);
 y = cross(z,x);
 x = cross(y,z);
 R = [x,y,z];
-angles = rotxyz(R);
+[angles(1), angles(2), angles(3)] = rotxyz(R);
 disp_str = [' Rotation of cylinder "infra_cyl" on humerus: ' num2str(angles)];
 disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
@@ -189,7 +190,7 @@ coords = [17.75  -9.22   6.49]'/100 - humcorr;
 coords_loc = (Thumerus*([coords;1]))';
 disp_str = [' Translation of cylinder "infra_cyl" on humerus: ' num2str(coords_loc(1:3))];
 disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 vec = [0.0993;  0.9003;  0.4239];
 v_local = Thumerus*([vec;1]);
@@ -198,7 +199,7 @@ x = cross(z,[1;0;0]);
 y = cross(z,x);
 x = cross(y,z);
 R = [x,y,z];
-angles = rotxyz(R);
+[angles(1), angles(2), angles(3)] = rotxyz(R);
 disp_str = [' Rotation of cylinder "ter_lat_pec" on humerus: ' num2str(angles)];
 disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
@@ -207,7 +208,7 @@ coords = [19.92 -35.32   5.79]'/100 - humcorr;
 coords_loc = (Thumerus*([coords;1]))';
 disp_str = [' Translation of cylinder "ter_lat_pec" on humerus: ' num2str(coords_loc(1:3))];
 disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 
 % ulna
@@ -221,7 +222,7 @@ x = cross(z,[1;0;0]);
 y = cross(z,x);
 x = cross(y,z);
 R = [x,y,z];
-angles = rotxyz(R);
+[angles(1), angles(2), angles(3)] = rotxyz(R);
 disp_str = [' Rotation of cylinder "elbow" on ulna: ' num2str(angles)];
 disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
@@ -230,7 +231,7 @@ coords = [19.36 -30.80   9.02]'/100 - humcorr;
 coords_loc = (Tulna*([coords;1]))';
 disp_str = [' Translation of cylinder "elbow" on ulna: ' num2str(coords_loc(1:3))];
 disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 % CYLINDER  6  0.8531  0.0183 -0.5108  19.36 -30.80   9.02  1.90 27 16
 
@@ -241,7 +242,7 @@ x = cross(z,[1;0;0]);
 y = cross(z,x);
 x = cross(y,z);
 R = [x,y,z];
-angles = rotxyz(R);
+[angles(1), angles(2), angles(3)] = rotxyz(R);
 disp_str = [' Rotation of cylinder "elbow_circ" on ulna: ' num2str(angles)];
 disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
@@ -250,7 +251,7 @@ coords = [19.36 -30.80   9.02]'/100 - humcorr;
 coords_loc = (Tulna*([coords;1]))';
 disp_str = [' Translation of cylinder "elbow_circ" on ulna: ' num2str(coords_loc(1:3))];
 disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 % CYLINDER  9 -0.1157  0.9547  0.2740  20.77 -51.88   3.88  0.70 27 16
 
@@ -261,7 +262,7 @@ x = cross(z,[1;0;0]);
 y = cross(z,x);
 x = cross(y,z);
 R = [x,y,z];
-angles = rotxyz(R);
+[angles(1), angles(2), angles(3)] = rotxyz(R);
 disp_str = [' Rotation of cylinder "pron_quad" on ulna: ' num2str(angles)];
 disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
@@ -270,61 +271,73 @@ coords = [20.77 -51.88   3.88]'/100 - humcorr;
 coords_loc = (Tulna*([coords;1]))';
 disp_str = [' Translation of cylinder "pron_quad" on ulna: ' num2str(coords_loc(1:3))];
 disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 
 % radius
 
 % CYLINDER 10 -0.1481 -0.8839 -0.4436  19.28 -40.60   3.49  0.71 28 19
 
-vec = [-0.1481; -0.8839; -0.4436];
-v_local = Tradius*([vec;1]);
-z = v_local(1:3)/norm(v_local(1:3));
-x = cross(z,[1;0;0]);
-y = cross(z,x);
-x = cross(y,z);
-R = [x,y,z];
-angles = rotxyz(R);
-disp_str = [' Rotation of cylinder "ulna_radius" on radius: ' num2str(angles)];
-disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
-
-coords = [19.28 -40.60   3.49]'/100 - humcorr;
-coords_loc = (Tradius*([coords;1]))';
-disp_str = [' Translation of cylinder "ulna_radius" on radius: ' num2str(coords_loc(1:3))];
-disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+% vec = [-0.1481; -0.8839; -0.4436];
+% v_local = Tradius*([vec;1]);
+% z = v_local(1:3)/norm(v_local(1:3));
+% x = cross(z,[1;0;0]);
+% y = cross(z,x);
+% x = cross(y,z);
+% R = [x,y,z];
+% [angles(1), angles(2), angles(3)] = rotxyz(R);
+% disp_str = [' Rotation of cylinder "ulna_radius" on radius: ' num2str(angles)];
+% disp(disp_str);
+% fprintf(outfile,'%s\n',disp_str);
+% 
+% coords = [19.28 -40.60   3.49]'/100 - humcorr;
+% coords_loc = (Tradius*([coords;1]))';
+% disp_str = [' Translation of cylinder "ulna_radius" on radius: ' num2str(coords_loc(1:3))];
+% disp(disp_str);
+% fprintf(outfile,'%s\n\n',disp_str);
 
 % CYLINDER  5  0.0993  0.9003  0.4239  19.92 -35.32   5.79  0.92 28 19
 
-vec = [0.0993;  0.9003; 0.4239];
-v_local = Tradius*([vec;1]);
-z = v_local(1:3)/norm(v_local(1:3));
-x = cross(z,[1;0;0]);
-y = cross(z,x);
-x = cross(y,z);
-R = [x,y,z];
-angles = rotxyz(R);
-disp_str = [' Rotation of cylinder "bic_radius" on radius: ' num2str(angles)];
-disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
-
-coords = [19.92 -35.32   5.79]'/100 - humcorr;
-coords_loc = (Tradius*([coords;1]))';
-disp_str = [' Translation of cylinder "bic_radius" on radius: ' num2str(coords_loc(1:3))];
-disp(disp_str);
-fprintf(outfile,'%s\n',disp_str);
+% vec = [0.0993;  0.9003; 0.4239];
+% v_local = Tradius*([vec;1]);
+% z = v_local(1:3)/norm(v_local(1:3));
+% x = cross(z,[1;0;0]);
+% y = cross(z,x);
+% x = cross(y,z);
+% R = [x,y,z];
+% [angles(1), angles(2), angles(3)] = rotxyz(R);
+% disp_str = [' Rotation of cylinder "bic_radius" on radius: ' num2str(angles)];
+% disp(disp_str);
+% fprintf(outfile,'%s\n',disp_str);
+% 
+% coords = [19.92 -35.32   5.79]'/100 - humcorr;
+% coords_loc = (Tradius*([coords;1]))';
+% disp_str = [' Translation of cylinder "bic_radius" on radius: ' num2str(coords_loc(1:3))];
+% disp(disp_str);
+% fprintf(outfile,'%s\n\n',disp_str);
 
 % CYLINDER  8  0.0186  0.9767  0.2136  19.79 -43.87   3.87  0.90 28 19
 
-vec = [0.0186;  0.9767;  0.2136];
-v_local = Tradius*([vec;1]);
+% vec = [0.0186;  0.9767;  0.2136];
+% v_local = Tradius*([vec;1]);
+% z = v_local(1:3)/norm(v_local(1:3));
+% x = cross(z,[1;0;0]);
+% y = cross(z,x);
+% x = cross(y,z);
+% R = [x,y,z];
+% [angles(1), angles(2), angles(3)] = rotxyz(R);
+% disp_str = [' Rotation of cylinder "supinator" on radius: ' num2str(angles)];
+% disp(disp_str);
+% fprintf(outfile,'%s\n',disp_str);
+
+supinator_axis = (EL_in_radius' - RS_local(1:3))/norm(EL_in_radius' - RS_local(1:3));
+v_local = supinator_axis;
 z = v_local(1:3)/norm(v_local(1:3));
 x = cross(z,[1;0;0]);
 y = cross(z,x);
 x = cross(y,z);
 R = [x,y,z];
-angles = rotxyz(R);
+[angles(1), angles(2), angles(3)] = rotxyz(R);
 disp_str = [' Rotation of cylinder "supinator" on radius: ' num2str(angles)];
 disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
