@@ -83,10 +83,12 @@ fprintf(outfile,'%s\n',disp_str);
 % pro_sup_axis_local = prosup(1:3)/norm(prosup(1:3));
 % disp(['Pronation-supination axis: ' num2str(pro_sup_axis_local')]);
 
-% Set the pronation-supination axis as the line from US to EL
+% Set the pronation-supination axis as the line from ulnar styloid to
+% capitulum humeri
+CH_in_radius = [-0.00287672 0.0155471 -0.00434069]; % New point Capitulum Humeri estimated in radius frame
 US_in_radius = [-0.0488 -0.2323 0.007]; 
 EL_in_radius = [0.0169109 0.0161846 0.0078];
-pro_sup_axis_local = (EL_in_radius - US_in_radius)/norm(EL_in_radius - US_in_radius);
+pro_sup_axis_local = (CH_in_radius - US_in_radius)/norm(CH_in_radius - US_in_radius);
 disp_str = ['Pronation-supination axis: ' num2str(pro_sup_axis_local)];
 disp(disp_str);
 fprintf(outfile,'%s\n\n',disp_str);

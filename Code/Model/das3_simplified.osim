@@ -2173,7 +2173,7 @@
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
 							<socket_parent>/bodyset/ulna_r</socket_parent>
 							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
-							<translation>0.0111 -0.0212 -0.012699999999999999</translation>
+							<translation>0.0067234 -0.0093130599999999997 -0.0068107000000000003</translation>
 							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
 							<orientation>0 0 0</orientation>
 						</PhysicalOffsetFrame>
@@ -2200,7 +2200,7 @@
 							<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
 							<coordinates>PS_y</coordinates>
 							<!--Rotation or translation axis for the transform.-->
-							<axis>0.25566 0.96675999999999995 0.0031124999999999998</axis>
+							<axis>0.182 0.98226999999999998 -0.044946</axis>
 							<!--Transform function of the generalized coordinates used to        represent the amount of displacement along a specified axis.-->
 							<LinearFunction name="function">
 								<coefficients> 1 0</coefficients>
@@ -4239,9 +4239,9 @@
 				</Marker>
 				<Marker name="Capitulum">
 					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
-					<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
+					<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
-					<location>-0.002555033687140041 0.025584940850686043 0.0016118656923267086</location>
+					<location>0.014083445504602114 -0.28315975581203018 -0.0023699458527933733</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>false</fixed>
 				</Marker>
