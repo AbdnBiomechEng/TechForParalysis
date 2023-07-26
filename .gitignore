@@ -1,6 +1,5 @@
-
+*.mat
 *.mot
-Code/Model/ThoracoscapularShoulderPaperMaterials/Scripts/BatchScaling/err.log
-Code/Model/ThoracoscapularShoulderPaperMaterials/Scripts/BatchScaling/out.log
-Code/Model/ThoracoscapularShoulderPaperMaterials/Scripts/BatchScaling/RR_BatchScaling_IK.asv
+*.zip
+*.log
 *.asv

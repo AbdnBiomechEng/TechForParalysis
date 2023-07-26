@@ -86,6 +86,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -119,6 +121,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -152,6 +156,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -185,6 +191,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -225,6 +233,8 @@
 								<quadrant>all</quadrant>
 								<!--Default appearance for this Geometry-->
 								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
 									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 									<opacity>0.5</opacity>
 									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -294,6 +304,8 @@
 							<scale_factors>1 1 1</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
+								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+								<visible>true</visible>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>1</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -357,6 +369,8 @@
 							<scale_factors>1 1 1</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
+								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+								<visible>true</visible>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>1</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -420,6 +434,8 @@
 							<scale_factors>1 1 1</scale_factors>
 							<!--Default appearance attributes for this Geometry-->
 							<Appearance>
+								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+								<visible>true</visible>
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>1</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -441,6 +457,20 @@
 								<translation>0.0038999999999999998 -0.0028 -0.00055999999999999995</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>all</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the sphere.-->
 								<radius>0.027199999999999998</radius>
 							</WrapSphere>
@@ -453,6 +483,20 @@
 								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>all</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the sphere.-->
 								<radius>0.023099999999999999</radius>
 							</WrapSphere>
@@ -465,6 +509,20 @@
 								<translation>0.0069341000000000003 -0.074837000000000001 -0.0032783999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-x</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.014</radius>
 								<!--The length of the cylinder.-->
@@ -479,6 +537,20 @@
 								<translation>0.0054000000000000003 -0.023 -0.0044000000000000003</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-x</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.014999999999999999</radius>
 								<!--The length of the cylinder.-->
@@ -493,6 +565,20 @@
 								<translation>0.0057000000000000002 -0.072999999999999995 -0.0041999999999999997</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>all</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.01</radius>
 								<!--The length of the cylinder.-->
@@ -527,6 +613,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -565,6 +653,20 @@
 								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-x</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.019</radius>
 								<!--The length of the cylinder.-->
@@ -579,6 +681,20 @@
 								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>all</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.014999999999999999</radius>
 								<!--The length of the cylinder.-->
@@ -593,6 +709,20 @@
 								<translation>-0.033822999999999999 -0.21454000000000001 -0.010204</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>x</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.0070000000000000001</radius>
 								<!--The length of the cylinder.-->
@@ -627,6 +757,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -665,6 +797,20 @@
 								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-x</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.0089999999999999993</radius>
 								<!--The length of the cylinder.-->
@@ -679,6 +825,20 @@
 								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-y</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
 								<!--The radius of the cylinder.-->
 								<radius>0.0089999999999999993</radius>
 								<!--The length of the cylinder.-->
@@ -713,6 +873,8 @@
 									<scale_factors>1 1 1</scale_factors>
 									<!--Default appearance attributes for this Geometry-->
 									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
 										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 										<opacity>1</opacity>
 										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -1551,7 +1713,7 @@
 					<coordinates>
 						<Coordinate name="GH_y">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>2.5861000000000001</default_value>
+							<default_value>0</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-2.9670999999999998 3.0543</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1660,7 +1822,7 @@
 					<coordinates>
 						<Coordinate name="GH_z">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0.19009999999999999</default_value>
+							<default_value>0</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-0.52359999999999995 1.4661</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1769,7 +1931,7 @@
 					<coordinates>
 						<Coordinate name="GH_yy">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>-3.0156999999999998</default_value>
+							<default_value>0</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-3.0543 2.9670999999999998</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -1987,7 +2149,7 @@
 					<coordinates>
 						<Coordinate name="PS_y">
 							<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-							<default_value>0</default_value>
+							<default_value>1.5707963267948966</default_value>
 							<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 							<range>-0.001 2.7925268000000001</range>
 							<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
@@ -2162,6 +2324,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2206,6 +2370,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2250,6 +2416,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2294,6 +2462,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2338,6 +2508,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2382,6 +2554,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2437,6 +2611,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2492,6 +2668,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2545,6 +2723,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2598,6 +2778,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2651,6 +2833,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2695,6 +2879,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2748,6 +2934,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2801,6 +2989,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2854,6 +3044,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2907,6 +3099,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -2960,6 +3154,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3023,6 +3219,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3076,6 +3274,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3135,6 +3335,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3188,6 +3390,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3241,6 +3445,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3294,6 +3500,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3347,6 +3555,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3400,6 +3610,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3453,6 +3665,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3506,6 +3720,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3550,6 +3766,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3603,6 +3821,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3656,6 +3876,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3709,6 +3931,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3762,6 +3986,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3815,6 +4041,8 @@
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -3859,6 +4087,8 @@
 						</PathPointSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
+							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+							<visible>true</visible>
 							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
 							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
 						</Appearance>
@@ -4004,6 +4234,14 @@
 					<socket_parent_frame>/bodyset/hand_r</socket_parent_frame>
 					<!--The fixed location of the station expressed in its parent frame.-->
 					<location>0 0 0</location>
+					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="Capitulum">
+					<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
+					<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
+					<!--The fixed location of the station expressed in its parent frame.-->
+					<location>-0.002555033687140041 0.025584940850686043 0.0016118656923267086</location>
 					<!--Flag (true or false) specifying whether the marker is fixed in its parent frame during the marker placement step of scaling.  If false, the marker is free to move within its parent Frame to match its experimental counterpart.-->
 					<fixed>false</fixed>
 				</Marker>
