@@ -234,7 +234,7 @@
 								<!--Default appearance for this Geometry-->
 								<Appearance>
 									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-									<visible>false</visible>
+									<visible>true</visible>
 									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 									<opacity>0.5</opacity>
 									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -700,34 +700,6 @@
 								<!--The length of the cylinder.-->
 								<length>0.050000000000000003</length>
 							</WrapCylinder>
-							<WrapCylinder name="pron_quad">
-								<!--Whether or not the WrapObject is considered active in computing paths-->
-								<active>true</active>
-								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.5679000000000001 -0.0010740000000000001 1.5708</xyz_body_rotation>
-								<!--Translation of the WrapObject.-->
-								<translation>-0.033822999999999999 -0.21454000000000001 -0.010204</translation>
-								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
-								<quadrant>x</quadrant>
-								<!--Default appearance for this Geometry-->
-								<Appearance>
-									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-									<visible>true</visible>
-									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
-									<opacity>0.5</opacity>
-									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-									<color>0 1 1</color>
-									<!--Visuals applied to surfaces associated with this Appearance.-->
-									<SurfaceProperties>
-										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
-										<representation>3</representation>
-									</SurfaceProperties>
-								</Appearance>
-								<!--The radius of the cylinder.-->
-								<radius>0.0070000000000000001</radius>
-								<!--The length of the cylinder.-->
-								<length>0.10000000000000001</length>
-							</WrapCylinder>
 						</objects>
 					</WrapObjectSet>
 					<!--The mass of the body (kg)-->
@@ -788,11 +760,39 @@
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
 					<WrapObjectSet name="wrapobjectset">
 						<objects>
+							<WrapCylinder name="bic_radius">
+								<!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>true</active>
+								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>-1.6165 0.18301999999999999 1.5708</xyz_body_rotation>
+								<!--Translation of the WrapObject.-->
+								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
+								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>x</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
+								<!--The radius of the cylinder.-->
+								<radius>0.012</radius>
+								<!--The length of the cylinder.-->
+								<length>0.25</length>
+							</WrapCylinder>
 							<WrapCylinder name="supinator">
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.5760000000000001 0.090728000000000003 1.5708</xyz_body_rotation>
+								<xyz_body_rotation>-1.6165 0.18301999999999999 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
 								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
@@ -820,7 +820,7 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.5760000000000001 0.090728000000000003 1.5708</xyz_body_rotation>
+								<xyz_body_rotation>-1.6165 0.18301999999999999 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
 								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
@@ -3215,6 +3215,10 @@
 									<!--A WrapObject that this PathWrap interacts with.-->
 									<wrap_object>elbow_circ</wrap_object>
 								</PathWrap>
+								<PathWrap name="pathwrap_1">
+									<!--A WrapObject that this PathWrap interacts with.-->
+									<wrap_object>bic_radius</wrap_object>
+								</PathWrap>
 							</objects>
 						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
@@ -3269,6 +3273,10 @@
 								<PathWrap name="pathwrap">
 									<!--A WrapObject that this PathWrap interacts with.-->
 									<wrap_object>elbow_circ</wrap_object>
+								</PathWrap>
+								<PathWrap name="pathwrap_0">
+									<!--A WrapObject that this PathWrap interacts with.-->
+									<wrap_object>bic_radius</wrap_object>
 								</PathWrap>
 							</objects>
 						</PathWrapSet>
@@ -3971,19 +3979,10 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/ulna_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.041660999999999997 -0.22223999999999999 -0.011535</location>
+									<location>-0.034551572702871465 -0.20801936676375846 -0.0030165760405542557</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
-						<!--The wrap objects that are associated with this path-->
-						<PathWrapSet>
-							<objects>
-								<PathWrap name="pathwrap">
-									<!--A WrapObject that this PathWrap interacts with.-->
-									<wrap_object>pron_quad</wrap_object>
-								</PathWrap>
-							</objects>
-						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
 							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
