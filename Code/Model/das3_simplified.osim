@@ -234,7 +234,7 @@
 								<!--Default appearance for this Geometry-->
 								<Appearance>
 									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-									<visible>true</visible>
+									<visible>false</visible>
 									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 									<opacity>0.5</opacity>
 									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
@@ -676,7 +676,7 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>3.141 1.3368 1.5708</xyz_body_rotation>
+								<xyz_body_rotation>1.5708 1.3211999999999999 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
 								<translation>0 0 0</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
@@ -766,7 +766,7 @@
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
 								<xyz_body_rotation>-1.6165 0.18301999999999999 1.5708</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
+								<translation>-0.0040000000000000001 -0.060999999999999999 0.012</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>x</quadrant>
 								<!--Default appearance for this Geometry-->
@@ -787,6 +787,34 @@
 								<radius>0.012</radius>
 								<!--The length of the cylinder.-->
 								<length>0.25</length>
+							</WrapCylinder>
+							<WrapCylinder name="brachiorad_radius">
+								<!--Whether or not the WrapObject is considered active in computing paths-->
+								<active>false</active>
+								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
+								<xyz_body_rotation>1.5700000000000001 0 1.5</xyz_body_rotation>
+								<!--Translation of the WrapObject.-->
+								<translation>0 -0.20000000000000001 0</translation>
+								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
+								<quadrant>y</quadrant>
+								<!--Default appearance for this Geometry-->
+								<Appearance>
+									<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+									<visible>true</visible>
+									<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+									<opacity>0.5</opacity>
+									<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+									<color>0 1 1</color>
+									<!--Visuals applied to surfaces associated with this Appearance.-->
+									<SurfaceProperties>
+										<!--The representation (1:Points, 2:Wire, 3:Shaded) used to display the object.-->
+										<representation>3</representation>
+									</SurfaceProperties>
+								</Appearance>
+								<!--The radius of the cylinder.-->
+								<radius>0.012</radius>
+								<!--The length of the cylinder.-->
+								<length>0.20000000000000001</length>
 							</WrapCylinder>
 							<WrapCylinder name="supinator">
 								<!--Whether or not the WrapObject is considered active in computing paths-->
@@ -3194,7 +3222,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.012102999999999999 0.016050999999999999 -0.014106</location>
+									<location>0.0040000000000000001 0.014 -0.017999999999999999</location>
 								</PathPoint>
 								<PathPoint name="bic_l-P3">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -3762,7 +3790,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/humerus_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>0.0048735000000000002 -0.21945000000000001 0.015624000000000001</location>
+									<location>0.0080000000000000002 -0.22 0.017000000000000001</location>
 								</PathPoint>
 								<PathPoint name="brachiorad_2-P2">
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
@@ -3772,6 +3800,15 @@
 								</PathPoint>
 							</objects>
 						</PathPointSet>
+						<!--The wrap objects that are associated with this path-->
+						<PathWrapSet>
+							<objects>
+								<PathWrap name="pathwrap">
+									<!--A WrapObject that this PathWrap interacts with.-->
+									<wrap_object>brachiorad_radius</wrap_object>
+								</PathWrap>
+							</objects>
+						</PathWrapSet>
 						<!--Default appearance attributes for this GeometryPath-->
 						<Appearance>
 							<!--Flag indicating whether the associated Geometry is visible or hidden.-->
