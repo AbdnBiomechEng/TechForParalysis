@@ -1,5 +1,5 @@
 function Result = das3elbow_optimize_pareto(out_filename)
-% This program finds pareto front of two cost functions: kinematic traking and muscle effort
+% This program finds pareto front of two cost functions: kinematic tracking and muscle effort
 % 
 % It uses das3_thor.osim, which includes DoFs at the thorax, but locks those to the input data
 % It also locks shoulder angles, and just optimises elbow flexion/extension
