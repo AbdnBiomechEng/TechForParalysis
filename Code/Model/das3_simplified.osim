@@ -820,9 +820,9 @@
 								<!--Whether or not the WrapObject is considered active in computing paths-->
 								<active>true</active>
 								<!--Body-fixed Euler angle sequence for the orientation of the WrapObject-->
-								<xyz_body_rotation>-1.6165 0.18301999999999999 1.5708</xyz_body_rotation>
+								<xyz_body_rotation>-1.6165000200271606 0.18301999568939209 1.5707999467849731</xyz_body_rotation>
 								<!--Translation of the WrapObject.-->
-								<translation>-0.014600999999999999 -0.11871 0.0078650999999999999</translation>
+								<translation>-8.0954135786386093e-05 -0.052976930514046963 0.004365957437999949</translation>
 								<!--The name of quadrant over which the wrap object is active. For example, '+x' or '-y' to set the sidedness of the wrapping.-->
 								<quadrant>-x</quadrant>
 								<!--Default appearance for this Geometry-->
@@ -840,9 +840,9 @@
 									</SurfaceProperties>
 								</Appearance>
 								<!--The radius of the cylinder.-->
-								<radius>0.0089999999999999993</radius>
+								<radius>0.0070000000000000001</radius>
 								<!--The length of the cylinder.-->
-								<length>0.20000000000000001</length>
+								<length>0.050000000000000003</length>
 							</WrapCylinder>
 							<WrapCylinder name="pron_teres">
 								<!--Whether or not the WrapObject is considered active in computing paths-->
@@ -3995,7 +3995,7 @@
 					<!--Optimal length of the muscle fibers-->
 					<optimal_fiber_length>0.0252</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.014999999999999999</tendon_slack_length>
+					<tendon_slack_length>0.0050000000000000001</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Parameter used in time constant of ramping up of muscle force-->
