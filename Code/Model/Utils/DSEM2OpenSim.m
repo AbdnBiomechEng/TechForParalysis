@@ -255,6 +255,16 @@ disp_str = [' Translation of cylinder "elbow_circ" on ulna: ' num2str(coords_loc
 disp(disp_str);
 fprintf(outfile,'%s\n\n',disp_str);
 
+z = flex_ext_axis_local';
+x = cross(z,[1;0;0]);
+y = cross(z,x);
+x = cross(y,z);
+R = [x,y,z];
+[angles(1), angles(2), angles(3)] = rotxyz(R);
+disp_str = [' Rotation of cylinder "elbow_circ" on ulna (aligned with flex/ext axis: ' num2str(angles)];
+disp(disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
+
 % CYLINDER  9 -0.1157  0.9547  0.2740  20.77 -51.88   3.88  0.70 27 16
 
 vec = [-0.1157; 0.9547; 0.2740];
@@ -300,23 +310,32 @@ fprintf(outfile,'%s\n\n',disp_str);
 
 % CYLINDER  5  0.0993  0.9003  0.4239  19.92 -35.32   5.79  0.92 28 19
 
-% vec = [0.0993;  0.9003; 0.4239];
-% v_local = Tradius*([vec;1]);
-% z = v_local(1:3)/norm(v_local(1:3));
-% x = cross(z,[1;0;0]);
-% y = cross(z,x);
-% x = cross(y,z);
-% R = [x,y,z];
-% [angles(1), angles(2), angles(3)] = rotxyz(R);
-% disp_str = [' Rotation of cylinder "bic_radius" on radius: ' num2str(angles)];
-% disp(disp_str);
-% fprintf(outfile,'%s\n',disp_str);
-% 
-% coords = [19.92 -35.32   5.79]'/100 - humcorr;
-% coords_loc = (Tradius*([coords;1]))';
-% disp_str = [' Translation of cylinder "bic_radius" on radius: ' num2str(coords_loc(1:3))];
-% disp(disp_str);
-% fprintf(outfile,'%s\n\n',disp_str);
+vec = [0.0993;  0.9003; 0.4239];
+v_local = Tradius*([vec;1]);
+z = v_local(1:3)/norm(v_local(1:3));
+
+z = pro_sup_axis_local';
+x = cross(z,[1;0;0]);
+y = cross(z,x);
+x = cross(y,z);
+R = [x,y,z];
+[angles(1), angles(2), angles(3)] = rotxyz(R);
+disp_str = [' Rotation of cylinder "bic_radius" on radius (aligned with pro/sup axis): ' num2str(angles)];
+disp(disp_str);
+fprintf(outfile,'%s\n',disp_str);
+
+
+coords = [19.92 -35.32   5.79]'/100 - humcorr;
+coords_loc = (Tradius*([coords;1]))';
+disp_str = [' Translation of cylinder "bic_radius" on radius: ' num2str(coords_loc(1:3))];
+disp(disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
+
+% Moved out slightly:
+coords_loc = [-0.004 -0.061 0.012];
+disp_str = [' Translation of cylinder "bic_radius" on radius (moved slightly): ' num2str(coords_loc(1:3))];
+disp(disp_str);
+fprintf(outfile,'%s\n\n',disp_str);
 
 % CYLINDER  8  0.0186  0.9767  0.2136  19.79 -43.87   3.87  0.90 28 19
 
@@ -351,3 +370,13 @@ disp(disp_str);
 fprintf(outfile,'%s\n',disp_str);
 
 fclose(outfile);
+
+% Pronator quadratus is too long...? (has moment arm that is too large)
+att1 = [-0.048 -0.213 -0.005];
+
+old_att2 = [-0.015615 -0.21256 0.0087301];
+new_att2 = [-0.03056 -0.207833 0.00728];
+new_att2 = [-0.03056 -0.2398 0.009728];
+
+old_length = sqrt(sum((att1 - old_att2).^2))
+new_length = sqrt(sum((att1 - new_att2).^2))
