@@ -6,10 +6,10 @@ function Result = das3elbow_optimize_pareto(out_filename)
 % and pronation/supination	
 
 % Which model to use
-OptSetup.model_file = 'model_struct_elbow.mat'; 
+OptSetup.model_file = 'simplified_model_struct.mat'; 
 
 % Input data
-OptSetup.t = [0;1];  % the time vector
+OptSetup.t = [0;0.5];  % the time vector
 OptSetup.data_init = zeros(2,8);
 
 % Thoracohumeral angles from 5 to 60 degrees of flexion
@@ -181,8 +181,9 @@ end
 % Read partial initial population from previous optimisation runs
 init_pop = load('init_pop_elbow_pareto');
 
-options = optimoptions('gamultiobj','ConstraintTolerance',0.1,'PopulationSize',200,...
-    'InitialPopulationMatrix',init_pop.init_pop);
+options = optimoptions('gamultiobj', 'ConstraintTolerance',0.1, 'PopulationSize',200,...
+    'InitialPopulationMatrix',init_pop.init_pop, 'ParetoFraction',0.5,...
+    'PlotFcn',{@gaplotpareto,@gaplotscores});
 
 fprintf('Running optimisation...\n');
 [Result.x,Result.fval,Result.exitflag,Result.output,Result.population,Result.scores] = gamultiobj(@objfun,nvar,[],[],[],[],L,U,@confun,options);
@@ -199,7 +200,7 @@ save([out_filename '.mat'],'Result');
 		f1 = mean(((X(iElbow)'-datavec(imeas_elbow))./datasd(imeas_elbow)).^2);
          
         % Second term is mean squared muscle activation
-        f2 = mean(X(iact).^2);
+        f2 = mean(X(iact).^4);
            
         f = [f1,f2];
                 

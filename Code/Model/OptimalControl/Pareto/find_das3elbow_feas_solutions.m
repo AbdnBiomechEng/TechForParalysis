@@ -14,10 +14,10 @@ function find_one_solution(out_filename)
 % This program finds a feasible arm position from a random initial guess, ignoring cost function
 
 % Which model to use
-OptSetup.model_file = 'model_struct_elbow.mat';
+OptSetup.model_file = 'simplified_model_struct.mat';
 
 % Input data
-OptSetup.t = [0;1];  % the time vector
+OptSetup.t = [0;0.5];  % the time vector
 OptSetup.data_init = zeros(2,8);
 
 % Thoracohumeral angles from 5 to 60 degrees of flexion
