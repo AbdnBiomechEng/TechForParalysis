@@ -251,11 +251,11 @@ elseif numel(strfind(initialguess, 'random')) > 0
     X0(imeas) = data_dofs;
     X0(idmeas) = data_dofs_deriv;
 elseif numel(strfind(initialguess, 'init')) > 0
-    eq_pos = load('init_pos'); % passive equilibrium position
+    eq_pos = load('equilibrium'); % equilibrium position
     X0 = zeros(nvar,1);
     ix = 1:nstates;
     for i_node=1:N
-        X0(ix) = eq_pos.x;
+        X0(ix) = eq_pos.Result.x;
         ix = ix + nvarpernode;
     end
 else

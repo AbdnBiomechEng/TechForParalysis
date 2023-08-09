@@ -28,9 +28,7 @@ data = readtable('input_data_abduction.csv');
 input_variables = {};
 
 % Choose which degrees of freedom to lock
-%lockeddofs = {'TH_x','TH_y','TH_z','SC_y'};
 lockeddofs = {'TH_x','TH_y','TH_z'};
-%lockeddofs = {};
 
 % Choose which model parameter file to use
 OptSetup.model = 'simplified_model_struct.mat';
@@ -41,7 +39,7 @@ OptSetup.start_at_rest = true;
 OptSetup.end_at_rest = true;
 
 % Set number of nodes
-maxnodes = 20;		% end close to this number of nodes
+maxnodes = 10;		% end close to this number of nodes
 nodes = 5;          % start with this number of nodes
 factor = 2;         % increase number of nodes by this factor
 
@@ -50,18 +48,18 @@ OptSetup.N = nodes;
 OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
 OptSetup.OptimTol = 1e-3;
 OptSetup.FeasTol = 1e-3;
-OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimize.m)
+OptSetup.initialguess = 'init';  % initial guess (see options in das3_optimize.m)
 
 % Cost function
 OptSetup.Wdata = 10;        % weight for the kinematic term in the cost function
 OptSetup.Weffort = 1;       % weight for the energy consumption term in the cost function
-%OptSetup.Wscap = 0.1;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
+OptSetup.Wscap = 0.1;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
 OptSetup.Whum = 0;        % weight for glenohumeral stability (if missing, assumed to be constraint)
 
 % Add muscle weakness due to injury
 OptSetup.max_act_table = readtable('max_act.csv');
 
-% Create folder for results, if it does not already exist
+% Folder for results (it will be created if it doesn't already exist)
 folder_name = 'abduction';
 % Filename
 filename = [folder_name '/out'];
