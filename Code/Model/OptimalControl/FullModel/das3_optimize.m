@@ -155,6 +155,9 @@ times = t1 + (0:N-1)'*(t2-t1)/(N-1);
 % and put into a long vector to save time when computing cost function
 datadofs_m = data(:,OptSetup.tracking_indata);
 datadofs = interp1(data.time,table2array(datadofs_m),times);
+
+Result.resampled_data = datadofs;
+
 datadofs_deriv = diff(datadofs)./diff(times);
 datadofs_deriv = [datadofs_deriv; datadofs_deriv(end,:)];
 
