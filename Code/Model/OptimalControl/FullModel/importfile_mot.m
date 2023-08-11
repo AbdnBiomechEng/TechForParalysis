@@ -78,20 +78,20 @@ raw(R) = {NaN}; % Replace non-numeric cells
 %% Create output variable
 data = table;
 data.time = cell2mat(raw(:, 1));
-data.VarName2 = cell2mat(raw(:, 2));
-data.VarName3 = cell2mat(raw(:, 3));
-data.VarName4 = cell2mat(raw(:, 4));
-data.VarName5 = cell2mat(raw(:, 5));
-data.VarName6 = cell2mat(raw(:, 6));
-data.VarName7 = cell2mat(raw(:, 7));
-data.VarName8 = cell2mat(raw(:, 8));
-data.VarName9 = cell2mat(raw(:, 9));
-data.VarName10 = cell2mat(raw(:, 10));
-data.VarName11 = cell2mat(raw(:, 11));
-data.VarName12 = cell2mat(raw(:, 12));
-data.VarName13 = cell2mat(raw(:, 13));
-data.VarName14 = cell2mat(raw(:, 14));
-data.VarName15 = cell2mat(raw(:, 15));
+data.VarName2 = cell2mat(raw(:, 2))*pi/180;
+data.VarName3 = cell2mat(raw(:, 3))*pi/180;
+data.VarName4 = cell2mat(raw(:, 4))*pi/180;
+data.VarName5 = cell2mat(raw(:, 5))*pi/180;
+data.VarName6 = cell2mat(raw(:, 6))*pi/180;
+data.VarName7 = cell2mat(raw(:, 7))*pi/180;
+data.VarName8 = cell2mat(raw(:, 8))*pi/180;
+data.VarName9 = cell2mat(raw(:, 9))*pi/180;
+data.VarName10 = cell2mat(raw(:, 10))*pi/180;
+data.VarName11 = cell2mat(raw(:, 11))*pi/180;
+data.VarName12 = cell2mat(raw(:, 12))*pi/180;
+data.VarName13 = cell2mat(raw(:, 13))*pi/180;
+data.VarName14 = cell2mat(raw(:, 14))*pi/180;
+data.VarName15 = cell2mat(raw(:, 15))*pi/180;
 
 data.Properties.VariableNames = ['time',dofnames];
 
