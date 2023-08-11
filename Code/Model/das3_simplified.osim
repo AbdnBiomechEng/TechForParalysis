@@ -2663,6 +2663,61 @@
 						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
 					</SimmSpline>
 				</Schutte1993Muscle_Deprecated>
+				<Schutte1993Muscle_Deprecated name="serr_ant_5">
+					<!--The set of points defining the path of the actuator.-->
+					<GeometryPath name="geometrypath">
+						<!--The set of points defining the path-->
+						<PathPointSet>
+							<objects>
+								<PathPoint name="serr_ant_5-P1">
+									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
+									<socket_parent_frame>/bodyset/scapula_r</socket_parent_frame>
+									<!--The fixed location of the path point expressed in its parent frame.-->
+									<location>-0.11727 -0.099680000000000005 0.0031800000000000001</location>
+								</PathPoint>
+								<PathPoint name="serr_ant_5-P2">
+									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
+									<socket_parent_frame>/bodyset/thorax</socket_parent_frame>
+									<!--The fixed location of the path point expressed in its parent frame.-->
+									<location>0.11940000000000001 -0.085900000000000004 0.0041000000000000003</location>
+								</PathPoint>
+							</objects>
+						</PathPointSet>
+						<!--The wrap objects that are associated with this path-->
+						<PathWrapSet>
+							<objects>
+								<PathWrap name="pathwrap">
+									<!--A WrapObject that this PathWrap interacts with.-->
+									<wrap_object>serr_ant</wrap_object>
+									<!--The wrapping method used to solve the path around the wrap object.-->
+									<method>hybrid</method>
+								</PathWrap>
+							</objects>
+						</PathWrapSet>
+						<!--Default appearance attributes for this GeometryPath-->
+						<Appearance>
+							<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+							<color>0.80000000000000004 0.10000000000000001 0.10000000000000001</color>
+						</Appearance>
+					</GeometryPath>
+					<!--Maximum isometric force that the fibers can generate-->
+					<max_isometric_force>64</max_isometric_force>
+					<!--Optimal length of the muscle fibers-->
+					<optimal_fiber_length>0.12590000000000001</optimal_fiber_length>
+					<!--Resting length of the tendon-->
+					<tendon_slack_length>0.010999999999999999</tendon_slack_length>
+					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
+					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
+					<!--Parameter used in time constant of ramping up of muscle force-->
+					<activation1>25.902740000000001</activation1>
+					<!--Parameter used in time constant of ramping up and ramping down of muscle force-->
+					<activation2>11.976050000000001</activation2>
+					<!--Function representing passive force-length behavior of muscle fibers-->
+					<SimmSpline name="passive_force_length_curve">
+						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
+						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
+					</SimmSpline>
+				</Schutte1993Muscle_Deprecated>				
 				<Schutte1993Muscle_Deprecated name="serr_ant_8">
 					<!--The set of points defining the path of the actuator.-->
 					<GeometryPath name="geometrypath">
