@@ -75,7 +75,7 @@ L = [xlim(1:ndof,1);         % q
 U = [xlim(1:ndof,2);         % q
     zeros(ndof,1);           % qdot
     zeros(nmus,1) + 1.8;     % Lce
-    0.3*ones(nmus,1)];       % active states
+    1.0*ones(nmus,1)];       % active states
 
 L(lockeddofs) = lockeddofvalues;
 U(lockeddofs) = lockeddofvalues;
