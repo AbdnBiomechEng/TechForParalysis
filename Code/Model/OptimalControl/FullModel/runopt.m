@@ -19,7 +19,9 @@ hand_forces = {'hand_force_x','hand_force_y','hand_force_z'};
 %% Read in data and set optimisation parameters
 % It should contain "time" and some of the variables above
 %data = readtable('input_data_dsem0.csv');
-data = readtable('input_data_abduction.csv');
+%data = readtable('input_data_abduction.csv');
+data = importfile_mot('kinematic_inputs/ND20122_ik.mot',dofnames);
+data = data(100:250,:); % choose only first arm elevation
 
 % Choose which columns to use (time, locked and tracking angles, and hand
 % forces if applicable)
@@ -48,7 +50,7 @@ OptSetup.N = nodes;
 OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
 OptSetup.OptimTol = 1e-3;
 OptSetup.FeasTol = 1e-3;
-OptSetup.initialguess = 'init';  % initial guess (see options in das3_optimize.m)
+OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimize.m)
 
 % Cost function
 OptSetup.Wdata = 10;        % weight for the kinematic term in the cost function
@@ -60,7 +62,7 @@ OptSetup.Whum = 0;        % weight for glenohumeral stability (if missing, assum
 OptSetup.max_act_table = readtable('max_act.csv');
 
 % Folder for results (it will be created if it doesn't already exist)
-folder_name = 'abduction';
+folder_name = 'ND20122';
 % Filename
 filename = [folder_name '/out'];
 
