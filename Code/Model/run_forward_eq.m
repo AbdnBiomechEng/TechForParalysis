@@ -19,7 +19,7 @@ nstates_ix = length(ix);  % number of states in the reduced-dof system
 
 % set simulation parameters
 t = 0;
-tend = 3;
+tend = 2;
 tstep = .001;
 nsteps = round((tend-t)/tstep);
 
@@ -32,6 +32,13 @@ tout(1) = t;
 x_eq = load('equilibrium');
 x = x_eq.Result.x;
 u = x_eq.Result.u;
+
+% Selectively change some muscle activations
+
+%u(1:3) = 0.2; % traps
+%u(7:9) = 0.2; % Serr ant
+%u(10:12) = 0.4; % Delts
+u(29) = 0.2; % brd
 
 % run simulation
 xout(1,:) = x';
@@ -79,5 +86,5 @@ fprintf('CPU time per time step: %8.3f ms\n', 1000*simtime/nsteps);
 fprintf('Simulation speed is %8.3f times real time\n',tend/simtime);
     
 dofnames = {'TH_x','TH_y','TH_z','SC_y','SC_z','SC_x','AC_y','AC_z','AC_x','GH_y','GH_z','GH_yy','EL_x','PS_y'};
-make_osimm('equilibrium_forward',dofnames,xout(:,1:ndof));
+make_osimm('equilibrium_forward',dofnames,xout(:,1:ndof),tout);
 
