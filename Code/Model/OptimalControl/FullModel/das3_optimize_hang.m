@@ -278,12 +278,18 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 % objective function
     function f = objfun(X)
         
-        % First term is mean squared muscle activation and force
-        Fmus = das3('Muscleforces', X);
-        wf1 = mean(X(iact).^2) + mean(Fmus.^2);
+%         % First term is mean squared muscle activation and force
+%         Fmus = das3('Muscleforces', X);
+%         wf1 = mean(X(iact).^2) + mean(Fmus.^2);
+%         f1 = Weffort * wf1;
+%         f = f1;
+
+        % First term is mean squared muscle activation multiplied by max
+        % force
+        wf1 = mean((X(iact).^2).*fmax);
         f1 = Weffort * wf1;
         f = f1;
-
+        
         if Wscap
             % Second term is thorax-scapula constraint
             Fscap = das3('Scapulacontact', X);
@@ -324,18 +330,22 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 
         g = zeros(nvar,1);
         
-        % First term is mean squared muscle activation and force
-        g(iact) = g(iact) + 2*Weffort*(X(iact))/nmus;
-        
-        Fmus = das3('Muscleforces',X);
-        for istate = 1:nvar
-            xisave = X(istate);
-            X(istate) = X(istate) + dx;
-            Fmus_dx = das3('Muscleforces', X);
-            dFmus = (Fmus_dx-Fmus)/dx;
-            g(istate) = g(istate) + 2*Weffort*sum(Fmus.*dFmus)/nmus;
-            X(istate) = xisave;
-        end
+%         % First term is mean squared muscle activation and force
+%         g(iact) = g(iact) + 2*Weffort*(X(iact))/nmus;
+%         
+%         Fmus = das3('Muscleforces',X);
+%         for istate = 1:nvar
+%             xisave = X(istate);
+%             X(istate) = X(istate) + dx;
+%             Fmus_dx = das3('Muscleforces', X);
+%             dFmus = (Fmus_dx-Fmus)/dx;
+%             g(istate) = g(istate) + 2*Weffort*sum(Fmus.*dFmus)/nmus;
+%             X(istate) = xisave;
+%         end
+
+        % First term is mean squared muscle activation multiplied by max
+        % force
+        g(iact) = g(iact) + 2*Weffort*fmax.*(X(iact))/nmus;
 
         if Wscap
             % Second is the scapula term
