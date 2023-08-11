@@ -4,6 +4,8 @@
 res_eq = load('equilibrium.mat');
 model = res_eq.Result.model;
 
+das3('Initialize',model);
+
 nmus = model.nMus;
 ndof = model.nDofs;
 
@@ -37,7 +39,11 @@ angles_eq = res_eq.Result.x(1:ndof)*180/pi;
 
 SEE_elong = res_eq.Result.mus_lengths - res_eq.Result.x(2*ndof+(1:nmus)).*LCEopt - SEEslack;
 
-figure; subplot(4,1,1); plot(act_eq); 
+moments = das3('Jointmoments', res_eq.Result.x);
+momentarms = das3('Momentarms', res_eq.Result.x);
+
+figure; 
+subplot(4,1,1); plot(act_eq); 
 xticks(1:nmus); xticklabels(musclenames); xtickangle(45); title('Muscle activations');
 subplot(4,1,2); plot(lce_eq); hold on; plot(PEEslack,'o');
 xticks(1:nmus); xticklabels(musclenames); xtickangle(45); title('Normalised fibre lengths');
@@ -46,11 +52,32 @@ xticks(1:nmus); xticklabels(musclenames); xtickangle(45); title('Muscle forces (
 subplot(4,1,4); plot(angles_eq,'o'); 
 xticks(1:ndof); xticklabels(dofnames); xtickangle(45); title('Angles (degrees)');
 
+figure; % plot moments for clavicular and scapular dofs
+for idof=4:9
+    subplot(6,1,idof-3);
+    momarms_dof = full(momentarms(:,idof));
+    moments_dof = momarms_dof.*fmus_eq;
+    bar(moments_dof);
+    xticks(1:nmus); xticklabels(musclenames); xtickangle(45);
+    title(dofnames{idof});
+    ylabel('Moment (Nm)');
+end
 
-fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)\n');
-fprintf('--------------- --------------  ---------------------   --------------\n');
+figure; % plot moments for humeral and forearm dofs
+for idof=10:14
+    subplot(5,1,idof-9);
+    momarms_dof = full(momentarms(:,idof));
+    moments_dof = momarms_dof.*fmus_eq;
+    bar(moments_dof);
+    xticks(1:nmus); xticklabels(musclenames); xtickangle(45);
+    title(dofnames{idof});
+    ylabel('Moment (Nm)');
+end
+
+fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)   moment(Nm)  \n');
+fprintf('--------------- --------------  ---------------------   -------------- --------------\n');
 for i=1:ndof
-    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f\n',dofnames{i}, angles_eq(i), 180/pi*range(i,1), 180/pi*range(i,2), 180/pi*res_eq.Result.x(ndof+i));
+    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f\n',dofnames{i}, angles_eq(i), 180/pi*range(i,1), 180/pi*range(i,2), 180/pi*res_eq.Result.x(ndof+i), moments(i));
 end
 
 
