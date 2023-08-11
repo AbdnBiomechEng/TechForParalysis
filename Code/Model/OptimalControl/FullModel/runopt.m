@@ -50,12 +50,12 @@ OptSetup.N = nodes;
 OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
 OptSetup.OptimTol = 1e-3;
 OptSetup.FeasTol = 1e-3;
-OptSetup.initialguess = 'random';  % initial guess (see options in das3_optimize.m)
+OptSetup.initialguess = 'init';  % initial guess (see options in das3_optimize.m)
 
 % Cost function
-OptSetup.Wdata = 10;        % weight for the kinematic term in the cost function
+OptSetup.Wdata = 100;        % weight for the kinematic term in the cost function
 OptSetup.Weffort = 1;       % weight for the energy consumption term in the cost function
-OptSetup.Wscap = 0.1;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
+OptSetup.Wscap = 0;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
 OptSetup.Whum = 0;        % weight for glenohumeral stability (if missing, assumed to be constraint)
 
 % Add muscle weakness due to injury
