@@ -38,7 +38,7 @@ u = x_eq.Result.u;
 %u(1:3) = 0.2; % traps
 %u(7:9) = 0.2; % Serr ant
 %u(10:12) = 0.4; % Delts
-u(29) = 0.2; % brd
+%u(29) = 0.2; % brd
 
 % run simulation
 xout(1,:) = x';
@@ -87,4 +87,5 @@ fprintf('Simulation speed is %8.3f times real time\n',tend/simtime);
     
 dofnames = {'TH_x','TH_y','TH_z','SC_y','SC_z','SC_x','AC_y','AC_z','AC_x','GH_y','GH_z','GH_yy','EL_x','PS_y'};
 make_osimm('equilibrium_forward',dofnames,xout(:,1:ndof),tout);
+save equilibrium_forward.mat xout
 
