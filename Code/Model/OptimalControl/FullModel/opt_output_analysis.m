@@ -68,30 +68,51 @@ dcm = datacursormode(fh1);
 set(dcm,'UpdateFcn',@customdatatip)
 
 %% Plot angles (two different plots for input and output angles)
-figure;
-subplot(5,1,1); plot(time,res_sim.Result.thor_hum*180/pi,'o-') % thoraco-humeral angles
-ylabel('angles (degrees)'); legend('plane of elevation','angle of elevation','axial rotation');
-title('Optimisation output angles');
-subplot(5,1,2); plot(time,res_sim.Result.x(4:6,:)*180/pi,'o-') % sc joint
-ylabel('angles (degrees)'); legend('SC protraction','SC elevation','SC rotation');
-subplot(5,1,3); plot(time,res_sim.Result.x(7:9,:)*180/pi,'o-') % ac joint
-ylabel('angles (degrees)'); legend('AC protraction','AC elevation','AC rotation');
-subplot(5,1,4); plot(time,res_sim.Result.x(10:12,:)*180/pi,'o-') % gh joint
-ylabel('angles (degrees)'); legend('GH plane','GH elevation','GH rotation');
-subplot(5,1,5); plot(time,res_sim.Result.x(13:14,:)*180/pi,'o-') % elbow
-ylabel('angles (degrees)'); xlabel('time (s)'); legend('flexion', 'supination');
-
+% figure;
+% subplot(5,1,1); plot(time,res_sim.Result.thor_hum*180/pi,'o-') % thoraco-humeral angles
+% ylabel('angles (degrees)'); legend('plane of elevation','angle of elevation','axial rotation');
+% title('Optimisation output angles');
+% subplot(5,1,2); plot(time,res_sim.Result.x(4:6,:)*180/pi,'o-') % sc joint
+% ylabel('angles (degrees)'); legend('SC protraction','SC elevation','SC rotation');
+% subplot(5,1,3); plot(time,res_sim.Result.x(7:9,:)*180/pi,'o-') % ac joint
+% ylabel('angles (degrees)'); legend('AC protraction','AC elevation','AC rotation');
+% subplot(5,1,4); plot(time,res_sim.Result.x(10:12,:)*180/pi,'o-') % gh joint
+% ylabel('angles (degrees)'); legend('GH plane','GH elevation','GH rotation');
+% subplot(5,1,5); plot(time,res_sim.Result.x(13:14,:)*180/pi,'o-') % elbow
+% ylabel('angles (degrees)'); xlabel('time (s)'); legend('flexion', 'supination');
+% 
 input_angles = res_sim.Result.resampled_data';
-figure;
-subplot(4,1,1); plot(time,input_angles(1:3,:)*180/pi,'o-') % sc joint
-ylabel('angles (degrees)'); legend('SC protraction','SC elevation','SC rotation');
-title('Optimisation input angles');
-subplot(4,1,2); plot(time,input_angles(4:6,:)*180/pi,'o-') % ac joint
-ylabel('angles (degrees)'); legend('AC protraction','AC elevation','AC rotation');
-subplot(4,1,3); plot(time,input_angles(7:9,:)*180/pi,'o-') % gh joint
-ylabel('angles (degrees)'); legend('GH plane','GH elevation','GH rotation');
-subplot(4,1,4); plot(time,input_angles(10:11,:)*180/pi,'o-') % elbow
-ylabel('angles (degrees)'); xlabel('time (s)'); legend('flexion', 'supination');
+% figure;
+% subplot(4,1,1); plot(time,input_angles(1:3,:)*180/pi,'o-') % sc joint
+% ylabel('angles (degrees)'); legend('SC protraction','SC elevation','SC rotation');
+% title('Optimisation input angles');
+% subplot(4,1,2); plot(time,input_angles(4:6,:)*180/pi,'o-') % ac joint
+% ylabel('angles (degrees)'); legend('AC protraction','AC elevation','AC rotation');
+% subplot(4,1,3); plot(time,input_angles(7:9,:)*180/pi,'o-') % gh joint
+% ylabel('angles (degrees)'); legend('GH plane','GH elevation','GH rotation');
+% subplot(4,1,4); plot(time,input_angles(10:11,:)*180/pi,'o-') % elbow
+% ylabel('angles (degrees)'); xlabel('time (s)'); legend('flexion', 'supination');
+
+%% Compare shoulder angles on same plot
+fig = figure; colororder(fig,[0.8 0 0.5; 0 0.6 0; 0 0 0.6]);
+subplot(4,1,1);
+    plot(time,input_angles(1:3,:)*180/pi,'o-'); hold on; % sc joint
+    plot(time,res_sim.Result.x(4:6,:)*180/pi,'x--');
+    ylabel('angles (degrees)'); legend('SC protraction','SC elevation','SC rotation');
+subplot(4,1,2);
+    plot(time,input_angles(4:6,:)*180/pi,'o-'); hold on % ac joint
+    plot(time,res_sim.Result.x(7:9,:)*180/pi,'x--');
+    ylabel('angles (degrees)'); legend('AC protraction','AC elevation','AC rotation');
+subplot(4,1,3);
+    plot(time,input_angles(7:9,:)*180/pi,'o-'); hold on; %gh joint
+    plot(time,res_sim.Result.x(10:12,:)*180/pi,'x--');
+    ylabel('angles (degrees)'); legend('GH plane','GH elevation','GH rotation');
+    
+fig = figure; colororder(fig,[0.8 0 0.5; 0 0 0.6]);
+    plot(time,input_angles(10:11,:)*180/pi,'o-'); hold on % elbow
+    plot(time,res_sim.Result.x(13:14,:)*180/pi,'x--')
+    ylabel('angles (degrees)'); legend('flexion', 'supination');
+    xlabel('time (s)');
 
 %% Plot muscle moments
 fh2 = figure;
