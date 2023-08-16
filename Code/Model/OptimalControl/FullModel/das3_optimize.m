@@ -259,6 +259,7 @@ elseif numel(strfind(initialguess, 'init')) > 0
     ix = 1:nstates;
     for i_node=1:N
         X0(ix) = eq_pos.Result.x;
+        X0(ix(end)+(1:nmus)) = X0(ix(2*ndof+nmus+(1:nmus))); % excitations equal activations
         ix = ix + nvarpernode;
     end
 else
