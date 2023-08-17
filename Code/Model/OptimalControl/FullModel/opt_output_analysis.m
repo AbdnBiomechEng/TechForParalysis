@@ -95,15 +95,15 @@ input_angles = res_sim.Result.resampled_data';
 
 %% Compare shoulder angles on same plot
 fig = figure; colororder(fig,[0.8 0 0.5; 0 0.6 0; 0 0 0.6]);
-subplot(4,1,1);
+subplot(3,1,1);
     plot(time,input_angles(1:3,:)*180/pi,'o-'); hold on; % sc joint
     plot(time,res_sim.Result.x(4:6,:)*180/pi,'x--');
     ylabel('angles (degrees)'); legend('SC protraction','SC elevation','SC rotation');
-subplot(4,1,2);
+subplot(3,1,2);
     plot(time,input_angles(4:6,:)*180/pi,'o-'); hold on % ac joint
     plot(time,res_sim.Result.x(7:9,:)*180/pi,'x--');
     ylabel('angles (degrees)'); legend('AC protraction','AC elevation','AC rotation');
-subplot(4,1,3);
+subplot(3,1,3);
     plot(time,input_angles(7:9,:)*180/pi,'o-'); hold on; %gh joint
     plot(time,res_sim.Result.x(10:12,:)*180/pi,'x--');
     ylabel('angles (degrees)'); legend('GH plane','GH elevation','GH rotation');
