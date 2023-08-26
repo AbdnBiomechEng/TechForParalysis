@@ -44,7 +44,7 @@ SEE_elong = zeros(nmus,N);
 moments = zeros(ndof,N);
 momentarms = zeros(nmus,ndof,N);
 for inode = 1:N
-    SEE_elong(:,inode) = res_sim.Result.mus_lengths(:,inode) - res_sim.Result.x(2*ndof+(1:nmus),inode).*LCEopt - SEEslack;
+    SEE_elong(:,inode) = (res_sim.Result.mus_lengths(:,inode) - res_sim.Result.x(2*ndof+(1:nmus),inode).*LCEopt - SEEslack)./SEEslack;
     moments(:,inode) = das3('Jointmoments', res_sim.Result.x(:,inode));
     momentarms(:,:,inode) = full(das3('Momentarms', res_sim.Result.x(:,inode)));
 end
@@ -58,7 +58,7 @@ subplot(4,1,2); plot(time,lce_sim','o-');
 title('Normalised fibre lengths');
 legend(musclenames); legend off
 subplot(4,1,3); plot(time,SEE_elong','o-');
-title('SEE elongation');
+title('Normalised SEE elongation');
 legend(musclenames); legend off
 subplot(4,1,4); plot(time,fmus_sim','o-'); 
 title('Muscle forces (N)'); xlabel('time (s)');
