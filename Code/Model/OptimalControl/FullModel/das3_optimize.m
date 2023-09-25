@@ -180,10 +180,17 @@ data_dofs_deriv = reshape(datadofs_deriv', [], 1);
 
 % define the estimated uncertainty in each measured variable (in radians)
 ntrackdofs = length(OptSetup.tracking_indata);
-data_dofs_sd =[1 1 1000 1 1 1 1 1 1 1 1]';          % for one node (set to higher number to only track start and end of movement)
-data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
-% data_dofs_sd(1:ntrackdofs) = 1;
-% data_dofs_sd(ntrackdofs*(N-1)+1:end) = 1;
+if ntrackdofs == 11
+    data_dofs_sd =100*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
+    data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
+    data_dofs_sd(1:ntrackdofs) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track start of movement better
+    data_dofs_sd(ntrackdofs*(N-1)+1:end) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track end of movement better
+else
+    data_dofs_sd =100*ones(ntrackdofs,1);     % for one node 
+    data_dofs_sd = repmat(data_dofs_sd,N,1); % replicate for all nodes
+    data_dofs_sd(1:ntrackdofs) = ones(ntrackdofs,1); % set to lower number to track start of movement better
+    data_dofs_sd(ntrackdofs*(N-1)+1:end) = ones(ntrackdofs,1); % set to lower number to track end of movement better
+end
 
 % Do the same for thoraco-humeral angles, if they were provided
 if isempty(OptSetup.thorhum_indata)
@@ -197,7 +204,7 @@ else
     data_thorhum = reshape(datathorhum', [], 1);
     
     % define the estimated uncertainty in each measured variable (in radians)
-    data_thorhum_sd = 1*ones(length(OptSetup.thorhum_indata),1);    % for one node (set to higher number to only track start and end of movement)
+    data_thorhum_sd = 100*ones(length(OptSetup.thorhum_indata),1);    % for one node (set to higher number to only track start and end of movement)
     data_thorhum_sd = repmat(data_thorhum_sd,N,1);		% replicate for all nodes
     data_thorhum_sd(1:length(OptSetup.thorhum_indata))=1;
     data_thorhum_sd(length(OptSetup.thorhum_indata)*(N-1)+1:end)=1;
