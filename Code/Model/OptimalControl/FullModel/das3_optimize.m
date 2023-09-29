@@ -141,6 +141,11 @@ for i_node = 0:N-1
 
 end
 
+% set initial position
+init_pos = load('init_reach.mat');
+L(1:14) = init_pos.angles_init-0.0873;
+U(1:14) = init_pos.angles_init+0.0873;
+
 % Should angular velocities be zero at the start and end of movement?
 if OptSetup.start_at_rest
     % First node
@@ -181,12 +186,12 @@ data_dofs_deriv = reshape(datadofs_deriv', [], 1);
 % define the estimated uncertainty in each measured variable (in radians)
 ntrackdofs = length(OptSetup.tracking_indata);
 if ntrackdofs == 11
-    data_dofs_sd =100*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
+    data_dofs_sd =1*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
     data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
     data_dofs_sd(1:ntrackdofs) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track start of movement better
     data_dofs_sd(ntrackdofs*(N-1)+1:end) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track end of movement better
 else
-    data_dofs_sd =100*ones(ntrackdofs,1);     % for one node 
+    data_dofs_sd =1*ones(ntrackdofs,1);     % for one node 
     data_dofs_sd = repmat(data_dofs_sd,N,1); % replicate for all nodes
     data_dofs_sd(1:ntrackdofs) = ones(ntrackdofs,1); % set to lower number to track start of movement better
     data_dofs_sd(ntrackdofs*(N-1)+1:end) = ones(ntrackdofs,1); % set to lower number to track end of movement better
@@ -204,7 +209,7 @@ else
     data_thorhum = reshape(datathorhum', [], 1);
     
     % define the estimated uncertainty in each measured variable (in radians)
-    data_thorhum_sd = 100*ones(length(OptSetup.thorhum_indata),1);    % for one node (set to higher number to only track start and end of movement)
+    data_thorhum_sd = 1*ones(length(OptSetup.thorhum_indata),1);    % for one node (set to higher number to only track start and end of movement)
     data_thorhum_sd = repmat(data_thorhum_sd,N,1);		% replicate for all nodes
     data_thorhum_sd(1:length(OptSetup.thorhum_indata))=1;
     data_thorhum_sd(length(OptSetup.thorhum_indata)*(N-1)+1:end)=1;
