@@ -144,10 +144,12 @@ for i_node = 0:N-1
 
 end
 
-% set initial position
+% set initial and final position
 init_pos = load('init_reach.mat');
 L(1:14) = init_pos.angles_init-0.0873;
 U(1:14) = init_pos.angles_init+0.0873;
+L((N-1)*nvarpernode+(1:14)) = init_pos.angles_init-0.0873;
+U((N-1)*nvarpernode+(1:14)) = init_pos.angles_init+0.0873;
 
 % Should angular velocities be zero at the start and end of movement?
 if OptSetup.start_at_rest
