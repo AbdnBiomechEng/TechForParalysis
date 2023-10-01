@@ -98,6 +98,9 @@ das3('Initialize',model);
 % Range of motion limits
 xlims = das3('Limits')';
 
+% Approximate hand position
+local_hand_coord = model.joints{13}.location';
+
 % maximum activations/excitations (to simulate injury)
 if isfield(OptSetup, 'max_act_table')
     % make sure the muscles are in the correct order
@@ -214,6 +217,23 @@ else
     data_thorhum_sd(1:length(OptSetup.thorhum_indata))=1;
     data_thorhum_sd(length(OptSetup.thorhum_indata)*(N-1)+1:end)=1;
 end
+
+% Do the same for hand position, if provided
+if isempty(OptSetup.handpos_indata)
+    handpos_flag = 0;
+else
+    handpos_flag = 1;
+    datahandpos_m = data(:,OptSetup.handpos_indata);
+    datahandpos = interp1(data.time,table2array(datahandpos_m),times);
+    data_handpos = reshape(datahandpos', [], 1);
+    
+    % define the estimated uncertainty in each measured variable (in radians)
+    data_handpos_sd = 1*ones(length(OptSetup.handpos_indata),1);    % for one node (set to higher number to only track start and end of movement)
+    data_handpos_sd = repmat(data_handpos_sd,N,1);		% replicate for all nodes
+    data_handpos_sd(1:length(OptSetup.handpos_indata))=1;
+    data_handpos_sd(length(OptSetup.handpos_indata)*(N-1)+1:end)=1;
+end
+
 
 % precompute the indices for activations and some angles, so we can compute cost function quickly
 iact = zeros(1,N*nmus);
@@ -462,6 +482,7 @@ angles = x(1:ndof,:);
 Result.mus_lengths = zeros(size(Result.u));
 Result.mus_forces = zeros(size(Result.u));
 Result.thor_hum = zeros(3,N);
+Result.hand_pos = zeros(3,N);
 Result.Fscap = zeros(2,N);
 Result.FGHcontact = zeros(1,N);
 
@@ -470,6 +491,7 @@ for i_node=1:Result.OptSetup.N
     Result.mus_forces(:,i_node) = das3('Muscleforces', Result.x(:,i_node));
     [~, ~, ~, ~, ~, ~, Result.thor_hum(:,i_node)] = das3('Dynamics', Result.x(:,i_node), 0*Result.x(:,i_node),zeros(nmus,1));
     Result.Fscap(:,i_node) = das3('Scapulacontact', Result.x(:,i_node))';
+    Result.hand_pos(:,i_node) = das3_handpos(Result.x(:,i_node),local_hand_coord);
 end
 
 ixs = 1:nstates;
@@ -531,8 +553,20 @@ make_osimm(filename,dofnames,angles,times);
             end
             wf1 = wf1 + mean(((thorhum-data_thorhum)./data_thorhum_sd).^2);
         end
-        f1 = Wdata * wf1;
         
+        % If required, calculate hand position
+        if handpos_flag
+            handpos = zeros(3*N,1);
+            
+            ixs = 1:nstates;
+            for inode=1:N
+                handpos((inode-1)*3+(1:3)) = das3_handpos(X(ixs),local_hand_coord);
+                ixs = ixs + nvarpernode;
+            end
+            wf1 = wf1 + mean(((handpos-data_handpos)./data_handpos_sd).^2);
+        end
+        f1 = Wdata * wf1;
+
         % Second term is mean squared muscle activation and force        
         wf2 = mean(X(iact).^2);
 %         ixs = 1:nstates;
@@ -686,6 +720,30 @@ make_osimm(filename,dofnames,angles,times);
                 ithorhum = ithorhum + nthorhum;
             end
         end
+ 
+         % If required, calculate hand position term derivatives
+        if handpos_flag
+            ixs = 1:nstates;
+            ihandpos = 1:3;
+            for inode=1:N
+                handpos = das3_handpos(X(ixs),local_hand_coord);
+                
+                % thoraco-humeral angles only depend on dofs 1-14
+                for istate = 1:14
+                    xisave = X(ixs(istate));
+                    X(ixs(istate)) = X(ixs(istate)) + dx;
+                    
+                    handpos_dx = das3_handpos(X(ixs),local_hand_coord);
+                    dhandpos = (handpos_dx-handpos)/dx;
+                    g(ixs(istate)) = g(ixs(istate)) + ...
+                        sum(((2*Wdata*(handpos-data_handpos(ihandpos)))./data_handpos_sd(ihandpos).^2).*dhandpos/(N*3));
+                    X(ixs(istate)) = xisave;
+                end
+                ixs = ixs + nvarpernode;
+                ihandpos = ihandpos + 3;
+            end
+        end
+       
         
         % Second term is mean squared muscle activation and force
 %         ixs = 1:nstates;
@@ -1083,5 +1141,18 @@ make_osimm(filename,dofnames,angles,times);
         end
         FGHcontact = (thetar/atheta)^2 + (phir/aphi)^2;
     end
+
+% Function to calculate location of hand in global coordinate frame
+    function handpos = das3_handpos(x,local_hand_coord)
+
+        % get the 3D bone position and orientation 
+        d = das3('Visualization',x);
+        hand_coord = d(13,1:3)';		% position vector of hand
+        R = reshape(d(13,4:12),3,3)';	% orientation matrix
+
+        % transform to global coordinates
+        handpos = hand_coord + R*local_hand_coord;
+    end
+
 
 end % end of function das3_optimize
