@@ -261,10 +261,23 @@ for i_node=0:N-1
 end
 
 % Locked dofs stay at measured values, and have zero velocity
-U(ilocked_dof) = repmat(table2array(data(1,OptSetup.lockeddof_indata)),1,N);
-L(ilocked_dof) = repmat(table2array(data(1,OptSetup.lockeddof_indata)),1,N);
-U(ilocked_ddof) = zeros(N*nlockeddofs,1);
-L(ilocked_ddof) = zeros(N*nlockeddofs,1);
+
+datalockeddofs_m = data(:,OptSetup.lockeddof_indata);
+datalockeddofs = interp1(data.time,table2array(datalockeddofs_m),times);
+
+Result.resampled_lockeddata = datalockeddofs;
+
+datalockeddofs_deriv = diff(datalockeddofs)./diff(times);
+datalockeddofs_deriv = [datalockeddofs_deriv; datalockeddofs_deriv(end,:)];
+
+% convert into a single column
+data_lockeddofs = reshape(datalockeddofs', [], 1);
+data_lockeddofs_deriv = reshape(datalockeddofs_deriv', [], 1);
+
+U(ilocked_dof) = data_lockeddofs;
+L(ilocked_dof) = data_lockeddofs;
+U(ilocked_ddof) = data_lockeddofs_deriv;
+L(ilocked_ddof) = data_lockeddofs_deriv;
 
 % Precompute the indices for muscles that cross GH
 iGH = [];
