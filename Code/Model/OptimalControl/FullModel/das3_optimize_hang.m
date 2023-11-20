@@ -1,9 +1,6 @@
 function Result = das3_optimize_hang(initialguess,out_filename)
 % This program optimizes das3 position to hang with minimum activation
 % To find position near DSEM initial, we constrain the range for the DOFs
-%
-% The cost function includes both activations and forces
-% We do not include scapular and glenohumeral stability
 
 tic;
 
@@ -14,10 +11,10 @@ OptimalityTolerance = 1e-3;
 FeasibilityTolerance = 1e-3;
 
 Weffort = 1;        % weight for the energy consumption term in the cost function
-Wscap = 0;          % weight for scapulo-thoracic gliding plane 
-Whum = 0;           % weight for glenohumeral stability 
+Wscap = 0.1;        % weight for scapulo-thoracic gliding plane 
+Whum = 0.01;        % weight for glenohumeral stability 
 
-modelparams = load('simplified_model_struct.mat'); 
+modelparams = load('full_model.mat'); 
 model = modelparams.model;
 
 % Initialize the model
@@ -64,7 +61,7 @@ xlim = das3('Limits')';
 %   joint angles 	xlim
 %   angular velocities 0
 %   CE lengths		0.2 to 1.8
-%	active states	0 to 0.3
+%	active states	0 to 1
 %   normalised SEE elongation: from -inf to 0.06 -> max force is
 %   ~2.25 times the maximum isometric force
 
@@ -94,7 +91,7 @@ U(4:9) = [-0.3802;0.11;0;0.808;0.0855;-0.0206]+3*0.0873;
 
 % Constrain the humerus and elbow so it's hanging low and extended
 L(10:13) = [-10;-40;-10;0]*pi/180;
-U(10:13) = [10;10;10;40]*pi/180;
+U(10:13) = [10;10;10;30]*pi/180;
 
 objeval = 0;
 coneval = 0;
@@ -131,7 +128,7 @@ elseif numel(strfind(initialguess, 'dsem')) > 0
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
-    X0 = initg.Result.x;
+    X0 = initg.Result.X;
 end
 
 % for glenohumeral constraint:
@@ -286,18 +283,10 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 % objective function
     function f = objfun(X)
         
-        % First term is mean squared muscle activation and force
-        %Fmus = das3('Muscleforces', X);
-        %wf1 = mean(X(iact).^2) + mean(Fmus.^2);
+        % First term is mean squared muscle activations
         wf1 = mean(X(iact).^2);
         f1 = Weffort * wf1;
         f = f1;
-
-%         % First term is mean squared muscle activation multiplied by max
-%         % force
-%         wf1 = mean((X(iact).^2).*fmax);
-%         f1 = Weffort * wf1;
-%         f = f1;
         
         if Wscap
             % Second term is thorax-scapula constraint
@@ -342,20 +331,6 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
         % First term is mean squared muscle activation and force
         g(iact) = g(iact) + 2*Weffort*(X(iact))/nmus;
         
-%         Fmus = das3('Muscleforces',X);
-%         for istate = 1:nvar
-%             xisave = X(istate);
-%             X(istate) = X(istate) + dx;
-%             Fmus_dx = das3('Muscleforces', X);
-%             dFmus = (Fmus_dx-Fmus)/dx;
-%             g(istate) = g(istate) + 2*Weffort*sum(Fmus.*dFmus)/nmus;
-%             X(istate) = xisave;
-%         end
-
-%         % First term is mean squared muscle activation multiplied by max
-%         % force
-%         g(iact) = g(iact) + 2*Weffort*fmax.*(X(iact))/nmus;
-
         if Wscap
             % Second is the scapula term
             Fscap = das3('Scapulacontact', X(1:nstates));

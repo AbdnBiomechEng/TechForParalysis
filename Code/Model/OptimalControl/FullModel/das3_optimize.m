@@ -13,7 +13,7 @@ function Result = das3_optimize(data,filename,OptSetup)
 %						Wscap and Whum are optional: if they are not included,
 %						scapular and humeral stability are hard constraints
 %					N: the number of nodes for Direct Collocation.
-%					initialguess, with options: "init" (the passive equilibrium), "random","mid",
+%					initialguess, with options: "random", "mid",
 % 						and if none of the above, assumed to be name of file with previous solution
 %					MaxIter: maximum number of iterations
 %					OptimTol and FeasTol: Optimality and feasibility tolerances
@@ -144,18 +144,22 @@ for i_node = 0:N-1
 
 end
 
-% set initial and final position
-init_pos = load('init_reach.mat');
-L(1:14) = init_pos.angles_init-0.0873;
-U(1:14) = init_pos.angles_init+0.0873;
-L((N-1)*nvarpernode+(1:14)) = init_pos.angles_init-0.0873;
-U((N-1)*nvarpernode+(1:14)) = init_pos.angles_init+0.0873;
-
 % Should angular velocities be zero at the start and end of movement?
 if OptSetup.start_at_rest
     % First node
     L(ndof+1:2*ndof) = zeros(ndof,1);
     U(ndof+1:2*ndof) = zeros(ndof,1);
+end
+
+% Should angles start and end at initial state?
+if OptSetup.initial_state
+    %set initial and final position
+    init_pos = importfile_mot('initial_state.mot');
+    angles = init_pos{1,2:15}';
+    L(1:14) = angles-0.0873;
+    U(1:14) = angles+0.0873;
+    L((N-1)*nvarpernode+(1:14)) = angles-0.0873;
+    U((N-1)*nvarpernode+(1:14)) = angles+0.0873;
 end
 
 if OptSetup.end_at_rest
@@ -240,7 +244,6 @@ end
 % precompute the indices for activations and some angles, so we can compute cost function quickly
 iact = zeros(1,N*nmus);
 iLce = 2*ndof + (1:nmus);
-%iLce = zeros(1,N*nmus);
 
 imeas = zeros(1,N*ntrackdofs);
 idmeas = zeros(1,N*ntrackdofs);
@@ -250,7 +253,6 @@ ilocked_dof = zeros(1,N*nlockeddofs);
 ilocked_ddof = zeros(1,N*nlockeddofs);
 
 for i_node=0:N-1
-%    iLce(i_node*nmus+(1:nmus)) = nvarpernode*i_node+2*ndof+(1:nmus);
     iact(i_node*nmus+(1:nmus)) = nvarpernode*i_node+2*ndof+nmus+(1:nmus);
     
     imeas(i_node*ntrackdofs+(1:ntrackdofs)) = nvarpernode*i_node+OptSetup.tracking_inx;
@@ -261,7 +263,6 @@ for i_node=0:N-1
 end
 
 % Locked dofs stay at measured values, and have zero velocity
-
 datalockeddofs_m = data(:,OptSetup.lockeddof_indata);
 datalockeddofs = interp1(data.time,table2array(datalockeddofs_m),times);
 
@@ -326,17 +327,6 @@ elseif numel(strfind(initialguess, 'random')) > 0
         i_node_states = X0(ix);
         i_node_lengths = das3('Musclelengths',i_node_states);
         X0(ix(end)+nmus+(1:nmus)) = (i_node_lengths - i_node_states(iLce).*LCEopt - SEEslack)./SEEslack; % SEE elongation
-        ix = ix + nvarpernode;
-    end
-elseif numel(strfind(initialguess, 'init')) > 0
-    eq_pos = load('new_eq'); % equilibrium position
-    X0 = zeros(nvar,1);
-    ix = 1:nstates;
-    eq_lengths = das3('Musclelengths',eq_pos.Result.x);
-    for i_node=1:N
-        X0(ix) = eq_pos.Result.x;
-        X0(ix(end)+(1:nmus)) = X0(ix(2*ndof+nmus+(1:nmus))); % excitations equal activations
-        X0(ix(end)+nmus+(1:nmus)) = (eq_lengths - eq_pos.Result.x(iLce).*LCEopt - SEEslack)./SEEslack; % SEE elongation
         ix = ix + nvarpernode;
     end
 else
@@ -582,51 +572,18 @@ make_osimm(filename,dofnames,angles,times);
         end
         f1 = Wdata * wf1;
 
-        % Second term is mean squared muscle activation and force        
+        % Second term is mean squared muscle activation        
         wf2 = mean(X(iact).^2);
-%         ixs = 1:nstates;
-%         for inode=1:N
-%             Fmus = das3('Muscleforces', X(ixs));
-%             wf2 = wf2 + mean(Fmus.^2);
-%             ixs = ixs + nvarpernode;
-%         end
-
         f2 = Weffort * wf2;
-        
-        % Third term is mean squared fibre velocity
-        ixs = 2*ndof+1:2*ndof+nmus; % indices of fibre lengths of node 1
-        wf3 = 0;
-        for inode=1:N-1
-            x1 = X(ixs);
-            x2 = X(ixs+nvarpernode);
-            h = times(inode+1) - times(inode);
-            wf3 = wf3 + mean(((x2-x1)/h).^2);
-            % advance the indices
-            ixs = ixs + nvarpernode;
-        end
-        f3 = 0.000 * wf3;
-        
-        % Fourth term is mean squared angular acceleration
-        ixs = ndof+1:2*ndof; % indices of angular velocities of node 1
-        wf4 = 0;
-        for inode=1:N-1
-            x1 = X(ixs);
-            x2 = X(ixs+nvarpernode);
-            h = times(inode+1) - times(inode);
-            wf4 = wf4 + mean(((x2-x1)/h).^2);
-            % advance the indices
-            ixs = ixs + nvarpernode;
-        end
-        f4 = 0.000 * wf4;
-        
-        f = f1 + f2 + f3 + f4;
+                
+        f = f1 + f2;
         
         if print_flag
-            obj_str = sprintf('Objfun (weighted): %9.5f = %9.5f (fit) + %9.5f (effort) + %9.5f (fibre vel) + %9.5f (angular acc)', f,f1,f2,f3,f4);
-            wobj_str = sprintf('Objfun (unweighted): %9.5f (fit) + %9.5f (effort) + %9.5f (fibre vel) + %9.5f (angular acc)', wf1,wf2,wf3,wf4);
+            obj_str = sprintf('Objfun (weighted): %9.5f = %9.5f (fit) + %9.5f (effort) ', f,f1,f2);
+            wobj_str = sprintf('Objfun (unweighted): %9.5f (fit) + %9.5f (effort) ', wf1,wf2);
         end
         
-        % Fifth term is thorax-scapula constraint
+        % Third term is thorax-scapula constraint
         if ~Scapcon_flag && Wscap
             Fscap = zeros(N,2);            
             ixs = 1:nstates;
@@ -634,21 +591,21 @@ make_osimm(filename,dofnames,angles,times);
                 Fscap(inode,:) = das3('Scapulacontact', X(ixs));
                 ixs = ixs + nvarpernode;
             end            
-            wf5 = mean(Fscap(:,1).^2)+mean(Fscap(:,2).^2);
-            f5 = Wscap * wf5;
+            wf3 = mean(Fscap(:,1).^2)+mean(Fscap(:,2).^2);
+            f3 = Wscap * wf3;
             
-            f = f + f5;
+            f = f + f3;
             
             if print_flag
-                obj_str5 = sprintf('+ %9.5f (scapula)', f5);
-                wobj_str5 = sprintf('+ %9.5f (scapula)', wf5);
-                obj_str = strcat(obj_str,obj_str5);
-                wobj_str = strcat(wobj_str,wobj_str5);
+                obj_str3 = sprintf('+ %9.5f (scapula)', f3);
+                wobj_str3 = sprintf('+ %9.5f (scapula)', wf3);
+                obj_str = strcat(obj_str,obj_str3);
+                wobj_str = strcat(wobj_str,wobj_str3);
             end
             Result.Fscap = Fscap;
         end
         
-        % Sixth term is glenohumeral stability constraint
+        % Fourth term is glenohumeral stability constraint
         if ~Humcon_flag && Whum
             
             FGHcontact = zeros(N-1,1);
@@ -675,14 +632,14 @@ make_osimm(filename,dofnames,angles,times);
                 ius = ius + nvarpernode;
             end
             
-            wf6 = mean(FGHcontact.^2);
-            f6 = Whum * wf6;
-            f = f + f6;
+            wf4 = mean(FGHcontact.^2);
+            f4 = Whum * wf4;
+            f = f + f4;
             if print_flag
-                obj_str6 = sprintf('+ %9.5f (humerus)', f6);
-                wobj_str6 = sprintf('+ %9.5f (humerus)', wf6);
-                obj_str = strcat(obj_str,obj_str6);
-                wobj_str = strcat(wobj_str,wobj_str6);
+                obj_str4 = sprintf('+ %9.5f (humerus)', f4);
+                wobj_str4 = sprintf('+ %9.5f (humerus)', wf4);
+                obj_str = strcat(obj_str,obj_str4);
+                wobj_str = strcat(wobj_str,wobj_str4);
             end
             
             Result.FGHcontact = FGHcontact;
@@ -760,46 +717,9 @@ make_osimm(filename,dofnames,angles,times);
         end
        
         
-        % Second term is mean squared muscle activation and force
-%         ixs = 1:nstates;
-%         for inode=1:N
-%             Fmus = das3('Muscleforces',X(ixs));
-%             for istate = 1:nstates
-%                 xisave = X(ixs(istate));
-%                 X(ixs(istate)) = X(ixs(istate)) + dx;
-%                 Fmus_dx = das3('Muscleforces', X(ixs));
-%                 dFmus = (Fmus_dx-Fmus)/dx;
-%                 g(ixs(istate)) = g(ixs(istate)) + 2*Weffort*sum(Fmus.*dFmus)/nmus;
-%                 X(ixs(istate)) = xisave;
-%             end
-%             ixs = ixs + nvarpernode;
-%         end
+        % Second term is mean squared muscle activation
         g(iact) = g(iact) + 2*Weffort*(X(iact))./(N*nmus);
-        
-        % Third term is mean squared fibre velocity
-        ixs = 2*ndof+1:2*ndof+nmus;
-        for inode=1:N-1
-            x1 = X(ixs);
-            x2 = X(ixs+nvarpernode);
-            h = times(inode+1) - times(inode);		% time interval
-            g(ixs) = g(ixs) - 2*0.000*((x2-x1)/h^2)/nmus;
-            g(ixs+nvarpernode) = g(ixs+nvarpernode) + 2*0.000*((x2-x1)/h^2)/nmus;
-            % advance the indices
-            ixs = ixs + nvarpernode;
-        end
-        
-        % Fourth term is mean squared angular acceleration
-        ixs = ndof+1:2*ndof;
-        for inode=1:N-1
-            x1 = X(ixs);
-            x2 = X(ixs+nvarpernode);
-            h = times(inode+1) - times(inode);		% time interval
-            g(ixs) = g(ixs) - 2*0.000*((x2-x1)/h^2)/ndof;
-            g(ixs+nvarpernode) = g(ixs+nvarpernode) + 2*0.000*((x2-x1)/h^2)/ndof;
-            % advance the indices
-            ixs = ixs + nvarpernode;
-        end
-        
+                
         % If required, calculate scapula term derivatives
         if ~Scapcon_flag && Wscap
             
