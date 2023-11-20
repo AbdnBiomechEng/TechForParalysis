@@ -1,10 +1,6 @@
 function Result = das3_optimize_hang(initialguess,out_filename)
 % This program optimizes das3 position to hang with minimum activation
 % To find position near DSEM initial, we constrain the range for the DOFs
-% We also constraint muscle activation to be no higher than 0.3
-%
-% The cost function includes both activations and forces
-% We do not include scapular and glenohumeral stability
 
 tic;
 
@@ -15,10 +11,10 @@ OptimalityTolerance = 1e-3;
 FeasibilityTolerance = 1e-3;
 
 Weffort = 1;        % weight for the energy consumption term in the cost function
-Wscap = 0.00;       % weight for scapulo-thoracic gliding plane 
-Whum = 0.00;        % weight for glenohumeral stability 
+Wscap = 0.1;        % weight for scapulo-thoracic gliding plane 
+Whum = 0.01;        % weight for glenohumeral stability 
 
-modelparams = load('simplified_model_struct.mat'); 
+modelparams = load('full_model.mat'); 
 model = modelparams.model;
 
 % Initialize the model
@@ -29,9 +25,9 @@ nmus = model.nMus;
 nstates = 2*ndof + 2*nmus;
 
 % some other constants
-nvar = nstates;               % number of unknowns 
+nvar = nstates + nmus;        % number of unknowns 
 ncon_eq = 2*ndof + nmus;	  % number of constraints due to discretized dynamics
-ncon = ncon_eq;
+ncon = ncon_eq + nmus;        % we add SEE elongation
 
 % get DOF names
 dofnames = cell(ndof,1);
@@ -65,17 +61,23 @@ xlim = das3('Limits')';
 %   joint angles 	xlim
 %   angular velocities 0
 %   CE lengths		0.2 to 1.8
-%	active states	0 to 0.3
+%	active states	0 to 1
+%   normalised SEE elongation: from -inf to 0.06 -> max force is
+%   ~2.25 times the maximum isometric force
+
+max_elong = 0.06;
 
 L = [xlim(1:ndof,1);         % q
     zeros(ndof,1);           % qdot
     zeros(nmus,1) + 0.2;     % Lce
-    zeros(nmus,1)];          % active states
+    zeros(nmus,1);           % active states
+    -100*ones(nmus,1)];      % normalised SEE elongation
 
 U = [xlim(1:ndof,2);         % q
     zeros(ndof,1);           % qdot
     zeros(nmus,1) + 1.8;     % Lce
-    1.0*ones(nmus,1)];       % active states
+    1.0*ones(nmus,1);        % active states
+    max_elong*ones(nmus,1)]; % normalised SEE elongation
 
 L(lockeddofs) = lockeddofvalues;
 U(lockeddofs) = lockeddofvalues;
@@ -88,8 +90,8 @@ L(4:9) = [-0.3802;0.11;0;0.808;0.0855;-0.0206]-3*0.0873;
 U(4:9) = [-0.3802;0.11;0;0.808;0.0855;-0.0206]+3*0.0873;
 
 % Constrain the humerus and elbow so it's hanging low and extended
-L(10:13) = [-10;-10;-10;0]*pi/180;
-U(10:13) = [10;10;10;40]*pi/180;
+L(10:13) = [-10;-40;-10;0]*pi/180;
+U(10:13) = [10;10;10;30]*pi/180;
 
 objeval = 0;
 coneval = 0;
@@ -121,10 +123,12 @@ elseif numel(strfind(initialguess, 'dsem')) > 0
     X0(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;0;0;0;0]; % initial DSEM position
     X0(iact) = 0;
     X0(iLce) = 1;
+    init_lengths = das3('Musclelengths',X0);
+    X0(nstates+(1:nmus)) = (init_lengths - LCEopt - SEEslack)./SEEslack; % SEE elongation
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
-    X0 = initg.Result.x;
+    X0 = initg.Result.X;
 end
 
 % for glenohumeral constraint:
@@ -167,6 +171,7 @@ if (MaxIterations > 0)
             grad_num(i_var) =   (objfun(X) - objf)/hh;
             X(i_var) = Xisave;
         end
+        figure; spy(cjac_num);
         cjac_full = full(cjac);
         % find the max difference in constraint jacobian and objective gradient
         [maxerr,irow] = max(abs(cjac-cjac_num));
@@ -184,8 +189,8 @@ if (MaxIterations > 0)
     print_flag=0;
     
     % set up constraints
-    cl = zeros(ncon_eq,1);
-    cu = zeros(ncon_eq,1);
+    cl = zeros(ncon,1);
+    cu = zeros(ncon,1);
 
     funcs.objective = @objfun;
     funcs.gradient  = @objgrad;
@@ -242,12 +247,13 @@ Result.ndof = ndof;
 Result.nmus = nmus;
 Result.model = model;
 Result.obj_str = obj_str;
-Result.x = X;
+Result.x = X(1:nstates);
 Result.MaxIterations = MaxIterations;
 Result.OptimalityTolerance = OptimalityTolerance;
 Result.FeasibilityTolerance = FeasibilityTolerance;
 Result.times = 0.1;
 Result.u = X(iact);
+Result.elong = X(nstates+(1:nmus));
 angles = X(1:ndof);
 
 % Calculate muscle lengths, forces, GH and scapula stability
@@ -256,7 +262,6 @@ Result.mus_forces = das3('Muscleforces', Result.x);
 [~, ~, ~, ~, FGH, ~, Result.thor_hum] = das3('Dynamics', Result.x, 0*Result.x,zeros(nmus,1));
 Result.Fscap = das3('Scapulacontact', Result.x)';
 Result.FGHcontact = calculate_FGH(FGH);
-SEE_elong = Result.mus_lengths - Result.x(2*ndof+(1:nmus)).*LCEopt - SEEslack;
 
 fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)   moment(Nm)  \n');
 fprintf('--------------- --------------  ---------------------   -------------- --------------\n');
@@ -269,7 +274,7 @@ end
 fprintf('\n\nMuscle           Lce/Lceopt   PEEslack    SEE elong     Muscletendon length    Activation    Force(N)  \n');
 fprintf('--------------- ------------ ----------- -------------- ---------------------  ----------   ----------\n');
 for i=1:nmus
-    fprintf('%-15s %9.3f    %9.3f    %9.3f      %9.3f           %9.3f     %9.3f\n',musclenames{i}, Result.x(2*ndof+i), PEEslack(i), SEE_elong(i), Result.mus_lengths(i), Result.x(2*ndof+nmus+i), Result.mus_forces(i));
+    fprintf('%-15s %9.3f    %9.3f    %9.3f      %9.3f           %9.3f     %9.3f\n',musclenames{i}, Result.x(2*ndof+i), PEEslack(i), Result.elong(i), Result.mus_lengths(i), Result.x(2*ndof+nmus+i), Result.mus_forces(i));
 end
 
 save([out_filename '.mat'],'Result');
@@ -278,21 +283,14 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 % objective function
     function f = objfun(X)
         
-%         % First term is mean squared muscle activation and force
-%         Fmus = das3('Muscleforces', X);
-%         wf1 = mean(X(iact).^2) + mean(Fmus.^2);
-%         f1 = Weffort * wf1;
-%         f = f1;
-
-        % First term is mean squared muscle activation multiplied by max
-        % force
-        wf1 = mean((X(iact).^2).*fmax);
+        % First term is mean squared muscle activations
+        wf1 = mean(X(iact).^2);
         f1 = Weffort * wf1;
         f = f1;
         
         if Wscap
             % Second term is thorax-scapula constraint
-            Fscap = das3('Scapulacontact', X);
+            Fscap = das3('Scapulacontact', X(1:nstates));
 
             wf2 = Fscap(1).^2+Fscap(2).^2;
             f2 = Wscap * wf2;
@@ -301,7 +299,7 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
                 
         if Whum
             % Third term is glenohumeral stability constraint
-            [~, ~, ~, ~, FGH] = das3('Dynamics', X, zeros(nstates,1),X(iact));
+            [~, ~, ~, ~, FGH] = das3('Dynamics', X(1:nstates), zeros(nstates,1),X(iact));
             FGHcontact = calculate_FGH(FGH);
 
             wf3 = mean(FGHcontact.^2);
@@ -330,32 +328,18 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 
         g = zeros(nvar,1);
         
-%         % First term is mean squared muscle activation and force
-%         g(iact) = g(iact) + 2*Weffort*(X(iact))/nmus;
-%         
-%         Fmus = das3('Muscleforces',X);
-%         for istate = 1:nvar
-%             xisave = X(istate);
-%             X(istate) = X(istate) + dx;
-%             Fmus_dx = das3('Muscleforces', X);
-%             dFmus = (Fmus_dx-Fmus)/dx;
-%             g(istate) = g(istate) + 2*Weffort*sum(Fmus.*dFmus)/nmus;
-%             X(istate) = xisave;
-%         end
-
-        % First term is mean squared muscle activation multiplied by max
-        % force
-        g(iact) = g(iact) + 2*Weffort*fmax.*(X(iact))/nmus;
-
+        % First term is mean squared muscle activation and force
+        g(iact) = g(iact) + 2*Weffort*(X(iact))/nmus;
+        
         if Wscap
             % Second is the scapula term
-            Fscap = das3('Scapulacontact', X);
+            Fscap = das3('Scapulacontact', X(1:nstates));
             % Scapulo-thoracic glinding plane only depends on dofs 4-9
             % (SC_y,SC_z,SC_x,AC_y,AC_z,AC_x)
             for istate = 4:9
                 xisave = X(istate);
                 X(istate) = X(istate) + dx;
-                Fscap_dx = das3('Scapulacontact', X);
+                Fscap_dx = das3('Scapulacontact', X(1:nstates));
                 dFscap = (Fscap_dx-Fscap)/dx;
                 g(istate) = g(istate) + Wscap*(2*Fscap(1)*dFscap(1) + 2*Fscap(2)*dFscap(2));
                 X(istate) = xisave;
@@ -364,7 +348,7 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
         
         if Whum
             % Third is the humerus term
-            [~, ~, ~, ~, FGH] = das3('Dynamics',X,zeros(nstates,1),X(iact));
+            [~, ~, ~, ~, FGH] = das3('Dynamics',X(1:nstates),zeros(nstates,1),X(iact));
 
             % calculate GH constraint
             FGHcontact = calculate_FGH(FGH);
@@ -375,7 +359,7 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
                 X(istate) = X(istate) + dx;
 
                 % estimate delta(GHconstraint)/delta(x)
-                [~, ~, ~, ~, FGH] = das3('Dynamics',X,zeros(nstates,1),X(iact));
+                [~, ~, ~, ~, FGH] = das3('Dynamics',X(1:nstates),zeros(nstates,1),X(iact));
                 FGHcontact_dx = calculate_FGH(FGH);
                 dFGHcontact = (FGHcontact_dx-FGHcontact)/dx;
                 g(istate) = g(istate) + Whum * 2 * FGHcontact * dFGHcontact;
@@ -389,11 +373,15 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
     function allcon = confun(X)
  
         % evaluate dynamics
-        f = das3('Dynamics',X,zeros(nstates,1),X(iact));
+        f = das3('Dynamics',X(1:nstates),zeros(nstates,1),X(iact));
         f(lockeddofs) = zeros(length(lockeddofs),1);
         f(ndof+lockeddofs) = zeros(length(lockeddofs),1);
-        ceq = f(1:2*ndof+nmus)';        
+        ceq(1:ncon_eq) = f(1:2*ndof+nmus)';        
                 
+        % calculate SEE elongation 
+        lengths = das3('Musclelengths',X(1:nstates));
+        ceq(ncon_eq+(1:nmus)) = X(nstates+(1:nmus)) - (lengths - X(iLce).*LCEopt - SEEslack)./SEEslack;            
+                    
         allcon = ceq;
         
         if (print_flag)
@@ -410,13 +398,16 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 % Jacobian of constraints
     function J = conjac(X)
         
+        % Perturbation to estimate derivative
+        dx = 1e-7;
+        
         allrows = zeros(Jnnz,1);
         allcols = zeros(Jnnz,1);
         allvals = zeros(Jnnz,1);
         index=1;
         
         % evaluate dynamics         
-        [~, dfdx, ~, ~] = das3('Dynamics',X,zeros(nstates,1),X(iact));
+        [~, dfdx, ~, ~] = das3('Dynamics',X(1:nstates),zeros(nstates,1),X(iact));
         dfdx(lockeddofs,:) = zeros(length(lockeddofs),nstates);
         dfdx(ndof+lockeddofs,:) = zeros(length(lockeddofs),nstates);
                       
@@ -428,6 +419,34 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
         allvals(index:index+datal-1) = v;
         index = index+datal;
                     
+        % SEE elongation
+        iceq_elong = ncon_eq+(1:nmus);
+
+        elong = X(nstates+(1:nmus));
+        lengths = das3('Musclelengths',X(1:nstates));
+        elong_diff = elong - (lengths - X(iLce).*LCEopt - SEEslack)./SEEslack;
+
+        % Perturb x1 to estimate derivative
+        for istate = 1:nstates
+            xisave = X(istate);
+            X(istate) = X(istate) + dx;
+
+            % estimate delta(elong_diff)/delta(x)
+            lengths = das3('Musclelengths',X(1:nstates));
+            elong_diff_dx = elong - (lengths - X(iLce).*LCEopt - SEEslack)./SEEslack;
+
+            allrows(index:index+nmus-1) = iceq_elong;
+            allcols(index:index+nmus-1) = istate;
+            allvals(index:index+nmus-1) = (elong_diff_dx-elong_diff)/dx;
+            index=index+nmus;
+            X(istate) = xisave;
+        end
+
+        allrows(index:index+nmus-1) = iceq_elong;
+        allcols(index:index+nmus-1) = nstates+(1:nmus);
+        allvals(index:index+nmus-1) = ones(nmus,1);
+        index=index+nmus;
+                              
         if exist('Jpattern','var')
             [r,c,~] = find(Jpattern);
             nz_rows = ismember([allrows(1:index-1),allcols(1:index-1)],[r,c], 'rows');

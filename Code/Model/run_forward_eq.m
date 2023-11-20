@@ -1,7 +1,7 @@
 % Runs a forward dynamic simulation from the equilibrium posture for 3
 % seconds
 
-modelparams = load('simplified_model_struct.mat'); 
+modelparams = load('full_model.mat'); 
 model = modelparams.model;
 
 ndof = model.nDofs;
@@ -30,13 +30,15 @@ tout(1) = t;
 
 % load equilbrium state x
 x_eq = load('equilibrium');
-x = x_eq.Result.x;
-u = x_eq.Result.u;
+% x = x_eq.Result.x;
+% u = x_eq.Result.u;
+x = x_eq.x;
+u = zeros(nmus,1);
 
 % Selectively change some muscle activations
 
-%u(1:3) = 0.2; % traps
-%u(7:9) = 0.2; % Serr ant
+u(6:13) = 0.1; % traps
+u(25:30) = 0.1; % Serr ant
 %u(10:12) = 0.4; % Delts
 %u(29) = 0.2; % brd
 
@@ -51,6 +53,7 @@ y(lockeddofs) = lockeddofvalues;    % insert the joint angle values for the lock
 ydot = zeros(nstates,1);            % state vector derivative for full system   
 xfull = zeros(nstates,1);           % for storage
 xfull(lockeddofs) = lockeddofvalues;        
+
 tic
 for i=1:nsteps
 %    u = stimfun(t);
