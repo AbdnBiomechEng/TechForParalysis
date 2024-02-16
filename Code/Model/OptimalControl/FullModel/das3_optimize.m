@@ -133,7 +133,7 @@ for i_node = 0:N-1
         zeros(nmus,1) + 0.3;                                            % Lce
         zeros(nmus,1);                                                  % active states
         zeros(nmus,1);                                                  % neural excitations
-        -100*ones(nmus,1)];                                             % normalised SEE elongation
+        -1*ones(nmus,1)];                                               % normalised SEE elongation
     
     U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
         (zeros(ndof,1) + 40);                                           % qdot
@@ -326,7 +326,8 @@ elseif numel(strfind(initialguess, 'random')) > 0
     for i_node=1:N
         i_node_states = X0(ix);
         i_node_lengths = das3('Musclelengths',i_node_states);
-        X0(ix(end)+nmus+(1:nmus)) = (i_node_lengths - i_node_states(iLce).*LCEopt - SEEslack)./SEEslack; % SEE elongation
+        X0(ix(end)+nmus+(1:nmus)) = 0;% SEE elongation
+        X0(2*ndof + (1:nmus)) = (i_node_lengths - SEEslack)./LCEopt; % normalised fibre length
         ix = ix + nvarpernode;
     end
 else
