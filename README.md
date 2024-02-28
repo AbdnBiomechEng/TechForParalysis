@@ -4,7 +4,7 @@ Hello and welcome to the 'Tech for Paralysis' project! :tada:
 
 This project aims to develop efficient methods for personalising assistive technology to restore arm function in people with high-level spinal cord injury. A general description of the project can be found [here](https://abdnbiomecheng.github.io/tech4paralysis/).
 
-We will use a combination of electrical stimulation to elicit forces in muscles no longer under voluntary control, and mobile arm supports to compensate for insufficient muscle force where necessary. We will use computational models specific to an individual's functional limitations to produce patient-specific interventions. 
+We will use a combination of electrical stimulation to elicit forces in muscles no longer under voluntary control, and mobile arm supports to compensate for insufficient muscle force where necessary. We will use computational models specific to an individual's functional limitations to produce patient-specific interventions. Musculoskeletal models and code for customising them based on participant data can be found [here](https://github.com/AbdnBiomechEng/TechForParalysis/tree/master/Code/Model), while code to allow control of the stimulators using real-time data streamed from EMG sensors can be found in its own repository [here](https://github.com/AbdnBiomechEng/orlaufes).
 
 The project will be in three phases: building a model to predict the effects of electrical stimulation on a paralysed arm with arm support, development of methodologies using this model to optimise the arm support and stimulation system, and testing of stimulation controllers designed using this approach. 
 
