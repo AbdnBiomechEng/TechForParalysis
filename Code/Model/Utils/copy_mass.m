@@ -1,3 +1,5 @@
+function copy_mass(model_struct)
+
 % full_model = load('model_struct.mat');
 % simplified_model = load('simplified_arm_model_struct.mat');
 % 
@@ -10,7 +12,7 @@
 % save simplified_arm_model_struct model
 
 full_model = load('model_struct.mat');
-simplified_model = load('full_model.mat');
+simplified_model = load(model_struct);
 
 % Copy muscle mass for first 83 elements
 for imus=1:83
@@ -26,4 +28,4 @@ for imus=86:138
 end
 
 model = simplified_model.model;
-save full_model model
+save(model_struct,'model');
