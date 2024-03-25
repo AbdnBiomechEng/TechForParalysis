@@ -1,8 +1,10 @@
-% Runs a forward dynamic simulation from the equilibrium posture for 3
+function run_forward_eq(filename)
+% Runs a forward dynamic simulation from a previous solution for 3
 % seconds
 
-modelparams = load('full_model.mat'); 
-model = modelparams.model;
+% Load results and model
+res_sim = load(filename);
+model = res_sim.Result.model;
 
 ndof = model.nDofs;
 nmus = model.nMus;
@@ -19,7 +21,7 @@ nstates_ix = length(ix);  % number of states in the reduced-dof system
 
 % set simulation parameters
 t = 0;
-tend = 2;
+tend = 3;
 tstep = .001;
 nsteps = round((tend-t)/tstep);
 
@@ -28,19 +30,9 @@ tout = tstep*(0:nsteps)';
 xout = zeros(nsteps+1, nstates);
 tout(1) = t;
 
-% load equilbrium state x
-x_eq = load('equilibrium');
-% x = x_eq.Result.x;
-% u = x_eq.Result.u;
-x = x_eq.x;
-u = zeros(nmus,1);
-
-% Selectively change some muscle activations
-
-u(6:13) = 0.1; % traps
-u(25:30) = 0.1; % Serr ant
-%u(10:12) = 0.4; % Delts
-%u(29) = 0.2; % brd
+% load state x
+x = res_sim.Result.x(:,end);
+u = res_sim.Result.u(:,end);
 
 % run simulation
 xout(1,:) = x';
@@ -56,7 +48,6 @@ xfull(lockeddofs) = lockeddofvalues;
 
 tic
 for i=1:nsteps
-%    u = stimfun(t);
 
     % Evaluate dynamics in current x and xdot (states of the reduced-dof system)
     y(ix) = x;              % put the unlocked state variables in their proper place inside y
@@ -89,6 +80,6 @@ fprintf('CPU time per time step: %8.3f ms\n', 1000*simtime/nsteps);
 fprintf('Simulation speed is %8.3f times real time\n',tend/simtime);
     
 dofnames = {'TH_x','TH_y','TH_z','SC_y','SC_z','SC_x','AC_y','AC_z','AC_x','GH_y','GH_z','GH_yy','EL_x','PS_y'};
-make_osimm('equilibrium_forward',dofnames,xout(:,1:ndof),tout);
-save equilibrium_forward.mat xout
+make_osimm([filename '_forward'],dofnames,xout(:,1:ndof),tout);
+save([filename '_forward.mat'], 'xout');
 

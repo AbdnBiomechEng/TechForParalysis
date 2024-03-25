@@ -1,7 +1,8 @@
 % Script to plot states and muscle forces of the initial equilibrium
 % position for the simplified model
 
-res_eq = load('equilibrium.mat');
+res_eq = load('C:\Users\s04db9\Code\TechForParalysis\Code\Model\OptimalControl\FullModel\small_range');
+%load(res_eq.Result.model);
 model = res_eq.Result.model;
 
 das3('Initialize',model);
@@ -32,15 +33,15 @@ for idof=1:ndof
     range(idof,:) = model.dofs{idof}.range;
 end
 
-lce_eq = res_eq.Result.x(2*ndof+1:2*ndof+nmus);
-act_eq = res_eq.Result.x(2*ndof+nmus+1:end);
+lce_eq = res_eq.Result.x(2*ndof+1:2*ndof+nmus,end);
+act_eq = res_eq.Result.x(2*ndof+nmus+1:end,end);
 fmus_eq = res_eq.Result.mus_forces;
-angles_eq = res_eq.Result.x(1:ndof)*180/pi;
+angles_eq = res_eq.Result.x(1:ndof,end)*180/pi;
 
-SEE_elong = res_eq.Result.mus_lengths - res_eq.Result.x(2*ndof+(1:nmus)).*LCEopt - SEEslack;
+SEE_elong = res_eq.Result.mus_lengths - res_eq.Result.x(2*ndof+(1:nmus),end).*LCEopt - SEEslack;
 
-moments = das3('Jointmoments', res_eq.Result.x);
-momentarms = das3('Momentarms', res_eq.Result.x);
+moments = das3('Jointmoments', res_eq.Result.x(:,end));
+momentarms = das3('Momentarms', res_eq.Result.x(:,end));
 
 figure; 
 subplot(4,1,1); plot(act_eq); 
@@ -77,13 +78,13 @@ end
 fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)   moment(Nm)  \n');
 fprintf('--------------- --------------  ---------------------   -------------- --------------\n');
 for i=1:ndof
-    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f\n',dofnames{i}, angles_eq(i), 180/pi*range(i,1), 180/pi*range(i,2), 180/pi*res_eq.Result.x(ndof+i), moments(i));
+    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f\n',dofnames{i}, angles_eq(i), 180/pi*range(i,1), 180/pi*range(i,2), 180/pi*res_eq.Result.x(ndof+i,end), moments(i));
 end
 
 
 fprintf('\n\nMuscle           Lce/Lceopt   PEEslack    SEE elong     Muscletendon length    Activation    Force(N)  \n');
 fprintf('--------------- ------------ ----------- -------------- ---------------------  ----------   ----------\n');
 for i=1:nmus
-    fprintf('%-15s %9.3f    %9.3f    %9.3f      %9.3f           %9.3f     %9.3f\n',musclenames{i}, res_eq.Result.x(2*ndof+i), PEEslack(i), SEE_elong(i), res_eq.Result.mus_lengths(i), res_eq.Result.x(2*ndof+nmus+i), res_eq.Result.mus_forces(i));
+    fprintf('%-15s %9.3f    %9.3f    %9.3f      %9.3f           %9.3f     %9.3f\n',musclenames{i}, res_eq.Result.x(2*ndof+i,end), PEEslack(i), SEE_elong(i), res_eq.Result.mus_lengths(i,end), res_eq.Result.x(2*ndof+nmus+i,end), res_eq.Result.mus_forces(i,end));
 end
 
