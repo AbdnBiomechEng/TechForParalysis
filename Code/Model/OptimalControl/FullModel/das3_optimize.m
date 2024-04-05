@@ -98,6 +98,9 @@ das3('Initialize',model);
 
 % Range of motion limits
 xlims = das3('Limits')';
+% allow AC dofs to go below the limit
+xlims(8,1) = -0.45;
+xlims(9,1) = -0.32;
 
 % Approximate hand position
 local_hand_coord = model.joints{13}.location';
@@ -129,14 +132,14 @@ U = zeros(nvar,1);
 max_elong = 0.06;
 
 for i_node = 0:N-1
-    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
+    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)    ;         % q
         (zeros(ndof,1) - 40);                                           % qdot
         zeros(nmus,1) + 0.3;                                            % Lce
         zeros(nmus,1);                                                  % active states
         zeros(nmus,1);                                                  % neural excitations
-        -0.1*ones(nmus,1)];                                             % normalised SEE elongation
+        -0.01*ones(nmus,1)];                                             % normalised SEE elongation
     
-    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
+    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)    ;         % q
         (zeros(ndof,1) + 40);                                           % qdot
         zeros(nmus,1) + 1.7;                                            % Lce
         max_act;                                                        % active states
@@ -154,9 +157,11 @@ end
 
 % Should movement start at initial state?
 if OptSetup.initial_state
-    init_state = load('small_range.mat');
-    L(1:nvarpernode) = [init_state.Result.x; init_state.Result.u; init_state.Result.elong];
-    U(1:nvarpernode) = [init_state.Result.x; init_state.Result.u; init_state.Result.elong];
+    init_state = load('initial_state.mat');
+    mus_lengths = das3('Musclelengths', init_state.x);
+    SEE_elong = (mus_lengths - init_state.x(2*ndof+(1:nmus)).*LCEopt - SEEslack)./SEEslack;
+    L(1:nvarpernode) = [init_state.x; init_state.x(2*ndof+nmus+(1:nmus)); SEE_elong];
+    U(1:nvarpernode) = L(1:nvarpernode);
 end
 
 if OptSetup.end_at_rest
@@ -381,17 +386,16 @@ elseif numel(strfind(initialguess, 'random')) > 0
         ix = ix + nvarpernode;
     end
 
-elseif numel(strfind(initialguess, 'passive_eq')) > 0
-    x_eq = load('eq_pos_extwork');
-    x0 = x_eq.x;
-    u0 = x0(2*ndof+nmus+(1:nmus));    
-    lengths0 = das3('Musclelengths',x0);
-    elong0 = (lengths0 - x0(iLce).*LCEopt - SEEslack)./SEEslack;
-    
+elseif numel(strfind(initialguess, 'equilibrium')) > 0
+    init_state = load('initial_state.mat');
+    x0 = init_state.x';
+    u0 = init_state.x(2*ndof+nmus+(1:nmus))';    
+    mus_lengths = das3('Musclelengths', init_state.x);
+    elong0 = ((mus_lengths - init_state.x(2*ndof+(1:nmus)).*LCEopt - SEEslack)./SEEslack)';    
     x_0 = repmat(x0,length(times),1);
     u_0 = repmat(u0,length(times),1);
     elong_0 = repmat(elong0,length(times),1);
-    X0 = reshape([x_0; u_0; elong_0],nvar,1);
+    X0 = reshape([x_0 u_0 elong_0]',nvar,1);
 
 else
     % load a previous solution, initialguess contains file name
@@ -498,19 +502,34 @@ if (OptSetup.MaxIter > 0)
     options.ub = U;
     
     % IPOPT options
-    options.ipopt.print_level = 0;
+    options.ipopt.print_level = 5;
     options.ipopt.max_iter = OptSetup.MaxIter;
     options.ipopt.hessian_approximation = 'limited-memory';
-    options.ipopt.mu_strategy = 'adaptive';		% worked better than 'monotone'
-    options.ipopt.bound_frac = 0.001;			% worked better than 0.01 or 0.0001
-    options.ipopt.bound_push = options.ipopt.bound_frac;
     options.ipopt.tol = OptSetup.OptimTol;
-    options.ipopt.acceptable_constr_viol_tol = OptSetup.FeasTol;
-    options.ipopt.acceptable_tol = OptSetup.FeasTol;
     options.ipopt.constr_viol_tol = OptSetup.FeasTol;
+    options.warm_start_init_point = 'yes';
+    options.warm_start_bound_push = 1e-9;
+    options.warm_start_bound_frac = 1e-9;
+    options.warm_start_slack_bound_frac = 1e-9;
+    options.warm_start_slack_bound_push = 1e-9;
+    options.warm_start_mult_bound_push = 1e-9;
     options.ipopt.print_info_string = 'yes';
-    options.ipopt.limited_memory_max_history = 6;	% 6 is default, 12 converges better, but may cause "insufficient memory" error when N is large
+    options.ipopt.limited_memory_max_history = 12;
     options.ipopt.dual_inf_tol = 1;
+
+    % options.ipopt.print_level = 0;
+    % options.ipopt.max_iter = OptSetup.MaxIter;
+    % options.ipopt.hessian_approximation = 'limited-memory';
+    % options.ipopt.mu_strategy = 'adaptive';		% worked better than 'monotone'
+    % options.ipopt.bound_frac = 0.001;			% worked better than 0.01 or 0.0001
+    % options.ipopt.bound_push = options.ipopt.bound_frac;
+    % options.ipopt.tol = OptSetup.OptimTol;
+    % options.ipopt.acceptable_constr_viol_tol = OptSetup.FeasTol;
+    % options.ipopt.acceptable_tol = OptSetup.FeasTol;
+    % options.ipopt.constr_viol_tol = OptSetup.FeasTol;
+    % options.ipopt.print_info_string = 'yes';
+    % options.ipopt.limited_memory_max_history = 6;	% 6 is default, 12 converges better, but may cause "insufficient memory" error when N is large
+    % options.ipopt.dual_inf_tol = 1;
     
     [X, info] = ipopt(X0,funcs,options);
     fprintf('IPOPT info status: %d\n', info.status);

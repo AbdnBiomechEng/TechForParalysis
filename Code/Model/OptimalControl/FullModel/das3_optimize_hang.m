@@ -6,19 +6,20 @@ tic;
 
 % optimization settings
 solver = 'IPOPT'; 
-MaxIterations = 10000;
-OptimalityTolerance = 1e-4;
-FeasibilityTolerance = 1e-4;
+MaxIterations = 50000;
+OptimalityTolerance = 1e-3;
+FeasibilityTolerance = 1e-3;
 
-modelparams = load('extended_workspace_model.mat'); 
+modelparams = load('model_struct.mat'); 
 model = modelparams.model;
-
-% Initialize the model
-das3('Initialize',model);
 
 ndof = model.nDofs;
 nmus = model.nMus;
 nstates = 2*ndof + 2*nmus;
+
+% Initialize the model
+das3('Initialize',model);
+
 
 % some other constants
 nvar = nstates + nmus;        % number of unknowns 
@@ -53,6 +54,9 @@ lockeddofvalues = [0;0;0];
 
 % these are the range of motion limits 
 xlim = das3('Limits')';
+% allow AC dofs to go below the limit
+xlim(8,1) = -0.45;
+xlim(9,1) = -0.32;
 
 % Lower and upper bounds for the optimization variables X
 % Bounds are:
@@ -60,7 +64,7 @@ xlim = das3('Limits')';
 %   angular velocities 0
 %   CE lengths		0.2 to 1.8
 %	active states	0 to 1
-%   normalised SEE elongation: from -0.1 to 0.06 -> max force is
+%   normalised SEE elongation: from -0.01 to 0.06 -> max force is
 %   ~2.25 times the maximum isometric force
 
 max_elong = 0.06;
@@ -69,7 +73,7 @@ L = [xlim(1:ndof,1);         % q
     zeros(ndof,1);           % qdot
     zeros(nmus,1) + 0.2;     % Lce
     zeros(nmus,1);           % active states
-    -0.1*ones(nmus,1)];      % normalised SEE elongation
+    -0.01*ones(nmus,1)];    % normalised SEE elongation
 
 U = [xlim(1:ndof,2);         % q
     zeros(ndof,1);           % qdot
@@ -82,9 +86,6 @@ U(lockeddofs) = lockeddofvalues;
 L(ndof+lockeddofs) = zeros(length(lockeddofs),1);
 U(ndof+lockeddofs) = zeros(length(lockeddofs),1);
 
-L(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;-0.0873;0;0.0873;1.5708]-0.0873; 
-U(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;-0.0873;0;0.0873;1.5708]+0.0873; 
-
 objeval = 0;
 coneval = 0;
 objlog = [];
@@ -96,7 +97,6 @@ iq = 1:ndof;
 iqdot = max(iq) + (1:ndof);
 iLce = max(iqdot) + (1:nmus);
 iact = max(iLce) + (1:nmus);
-iSEEelong = max(iact) + (1:nmus);
 
 % precompute the indices for muscles that cross GH
 iGH = [];
@@ -111,14 +111,12 @@ if numel(strfind(initialguess, 'mid')) > 0
     X0 = (L + U)/2;						% halfway between upper and lower bound
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
-elseif numel(strfind(initialguess, 'dsem')) > 0
-    X0 = zeros(nstates,1);					
-    %X0(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;-0.0873;0;0.0873;1.5708]; % initial DSEM position
-    X0(4:14) = [-0.3802;0.11;0;0.9076;0.0855;-0.0206;0;-0.0873;0;0.0873;1.5708]; % initial DSEM position
-    X0(iact) = 0;
-    init_lengths = das3('Musclelengths',X0);
-    X0(nstates+(1:nmus)) = 0; % SEE elongation
-    X0(iLce) = (init_lengths - SEEslack)./LCEopt;
+elseif numel(strfind(initialguess, 'equilibrium')) > 0
+    init = load('initial_state');
+    x = init.x;
+    mus_lengths = das3('Musclelengths', x);
+    SEE_elong = (mus_lengths - x(2*ndof+(1:nmus)).*LCEopt - SEEslack)./SEEslack;
+    X0 = [x;SEE_elong];
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
@@ -203,19 +201,17 @@ if (MaxIterations > 0)
     options.ub = U;
 
     % IPOPT options
-    options.ipopt.print_level = 0;
+    options.ipopt.print_level = 5;
     options.ipopt.max_iter = MaxIterations;
     options.ipopt.hessian_approximation = 'limited-memory';
-    options.ipopt.mu_strategy = 'adaptive';		% worked better than 'monotone'
-    options.ipopt.bound_frac = 0.001;			% worked better than 0.01 or 0.0001
-    options.ipopt.bound_push = options.ipopt.bound_frac;
     options.ipopt.tol = OptimalityTolerance;
-    options.ipopt.acceptable_constr_viol_tol = FeasibilityTolerance;
-    options.ipopt.acceptable_tol = FeasibilityTolerance;
     options.ipopt.constr_viol_tol = FeasibilityTolerance;
-    options.ipopt.print_info_string = 'yes';
-    options.ipopt.limited_memory_max_history = 12;	% 6 is default, 12 converges better, but may cause "insufficient memory" error when N is large
-    options.ipopt.dual_inf_tol = 1;
+    options.warm_start_init_point = 'yes';
+    options.warm_start_bound_push = 1e-9;
+    options.warm_start_bound_frac = 1e-9;
+    options.warm_start_slack_bound_frac = 1e-9;
+    options.warm_start_slack_bound_push = 1e-9;
+    options.warm_start_mult_bound_push = 1e-9;
 
     [X, info] = ipopt(X0,funcs,options);
     Result.status = info.status;
@@ -285,7 +281,6 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
         
         % First term is mean squared muscle activations
         f = mean(X(iact).^2); 
-        %f = mean(X(iSEEelong).^2);
                 
         obj_str = sprintf('Objfun: %9.5f (effort)', f);
 
@@ -304,7 +299,6 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
         
         % Mean squared muscle activation
         g(iact) = g(iact) + 2*(X(iact))/nmus;
-        %g(iSEEelong) = g(iSEEelong) + 2*(X(iSEEelong))/nmus;
         
     end
 
@@ -408,16 +402,16 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 
         % Glenohumeral stability
         FGHcontact = calculate_FGH(FGH);
-                
+         
         % Perturb x1 and x2 by dx to estimate derivative
         for ivar = [1:2*ndof 2*ndof+iGH 2*ndof+nmus+iGH]
             xisave = X(ivar);
             X(ivar) = X(ivar) + dx;
-            
+
             % estimate delta(GHconstraint)/delta(x)
             [~, ~, ~, ~, FGH] = das3('Dynamics',X(1:nstates),zeros(nstates,1),X(iact));
             FGHcontact_dx = calculate_FGH(FGH);
-            
+
             allrows(index) = ic;
             allcols(index) = ivar;
             allvals(index) = (FGHcontact_dx-FGHcontact)/dx;
@@ -427,20 +421,20 @@ make_osimm(out_filename,dofnames,[angles,angles]); % two rows so Opensim 4.x can
 
         % Scapulo-thoracic constraint
         ic = ncon_eq + ncon_eq_elong + 1 + (1:2);
-            
+
         Fscap = das3('Scapulacontact', X(1:nstates));
-        
+
         % Fscap only depends on the clavicular and scapular dofs (4-9):
         for ivar = 4:9
             xisave = X(ivar);
             X(ivar) = X(ivar) + dx;
             Fscap_dx = das3('Scapulacontact', X(1:nstates));
-            
+
             allrows(index:index+1) = ic';
             allcols(index:index+1) = [ivar;ivar];
             allvals(index:index+1) = (Fscap_dx-Fscap)/dx;
             index=index+2;
-            
+
             X(ivar) = xisave;
         end
                 
