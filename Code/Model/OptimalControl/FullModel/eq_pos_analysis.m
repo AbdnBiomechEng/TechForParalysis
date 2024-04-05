@@ -1,9 +1,24 @@
 % Script to plot states and muscle forces of the initial equilibrium
 % position for the simplified model
 
-res_eq = load('C:\Users\s04db9\Code\TechForParalysis\Code\Model\OptimalControl\FullModel\small_range');
+%res_eq = load('C:\Users\s04db9\Code\TechForParalysis\Code\Model\OptimalControl\FullModel\small_range');
 %load(res_eq.Result.model);
-model = res_eq.Result.model;
+%model = res_eq.Result.model;
+
+% res_eq = load('dsem_out_new_forward.mat');
+% x = res_eq.xout(end,:)';
+% u = res_eq.u;
+
+res_eq = load('equilibrium');
+x = res_eq.x;
+u = zeros(137,1);
+
+modelstr = load('extended_workspace_model.mat');
+model = modelstr.model;
+
+% for imus=[37:40 48:51 95:102]  % posterior deltoid, anterior deltoid, pec major
+%     model.muscles{imus}.PEEslack = 1.3;
+% end
 
 das3('Initialize',model);
 
@@ -33,15 +48,16 @@ for idof=1:ndof
     range(idof,:) = model.dofs{idof}.range;
 end
 
-lce_eq = res_eq.Result.x(2*ndof+1:2*ndof+nmus,end);
-act_eq = res_eq.Result.x(2*ndof+nmus+1:end,end);
-fmus_eq = res_eq.Result.mus_forces;
-angles_eq = res_eq.Result.x(1:ndof,end)*180/pi;
+lce_eq = x(2*ndof+1:2*ndof+nmus);
+act_eq = x(2*ndof+nmus+1:end);
+fmus_eq = das3('Muscleforces', x);
+mus_lengths = das3('Musclelengths', x);
+angles_eq = x(1:ndof)*180/pi;
 
-SEE_elong = res_eq.Result.mus_lengths - res_eq.Result.x(2*ndof+(1:nmus),end).*LCEopt - SEEslack;
+SEE_elong = (mus_lengths - x(2*ndof+(1:nmus)).*LCEopt - SEEslack)./SEEslack;
 
-moments = das3('Jointmoments', res_eq.Result.x(:,end));
-momentarms = das3('Momentarms', res_eq.Result.x(:,end));
+moments = das3('Jointmoments', x);
+momentarms = das3('Momentarms', x);
 
 figure; 
 subplot(4,1,1); plot(act_eq); 
@@ -78,13 +94,28 @@ end
 fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)   moment(Nm)  \n');
 fprintf('--------------- --------------  ---------------------   -------------- --------------\n');
 for i=1:ndof
-    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f\n',dofnames{i}, angles_eq(i), 180/pi*range(i,1), 180/pi*range(i,2), 180/pi*res_eq.Result.x(ndof+i,end), moments(i));
+    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f\n',dofnames{i}, angles_eq(i), 180/pi*range(i,1), 180/pi*range(i,2), 180/pi*x(ndof+i), moments(i));
 end
 
 
 fprintf('\n\nMuscle           Lce/Lceopt   PEEslack    SEE elong     Muscletendon length    Activation    Force(N)  \n');
 fprintf('--------------- ------------ ----------- -------------- ---------------------  ----------   ----------\n');
 for i=1:nmus
-    fprintf('%-15s %9.3f    %9.3f    %9.3f      %9.3f           %9.3f     %9.3f\n',musclenames{i}, res_eq.Result.x(2*ndof+i,end), PEEslack(i), SEE_elong(i), res_eq.Result.mus_lengths(i,end), res_eq.Result.x(2*ndof+nmus+i,end), res_eq.Result.mus_forces(i,end));
+    fprintf('%-15s %9.3f    %9.3f    %9.3f      %9.3f           %9.3f     %9.3f\n',musclenames{i}, x(2*ndof+i), PEEslack(i), SEE_elong(i), mus_lengths(i), x(2*ndof+nmus+i), fmus_eq(i));
 end
 
+[f, ~, ~, ~, FGH] = das3('Dynamics', x, 0*x,u);
+Fscap = das3('Scapulacontact', x);
+
+aphi=tand(38.55);
+atheta=tand(44.37);
+Rgt = glenoid_scap;
+
+Fgh0 = Rgt*FGH;  % take glenoid orientation into account
+if norm(Fgh0), Fgh0 = Fgh0/norm(Fgh0); end
+% decompose into polar angles
+thetar = asin(-Fgh0(2));
+if ~(sqrt(Fgh0(1)^2+Fgh0(3)^2)), phir = 0.0;
+else, phir=asin(Fgh0(3)/sqrt(Fgh0(1)^2+Fgh0(3)^2));
+end
+FGHcontact = (thetar/atheta)^2 + (phir/aphi)^2;
