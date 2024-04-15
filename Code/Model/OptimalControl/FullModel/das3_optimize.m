@@ -182,30 +182,36 @@ times = t1 + (0:N-1)'*(t2-t1)/(N-1);
 
 % Resample the input data onto the direct collocation times
 % and put into a long vector to save time when computing cost function
-datadofs_m = data(:,OptSetup.tracking_indata);
-datadofs = interp1(data.time,table2array(datadofs_m),times);
-
-Result.resampled_data = datadofs;
-
-datadofs_deriv = diff(datadofs)./diff(times);
-datadofs_deriv = [datadofs_deriv; datadofs_deriv(end,:)];
-
-% convert into a single column
-data_dofs = reshape(datadofs', [], 1);
-data_dofs_deriv = reshape(datadofs_deriv', [], 1);
-
-% define the estimated uncertainty in each measured variable (in radians)
 ntrackdofs = length(OptSetup.tracking_indata);
-if ntrackdofs == 11
-    data_dofs_sd =1000*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
-    data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
-    data_dofs_sd(1:ntrackdofs) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track start of movement better
-    data_dofs_sd(ntrackdofs*(N-1)+1:end) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track end of movement better
+
+if ntrackdofs == 0
+    data_dofs = [];
+    data_dofs_sd = [];
 else
-    data_dofs_sd =1000*ones(ntrackdofs,1);     % for one node 
-    data_dofs_sd = repmat(data_dofs_sd,N,1); % replicate for all nodes
-    data_dofs_sd(1:ntrackdofs) = ones(ntrackdofs,1); % set to lower number to track start of movement better
-    data_dofs_sd(ntrackdofs*(N-1)+1:end) = ones(ntrackdofs,1); % set to lower number to track end of movement better
+    datadofs_m = data(:,OptSetup.tracking_indata);
+    datadofs = interp1(data.time,table2array(datadofs_m),times);
+    
+    Result.resampled_data = datadofs;
+    
+    datadofs_deriv = diff(datadofs)./diff(times);
+    datadofs_deriv = [datadofs_deriv; datadofs_deriv(end,:)];
+    
+    % convert into a single column
+    data_dofs = reshape(datadofs', [], 1);
+    data_dofs_deriv = reshape(datadofs_deriv', [], 1);
+    
+    % define the estimated uncertainty in each measured variable (in radians)
+    if ntrackdofs == 11
+        data_dofs_sd =1000*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
+        data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
+        data_dofs_sd(1:ntrackdofs) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track start of movement better
+        data_dofs_sd(ntrackdofs*(N-1)+1:end) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track end of movement better
+    else
+        data_dofs_sd =1000*ones(ntrackdofs,1);     % for one node 
+        data_dofs_sd = repmat(data_dofs_sd,N,1); % replicate for all nodes
+        data_dofs_sd(1:ntrackdofs) = ones(ntrackdofs,1); % set to lower number to track start of movement better
+        data_dofs_sd(ntrackdofs*(N-1)+1:end) = ones(ntrackdofs,1); % set to lower number to track end of movement better
+    end
 end
 
 % Do the same for thoraco-humeral angles, if they were provided
@@ -508,11 +514,12 @@ if (OptSetup.MaxIter > 0)
     options.ipopt.tol = OptSetup.OptimTol;
     options.ipopt.constr_viol_tol = OptSetup.FeasTol;
     options.warm_start_init_point = 'yes';
-    options.warm_start_bound_push = 1e-9;
-    options.warm_start_bound_frac = 1e-9;
-    options.warm_start_slack_bound_frac = 1e-9;
-    options.warm_start_slack_bound_push = 1e-9;
-    options.warm_start_mult_bound_push = 1e-9;
+    options.warm_start_bound_push = 1e-12;
+    options.warm_start_bound_frac = 1e-12;
+    options.warm_start_slack_bound_frac = 1e-12;
+    options.warm_start_slack_bound_push = 1e-12;
+    options.warm_start_mult_bound_push = 1e-12;
+    options.warm_start_same_structure = 'yes';
     options.ipopt.print_info_string = 'yes';
     options.ipopt.limited_memory_max_history = 12;
     options.ipopt.dual_inf_tol = 1;
@@ -524,8 +531,8 @@ if (OptSetup.MaxIter > 0)
     % options.ipopt.bound_frac = 0.001;			% worked better than 0.01 or 0.0001
     % options.ipopt.bound_push = options.ipopt.bound_frac;
     % options.ipopt.tol = OptSetup.OptimTol;
-    % options.ipopt.acceptable_constr_viol_tol = OptSetup.FeasTol;
-    % options.ipopt.acceptable_tol = OptSetup.FeasTol;
+    options.ipopt.acceptable_constr_viol_tol = OptSetup.FeasTol;
+    options.ipopt.acceptable_tol = OptSetup.FeasTol;
     % options.ipopt.constr_viol_tol = OptSetup.FeasTol;
     % options.ipopt.print_info_string = 'yes';
     % options.ipopt.limited_memory_max_history = 6;	% 6 is default, 12 converges better, but may cause "insufficient memory" error when N is large
@@ -629,7 +636,11 @@ make_osimm(filename,dofnames,angles,times);
         
         % First term of cost function is mean of squared differences to
         % measured data, including thoraco-humeral data if provided
-        wf1 = mean(((X(imeas)-data_dofs)./data_dofs_sd).^2);
+        if ntrackdofs
+            wf1 = mean(((X(imeas)-data_dofs)./data_dofs_sd).^2);
+        else
+            wf1 = 0;
+        end
         
         % If required, calculate thoracohumeral angles
         if thorhum_flag
@@ -752,7 +763,9 @@ make_osimm(filename,dofnames,angles,times);
         % First term of cost function is mean of squared differences to
         % measured data (thoraco-humeral angles are calculated separate,
         % below)
-        g(imeas) = g(imeas) + 2*Wdata*(X(imeas)-data_dofs)./data_dofs_sd.^2/length(imeas);
+        if ntrackdofs
+            g(imeas) = g(imeas) + 2*Wdata*(X(imeas)-data_dofs)./data_dofs_sd.^2/length(imeas);
+        end
         
         % If required, calculate scapulothoracic term derivatives
         if thorhum_flag
@@ -959,7 +972,8 @@ make_osimm(filename,dofnames,angles,times);
         allcon = [ceq; c];
         
         if (print_flag)
-            fprintf('Norm(ceq): %9.5f  \n', norm(ceq));
+            fprintf('Norm(ceq): %9.5f  \n', norm(ceq(1:ncon_eq)));
+            fprintf('Norm(ceq SEE elong): %9.5f  \n', norm(ceq(ncon_eq+(1:ncon_eq_elong))));
             fprintf('Proportion of satisfied inequality constraints: %9.5f \n', sum(c_flag)/length(c_flag));
         end
         
