@@ -243,6 +243,7 @@ x_init = init_state.x;
 x0 = repmat(x_init',length(times),1);
 u0 = init_state.x(2*ndof+nmus+(1:nmus))';    
 U0 = repmat(u0,length(times),1);
+U0long = reshape(U0',ncontrols*N,1);
 X = reshape([x0 U0]',nvarpernode*N,1);
 
 %% Set up optimization
@@ -355,10 +356,13 @@ make_osimm(filename,dofnames,angles,times);
         %% Problem Settings
 
         CostFunction=@objfun;   % Cost Function
-        nVar=nvar;              % Number of Unknown (Decision) Variables
+        %nVar=nvar;              % Number of Unknown (Decision) Variables
+        nVar=6*N;              % Number of Unknown (Decision) Variables
         VarSize=[1 nVar];       % Decision Variables Matrix Size
-        VarMin= L;              % Lower Bound of Decision Variables
-        VarMax= U;              % Upper Bound of Decision Variables
+        % VarMin= L;              % Lower Bound of Decision Variables
+        % VarMax= U;              % Upper Bound of Decision Variables
+        VarMin= 0;              % Lower Bound of Decision Variables
+        VarMax= 1;              % Upper Bound of Decision Variables
 
         %% CMA-ES Settings
 
@@ -425,12 +429,15 @@ make_osimm(filename,dofnames,angles,times);
             for i=1:lambda
                 pop(i).Step=mvnrnd(zeros(VarSize),C{g});
                 pop(i).Position=M(g).Position+sigma{g}*pop(i).Step;
+                pop(i).Position(pop(i).Position>1) = 1;
+                pop(i).Position(pop(i).Position<0) = 0;
                 pop(i).Cost=CostFunction(pop(i).Position);
 
                 % Update Best Solution Ever Found
                 if pop(i).Cost<BestSol.Cost
                     BestSol=pop(i);
                 end
+                disp(['Sample generation ' num2str(i) ' out of ' num2str(lambda) ' finished ']);
             end
 
             % Sort Population
@@ -493,6 +500,7 @@ make_osimm(filename,dofnames,angles,times);
         
     % reserve space to store results
     xout = zeros(N, nstates);
+    uall = zeros(N,nmus);
     thorhum = zeros(nthorhum*N,1);
     handpos = zeros(3*N,1);
     Fscap = zeros(N,2);
@@ -503,7 +511,9 @@ make_osimm(filename,dofnames,angles,times);
     x = x_init(ix);    
     % Initialize variables
     step_xdot = zeros(nstates_ix,1);
-    step_u = Unew(1:ncontrols);
+    step_u = u0';
+    step_u(83:88) = Unew(1:6);
+    %step_u = Unew(1:ncontrols);
     y = zeros(nstates,1);               % state vector for full system
     ydot = zeros(nstates,1);            % state vector derivative for full system   
     xfull = zeros(nstates,1);           % for storage
@@ -519,7 +529,9 @@ make_osimm(filename,dofnames,angles,times);
         y(ix) = x;              % put the unlocked state variables in their proper place inside y
         ydot(ix) = step_xdot;   % same for ydot
         % compute dynamics residuals for the full model, and ignore those that correspond to locked joints
-        u1 = Unew((inode-1)*ncontrols+1:inode*ncontrols);
+        u1 = u0';
+        u1(83:88) = Unew((inode-1)*6+1:inode*6);
+        %u1 = Unew((inode-1)*ncontrols+1:inode*ncontrols);
         [g, dgdy, dgdydot, dgdu, F_GH, ~, thorhum_x] = das3('Dynamics',y, ydot, u1, ex_mom,arm_support,hand_force(inode*3-2:inode*3));  
 
         f = g(ix);
@@ -544,13 +556,13 @@ make_osimm(filename,dofnames,angles,times);
             FGHcontact(inode) = calculate_FGH(F_GH);      
             xfull(ix) = x;            % put the unlocked state variables in their proper place inside x
             xout(inode,:) = xfull';   % store result
+            uall(inode,:) = u1';
             inode = inode+1;
         end
         
     end
 
-    Umat = reshape(Unew,nmus,N);
-    X = reshape([xout Umat']',nvarpernode*N,1);
+    X = reshape([xout uall]',nvarpernode*N,1);
     end
 
 % Function to calculate orientation of glenohumeral stability vector
