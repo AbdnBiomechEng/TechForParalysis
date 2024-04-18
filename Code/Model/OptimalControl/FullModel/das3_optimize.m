@@ -97,6 +97,9 @@ das3('Initialize',model);
 
 % Range of motion limits
 xlims = das3('Limits')';
+% allow AC dofs to go below the limit
+xlims(8,1) = -0.45;
+xlims(9,1) = -0.32;
 
 % Approximate hand position
 local_hand_coord = model.joints{13}.location';
@@ -122,20 +125,20 @@ U = zeros(nvar,1);
 %   CE lengths		0 to 2
 %	active states	0 to 1
 %	neural controls 0 to 1
-%   normalised SEE elongation: from -inf to 0.06 -> max force is
+%   normalised SEE elongation: from -0.1 to 0.06 -> max force is
 %   ~2.25 times the maximum isometric force
 
 max_elong = 0.06;
 
 for i_node = 0:N-1
-    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)-0.1;         % q
+    L(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,1)    ;         % q
         (zeros(ndof,1) - 40);                                           % qdot
         zeros(nmus,1) + 0.3;                                            % Lce
         zeros(nmus,1);                                                  % active states
         zeros(nmus,1);                                                  % neural excitations
-        -1*ones(nmus,1)];                                               % normalised SEE elongation
+        -0.01*ones(nmus,1)];                                             % normalised SEE elongation
     
-    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)+0.1;         % q
+    U(i_node*nvarpernode + (1:nvarpernode) ) = [xlims(:,2)    ;         % q
         (zeros(ndof,1) + 40);                                           % qdot
         zeros(nmus,1) + 1.7;                                            % Lce
         max_act;                                                        % active states
@@ -151,15 +154,13 @@ if OptSetup.start_at_rest
     U(ndof+1:2*ndof) = zeros(ndof,1);
 end
 
-% Should angles start and end at initial state?
+% Should movement start at initial state?
 if OptSetup.initial_state
-    %set initial and final position
-    init_pos = importfile_mot('initial_state.mot');
-    angles = init_pos{1,2:15}';
-    L(1:14) = angles-0.0873;
-    U(1:14) = angles+0.0873;
-    L((N-1)*nvarpernode+(1:14)) = angles-0.0873;
-    U((N-1)*nvarpernode+(1:14)) = angles+0.0873;
+    init_state = load('initial_state.mat');
+    mus_lengths = das3('Musclelengths', init_state.x);
+    SEE_elong = (mus_lengths - init_state.x(2*ndof+(1:nmus)).*LCEopt - SEEslack)./SEEslack;
+    L(1:nvarpernode) = [init_state.x; init_state.x(2*ndof+nmus+(1:nmus)); SEE_elong];
+    U(1:nvarpernode) = L(1:nvarpernode);
 end
 
 if OptSetup.end_at_rest
@@ -180,30 +181,36 @@ times = t1 + (0:N-1)'*(t2-t1)/(N-1);
 
 % Resample the input data onto the direct collocation times
 % and put into a long vector to save time when computing cost function
-datadofs_m = data(:,OptSetup.tracking_indata);
-datadofs = interp1(data.time,table2array(datadofs_m),times);
-
-Result.resampled_data = datadofs;
-
-datadofs_deriv = diff(datadofs)./diff(times);
-datadofs_deriv = [datadofs_deriv; datadofs_deriv(end,:)];
-
-% convert into a single column
-data_dofs = reshape(datadofs', [], 1);
-data_dofs_deriv = reshape(datadofs_deriv', [], 1);
-
-% define the estimated uncertainty in each measured variable (in radians)
 ntrackdofs = length(OptSetup.tracking_indata);
-if ntrackdofs == 11
-    data_dofs_sd =1*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
-    data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
-    data_dofs_sd(1:ntrackdofs) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track start of movement better
-    data_dofs_sd(ntrackdofs*(N-1)+1:end) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track end of movement better
+
+if ntrackdofs == 0
+    data_dofs = [];
+    data_dofs_sd = [];
 else
-    data_dofs_sd =1*ones(ntrackdofs,1);     % for one node 
-    data_dofs_sd = repmat(data_dofs_sd,N,1); % replicate for all nodes
-    data_dofs_sd(1:ntrackdofs) = ones(ntrackdofs,1); % set to lower number to track start of movement better
-    data_dofs_sd(ntrackdofs*(N-1)+1:end) = ones(ntrackdofs,1); % set to lower number to track end of movement better
+    datadofs_m = data(:,OptSetup.tracking_indata);
+    datadofs = interp1(data.time,table2array(datadofs_m),times);
+    
+    Result.resampled_data = datadofs;
+    
+    datadofs_deriv = diff(datadofs)./diff(times);
+    datadofs_deriv = [datadofs_deriv; datadofs_deriv(end,:)];
+    
+    % convert into a single column
+    data_dofs = reshape(datadofs', [], 1);
+    data_dofs_deriv = reshape(datadofs_deriv', [], 1);
+    
+    % define the estimated uncertainty in each measured variable (in radians)
+    if ntrackdofs == 11
+        data_dofs_sd =1000*[1 1 1000 1 1 1 1 1 1 1 1]';   % for one node 
+        data_dofs_sd = repmat(data_dofs_sd,N,1);		% replicate for all nodes
+        data_dofs_sd(1:ntrackdofs) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track start of movement better
+        data_dofs_sd(ntrackdofs*(N-1)+1:end) = [1 1 1000 1 1 1 1 1 1 1 1]'; % set to lower number to track end of movement better
+    else
+        data_dofs_sd =1000*ones(ntrackdofs,1);     % for one node 
+        data_dofs_sd = repmat(data_dofs_sd,N,1); % replicate for all nodes
+        data_dofs_sd(1:ntrackdofs) = ones(ntrackdofs,1); % set to lower number to track start of movement better
+        data_dofs_sd(ntrackdofs*(N-1)+1:end) = ones(ntrackdofs,1); % set to lower number to track end of movement better
+    end
 end
 
 % Do the same for thoraco-humeral angles, if they were provided
@@ -215,13 +222,28 @@ else
     nthorhum = length(OptSetup.thorhum_indata);
     datathorhum_m = data(:,OptSetup.thorhum_indata);
     datathorhum = interp1(data.time,table2array(datathorhum_m),times);
+    Result.resampled_thorhum = datathorhum;
     data_thorhum = reshape(datathorhum', [], 1);
     
     % define the estimated uncertainty in each measured variable (in radians)
-    data_thorhum_sd = 1*ones(length(OptSetup.thorhum_indata),1);    % for one node (set to higher number to only track start and end of movement)
+%    data_thorhum_sd = 1*ones(length(OptSetup.thorhum_indata),1);    % for one node (set to higher number to only track start and end of movement)
+    data_thorhum_sd = 1000*[1 1 10]';    % for one node (set to higher number to only track start and end of movement)
     data_thorhum_sd = repmat(data_thorhum_sd,N,1);		% replicate for all nodes
     data_thorhum_sd(1:length(OptSetup.thorhum_indata))=1;
     data_thorhum_sd(length(OptSetup.thorhum_indata)*(N-1)+1:end)=1;
+    
+    % also estimate clavicular and scapular angles, in case we want to use
+    % them for an initial guess
+    shoulder_angles = zeros(length(times),9);
+    for i_t = 1:length(times)
+        shoulder_angles(i_t,:) = estimate_shoulder_angles(datathorhum(i_t,1),datathorhum(i_t,2),datathorhum(i_t,3));
+    end
+    data_clavscaphum = reshape(shoulder_angles', [], 1);    
+    
+    shoulder_angles_deriv = diff(shoulder_angles)./diff(times);
+    shoulder_angles_deriv = [shoulder_angles_deriv; shoulder_angles_deriv(end,:)];
+    data_clavscaphum_deriv = reshape(shoulder_angles_deriv', [], 1);    
+
 end
 
 % Do the same for hand position, if provided
@@ -243,10 +265,15 @@ end
 
 % precompute the indices for activations and some angles, so we can compute cost function quickly
 iact = zeros(1,N*nmus);
+iu = zeros(1,N*nmus);
+iSEEelong = zeros(1,N*nmus);
 iLce = 2*ndof + (1:nmus);
 
 imeas = zeros(1,N*ntrackdofs);
 idmeas = zeros(1,N*ntrackdofs);
+
+ishoulder = zeros(1,N*9);
+idshoulder = zeros(1,N*9);
 
 nlockeddofs = length(OptSetup.lockeddof_indata);
 ilocked_dof = zeros(1,N*nlockeddofs);
@@ -254,9 +281,14 @@ ilocked_ddof = zeros(1,N*nlockeddofs);
 
 for i_node=0:N-1
     iact(i_node*nmus+(1:nmus)) = nvarpernode*i_node+2*ndof+nmus+(1:nmus);
+    iu(i_node*nmus+(1:nmus)) = nvarpernode*i_node+ nstates + (1:nmus);
+    iSEEelong(i_node*nmus+(1:nmus)) = nvarpernode*i_node+ nstates + nmus +(1:nmus);
     
     imeas(i_node*ntrackdofs+(1:ntrackdofs)) = nvarpernode*i_node+OptSetup.tracking_inx;
     idmeas(i_node*ntrackdofs+(1:ntrackdofs)) = nvarpernode*i_node+ndof+OptSetup.tracking_inx;
+    
+    ishoulder(i_node*9+(1:9)) = nvarpernode*i_node+3+(1:9);
+    idshoulder(i_node*9+(1:9)) = nvarpernode*i_node+ndof+3+(1:9);
     
     ilocked_dof(i_node*nlockeddofs+(1:nlockeddofs)) = nvarpernode*i_node+OptSetup.lockeddof_inx;
     ilocked_ddof(i_node*nlockeddofs+(1:nlockeddofs)) = nvarpernode*i_node+ndof+OptSetup.lockeddof_inx;
@@ -304,6 +336,9 @@ hand_force = reshape(hand_force', [], 1);
 % Initial guess for kinematics + velocities is the interpolated measured data
 % For activations and fibre lengths there are different options: mid and random
 
+% If we are tracking thoraco-humeral angles, use the "normal"
+% scapulohumeral rhythm as the initial guess
+
 % Alternatively, we load an earlier solution
 
 if strcmp(initialguess, 'mid')
@@ -311,25 +346,62 @@ if strcmp(initialguess, 'mid')
     X0 = X0 + 0.001;					% to avoid exact zero velocity, for which Autolev equations do not work
     X0(imeas) = data_dofs;
     X0(idmeas) = data_dofs_deriv;
+    if thorhum_flag
+        X0(ishoulder(4:end)) = data_clavscaphum(4:end);
+        X0(idshoulder(4:end)) = data_clavscaphum_deriv(4:end);        
+    end
     ix = 1:nstates;
     for i_node=1:N
         i_node_states = X0(ix);
         i_node_lengths = das3('Musclelengths',i_node_states);
-        X0(ix(end)+nmus+(1:nmus)) = (i_node_lengths - i_node_states(iLce).*LCEopt - SEEslack)./SEEslack; % SEE elongation
+        X0(ix(end)+nmus+(1:nmus)) = 0; % SEE elongation
+        X0(ix(2*ndof + (1:nmus))) = (i_node_lengths - SEEslack)./LCEopt; % normalised fibre length
         ix = ix + nvarpernode;
     end
+
+ elseif numel(strfind(initialguess, 'init_dsem')) > 0
+    x0 = zeros(nstates,1);	
+    x0(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;-0.0873;0;0.0873;1.5708]; % initial DSEM position
+    u0 = zeros(nmus,1);    
+    lengths0 = das3('Musclelengths',x0);
+    elong0 = zeros(nmus,1); % SEE elongation
+    x0(iLce) = (lengths0 - SEEslack)./LCEopt;
+    
+    x_0 = repmat(x0',length(times),1);
+    u_0 = repmat(u0',length(times),1);
+    elong_0 = repmat(elong0',length(times),1);
+    X0 = reshape([x_0 u_0 elong_0]',nvar,1);
+
 elseif numel(strfind(initialguess, 'random')) > 0
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
+    X0(iact) = 0;
+    X0(iu) = 0;
     X0(imeas) = data_dofs;
     X0(idmeas) = data_dofs_deriv;
+    if thorhum_flag
+        X0(ishoulder) = data_clavscaphum;
+        X0(idshoulder) = data_clavscaphum_deriv;        
+    end
     ix = 1:nstates;
     for i_node=1:N
         i_node_states = X0(ix);
         i_node_lengths = das3('Musclelengths',i_node_states);
         X0(ix(end)+nmus+(1:nmus)) = 0;% SEE elongation
-        X0(2*ndof + (1:nmus)) = (i_node_lengths - SEEslack)./LCEopt; % normalised fibre length
+        X0(ix(2*ndof + (1:nmus))) = (i_node_lengths - SEEslack)./LCEopt; % normalised fibre length
         ix = ix + nvarpernode;
     end
+
+elseif numel(strfind(initialguess, 'equilibrium')) > 0
+    init_state = load('initial_state.mat');
+    x0 = init_state.x';
+    u0 = init_state.x(2*ndof+nmus+(1:nmus))';    
+    mus_lengths = das3('Musclelengths', init_state.x);
+    elong0 = ((mus_lengths - init_state.x(2*ndof+(1:nmus)).*LCEopt - SEEslack)./SEEslack)';    
+    x_0 = repmat(x0,length(times),1);
+    u_0 = repmat(u0,length(times),1);
+    elong_0 = repmat(elong0,length(times),1);
+    X0 = reshape([x_0 u_0 elong_0]',nvar,1);
+
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
@@ -416,11 +488,11 @@ if (OptSetup.MaxIter > 0)
     
     % set up constraints
     cl = zeros(ncon_eq+ncon_eq_elong,1);
-    if Humcon_flag, cl = [cl; -Inf*ones(N-1,1)]; end
-    if Scapcon_flag, cl = [cl; -Inf*ones(2*N,1)]; end
+    if Humcon_flag, cl = [cl; zeros(N-1,1)]; end
+    if Scapcon_flag, cl = [cl; -0.19*ones(2*N,1)]; end
     cu = zeros(ncon_eq+ncon_eq_elong,1);
-    if Humcon_flag, cu = [cu; zeros(N-1,1)]; end
-    if Scapcon_flag, cu = [cu; zeros(2*N,1)]; end
+    if Humcon_flag, cu = [cu; ones(N-1,1)]; end
+    if Scapcon_flag, cu = [cu; 0.21*ones(2*N,1)]; end
         
     funcs.objective = @objfun;
     funcs.gradient  = @objgrad;
@@ -445,8 +517,15 @@ if (OptSetup.MaxIter > 0)
     options.ipopt.acceptable_constr_viol_tol = OptSetup.FeasTol;
     options.ipopt.acceptable_tol = OptSetup.FeasTol;
     options.ipopt.constr_viol_tol = OptSetup.FeasTol;
+    options.warm_start_init_point = 'yes';
+    options.warm_start_bound_push = 1e-12;
+    options.warm_start_bound_frac = 1e-12;
+    options.warm_start_slack_bound_frac = 1e-12;
+    options.warm_start_slack_bound_push = 1e-12;
+    options.warm_start_mult_bound_push = 1e-12;
+    options.warm_start_same_structure = 'yes';
     options.ipopt.print_info_string = 'yes';
-    options.ipopt.limited_memory_max_history = 6;	% 6 is default, 12 converges better, but may cause "insufficient memory" error when N is large
+    options.ipopt.limited_memory_max_history = 12;
     options.ipopt.dual_inf_tol = 1;
     
     [X, info] = ipopt(X0,funcs,options);
@@ -514,12 +593,14 @@ for i=1:N-1
     handF2 = hand_force((i+1)*3-2:(i+1)*3);
     [~, ~, ~, ~, FGH] = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,(handF1+handF2)/2);
 
-    Result.FGHcontact(i_node) = calculate_FGH(FGH);
+    Result.FGHcontact(i) = calculate_FGH(FGH);
 
     % advance the indices
     ixs = ixs + nvarpernode;
     ius = ius + nvarpernode;
 end
+
+Result.FGHcontact(N) = Result.FGHcontact(N-1);
 
 save([filename '.mat'],'Result');
 make_osimm(filename,dofnames,angles,times);
@@ -545,7 +626,11 @@ make_osimm(filename,dofnames,angles,times);
         
         % First term of cost function is mean of squared differences to
         % measured data, including thoraco-humeral data if provided
-        wf1 = mean(((X(imeas)-data_dofs)./data_dofs_sd).^2);
+        if ntrackdofs
+            wf1 = mean(((X(imeas)-data_dofs)./data_dofs_sd).^2);
+        else
+            wf1 = 0;
+        end
         
         % If required, calculate thoracohumeral angles
         if thorhum_flag
@@ -658,6 +743,7 @@ make_osimm(filename,dofnames,angles,times);
 
 % Gradient of objective function
     function g = objgrad(X)
+
         g = zeros(nvar,1);
         
         % Perturbation to estimate derivative
@@ -666,7 +752,9 @@ make_osimm(filename,dofnames,angles,times);
         % First term of cost function is mean of squared differences to
         % measured data (thoraco-humeral angles are calculated separate,
         % below)
-        g(imeas) = g(imeas) + 2*Wdata*(X(imeas)-data_dofs)./data_dofs_sd.^2/length(imeas);
+        if ntrackdofs
+            g(imeas) = g(imeas) + 2*Wdata*(X(imeas)-data_dofs)./data_dofs_sd.^2/length(imeas);
+        end
         
         % If required, calculate scapulothoracic term derivatives
         if thorhum_flag
@@ -796,8 +884,9 @@ make_osimm(filename,dofnames,angles,times);
 
 % Constraints
     function allcon = confun(X)
-        
+
         c = zeros(ncon_neq,1);
+        c_flag = 0*c;
         ceq = zeros(ncon_eq+ncon_eq_elong,1);
         
         % Calculate constraints due to discretized dynamics
@@ -825,7 +914,10 @@ make_osimm(filename,dofnames,angles,times);
             f(ndof+OptSetup.lockeddof_inx) = zeros(nlockeddofs,1);
             ceq(iceq_f) = f;
             
-            if Humcon_flag, c(inode) = calculate_FGH(FGH)-1; end
+            if Humcon_flag 
+                c(inode) = calculate_FGH(FGH);
+                c_flag(inode) = c(inode)>0 && c(inode)<1;
+            end
             
             % advance the indices
             ixs = ixs + nvarpernode;
@@ -857,6 +949,7 @@ make_osimm(filename,dofnames,angles,times);
                 % solve thorax ellipsoid surface equation for TS and AI, to find
                 % out whether they are inside, on, or outside the thorax
                 c(ic) = (das3('Scapulacontact', X(ixs)))';
+                c_flag(ic) = c(ic)>-0.19 & c(ic)<0.21;
                 
                 % advance the indices
                 ixs = ixs + nvarpernode;
@@ -867,8 +960,11 @@ make_osimm(filename,dofnames,angles,times);
         allcon = [ceq; c];
         
         if (print_flag)
-            fprintf('Norm(ceq): %9.5f  \n', norm(ceq));
-            fprintf('Norm(cnoneq): %9.5f  \n', norm(c));
+            fprintf('Norm(ceq): %9.5f  \n', norm(ceq(1:ncon_eq)));
+            fprintf('Norm(ceq SEE elong): %9.5f  \n', norm(ceq(ncon_eq+(1:ncon_eq_elong))));
+            if Scapcon_flag || Humcon_flag
+                fprintf('Proportion of satisfied inequality constraints: %9.5f \n', sum(c_flag)/length(c_flag));
+            end
         end
         
     end
@@ -881,7 +977,7 @@ make_osimm(filename,dofnames,angles,times);
 
 % Jacobian of constraints
     function J = conjac(X)
-        
+
         allrows = zeros(Jnnz,1);
         allcols = zeros(Jnnz,1);
         allvals = zeros(Jnnz,1);
@@ -950,7 +1046,7 @@ make_osimm(filename,dofnames,angles,times);
                                    
             if Humcon_flag
                 % Glenohumeral stability constraint
-                FGHcontact = calculate_FGH(FGH)-1;
+                FGHcontact = calculate_FGH(FGH);
                 
                 % Perturb x1 and x2 by dx to estimate derivative
                 for istate = [1:2*ndof 2*ndof+iGH 2*ndof+nmus+iGH]
@@ -959,7 +1055,7 @@ make_osimm(filename,dofnames,angles,times);
                     
                     % estimate delta(GHconstraint)/delta(x)
                     [~, ~, ~, ~, FGH] = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,(handF1+handF2)/2);
-                    FGHcontact_dx = calculate_FGH(FGH)-1;
+                    FGHcontact_dx = calculate_FGH(FGH);
                     
                     allrows(index) = ic;
                     allcols(index) = ix1(1)+istate-1;
@@ -972,7 +1068,7 @@ make_osimm(filename,dofnames,angles,times);
                     
                     % estimate delta(GHconstraint)/delta(x)
                     [~, ~, ~, ~, FGH] = das3('Dynamics',(x1+x2)/2,(x2-x1)/h,(u1+u2)/2,ex_mom,arm_support,(handF1+handF2)/2);
-                    FGHcontact_dx = calculate_FGH(FGH)-1;
+                    FGHcontact_dx = calculate_FGH(FGH);
                     
                     allrows(index) = ic;
                     allcols(index) = ix2(1)+istate-1;
@@ -1029,7 +1125,7 @@ make_osimm(filename,dofnames,angles,times);
         if Scapcon_flag
             % indices of states of node 1
             ixs = 1:nstates;
-            ic = ncon_eq + Humcon_flag*(N-1) + (1:2);
+            ic = ncon_eq + ncon_eq_elong + Humcon_flag*(N-1) + (1:2);
             dx = 1e-7;
             
             for inode=1:N

@@ -39,14 +39,14 @@ input_variables = {};
 lockeddofs = {'TH_x','TH_y','TH_z'};
 
 % Choose which model parameter file to use
-OptSetup.model = 'full_model.mat';
+OptSetup.model = 'model_struct.mat';
 
 % Should angular velocities be zero at the start and end of movement?
 % (true/false)
 OptSetup.start_at_rest = true;
 OptSetup.end_at_rest = true;
 
-% Should angles start and end at initial state?
+% Should angles start at initial state?
 OptSetup.initial_state = true;
 
 % Set number of nodes
@@ -59,7 +59,8 @@ OptSetup.N = nodes;
 OptSetup.MaxIter = 10000;	% max number of iterations for each optimization
 OptSetup.OptimTol = 1e-3;
 OptSetup.FeasTol = 1e-3;
-OptSetup.initialguess = 'initial_state.mat';  % initial guess (see options in das3_optimize.m)
+
+OptSetup.initialguess = 'equilibrium'; % the option "equilibrium" is the initial state
 
 % Cost function
 OptSetup.Wdata = 10;        % weight for the kinematic term in the cost function
