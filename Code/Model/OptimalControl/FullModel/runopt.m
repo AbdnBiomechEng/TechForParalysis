@@ -63,10 +63,11 @@ OptSetup.FeasTol = 1e-3;
 OptSetup.initialguess = 'equilibrium'; % the option "equilibrium" is the initial state
 
 % Cost function
-OptSetup.Wdata = 10;        % weight for the kinematic term in the cost function
-OptSetup.Weffort = 1;       % weight for the energy consumption term in the cost function
-OptSetup.Wscap = 0.1;       % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
-OptSetup.Whum = 0.01;       % weight for glenohumeral stability (if missing, assumed to be constraint)
+OptSetup.museffort_cubic = 0;   % should we use cubic term for the muscle effort? (1=cubic, 0=quadratic)
+OptSetup.Wdata = 10;            % weight for the kinematic term in the cost function
+OptSetup.Weffort = 1;           % weight for the energy consumption term in the cost function
+OptSetup.Wscap = 0.1;           % weight for scapulo-thoracic gliding plane (if missing, assumed to be constraint)
+OptSetup.Whum = 0.01;           % weight for glenohumeral stability (if missing, assumed to be constraint)
 
 % Add muscle weakness due to injury
 OptSetup.max_act_table = readtable('max_act.csv');

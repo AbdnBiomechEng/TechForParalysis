@@ -658,8 +658,12 @@ make_osimm(filename,dofnames,angles,times);
         end
         f1 = Wdata * wf1;
 
-        % Second term is mean squared muscle activation        
-        wf2 = mean(X(iact).^2);
+        % Second term is mean squared or cubic muscle activation       
+        if OptSetup.museffort_cubic
+            wf2 = mean(X(iact).^3);
+        else
+            wf2 = mean(X(iact).^2);
+        end
         f2 = Weffort * wf2;
                 
         f = f1 + f2;
@@ -806,8 +810,13 @@ make_osimm(filename,dofnames,angles,times);
         end
        
         
-        % Second term is mean squared muscle activation
-        g(iact) = g(iact) + 2*Weffort*(X(iact))./(N*nmus);
+        % Second term is mean squared or cubic muscle activation
+        if OptSetup.museffort_cubic
+            g(iact) = g(iact) + 3*Weffort*(X(iact).^2)./(N*nmus);
+        else
+            g(iact) = g(iact) + 2*Weffort*(X(iact))./(N*nmus);
+        end
+        
                 
         % If required, calculate scapula term derivatives
         if ~Scapcon_flag && Wscap
