@@ -3,7 +3,7 @@ The model we currently use is das3.osim (which corresponds to the matlab structu
 1. The short head of the biceps is represented by one instead of two elements
 2. Some of the wrapping objects and muscle contraction parameters have been updated, to ensure muscles operate in the middle of their range for the normal range of motion (from 0.5 to 1.5 of normalised fibre length).  
 
-The optimal control setup includes an additional control variable (besides muscle excitation): normalised tendon elongation, which takes values from -100 (basically -infinity) to 0.06. This ensures that the maximum force that muscles can produce is ~2.25 times their maximum isometric force.
+The optimal control setup includes an additional control variable (besides muscle excitation): normalised tendon elongation, which takes values from -0.01 to 0.06. This ensures that the maximum force that muscles can produce is ~2.25 times their maximum isometric force.
 
 ### Initial state
 
