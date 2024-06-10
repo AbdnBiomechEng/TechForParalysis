@@ -9,8 +9,6 @@ The optimal control setup includes an additional control variable (besides muscl
 
 The initial state initial_state.mat (visualised in Opensim using initial_state.mot) was found by running das3_optimize_hang.m, which is a static optimization that aims to minimize muscle effort (weight=1), scapular winging (weight=0.1), and glenohumeral force away from the centre of the glenoid (weight = 0.01). It does not include kinematic tracking, but it is constrained to look for solutions near the DSEM initial position. The initial guess for this optimization was the DSEM initial position, with zero activations and muscle fibres at their optimal length.
 
-Note: This initial state has quite a high activation of the lower part of the serratus anterior and the middle part of pectoralis major (thoracic), to stabilise the scapula and humeral rotation.
-
 ### Optimisation parameters
 
 The function runopt.m is used to set up the simulation, in the section "Read in data and set up optimisation parameters". There, we specify:
@@ -22,7 +20,7 @@ The function runopt.m is used to set up the simulation, in the section "Read in 
 - Whether the movement starts and ends at the initial state kinematics
 - The initial (nodes) and final (maxnodes) number of nodes for Direct Collocation, and the factor to increase the number of nodes by (factor). For example, if nodes=5, maxnodes=23 and factor=2, we will run simulations with 5, 10 and 20 nodes.
 - IPOPT optimisation settings (max number of iterations, optimality and feasbility tolerances)
-- The initial guess, with options: "random", "mid", and if none of the above, assumed to be name of file with previous solution. A good choice for the last option is initial_state.mat.
+- The initial guess, with options: "random", "mid", "equilibrium" (which is the initial state) and if none of the above, assumed to be name of file with previous solution. 
 - The weights of the terms in the cost function: Wdata (kinematic tracking), Weffort (minimization of muscle effort), Wscap (scapulo-thoracic gliding plane) and Whum (glenohumeral stability). Wscap and Whum are optional: if they are not included, scapular and humeral stability are hard constraints.
 - A csv file with the maximum muscle activations (default: max_act.csv). This is 1 for all muscles, unless we want to simulate muscle weakness.
 - The name of the output folder, which will be created if it does not already exist, and the name of the output files, which will be appended with the number of nodes. e.g. if the file name is "participant1", the output files will be called participant1_5, participant1_10, etc.
