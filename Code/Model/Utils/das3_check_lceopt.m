@@ -54,7 +54,7 @@ xtickangle(0)
 view([90 -90])
 ax = gca ; ax.Position = [0.11 0.05 0.87 0.95];
 
-save all_lengths_lce musnames mlengths n_lce minlce maxlce
+save all_lengths_lce musnames mlengths n_lce minlce maxlce angles
 
 
 function angles = importfile(filename, dataLines)
