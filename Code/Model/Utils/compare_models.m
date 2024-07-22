@@ -8,8 +8,8 @@ model_new = modelstr.model;
 modelstr = load('model_struct.mat');
 model_prev = modelstr.model;
 
-ndof = model.nDofs;
-nmus = model.nMus;
+ndof = model_new.nDofs;
+nmus = model_new.nMus;
 nstates = 2*ndof + 2*nmus;
 
 % get muscle names, SEEslack, PEEslack and lceopt
