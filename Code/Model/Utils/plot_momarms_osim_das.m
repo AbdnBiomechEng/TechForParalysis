@@ -3,13 +3,13 @@ function plot_momarms_osim_das(imus)
 % Plots the original Opensim moment arms and the real-time polynomial
 % approximations
 
-modelparams = load('simplified_model_struct.mat'); 
+modelparams = load('model_struct_clav_scap_orig.mat'); 
 model = modelparams.model;
 
 % Get moment arms and lengths out of the .mat files
 % These are created using code in the DAS3 repository
 % (https://github.com/dasproject/DAS3)
-musfilename = ['..\..\DAS3\model\build\simplified_unscaled_model\path_',model.muscles{imus}.name,'.mat'];
+musfilename = ['path_',model.muscles{imus}.name,'.mat'];
 ma = load(musfilename);
 mus = model.muscles{1,imus};
 ndofs = length(mus.dof_indeces); % number of dofs spanned by this muscle
@@ -21,11 +21,11 @@ for idof = 1:ndofs
 end
 ang = (ma.alljnts(:,musdof_indeces) + 1e-6);	% protect against angle = 0.0
 
-examine_momarms(mus, mus.dof_names, ma.allmomarms, ang);
+examine_momarms(mus, mus.dof_names, ma.allmomarms, ma.alllengths, ang);
 
 end
 
-function examine_momarms(musmodel, dof_names, moment_arms, angles)
+function examine_momarms(musmodel, dof_names, moment_arms, lengths, angles)
 % plot momentarm-angle data
 
 % choose a subset of "angles" that contains only 100 points
@@ -35,8 +35,10 @@ r = a + (b-a).*rand(100,1);
 indeces = ceil(sort(r));
 sangles = angles(indeces,:);
 
-% calculate moment arms from polynomial
+% calculate moment arms and length from polynomial
 pmoment_arms = zeros(length(indeces),length(dof_names));
+plengths = zeros(length(indeces),1);
+
 for iframe = 1:length(indeces)
     for i=1:musmodel.lparam_count
 
@@ -57,6 +59,8 @@ for iframe = 1:length(indeces)
                 pmoment_arms(iframe,k) = pmoment_arms(iframe,k) + dterm;
             end
         end
+
+        plengths(iframe) = plengths(iframe) + term;
     end
 end
 
@@ -67,4 +71,10 @@ for idof=1:length(dof_names)
     title([dof_names{idof}, ' momentarms for ',musmodel.name],'Interpreter', 'none'); 
 end
 legend('osim','poly');
+
+figure;
+plot(lengths(indeces),'bx-'); hold on; plot(plengths,'ro-'); 	
+title(['Length for ',musmodel.name],'Interpreter', 'none'); 
+legend('osim','poly');
+
 end
