@@ -343,6 +343,44 @@
 					<inertia>0 0 0 0 0 0</inertia>
 				</Body>
 				<Body name="clavicle_r">
+					<!--List of components that this component owns and serializes.-->
+					<components>
+						<PhysicalOffsetFrame name="clavicle_r_geom_frame_1">
+							<!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+								<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+								<!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+							</FrameGeometry>
+							<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+								<Mesh name="clavicle_r_geom_1">
+									<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+									<!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+									<!--Default appearance attributes for this Geometry-->
+									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
+										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>0.89019608497619629 0.85490196943283081 0.78823530673980713</color>
+									</Appearance>
+									<!--Name of geometry file.-->
+									<mesh_file>rclavicle.vtp</mesh_file>
+								</Mesh>
+							</attached_geometry>
+							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>-0.004734 -0.009466 -0.018044</translation>
+							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+						</PhysicalOffsetFrame>
+					</components>
 					<!--The geometry used to display the axes of this Frame.-->
 					<FrameGeometry name="frame_geometry">
 						<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -351,25 +389,7 @@
 						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
 					</FrameGeometry>
 					<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
-					<attached_geometry>
-						<Mesh name="clavicle_r_geom_1">
-							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
-							<socket_frame>..</socket_frame>
-							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>1 1 1</scale_factors>
-							<!--Default appearance attributes for this Geometry-->
-							<Appearance>
-								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-								<visible>true</visible>
-								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
-								<opacity>1</opacity>
-								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>0.89019608497619629 0.85490196943283081 0.78823530673980713</color>
-							</Appearance>
-							<!--Name of geometry file.-->
-							<mesh_file>rclavicle.vtp</mesh_file>
-						</Mesh>
-					</attached_geometry>
+					<attached_geometry />
 					<!--The mass of the body (kg)-->
 					<mass>0.156</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
@@ -408,6 +428,44 @@
 					<inertia>0 0 0 0 0 0</inertia>
 				</Body>
 				<Body name="scapula_r">
+					<!--List of components that this component owns and serializes.-->
+					<components>
+						<PhysicalOffsetFrame name="scapula_r_geom_frame_1">
+							<!--The geometry used to display the axes of this Frame.-->
+							<FrameGeometry name="frame_geometry">
+								<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+								<socket_frame>..</socket_frame>
+								<!--Scale factors in X, Y, Z directions respectively.-->
+								<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
+							</FrameGeometry>
+							<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
+							<attached_geometry>
+								<Mesh name="scapula_r_geom_1">
+									<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
+									<socket_frame>..</socket_frame>
+									<!--Scale factors in X, Y, Z directions respectively.-->
+									<scale_factors>1 1 1</scale_factors>
+									<!--Default appearance attributes for this Geometry-->
+									<Appearance>
+										<!--Flag indicating whether the associated Geometry is visible or hidden.-->
+										<visible>true</visible>
+										<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
+										<opacity>1</opacity>
+										<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
+										<color>0.89019608497619629 0.85490196943283081 0.78823530673980713</color>
+									</Appearance>
+									<!--Name of geometry file.-->
+									<mesh_file>rscapula.vtp</mesh_file>
+								</Mesh>
+							</attached_geometry>
+							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
+							<socket_parent>..</socket_parent>
+							<!--Translational offset (in meters) of this frame's origin from the parent frame's origin, expressed in the parent frame.-->
+							<translation>0.0071 -0.014199 0.042893</translation>
+							<!--Orientation offset (in radians) of this frame in its parent frame, expressed as a frame-fixed x-y-z rotation sequence.-->
+							<orientation>0 0 0</orientation>
+						</PhysicalOffsetFrame>
+					</components>
 					<!--The geometry used to display the axes of this Frame.-->
 					<FrameGeometry name="frame_geometry">
 						<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -416,25 +474,7 @@
 						<scale_factors>0.20000000000000001 0.20000000000000001 0.20000000000000001</scale_factors>
 					</FrameGeometry>
 					<!--List of geometry attached to this Frame. Note, the geometry are treated as fixed to the frame and they share the transform of the frame when visualized-->
-					<attached_geometry>
-						<Mesh name="scapula_r_geom_1">
-							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
-							<socket_frame>..</socket_frame>
-							<!--Scale factors in X, Y, Z directions respectively.-->
-							<scale_factors>1 1 1</scale_factors>
-							<!--Default appearance attributes for this Geometry-->
-							<Appearance>
-								<!--Flag indicating whether the associated Geometry is visible or hidden.-->
-								<visible>true</visible>
-								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
-								<opacity>1</opacity>
-								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>0.89019608497619629 0.85490196943283081 0.78823530673980713</color>
-							</Appearance>
-							<!--Name of geometry file.-->
-							<mesh_file>rscapula.vtp</mesh_file>
-						</Mesh>
-					</attached_geometry>
+					<attached_geometry />
 					<!--The mass of the body (kg)-->
 					<mass>0.70540000000000003</mass>
 					<!--The location (Vec3) of the mass center in the body frame.-->
