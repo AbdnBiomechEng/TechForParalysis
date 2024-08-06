@@ -1,6 +1,5 @@
 function Result = das3_optimize_hang(initialguess,out_filename)
 % This program optimizes das3 position to hang with minimum activation
-% To find position near DSEM initial, we constrain the range for the DOFs
 
 tic;
 
@@ -14,7 +13,7 @@ Weffort = 1;        % weight for the energy consumption term in the cost functio
 Wscap = 0.1;        % weight for scapulo-thoracic gliding plane 
 Whum = 0.01;        % weight for glenohumeral stability 
 
-modelparams = load('full_model.mat'); 
+modelparams = load('model_struct_clav_scap_orig.mat'); 
 model = modelparams.model;
 
 % Initialize the model
@@ -71,7 +70,7 @@ L = [xlim(1:ndof,1);         % q
     zeros(ndof,1);           % qdot
     zeros(nmus,1) + 0.2;     % Lce
     zeros(nmus,1);           % active states
-    -100*ones(nmus,1)];      % normalised SEE elongation
+    -0.01*ones(nmus,1)];     % normalised SEE elongation
 
 U = [xlim(1:ndof,2);         % q
     zeros(ndof,1);           % qdot
@@ -83,15 +82,6 @@ L(lockeddofs) = lockeddofvalues;
 U(lockeddofs) = lockeddofvalues;
 L(ndof+lockeddofs) = zeros(length(lockeddofs),1);
 U(ndof+lockeddofs) = zeros(length(lockeddofs),1);
-
-% For the clavicular and scapular angles, set upper and lower limits to be
-% according to the Delft model
-L(4:9) = [-0.3802;0.11;0;0.808;0.0855;-0.0206]-3*0.0873;
-U(4:9) = [-0.3802;0.11;0;0.808;0.0855;-0.0206]+3*0.0873;
-
-% Constrain the humerus and elbow so it's hanging low and extended
-L(10:13) = [-10;-40;-10;0]*pi/180;
-U(10:13) = [10;10;10;30]*pi/180;
 
 objeval = 0;
 coneval = 0;
@@ -114,17 +104,18 @@ for imus=1:nmus
 end
 
 % make an initial guess
-if numel(strfind(initialguess, 'mid')) > 0
+if strcmp(initialguess, 'mid')
     X0 = (L + U)/2;						% halfway between upper and lower bound
-elseif numel(strfind(initialguess, 'random')) > 0
+elseif strcmp(initialguess, 'random')
     X0 = L + (U - L).*rand(size(L));	% random between upper and lower bound
-elseif numel(strfind(initialguess, 'dsem')) > 0
+elseif strcmp(initialguess, 'dsem')
     X0 = zeros(nstates,1);					
-    X0(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;0;0;0;0]; % initial DSEM position
-    X0(iact) = 0;
+    %X0(4:14) = [-0.3802;0.11;0;0.808;0.0855;-0.0206;0;0;0;0;1.3963]; % initial DSEM position
+    X0(4:14) = [-0.3802;0.11;0;0.8727;0.0855;-0.0206;0;0;0;0;1.3963]; % initial DSEM position - increased ACz
     X0(iLce) = 1;
     init_lengths = das3('Musclelengths',X0);
-    X0(nstates+(1:nmus)) = (init_lengths - LCEopt - SEEslack)./SEEslack; % SEE elongation
+    X0(nstates+(1:nmus)) = 0; % SEE elongation
+    X0(iLce) = (init_lengths - SEEslack)./LCEopt;
 else
     % load a previous solution, initialguess contains file name
     initg = load(initialguess);
@@ -247,27 +238,29 @@ Result.ndof = ndof;
 Result.nmus = nmus;
 Result.model = model;
 Result.obj_str = obj_str;
-Result.x = X(1:nstates);
+Result.x = Result.X(1:nstates);
 Result.MaxIterations = MaxIterations;
 Result.OptimalityTolerance = OptimalityTolerance;
 Result.FeasibilityTolerance = FeasibilityTolerance;
 Result.times = 0.1;
-Result.u = X(iact);
-Result.elong = X(nstates+(1:nmus));
-angles = X(1:ndof);
+Result.u = Result.X(iact);
+Result.elong = Result.X(nstates+(1:nmus));
+angles = Result.X(1:ndof);
 
 % Calculate muscle lengths, forces, GH and scapula stability
 Result.mus_lengths = das3('Musclelengths', Result.x);
 Result.mus_forces = das3('Muscleforces', Result.x);
-[~, ~, ~, ~, FGH, ~, Result.thor_hum] = das3('Dynamics', Result.x, 0*Result.x,zeros(nmus,1));
+[f, ~, ~, ~, FGH, ~, Result.thor_hum] = das3('Dynamics', Result.x, 0*Result.x,zeros(nmus,1));
+Result.f = f;
 Result.Fscap = das3('Scapulacontact', Result.x)';
 Result.FGHcontact = calculate_FGH(FGH);
 
-fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)   moment(Nm)  \n');
-fprintf('--------------- --------------  ---------------------   -------------- --------------\n');
+fprintf('\n\nDOF               angle(deg)    limits (deg)            ang.vel(deg/s)   moment(Nm)  ext moment(Nm) \n');
+fprintf('--------------- --------------  ---------------------   -------------- -----------  --------------\n');
 moments = das3('Jointmoments',Result.x);
+ext_moments = f(ndof+1:2*ndof) - moments;
 for i=1:ndof
-    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f\n',dofnames{i}, 180/pi*Result.x(i), 180/pi*xlim(i,1), 180/pi*xlim(i,2), 180/pi*Result.x(ndof+i), moments(i));
+    fprintf('%-15s %9.3f      %9.3f   %9.3f      %9.3f    %9.3f    %9.3f\n',dofnames{i}, 180/pi*Result.x(i), 180/pi*xlim(i,1), 180/pi*xlim(i,2), 180/pi*Result.x(ndof+i), moments(i), ext_moments(i));
 end
 
 
