@@ -3292,7 +3292,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0080000000000000002 -0.031 -0.0060000000000000001</location>
+									<location>-0.0075   -0.0312   -0.0064</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
@@ -3361,7 +3361,7 @@
 									<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame in which this path point is defined.).-->
 									<socket_parent_frame>/bodyset/radius_r</socket_parent_frame>
 									<!--The fixed location of the path point expressed in its parent frame.-->
-									<location>-0.0080000000000000002 -0.031 -0.0060000000000000001</location>
+									<location>-0.0075   -0.0312   -0.0064</location>
 								</PathPoint>
 							</objects>
 						</PathPointSet>
